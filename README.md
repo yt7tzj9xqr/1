@@ -7,12 +7,11 @@
 <div align="center">
 <a href="https://www.apache.org/licenses/LICENSE-2.0"><img src="https://img.shields.io/badge/license-Apache%202-blue" alt="license"></a>
 <a href="https://arxiv.org/abs/2508.15804" target="_blank"><img src=https://img.shields.io/badge/arXiv-b5212f.svg?logo=arxiv></a>
+<a href="https://huggingface.co/datasets/ByteDance-BandAI/ReportBench" target="_blank"><img src=https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Dataset-blue></a>
 </div>
 
 <h5 align="center"> If you like our project, please give us a star ⭐ on GitHub for the latest update.</h5>
 
-
----
 
 ## Overview
 
@@ -266,7 +265,16 @@ Results will be saved in structured directories:
 - **Final Metrics**: Summary CSV files with aggregated performance metrics
 
 **Key Output Files:**
-- Individual paper results in `{arxiv_id}/` subdirectories  
+- Individual paper results in `{arxiv_id}/` subdirectories
+
+### 4. HuggingFace Dataset (Optional)
+
+You can easily access ReportBench with the following code:
+
+```python
+from datasets import load_dataset
+dataset = load_dataset("ByteDance-BandAI/ReportBench")
+```
 
 ## Citation
 
