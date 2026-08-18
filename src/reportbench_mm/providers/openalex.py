@@ -121,20 +121,22 @@ class OpenAlexProvider:
                 url += "?" + urlencode(params)
             req = Request(url, headers={"User-Agent": "ReportBench-MiniMax/0.1"})
             last_error: Exception | None = None
-            for attempt in range(5):
+            for attempt in range(8):
                 try:
                     with urlopen(req, timeout=self.timeout) as response:
                         return json.loads(response.read().decode("utf-8"))
                 except HTTPError as exc:
                     last_error = exc
-                    if exc.code not in {429, 500, 502, 503, 504} or attempt == 4:
+                    if exc.code not in {429, 500, 502, 503, 504} or attempt == 7:
                         raise
                 except (URLError, TimeoutError) as exc:
                     last_error = exc
-                    if attempt == 4:
+                    if attempt == 7:
                         raise
-                delay = min(16, 2 ** attempt)
-                print(f"OpenAlex transient error; retry {attempt + 2}/5 in {delay}s", flush=True)
+                retry_header = last_error.headers.get("Retry-After", "") if isinstance(last_error, HTTPError) else ""
+                retry_after = int(retry_header) if retry_header.isdigit() else 0
+                delay = max(retry_after, min(60, 2 ** attempt))
+                print(f"OpenAlex transient error; retry {attempt + 2}/8 in {delay}s", flush=True)
                 time.sleep(delay)
             raise RuntimeError(f"OpenAlex request failed: {last_error}")
 

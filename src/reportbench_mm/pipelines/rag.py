@@ -83,7 +83,14 @@ class CitationRagPipeline:
         for query in queries:
             seeds.extend(self.scholar.search(query, cutoff=cutoff, limit=8))
         seeds = filter_papers(seeds, forbidden_title=task.title, cutoff=cutoff)
-        seeds = [paper for paper in seeds if matches_anchor_phrase(paper, anchor_query)]
+        strict_seeds = [paper for paper in seeds if matches_anchor_phrase(paper, anchor_query)]
+        if strict_seeds:
+            seeds = strict_seeds
+        else:
+            seeds = [
+                paper for paper in seeds
+                if anchor_coverage(paper, anchor_terms) >= 0.5 or score_paper(paper, terms) >= 0.16
+            ]
         for paper in seeds:
             paper.relevance = score_paper(paper, terms)
         seeds.sort(key=lambda paper: paper.relevance, reverse=True)
