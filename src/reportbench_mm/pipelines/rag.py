@@ -6,7 +6,7 @@ import re
 from ..config import Settings
 from ..models import MiniMaxClient
 from ..prompts import RAG_SYSTEM, evidence_block
-from ..providers.openalex import OpenAlexProvider, compact_query, extract_cutoff, filter_papers
+from ..providers.openalex import OpenAlexProvider, extract_cutoff, filter_papers, search_queries
 from ..schemas import Paper, Task
 
 
@@ -40,7 +40,9 @@ class CitationRagPipeline:
     def retrieve(self, task: Task) -> list[Paper]:
         cutoff = extract_cutoff(task.prompt)
         terms = keywords(f"{task.application_domain} {task.prompt}")
-        seeds = self.scholar.search(compact_query(task.prompt), cutoff=cutoff, limit=max(12, self.settings.rag_seed_count * 4))
+        seeds: list[Paper] = []
+        for query in search_queries(task.prompt, limit=5):
+            seeds.extend(self.scholar.search(query, cutoff=cutoff, limit=8))
         seeds = filter_papers(seeds, forbidden_title=task.title, cutoff=cutoff)
         for paper in seeds:
             paper.relevance = score_paper(paper, terms)

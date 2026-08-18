@@ -3,7 +3,8 @@ from __future__ import annotations
 from ..config import Settings
 from ..models import MiniMaxClient
 from ..prompts import BASELINE_SYSTEM, evidence_block
-from ..providers.openalex import OpenAlexProvider, compact_query, extract_cutoff, filter_papers
+from ..providers.openalex import OpenAlexProvider, extract_cutoff, filter_papers, search_queries
+from .rag import keywords, score_paper
 from ..schemas import Paper, Task
 
 
@@ -15,10 +16,18 @@ class BaselinePipeline:
 
     def retrieve(self, task: Task) -> list[Paper]:
         cutoff = extract_cutoff(task.prompt)
-        query = compact_query(task.prompt)
-        found = self.scholar.search(query, cutoff=cutoff, limit=self.settings.baseline_papers * 2)
+        found: list[Paper] = []
+        for query in search_queries(task.prompt, limit=self.settings.baseline_search_budget):
+            found.extend(self.scholar.search(query, cutoff=cutoff, limit=10))
         found = filter_papers(found, forbidden_title=task.title, cutoff=cutoff)
-        usable = [paper for paper in found if paper.abstract and paper.url]
+        query_terms = keywords(task.prompt)
+        for paper in found:
+            paper.relevance = score_paper(paper, query_terms)
+        usable = sorted(
+            (paper for paper in found if paper.abstract and paper.url and paper.relevance >= 0.08),
+            key=lambda paper: paper.relevance,
+            reverse=True,
+        )
         return usable[: self.settings.baseline_papers]
 
     def run(self, task: Task) -> tuple[str, list[Paper]]:

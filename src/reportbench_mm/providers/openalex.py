@@ -63,6 +63,35 @@ def compact_query(prompt: str, max_terms: int = 18) -> str:
     return " ".join(terms)
 
 
+def search_queries(prompt: str, limit: int = 5) -> list[str]:
+    """Create short, high-recall scholarly queries without using the forbidden survey title."""
+    candidates: list[str] = []
+    # Capitalized technical phrases are usually the central named topic.
+    candidates.extend(
+        match.strip()
+        for match in re.findall(r"(?:[A-Z][A-Za-z0-9-]+(?:\s+|$)){2,5}", prompt)
+    )
+    # Parenthetical examples provide valuable method/subtopic queries.
+    for group in re.findall(r"\(([^)]{4,160})\)", prompt):
+        cleaned = re.sub(r"\b(?:e\.g\.|such as|and|or)\b", " ", group, flags=re.I)
+        parts = re.split(r"[,;/]", cleaned)
+        candidates.extend(part.strip() for part in parts)
+    terms = compact_query(prompt, max_terms=20).split()
+    candidates.extend(" ".join(terms[index:index + 4]) for index in range(0, min(len(terms), 16), 4))
+    unique: list[str] = []
+    seen: set[str] = set()
+    for candidate in candidates:
+        candidate = " ".join(candidate.split()).strip(" .,:;-")
+        key = candidate.lower()
+        if len(candidate) < 4 or key in seen:
+            continue
+        seen.add(key)
+        unique.append(candidate)
+        if len(unique) >= limit:
+            break
+    return unique or [compact_query(prompt, max_terms=8)]
+
+
 def _abstract(index: dict[str, list[int]] | None) -> str:
     if not index:
         return ""
