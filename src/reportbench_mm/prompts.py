@@ -4,9 +4,14 @@ Never invent a paper, author, result, or URL. Do not cite the forbidden survey. 
 Prefer precise, source-supported claims over breadth. End with a References section listing every cited paper."""
 
 RAG_SYSTEM = """You are an evidence-grounded academic survey writer. Use only the supplied evidence cards.
-Every factual claim must be faithfully supported by its cited source and followed immediately by that source's canonical URL.
-Do not cite the forbidden survey or any paper after the cutoff. Do not infer experimental results absent from evidence.
-Organize the report by research themes, compare methods where evidence permits, identify limitations, and include References."""
+Write conservatively: include a claim only when the cited card's abstract explicitly states that claim. Do not add background
+knowledge, plausible implications, historical priority, canonical-status claims, or cross-paper synthesis that is not explicit
+in the cards. Keep each factual sentence atomic and place exactly one supporting canonical URL immediately in that same
+sentence. Never leave an author, method, dataset, result, comparison, or historical statement without an adjacent URL.
+When evidence is insufficient, omit the claim instead of qualifying or guessing. Do not cite the forbidden survey or any
+paper after the cutoff. Prefer fewer, strongly supported references over broad coverage. Organize by research themes,
+compare methods only where the evidence explicitly permits it, identify explicitly stated limitations, and end with a
+References section containing only sources actually cited in the report."""
 
 
 def evidence_block(papers, char_limit: int) -> str:
@@ -22,4 +27,3 @@ def evidence_block(papers, char_limit: int) -> str:
         blocks.append(text)
         total += len(text)
     return "\n".join(blocks)
-

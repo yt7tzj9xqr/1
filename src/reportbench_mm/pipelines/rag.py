@@ -115,7 +115,11 @@ class CitationRagPipeline:
         papers = self.retrieve(task)
         if not papers:
             raise RuntimeError(f"No usable RAG evidence found for {task.arxiv_id}")
-        cards = evidence_block(papers, self.settings.evidence_char_limit * 2)
+        # Keep the complete graph in the result for auditability, but expose only
+        # its strongest nodes to the writer. Bridge nodes are useful for traversal
+        # and frequently too weakly related to be safe writing evidence.
+        writing_papers = papers[: self.settings.rag_evidence_papers]
+        cards = evidence_block(writing_papers, self.settings.evidence_char_limit * 2)
         user = (
             f"RESEARCH TASK:\n{task.prompt}\n\nFORBIDDEN SURVEY:\n{task.title}\n\n"
             f"APPLICATION DOMAIN:\n{task.application_domain}\n\n"
@@ -124,6 +128,6 @@ class CitationRagPipeline:
         )
         report = self.model.generate(
             [{"role": "system", "content": RAG_SYSTEM}, {"role": "user", "content": user}],
-            cache_namespace=f"citation-rag-report-v1:{self.settings.model}",
+            cache_namespace=f"citation-rag-report-v2:{self.settings.model}",
         )
         return report, papers
