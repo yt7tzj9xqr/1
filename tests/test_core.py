@@ -7,7 +7,7 @@ from reportbench_mm.cache import JsonCache
 from reportbench_mm.dataset import load_tasks, stratified_subset
 from reportbench_mm.providers.openalex import compact_query, extract_cutoff, filter_papers, normalize_title, search_queries
 from reportbench_mm.schemas import Paper
-from reportbench_mm.pipelines.rag import anchor_coverage, keywords, matches_anchor_phrase, score_paper
+from reportbench_mm.pipelines.rag import anchor_coverage, keywords, matches_anchor_phrase, normalize_source_citations, score_paper
 from reportbench_mm.config import Settings
 from reportbench_mm.evaluation.reference import maximum_matches, normalize_url, title_match
 from reportbench_mm.evaluation.statements import cited_statements
@@ -68,6 +68,14 @@ class CoreTests(unittest.TestCase):
     def test_rag_writer_uses_smaller_evidence_budget(self):
         settings = Settings.load(Path.cwd())
         self.assertLess(settings.rag_evidence_papers, settings.rag_max_papers)
+
+    def test_source_labels_are_normalized_to_urls(self):
+        papers = [Paper("1", "Paper One", 2020, "https://example.org/one")]
+        report = "A supported claim (Source 1).\n\n- Source 1: https://example.org/one"
+        normalized = normalize_source_citations(report, papers)
+        self.assertIn("(https://example.org/one)", normalized)
+        self.assertIn("- https://example.org/one", normalized)
+        self.assertNotIn("Source 1", normalized)
 
     def test_reference_matching_is_one_to_one(self):
         self.assertTrue(title_match("Graph Neural Networks: A Survey", "Graph Neural Networks A Survey"))

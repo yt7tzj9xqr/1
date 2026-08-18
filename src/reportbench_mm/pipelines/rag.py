@@ -52,6 +52,19 @@ def normalize_text(value: str) -> str:
     return " ".join(re.findall(r"[a-z0-9]+", value.lower()))
 
 
+def normalize_source_citations(report: str, papers: list[Paper]) -> str:
+    """Convert evidence-card labels into the canonical URLs expected by ReportBench."""
+    urls = {index: paper.url for index, paper in enumerate(papers, 1) if paper.url}
+
+    def replace(match: re.Match[str]) -> str:
+        return urls.get(int(match.group(1)), match.group(0))
+
+    normalized = re.sub(r"\bSource\s+(\d+)\b", replace, report, flags=re.I)
+    # Keep the generated reference list readable after label expansion.
+    normalized = re.sub(r"(?m)^-\s+(https?://\S+):\s+\1\s*$", r"- \1", normalized)
+    return normalized
+
+
 class CitationRagPipeline:
     """Builds an ephemeral, per-task citation graph; only raw API responses are cached."""
 
@@ -135,4 +148,5 @@ class CitationRagPipeline:
             [{"role": "system", "content": RAG_SYSTEM}, {"role": "user", "content": user}],
             cache_namespace=f"citation-rag-report-v5:{self.settings.model}",
         )
+        report = normalize_source_citations(report, writing_papers)
         return report, papers
