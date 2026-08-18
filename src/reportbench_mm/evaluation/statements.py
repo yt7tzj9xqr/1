@@ -35,23 +35,35 @@ def _judge_batches(
     votes: int, batch_size: int = 8,
 ) -> list[list[bool]]:
     all_votes = [[] for _ in range(votes)]
-    for start in range(0, len(records), batch_size):
-        batch = records[start:start + batch_size]
+
+    def judge_one(batch: list[dict], label: str, vote: int) -> list[bool]:
         prompt = (
             prompt_prefix
             + " Return JSON only as {\"decisions\":[{\"match\":true|false}, ...]} in exactly the input order. "
             + "No explanation is needed.\n\n"
             + json.dumps(batch, ensure_ascii=False)
         )
-        for vote in range(votes):
+        try:
             response = model.generate_json(
                 [{"role": "user", "content": prompt}],
                 model=model.settings.judge_model,
                 temperature=0.2,
                 max_tokens=8192,
-                cache_namespace=f"{namespace}:batch-{start // batch_size}:vote-{vote}",
+                cache_namespace=f"{namespace}:{label}:vote-{vote}",
             )
-            all_votes[vote].extend(_parse_decisions(response, len(batch)))
+            print(f"judge {namespace} {label} vote={vote + 1}/{votes} size={len(batch)} ok", flush=True)
+            return _parse_decisions(response, len(batch))
+        except RuntimeError as exc:
+            if len(batch) == 1:
+                raise
+            middle = len(batch) // 2
+            print(f"judge {namespace} {label} size={len(batch)} split: {exc}", flush=True)
+            return judge_one(batch[:middle], label + "a", vote) + judge_one(batch[middle:], label + "b", vote)
+
+    for start in range(0, len(records), batch_size):
+        batch = records[start:start + batch_size]
+        for vote in range(votes):
+            all_votes[vote].extend(judge_one(batch, f"batch-{start // batch_size}", vote))
     return all_votes
 
 
