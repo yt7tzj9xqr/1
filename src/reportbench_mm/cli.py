@@ -11,6 +11,8 @@ from .models import MiniMaxClient
 from .pipelines import BaselinePipeline, CitationRagPipeline
 from .providers import OpenAlexProvider
 from .runner import ExperimentRunner
+from .evaluation.reference import evaluate_reference
+from .evaluation.aggregate import aggregate
 
 
 def command_prepare(args: argparse.Namespace) -> None:
@@ -76,6 +78,26 @@ def command_run_rag(args: argparse.Namespace) -> None:
     print(json.dumps(summary, indent=2))
 
 
+def command_evaluate_reference(args: argparse.Namespace) -> None:
+    run_root = Path(args.run_root)
+    output_root = Path(args.output)
+    metric_files: list[Path] = []
+    for result_path in sorted(run_root.glob("*/result.json")):
+        arxiv_id = result_path.parent.name
+        gt_path = Path(args.gt_root) / f"{arxiv_id}.jsonl"
+        if not gt_path.exists():
+            print(f"{arxiv_id}: missing ground truth")
+            continue
+        metrics = evaluate_reference(result_path, gt_path)
+        metric_path = output_root / f"{arxiv_id}.json"
+        metric_path.parent.mkdir(parents=True, exist_ok=True)
+        metric_path.write_text(json.dumps(metrics, ensure_ascii=False, indent=2), encoding="utf-8")
+        metric_files.append(metric_path)
+        print(f"{arxiv_id}: P={metrics['reference_precision']:.3f} R={metrics['reference_recall']:.3f}")
+    if metric_files:
+        print(json.dumps(aggregate(metric_files, output_root / "summary.json"), indent=2))
+
+
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(prog="reportbench-mm")
     sub = parser.add_subparsers(required=True)
@@ -100,6 +122,11 @@ def build_parser() -> argparse.ArgumentParser:
     rag.add_argument("--execute", action="store_true")
     rag.add_argument("--overwrite", action="store_true")
     rag.set_defaults(func=command_run_rag)
+    reference = sub.add_parser("evaluate-reference")
+    reference.add_argument("--run-root", required=True)
+    reference.add_argument("--gt-root", default="ReportBench_v1.1_GT")
+    reference.add_argument("--output", required=True)
+    reference.set_defaults(func=command_evaluate_reference)
     return parser
 
 
