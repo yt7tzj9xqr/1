@@ -220,6 +220,11 @@ url_cache.csv
 
 # 结果输出目录
 results/
+artifacts/
+cache/
+runs/
+data/subsets/*.jsonl
+!.env.example
 
 # 临时和测试文件
 *.tmp
