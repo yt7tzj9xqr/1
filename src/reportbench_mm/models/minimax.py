@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import json
 import re
+import time
 from typing import Any
 from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
@@ -43,14 +44,24 @@ class MiniMaxClient:
                 },
                 method="POST",
             )
-            try:
-                with urlopen(http_request, timeout=self.settings.request_timeout) as response:
-                    return json.loads(response.read().decode("utf-8"))
-            except HTTPError as exc:
-                detail = exc.read().decode("utf-8", errors="replace")[:500]
-                raise RuntimeError(f"MiniMax API HTTP {exc.code}: {detail}") from exc
-            except URLError as exc:
-                raise RuntimeError(f"MiniMax API connection failed: {exc.reason}") from exc
+            last_error: Exception | None = None
+            for attempt in range(5):
+                try:
+                    with urlopen(http_request, timeout=self.settings.request_timeout) as response:
+                        return json.loads(response.read().decode("utf-8"))
+                except HTTPError as exc:
+                    detail = exc.read().decode("utf-8", errors="replace")[:500]
+                    last_error = RuntimeError(f"MiniMax API HTTP {exc.code}: {detail}")
+                    if exc.code not in {429, 500, 502, 503, 504, 529} or attempt == 4:
+                        raise last_error from exc
+                except URLError as exc:
+                    last_error = RuntimeError(f"MiniMax API connection failed: {exc.reason}")
+                    if attempt == 4:
+                        raise last_error from exc
+                delay = min(30, 2 ** attempt)
+                print(f"MiniMax transient error; retry {attempt + 2}/5 in {delay}s", flush=True)
+                time.sleep(delay)
+            raise RuntimeError(f"MiniMax request failed: {last_error}")
 
         if self.cache:
             data = self.cache.get(cache_namespace, payload)

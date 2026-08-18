@@ -54,6 +54,8 @@ def _judge_batches(
             print(f"judge {namespace} {label} vote={vote + 1}/{votes} size={len(batch)} ok", flush=True)
             return _parse_decisions(response, len(batch))
         except RuntimeError as exc:
+            if "API HTTP" in str(exc) or "connection failed" in str(exc):
+                raise
             if len(batch) == 1:
                 raise
             middle = len(batch) // 2
