@@ -30,6 +30,31 @@ def _parse_decisions(value, expected: int) -> list[bool]:
     return decisions
 
 
+def _judge_batches(
+    records: list[dict], model: MiniMaxClient, *, prompt_prefix: str, namespace: str,
+    votes: int, batch_size: int = 8,
+) -> list[list[bool]]:
+    all_votes = [[] for _ in range(votes)]
+    for start in range(0, len(records), batch_size):
+        batch = records[start:start + batch_size]
+        prompt = (
+            prompt_prefix
+            + " Return JSON only as {\"decisions\":[{\"match\":true|false}, ...]} in exactly the input order. "
+            + "No explanation is needed.\n\n"
+            + json.dumps(batch, ensure_ascii=False)
+        )
+        for vote in range(votes):
+            response = model.generate_json(
+                [{"role": "user", "content": prompt}],
+                model=model.settings.judge_model,
+                temperature=0.2,
+                max_tokens=8192,
+                cache_namespace=f"{namespace}:batch-{start // batch_size}:vote-{vote}",
+            )
+            all_votes[vote].extend(_parse_decisions(response, len(batch)))
+    return all_votes
+
+
 def evaluate_cited(result_path: Path, model: MiniMaxClient, votes: int = 3) -> dict:
     result = json.loads(result_path.read_text(encoding="utf-8"))
     items = cited_statements(result.get("response", ""))
@@ -48,20 +73,13 @@ def evaluate_cited(result_path: Path, model: MiniMaxClient, votes: int = 3) -> d
             })
     vote_rows: list[list[bool]] = []
     if evidence_items:
-        prompt = (
-            "Determine whether each claim is faithfully supported by its source text. "
-            "Do not use outside knowledge. Return JSON: {\"decisions\":[{\"match\":true|false}, ...]} "
-            "in exactly the input order.\n\n" + json.dumps(evidence_items, ensure_ascii=False)
+        vote_rows = _judge_batches(
+            evidence_items,
+            model,
+            prompt_prefix="Determine whether each claim is completely and faithfully supported by its source text. Do not use outside knowledge.",
+            namespace=f"cited-judge-v2:{model.settings.judge_model}",
+            votes=votes,
         )
-        for vote in range(votes):
-            response = model.generate_json(
-                [{"role": "user", "content": prompt}],
-                model=model.settings.judge_model,
-                temperature=0.2,
-                max_tokens=4096,
-                cache_namespace=f"cited-judge-v1:{model.settings.judge_model}:vote-{vote}",
-            )
-            vote_rows.append(_parse_decisions(response, len(evidence_items)))
     supported = 0
     details = []
     positions = {original: local for local, original in enumerate(valid_indexes)}
@@ -110,20 +128,16 @@ def evaluate_noncited(
         })
     vote_rows: list[list[bool]] = []
     if records:
-        prompt = (
-            "Verify each claim using only its supplied web-retrieved scholarly evidence. A claim is true only when the evidence "
-            "directly supports it; insufficient evidence is false. Return JSON {\"decisions\":[{\"match\":true|false}, ...]} "
-            "in exactly the input order.\n\n" + json.dumps(records, ensure_ascii=False)
+        vote_rows = _judge_batches(
+            records,
+            model,
+            prompt_prefix=(
+                "Verify each claim using only its supplied web-retrieved scholarly evidence. "
+                "A claim is true only when the evidence directly supports it; insufficient evidence is false."
+            ),
+            namespace=f"noncited-judge-v2:{model.settings.judge_model}",
+            votes=votes,
         )
-        for vote in range(votes):
-            value = model.generate_json(
-                [{"role": "user", "content": prompt}],
-                model=model.settings.judge_model,
-                temperature=0.2,
-                max_tokens=4096,
-                cache_namespace=f"noncited-judge-v1:{model.settings.judge_model}:vote-{vote}",
-            )
-            vote_rows.append(_parse_decisions(value, len(records)))
     correct = 0
     details = []
     for index, record in enumerate(records):

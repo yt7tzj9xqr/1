@@ -52,11 +52,29 @@ class MiniMaxClient:
             except URLError as exc:
                 raise RuntimeError(f"MiniMax API connection failed: {exc.reason}") from exc
 
-        data = self.cache.get_or_create(cache_namespace, payload, request) if self.cache else request()
+        if self.cache:
+            data = self.cache.get(cache_namespace, payload)
+            if data is None or not self._response_text(data):
+                data = request()
+                if self._response_text(data):
+                    self.cache.put(cache_namespace, payload, data)
+        else:
+            data = request()
         try:
-            return data["choices"][0]["message"]["content"]
+            content = self._response_text(data)
+            if not content:
+                finish = data.get("choices", [{}])[0].get("finish_reason")
+                raise RuntimeError(f"MiniMax returned empty final content (finish_reason={finish})")
+            return content
         except (KeyError, IndexError, TypeError) as exc:
             raise RuntimeError(f"Unexpected MiniMax response: {str(data)[:1000]}") from exc
+
+    @staticmethod
+    def _response_text(data: dict[str, Any]) -> str:
+        try:
+            return data["choices"][0]["message"].get("content") or ""
+        except (KeyError, IndexError, TypeError, AttributeError):
+            return ""
 
     def generate_json(self, messages: list[dict[str, str]], **kwargs: Any) -> Any:
         text = self.generate(messages, **kwargs)
