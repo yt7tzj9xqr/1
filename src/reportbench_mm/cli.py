@@ -8,7 +8,7 @@ from .cache import JsonCache
 from .config import Settings
 from .dataset import load_tasks, stratified_subset, write_tasks
 from .models import MiniMaxClient
-from .pipelines import BaselinePipeline
+from .pipelines import BaselinePipeline, CitationRagPipeline
 from .providers import OpenAlexProvider
 from .runner import ExperimentRunner
 
@@ -58,6 +58,24 @@ def command_run_baseline(args: argparse.Namespace) -> None:
     print(json.dumps(summary, indent=2))
 
 
+def command_run_rag(args: argparse.Namespace) -> None:
+    settings = Settings.load()
+    tasks = load_tasks(Path(args.tasks))[: args.limit]
+    if not args.execute:
+        print(json.dumps({"status": "dry-run", "model": settings.model, "system": "citation-rag", "tasks": [t.arxiv_id for t in tasks]}, indent=2))
+        return
+    cache = JsonCache(settings.root / "cache" / "runtime.sqlite3")
+    model = MiniMaxClient(settings, cache)
+    pipeline = CitationRagPipeline(settings, model, OpenAlexProvider(cache, settings.openalex_mailto))
+    runner = ExperimentRunner(settings.root / "runs", settings.model, "citation-rag")
+    summary = {"completed": 0, "skipped": 0, "failed": 0}
+    for task in tasks:
+        status = runner.run_task(task, pipeline, overwrite=args.overwrite)
+        summary[status] += 1
+        print(f"{task.arxiv_id}: {status}")
+    print(json.dumps(summary, indent=2))
+
+
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(prog="reportbench-mm")
     sub = parser.add_subparsers(required=True)
@@ -76,6 +94,12 @@ def build_parser() -> argparse.ArgumentParser:
     baseline.add_argument("--execute", action="store_true")
     baseline.add_argument("--overwrite", action="store_true")
     baseline.set_defaults(func=command_run_baseline)
+    rag = sub.add_parser("run-rag")
+    rag.add_argument("--tasks", default="data/subsets/reportbench_30.jsonl")
+    rag.add_argument("--limit", type=int, default=1)
+    rag.add_argument("--execute", action="store_true")
+    rag.add_argument("--overwrite", action="store_true")
+    rag.set_defaults(func=command_run_rag)
     return parser
 
 
