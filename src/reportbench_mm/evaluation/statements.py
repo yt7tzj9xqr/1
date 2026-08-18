@@ -112,18 +112,28 @@ def evaluate_cited(result_path: Path, model: MiniMaxClient, votes: int = 3) -> d
 
 
 def extract_noncited(report: str, cited: list[dict], model: MiniMaxClient, limit: int = 20) -> list[str]:
+    candidates: list[str] = []
+    for part in re.split(r"(?<=[.!?])\s+|\n+", report):
+        text = re.sub(r"^[#>*\-\d.\s]+", "", part).strip()
+        if URL_RE.search(text) or len(text) < 30 or len(text) > 1000:
+            continue
+        if text.lower().startswith(("references", "source ", "table ")):
+            continue
+        candidates.append(text)
+    # Preserve order and remove repeated prose before asking the model to classify factuality.
+    candidates = list(dict.fromkeys(candidates))[:60]
     prompt = (
-        "Extract externally verifiable factual claims from this report that do not contain a URL citation. "
-        "Exclude opinions, headings, common knowledge, vague statements, and any claim already represented in CITED. "
+        "From CANDIDATES, select externally verifiable factual claims that lack a URL citation. "
+        "Exclude opinions, headings, common knowledge, vague statements, and methodological instructions. "
         f"Return JSON {{\"statements\":[strings]}} with at most {limit} atomic claims.\n\n"
-        f"REPORT:\n{report}\n\nCITED:\n{json.dumps([x['statement'] for x in cited], ensure_ascii=False)}"
+        f"CANDIDATES:\n{json.dumps(candidates, ensure_ascii=False)}"
     )
     value = model.generate_json(
         [{"role": "user", "content": prompt}],
         model=model.settings.judge_model,
         temperature=0,
-        max_tokens=4096,
-        cache_namespace=f"noncited-extract-v1:{model.settings.judge_model}",
+        max_tokens=8192,
+        cache_namespace=f"noncited-extract-v2:{model.settings.judge_model}",
     )
     if isinstance(value, dict):
         value = value.get("statements", [])
