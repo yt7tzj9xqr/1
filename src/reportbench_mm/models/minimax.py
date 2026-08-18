@@ -30,7 +30,9 @@ class MiniMaxClient:
             "model": model or self.settings.model,
             "messages": messages,
             "temperature": temperature,
-            "max_tokens": max_tokens or self.settings.max_output_tokens,
+            # MiniMax deprecated max_tokens; reasoning and visible output share
+            # this completion budget on M3/M2.7.
+            "max_completion_tokens": max_tokens or self.settings.max_output_tokens,
         }
 
         def request() -> dict[str, Any]:
