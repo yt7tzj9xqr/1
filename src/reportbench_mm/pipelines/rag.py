@@ -29,6 +29,13 @@ def score_paper(paper: Paper, query_terms: set[str]) -> float:
     return 0.72 * overlap + 0.18 * min(1.0, impact) + abstract_bonus - depth_penalty
 
 
+def anchor_coverage(paper: Paper, anchor_terms: set[str]) -> float:
+    if not anchor_terms:
+        return 1.0
+    content = keywords(f"{paper.title} {paper.abstract}")
+    return len(anchor_terms & content) / len(anchor_terms)
+
+
 class CitationRagPipeline:
     """Builds an ephemeral, per-task citation graph; only raw API responses are cached."""
 
@@ -40,10 +47,13 @@ class CitationRagPipeline:
     def retrieve(self, task: Task) -> list[Paper]:
         cutoff = extract_cutoff(task.prompt)
         terms = keywords(f"{task.application_domain} {task.prompt}")
+        queries = search_queries(task.prompt, limit=5)
+        anchor_terms = keywords(queries[0]) if queries else terms
         seeds: list[Paper] = []
-        for query in search_queries(task.prompt, limit=5):
+        for query in queries:
             seeds.extend(self.scholar.search(query, cutoff=cutoff, limit=8))
         seeds = filter_papers(seeds, forbidden_title=task.title, cutoff=cutoff)
+        seeds = [paper for paper in seeds if anchor_coverage(paper, anchor_terms) >= 0.5]
         for paper in seeds:
             paper.relevance = score_paper(paper, terms)
         seeds.sort(key=lambda paper: paper.relevance, reverse=True)

@@ -83,7 +83,7 @@ def search_queries(prompt: str, limit: int = 5) -> list[str]:
     for candidate in candidates:
         candidate = " ".join(candidate.split()).strip(" .,:;-")
         key = candidate.lower()
-        if len(candidate) < 4 or key in seen:
+        if len(candidate) < 4 or len(candidate.split()) < 2 or key in seen:
             continue
         seen.add(key)
         unique.append(candidate)
