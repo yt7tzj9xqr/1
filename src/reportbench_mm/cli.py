@@ -13,6 +13,8 @@ from .providers import OpenAlexProvider
 from .runner import ExperimentRunner
 from .evaluation.reference import evaluate_reference
 from .evaluation.aggregate import aggregate
+from .evaluation.statements import cited_statements, evaluate_cited, evaluate_noncited, extract_noncited
+from .providers.openalex import extract_cutoff
 
 
 def command_prepare(args: argparse.Namespace) -> None:
@@ -98,6 +100,35 @@ def command_evaluate_reference(args: argparse.Namespace) -> None:
         print(json.dumps(aggregate(metric_files, output_root / "summary.json"), indent=2))
 
 
+def command_evaluate_statements(args: argparse.Namespace) -> None:
+    settings = Settings.load()
+    settings.require_api_key()
+    cache = JsonCache(settings.root / "cache" / "evaluation.sqlite3")
+    model = MiniMaxClient(settings, cache)
+    scholar = OpenAlexProvider(cache, settings.openalex_mailto)
+    output_root = Path(args.output)
+    metric_files: list[Path] = []
+    for result_path in sorted(Path(args.run_root).glob("*/result.json")):
+        result = json.loads(result_path.read_text(encoding="utf-8"))
+        task = result["task"]
+        cited = cited_statements(result["response"])
+        cited_metrics = evaluate_cited(result_path, model, votes=args.votes)
+        noncited = extract_noncited(result["response"], cited, model, limit=args.max_noncited)
+        noncited_metrics = evaluate_noncited(noncited, model, scholar, extract_cutoff(task["prompt"]), votes=args.votes)
+        ref_path = Path(args.reference_root) / f"{task['arxiv_id']}.json"
+        base = json.loads(ref_path.read_text(encoding="utf-8")) if ref_path.exists() else {
+            "arxiv_id": task["arxiv_id"], "model": result["model"], "system": result["system"]
+        }
+        metrics = {**base, **cited_metrics, **noncited_metrics}
+        metric_path = output_root / f"{task['arxiv_id']}.json"
+        metric_path.parent.mkdir(parents=True, exist_ok=True)
+        metric_path.write_text(json.dumps(metrics, ensure_ascii=False, indent=2), encoding="utf-8")
+        metric_files.append(metric_path)
+        print(f"{task['arxiv_id']}: cited={metrics['cited_match_rate']:.3f}, noncited={metrics['noncited_factual_accuracy']:.3f}")
+    if metric_files:
+        print(json.dumps(aggregate(metric_files, output_root / "summary.json"), indent=2))
+
+
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(prog="reportbench-mm")
     sub = parser.add_subparsers(required=True)
@@ -127,6 +158,13 @@ def build_parser() -> argparse.ArgumentParser:
     reference.add_argument("--gt-root", default="ReportBench_v1.1_GT")
     reference.add_argument("--output", required=True)
     reference.set_defaults(func=command_evaluate_reference)
+    statements = sub.add_parser("evaluate-statements")
+    statements.add_argument("--run-root", required=True)
+    statements.add_argument("--reference-root", required=True)
+    statements.add_argument("--output", required=True)
+    statements.add_argument("--votes", type=int, default=3)
+    statements.add_argument("--max-noncited", type=int, default=20)
+    statements.set_defaults(func=command_evaluate_statements)
     return parser
 
 

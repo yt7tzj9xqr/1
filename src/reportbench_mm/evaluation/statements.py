@@ -1,0 +1,139 @@
+from __future__ import annotations
+
+from collections import defaultdict
+import json
+from pathlib import Path
+import re
+
+from ..models import MiniMaxClient
+from .reference import URL_RE, normalize_url
+
+
+def cited_statements(report: str) -> list[dict]:
+    statements: list[dict] = []
+    for part in re.split(r"(?<=[.!?])\s+|\n+", report):
+        urls = URL_RE.findall(part)
+        clean = part.strip()
+        if not clean or not urls:
+            continue
+        for url in urls:
+            statements.append({"statement": clean, "url": normalize_url(url)})
+    return statements
+
+
+def _parse_decisions(value, expected: int) -> list[bool]:
+    if isinstance(value, dict):
+        value = value.get("decisions", [])
+    decisions = [bool(item.get("match", False)) if isinstance(item, dict) else bool(item) for item in value]
+    if len(decisions) != expected:
+        raise RuntimeError(f"Judge returned {len(decisions)} decisions, expected {expected}")
+    return decisions
+
+
+def evaluate_cited(result_path: Path, model: MiniMaxClient, votes: int = 3) -> dict:
+    result = json.loads(result_path.read_text(encoding="utf-8"))
+    items = cited_statements(result.get("response", ""))
+    source_by_url = {normalize_url(paper.get("url", "")): paper for paper in result.get("papers", [])}
+    evidence_items = []
+    valid_indexes = []
+    for index, item in enumerate(items):
+        paper = source_by_url.get(item["url"])
+        if paper and paper.get("abstract"):
+            valid_indexes.append(index)
+            evidence_items.append({
+                "id": index,
+                "claim": item["statement"],
+                "source_title": paper.get("title"),
+                "source_text": paper.get("abstract"),
+            })
+    vote_rows: list[list[bool]] = []
+    if evidence_items:
+        prompt = (
+            "Determine whether each claim is faithfully supported by its source text. "
+            "Do not use outside knowledge. Return JSON: {\"decisions\":[{\"match\":true|false}, ...]} "
+            "in exactly the input order.\n\n" + json.dumps(evidence_items, ensure_ascii=False)
+        )
+        for vote in range(votes):
+            response = model.generate_json(
+                [{"role": "user", "content": prompt}],
+                model=model.settings.judge_model,
+                temperature=0.2,
+                max_tokens=4096,
+                cache_namespace=f"cited-judge-v1:{model.settings.judge_model}:vote-{vote}",
+            )
+            vote_rows.append(_parse_decisions(response, len(evidence_items)))
+    supported = 0
+    details = []
+    positions = {original: local for local, original in enumerate(valid_indexes)}
+    for index, item in enumerate(items):
+        local = positions.get(index)
+        yes = sum(row[local] for row in vote_rows) if local is not None else 0
+        match = yes > votes / 2
+        supported += int(match)
+        details.append({**item, "support_votes": yes, "total_votes": votes if local is not None else 0, "match": match})
+    return {
+        "cited_match_rate": supported / len(items) if items else 0.0,
+        "cited_count": len(items),
+        "cited_supported": supported,
+        "cited_details": details,
+    }
+
+
+def extract_noncited(report: str, cited: list[dict], model: MiniMaxClient, limit: int = 20) -> list[str]:
+    prompt = (
+        "Extract externally verifiable factual claims from this report that do not contain a URL citation. "
+        "Exclude opinions, headings, common knowledge, vague statements, and any claim already represented in CITED. "
+        f"Return JSON {{\"statements\":[strings]}} with at most {limit} atomic claims.\n\n"
+        f"REPORT:\n{report}\n\nCITED:\n{json.dumps([x['statement'] for x in cited], ensure_ascii=False)}"
+    )
+    value = model.generate_json(
+        [{"role": "user", "content": prompt}],
+        model=model.settings.judge_model,
+        temperature=0,
+        max_tokens=4096,
+        cache_namespace=f"noncited-extract-v1:{model.settings.judge_model}",
+    )
+    if isinstance(value, dict):
+        value = value.get("statements", [])
+    return [str(item).strip() for item in value if str(item).strip()][:limit]
+
+
+def evaluate_noncited(
+    statements: list[str], model: MiniMaxClient, scholar, cutoff, votes: int = 3
+) -> dict:
+    records = []
+    for statement in statements:
+        evidence = scholar.search(statement[:300], cutoff=cutoff, limit=3)
+        records.append({
+            "claim": statement,
+            "evidence": [{"title": p.title, "abstract": p.abstract, "url": p.url} for p in evidence if p.abstract][:3],
+        })
+    vote_rows: list[list[bool]] = []
+    if records:
+        prompt = (
+            "Verify each claim using only its supplied web-retrieved scholarly evidence. A claim is true only when the evidence "
+            "directly supports it; insufficient evidence is false. Return JSON {\"decisions\":[{\"match\":true|false}, ...]} "
+            "in exactly the input order.\n\n" + json.dumps(records, ensure_ascii=False)
+        )
+        for vote in range(votes):
+            value = model.generate_json(
+                [{"role": "user", "content": prompt}],
+                model=model.settings.judge_model,
+                temperature=0.2,
+                max_tokens=4096,
+                cache_namespace=f"noncited-judge-v1:{model.settings.judge_model}:vote-{vote}",
+            )
+            vote_rows.append(_parse_decisions(value, len(records)))
+    correct = 0
+    details = []
+    for index, record in enumerate(records):
+        yes = sum(row[index] for row in vote_rows)
+        decision = yes > votes / 2
+        correct += int(decision)
+        details.append({**record, "true_votes": yes, "total_votes": votes, "decision": decision})
+    return {
+        "noncited_factual_accuracy": correct / len(records) if records else 0.0,
+        "noncited_count": len(records),
+        "noncited_correct": correct,
+        "noncited_details": details,
+    }
