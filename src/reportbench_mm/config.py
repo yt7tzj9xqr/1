@@ -33,6 +33,8 @@ class Settings:
     rag_seed_count: int = 4
     rag_depth: int = 3
     rag_max_papers: int = 40
+    baseline_papers: int = 12
+    evidence_char_limit: int = 18000
 
     @classmethod
     def load(cls, root: Path | None = None) -> "Settings":

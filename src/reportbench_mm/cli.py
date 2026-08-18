@@ -8,6 +8,9 @@ from .cache import JsonCache
 from .config import Settings
 from .dataset import load_tasks, stratified_subset, write_tasks
 from .models import MiniMaxClient
+from .pipelines import BaselinePipeline
+from .providers import OpenAlexProvider
+from .runner import ExperimentRunner
 
 
 def command_prepare(args: argparse.Namespace) -> None:
@@ -37,6 +40,24 @@ def command_smoke(args: argparse.Namespace) -> None:
     print("MINIMAX_OK")
 
 
+def command_run_baseline(args: argparse.Namespace) -> None:
+    settings = Settings.load()
+    tasks = load_tasks(Path(args.tasks))[: args.limit]
+    if not args.execute:
+        print(json.dumps({"status": "dry-run", "model": settings.model, "system": "baseline", "tasks": [t.arxiv_id for t in tasks]}, indent=2))
+        return
+    cache = JsonCache(settings.root / "cache" / "runtime.sqlite3")
+    model = MiniMaxClient(settings, cache)
+    pipeline = BaselinePipeline(settings, model, OpenAlexProvider(cache, settings.openalex_mailto))
+    runner = ExperimentRunner(settings.root / "runs", settings.model, "baseline")
+    summary = {"completed": 0, "skipped": 0, "failed": 0}
+    for task in tasks:
+        status = runner.run_task(task, pipeline, overwrite=args.overwrite)
+        summary[status] += 1
+        print(f"{task.arxiv_id}: {status}")
+    print(json.dumps(summary, indent=2))
+
+
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(prog="reportbench-mm")
     sub = parser.add_subparsers(required=True)
@@ -49,6 +70,12 @@ def build_parser() -> argparse.ArgumentParser:
     smoke = sub.add_parser("smoke-api")
     smoke.add_argument("--execute", action="store_true")
     smoke.set_defaults(func=command_smoke)
+    baseline = sub.add_parser("run-baseline")
+    baseline.add_argument("--tasks", default="data/subsets/reportbench_30.jsonl")
+    baseline.add_argument("--limit", type=int, default=1)
+    baseline.add_argument("--execute", action="store_true")
+    baseline.add_argument("--overwrite", action="store_true")
+    baseline.set_defaults(func=command_run_baseline)
     return parser
 
 
@@ -59,4 +86,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

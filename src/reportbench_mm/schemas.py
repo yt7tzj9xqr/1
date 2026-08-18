@@ -36,7 +36,7 @@ class Paper:
     referenced_work_ids: list[str] = field(default_factory=list)
     depth: int = 0
     relevance: float = 0.0
+    source: str = "openalex"
 
     def to_dict(self) -> dict[str, Any]:
         return asdict(self)
-
