@@ -36,6 +36,22 @@ def anchor_coverage(paper: Paper, anchor_terms: set[str]) -> float:
     return len(anchor_terms & content) / len(anchor_terms)
 
 
+def matches_anchor_phrase(paper: Paper, anchor_query: str) -> bool:
+    anchor = normalize_text(anchor_query)
+    content = normalize_text(f"{paper.title} {paper.abstract}")
+    if not anchor:
+        return True
+    if anchor in content:
+        return True
+    terms = keywords(anchor_query)
+    # Longer named topics tolerate one missing modifier; two-term topics require the exact phrase.
+    return len(terms) >= 4 and anchor_coverage(paper, terms) >= 0.75
+
+
+def normalize_text(value: str) -> str:
+    return " ".join(re.findall(r"[a-z0-9]+", value.lower()))
+
+
 class CitationRagPipeline:
     """Builds an ephemeral, per-task citation graph; only raw API responses are cached."""
 
@@ -48,12 +64,13 @@ class CitationRagPipeline:
         cutoff = extract_cutoff(task.prompt)
         terms = keywords(f"{task.application_domain} {task.prompt}")
         queries = search_queries(task.prompt, limit=5)
-        anchor_terms = keywords(queries[0]) if queries else terms
+        anchor_query = queries[0] if queries else ""
+        anchor_terms = keywords(anchor_query) if anchor_query else terms
         seeds: list[Paper] = []
         for query in queries:
             seeds.extend(self.scholar.search(query, cutoff=cutoff, limit=8))
         seeds = filter_papers(seeds, forbidden_title=task.title, cutoff=cutoff)
-        seeds = [paper for paper in seeds if anchor_coverage(paper, anchor_terms) >= 0.5]
+        seeds = [paper for paper in seeds if matches_anchor_phrase(paper, anchor_query)]
         for paper in seeds:
             paper.relevance = score_paper(paper, terms)
         seeds.sort(key=lambda paper: paper.relevance, reverse=True)

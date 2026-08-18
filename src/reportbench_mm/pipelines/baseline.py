@@ -4,7 +4,7 @@ from ..config import Settings
 from ..models import MiniMaxClient
 from ..prompts import BASELINE_SYSTEM, evidence_block
 from ..providers.openalex import OpenAlexProvider, extract_cutoff, filter_papers, search_queries
-from .rag import anchor_coverage, keywords, score_paper
+from .rag import keywords, matches_anchor_phrase, score_paper
 from ..schemas import Paper, Task
 
 
@@ -22,14 +22,14 @@ class BaselinePipeline:
             found.extend(self.scholar.search(query, cutoff=cutoff, limit=10))
         found = filter_papers(found, forbidden_title=task.title, cutoff=cutoff)
         query_terms = keywords(task.prompt)
-        anchor_terms = keywords(queries[0]) if queries else query_terms
+        anchor_query = queries[0] if queries else ""
         for paper in found:
             paper.relevance = score_paper(paper, query_terms)
         usable = sorted(
             (
                 paper for paper in found
                 if paper.abstract and paper.url and paper.relevance >= 0.08
-                and anchor_coverage(paper, anchor_terms) >= 0.5
+                and matches_anchor_phrase(paper, anchor_query)
             ),
             key=lambda paper: paper.relevance,
             reverse=True,
