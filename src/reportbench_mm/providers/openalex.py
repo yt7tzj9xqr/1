@@ -3,7 +3,9 @@ from __future__ import annotations
 from datetime import date
 import json
 import re
+import time
 from typing import Any
+from urllib.error import HTTPError, URLError
 from urllib.parse import urlencode
 from urllib.request import Request, urlopen
 
@@ -118,8 +120,23 @@ class OpenAlexProvider:
             if params:
                 url += "?" + urlencode(params)
             req = Request(url, headers={"User-Agent": "ReportBench-MiniMax/0.1"})
-            with urlopen(req, timeout=self.timeout) as response:
-                return json.loads(response.read().decode("utf-8"))
+            last_error: Exception | None = None
+            for attempt in range(5):
+                try:
+                    with urlopen(req, timeout=self.timeout) as response:
+                        return json.loads(response.read().decode("utf-8"))
+                except HTTPError as exc:
+                    last_error = exc
+                    if exc.code not in {429, 500, 502, 503, 504} or attempt == 4:
+                        raise
+                except (URLError, TimeoutError) as exc:
+                    last_error = exc
+                    if attempt == 4:
+                        raise
+                delay = min(16, 2 ** attempt)
+                print(f"OpenAlex transient error; retry {attempt + 2}/5 in {delay}s", flush=True)
+                time.sleep(delay)
+            raise RuntimeError(f"OpenAlex request failed: {last_error}")
 
         return self.cache.get_or_create("openalex-v1", payload, request)
 
