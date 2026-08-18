@@ -3,7 +3,7 @@ from __future__ import annotations
 from ..config import Settings
 from ..models import MiniMaxClient
 from ..prompts import BASELINE_SYSTEM, evidence_block
-from ..providers.openalex import OpenAlexProvider, extract_cutoff, filter_papers
+from ..providers.openalex import OpenAlexProvider, compact_query, extract_cutoff, filter_papers
 from ..schemas import Paper, Task
 
 
@@ -15,7 +15,7 @@ class BaselinePipeline:
 
     def retrieve(self, task: Task) -> list[Paper]:
         cutoff = extract_cutoff(task.prompt)
-        query = f"{task.application_domain}: {task.prompt}"
+        query = compact_query(task.prompt)
         found = self.scholar.search(query, cutoff=cutoff, limit=self.settings.baseline_papers * 2)
         found = filter_papers(found, forbidden_title=task.title, cutoff=cutoff)
         usable = [paper for paper in found if paper.abstract and paper.url]
@@ -35,4 +35,3 @@ class BaselinePipeline:
             cache_namespace=f"baseline-report-v1:{self.settings.model}",
         )
         return report, papers
-

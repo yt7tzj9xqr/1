@@ -41,6 +41,28 @@ def normalize_title(value: str) -> str:
     return " ".join(re.findall(r"[a-z0-9]+", value.lower()))
 
 
+QUERY_STOP_WORDS = {
+    "please", "help", "research", "researching", "application", "field", "within", "aim", "understand",
+    "focus", "summarizing", "analyzing", "methods", "based", "different", "types", "examining", "developments",
+    "characteristics", "ensure", "referenced", "papers", "published", "before", "such", "including", "domain",
+    "that", "this", "with", "from", "into", "were", "all", "and", "the", "for",
+}
+
+
+def compact_query(prompt: str, max_terms: int = 18) -> str:
+    terms: list[str] = []
+    seen: set[str] = set()
+    for word in re.findall(r"[A-Za-z][A-Za-z0-9-]{2,}", prompt):
+        normalized = word.lower()
+        if normalized in QUERY_STOP_WORDS or normalized in seen or re.fullmatch(r"20\d{2}", normalized):
+            continue
+        seen.add(normalized)
+        terms.append(word)
+        if len(terms) >= max_terms:
+            break
+    return " ".join(terms)
+
+
 def _abstract(index: dict[str, list[int]] | None) -> str:
     if not index:
         return ""
@@ -99,6 +121,12 @@ class OpenAlexProvider:
             "/works",
             {"search": query, "filter": ",".join(filters), "per-page": min(limit, 50), "sort": "relevance_score:desc"},
         )
+        if not data.get("results"):
+            fallback_filters = [item for item in filters if not item.startswith("type:")]
+            data = self._get(
+                "/works",
+                {"search": query, "filter": ",".join(fallback_filters), "per-page": min(limit, 50), "sort": "relevance_score:desc"},
+            )
         return [self._paper(work) for work in data.get("results", [])]
 
     def get_work(self, paper_id: str, depth: int = 0) -> Paper | None:
@@ -121,4 +149,3 @@ def filter_papers(papers: list[Paper], *, forbidden_title: str, cutoff: date | N
         seen.add(title)
         accepted.append(paper)
     return accepted
-
