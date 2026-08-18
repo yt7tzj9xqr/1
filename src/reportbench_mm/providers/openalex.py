@@ -135,7 +135,9 @@ class OpenAlexProvider:
                         raise
                 retry_header = last_error.headers.get("Retry-After", "") if isinstance(last_error, HTTPError) else ""
                 retry_after = int(retry_header) if retry_header.isdigit() else 0
-                delay = max(retry_after, min(60, 2 ** attempt))
+                # Some shared-IP quotas return a Retry-After of several hours.
+                # Never freeze a resumable batch that long; fail the task cleanly.
+                delay = min(60, max(retry_after, 2 ** attempt))
                 print(f"OpenAlex transient error; retry {attempt + 2}/8 in {delay}s", flush=True)
                 time.sleep(delay)
             raise RuntimeError(f"OpenAlex request failed: {last_error}")
