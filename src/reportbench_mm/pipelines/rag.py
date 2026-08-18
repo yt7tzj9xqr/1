@@ -125,7 +125,7 @@ class CitationRagPipeline:
             f"APPLICATION DOMAIN:\n{task.application_domain}\n\n"
             "EVIDENCE CARDS (each card is an allowed source; ignore citation-count metadata as factual evidence):\n"
             f"{cards}\n\n"
-            "LENGTH: Write a focused survey of 1,500-2,000 English words. Prioritize the task's central taxonomy and "
+            "LENGTH: Write a focused survey of 900-1,200 English words. This is a hard maximum. Prioritize the task's central taxonomy and "
             "strongest evidence; omit tangential material.\n\n"
             "MANDATORY FINAL CHECK: Before returning the report, inspect every prose sentence. Delete any factual sentence "
             "that lacks an adjacent URL or whose exact claim is not explicit in the cited evidence card. This applies to "
@@ -133,6 +133,6 @@ class CitationRagPipeline:
         )
         report = self.model.generate(
             [{"role": "system", "content": RAG_SYSTEM}, {"role": "user", "content": user}],
-            cache_namespace=f"citation-rag-report-v4:{self.settings.model}",
+            cache_namespace=f"citation-rag-report-v5:{self.settings.model}",
         )
         return report, papers
