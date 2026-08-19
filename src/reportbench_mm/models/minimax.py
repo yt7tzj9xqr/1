@@ -58,7 +58,10 @@ class MiniMaxClient:
                     if exc.code not in {429, 500, 502, 503, 504, 529} or attempt == 7:
                         raise last_error from exc
                 except (URLError, RemoteDisconnected, ConnectionResetError, TimeoutError) as exc:
-                    last_error = RuntimeError(f"MiniMax API connection failed: {exc.reason}")
+                    # URLError exposes ``reason``, while socket/http.client
+                    # exceptions (notably RemoteDisconnected) do not.
+                    detail = getattr(exc, "reason", str(exc))
+                    last_error = RuntimeError(f"MiniMax API connection failed: {detail}")
                     if attempt == 7:
                         raise last_error from exc
                 delay = min(60, 2 ** attempt)
