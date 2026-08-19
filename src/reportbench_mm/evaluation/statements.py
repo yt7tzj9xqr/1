@@ -132,8 +132,8 @@ def extract_noncited(report: str, cited: list[dict], model: MiniMaxClient, limit
         [{"role": "user", "content": prompt}],
         model=model.settings.judge_model,
         temperature=0,
-        max_tokens=8192,
-        cache_namespace=f"noncited-extract-v2:{model.settings.judge_model}",
+        max_tokens=16384,
+        cache_namespace=f"noncited-extract-v3:{model.settings.judge_model}",
     )
     if isinstance(value, dict):
         value = value.get("statements", [])
