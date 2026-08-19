@@ -73,6 +73,11 @@ def search_queries(prompt: str, limit: int = 5) -> list[str]:
     # Explicitly named and grammatical domain phrases are more reliable than
     # arbitrary capitalized fragments such as "Please Focus Research".
     candidates.extend(re.findall(r'["“]([^"”]{4,100})["”]', prompt))
+    # Capitalized technical phrases often name the actual method family.
+    candidates.extend(
+        match.strip()
+        for match in re.findall(r"(?:[A-Z][A-Za-z0-9-]+(?:\s+|$)){2,5}", prompt)
+    )
     domain_patterns = [
         r"application of\s+(.{3,60}?)\s+(?:in|to)\s+(?:the\s+)?(?:field of\s+)?([^.,;:\n]{3,70})",
         r"(?:field|domain|area) of\s+([^.,;:\n]{4,100})",
@@ -81,11 +86,6 @@ def search_queries(prompt: str, limit: int = 5) -> list[str]:
     for pattern in domain_patterns:
         for match in re.findall(pattern, prompt, flags=re.I):
             candidates.append(" ".join(match) if isinstance(match, tuple) else match)
-    # Capitalized technical phrases are usually the central named topic.
-    candidates.extend(
-        match.strip()
-        for match in re.findall(r"(?:[A-Z][A-Za-z0-9-]+(?:\s+|$)){2,5}", prompt)
-    )
     # Parenthetical examples provide valuable method/subtopic queries.
     for group in re.findall(r"\(([^)]{4,160})\)", prompt):
         cleaned = re.sub(r"\b(?:e\.g\.|such as|and|or)\b", " ", group, flags=re.I)
