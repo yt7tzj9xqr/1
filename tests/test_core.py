@@ -53,6 +53,11 @@ class CoreTests(unittest.TestCase):
         queries = search_queries("I study Knowledge Distillation and Student-Teacher Learning, including logits-based distillation and self-distillation.")
         self.assertTrue(any("Knowledge Distillation" in query for query in queries))
         self.assertFalse(any(query.lower() == "single" for query in queries))
+        watermark = search_queries("I study the application of deep learning in the field of image digital watermarking.")
+        self.assertIn("image digital watermarking", watermark[0].lower())
+        self.assertTrue(any("deep learning image digital watermarking" in query.lower() for query in watermark))
+        speech = search_queries('Research the field of "artificial intelligence-based automated speech therapy tools applied to speech disorders."')
+        self.assertIn("speech therapy", speech[0].lower())
 
     def test_rag_scoring_prefers_relevant_paper(self):
         terms = keywords("graph neural networks for text classification")

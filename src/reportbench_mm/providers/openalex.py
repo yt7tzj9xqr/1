@@ -47,7 +47,9 @@ QUERY_STOP_WORDS = {
     "please", "help", "research", "researching", "application", "field", "within", "aim", "understand",
     "focus", "summarizing", "analyzing", "methods", "based", "different", "types", "examining", "developments",
     "characteristics", "ensure", "referenced", "papers", "published", "before", "such", "including", "domain",
-    "that", "this", "with", "from", "into", "were", "all", "and", "the", "for",
+    "that", "this", "with", "from", "into", "were", "all", "and", "the", "for", "conducting",
+    "literature", "review", "explore", "exploring", "utilized", "provide", "write", "detailed",
+    "comprehensive", "academic", "specific", "requirements", "follows", "current", "state",
 }
 
 
@@ -68,6 +70,17 @@ def compact_query(prompt: str, max_terms: int = 18) -> str:
 def search_queries(prompt: str, limit: int = 5) -> list[str]:
     """Create short, high-recall scholarly queries without using the forbidden survey title."""
     candidates: list[str] = []
+    # Explicitly named and grammatical domain phrases are more reliable than
+    # arbitrary capitalized fragments such as "Please Focus Research".
+    candidates.extend(re.findall(r'["“]([^"”]{4,100})["”]', prompt))
+    domain_patterns = [
+        r"(?:field|domain|area) of\s+([^.,;:\n]{4,100})",
+        r"application of\s+(.{3,60}?)\s+(?:in|to)\s+(?:the\s+)?(?:field of\s+)?([^.,;:\n]{3,70})",
+        r"research(?:ing)?\s+(?:studies related to\s+)?([^.,;:\n]{4,90})",
+    ]
+    for pattern in domain_patterns:
+        for match in re.findall(pattern, prompt, flags=re.I):
+            candidates.append(" ".join(match) if isinstance(match, tuple) else match)
     # Capitalized technical phrases are usually the central named topic.
     candidates.extend(
         match.strip()
@@ -83,7 +96,14 @@ def search_queries(prompt: str, limit: int = 5) -> list[str]:
     unique: list[str] = []
     seen: set[str] = set()
     for candidate in candidates:
+        candidate = re.split(
+            r"\b(?:before|on or before|published before|published on or before|ensure|note that|and ensure)\b",
+            candidate,
+            maxsplit=1,
+            flags=re.I,
+        )[0]
         candidate = " ".join(candidate.split()).strip(" .,:;-")
+        candidate = candidate.strip('"“”')
         key = candidate.lower()
         if len(candidate) < 4 or len(candidate.split()) < 2 or key in seen:
             continue
