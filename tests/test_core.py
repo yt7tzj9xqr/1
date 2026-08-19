@@ -9,6 +9,7 @@ from reportbench_mm.providers.openalex import compact_query, extract_cutoff, fil
 from reportbench_mm.schemas import Paper
 from reportbench_mm.pipelines.rag import anchor_coverage, keywords, matches_anchor_phrase, normalize_source_citations, score_paper
 from reportbench_mm.config import Settings
+from reportbench_mm.providers.composite import CompositeScholarProvider
 from reportbench_mm.evaluation.reference import maximum_matches, normalize_url, title_match
 from reportbench_mm.evaluation.statements import cited_statements
 
@@ -76,6 +77,19 @@ class CoreTests(unittest.TestCase):
         self.assertIn("(https://example.org/one)", normalized)
         self.assertIn("- https://example.org/one", normalized)
         self.assertNotIn("Source 1", normalized)
+
+    def test_scholar_provider_falls_back_after_failure(self):
+        class Failed:
+            def search(self, *args, **kwargs):
+                raise RuntimeError("limited")
+
+        class FreeFallback:
+            def search(self, *args, **kwargs):
+                return [Paper("fallback", "Recovered Paper", 2020, "https://example.org")]
+
+        provider = CompositeScholarProvider([Failed(), FreeFallback()])
+        papers = provider.search("topic", cutoff=None, limit=3)
+        self.assertEqual(papers[0].title, "Recovered Paper")
 
     def test_reference_matching_is_one_to_one(self):
         self.assertTrue(title_match("Graph Neural Networks: A Survey", "Graph Neural Networks A Survey"))

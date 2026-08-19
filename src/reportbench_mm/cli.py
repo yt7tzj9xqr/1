@@ -9,12 +9,20 @@ from .config import Settings
 from .dataset import load_tasks, stratified_subset, write_tasks
 from .models import MiniMaxClient
 from .pipelines import BaselinePipeline, CitationRagPipeline
-from .providers import OpenAlexProvider
+from .providers import CompositeScholarProvider, CrossrefProvider, OpenAlexProvider, SemanticScholarProvider
 from .runner import ExperimentRunner
 from .evaluation.reference import evaluate_reference
 from .evaluation.aggregate import aggregate
 from .evaluation.statements import cited_statements, evaluate_cited, evaluate_noncited, extract_noncited
 from .providers.openalex import extract_cutoff
+
+
+def scholar_provider(cache: JsonCache, settings: Settings) -> CompositeScholarProvider:
+    return CompositeScholarProvider([
+        OpenAlexProvider(cache, settings.openalex_mailto),
+        SemanticScholarProvider(cache),
+        CrossrefProvider(cache, settings.openalex_mailto),
+    ])
 
 
 def command_prepare(args: argparse.Namespace) -> None:
@@ -52,7 +60,7 @@ def command_run_baseline(args: argparse.Namespace) -> None:
         return
     cache = JsonCache(settings.root / "cache" / "runtime.sqlite3")
     model = MiniMaxClient(settings, cache)
-    pipeline = BaselinePipeline(settings, model, OpenAlexProvider(cache, settings.openalex_mailto))
+    pipeline = BaselinePipeline(settings, model, scholar_provider(cache, settings))
     runner = ExperimentRunner(settings.root / "runs", settings.model, "baseline")
     summary = {"completed": 0, "skipped": 0, "failed": 0}
     for task in tasks:
@@ -70,7 +78,7 @@ def command_run_rag(args: argparse.Namespace) -> None:
         return
     cache = JsonCache(settings.root / "cache" / "runtime.sqlite3")
     model = MiniMaxClient(settings, cache)
-    pipeline = CitationRagPipeline(settings, model, OpenAlexProvider(cache, settings.openalex_mailto))
+    pipeline = CitationRagPipeline(settings, model, scholar_provider(cache, settings))
     runner = ExperimentRunner(settings.root / "runs", settings.model, "citation-rag")
     summary = {"completed": 0, "skipped": 0, "failed": 0}
     for task in tasks:
@@ -105,7 +113,7 @@ def command_evaluate_statements(args: argparse.Namespace) -> None:
     settings.require_api_key()
     cache = JsonCache(settings.root / "cache" / "evaluation.sqlite3")
     model = MiniMaxClient(settings, cache)
-    scholar = OpenAlexProvider(cache, settings.openalex_mailto)
+    scholar = scholar_provider(cache, settings)
     output_root = Path(args.output)
     metric_files: list[Path] = []
     for result_path in sorted(Path(args.run_root).glob("*/result.json")):

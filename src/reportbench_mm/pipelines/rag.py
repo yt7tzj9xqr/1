@@ -6,7 +6,7 @@ import re
 from ..config import Settings
 from ..models import MiniMaxClient
 from ..prompts import RAG_SYSTEM, evidence_block
-from ..providers.openalex import OpenAlexProvider, extract_cutoff, filter_papers, search_queries
+from ..providers.openalex import extract_cutoff, filter_papers, search_queries
 from ..schemas import Paper, Task
 
 
@@ -68,7 +68,7 @@ def normalize_source_citations(report: str, papers: list[Paper]) -> str:
 class CitationRagPipeline:
     """Builds an ephemeral, per-task citation graph; only raw API responses are cached."""
 
-    def __init__(self, settings: Settings, model: MiniMaxClient, scholar: OpenAlexProvider):
+    def __init__(self, settings: Settings, model: MiniMaxClient, scholar):
         self.settings = settings
         self.model = model
         self.scholar = scholar

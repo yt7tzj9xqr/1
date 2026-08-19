@@ -3,13 +3,13 @@ from __future__ import annotations
 from ..config import Settings
 from ..models import MiniMaxClient
 from ..prompts import BASELINE_SYSTEM, evidence_block
-from ..providers.openalex import OpenAlexProvider, extract_cutoff, filter_papers, search_queries
+from ..providers.openalex import extract_cutoff, filter_papers, search_queries
 from .rag import anchor_coverage, keywords, matches_anchor_phrase, score_paper
 from ..schemas import Paper, Task
 
 
 class BaselinePipeline:
-    def __init__(self, settings: Settings, model: MiniMaxClient, scholar: OpenAlexProvider):
+    def __init__(self, settings: Settings, model: MiniMaxClient, scholar):
         self.settings = settings
         self.model = model
         self.scholar = scholar
