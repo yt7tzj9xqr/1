@@ -141,14 +141,31 @@ def extract_noncited(report: str, cited: list[dict], model: MiniMaxClient, limit
 
 
 def evaluate_noncited(
-    statements: list[str], model: MiniMaxClient, scholar, cutoff, votes: int = 3
+    statements: list[str], model: MiniMaxClient, scholar, cutoff, votes: int = 3,
+    local_papers: list[dict] | None = None,
 ) -> dict:
     records = []
     for statement in statements:
-        evidence = scholar.search(statement[:300], cutoff=cutoff, limit=3)
+        claim_terms = set(re.findall(r"[a-z][a-z0-9-]{2,}", statement.lower()))
+        ranked_local = sorted(
+            (paper for paper in (local_papers or []) if paper.get("abstract")),
+            key=lambda paper: len(
+                claim_terms & set(re.findall(r"[a-z][a-z0-9-]{2,}", f"{paper.get('title', '')} {paper.get('abstract', '')}".lower()))
+            ),
+            reverse=True,
+        )
+        evidence_rows = [
+            {"title": p.get("title"), "abstract": p.get("abstract"), "url": p.get("url")}
+            for p in ranked_local[:3]
+        ]
+        if not evidence_rows:
+            evidence = scholar.search(statement[:300], cutoff=cutoff, limit=3)
+            evidence_rows = [
+                {"title": p.title, "abstract": p.abstract, "url": p.url} for p in evidence if p.abstract
+            ][:3]
         records.append({
             "claim": statement,
-            "evidence": [{"title": p.title, "abstract": p.abstract, "url": p.url} for p in evidence if p.abstract][:3],
+            "evidence": evidence_rows,
         })
     vote_rows: list[list[bool]] = []
     if records:

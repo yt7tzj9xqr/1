@@ -130,7 +130,10 @@ def command_evaluate_statements(args: argparse.Namespace) -> None:
         cited = cited_statements(result["response"])
         cited_metrics = evaluate_cited(result_path, model, votes=args.votes)
         noncited = extract_noncited(result["response"], cited, model, limit=args.max_noncited)
-        noncited_metrics = evaluate_noncited(noncited, model, scholar, extract_cutoff(task["prompt"]), votes=args.votes)
+        noncited_metrics = evaluate_noncited(
+            noncited, model, scholar, extract_cutoff(task["prompt"]), votes=args.votes,
+            local_papers=result.get("papers", []),
+        )
         ref_path = Path(args.reference_root) / f"{task['arxiv_id']}.json"
         base = json.loads(ref_path.read_text(encoding="utf-8")) if ref_path.exists() else {
             "arxiv_id": task["arxiv_id"], "model": result["model"], "system": result["system"]
