@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+from http.client import RemoteDisconnected
 import re
 import time
 from typing import Any
@@ -56,7 +57,7 @@ class MiniMaxClient:
                     last_error = RuntimeError(f"MiniMax API HTTP {exc.code}: {detail}")
                     if exc.code not in {429, 500, 502, 503, 504, 529} or attempt == 7:
                         raise last_error from exc
-                except URLError as exc:
+                except (URLError, RemoteDisconnected, ConnectionResetError, TimeoutError) as exc:
                     last_error = RuntimeError(f"MiniMax API connection failed: {exc.reason}")
                     if attempt == 7:
                         raise last_error from exc
