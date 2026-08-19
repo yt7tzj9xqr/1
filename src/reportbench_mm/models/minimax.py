@@ -47,21 +47,21 @@ class MiniMaxClient:
                 method="POST",
             )
             last_error: Exception | None = None
-            for attempt in range(5):
+            for attempt in range(8):
                 try:
                     with urlopen(http_request, timeout=self.settings.request_timeout) as response:
                         return json.loads(response.read().decode("utf-8"))
                 except HTTPError as exc:
                     detail = exc.read().decode("utf-8", errors="replace")[:500]
                     last_error = RuntimeError(f"MiniMax API HTTP {exc.code}: {detail}")
-                    if exc.code not in {429, 500, 502, 503, 504, 529} or attempt == 4:
+                    if exc.code not in {429, 500, 502, 503, 504, 529} or attempt == 7:
                         raise last_error from exc
                 except URLError as exc:
                     last_error = RuntimeError(f"MiniMax API connection failed: {exc.reason}")
-                    if attempt == 4:
+                    if attempt == 7:
                         raise last_error from exc
-                delay = min(30, 2 ** attempt)
-                print(f"MiniMax transient error; retry {attempt + 2}/5 in {delay}s", flush=True)
+                delay = min(60, 2 ** attempt)
+                print(f"MiniMax transient error; retry {attempt + 2}/8 in {delay}s", flush=True)
                 time.sleep(delay)
             raise RuntimeError(f"MiniMax request failed: {last_error}")
 
