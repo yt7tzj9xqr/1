@@ -81,7 +81,9 @@ class CitationRagPipeline:
         anchor_terms = keywords(anchor_query) if anchor_query else terms
         seeds: list[Paper] = []
         for query in queries:
-            seeds.extend(self.scholar.search(query, cutoff=cutoff, limit=8))
+            # Match the baseline search page size so both systems reuse the
+            # exact same cached free-API response for a fair comparison.
+            seeds.extend(self.scholar.search(query, cutoff=cutoff, limit=10))
         seeds = filter_papers(seeds, forbidden_title=task.title, cutoff=cutoff)
         strict_seeds = [paper for paper in seeds if matches_anchor_phrase(paper, anchor_query)]
         if strict_seeds:
