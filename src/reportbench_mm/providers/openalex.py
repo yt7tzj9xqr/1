@@ -74,8 +74,8 @@ def search_queries(prompt: str, limit: int = 5) -> list[str]:
     # arbitrary capitalized fragments such as "Please Focus Research".
     candidates.extend(re.findall(r'["“]([^"”]{4,100})["”]', prompt))
     domain_patterns = [
-        r"(?:field|domain|area) of\s+([^.,;:\n]{4,100})",
         r"application of\s+(.{3,60}?)\s+(?:in|to)\s+(?:the\s+)?(?:field of\s+)?([^.,;:\n]{3,70})",
+        r"(?:field|domain|area) of\s+([^.,;:\n]{4,100})",
         r"research(?:ing)?\s+(?:studies related to\s+)?([^.,;:\n]{4,90})",
     ]
     for pattern in domain_patterns:
