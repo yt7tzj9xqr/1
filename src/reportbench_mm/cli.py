@@ -25,6 +25,14 @@ def scholar_provider(cache: JsonCache, settings: Settings) -> CompositeScholarPr
     ])
 
 
+def selected_tasks(path: str, limit: int, ids: str = ""):
+    tasks = load_tasks(Path(path))
+    wanted = {item.strip() for item in ids.split(",") if item.strip()}
+    if wanted:
+        tasks = [task for task in tasks if task.arxiv_id in wanted]
+    return tasks[:limit]
+
+
 def command_prepare(args: argparse.Namespace) -> None:
     tasks = load_tasks(Path(args.input))
     subset = stratified_subset(tasks, args.count, args.seed)
@@ -54,7 +62,7 @@ def command_smoke(args: argparse.Namespace) -> None:
 
 def command_run_baseline(args: argparse.Namespace) -> None:
     settings = Settings.load()
-    tasks = load_tasks(Path(args.tasks))[: args.limit]
+    tasks = selected_tasks(args.tasks, args.limit, args.ids)
     if not args.execute:
         print(json.dumps({"status": "dry-run", "model": settings.model, "system": "baseline", "tasks": [t.arxiv_id for t in tasks]}, indent=2))
         return
@@ -72,7 +80,7 @@ def command_run_baseline(args: argparse.Namespace) -> None:
 
 def command_run_rag(args: argparse.Namespace) -> None:
     settings = Settings.load()
-    tasks = load_tasks(Path(args.tasks))[: args.limit]
+    tasks = selected_tasks(args.tasks, args.limit, args.ids)
     if not args.execute:
         print(json.dumps({"status": "dry-run", "model": settings.model, "system": "citation-rag", "tasks": [t.arxiv_id for t in tasks]}, indent=2))
         return
@@ -152,12 +160,14 @@ def build_parser() -> argparse.ArgumentParser:
     baseline = sub.add_parser("run-baseline")
     baseline.add_argument("--tasks", default="data/subsets/reportbench_30.jsonl")
     baseline.add_argument("--limit", type=int, default=1)
+    baseline.add_argument("--ids", default="", help="Comma-separated arXiv IDs to run")
     baseline.add_argument("--execute", action="store_true")
     baseline.add_argument("--overwrite", action="store_true")
     baseline.set_defaults(func=command_run_baseline)
     rag = sub.add_parser("run-rag")
     rag.add_argument("--tasks", default="data/subsets/reportbench_30.jsonl")
     rag.add_argument("--limit", type=int, default=1)
+    rag.add_argument("--ids", default="", help="Comma-separated arXiv IDs to run")
     rag.add_argument("--execute", action="store_true")
     rag.add_argument("--overwrite", action="store_true")
     rag.set_defaults(func=command_run_rag)
