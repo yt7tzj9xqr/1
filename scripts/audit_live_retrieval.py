@@ -23,12 +23,14 @@ def main() -> None:
     parser.add_argument("--workers", type=int, default=2)
     parser.add_argument("--output", default="artifacts/retrieval_audit_10.json")
     parser.add_argument("--pool-limit", type=int, default=12, help="Candidate papers retained per task")
+    parser.add_argument("--skip-reader", action="store_true", help="Skip page enrichment for a fast ceiling audit")
     args = parser.parse_args()
 
     settings = replace(Settings.load(), baseline_papers=max(1, args.pool_limit))
     cache = JsonCache(settings.root / "cache" / "runtime.sqlite3")
     pipeline = BaselinePipeline(
-        settings, MiniMaxClient(settings, cache), scholar_provider(cache, settings), WebPageReader(cache)
+        settings, MiniMaxClient(settings, cache), scholar_provider(cache, settings),
+        None if args.skip_reader else WebPageReader(cache),
     )
     tasks = load_tasks(Path(args.tasks))[: args.limit]
     rows = []
