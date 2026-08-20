@@ -11,14 +11,27 @@ class CompositeScholarProvider:
 
     def search(self, query: str, *, cutoff: date | None, limit: int = 20) -> list[Paper]:
         errors: list[str] = []
+        collected: list[Paper] = []
+        seen: set[str] = set()
         for provider in self.providers:
             try:
                 papers = provider.search(query, cutoff=cutoff, limit=limit)
-                if papers:
-                    return papers
+                for paper in papers:
+                    key = " ".join(paper.title.lower().split())
+                    if key and key not in seen:
+                        seen.add(key)
+                        collected.append(paper)
+                usable = sum(bool(paper.abstract and paper.url) for paper in collected)
+                # Avoid extra public-API traffic when the first provider already
+                # supplied a useful page; otherwise let the next free provider
+                # repair sparse or abstract-less search results.
+                if usable >= min(limit, max(3, limit // 2)):
+                    return collected[:limit]
             except Exception as exc:
                 errors.append(f"{type(provider).__name__}: {exc}")
                 print(f"scholar fallback: {errors[-1]}", flush=True)
+        if collected:
+            return collected[:limit]
         raise RuntimeError("All free scholarly providers failed: " + " | ".join(errors))
 
     def get_work(self, paper_id: str, depth: int = 0) -> Paper | None:

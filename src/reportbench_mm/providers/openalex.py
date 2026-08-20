@@ -70,6 +70,17 @@ def compact_query(prompt: str, max_terms: int = 18) -> str:
 def search_queries(prompt: str, limit: int = 5) -> list[str]:
     """Create short, high-recall scholarly queries without using the forbidden survey title."""
     candidates: list[str] = []
+    # Preserve the technical subject together with its application domain.
+    # A bare ``field of X`` match (for example, "autonomous driving") is often
+    # much broader than the requested method family ("radar data representations").
+    subject_domain_patterns = [
+        r"(?:advancements?|developments?|progress)\s+in\s+(?:different\s+)?(.{3,80}?)\s+in\s+(?:the\s+)?field\s+of\s+([^.,;:\n]{3,70})",
+        r"(.{3,70}?(?:methods?|approaches|techniques|models|representations?))\s+in\s+(?:the\s+)?field\s+of\s+([^.,;:\n]{3,70})",
+    ]
+    for pattern in subject_domain_patterns:
+        for subject, domain in re.findall(pattern, prompt, flags=re.I):
+            candidates.append(f"{subject} {domain}")
+            candidates.append(subject)
     # Explicitly named and grammatical domain phrases are more reliable than
     # arbitrary capitalized fragments such as "Please Focus Research".
     candidates.extend(re.findall(r'["“]([^"”]{4,100})["”]', prompt))

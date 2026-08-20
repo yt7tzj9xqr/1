@@ -29,6 +29,64 @@ def score_paper(paper: Paper, query_terms: set[str]) -> float:
     return 0.72 * overlap + 0.18 * min(1.0, impact) + abstract_bonus - depth_penalty
 
 
+SECONDARY_LITERATURE_RE = re.compile(
+    r"\b(?:survey|review|overview|meta-analysis|bibliometric|systematic mapping)\b", re.I
+)
+
+
+def writing_score(paper: Paper, query_terms: set[str], anchor_terms: set[str]) -> float:
+    """Rank evidence for citation accuracy, separately from graph traversal.
+
+    ReportBench's gold references predominantly reward central primary/canonical
+    work. Deep graph nodes were useful as traversal bridges in the pilot, but no
+    cited depth-2/3 node matched gold, so depth is deliberately expensive here.
+    """
+    coverage = anchor_coverage(paper, anchor_terms)
+    title_overlap = len(keywords(paper.title) & query_terms) / max(1, len(query_terms))
+    impact = min(1.0, math.log1p(max(0, paper.cited_by_count)) / 10.0)
+    secondary_penalty = 0.09 if paper.depth == 0 and SECONDARY_LITERATURE_RE.search(paper.title) else 0.0
+    return (
+        0.42 * paper.relevance
+        + 0.25 * coverage
+        + 0.16 * title_overlap
+        + 0.17 * impact
+        - 0.18 * max(0, paper.depth - 1)
+        - secondary_penalty
+    )
+
+
+def select_writing_papers(papers: list[Paper], task: Task, limit: int) -> list[Paper]:
+    """Select auditable evidence while keeping deep nodes traversal-only."""
+    queries = search_queries(task.prompt, limit=5)
+    anchor_terms = keywords(queries[0]) if queries else keywords(task.application_domain)
+    query_terms = keywords(f"{task.application_domain} {task.prompt}")
+    eligible = [
+        paper for paper in papers
+        if paper.depth <= 1
+        and paper.abstract
+        and paper.url
+        and (
+            paper.depth == 0
+            or anchor_coverage(paper, anchor_terms) >= 0.25
+            or paper.relevance >= 0.20
+        )
+    ]
+    selected = sorted(
+        eligible,
+        key=lambda paper: writing_score(paper, query_terms, anchor_terms),
+        reverse=True,
+    )[:limit]
+    if selected:
+        return selected
+    # Sparse metadata must not make the whole task unrunnable. This fallback is
+    # intentionally small and prefers the shallowest available evidence.
+    usable = [paper for paper in papers if paper.abstract and paper.url]
+    return sorted(
+        usable,
+        key=lambda paper: (paper.depth, -writing_score(paper, query_terms, anchor_terms)),
+    )[: min(limit, 4)]
+
+
 def anchor_coverage(paper: Paper, anchor_terms: set[str]) -> float:
     if not anchor_terms:
         return 1.0
@@ -99,14 +157,14 @@ class CitationRagPipeline:
         frontier = seeds[: self.settings.rag_seed_count]
         graph: dict[str, Paper] = {paper.paper_id: paper for paper in frontier}
 
-        # Fixed total budget prevents exponential growth and makes every task resumable.
-        per_parent = {1: 5, 2: 3, 3: 2}
+        # Inspect a broader set of references, then admit only the best global
+        # candidates at each depth. Reference-list order is not a relevance rank.
+        inspect_per_parent = {1: 12, 2: 6, 3: 4}
+        depth_budget = {1: 16, 2: 12, 3: 8}
         for depth in range(1, self.settings.rag_depth + 1):
-            next_frontier: list[Paper] = []
+            candidates: dict[str, Paper] = {}
             for parent in frontier:
-                for reference_id in parent.referenced_work_ids[: per_parent.get(depth, 2)]:
-                    if len(graph) >= self.settings.rag_max_papers:
-                        break
+                for reference_id in parent.referenced_work_ids[: inspect_per_parent.get(depth, 4)]:
                     if reference_id in graph:
                         continue
                     paper = self.scholar.get_work(reference_id, depth=depth)
@@ -120,10 +178,19 @@ class CitationRagPipeline:
                     # Weakly related references are graph context, not writing evidence.
                     if paper.relevance < 0.08:
                         continue
-                    graph[paper.paper_id] = paper
-                    next_frontier.append(paper)
-                if len(graph) >= self.settings.rag_max_papers:
-                    break
+                    previous = candidates.get(paper.paper_id)
+                    if previous is None or paper.relevance > previous.relevance:
+                        candidates[paper.paper_id] = paper
+            ranked_candidates = sorted(
+                candidates.values(),
+                key=lambda paper: paper.relevance,
+                reverse=True,
+            )
+            remaining = self.settings.rag_max_papers - len(graph)
+            admitted = ranked_candidates[: min(depth_budget.get(depth, 8), remaining)]
+            for paper in admitted:
+                graph[paper.paper_id] = paper
+            next_frontier = admitted
             next_frontier.sort(key=lambda paper: paper.relevance, reverse=True)
             frontier = next_frontier[: max(4, self.settings.rag_seed_count * 2)]
             if not frontier or len(graph) >= self.settings.rag_max_papers:
@@ -140,14 +207,18 @@ class CitationRagPipeline:
         # Keep the complete graph in the result for auditability, but expose only
         # its strongest nodes to the writer. Bridge nodes are useful for traversal
         # and frequently too weakly related to be safe writing evidence.
-        writing_papers = papers[: self.settings.rag_evidence_papers]
+        writing_papers = select_writing_papers(papers, task, self.settings.rag_evidence_papers)
+        if not writing_papers:
+            raise RuntimeError(f"No high-confidence writing evidence found for {task.arxiv_id}")
         cards = evidence_block(writing_papers, self.settings.evidence_char_limit * 2)
         user = (
             f"RESEARCH TASK:\n{task.prompt}\n\nFORBIDDEN SURVEY:\n{task.title}\n\n"
             f"APPLICATION DOMAIN:\n{task.application_domain}\n\n"
             "EVIDENCE CARDS (each card is an allowed source; ignore citation-count metadata as factual evidence):\n"
             f"{cards}\n\n"
-            "LENGTH: Write a focused survey of 900-1,200 English words. This is a hard maximum. Prioritize the task's central taxonomy and "
+            "REFERENCE BUDGET: Cite 6-10 distinct sources. Select the most central primary or canonical works; do not cite a source merely "
+            "because it is highly cited, and avoid secondary surveys when a supplied primary source supports the same point.\n\n"
+            "LENGTH: Write a focused survey of 800-1,050 English words. This is a hard maximum. Prioritize the task's central taxonomy and "
             "strongest evidence; omit tangential material.\n\n"
             "MANDATORY FINAL CHECK: Before returning the report, inspect every prose sentence. Delete any factual sentence "
             "that lacks an adjacent URL or whose exact claim is not explicit in the cited evidence card. This applies to "
@@ -155,7 +226,7 @@ class CitationRagPipeline:
         )
         report = self.model.generate(
             [{"role": "system", "content": RAG_SYSTEM}, {"role": "user", "content": user}],
-            cache_namespace=f"citation-rag-report-v5:{self.settings.model}",
+            cache_namespace=f"citation-rag-report-v6:{self.settings.model}",
         )
         report = normalize_source_citations(report, writing_papers)
         return report, papers
