@@ -4,6 +4,8 @@ from datetime import date
 import html
 import json
 import re
+import threading
+import time
 from typing import Any
 from urllib.parse import quote, urlencode
 from urllib.request import Request, urlopen
@@ -17,6 +19,8 @@ class CrossrefProvider:
 
     def __init__(self, cache: JsonCache, mailto: str = "", timeout: int = 60):
         self.cache, self.mailto, self.timeout = cache, mailto, timeout
+        self._request_lock = threading.Lock()
+        self._last_request = 0.0
 
     def _get(self, path: str, params: dict[str, Any] | None = None) -> Any:
         params = {key: value for key, value in (params or {}).items() if value not in (None, "")}
@@ -27,8 +31,15 @@ class CrossrefProvider:
         def request() -> Any:
             url = f"{self.base_url}{path}" + (("?" + urlencode(params)) if params else "")
             req = Request(url, headers={"User-Agent": "ReportBench-MiniMax/0.1 (mailto: anonymous)"})
-            with urlopen(req, timeout=self.timeout) as response:
-                return json.loads(response.read().decode("utf-8"))
+            with self._request_lock:
+                delay = 0.25 - (time.monotonic() - self._last_request)
+                if delay > 0:
+                    time.sleep(delay)
+                try:
+                    with urlopen(req, timeout=self.timeout) as response:
+                        return json.loads(response.read().decode("utf-8"))
+                finally:
+                    self._last_request = time.monotonic()
 
         return self.cache.get_or_create("crossref-v1", payload, request)
 

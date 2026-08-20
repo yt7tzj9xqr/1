@@ -3,6 +3,7 @@ from __future__ import annotations
 from datetime import date
 import json
 import time
+import threading
 from typing import Any
 from urllib.error import HTTPError, URLError
 from urllib.parse import quote, urlencode
@@ -19,6 +20,8 @@ class SemanticScholarProvider:
     def __init__(self, cache: JsonCache, timeout: int = 60):
         self.cache = cache
         self.timeout = timeout
+        self._request_lock = threading.Lock()
+        self._last_request = 0.0
 
     def _get(self, path: str, params: dict[str, Any] | None = None) -> Any:
         params = {key: value for key, value in (params or {}).items() if value not in (None, "")}
@@ -29,17 +32,24 @@ class SemanticScholarProvider:
             if params:
                 url += "?" + urlencode(params)
             req = Request(url, headers={"User-Agent": "ReportBench-MiniMax/0.1"})
-            for attempt in range(5):
+            with self._request_lock:
+                delay = 1.1 - (time.monotonic() - self._last_request)
+                if delay > 0:
+                    time.sleep(delay)
                 try:
-                    with urlopen(req, timeout=self.timeout) as response:
-                        return json.loads(response.read().decode("utf-8"))
-                except HTTPError as exc:
-                    if exc.code not in {429, 500, 502, 503, 504} or attempt == 4:
-                        raise
-                except (URLError, TimeoutError):
-                    if attempt == 4:
-                        raise
-                time.sleep(min(16, 2 ** attempt))
+                    for attempt in range(5):
+                        try:
+                            with urlopen(req, timeout=self.timeout) as response:
+                                return json.loads(response.read().decode("utf-8"))
+                        except HTTPError as exc:
+                            if exc.code not in {429, 500, 502, 503, 504} or attempt == 4:
+                                raise
+                        except (URLError, TimeoutError):
+                            if attempt == 4:
+                                raise
+                        time.sleep(min(16, 2 ** attempt))
+                finally:
+                    self._last_request = time.monotonic()
             raise RuntimeError("Semantic Scholar request failed")
 
         return self.cache.get_or_create("semantic-scholar-v1", payload, request)

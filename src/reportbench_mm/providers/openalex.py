@@ -4,6 +4,7 @@ from datetime import date
 import json
 import re
 import time
+import threading
 from typing import Any
 from urllib.error import HTTPError, URLError
 from urllib.parse import urlencode
@@ -139,6 +140,8 @@ class OpenAlexProvider:
         self.cache = cache
         self.mailto = mailto
         self.timeout = timeout
+        self._request_lock = threading.Lock()
+        self._last_request = 0.0
 
     def _get(self, path: str, params: dict[str, Any] | None = None) -> Any:
         params = {key: value for key, value in (params or {}).items() if value not in (None, "")}
@@ -151,28 +154,33 @@ class OpenAlexProvider:
             if params:
                 url += "?" + urlencode(params)
             req = Request(url, headers={"User-Agent": "ReportBench-MiniMax/0.1"})
-            last_error: Exception | None = None
-            for attempt in range(8):
+            with self._request_lock:
+                throttle = 1.1 - (time.monotonic() - self._last_request)
+                if throttle > 0:
+                    time.sleep(throttle)
+                last_error: Exception | None = None
                 try:
-                    with urlopen(req, timeout=self.timeout) as response:
-                        return json.loads(response.read().decode("utf-8"))
-                except HTTPError as exc:
-                    last_error = exc
-                    if exc.code not in {429, 500, 502, 503, 504} or attempt == 7:
-                        raise
-                except (URLError, TimeoutError) as exc:
-                    last_error = exc
-                    if attempt == 7:
-                        raise
-                retry_header = last_error.headers.get("Retry-After", "") if isinstance(last_error, HTTPError) else ""
-                retry_after = int(retry_header) if retry_header.isdigit() else 0
-                if retry_after > 300:
-                    raise last_error
-                # Some shared-IP quotas return a Retry-After of several hours.
-                # Never freeze a resumable batch that long; fail the task cleanly.
-                delay = min(60, max(retry_after, 2 ** attempt))
-                print(f"OpenAlex transient error; retry {attempt + 2}/8 in {delay}s", flush=True)
-                time.sleep(delay)
+                    for attempt in range(8):
+                        try:
+                            with urlopen(req, timeout=self.timeout) as response:
+                                return json.loads(response.read().decode("utf-8"))
+                        except HTTPError as exc:
+                            last_error = exc
+                            if exc.code not in {429, 500, 502, 503, 504} or attempt == 7:
+                                raise
+                        except (URLError, TimeoutError) as exc:
+                            last_error = exc
+                            if attempt == 7:
+                                raise
+                        retry_header = last_error.headers.get("Retry-After", "") if isinstance(last_error, HTTPError) else ""
+                        retry_after = int(retry_header) if retry_header.isdigit() else 0
+                        if retry_after > 300:
+                            raise last_error
+                        delay = min(60, max(retry_after, 2 ** attempt))
+                        print(f"OpenAlex transient error; retry {attempt + 2}/8 in {delay}s", flush=True)
+                        time.sleep(delay)
+                finally:
+                    self._last_request = time.monotonic()
             raise RuntimeError(f"OpenAlex request failed: {last_error}")
 
         return self.cache.get_or_create("openalex-v1", payload, request)

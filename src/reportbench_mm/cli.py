@@ -10,7 +10,7 @@ from .config import Settings
 from .dataset import load_tasks, stratified_subset, write_tasks
 from .models import MiniMaxClient
 from .pipelines import BaselinePipeline, CitationRagPipeline
-from .providers import CompositeScholarProvider, CrossrefProvider, OpenAlexProvider, SemanticScholarProvider
+from .providers import ArxivProvider, CompositeScholarProvider, CrossrefProvider, OpenAlexProvider, SemanticScholarProvider
 from .runner import ExperimentRunner
 from .evaluation.reference import evaluate_reference
 from .evaluation.aggregate import aggregate
@@ -22,6 +22,7 @@ def scholar_provider(cache: JsonCache, settings: Settings) -> CompositeScholarPr
     return CompositeScholarProvider([
         OpenAlexProvider(cache, settings.openalex_mailto),
         SemanticScholarProvider(cache),
+        ArxivProvider(cache),
         CrossrefProvider(cache, settings.openalex_mailto),
     ])
 
