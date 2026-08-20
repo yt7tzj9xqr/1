@@ -48,9 +48,12 @@ def plan_search_queries(task: Task, model: MiniMaxClient, limit: int = 5) -> lis
     prompt = (
         "Plan scholarly literature searches for the research task below. Return JSON only as "
         f"{{\"queries\":[strings]}} with exactly {limit} concise search-engine queries. "
-        "Use this fixed allocation: query 1 is the central topic; queries 2 and 3 target likely landmark "
-        "or representative PRIMARY papers (use an exact paper title when you know it with high confidence); "
-        "queries 4 and 5 target distinct named method families, benchmarks, datasets, or application subfields. "
+        "The search engine performs poorly on broad keywords, so use this fixed allocation: query 1 names a "
+        "highly specific central topic; queries 2-5 each target a DIFFERENT method/application branch named in "
+        "the task and should be the exact title of a real landmark or representative paper whenever you know one "
+        "with high confidence. Prefer works that a rigorous survey before the cutoff would cite. For application "
+        "surveys, include application-specific primary papers rather than spending all queries on generic founding "
+        "algorithms. If an exact title is uncertain, combine the distinctive method, task, dataset, and author terms. "
         "Every query must remain unambiguous in the central research topic. Do not emit "
         "generic fragments, instructions, dates, venue names alone, or the forbidden survey title. "
         "Never invent a paper title: when uncertain, use technical keywords instead. Prefer terminology likely "
@@ -64,7 +67,7 @@ def plan_search_queries(task: Task, model: MiniMaxClient, limit: int = 5) -> lis
             # M3 may spend most of a 4k budget in hidden reasoning and return no
             # final JSON. Successful plans stay cached; failed plans get enough
             # room on retry instead of dropping to weak heuristic fragments.
-            max_tokens=8192, cache_namespace=f"search-planner-v3:{model.settings.model}",
+            max_tokens=8192, cache_namespace=f"search-planner-v4:{model.settings.model}",
         )
         planned = value.get("queries", []) if isinstance(value, dict) else value
     except Exception as exc:
