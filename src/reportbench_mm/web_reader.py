@@ -145,7 +145,12 @@ class WebPageReader:
         # Search engines often truncate titles. Prefer explicit scholarly page
         # metadata, but avoid replacing a good paper title with a site heading.
         if page_title and ("..." in current or "…" in current):
-            paper.title = page_title[:500]
+            current_prefix = " ".join(re.findall(r"[a-z0-9]+", current.replace("...", "").replace("…", "").lower()))
+            page_normalized = " ".join(re.findall(r"[a-z0-9]+", page_title.lower()))
+            # Only complete the same title. Error/challenge pages and repository
+            # headings must never replace a usable search-result title.
+            if len(current_prefix) >= 18 and page_normalized.startswith(current_prefix):
+                paper.title = page_title[:500]
         paper.full_text = page.get("text", "")
         return paper
 

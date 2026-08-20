@@ -79,6 +79,24 @@ class CoreTests(unittest.TestCase):
         self.assertEqual(paper.title, "Complete Paper Title")
         self.assertEqual(paper.full_text, "body")
 
+    def test_page_reader_only_completes_matching_truncated_title(self):
+        from reportbench_mm.web_reader import WebPageReader
+
+        class GoodReader(WebPageReader):
+            def read(self, url):
+                return {"title": "Range-Doppler Detection in Automotive Radar with Deep Learning", "text": "body"}
+
+        class ChallengeReader(WebPageReader):
+            def read(self, url):
+                return {"title": "Client Challenge", "text": ""}
+
+        good = Paper("g", "Range-Doppler Detection in Automotive Radar with Deep ...", 2020, "https://x")
+        bad = Paper("b", "Range-Doppler Detection in Automotive Radar with Deep ...", 2020, "https://x")
+        GoodReader(None).enrich(good)
+        ChallengeReader(None).enrich(bad)
+        self.assertEqual(good.title, "Range-Doppler Detection in Automotive Radar with Deep Learning")
+        self.assertIn("...", bad.title)
+
     def test_search_planner_rejects_generic_and_duplicate_queries(self):
         class PlannerSettings:
             model = "planner"

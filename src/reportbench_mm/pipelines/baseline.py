@@ -44,7 +44,10 @@ class BaselinePipeline:
         selected = diverse_top_papers(ranked, len(queries), self.settings.baseline_papers)
         if self.reader:
             selected = self.reader.enrich_many(selected, self.settings.reader_workers)
-        return selected
+        return [
+            paper for paper in filter_papers(selected, forbidden_title=task.title, cutoff=cutoff)
+            if is_scholarly_candidate(paper)
+        ]
 
     def run(self, task: Task) -> tuple[str, list[Paper]]:
         papers = self.retrieve(task)
