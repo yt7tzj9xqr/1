@@ -1,0 +1,237 @@
+{
+  "arxiv_id": "2310.12986",
+  "model": "MiniMax-M3",
+  "system": "citation-rag-v13",
+  "reference_precision": 0.0,
+  "reference_recall": 0.0,
+  "reference_count": 6,
+  "reference_matches": 0,
+  "ground_truth_count": 61,
+  "predicted_titles": [
+    "A Survey of Manifold Learning for Images - J-Stage",
+    "Locally Linear Embedding (LLE) Homepage",
+    "Tenenbaum Reduction A Global Geometric ...",
+    "On Laplacian Eigenmaps for Dimensionality Reduction",
+    "Reduction A Global Geometric Framework for Nonlinear ...",
+    "Enhance explainability of manifold learning"
+  ],
+  "cited_match_rate": 0.8181818181818182,
+  "cited_count": 11,
+  "cited_supported": 9,
+  "cited_details": [
+    {
+      "statement": "Manifold learning methods are believed to be good at handling nonlinear data and at discovering their intrinsic local geometry in low-dimensional embedding spaces (https://www.sciencedirect.com/science/article/abs/pii/S0925231222007044).",
+      "url": "https://sciencedirect.com/science/article/abs/pii/S0925231222007044",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The same perspective applies directly to image data: many natural image sets are samples of a low-dimensional manifold in the space of all possible images, and understanding this manifold is described as a key first step in image analysis (https://www.jstage.jst.go.jp/article/ipsjtcva/1/0/1_0_83/_article).",
+      "url": "https://jstage.jst.go.jp/article/ipsjtcva/1/0/1_0_83/_article",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The original framework is documented as a global geometric framework for nonlinear dimensionality reduction, and discusses the Isomap method for dimensionality reduction with studies of its performance on both artificial and natural datasets (https://www.semanticscholar.org/paper/Reduction-A-Global-Geometric-Framework-for-Tenenbaum-Silva/2878f950f0ad19ccec6bab04873895e89f5bece0).",
+      "url": "https://semanticscholar.org/paper/Reduction-A-Global-Geometric-Framework-for-Tenenbaum-Silva/2878f950f0ad19ccec6bab04873895e89f5bece0",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Isomap's global coordinates provide a simple way to analyze and manipulate high-dimensional observations in terms of their intrinsic nonlinear structure (https://pdodds.w3.uvm.edu/files/papers/others/2000/tenenbaum2000a.pdf).",
+      "url": "https://pdodds.w3.uvm.edu/files/papers/others/2000/tenenbaum2000a.pdf",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The original LLE paper, titled \"Nonlinear dimensionality reduction by locally linear embedding,\" was authored by Sam Roweis and Lawrence Saul and published in Science, volume 290, number 5500, on December 22, 2000, on pages 2323-2326 (https://cs.nyu.edu/home/people/in_memoriam/roweis/lle/publications.html).",
+      "url": "https://cs.nyu.edu/home/people/in_memoriam/roweis/lle/publications.html",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The method performs nonlinear dimensionality reduction through locally linear embedding, as documented in the original publication (https://cs.nyu.edu/home/people/in_memoriam/roweis/lle/publications.html).",
+      "url": "https://cs.nyu.edu/home/people/in_memoriam/roweis/lle/publications.html",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Laplacian Eigenmaps is described as a non-linear dimensionality reduction algorithm based on spectral techniques (https://www.youtube.com/watch?v=U31TIICsHiA).",
+      "url": "https://youtube.com/watch?v=U31TIICsHiA",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A PyData Berlin 2018 presentation discusses this spectral method and references the original Laplacian Eigenmaps work, situating the algorithm within the broader literature on spectral methods for dimensionality reduction (https://www.youtube.com/watch?v=U31TIICsHiA).",
+      "url": "https://youtube.com/watch?v=U31TIICsHiA",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The J-Stage survey on manifold learning for images presents natural image sets as samples of a low-dimensional manifold in the space of all possible images, identifying the understanding of this manifold as a key first step in image analysis (https://www.jstage.jst.go.jp/article/ipsjtcva/1/0/1_0_83/_article).",
+      "url": "https://jstage.jst.go.jp/article/ipsjtcva/1/0/1_0_83/_article",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The 2022 work by Han, titled \"Enhance explainability of manifold learning,\" argues that manifold learning is believed to be good at handling nonlinear data and discovering their intrinsic local geometry in low-dimensional embeddings (https://www.sciencedirect.com/science/article/abs/pii/S0925231222007044).",
+      "url": "https://sciencedirect.com/science/article/abs/pii/S0925231222007044",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Furthermore, the Laplacian Eigenmaps entry is a presentation rather than a peer-reviewed publication, so methodological claims drawn from it should be read with that context in mind (https://www.youtube.com/watch?v=U31TIICsHiA).",
+      "url": "https://youtube.com/watch?v=U31TIICsHiA",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    }
+  ],
+  "noncited_factual_accuracy": 0.75,
+  "noncited_count": 4,
+  "noncited_correct": 3,
+  "noncited_details": [
+    {
+      "claim": "Isomap is a method in the field of nonlinear dimensionality reduction.",
+      "evidence": [
+        {
+          "title": "Non-linear Dimensionality Reduction by Locally ...",
+          "abstract": "by A Saxena · Cited by 116 — We propose a new variant of Isomap algorithm based on local linear properties of manifolds to increase its robustness to short-circuiting. We demonstrate that ...",
+          "url": "http://ai.stanford.edu/~asaxena/papers/LNCS_LLIsomap.pdf"
+        },
+        {
+          "title": "Supervised discriminant Isomap with maximum margin ...",
+          "abstract": "by H Qu · 2021 · Cited by 50 — As one of the most popular nonlinear dimensionality reduction methods, Isomap has been widely used in pattern recognition and machine learning.",
+          "url": "https://www.sciencedirect.com/science/article/abs/pii/S0957417421004966"
+        },
+        {
+          "title": "Applied topology 21: Nonlinear dimensionality reduction",
+          "abstract": "We give an intuitive and visual introduction to Isomap, which is a nonlinear dimensionality reduction technique.",
+          "url": "https://www.youtube.com/watch?v=Xu_3NnkAI9s"
+        },
+        {
+          "title": "AN IMPROVED ISOMAP ALGORITHM FOR NONLINEAR ...",
+          "abstract": "Isomap is the most popular nonlinear manifold dimensionality reduction. This can be applied to real world medical data sets. In this paper, we have formed the.",
+          "url": "https://www.mililink.com/upload/article/1159096330aams_vol_215_march_2022_a6_p2371-2382_s._gnana_sophia,_k._k._thanammal_and_s._s._sujatha.pdf"
+        },
+        {
+          "title": "Isomap",
+          "abstract": "Isomap is a nonlinear dimensionality reduction method. It is one of several widely used low-dimensional embedding methods. Isomap is used for computing ...",
+          "url": "https://en.wikipedia.org/wiki/Isomap"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "Locally Linear Embedding (LLE) provides a perspective based on local reconstruction.",
+      "evidence": [
+        {
+          "title": "Locally Linear Embedding and its Variants: Tutorial and Survey - arXiv",
+          "abstract": "Abstract:This is a tutorial and survey paper for Locally Linear Embedding (LLE) and its variants. The idea of LLE is fitting the local ...",
+          "url": "https://arxiv.org/abs/2011.10925"
+        },
+        {
+          "title": "Robust Locally Linear Embedding - cse hkust",
+          "abstract": "These methods are promising in that they can automatically discover the low-dimensional nonlinear manifold in a high-dimensional data space and ...",
+          "url": "https://cse.hkust.edu.hk/~dyyeung/paper/pdf/yeung.pr2006b.pdf"
+        },
+        {
+          "title": "Tutorial: Dimension Reduction using LLE - Paperspace Blog",
+          "abstract": "Reconstruction is achieved by linear coefficients of weights, hence linear. That is why this method is named as locally linear embedding.",
+          "url": "https://blog.paperspace.com/dimension-reduction-with-lle/"
+        },
+        {
+          "title": "What is Locally Linear Embedding? | Activeloop Glossary",
+          "abstract": "Locally Linear Embedding (LLE) simplifies complex data structures through nonlinear dimensionality reduction while preserving key features in machine learning.",
+          "url": "https://www.activeloop.ai/resources/glossary/locally-linear-embedding-lle/"
+        },
+        {
+          "title": "Modified Local Linear Embedding Algorithm for Rolling Element ...",
+          "abstract": "M-LLE algorithm has strong robustness, it can make the local structure of manifold remain intact, and can achieve 100% accuracy in real bearing fault diagnosis.",
+          "url": "https://www.mdpi.com/2076-3417/7/11/1178"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "A third foundational line of work is based on spectral graph theory.",
+      "evidence": [
+        {
+          "title": "Properties and Recent Applications in Spectral Graph Theory",
+          "abstract": "This paper is an exploration of recent applications of spectral graph theory, including the fields of chemistry, biology, and graph coloring. Topics such as the ...",
+          "url": "https://scholarscompass.vcu.edu/cgi/viewcontent.cgi?article"
+        },
+        {
+          "title": "A new approach based on spectral graph theory to ...",
+          "abstract": "by A Donoso · 2022 · Cited by 29 — Inspired by known results of spectral graph theory, this work proposes a new idea to prevent the appearance of those internal or encapsulated holes in topology ...",
+          "url": "https://www.sciencedirect.com/science/article/pii/S0045782522001165"
+        },
+        {
+          "title": "Spectral graph theory",
+          "abstract": "spectral graph theory is the study of the properties of a graph in relationship to the characteristic polynomial, eigenvalues, and eigenvectors of matrices",
+          "url": "https://en.wikipedia.org/wiki/Spectral_graph_theory"
+        },
+        {
+          "title": "Spectral Graph Theory",
+          "abstract": "Spectral Graph Theory is the study of the properties of a graph through the properties of the eigenvalues and eigenvectors of matrices associated with the ...",
+          "url": "https://sites.tufts.edu/verseimreu/spectral-graph-theory/"
+        },
+        {
+          "title": "Motivation for spectral graph theory.",
+          "abstract": "Why do we care about eigenvalues of graphs? Of course, any novel question in mathematics is interesting, but there is an entire discipline of mathematics ...",
+          "url": "https://math.stackexchange.com/questions/308952/motivation-for-spectral-graph-theory"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "A more recent research direction concerns the explainability of manifold learning methods.",
+      "evidence": [
+        {
+          "title": "The Dimpled Manifold Model of Adversarial Examples in ...",
+          "abstract": "This paper attempts to comprehensively explain the existence of adversarial examples by proposing a view of the classification landscape, which ...",
+          "url": "https://www.youtube.com/watch?v=k_hUdZJNzkU"
+        },
+        {
+          "title": "Enhance explainability of manifold learning",
+          "abstract": "by H Han · 2022 · Cited by 110 — In this study, we propose a novel degree of locality preservation (DLP) approach to study the interpretability of manifold learning.",
+          "url": "https://www.sciencedirect.com/science/article/abs/pii/S0925231222007044"
+        },
+        {
+          "title": "Stop Explaining Black Box Machine Learning Models for High ...",
+          "abstract": "by C Rudin · 2019 · Cited by 15320 — This manuscript clarifies the chasm between explaining black boxes and using inherently interpretable models, outlines several key reasons why explainable black ...",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9122117/"
+        },
+        {
+          "title": "[D] Who first advanced the \"manifold hypothesis\" to explain ...",
+          "abstract": "The «manifold hypothesis» (also called «manifold assumption») states that natural data lies on a low-dimensional manifold (kind of local euclidian subspace) ...",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/mzjshl/d_who_first_advanced_the_manifold_hypothesis_to/"
+        },
+        {
+          "title": "What is Manifold Learning? | Activeloop Glossary",
+          "abstract": "Explore manifold learning, a technique for uncovering low-dimensional structures in high-dimensional data, improving data visualization and model accuracy.",
+          "url": "https://www.activeloop.ai/resources/glossary/manifold-learning/"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    }
+  ]
+}

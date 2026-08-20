@@ -1,0 +1,492 @@
+{
+  "arxiv_id": "2308.04603",
+  "model": "MiniMax-M3",
+  "system": "search-baseline-v3",
+  "reference_precision": 0.2,
+  "reference_recall": 0.029850746268656716,
+  "reference_count": 10,
+  "reference_matches": 2,
+  "ground_truth_count": 67,
+  "predicted_titles": [
+    "Image Watermarking between Conventional and Learning ...",
+    "jirenz/HiDDeN - Hiding Data with Deep Networks.",
+    "HiDDeN: Hiding Data With Deep Networks",
+    "StegaStamp: Invisible Hyperlinks in Physical Photographs",
+    "StegaStamp: Invisible Hyperlinks",
+    "Hidden in the Noise: Two-Stage Robust Watermarking for ...",
+    "A robust watermarking algorithm against JPEG compression ...",
+    "Robust Spatial-spread Deep Neural Image Watermarking",
+    "A robust watermarking algorithm against JPEG ...",
+    "Transform domain watermarking"
+  ],
+  "cited_match_rate": 0.2857142857142857,
+  "cited_count": 28,
+  "cited_supported": 8,
+  "cited_details": [
+    {
+      "statement": "The literature consistently identifies three mutually constrained desiderata: imperceptibility (the watermarked image must remain visually indistinguishable from the original), robustness (the embedded payload must survive a defined threat model of perturbations), and capacity (the bit rate of the embedded message) [SOURCE 2](https://www.mdpi.com/2079-9292/12/1/74).",
+      "url": "https://mdpi.com/2079-9292/12/1/74",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The work demonstrated that convolutional encoder–decoder pairs can learn to \"use invisible perturbations to encode a rich amount of useful information\" into natural images and that, when trained with a differentiable noise layer, the resulting decoder remains accurate against JPEG compression, Gaussian noise, and small image crops [SOURCE 3](https://github.com/jirenz/HiDDeN), [SOURCE 4](https://www.semanticscholar.org/paper/HiDDeN%3A-Hiding-Data-With-Deep-Networks-Zhu-Kaplan/a4c4c865ed31d88df7458e9f19db54f766f042a1).",
+      "url": "https://github.com/jirenz/HiDDeN",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The work demonstrated that convolutional encoder–decoder pairs can learn to \"use invisible perturbations to encode a rich amount of useful information\" into natural images and that, when trained with a differentiable noise layer, the resulting decoder remains accurate against JPEG compression, Gaussian noise, and small image crops [SOURCE 3](https://github.com/jirenz/HiDDeN), [SOURCE 4](https://www.semanticscholar.org/paper/HiDDeN%3A-Hiding-Data-With-Deep-Networks-Zhu-Kaplan/a4c4c865ed31d88df7458e9f19db54f766f042a1).",
+      "url": "https://semanticscholar.org/paper/HiDDeN%3A-Hiding-Data-With-Deep-Networks-Zhu-Kaplan/a4c4c865ed31d88df7458e9f19db54f766f042a1",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "It trains a deep CNN-based encoder/decoder to embed 56-bit hyperlink payloads into photographs and reports real-world recovery with 98.7% bit accuracy and 95% hyperlink recovery in in-the-wild videos that exhibit \"variation in lighting, shadows, perspective, occlusion and viewing distance\" [SOURCE 5](https://papertalk.org/papertalks/15001), [SOURCE 6](https://www.emergentmind.com/papers/1904.05343).",
+      "url": "https://papertalk.org/papertalks/15001",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "It trains a deep CNN-based encoder/decoder to embed 56-bit hyperlink payloads into photographs and reports real-world recovery with 98.7% bit accuracy and 95% hyperlink recovery in in-the-wild videos that exhibit \"variation in lighting, shadows, perspective, occlusion and viewing distance\" [SOURCE 5](https://papertalk.org/papertalks/15001), [SOURCE 6](https://www.emergentmind.com/papers/1904.05343).",
+      "url": "https://emergentmind.com/papers/1904.05343",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The work proposes \"a novel end-to-end solution for embedding and recovering the watermark in the digital image using convolutional neural networks … and a spreading\" transform that improves robustness by trading capacity for redundancy [SOURCE 9](https://www.semanticscholar.org/paper/b1ffb4adfc9ec647d5dee15cd3dacce1a662ffe5).",
+      "url": "https://semanticscholar.org/paper/b1ffb4adfc9ec647d5dee15cd3dacce1a662ffe5",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The \"Hidden in the Noise\" line of work on OpenReview proposes a two-stage robust watermarking scheme, suggesting that even richer threat models can be addressed by decoupling the embedding from the noise modelling step [SOURCE 7](https://openreview.net/forum?id=ll2nz6qwRG).",
+      "url": "https://openreview.net/forum?id=ll2nz6qwRG",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Rather than train a single black-box encoder–decoder, the authors \"propose a watermarking algorithm based on multi-scale auto-encoder … which can effectively extract the image feature[s]\" that survive compression, and use these features to drive embedding and detection [SOURCE 8](https://ietresearch.onlinelibrary.wiley.com/doi/10.1049/ipr2.12961), [SOURCE 11](https://www.researchgate.net/publication/374781890_A_robust_watermarking_algorithm_against_JPEG_compression_based_on_multiscale_autoencoder).",
+      "url": "https://ietresearch.onlinelibrary.wiley.com/doi/10.1049/ipr2.12961",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Rather than train a single black-box encoder–decoder, the authors \"propose a watermarking algorithm based on multi-scale auto-encoder … which can effectively extract the image feature[s]\" that survive compression, and use these features to drive embedding and detection [SOURCE 8](https://ietresearch.onlinelibrary.wiley.com/doi/10.1049/ipr2.12961), [SOURCE 11](https://www.researchgate.net/publication/374781890_A_robust_watermarking_algorithm_against_JPEG_compression_based_on_multiscale_autoencoder).",
+      "url": "https://researchgate.net/publication/374781890_A_robust_watermarking_algorithm_against_JPEG_compression_based_on_multiscale_autoencoder",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "A 2022 review contrasts conventional and learning-based watermarking along the imperceptibility–robustness–capacity axes and notes that the trade-offs are non-trivial because \"regardless of the field or the technology used, there are three common and mutually restricted properties in a watermarking scheme: invisibility, robustness … and capacity\" [SOURCE 2](https://www.mdpi.com/2079-9292/12/1/74).",
+      "url": "https://mdpi.com/2079-9292/12/1/74",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A complementary perspective appears in the SSRN comparative study, which \"presented a comparative analysis of traditional domain-transformed watermarking methods and deep learning-based watermark detection models,\" concluding that hybrid pipelines—where a transform-domain embedding rule is paired with a learned detector—often achieve a more favourable robustness/imperceptibility trade-off than either pure approach [SOURCE 12](https://papers.ssrn.com/sol3/Delivery.cfm/f8d0a745-298f-46cc-a18f-2f8d4ff89fe2-MECA.pdf?abstractid=6620161&mirid=1).",
+      "url": "https://papers.ssrn.com/sol3/Delivery.cfm/f8d0a745-298f-46cc-a18f-2f8d4ff89fe2-MECA.pdf?abstractid=6620161&mirid=1",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "StegaStamp's print–photography simulation and the multi-scale auto-encoder's JPEG-aware design both show that expanding the noise layer—or replacing it with a learned feature front-end—is a more productive research direction than scaling model capacity alone [SOURCE 5](https://papertalk.org/papertalks/15001), [SOURCE 8](https://ietresearch.onlinelibrary.wiley.com/doi/10.1049/ipr2.12961).",
+      "url": "https://papertalk.org/papertalks/15001",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "StegaStamp's print–photography simulation and the multi-scale auto-encoder's JPEG-aware design both show that expanding the noise layer—or replacing it with a learned feature front-end—is a more productive research direction than scaling model capacity alone [SOURCE 5](https://papertalk.org/papertalks/15001), [SOURCE 8](https://ietresearch.onlinelibrary.wiley.com/doi/10.1049/ipr2.12961).",
+      "url": "https://ietresearch.onlinelibrary.wiley.com/doi/10.1049/ipr2.12961",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "**Imperceptibility–robustness trade-offs remain unresolved.** Comparative reviews note that the three classical desiderata are \"mutually restricted\" and that deep-learning systems have not eliminated, but rather re-parametrised, this trade-off [SOURCE 2](https://www.mdpi.com/2079-9292/12/1/74), [SOURCE 12](https://papers.ssrn.com/sol3/Delivery.cfm/f8d0a745-298f-46cc-a18f-2f8d4ff89fe2-MECA.pdf?abstractid=6620161&mirid=1).",
+      "url": "https://mdpi.com/2079-9292/12/1/74",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "**Imperceptibility–robustness trade-offs remain unresolved.** Comparative reviews note that the three classical desiderata are \"mutually restricted\" and that deep-learning systems have not eliminated, but rather re-parametrised, this trade-off [SOURCE 2](https://www.mdpi.com/2079-9292/12/1/74), [SOURCE 12](https://papers.ssrn.com/sol3/Delivery.cfm/f8d0a745-298f-46cc-a18f-2f8d4ff89fe2-MECA.pdf?abstractid=6620161&mirid=1).",
+      "url": "https://papers.ssrn.com/sol3/Delivery.cfm/f8d0a745-298f-46cc-a18f-2f8d4ff89fe2-MECA.pdf?abstractid=6620161&mirid=1",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "**Hybrid designs are increasingly favoured.** As shown by the SSRN comparative analysis, the most robust results in practice tend to come from pipelines that combine transform-domain priors with learned detection [SOURCE 12](https://papers.ssrn.com/sol3/Delivery.cfm/f8d0a745-298f-46cc-a18f-2f8d4ff89fe2-MECA.pdf?abstractid=6620161&mirid=1).",
+      "url": "https://papers.ssrn.com/sol3/Delivery.cfm/f8d0a745-298f-46cc-a18f-2f8d4ff89fe2-MECA.pdf?abstractid=6620161&mirid=1",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The shared HiDDeN codebase has helped in the digital domain [SOURCE 3](https://github.com/jirenz/HiDDeN), but no equivalent standard has emerged for physical or adversarial threat models.",
+      "url": "https://github.com/jirenz/HiDDeN",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Promising directions opened up by the surveyed work include: leveraging diffusion or other generative priors for perceptual quality, two-stage schemes that separate embedding robustness from detection robustness [SOURCE 7](https://openreview.net/forum?id=ll2nz6qwRG), and learned surrogate models for non-differentiable transforms that would otherwise block end-to-end training.",
+      "url": "https://openreview.net/forum?id=ll2nz6qwRG",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "https://www.mdpi.com/2079-9292/12/1/74",
+      "url": "https://mdpi.com/2079-9292/12/1/74",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://github.com/jirenz/HiDDeN",
+      "url": "https://github.com/jirenz/HiDDeN",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://www.semanticscholar.org/paper/HiDDeN%3A-Hiding-Data-With-Deep-Networks-Zhu-Kaplan/a4c4c865ed31d88df7458e9f19db54f766f042a1",
+      "url": "https://semanticscholar.org/paper/HiDDeN%3A-Hiding-Data-With-Deep-Networks-Zhu-Kaplan/a4c4c865ed31d88df7458e9f19db54f766f042a1",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://papertalk.org/papertalks/15001",
+      "url": "https://papertalk.org/papertalks/15001",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://www.emergentmind.com/papers/1904.05343",
+      "url": "https://emergentmind.com/papers/1904.05343",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://openreview.net/forum?id=ll2nz6qwRG",
+      "url": "https://openreview.net/forum?id=ll2nz6qwRG",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://ietresearch.onlinelibrary.wiley.com/doi/10.1049/ipr2.12961",
+      "url": "https://ietresearch.onlinelibrary.wiley.com/doi/10.1049/ipr2.12961",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "https://www.semanticscholar.org/paper/b1ffb4adfc9ec647d5dee15cd3dacce1a662ffe5",
+      "url": "https://semanticscholar.org/paper/b1ffb4adfc9ec647d5dee15cd3dacce1a662ffe5",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "https://www.researchgate.net/publication/374781890_A_robust_watermarking_algorithm_against_JPEG_compression_based_on_multiscale_autoencoder",
+      "url": "https://researchgate.net/publication/374781890_A_robust_watermarking_algorithm_against_JPEG_compression_based_on_multiscale_autoencoder",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "https://papers.ssrn.com/sol3/Delivery.cfm/f8d0a745-298f-46cc-a18f-2f8d4ff89fe2-MECA.pdf?abstractid=6620161&mirid=1",
+      "url": "https://papers.ssrn.com/sol3/Delivery.cfm/f8d0a745-298f-46cc-a18f-2f8d4ff89fe2-MECA.pdf?abstractid=6620161&mirid=1",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    }
+  ],
+  "noncited_factual_accuracy": 0.375,
+  "noncited_count": 8,
+  "noncited_correct": 3,
+  "noncited_details": [
+    {
+      "claim": "HiDDeN (Zhu, Kaplan, Johnson & Fei-Fei, ECCV 2018) introduced this template.",
+      "evidence": [
+        {
+          "title": "ando-khachatryan/HiDDeN: Pytorch implementation ...",
+          "abstract": "Pytorch implementation of paper \"HiDDeN: Hiding Data With Deep Networks\" by Jiren Zhu, Russell Kaplan, Justin Johnson, and Li Fei-Fei ...",
+          "url": "https://github.com/ando-khachatryan/HiDDeN"
+        },
+        {
+          "title": "HiDDeN: Hiding Data With Deep Networks | Computer Vision",
+          "abstract": "HiDDeN: Hiding Data With Deep Networks. Zhu Computer Science Department, Stanford University, Stanford, Li Fei-Fei. Computer Vision – ECCV 2018: 15th European ...",
+          "url": "https://dl.acm.org/doi/10.1007/978-3-030-01267-0_40"
+        },
+        {
+          "title": "HiDDeN: Hiding Data with Deep Networks",
+          "abstract": "by J Zhu · 2018 · Cited by 1785 — Jiren Zhu, Russell Kaplan, Justin Johnson, Li Fei-Fei; Proceedings of the European Conference on Computer Vision (ECCV), 2018, pp. 657-672. Abstract. Recent ...",
+          "url": "https://openaccess.thecvf.com/content_ECCV_2018/html/Jiren_Zhu_HiDDeN_Hiding_Data_ECCV_2018_paper.html"
+        },
+        {
+          "title": "HiDDeN: Hiding Data With Deep Networks",
+          "abstract": "This work finds that neural networks can learn to use invisible perturbations to encode a rich amount of useful information, and demonstrates that ...",
+          "url": "https://www.semanticscholar.org/paper/HiDDeN%3A-Hiding-Data-With-Deep-Networks-Zhu-Kaplan/a4c4c865ed31d88df7458e9f19db54f766f042a1"
+        },
+        {
+          "title": "HiDDeN: Hiding Data With Deep Networks",
+          "abstract": "by J Zhu · 2018 · Cited by 1785 — Authors:Jiren Zhu, Russell Kaplan, Justin Johnson, Li Fei-Fei View a PDF of the paper titled HiDDeN: Hiding Data With Deep Networks, by Jiren ...",
+          "url": "https://arxiv.org/abs/1807.09937"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "StegaStamp (Tancik, Athalye & Engstrom, 2019) extends the HiDDeN formulation to the much harsher distortion manifold of printed-then-rephotographed images.",
+      "evidence": [
+        {
+          "title": "arXiv:1904.05343v1 [cs.CV] 10 Apr 2019",
+          "abstract": "StegaStamp, the first steganographic algorithm to enable robust encoding and decoding of arbi- approximate the space of distortions resulting ...",
+          "url": "https://arxiv.org/pdf/1904.05343"
+        },
+        {
+          "title": "StegaStamp: Invisible Hyperlinks in Physical Photographs - alphaXiv",
+          "abstract": "StegaStamp, an end-to-end deep learning system that invisibly embeds digital hyperlinks into physical photographs and digital displays.",
+          "url": "https://www.alphaxiv.org/overview/1904.05343v2"
+        },
+        {
+          "title": "A Manifold View of Adversarial Risk",
+          "abstract": "In this paper, we investigate the adversarial risk and the robustness-accuracy trade-off through a new angle. We follow the classic manifold assumption, i.e., ...",
+          "url": "https://proceedings.mlr.press/v151/zhang22h/zhang22h.pdf"
+        },
+        {
+          "title": "Synthesizing Robust Adversarial Examples - arXiv",
+          "abstract": "We synthesize two-dimensional adversarial images that are robust to noise, distortion, and affine transformation.",
+          "url": "https://arxiv.org/abs/1707.07397"
+        },
+        {
+          "title": "Attacker goal: produce an adversarial example for a classifier",
+          "abstract": "Attacker goal: produce an adversarial. Attack is > 100× more efficient than prior work, with similar levels of distortion.",
+          "url": "https://anish.io/files/blackbox:icml18-poster.pdf"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "The StegaStamp system is trained by a differentiable simulation of the print–photography pipeline.",
+      "evidence": [
+        {
+          "title": "Charmve/StegaStamp-plus",
+          "abstract": "Our system uses an encoder network to process the input image and hyperlink bitstring into a StegaStamp. The StegaStamp is then printed and captured by a camera ...",
+          "url": "https://github.com/Charmve/StegaStamp-plus"
+        },
+        {
+          "title": "StegaStamp: Invisible Hyperlinks in Physical Photographs",
+          "abstract": "This paper presents an architecture, algorithms, and a prototype. StegaStamp, a learned steganographic algorithm to enable robust encoding and ...",
+          "url": "https://arxiv.org/html/1904.05343v2"
+        },
+        {
+          "title": "StegaStamp: Invisible Hyperlinks in Physical Photographs",
+          "abstract": "StegaStamp, a learned steganographic algorithm to enable robust encoding and decoding of arbitrary hyperlink bitstrings into photos",
+          "url": "https://www.youtube.com/watch?v=X2hRhpK2zcs"
+        },
+        {
+          "title": "arXiv:1904.05343v1 [cs.CV] 10 Apr 2019",
+          "abstract": "by M Tancik · 2019 · Cited by 788 — StegaStamp, the first steganographic algorithm to enable robust encoding and decoding of arbi- we simulate the corruptions caused by printing, ...",
+          "url": "https://arxiv.org/pdf/1904.05343"
+        },
+        {
+          "title": "StegaStamp: Invisible Hyperlinks in Physical Photographs",
+          "abstract": "StegaStamp comprises a deep neural network that learns an encoding/decoding algorithm robust to image perturbations that approximate the space of distortions ...",
+          "url": "https://www.researchgate.net/publication/332342292_StegaStamp_Invisible_Hyperlinks_in_Physical_Photographs"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "Robust Spatial-Spread Deep Neural Image Watermarking generalises spatial-domain end-to-end embedding by adding a learned spreading step at the encoder and a corresponding despreading operation at the decoder.",
+      "evidence": [
+        {
+          "title": "Robust Spatial-spread Deep Neural Image Watermarking",
+          "abstract": "A novel end-to-end solution for embedding and recovering the watermark in the digital image using convolutional neural networks is presented and a spreading ...",
+          "url": "https://www.semanticscholar.org/paper/b1ffb4adfc9ec647d5dee15cd3dacce1a662ffe5"
+        },
+        {
+          "title": "Deep Learning-Based Video Watermarking: A Robust ... - MDPI",
+          "abstract": "This paper introduces a deep learning-based framework for video watermarking that achieves robust, imperceptible, and fast embedding under a wide range",
+          "url": "https://www.mdpi.com/1999-5903/18/2/104"
+        },
+        {
+          "title": "Robust Spatial-spread Deep Neural Image Watermarking",
+          "abstract": "In this paper, we presented a novel end-to-end solution for embedding and recovering the watermark in the digital image using convolutional ...",
+          "url": "https://arxiv.org/abs/2005.11735"
+        },
+        {
+          "title": "Deep Learning for Image Watermarking: A Comprehensive ...",
+          "abstract": "This paper presents a comprehensive survey of recent developments in both conventional and deep learning-based image watermarking techniques.",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12845643/"
+        },
+        {
+          "title": "ROBUST WATERMARKING FOR DIFFUSION MODELS - OpenReview",
+          "abstract": "To embed a robust and stealthy watermark within diffusion models, it is crucial to preserve the distribution of the initial latent representation zT ∈ Rh×w×c ( ...",
+          "url": "https://openreview.net/pdf/7587fb7be7dd4ce3a2af832b85adc3bfe0b34e13.pdf"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "A shared limitation of all three end-to-end systems (HiDDeN, StegaStamp, Robust Spatial-Spread) is that robustness is bounded by the fidelity of the differentiable noise model.",
+      "evidence": [
+        {
+          "title": "StegaStamp",
+          "abstract": "This paper presents an architecture, algorithms, and a prototype implementation addressing this vision. Our key technical contribution is StegaStamp, a learned ...",
+          "url": "https://www.matthewtancik.com/stegastamp"
+        },
+        {
+          "title": "Rate-Distortion-Based Stego: A Large-Capacity Secure ...",
+          "abstract": "by YL Pan · 2022 · Cited by 7 — Steganography is one of the most crucial methods for information hiding, which embeds secret data on an ordinary file or a cover message for avoiding detection.",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9318648/"
+        },
+        {
+          "title": "StegaStamp: Invisible Hyperlinks in Physical Photographs ...",
+          "abstract": "The project explores hiding data in images while maintaining perceptual similarity. Our contribution is the ability to extract the data after the encoded image ...",
+          "url": "https://github.com/tancik/StegaStamp"
+        },
+        {
+          "title": "StegaStamp: Invisible Hyperlinks in Physical Photographs",
+          "abstract": "We present the first end-to-end trained deep pipeline for this problem that can achieve robust decoding even under “physical transmission,” delivering excellent ...",
+          "url": "https://ar5iv.labs.arxiv.org/html/1904.05343"
+        },
+        {
+          "title": "StegaStamp: Invisible Hyperlinks in Physical Photographs",
+          "abstract": "StegaStamp as mentioned in this paper is a learned steganographic algorithm to enable robust encoding and decoding of arbitrary hyperlink bitstrings into photos",
+          "url": "https://scispace.com/papers/stegastamp-invisible-hyperlinks-in-physical-photographs-3bedgiv2jq"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "The IET 2023 work on a 'robust watermarking algorithm against JPEG compression based on multi-scale auto-encoder' exemplifies the feature-transformation paradigm.",
+      "evidence": [
+        {
+          "title": "Robust Watermarking using Diffusion of Logo into Autoencoder Feature ...",
+          "abstract": "Our method is a blind watermarking approach that replicates the watermark string to create a matrix of the same size as the input image. ness against JPEG ...",
+          "url": "https://arxiv.org/pdf/2105.11095"
+        },
+        {
+          "title": "Toward Robust Logo Watermarking Using Multiresolution Image Fusion ...",
+          "abstract": "Abstract—This paper presents a novel robust watermarking approach called FuseMark based on the principles of image fusion for copy protection or robust ...",
+          "url": "http://www.comm.toronto.edu/dkundur/pub_pdfs/KunHatTMM04.pdf"
+        },
+        {
+          "title": "lidq92/arxiv-daily: [NOT UPDATED][To be updated with http ... - GitHub",
+          "abstract": "Multi-Scale Feature Prediction with Auxiliary-Info for Neural Image Compression ... CompMarkGS: Robust Watermarking for Compression 3D Gaussian Splatting ...",
+          "url": "https://github.com/lidq92/arxiv-daily"
+        },
+        {
+          "title": "PMC - NIH",
+          "abstract": "In this paper, we propose a watermarking scheme to embed the watermark in the DWT-DCT composite transform coefficients, which is robust against normal image ...",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10575421/"
+        },
+        {
+          "title": "A content-based digital image watermarking algorithm robust ...",
+          "abstract": "the main feature of an appropriate watermarking method is robustness against different kinds of unintentional attacks, such as JPEG compression, JPEG ...",
+          "url": "https://alisiahkoohi.github.io/files/6151601.pdf"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "End-to-end systems (HiDDeN, StegaStamp, Robust Spatial-Spread) are all fundamentally limited by the expressiveness of their differentiable threat model.",
+      "evidence": [
+        {
+          "title": "arXiv:1904.05343v1 [cs.CV] 10 Apr 2019",
+          "abstract": "by M Tancik · 2019 · Cited by 788 — StegaStamp comprises a deep neural network that learns an encoding/decoding al- gorithm robust to image perturbations that approximate the space ...",
+          "url": "https://arxiv.org/pdf/1904.05343"
+        },
+        {
+          "title": "StegaStamp: Invisible Hyperlinks in Physical Photographs",
+          "abstract": "StegaStamp, a learned steganographic algorithm to enable robust encoding and decoding of arbitrary hyperlink bitstrings into photos",
+          "url": "https://www.youtube.com/watch?v=X2hRhpK2zcs"
+        },
+        {
+          "title": "StegaStamp",
+          "abstract": "StegaStamp comprises a deep neural network that learns an encoding/decoding algorithm robust to image perturbations approximating the space of distortions ...",
+          "url": "https://www.matthewtancik.com/stegastamp"
+        },
+        {
+          "title": "StegaStamp: Invisible Hyperlinks in Physical Photographs",
+          "abstract": "StegaStamp as mentioned in this paper is a learned steganographic algorithm to enable robust encoding and decoding of arbitrary hyperlink bitstrings into photos",
+          "url": "https://scispace.com/papers/stegastamp-invisible-hyperlinks-in-physical-photographs-3bedgiv2jq"
+        },
+        {
+          "title": "An End-to-End Robust Video Steganography Model Based ...",
+          "abstract": "by S Xu · 2022 · Cited by 15 — In this paper, an end-to-end video steganography based on GAN and multi-scale deep learning network is proposed, which consists of the encoder, ...",
+          "url": "https://www.mdpi.com/2079-9292/11/24/4102"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "Different works report against different distortion sets, image resolutions, and payload sizes, which makes cross-paper comparison difficult.",
+      "evidence": [
+        {
+          "title": "Basics of Image Distortion in Photography",
+          "abstract": "Here is a video going over the basics of image distortion and how it affects your photographs. I talk about various types such as barrel, ...",
+          "url": "https://www.youtube.com/watch?v=jaguHmewMb8"
+        },
+        {
+          "title": "Optical Distortion & Image Quality: Barrel, Pincushion",
+          "abstract": "Understand optical distortion in camera testing. Learn about barrel and pincushion distortion and their impact on image quality. Improve your testing!",
+          "url": "https://www.image-engineering.de/en/resources/image-quality-factors/distortion"
+        },
+        {
+          "title": "Understanding Perspective “Distortion” in Photography",
+          "abstract": "Many, if not most of you, have seen the so-called “distortions” incorrectly attributed to (blamed upon) focal lengths, most especially wide ...",
+          "url": "https://medium.com/counterarts/understanding-perspective-distortion-in-photography-1b6a597159da"
+        },
+        {
+          "title": "Avoiding Twisted Pixels: Ethical Guidelines for the Appropriate ...",
+          "abstract": "by DW Cromey · 2010 · Cited by 240 — Brightness and contrast are useful adjustments per inch (ppi or dpi) for digital images, meaning that a figure that is 3.5 inches wide must be 1050 pixels ...",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4114110/"
+        },
+        {
+          "title": "Why are my images distorted at higher resolution? (See ...",
+          "abstract": "When I use a lower resolution setting with manual exposure time, the images are fine. However at high resolution the images become skewed. Any ...",
+          "url": "https://www.reddit.com/r/computervision/comments/1awgr12/why_are_my_images_distorted_at_higher_resolution/"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    }
+  ]
+}

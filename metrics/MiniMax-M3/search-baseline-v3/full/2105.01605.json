@@ -1,0 +1,465 @@
+{
+  "arxiv_id": "2105.01605",
+  "model": "MiniMax-M3",
+  "system": "search-baseline-v3",
+  "reference_precision": 0.14285714285714285,
+  "reference_recall": 0.02040816326530612,
+  "reference_count": 7,
+  "reference_matches": 1,
+  "ground_truth_count": 49,
+  "predicted_titles": [
+    "GitHub - ShuangLI59/person_search: Joint Detection and Identification Feature Learning for Person Search",
+    "Joint Detection and Identification Feature Learning for Person Search",
+    "Asymmetric Cross-Scale Alignment for Text-Based Person Search - Cronfa",
+    "wangxiao5791509/Person-Search-Paper-List",
+    "End-to-End Deep Learning for Person Search",
+    "Person Re-identification in Identity Regression Space",
+    "Triplet Online Instance Matching Loss for Person Re-identification"
+  ],
+  "cited_match_rate": 0.38235294117647056,
+  "cited_count": 34,
+  "cited_supported": 13,
+  "cited_details": [
+    {
+      "statement": "Person search aims to retrieve instances of a queried individual from a large corpus of uncropped scene images, which is fundamental to applications in public safety, missing-person search, and forensic video analysis [https://github.com/ShuangLI59/person_search].",
+      "url": "https://github.com/ShuangLI59/person_search",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The shift from \"match cropped boxes\" to \"search whole scenes\" introduces substantial new difficulties, including misalignment between detection and identification objectives, occlusion, and the lack of dense identity labels in scene images [http://www.ee.cuhk.edu.hk/~xgwang/PS/dataset.html].",
+      "url": "http://ee.cuhk.edu.hk/~xgwang/PS/dataset.html",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "introduced the first end-to-end deep learning framework for person search, jointly optimizing detection and re-identification within a single convolutional neural network [https://github.com/ShuangLI59/person_search, https://www.researchgate.net/publication/320968559_Joint_Detection_and_Identification_Feature_Learning_for_Person_Search].",
+      "url": "https://github.com/ShuangLI59/person_search",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "introduced the first end-to-end deep learning framework for person search, jointly optimizing detection and re-identification within a single convolutional neural network [https://github.com/ShuangLI59/person_search, https://www.researchgate.net/publication/320968559_Joint_Detection_and_Identification_Feature_Learning_for_Person_Search].",
+      "url": "https://researchgate.net/publication/320968559_Joint_Detection_and_Identification_Feature_Learning_for_Person_Search",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "To handle the fact that scene images contain many unlabeled identities, the authors proposed a *Random Sampling Softmax loss* to effectively train the model under the supervision of sparse and unbalanced labels [http://www.ee.cuhk.edu.hk/~xgwang/PS/dataset.html].",
+      "url": "http://ee.cuhk.edu.hk/~xgwang/PS/dataset.html",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Their model was trained and evaluated on the CUHK-SYSU dataset, which contains 18,184 images, 8,432 persons, and 99,809 annotated bounding boxes collected from movie scenes and street-view cameras, providing both the scale and the scene diversity that prior re-ID benchmarks lacked [http://www.ee.cuhk.edu.hk/~xgwang/PS/dataset.html].",
+      "url": "http://ee.cuhk.edu.hk/~xgwang/PS/dataset.html",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "introduced a *mask-guided two-stream CNN model* that adds a segmentation branch to the detection network so that the re-identification stream receives features computed on the person mask rather than the full proposal [https://github.com/wangxiao5791509/Person-Search-Paper-List].",
+      "url": "https://github.com/wangxiao5791509/Person-Search-Paper-List",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "proposed a *multi-scale matching* approach that learns person representations at multiple resolutions and matches them across scales when comparing a query against a gallery [https://github.com/wangxiao5791509/Person-Search-Paper-List].",
+      "url": "https://github.com/wangxiao5791509/Person-Search-Paper-List",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "introduced *Relational Context-Aware Agents (RCAA)* that encode the relationships between a candidate person and its surrounding context (other people, objects, and scene elements) and use these relational cues to refine the re-identification score [https://github.com/wangxiao5791509/Person-Search-Paper-List].",
+      "url": "https://github.com/wangxiao5791509/Person-Search-Paper-List",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "A representative method proposes an *Asymmetric Cross-Scale Alignment* that addresses the fact that textual descriptions often refer to both global appearance and local details, while visual features must be extracted from proposals at different scales [https://cronfa.swan.ac.uk/Record/cronfa62251/Download/62251__26475__9db5b190500e40af9bfe9f45e66bbb4f.pdf].",
+      "url": "https://cronfa.swan.ac.uk/Record/cronfa62251/Download/62251__26475__9db5b190500e40af9bfe9f45e66bbb4f.pdf",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "demonstrated that sharing backbone features between the detector and the re-ID head forces the network to encode both localization and identity cues [https://github.com/ShuangLI59/person_search].",
+      "url": "https://github.com/ShuangLI59/person_search",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "argued that a bounding box is a coarse foreground indicator and proposed to compute the re-ID feature only on a segmentation mask, eliminating background noise and aligning the re-ID input with the actual person silhouette [https://github.com/wangxiao5791509/Person-Search-Paper-List].",
+      "url": "https://github.com/wangxiao5791509/Person-Search-Paper-List",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "observed that identity-discriminative cues are distributed across scales—faces at high resolution, clothing at medium, gait/body shape at low—and learned a multi-scale matching scheme that aggregates evidence across resolutions [https://github.com/wangxiao5791509/Person-Search-Paper-List].",
+      "url": "https://github.com/wangxiao5791509/Person-Search-Paper-List",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "A complementary perspective is provided by the identity-regression literature, which notes that most existing re-ID methods are unsuitable for real-world deployment due to two specific reasons: *unscalability to large population size*, and *inadaptability over time* [https://pmc.ncbi.nlm.nih.gov/articles/PMC6411216/].",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6411216",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "is the canonical metric-learning component for end-to-end person search: it compares the feature of each detected person against a lookup table of labeled identity prototypes, exploits a pool of unlabeled features to provide negative evidence, and is trained under the supervision of sparse and unbalanced labels [http://www.ee.cuhk.edu.hk/~xgwang/PS/dataset.html].",
+      "url": "http://ee.cuhk.edu.hk/~xgwang/PS/dataset.html",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The *Triplet Online Instance Matching (TOIM) loss* was proposed to address this gap by combining the advantages of OIM and the triplet loss [https://arxiv.org/abs/2002.10560].",
+      "url": "https://arxiv.org/abs/2002.10560",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "TOIM retains the OIM lookup-table machinery to handle the large and unbalanced label space typical of person search, but augments it with hard-sample mining to accelerate convergence and improve accuracy [https://arxiv.org/abs/2002.10560].",
+      "url": "https://arxiv.org/abs/2002.10560",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Importantly, TOIM is designed to be trained online alongside the joint detection-and-identification pipeline, making it suitable for end-to-end person search; the authors also introduce the UESTC-PR benchmark to evaluate the loss in surveillance-scale settings [https://arxiv.org/abs/2002.10560].",
+      "url": "https://arxiv.org/abs/2002.10560",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The identity-regression formulation of re-ID attacks the same challenge from a different angle: instead of treating each gallery identity as a discrete class, it maps features into a continuous identity space in which distance has a direct semantic interpretation, and is explicitly motivated by the *unscalability* of classification-based losses to large populations and their *inadaptability* over time [https://pmc.ncbi.nlm.nih.gov/articles/PMC6411216/].",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6411216",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Xiao et al.'s end-to-end CNN is the canonical example: detection and re-identification share the same backbone and ROI features, so gradients from the identification loss flow back into the detector and shape its representations toward identity-preserving crops [https://github.com/ShuangLI59/person_search].",
+      "url": "https://github.com/ShuangLI59/person_search",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "TOIM extends this idea by providing a richer, hard-sample-aware identification signal during joint training, leading to more identity-discriminative proposals [https://arxiv.org/abs/2002.10560].",
+      "url": "https://arxiv.org/abs/2002.10560",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "takes a different route, using a separate segmentation branch to define a person mask that overrides the box boundary and forces the re-ID stream to attend to the actual person silhouette rather than the box [https://github.com/wangxiao5791509/Person-Search-Paper-List].",
+      "url": "https://github.com/wangxiao5791509/Person-Search-Paper-List",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Relational context-aware methods such as RCAA further mitigate the inconsistency by scoring a candidate not only on its own appearance but also on its relationship to surrounding people and scene elements, which provides a useful fallback when the candidate box itself is imperfect [https://github.com/wangxiao5791509/Person-Search-Paper-List].",
+      "url": "https://github.com/wangxiao5791509/Person-Search-Paper-List",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "It contains 18,184 images, 8,432 identities, and 99,809 annotated pedestrian bounding boxes, collected from a wide range of movie scenes and street-view cameras, with substantial variation in pose, illumination, occlusion, and background [http://www.ee.cuhk.edu.hk/~xgwang/PS/dataset.html].",
+      "url": "http://ee.cuhk.edu.hk/~xgwang/PS/dataset.html",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Beyond CUHK-SYSU, the field has produced additional benchmarks and methods targeting scalability and adaptability over time, motivated by the need to deploy re-ID systems in evolving real-world populations [https://pmc.ncbi.nlm.nih.gov/articles/PMC6411216/].",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6411216",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "[https://github.com/ShuangLI59/person_search] [https://www.researchgate.net/publication/320968559_Joint_Detection_and_Identification_Feature_Learning_for_Person_Search] [http://www.ee.cuhk.edu.hk/~xgwang/PS/dataset.html]",
+      "url": "https://github.com/ShuangLI59/person_search",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "[https://github.com/ShuangLI59/person_search] [https://www.researchgate.net/publication/320968559_Joint_Detection_and_Identification_Feature_Learning_for_Person_Search] [http://www.ee.cuhk.edu.hk/~xgwang/PS/dataset.html]",
+      "url": "https://researchgate.net/publication/320968559_Joint_Detection_and_Identification_Feature_Learning_for_Person_Search",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "[https://github.com/ShuangLI59/person_search] [https://www.researchgate.net/publication/320968559_Joint_Detection_and_Identification_Feature_Learning_for_Person_Search] [http://www.ee.cuhk.edu.hk/~xgwang/PS/dataset.html]",
+      "url": "http://ee.cuhk.edu.hk/~xgwang/PS/dataset.html",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "[https://github.com/wangxiao5791509/Person-Search-Paper-List]",
+      "url": "https://github.com/wangxiao5791509/Person-Search-Paper-List",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://github.com/wangxiao5791509/Person-Search-Paper-List]",
+      "url": "https://github.com/wangxiao5791509/Person-Search-Paper-List",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://github.com/wangxiao5791509/Person-Search-Paper-List]",
+      "url": "https://github.com/wangxiao5791509/Person-Search-Paper-List",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "\"Asymmetric Cross-Scale Alignment for Text-Based Person Search.\" [https://cronfa.swan.ac.uk/Record/cronfa62251/Download/62251__26475__9db5b190500e40af9bfe9f45e66bbb4f.pdf]",
+      "url": "https://cronfa.swan.ac.uk/Record/cronfa62251/Download/62251__26475__9db5b190500e40af9bfe9f45e66bbb4f.pdf",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://arxiv.org/abs/2002.10560]",
+      "url": "https://arxiv.org/abs/2002.10560",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://pmc.ncbi.nlm.nih.gov/articles/PMC6411216/]",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6411216",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    }
+  ],
+  "noncited_factual_accuracy": 0.6666666666666666,
+  "noncited_count": 6,
+  "noncited_correct": 4,
+  "noncited_details": [
+    {
+      "claim": "Xiao et al. published a seminal end-to-end CNN for person search at CVPR 2017.",
+      "evidence": [
+        {
+          "title": "Text-based Person Search in Full Images via Semantic ...",
+          "abstract": "To close the gap, we study the problem of text-based person search in full images by proposing a new end-to-end learning framework which jointly optimize the ...",
+          "url": "https://dl.acm.org/doi/10.1145/3606041.3618058"
+        },
+        {
+          "title": "Query-Guided End-To-End Person Search",
+          "abstract": "by B Munjal · 2019 · Cited by 203 — Xiao et al. [37] introduces the first end-to-end person detection and re-identification network. They propose an Online Instance Matching (OIM) loss. Amin and ...",
+          "url": "https://openaccess.thecvf.com/content_CVPR_2019/papers/Munjal_Query-Guided_End-To-End_Person_Search_CVPR_2019_paper.pdf"
+        },
+        {
+          "title": "wangxiao5791509/Person-Search-Paper-List",
+          "abstract": "\"End-to-end detection and re-identification integrated net for person search.\" Asian Conference on Computer Vision. Springer, Cham, 2018. [Paper]. Xiao, J., Xie ...",
+          "url": "https://github.com/wangxiao5791509/Person-Search-Paper-List"
+        },
+        {
+          "title": "Sequential End-to-end Network for Efficient Person Search",
+          "abstract": "by Z Li · 2021 · Cited by 166 — Abstract:Person search aims at jointly solving Person Detection and Person Re-identification (re-ID). Existing works have designed ...",
+          "url": "https://arxiv.org/abs/2103.10148"
+        },
+        {
+          "title": "IAN: The Individual Aggregation Network for Person Search",
+          "abstract": "by J Xiao · 2019 · Cited by 198 — Sequential End-to-end Network for Efficient Person Search. Li Z., Miao D. 35th Aaai Conference on Artificial Intelligence Aaai 2021 • Volume 3A • 2021.",
+          "url": "https://www.sciencedirect.com/science/article/abs/pii/S0031320318303790"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "The CUHK-SYSU dataset was introduced alongside the end-to-end CNN of Xiao et al.",
+      "evidence": [
+        {
+          "title": "wangxiao5791509/Person-Search-Paper-List",
+          "abstract": "CUHK-SYSU dataset: Source Code and Dataset. Paper List: \"Joint detection and identification feature learning for person search.\" Computer Vision and Pattern ...",
+          "url": "https://github.com/wangxiao5791509/Person-Search-Paper-List"
+        },
+        {
+          "title": "Tong Xiao",
+          "abstract": "In this paper, we study the problem of person search with natural language description. ... When training a CNN with data from all the domains, some neurons learn ...",
+          "url": "https://www.alphaxiv.org/researchers/tong-xiao-2"
+        },
+        {
+          "title": "IAN: The Individual Aggregation Network for Person Search",
+          "abstract": "by J Xiao · 2017 · Cited by 198 — Our ablation study is based on the CUHK-SYSU dataset, so as to provide more comprehensive performance comparisons with state-of-the-art ...",
+          "url": "https://arxiv.org/pdf/1705.05552"
+        },
+        {
+          "title": "CUHK-SYSU Person Search Dataset",
+          "abstract": "CUHK-SYSU, the full name of CUHK-SYSU Person Search Dataset, is a large-scale person search benchmark containing 8,432 persons and a total of 18,184 images.",
+          "url": "https://hyper.ai/en/datasets/17981"
+        },
+        {
+          "title": "End-to-End Deep Learning for Person Search",
+          "abstract": "We propose an end-to-end deep learning framework to search for the query persons from whole images in the gallery, which is much closer to real applications.",
+          "url": "http://www.ee.cuhk.edu.hk/~xgwang/PS/dataset.html"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "Chen et al. presented a mask-guided two-stream approach at ECCV 2018.",
+      "evidence": [
+        {
+          "title": "Person Search via A Mask-Guided Two-Stream CNN Model - arXiv",
+          "abstract": "View a PDF of the paper titled Person Search via A Mask-Guided Two-Stream CNN Model, by Di Chen and 4 other authors ... accepted as poster to ECCV ...",
+          "url": "https://arxiv.org/abs/1807.08107"
+        },
+        {
+          "title": "ECCV 2018 papers - CVF Open Access",
+          "abstract": "Mask-guided Two-stream CNN Model Di Chen, Proceedings of the European Conference on Computer Vision (ECCV), 2018, pp. 734-750. Mask-guided Two-stream",
+          "url": "https://openaccess.thecvf.com/content_ECCV_2018/html/Di_Chen_Person_Search_via_ECCV_2018_paper.html"
+        },
+        {
+          "title": "Mask Guided Attention For Fine-Grained Patchy Image ...",
+          "abstract": "This paper proposes a novel mask-guided attention approach for the fine-grained patchy image classification. There are two core prob- lems hindering the ...",
+          "url": "https://research-repository.griffith.edu.au/server/api/core/bitstreams/c4388792-fad7-4832-8b85-8186ead0456d/content"
+        },
+        {
+          "title": "Mask-Guided Attention Network for Occluded Pedestrian Detection",
+          "abstract": "We present a mask-guided spatial attention approach that greatly alleviates the impact of occluded features while stresses the visible-region features, a mask- ...",
+          "url": "https://www.computer.org/csdl/proceedings-article/iccv/2019/480300e966/1hVlj5DuYZG"
+        },
+        {
+          "title": "Mask-Guided Contrastive Attention Model for Person Re-identification",
+          "abstract": "It contains four multi-scale context-aware stages and a fully-connected layer to learn final features. There are three main streams, i.e., the full-stream, the ...",
+          "url": "https://www.researchgate.net/publication/329741356_Mask-Guided_Contrastive_Attention_Model_for_Person_Re-identification"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "Lan et al. published a cross-scale matching scheme at ECCV 2018.",
+      "evidence": [
+        {
+          "title": "Pixel-level Semantic Correspondence through Layout-aware ... - CVPR",
+          "abstract": "For PFSR module, we design a schema that progressively upgrades feature maps, summarizing multi-scale features to create cross-scaled matching tensors. For ...",
+          "url": "https://cvpr.thecvf.com/virtual/2024/poster/31315"
+        },
+        {
+          "title": "Loc$^{2}$: Interpretable Cross-View Localization via Depth-Lifted...",
+          "abstract": "This paper proposes a cross-view localization method that first builds matches between ground and aerial images, and then analytically computes the camera ...",
+          "url": "https://openreview.net/forum?id=2ciXKn2UlS"
+        },
+        {
+          "title": "ECCV Conference Papers - ECVA",
+          "abstract": "Tensorial template matching for fast cross-correlation with rotations. Multi-scale Cross Distillation for Object Detection in Aerial Images",
+          "url": "https://www.ecva.net/papers.php"
+        },
+        {
+          "title": "GeoViewMatch: A Multi-Scale Feature-Matching Network ... - MDPI",
+          "abstract": "In this paper, we propose an end-to-end multi-scale feature-extracting and -matching neural network (GeoViewMatch) using swin-transformer and contrastive ...",
+          "url": "https://www.mdpi.com/2072-4292/16/4/678"
+        },
+        {
+          "title": "Cross-Scale Cost Aggregation for Stereo Matching | Request PDF",
+          "abstract": "In this paper, a generic cross-scale cost aggregation framework is proposed to allow multi-scale interaction in cost aggregation.",
+          "url": "https://www.researchgate.net/publication/278242514_Cross-Scale_Cost_Aggregation_for_Stereo_Matching"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "The Online Instance Matching (OIM) loss was introduced by Xiao et al.",
+      "evidence": [
+        {
+          "title": "Triplet Online Instance Matching Loss for Person Re ...",
+          "abstract": "by Y Li · 2020 · Cited by 24 — Online Instance Matching (OIM) loss function. OIM loss treats all samples equally and puts no emphasis on hard samples. lays emphasis on the ...",
+          "url": "https://arxiv.org/abs/2002.10560"
+        },
+        {
+          "title": "Triplet online instance matching loss for person re ...",
+          "abstract": "by Y Li · 2021 · Cited by 24 — Two related work, the OIM loss and the triplet loss, are introduced in Section 2. In Section 3, we propose our method, the TOIM loss, and ...",
+          "url": "https://www.sciencedirect.com/science/article/abs/pii/S0925231220318993"
+        },
+        {
+          "title": "A deep model with combined losses for person re ...",
+          "abstract": "by D Wu · 2019 · Cited by 48 — in this paper, we propose using the triplet and Online Instance Matching (OIM) losses to train the carefully designed network.",
+          "url": "https://www.sciencedirect.com/science/article/abs/pii/S1389041718300226"
+        },
+        {
+          "title": "Triplet Online Instance Matching Loss for Person Re- ...",
+          "abstract": "A Triplet Online Instance Matching (TOIM) loss function is proposed, which lays emphasis on the hard samples and improves the accuracy of ...",
+          "url": "https://www.semanticscholar.org/paper/Triplet-Online-Instance-Matching-Loss-for-Person-Li-Yin/ec60c1335ed0741526bb9cb55ca5715a47584115"
+        },
+        {
+          "title": "Comparisons with the OIM loss and IEL in terms of memory ...",
+          "abstract": "Comparisons with the OIM loss and IEL in terms of memory size. Dynamic Imposter Based Online Instance Matching for Person Search. Article.",
+          "url": "https://www.researchgate.net/figure/Comparisons-with-the-OIM-loss-and-IEL-in-terms-of-memory-size_tbl2_337645831"
+        }
+      ],
+      "true_votes": 2,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "Xiao et al.'s approach shares backbone features between pedestrian detection and re-identification, departing from the two-stage Faster R-CNN paradigm.",
+      "evidence": [
+        {
+          "title": "HoughNet: Integrating near and long-range evidence for visual ...",
+          "abstract": "Abstract—This paper presents HoughNet, a one-stage, anchor-free, voting-based, bottom-up object detection method. Inspired by the.",
+          "url": "https://open.metu.edu.tr/bitstream/handle/11511/101780/index.pdf"
+        },
+        {
+          "title": "Beyond Facial Recognition: Entering the Realm of Pedestrian Re ...",
+          "abstract": "Pedestrian re-identification refers to the process of distinguishing between different individuals captured on the same camera based on image ...",
+          "url": "https://alibabatech.medium.com/beyond-facial-recognition-entering-the-realm-of-pedestrian-re-identification-c53e0a008de6"
+        },
+        {
+          "title": "An efficient deep learning method for pedestrian detection in high-density ...",
+          "abstract": "The backbone extracts multi-scale hierarchical features from input images, and the neck aggregates contextual representations of different spatial resolutions",
+          "url": "https://www.sciencedirect.com/science/article/abs/pii/S0957417426007918"
+        },
+        {
+          "title": "Pedestrian Monitoring and Crossing Intention Prediction at Intersections ...",
+          "abstract": "Xiao et al. (2021) categorized pedestrian detection methods into two-stage frameworks, such as Faster R-CNN, and single-stage frameworks that directly regress ...",
+          "url": "https://stars.library.ucf.edu/cgi/viewcontent.cgi?article=1330&context=etd2024"
+        },
+        {
+          "title": "Deep learning for person re-identification: A survey and outlook",
+          "abstract": "We first conduct a comprehensive overview with in-depth analysis for closed-world person Re-ID from three different perspectives, including deep feature ...",
+          "url": "https://ink.library.smu.edu.sg/cgi/viewcontent.cgi?article=7964&context=sis_research"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    }
+  ]
+}

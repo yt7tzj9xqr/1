@@ -1,0 +1,18 @@
+{
+  "arxiv_id": "2204.10325",
+  "model": "MiniMax-M3",
+  "system": "citation-rag-v13",
+  "reference_precision": 0.0,
+  "reference_recall": 0.0,
+  "reference_count": 6,
+  "reference_matches": 0,
+  "ground_truth_count": 36,
+  "predicted_titles": [
+    "Wav2vec2 A Framework for Self-Supervised Learning of Speech Representations - Paper Explained",
+    "An automated tool for the assessment of childhood apraxia ...",
+    "Automatic Pronunciation Scoring And Mispronunciation ...",
+    "Deep-Learning-Based Automated Classification of Chinese Speech Sound Disorders",
+    "Speech Therapy for Apraxia App - NACD International",
+    "Hybrid + Traditional Speech Therapy for Speech Sound Disorder · Info for Participants · Clinical Trial 2026 | Power | Power"
+  ]
+}

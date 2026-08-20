@@ -1,0 +1,17 @@
+{
+  "arxiv_id": "2312.04861",
+  "model": "MiniMax-M3",
+  "system": "citation-rag-v13",
+  "reference_precision": 0.2,
+  "reference_recall": 0.0036101083032490976,
+  "reference_count": 5,
+  "reference_matches": 1,
+  "ground_truth_count": 277,
+  "predicted_titles": [
+    "Towards Deep Radar Perception for Autonomous Driving",
+    "Object 3D Perception via Camera-Radar Cross-Modality Learning for Autonomous Driving",
+    "Camera–Radar Fusion with Modality Interaction and Radar Gaussian ...",
+    "Range-Doppler Detection in Automotive Radar with Deep ...",
+    "Radar Object Detection Using Cross-Modal Supervision"
+  ]
+}

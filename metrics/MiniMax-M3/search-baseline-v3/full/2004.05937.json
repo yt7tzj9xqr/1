@@ -1,0 +1,534 @@
+{
+  "arxiv_id": "2004.05937",
+  "model": "MiniMax-M3",
+  "system": "search-baseline-v3",
+  "reference_precision": 0.5,
+  "reference_recall": 0.009836065573770493,
+  "reference_count": 6,
+  "reference_matches": 3,
+  "ground_truth_count": 305,
+  "predicted_titles": [
+    "Knowledge Distillation: Compressing Large Models into Efficient Learners",
+    "Distilling the Knowledge in a Neural Network",
+    "FitNets: Hints for Thin Deep Nets",
+    "Born-Again Neural Networks",
+    "Multi-Teacher Distillation: An Ensemble-Then- ...",
+    "Improve the Performance of Convolutional Neural ..."
+  ],
+  "cited_match_rate": 0.475,
+  "cited_count": 40,
+  "cited_supported": 19,
+  "cited_details": [
+    {
+      "statement": "The framework is most commonly associated with Hinton, Vinyals, and Dean, who formalized the *teacher–student* view in their 2015 paper \"Distilling the Knowledge in a Neural Network\" ([arxiv.org/abs/1503.02531](https://arxiv.org/abs/1503.02531)).",
+      "url": "https://arxiv.org/abs/1503.02531",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Their contribution situated KD not only as a model-compression technique but also as a general learning principle: the student is trained to reproduce the teacher's *soft* predictions, augmented with a temperature-scaled distillation loss, alongside the standard cross-entropy on hard labels ([arxiv.org/abs/1503.02531](https://arxiv.org/abs/1503.02531); [lightly.ai/blog/knowledge-distillation](https://www.lightly.ai/blog/knowledge-distillation)).",
+      "url": "https://arxiv.org/abs/1503.02531",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Their contribution situated KD not only as a model-compression technique but also as a general learning principle: the student is trained to reproduce the teacher's *soft* predictions, augmented with a temperature-scaled distillation loss, alongside the standard cross-entropy on hard labels ([arxiv.org/abs/1503.02531](https://arxiv.org/abs/1503.02531); [lightly.ai/blog/knowledge-distillation](https://www.lightly.ai/blog/knowledge-distillation)).",
+      "url": "https://lightly.ai/blog/knowledge-distillation",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A smaller *student* network is then trained on the same data, but its loss function is augmented with a *distillation loss* that encourages the student's outputs to match the teacher's outputs, most commonly the softened class probability distribution, the so-called *soft targets* ([lightly.ai/blog/knowledge-distillation](https://www.lightly.ai/blog/knowledge-distillation); [arxiv.org/abs/1503.02531](https://arxiv.org/abs/1503.02531)).",
+      "url": "https://lightly.ai/blog/knowledge-distillation",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A smaller *student* network is then trained on the same data, but its loss function is augmented with a *distillation loss* that encourages the student's outputs to match the teacher's outputs, most commonly the softened class probability distribution, the so-called *soft targets* ([lightly.ai/blog/knowledge-distillation](https://www.lightly.ai/blog/knowledge-distillation); [arxiv.org/abs/1503.02531](https://arxiv.org/abs/1503.02531)).",
+      "url": "https://arxiv.org/abs/1503.02531",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The soft targets carry \"dark knowledge\" — relative similarities between incorrect classes that are not available from a one-hot label — which acts as a richer supervisory signal than the ground-truth alone ([arxiv.org/abs/1503.02531](https://arxiv.org/abs/1503.02531)).",
+      "url": "https://arxiv.org/abs/1503.02531",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The distillation loss is typically the Kullback–Leibler divergence between the teacher's and student's temperature-scaled output distributions, optionally combined with the standard cross-entropy on the true labels ([lightly.ai/blog/knowledge-distillation](https://www.lightly.ai/blog/knowledge-distillation)).",
+      "url": "https://lightly.ai/blog/knowledge-distillation",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "used this approach to (i) match the predictive performance of an MNIST ensemble with a single small model, and (ii) substantially improve the acoustic model of a deployed commercial system, demonstrating that distillation is not limited to any single modality ([arxiv.org/abs/1503.02531](https://arxiv.org/abs/1503.02531)).",
+      "url": "https://arxiv.org/abs/1503.02531",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "observe that ensembling \"is cumbersome and may be too computationally expensive to allow deployment to a large number of users, especially if the individual models are large neural nets,\" and build on Caruana's earlier demonstration that the knowledge of an ensemble can be compressed into a single model ([arxiv.org/abs/1503.02531](https://arxiv.org/abs/1503.02531)).",
+      "url": "https://arxiv.org/abs/1503.02531",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "**Lightweight deployment under resource constraints.** KD produces a \"fast, lightweight\" model \"suitable\" for limited hardware \"with minimal accuracy loss,\" making it a practical compression route in real vision systems ([lightly.ai/blog/knowledge-distillation](https://www.lightly.ai/blog/knowledge-distillation)).",
+      "url": "https://lightly.ai/blog/knowledge-distillation",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "**Beyond compression — knowledge transfer and refinement.** Subsequent work in the corpus shows that distillation can improve a student *even when the student has the same capacity as the teacher*, indicating that the supervisory signal acts as a regularizer and knowledge-refinement mechanism in addition to compression ([proceedings.mlr.press/v80/furlanello18a](https://proceedings.mlr.press/v80/furlanello18a/furlanello18a.pdf); [group.iiis.tsinghua.edu.cn/~maks/publications/pdf/Self-distillation.pdf](http://group.iiis.tsinghua.edu.cn/~maks/publications/pdf/Self-distillation.pdf)).",
+      "url": "https://proceedings.mlr.press/v80/furlanello18a/furlanello18a.pdf",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "**Beyond compression — knowledge transfer and refinement.** Subsequent work in the corpus shows that distillation can improve a student *even when the student has the same capacity as the teacher*, indicating that the supervisory signal acts as a regularizer and knowledge-refinement mechanism in addition to compression ([proceedings.mlr.press/v80/furlanello18a](https://proceedings.mlr.press/v80/furlanello18a/furlanello18a.pdf); [group.iiis.tsinghua.edu.cn/~maks/publications/pdf/Self-distillation.pdf](http://group.iiis.tsinghua.edu.cn/~maks/publications/pdf/Self-distillation.pdf)).",
+      "url": "http://group.iiis.tsinghua.edu.cn/~maks/publications/pdf/Self-distillation.pdf",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "This is the original setting introduced by Hinton et al.: the student is trained to reproduce the teacher's *output logits* (after temperature scaling), aligning the full class-conditional distribution rather than only the arg-max label ([arxiv.org/abs/1503.02531](https://arxiv.org/abs/1503.02531); [lightly.ai/blog/knowledge-distillation](https://www.lightly.ai/blog/knowledge-distillation)).",
+      "url": "https://arxiv.org/abs/1503.02531",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "This is the original setting introduced by Hinton et al.: the student is trained to reproduce the teacher's *output logits* (after temperature scaling), aligning the full class-conditional distribution rather than only the arg-max label ([arxiv.org/abs/1503.02531](https://arxiv.org/abs/1503.02531); [lightly.ai/blog/knowledge-distillation](https://www.lightly.ai/blog/knowledge-distillation)).",
+      "url": "https://lightly.ai/blog/knowledge-distillation",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "report that this single technique delivered significant gains on MNIST and a large-scale acoustic-modelling task, establishing logits-based distillation as the canonical KD baseline ([arxiv.org/abs/1503.02531](https://arxiv.org/abs/1503.02531)).",
+      "url": "https://arxiv.org/abs/1503.02531",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Romero et al.'s *FitNets: Hints for Thin Deep Nets* addresses this by training a \"thin and deep\" student using not only the teacher's outputs but also *hints* — feature maps from selected intermediate teacher layers — as additional supervision ([arxiv.org/pdf/1412.6550](https://arxiv.org/pdf/1412.6550)).",
+      "url": "https://arxiv.org/pdf/1412.6550",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Their explicit motivation is to \"address the network compression problem by taking advantage of depth\": by guiding a deeper but narrower student with intermediate teacher features, FitNets exploits representational depth more effectively than purely logits-based methods ([arxiv.org/pdf/1412.6550](https://arxiv.org/pdf/1412.6550)).",
+      "url": "https://arxiv.org/pdf/1412.6550",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "(feature-based) operate in this regime, the former on small-image and acoustic data and the latter explicitly on visual benchmarks via thin deep students guided by wider teachers ([arxiv.org/abs/1503.02531](https://arxiv.org/abs/1503.02531); [arxiv.org/pdf/1412.6550](https://arxiv.org/pdf/1412.6550)).",
+      "url": "https://arxiv.org/abs/1503.02531",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "(feature-based) operate in this regime, the former on small-image and acoustic data and the latter explicitly on visual benchmarks via thin deep students guided by wider teachers ([arxiv.org/abs/1503.02531](https://arxiv.org/abs/1503.02531); [arxiv.org/pdf/1412.6550](https://arxiv.org/pdf/1412.6550)).",
+      "url": "https://arxiv.org/pdf/1412.6550",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "- **Born-Again Neural Networks** (Furlanello et al., ICML 2018) provide \"empirical rigor, providing several experiments aimed at understanding the efficacy of self-distillation,\" showing that a student with capacity equal to the teacher's can in fact *outperform* the teacher when trained with a KD objective alone ([proceedings.mlr.press/v80/furlanello18a](https://proceedings.mlr.press/v80/furlanello18a/furlanello18a.pdf)).",
+      "url": "https://proceedings.mlr.press/v80/furlanello18a/furlanello18a.pdf",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "- **Zhang et al.'s self-distillation framework** proposes a \"general training framework named self distillation, which notably enhances the performance (accuracy) of convolutional neural networks,\" further evidencing that the gain is not specific to any single architecture and is observable in the visual domain ([group.iiis.tsinghua.edu.cn/~maks/publications/pdf/Self-distillation.pdf](http://group.iiis.tsinghua.edu.cn/~maks/publications/pdf/Self-distillation.pdf)).",
+      "url": "http://group.iiis.tsinghua.edu.cn/~maks/publications/pdf/Self-distillation.pdf",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Together, these results reframe KD: it is not merely a compression device but a *learning* mechanism that improves the same model through richer supervision ([proceedings.mlr.press/v80/furlanello18a](https://proceedings.mlr.press/v80/furlanello18a/furlanello18a.pdf); [group.iiis.tsinghua.edu.cn/~maks/publications/pdf/Self-distillation.pdf](http://group.iiis.tsinghua.edu.cn/~maks/publications/pdf/Self-distillation.pdf)).",
+      "url": "https://proceedings.mlr.press/v80/furlanello18a/furlanello18a.pdf",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Together, these results reframe KD: it is not merely a compression device but a *learning* mechanism that improves the same model through richer supervision ([proceedings.mlr.press/v80/furlanello18a](https://proceedings.mlr.press/v80/furlanello18a/furlanello18a.pdf); [group.iiis.tsinghua.edu.cn/~maks/publications/pdf/Self-distillation.pdf](http://group.iiis.tsinghua.edu.cn/~maks/publications/pdf/Self-distillation.pdf)).",
+      "url": "http://group.iiis.tsinghua.edu.cn/~maks/publications/pdf/Self-distillation.pdf",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The supplied corpus acknowledges that KD \"supports vision, language, and multi-teacher use cases\" at the level of practical motivation ([lightly.ai/blog/knowledge-distillation](https://www.lightly.ai/blog/knowledge-distillation)).",
+      "url": "https://lightly.ai/blog/knowledge-distillation",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A dedicated source on multi-teacher distillation in the supplied set (the NeurIPS 2024 talk on \"Multi-Teacher Distillation: An Ensemble-Then-Distill Approach\") falls outside the pre-June 2021 publication window required by this survey, so the present synthesis treats multi-teacher KD as a documented research direction in the broader landscape but does not draw pre-2021 technical claims from it ([neurips.cc/virtual/2024/106613](https://neurips.cc/virtual/2024/106613)).",
+      "url": "https://neurips.cc/virtual/2024/106613",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "*Hinton et al.* establish the soft-target / logits-based distillation mechanism and demonstrate its practical value on both vision-style (MNIST) and non-vision (acoustic) tasks ([arxiv.org/abs/1503.02531](https://arxiv.org/abs/1503.02531)).",
+      "url": "https://arxiv.org/abs/1503.02531",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "*Romero et al.* extend the method to intermediate representations via hints, broadening the transferable signal beyond the output layer and explicitly targeting thin-but-deep students for visual compression ([arxiv.org/pdf/1412.6550](https://arxiv.org/pdf/1412.6550)).",
+      "url": "https://arxiv.org/pdf/1412.6550",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "*Furlanello et al.* and *Zhang et al.* then show that, when teacher and student are identical, distillation still improves performance, motivating its use as a regularizer and as a generic accuracy booster, not only as a compression tool ([proceedings.mlr.press/v80/furlanello18a](https://proceedings.mlr.press/v80/furlanello18a/furlanello18a.pdf); [group.iiis.tsinghua.edu.cn/~maks/publications/pdf/Self-distillation.pdf](http://group.iiis.tsinghua.edu.cn/~maks/publications/pdf/Self-distillation.pdf)).",
+      "url": "https://proceedings.mlr.press/v80/furlanello18a/furlanello18a.pdf",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "*Furlanello et al.* and *Zhang et al.* then show that, when teacher and student are identical, distillation still improves performance, motivating its use as a regularizer and as a generic accuracy booster, not only as a compression tool ([proceedings.mlr.press/v80/furlanello18a](https://proceedings.mlr.press/v80/furlanello18a/furlanello18a.pdf); [group.iiis.tsinghua.edu.cn/~maks/publications/pdf/Self-distillation.pdf](http://group.iiis.tsinghua.edu.cn/~maks/publications/pdf/Self-distillation.pdf)).",
+      "url": "http://group.iiis.tsinghua.edu.cn/~maks/publications/pdf/Self-distillation.pdf",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The lightweight-deployment framing offered by the lightly.ai blog is consistent with this trajectory, treating KD as a deployment-oriented technique applicable across vision, language, and multi-teacher settings ([lightly.ai/blog/knowledge-distillation](https://www.lightly.ai/blog/knowledge-distillation)).",
+      "url": "https://lightly.ai/blog/knowledge-distillation",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://arxiv.org/abs/1503.02531](https://arxiv.org/abs/1503.02531)",
+      "url": "https://arxiv.org/abs/1503.02531",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://arxiv.org/abs/1503.02531](https://arxiv.org/abs/1503.02531)",
+      "url": "https://arxiv.org/abs/1503.02531",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://arxiv.org/pdf/1412.6550](https://arxiv.org/pdf/1412.6550)",
+      "url": "https://arxiv.org/pdf/1412.6550",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://arxiv.org/pdf/1412.6550](https://arxiv.org/pdf/1412.6550)",
+      "url": "https://arxiv.org/pdf/1412.6550",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://proceedings.mlr.press/v80/furlanello18a/furlanello18a.pdf](https://proceedings.mlr.press/v80/furlanello18a/furlanello18a.pdf)",
+      "url": "https://proceedings.mlr.press/v80/furlanello18a/furlanello18a.pdf",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://proceedings.mlr.press/v80/furlanello18a/furlanello18a.pdf](https://proceedings.mlr.press/v80/furlanello18a/furlanello18a.pdf)",
+      "url": "https://proceedings.mlr.press/v80/furlanello18a/furlanello18a.pdf",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[http://group.iiis.tsinghua.edu.cn/~maks/publications/pdf/Self-distillation.pdf](http://group.iiis.tsinghua.edu.cn/~maks/publications/pdf/Self-distillation.pdf)",
+      "url": "http://group.iiis.tsinghua.edu.cn/~maks/publications/pdf/Self-distillation.pdf",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[http://group.iiis.tsinghua.edu.cn/~maks/publications/pdf/Self-distillation.pdf](http://group.iiis.tsinghua.edu.cn/~maks/publications/pdf/Self-distillation.pdf)",
+      "url": "http://group.iiis.tsinghua.edu.cn/~maks/publications/pdf/Self-distillation.pdf",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "*Knowledge Distillation: Compressing Large Models into Efficient Learners.* (Industry blog, used for deployment-oriented context.) [https://www.lightly.ai/blog/knowledge-distillation](https://www.lightly.ai/blog/knowledge-distillation)",
+      "url": "https://lightly.ai/blog/knowledge-distillation",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "*Knowledge Distillation: Compressing Large Models into Efficient Learners.* (Industry blog, used for deployment-oriented context.) [https://www.lightly.ai/blog/knowledge-distillation](https://www.lightly.ai/blog/knowledge-distillation)",
+      "url": "https://lightly.ai/blog/knowledge-distillation",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    }
+  ],
+  "noncited_factual_accuracy": 0.7142857142857143,
+  "noncited_count": 7,
+  "noncited_correct": 5,
+  "noncited_details": [
+    {
+      "claim": "Response-based distillation transfers only the final-layer output and discards potentially richer intermediate structure.",
+      "evidence": [
+        {
+          "title": "What is Knowledge distillation? | IBM",
+          "abstract": "Response-based knowledge, the most common genre of knowledge distillation, focuses on transferring information from the final output layer of the teacher model.",
+          "url": "https://www.ibm.com/think/topics/knowledge-distillation"
+        },
+        {
+          "title": "Categories of Response-Based, Feature-Based, and Relation ... - arXiv",
+          "abstract": "Besides the final output, intermediate features encode the process of knowledge abstract from a neural network. Feature-based KD [102,153,145,50,55] can teach ...",
+          "url": "https://arxiv.org/pdf/2306.10687"
+        },
+        {
+          "title": "Exploring the Knowledge Transferred by Response-Based Teacher ...",
+          "abstract": "Response-based Knowledge Distillation refers to the technique of supervising the student network with the teacher networks' predic- tions. The method is ...",
+          "url": "https://cse.buffalo.edu/~jsyuan/papers/2023/mmfp2061-song.pdf"
+        },
+        {
+          "title": "Cross-Architecture Knowledge Distillation for Histopathological ...",
+          "abstract": "... response based distillation primarily transfers knowledge at the output level. Consequently, the supervision signal received by the early and intermediate ...",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13155459/"
+        },
+        {
+          "title": "Exploring the Knowledge Transferred by Response-Based Teacher ...",
+          "abstract": "In response-based distillation, the student model learns to mimic the output probabilities (soft targets) of the teacher model, capturing interclass ...",
+          "url": "https://www.researchgate.net/publication/375053841_Exploring_the_Knowledge_Transferred_by_Response-Based_Teacher-Student_Distillation"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "Self-distillation is the regime in which teacher and student share the same architecture, and sometimes even the same initialization, so the only source of additional information is the distillation signal itself.",
+      "evidence": [
+        {
+          "title": "Primers • Knowledge Distillation",
+          "abstract": "It is self-distillation because teacher and student are the same model under different contexts. It is naive when the loss directly transfers all teacher- ...",
+          "url": "https://aman.ai/primers/ai/knowledge-distillation/"
+        },
+        {
+          "title": "Nice summary of learnings on self-distillation in the run-up ...",
+          "abstract": "The teacher and student are the same network, differing only in that injected context. The objective is purely a per-token, full-distribution KL",
+          "url": "https://x.com/matei_zaharia/status/2069087123081449816"
+        },
+        {
+          "title": "chrisliu298/awesome-on-policy-distillation",
+          "abstract": "On-policy distillation trains a student on samples from its own evolving policy, while a teacher (external, privileged, or self-conditioned) provides dense ...",
+          "url": "https://github.com/chrisliu298/awesome-on-policy-distillation"
+        },
+        {
+          "title": "Learning from Stochastic Teacher Representations Using ...",
+          "abstract": "by MH Aslam · Cited by 1 — Self-distillation is a specialized case in KD, where the teacher and student have the same DL architecture, and the student typically surpasses the teacher's.",
+          "url": "https://ecmlpkdd-storage.s3.eu-central-1.amazonaws.com/preprints/2025/research/preprint_ecml_pkdd_2025_research_126.pdf"
+        },
+        {
+          "title": "Multi-Teacher Distillation: An Ensemble-Then- ...",
+          "abstract": "Knowledge distillation (KD) aims to transfer the knowledge in a large model (called a teacher) into a small one (called a student), and has become an ...",
+          "url": "https://neurips.cc/virtual/2024/106613"
+        }
+      ],
+      "true_votes": 2,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "The single-teacher setting is the default: one pre-trained teacher, one student trained to mimic it via the distillation loss.",
+      "evidence": [
+        {
+          "title": "Knowledge distillation in deep learning and its applications",
+          "abstract": "Knowledge distillation accomplishes its goal by altering loss functions of models being trained (student models) to account for output of ...",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8053015/"
+        },
+        {
+          "title": "One Teacher is Enough? Pre-trained Language Model Distillation from ...",
+          "abstract": "In this paper, we propose a multi-teacher knowledge distillation framework named MT-BERT for pre-trained language model compression, which can ...",
+          "url": "https://www.microsoft.com/en-us/research/publication/one-teacher-is-enough-pre-trained-language-model-distillation-from-multiple-teachers/"
+        },
+        {
+          "title": "What is Knowledge distillation? | IBM",
+          "abstract": "Knowledge distillation is a machine learning technique used to transfer the learning of a large pre-trained “teacher model” to a smaller “student model.”",
+          "url": "https://www.ibm.com/think/topics/knowledge-distillation"
+        },
+        {
+          "title": "Multi-Teacher Distillation: An Ensemble-Then- ...",
+          "abstract": "Knowledge distillation (KD) aims to transfer the knowledge in a large model (called a teacher) into a small one (called a student), and has become an ...",
+          "url": "https://neurips.cc/virtual/2024/106613"
+        },
+        {
+          "title": "[Discussion] Knowledge distillation is badly defined",
+          "abstract": "knowledge distillation is a family of techniques with no clear goal. having a student model learn from a teacher model to reproduce the answers ...",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/18681i4/discussion_knowledge_distillation_is_badly_defined/"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "Compressing ensembles for deployment",
+      "evidence": [
+        {
+          "title": "Model Compression for Dynamic Forecast Combination",
+          "abstract": "The predictive advantage of combining several different predictive models is widely accepted. Particularly in time series forecasting problems, this combination is often dynamic to cope with potential non-stationary sources of variation present in the data. Despite their superior predictive performance, ensemble methods entail two main limitations: high computational costs and lack of transparency. These issues often preclude the deployment of such approaches, in favour of simpler yet more efficient and reliable ones. In this paper, we leverage the idea of model compression to address this problem in time series forecasting tasks. Model compression approaches have been mostly unexplored for forecasting. Their application in time series is challenging due to the evolving nature of the data. Further, while the literature focuses on neural networks, we apply model compression to distinct types of methods. In an extensive set of experiments, we show that compressing dynamic forecasting ensembles into an individual model leads to a comparable predictive performance and a drastic reduction in computational costs. Further, the compressed individual model with best average rank is a rule-based regression model. Thus, model compression also leads to benefits in terms of model interpretability. The experiments carried in this paper are fully reproducible.",
+          "url": "https://arxiv.org/abs/2104.01830"
+        },
+        {
+          "title": "Knowledge Distillation: Compressing Large Models into Efficient Learners",
+          "abstract": "Knowledge distillation compresses large models into smaller ones by training a student to match a teacher's outputs. It enables fast, lightweight deployment ...",
+          "url": "https://www.lightly.ai/blog/knowledge-distillation"
+        },
+        {
+          "title": "FitNets: Hints for Thin Deep Nets",
+          "abstract": "by A Romero · 2014 · Cited by 7003 — In this paper, we aim to address the network compression problem by taking advantage of depth. We propose a novel approach to train thin and ...",
+          "url": "https://arxiv.org/pdf/1412.6550"
+        },
+        {
+          "title": "FitNets: Hints for Thin Deep Nets | Paper2Code Finder",
+          "abstract": "FitNets: Hints for Thin Deep Nets is the primary contribution described in this paper. signals: depth 60/100, grounding 58/100, status medium.",
+          "url": "https://www.opentrain.ai/papers/fitnets-hints-for-thin-deep-nets--arxiv-1412.6550/"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "Hinton et al.'s foundational logits-based distillation",
+      "evidence": [
+        {
+          "title": "Maintaining Fairness in Logit-based Knowledge Distillation for Class ...",
+          "abstract": "This paper addresses this gap by investigating the fundamental mechanism of KD and introducing a novel pre- process to reduce recency bias and maintain fairness ...",
+          "url": "https://ojs.aaai.org/index.php/AAAI/article/view/33842/35997"
+        },
+        {
+          "title": "Rethinking Logits-Level Knowledge Distillation - ACM Digital Library",
+          "abstract": "This research paper challenges the prevailing belief that logits-level knowledge distillation performs poorly compared to feature-based distillation methods.",
+          "url": "https://dl.acm.org/doi/10.1145/3497623.3497669"
+        },
+        {
+          "title": "Why logit distillation works: A novel knowledge distillation technique by ...",
+          "abstract": "this paper proposes a novel distillation technique called TALD-KD that performs through Target Augmentation and a novel concept of dynamic Logits Distortion ...",
+          "url": "https://www.sciencedirect.com/science/article/abs/pii/S0306457324004151"
+        },
+        {
+          "title": "Dual-Head Knowledge Distillation: Enhancing Logits Utilization with an ...",
+          "abstract": "Abstract. Traditional knowledge distillation focuses on aligning the student's predicted probabilities with both ground-truth labels and the teacher's.",
+          "url": "https://personal.ntu.edu.sg/boan/papers/KDD25.pdf"
+        },
+        {
+          "title": "Knowledge Distillation: Compressing Large Models into Efficient Learners",
+          "abstract": "Knowledge distillation compresses large models into smaller ones by training a student to match a teacher's outputs. It enables fast, lightweight deployment ...",
+          "url": "https://www.lightly.ai/blog/knowledge-distillation"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "Romero et al.'s FitNets, which opens the feature-based branch by exploiting depth through intermediate hints",
+      "evidence": [
+        {
+          "title": "FitNets: Hints for Thin Deep Nets",
+          "abstract": "This paper extends the idea of a student network that could imitate the soft output of a larger teacher network or ensemble of networks, using not only the ...",
+          "url": "https://www.semanticscholar.org/paper/FitNets%3A-Hints-for-Thin-Deep-Nets-Romero-Ballas/8604f376633af8b347e31d84c6150a93b11e34c2"
+        },
+        {
+          "title": "[Knowledge Distillation] FitNets: Hints For Thin Deep Nets",
+          "abstract": "A very well written paper highlighting (and proving) the importance of depth in student networks. The selection of hint and guided layers ...",
+          "url": "https://medium.com/data-science/knowledge-distillation-fitnets-hints-for-thin-deep-nets-c64840aa2baa"
+        },
+        {
+          "title": "FitNets: Hints for Thin Deep Nets.",
+          "abstract": "Bibliographic details on FitNets: Hints for Thin Deep Nets.",
+          "url": "https://dblp.org/rec/journals/corr/RomeroBKCGB14"
+        },
+        {
+          "title": "FitNets: Hints for Thin Deep Nets",
+          "abstract": "by A Romero · 2014 · Cited by 7003 — In this paper, we extend this idea to allow the training of a student that is deeper and thinner than the teacher, intermediate representations ...",
+          "url": "https://arxiv.org/abs/1412.6550"
+        },
+        {
+          "title": "FitNets: Hints for Thin Deep Nets | Request PDF",
+          "abstract": "In this paper, we extend this idea to allow the training of a student that is deeper and thinner than the teacher, using not only the outputs but also the ...",
+          "url": "https://www.researchgate.net/publication/319770191_FitNets_Hints_for_Thin_Deep_Nets"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "Zhang et al., which establish that KD can improve even same-architecture students",
+      "evidence": [
+        {
+          "title": "The impact of classroom design on pupils' learning - ScienceDirect.com",
+          "abstract": "This study confirms the utility of the naturalness, individuality and stimulation (or more memorably, SIN) conceptual model as a vehicle to organise and study",
+          "url": "https://www.sciencedirect.com/science/article/pii/S0360132315000700"
+        },
+        {
+          "title": "A Research on Undergraduate Architecture Teaching Approach ...",
+          "abstract": "By studying the classical works, students can have a better understanding of design methods and philosophies, which helps to enhance their design abilities and ...",
+          "url": "https://www.scirp.org/journal/paperinformation?paperid=87458"
+        },
+        {
+          "title": "Enhancing Learning and Teaching for Architectural Engineering Students ...",
+          "abstract": "this paper proposes a Virtual Reality (VR) based learning and teaching tool. It creates a virtual 3D environment that helps architectural ...",
+          "url": "https://www.researchgate.net/publication/331377958_Enhancing_Learning_and_Teaching_for_Architectural_Engineering_Students_uing_Virtual_Building_Design_and_Construction"
+        },
+        {
+          "title": "Effects of classrooms' architecture on academic performance in view of ...",
+          "abstract": "This mini literature review analyzes research papers from many countries that directly or indirectly test how classrooms' architecture influences academic ...",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4453269/"
+        },
+        {
+          "title": "The Role of Generative AI in Architecture Education from ... - MDPI",
+          "abstract": "Integrating GAI into architecture education through knowledge and ethical awareness enhances students' general skills competency and architecture and design ...",
+          "url": "https://www.mdpi.com/2071-1050/17/22/10029"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    }
+  ]
+}

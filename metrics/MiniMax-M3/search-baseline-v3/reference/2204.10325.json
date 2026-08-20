@@ -1,0 +1,19 @@
+{
+  "arxiv_id": "2204.10325",
+  "model": "MiniMax-M3",
+  "system": "search-baseline-v3",
+  "reference_precision": 0.0,
+  "reference_recall": 0.0,
+  "reference_count": 7,
+  "reference_matches": 0,
+  "ground_truth_count": 36,
+  "predicted_titles": [
+    "Deep-Learning-Based Automated Classification of Chinese Speech Sound Disorders",
+    "Automatic Pronunciation Scoring And Mispronunciation ...",
+    "Automatic Analysis of Pronunciations for Children with Speech Sound Disorders",
+    "A STUDY ON THE IMPACT OF SELF-SUPERVISED LEARNING ON AUTOMATIC DYSARTHRIC SPEECH ASSESSMENT",
+    "An automated tool for the assessment of childhood apraxia ...",
+    "Research Paper: Mobile Speech Therapy Application",
+    "3 A Longitudinal Evaluation of Tablet-Based Child Speech ..."
+  ]
+}

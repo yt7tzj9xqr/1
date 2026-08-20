@@ -1,0 +1,672 @@
+{
+  "arxiv_id": "2312.04861",
+  "model": "MiniMax-M3",
+  "system": "search-baseline-v3",
+  "reference_precision": 0.2222222222222222,
+  "reference_recall": 0.007220216606498195,
+  "reference_count": 9,
+  "reference_matches": 2,
+  "ground_truth_count": 277,
+  "predicted_titles": [
+    "Camera–Radar Fusion with Modality Interaction and Radar Gaussian ...",
+    "Camera-Radar 3D Object Detection with Spatio-Contextual Fusion ...",
+    "Radar Object Detection Using Cross-Modal Supervision",
+    "RODNet: Radar Object Detection using Cross-Modal ...",
+    "Range-Doppler Detection in Automotive Radar with Deep ...",
+    "Deep Radar Detector",
+    "Towards Deep Radar Perception for Autonomous Driving",
+    "K-Radar: 4D Radar Object Detection for Autonomous Driving in Various Weather Conditions",
+    "Towards Deep Radar Perception for Autonomous Driving - MDPI"
+  ],
+  "cited_match_rate": 0.4857142857142857,
+  "cited_count": 35,
+  "cited_supported": 17,
+  "cited_details": [
+    {
+      "statement": "As the KAIST-Radar (K-Radar) benchmark notes, \"Radars use relatively longer wavelength radio bands (77∼81 GHz), resulting in robust measurements in adverse weathers,\" which motivates the development of learning-based perception pipelines tailored to radar's distinctive signal structure [https://proceedings.neurips.cc/paper_files/paper/2022/hash/185fdf627eaae2abab36205dcd19b817-Abstract-Datasets_and_Benchmarks.html].",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2022/hash/185fdf627eaae2abab36205dcd19b817-Abstract-Datasets_and_Benchmarks.html",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The 2022 MDPI review \"Towards Deep Radar Perception for Autonomous Driving\" argues that \"the era of deep learning for radar perception has arrived\" and recommends three strategies to increase radar data density, namely \"the use of pre-CFAR data, the use of high-resolution radar sensors, and the use of [learned processing]\" [https://www.mdpi.com/1424-8220/22/11/4208].",
+      "url": "https://mdpi.com/1424-8220/22/11/4208",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The next generation of 4D radar can achieve imaging capability in the form of high-resolution point clouds\" [https://pmc.ncbi.nlm.nih.gov/articles/PMC9185239/].",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9185239",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "introduced **Deep Radar Detector**, a deep-learning pipeline that \"work[s] directly with the radar complex data,\" bypassing handcrafted CFAR detectors and exploiting pre-detection information that classical pipelines discard [https://arxiv.org/pdf/1906.12187].",
+      "url": "https://arxiv.org/pdf/1906.12187",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "This pre-CFAR paradigm is explicitly endorsed by the MDPI review as a way to compensate for the sparsity of radar returns [https://www.mdpi.com/1424-8220/22/11/4208].",
+      "url": "https://mdpi.com/1424-8220/22/11/4208",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Three different 3D autoencoder based architectures are introduced to predict object confidence distribution from each snippet of the input RAMaps\" [https://arxiv.org/abs/2003.01816].",
+      "url": "https://arxiv.org/abs/2003.01816",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The 2020 IJCNN paper \"Range-Doppler Detection in Automotive Radar with Deep Learning\" presents \"a comprehensive study on radar detection using deep learning with application to automotive vehicles,\" treating the RDM as the primary tensor for classifier design [http://vigir.ee.missouri.edu/~gdesouza/Research/Conference_CDs/IEEE_WCCI_2020/IJCNN/Papers/N-21054.pdf].",
+      "url": "http://vigir.ee.missouri.edu/~gdesouza/Research/Conference_CDs/IEEE_WCCI_2020/IJCNN/Papers/N-21054.pdf",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The follow-up CRUW3D release (introduced in the RODNet lineage) \"includes 66K synchronized and well-calibrated camera, radar, and LiDAR frames in various driving scenarios,\" demonstrating the maturation of RAMap-style benchmarks and the value of cross-modal labels even when training radar-only networks [https://www.semanticscholar.org/paper/RODNet%3A-Radar-Object-Detection-using-Cross-Modal-Wang-Jiang/3b858058c04da3871848b81e8d8304e24c1282d5].",
+      "url": "https://semanticscholar.org/paper/RODNet%3A-Radar-Object-Detection-using-Cross-Modal-Wang-Jiang/3b858058c04da3871848b81e8d8304e24c1282d5",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Conventional 3D radar tensors (3DRT) contain power along Doppler, range, and azimuth but lack elevation, \"so it is challenging to estimate the 3D bounding box of an object from 3DRT\" [https://proceedings.neurips.cc/paper_files/paper/2022/hash/185fdf627eaae2abab36205dcd19b817-Abstract-Datasets_and_Benchmarks.html].",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2022/hash/185fdf627eaae2abab36205dcd19b817-Abstract-Datasets_and_Benchmarks.html",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The K-Radar benchmark (NeurIPS 2022) addresses this by introducing a **4D Radar Tensor (4DRT)** that \"contain[s] power measurements along the Doppler, range, azimuth, and elevation dimensions, together with carefully annotated 3D bounding box labels.\" The dataset provides 35K frames \"in challenging driving conditions such as adverse weathers (fog, rain, and snow) on various road structures (urban, suburban roads, alleyways, and highways)\" [https://proceedings.neurips.cc/paper_files/paper/2022/hash/185fdf627eaae2abab36205dcd19b817-Abstract-Datasets_and_Benchmarks.html].",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2022/hash/185fdf627eaae2abab36205dcd19b817-Abstract-Datasets_and_Benchmarks.html",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The MDPI survey frames this shift as a transition toward \"imaging capability in the form of high-resolution point clouds,\" where \"the era of deep learning for radar perception has arrived\" and \"studies on radar deep learning are spread across different tasks\" [https://pmc.ncbi.nlm.nih.gov/articles/PMC9185239/].",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9185239",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The 2024 paper \"Camera–Radar Fusion with Modality Interaction and Radar Gaussian [Splatting]\" argues that \"the fusion of millimeter-wave radar and camera modalities is crucial for improving the accuracy and completeness of 3-dimensional (3D) object [detection]\" and proposes to lift sparse radar returns into continuous Gaussian primitives, which can be splatted onto the image plane for attention-based fusion [https://spj.science.org/doi/pdf/10.34133/cbsystems.0079].",
+      "url": "https://spj.science.org/doi/pdf/10.34133/cbsystems.0079",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "While not the focus of a single primary source here, the MDPI survey highlights grid-based encodings as one of the canonical outputs of the radar signal processing chain [https://pmc.ncbi.nlm.nih.gov/articles/PMC9185239/].",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9185239",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "This can benefit from using off-the-shelf single sensor detection algorithms, but late fusion cannot fully exploit the complementary properties of sensors\" [https://underline.io/lecture/69109-craft-camera-radar-3d-object-detection-with-spatio-contextual-fusion-transformer].",
+      "url": "https://underline.io/lecture/69109-craft-camera-radar-3d-object-detection-with-spatio-contextual-fusion-transformer",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "To overcome this, CRAFT introduces a **proposal-level early fusion** that \"associates image proposal with radar points in the polar coordinate system to efficiently handle the discrepancy between the coordinate system and spatial properties,\" then applies cross-attention layers to exchange spatio-contextual features [https://underline.io/lecture/69109-craft-camera-radar-3d-object-detection-with-spatio-contextual-fusion-transformer].",
+      "url": "https://underline.io/lecture/69109-craft-camera-radar-3d-object-detection-with-spatio-contextual-fusion-transformer",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The reported gains—41.1% mAP and 52.3% NDS on the nuScenes test set, \"8.7 and 10.8 points higher than the camera-only baseline\"—illustrate how representation-aware fusion exploits the polar geometry that is intrinsic to radar [https://underline.io/lecture/69109-craft-camera-radar-3d-object-detection-with-spatio-contextual-fusion-transformer].",
+      "url": "https://underline.io/lecture/69109-craft-camera-radar-3d-object-detection-with-spatio-contextual-fusion-transformer",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The MDPI review categorizes micro-Doppler as one of the principal radar representations and discusses its role in scene understanding beyond bounding-box detection [https://pmc.ncbi.nlm.nih.gov/articles/PMC9185239/].",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9185239",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "CRUW introduced synchronized camera–radar RAMap data with cross-modal labels [https://arxiv.org/abs/2003.01816], CRUW3D extended this to \"66K synchronized and well-calibrated camera, radar, and LiDAR frames\" [https://www.semanticscholar.org/paper/RODNet%3A-Radar-Object-Detection-using-Cross-Modal-Wang-Jiang/3b858058c04da3871848b81e8d8304e24c1282d5], and K-Radar added elevation and adverse-weather coverage via the 4DRT [https://proceedings.neurips.cc/paper_files/paper/2022/hash/185fdf627eaae2abab36205dcd19b817-Abstract-Datasets_and_Benchmarks.html].",
+      "url": "https://arxiv.org/abs/2003.01816",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "CRUW introduced synchronized camera–radar RAMap data with cross-modal labels [https://arxiv.org/abs/2003.01816], CRUW3D extended this to \"66K synchronized and well-calibrated camera, radar, and LiDAR frames\" [https://www.semanticscholar.org/paper/RODNet%3A-Radar-Object-Detection-using-Cross-Modal-Wang-Jiang/3b858058c04da3871848b81e8d8304e24c1282d5], and K-Radar added elevation and adverse-weather coverage via the 4DRT [https://proceedings.neurips.cc/paper_files/paper/2022/hash/185fdf627eaae2abab36205dcd19b817-Abstract-Datasets_and_Benchmarks.html].",
+      "url": "https://semanticscholar.org/paper/RODNet%3A-Radar-Object-Detection-using-Cross-Modal-Wang-Jiang/3b858058c04da3871848b81e8d8304e24c1282d5",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "CRUW introduced synchronized camera–radar RAMap data with cross-modal labels [https://arxiv.org/abs/2003.01816], CRUW3D extended this to \"66K synchronized and well-calibrated camera, radar, and LiDAR frames\" [https://www.semanticscholar.org/paper/RODNet%3A-Radar-Object-Detection-using-Cross-Modal-Wang-Jiang/3b858058c04da3871848b81e8d8304e24c1282d5], and K-Radar added elevation and adverse-weather coverage via the 4DRT [https://proceedings.neurips.cc/paper_files/paper/2022/hash/185fdf627eaae2abab36205dcd19b817-Abstract-Datasets_and_Benchmarks.html].",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2022/hash/185fdf627eaae2abab36205dcd19b817-Abstract-Datasets_and_Benchmarks.html",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "First, **density versus information loss**: moving earlier in the processing chain (raw ADC, pre-CFAR) preserves information but inflates compute [https://arxiv.org/pdf/1906.12187, https://www.mdpi.com/1424-8220/22/11/4208].",
+      "url": "https://arxiv.org/pdf/1906.12187",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "First, **density versus information loss**: moving earlier in the processing chain (raw ADC, pre-CFAR) preserves information but inflates compute [https://arxiv.org/pdf/1906.12187, https://www.mdpi.com/1424-8220/22/11/4208].",
+      "url": "https://mdpi.com/1424-8220/22/11/4208",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Second, **geometric fidelity**: 3DRT lacks elevation, which motivates 4DRT and Gaussian primitives [https://proceedings.neurips.cc/paper_files/paper/2022/hash/185fdf627eaae2abab36205dcd19b817-Abstract-Datasets_and_Benchmarks.html, https://spj.science.org/doi/pdf/10.34133/cbsystems.0079].",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2022/hash/185fdf627eaae2abab36205dcd19b817-Abstract-Datasets_and_Benchmarks.html",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Second, **geometric fidelity**: 3DRT lacks elevation, which motivates 4DRT and Gaussian primitives [https://proceedings.neurips.cc/paper_files/paper/2022/hash/185fdf627eaae2abab36205dcd19b817-Abstract-Datasets_and_Benchmarks.html, https://spj.science.org/doi/pdf/10.34133/cbsystems.0079].",
+      "url": "https://spj.science.org/doi/pdf/10.34133/cbsystems.0079",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Third, **cross-modal alignment**: polar coordinate systems and Doppler axes make naïve feature concatenation with cameras suboptimal, motivating representation-aware fusion designs such as CRAFT [https://underline.io/lecture/69109-craft-camera-radar-3d-object-detection-with-spatio-contextual-fusion-transformer].",
+      "url": "https://underline.io/lecture/69109-craft-camera-radar-3d-object-detection-with-spatio-contextual-fusion-transformer",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The 2022 MDPI survey's prescription—\"use of pre-CFAR data, the use of high-resolution radar sensors, and the use of [learned processing]\"—remains the most concise statement of the field's near-term trajectory [https://www.mdpi.com/1424-8220/22/11/4208].",
+      "url": "https://mdpi.com/1424-8220/22/11/4208",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "[https://arxiv.org/abs/2003.01816]",
+      "url": "https://arxiv.org/abs/2003.01816",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://www.semanticscholar.org/paper/RODNet%3A-Radar-Object-Detection-using-Cross-Modal-Wang-Jiang/3b858058c04da3871848b81e8d8304e24c1282d5]",
+      "url": "https://semanticscholar.org/paper/RODNet%3A-Radar-Object-Detection-using-Cross-Modal-Wang-Jiang/3b858058c04da3871848b81e8d8304e24c1282d5",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "[https://arxiv.org/pdf/1906.12187]",
+      "url": "https://arxiv.org/pdf/1906.12187",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[http://vigir.ee.missouri.edu/~gdesouza/Research/Conference_CDs/IEEE_WCCI_2020/IJCNN/Papers/N-21054.pdf]",
+      "url": "http://vigir.ee.missouri.edu/~gdesouza/Research/Conference_CDs/IEEE_WCCI_2020/IJCNN/Papers/N-21054.pdf",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://proceedings.neurips.cc/paper_files/paper/2022/hash/185fdf627eaae2abab36205dcd19b817-Abstract-Datasets_and_Benchmarks.html]",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2022/hash/185fdf627eaae2abab36205dcd19b817-Abstract-Datasets_and_Benchmarks.html",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://www.mdpi.com/1424-8220/22/11/4208] / [https://pmc.ncbi.nlm.nih.gov/articles/PMC9185239/]",
+      "url": "https://mdpi.com/1424-8220/22/11/4208",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://www.mdpi.com/1424-8220/22/11/4208] / [https://pmc.ncbi.nlm.nih.gov/articles/PMC9185239/]",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9185239",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://spj.science.org/doi/pdf/10.34133/cbsystems.0079]",
+      "url": "https://spj.science.org/doi/pdf/10.34133/cbsystems.0079",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "\"CRAFT: Camera-Radar 3D Object Detection with Spatio-Contextual Fusion Transformer.\" [https://underline.io/lecture/69109-craft-camera-radar-3d-object-detection-with-spatio-contextual-fusion-transformer]",
+      "url": "https://underline.io/lecture/69109-craft-camera-radar-3d-object-detection-with-spatio-contextual-fusion-transformer",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    }
+  ],
+  "noncited_factual_accuracy": 0.6666666666666666,
+  "noncited_count": 12,
+  "noncited_correct": 8,
+  "noncited_details": [
+    {
+      "claim": "Automotive radar sensors operate in the 77–81 GHz millimeter-wave band",
+      "evidence": [
+        {
+          "title": "Millimeter-Wave Technology for Automotive Radar Sensors ...",
+          "abstract": "An automotive radar sensor operating in the 77 GHz band is presented. The sensor is realized using low-cost PCB technology, directly integrating all millimeter ...",
+          "url": "https://www.semanticscholar.org/paper/Millimeter-Wave-Technology-for-Automotive-Radar-in-Hasch-Topak/9ca0bcb74141aa9f96c067af8e0c515af42321f2"
+        },
+        {
+          "title": "Millimeter-Wave Technology for Automotive Radar Sensors ...",
+          "abstract": "by J Hasch · 2012 · Cited by 1793 — This paper provides background and an overview of the state of the art of millimeter-wave technology for automotive radar applications,",
+          "url": "http://ui.adsabs.harvard.edu/abs/2012ITMTT..60..845H/abstract"
+        },
+        {
+          "title": "Advancements in Millimeter-Wave Radar Technologies for ...",
+          "abstract": "by B Yan · 2025 · Cited by 34 — This review paper provides a comprehensive examination of millimeter-wave radar technologies in automotive systems, reviewing their advancements through ...",
+          "url": "https://www.mdpi.com/2079-9292/14/7/1436"
+        },
+        {
+          "title": "Understanding mmWave RADAR, its Principle & Applications",
+          "abstract": "mmWave RADAR is a non-contact sensor, working in a spectrum of 10 millimeters (30 GHz) to 1 millimeter (300 GHz). This offers accurate location ...",
+          "url": "https://www.design-reuse.com/article/61510-understanding-mmwave-radar-its-principle-applications/"
+        },
+        {
+          "title": "Advancements in mmWave Sensor Technology for Radar ...",
+          "abstract": "Operating in the 76–81 GHz range, these radars can identify movements as small as a fraction of a millimeter. Traditional mmWave radar systems, ...",
+          "url": "https://forum.digikey.com/t/advancements-in-mmwave-sensor-technology-for-radar-systems/43756"
+        }
+      ],
+      "true_votes": 1,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "RODNet is a deep neural network that detects objects purely from range-azimuth frequency heatmaps (RAMaps)",
+      "evidence": [
+        {
+          "title": "RADDet: Range-Azimuth-Doppler based Radar Object ...",
+          "abstract": "We present a method for detecting objects in images using a single deep neural network. Our approach, named SSD, discretizes the output space of bounding ...",
+          "url": "https://www.researchgate.net/publication/353024705_RADDet_Range-Azimuth-Doppler_based_Radar_Object_Detection_for_Dynamic_Road_Users"
+        },
+        {
+          "title": "Range-Azimuth-Doppler based Radar Object Detection ... - ar5iv",
+          "abstract": "In this paper, we collect a novel radar dataset that contains radar data in the form of Range-Azimuth-Doppler tensors",
+          "url": "https://ar5iv.labs.arxiv.org/html/2105.00363"
+        },
+        {
+          "title": "A Methodology Based on Deep Learning for Contact ...",
+          "abstract": "by R Gonzales Martínez · 2024 · Cited by 2 — This work focuses on designing a specific methodology for ship detection in the Peruvian coast using commercial radar images. We introduce two ...",
+          "url": "https://e-archivo.uc3m.es/bitstreams/4af6cb3e-0dab-4b15-8ae5-0bfff4ebf113/download"
+        },
+        {
+          "title": "A Deep Automotive Radar Object Detector on Range- ...",
+          "abstract": "by C Decourt · 2022 · Cited by 55 — In this paper we propose a new deep learning model for object detection and classification using radar data.",
+          "url": "https://hal.science/hal-03759535/document"
+        },
+        {
+          "title": "Artificial Neural Networks and Deep Learning Techniques ...",
+          "abstract": "by W Jiang · 2022 · Cited by 89 — The RD-Detection Net is used to measure range and velocity, while azimuth and elevation are predicted by the Angle-Detection Net.",
+          "url": "https://www.mdpi.com/2079-9292/11/1/156"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "RODNet introduced the CRUW dataset",
+      "evidence": [
+        {
+          "title": "CRUW Dataset",
+          "abstract": "CRUW is a public camera-radar dataset for autonomous vehicle applications. It is a good resource for researchers to study FMCW radar data,",
+          "url": "https://www.cruwdataset.org/"
+        },
+        {
+          "title": "ROD2021 - CRUW Dataset",
+          "abstract": "The dataset can only be used for academic purposes. By using this dataset and related software, you agree to cite our dataset and baseline paper ...",
+          "url": "https://www.cruwdataset.org/rod2021"
+        },
+        {
+          "title": "Improving the Performance of RODNet for MMW Radar Target Detection ...",
+          "abstract": "The CRUW dataset is used to verify the improved missed detection and false alarm of the method. This paper is organized as follows: the ...",
+          "url": "https://www.mdpi.com/2227-7390/11/2/361"
+        },
+        {
+          "title": "Blog - Rodney Brooks",
+          "abstract": "Towards the end of 2025 I published a long blog post summarizing the status of, and problems remaining for humanoid robots. I started building humanoid robots ...",
+          "url": "https://rodneybrooks.com/blog/"
+        },
+        {
+          "title": "CRUW - OpenDataLab",
+          "abstract": "-CRUW is a dataset for the radar object detection (ROD) task, which aims to classify and localize the objects in 3D purely from radar's radio frequency (RF) ...",
+          "url": "https://opendatalab.com/OpenDataLab/CRUW"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "RODNet replaces human-annotated labels with cross-modal supervision from a camera-radar fusion module",
+      "evidence": [
+        {
+          "title": "27 - RODNet: Radar Object Detection using Cross-Modal ...",
+          "abstract": "In this paper we propose a camera reader cross models perfusion framework.",
+          "url": "https://www.youtube.com/watch?v=UZbxI4o2-7g"
+        },
+        {
+          "title": "Radar Object Detection Using Cross-Modal Supervision",
+          "abstract": "Instead of using burdensome human-labeled ground truth, we train the RODNet using the annotations generated automatically by a novel 3D localization method ...",
+          "url": "https://fugumt.com/fugumt/paper_check/2003.01816v2_enmode"
+        },
+        {
+          "title": "Radar Object Detection Using Cross-Modal Supervision",
+          "abstract": "by Y Wang · 2020 · Cited by 156 — In this paper, we propose a deep radar object detection network (RODNet), to effectively detect objects purely from the carefully processed ...",
+          "url": "https://arxiv.org/abs/2003.01816"
+        },
+        {
+          "title": "Introduction",
+          "abstract": "Human Annotation Data Collection. The paper that introduces the above method about CRF annotation is accepted by WACV 2021: }, title={RODNet: Radar Object ...",
+          "url": "https://www.cruwdataset.org/introduction"
+        },
+        {
+          "title": "RODNet: Radar Object Detection using Cross-Modal ...",
+          "abstract": "This paper introduces the CRUW3D dataset, including 66K synchronized and well-calibrated camera, radar, and LiDAR frames in various driving scenarios,",
+          "url": "https://www.semanticscholar.org/paper/RODNet%3A-Radar-Object-Detection-using-Cross-Modal-Wang-Jiang/3b858058c04da3871848b81e8d8304e24c1282d5"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "RODNet uses a location-based non-maximum suppression post-processor",
+      "evidence": [
+        {
+          "title": "Learning Non-maximum Suppression",
+          "abstract": "A new network architecture designed to perform non-maximum suppression (NMS), using only boxes and their score, shows promise providing improved ...",
+          "url": "https://www.semanticscholar.org/paper/Learning-Non-maximum-Suppression-Hosang-Benenson/f94feceb5b725c6b303b758a0e5e90215b0174d3"
+        },
+        {
+          "title": "Accelerating Non-Maximum Suppression: A Graph Theory ...",
+          "abstract": "Non-maximum suppression (NMS) is an indispensable post-processing step in object detection. This paper systematically analyzes NMS from a graph ...",
+          "url": "https://neurips.cc/virtual/2024/poster/96910"
+        },
+        {
+          "title": "RODNet: Radar Object Detection using Cross-Modal ...",
+          "abstract": "by Y Wang · 2021 · Cited by 156 — The final detection results are then calculated using our post-processing method, called location-based non-maximum suppression (L-NMS).",
+          "url": "https://ieeexplore.ieee.org/document/9423448/"
+        },
+        {
+          "title": "A Deep Dive Into Non-Maximum Suppression (NMS)",
+          "abstract": "Non-maximum suppression (NMS) is a post-processing technique that is used in object detection tasks to eliminate duplicate detections and select ...",
+          "url": "https://builtin.com/machine-learning/non-maximum-suppression"
+        },
+        {
+          "title": "Rethinking the Non-Maximum Suppression Step in 3D ...",
+          "abstract": "by B Li · 2024 · Cited by 2 — This paper proposes a BEV-NMS strategy for post-processing prediction boxes in the BEV view, based on B-Grouping and B-IoU. The ...",
+          "url": "https://www.mdpi.com/2079-9292/13/20/4034"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "Automotive radar uses frequency-modulated continuous-wave (FMCW) signaling",
+      "evidence": [
+        {
+          "title": "The signal processing algorithm of automotive FMCW radars with an ...",
+          "abstract": "The paper considers the algorithm for estimating the speed and distance to the target as applied to the mm wave automotive radar with linear FMCW.",
+          "url": "https://iopscience.iop.org/article/10.1088/1742-6596/1236/1/012081"
+        },
+        {
+          "title": "Principles and Applications of FMCW Technology: What is its Potential in ...",
+          "abstract": "FMCW (Frequency Modulated Continuous Wave) technology is extremely useful for LiDAR and radar and plays an important role in transportation ...",
+          "url": "https://sycatus.com/en/blog/2025/03/19/principles-and-applications-of-fmcw-technology-what-is-its-potential-in-lidar-and-radar/"
+        },
+        {
+          "title": "How Automotive Radar uses Chirp Signals for Sensing - Vik's Newsletter",
+          "abstract": "Automotive radar uses both pulsed and frequency modulated continuous wave (FMCW) radar. We will explore how these things work. RF signal used ...",
+          "url": "https://www.viksnewsletter.com/p/how-automotive-radar-uses-chirp-signals"
+        },
+        {
+          "title": "FMCW Radar for Autonomous Vehicles - YouTube",
+          "abstract": "Watch an introduction to Frequency Modulated Continuous Wave (FMCW) radar and why it's a good solution for autonomous vehicle applications.",
+          "url": "https://www.youtube.com/watch?v=-N7A5CIi0sg&vl=en"
+        },
+        {
+          "title": "Signal Processing Challenges in Automotive Radar - arXiv",
+          "abstract": "“Frequency Modulated Continuous Wave (FMCW)” is the modulation technology currently used in almost all automotive radars [3, 4] . The fundamental signal in ...",
+          "url": "https://arxiv.org/html/2501.07649v1"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "CFAR is an acronym for constant false-alarm rate",
+      "evidence": [
+        {
+          "title": "False Alarm Rate",
+          "abstract": "instead of a constant false alarm rate (CFAR), the constant false alarm probability (CFAP) is called. CFAR is used when describing circuit technology,",
+          "url": "https://www.radartutorial.eu/01.basics/False%20Alarm%20Rate.en.html"
+        },
+        {
+          "title": "Robust Truncated Statistics Constant False Alarm Rate ...",
+          "abstract": "by W Dong · 2024 · Cited by 3 — The constant false alarm rate (CFAR) algorithm is the most common and practical target detection method in radar systems",
+          "url": "https://www.mdpi.com/2504-446X/8/10/597"
+        },
+        {
+          "title": "IRJET-Cell Averaging - Constant False Alarm Rate ...",
+          "abstract": "The CFAR process forms an estimate of cells. This paper shows the principle of CA – CFAR of noise and interference level where target detection is detector ...",
+          "url": "https://www.academia.edu/37303005/IRJET_Cell_Averaging_Constant_False_Alarm_Rate_Detection_in_Radar"
+        },
+        {
+          "title": "Constant false alarm rate",
+          "abstract": "Constant false alarm rate (CFAR) detection is a common form of adaptive algorithm used in radar systems to detect target returns against a background of noise, ...",
+          "url": "https://en.wikipedia.org/wiki/Constant_false_alarm_rate"
+        },
+        {
+          "title": "Expert system constant false alarm rate (CFAR) processor",
+          "abstract": "Constant False Alarm Rate (CFAR) processors were developed to maintain a constant average false alarm rate through adaptive threshold control while maintaining ...",
+          "url": "https://patents.google.com/patent/US5499030A/en"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "PointPillars and VoxelNet are 3D object detection architectures",
+      "evidence": [
+        {
+          "title": "Pointpillars Fast encoders for object detection from point clouds",
+          "abstract": "Pointpillars Fast encoders for object detection from point clouds. VoxelNet End to End Learning for Point Cloud Based 3D Object Detection ...",
+          "url": "https://www.youtube.com/watch?v=cObrTI786B4"
+        },
+        {
+          "title": "Implementation of the PointPillars Network for 3D Object ...",
+          "abstract": "by J Stanisz · 2022 · Cited by 24 — In this paper, we present a hardware-software implementation of a deep neural network for object detection based on a point cloud obtained by a LiDAR sensor.",
+          "url": "https://dl.acm.org/doi/abs/10.1007/s11265-021-01733-4"
+        },
+        {
+          "title": "A Review of PointPillars: Fast Encoders for Object ...",
+          "abstract": "PointPillars is a 3D Object Detection algorithm using 2D convolutional layer. This algorithm is famous due to its fast inference speed on LiDAR ...",
+          "url": "https://medium.com/machine-intelligence-and-deep-learning-lab/a-review-of-pointpillars-fast-encoders-for-object-detection-from-point-clouds-43b53009a7aa"
+        },
+        {
+          "title": "Implementation of the PointPillars Network for 3D Object ...",
+          "abstract": "by J Stanisz · 2022 · Cited by 24 — In this paper, we present a hardware-software implementation of a deep neural network for object detection based on a point cloud obtained ...",
+          "url": "https://link.springer.com/article/10.1007/s11265-021-01733-4"
+        },
+        {
+          "title": "VoxelNet: End-to-End Learning for Point Cloud Based 3D ...",
+          "abstract": "VoxelNet is proposed, a generic 3D detection network that unifies feature extraction and bounding box prediction into a single stage, end-to-end trainable ...",
+          "url": "https://www.semanticscholar.org/paper/VoxelNet%3A-End-to-End-Learning-for-Point-Cloud-Based-Zhou-Tuzel/80f5ee8578ee76e2c17824f211762ffec7e029d4"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "CRAFT is titled 'Camera-Radar 3D Object Detection with Spatio-Contextual Fusion Transformer'",
+      "evidence": [
+        {
+          "title": "CRAFT: Camera-Radar 3D Object Detection with ...",
+          "abstract": "A novel proposal-level early fusion approach that effectively exploits both spatial and contextual properties of camera and radar for 3D object detection",
+          "url": "https://www.semanticscholar.org/paper/CRAFT%3A-Camera-Radar-3D-Object-Detection-with-Fusion-Kim-Kim/2a32aec5f06324bd0dabab8a41c97e29a954a21a"
+        },
+        {
+          "title": "CRAFT: Camera-Radar 3D Object Detection with Spatio ...",
+          "abstract": "This research aims to develop a robust camera-radar fusion framework that effectively integrates spatial and contextual information while ...",
+          "url": "https://liner.com/review/craft-cameraradar-3d-object-detection-with-spatiocontextual-fusion-transformer"
+        },
+        {
+          "title": "CRAFT: Camera-Radar 3D Object Detection",
+          "abstract": "Summary · The paper introduces an early fusion framework that aligns camera semantics with radar data using a Soft Polar Association strategy.",
+          "url": "https://www.emergentmind.com/papers/2209.06535"
+        },
+        {
+          "title": "CRAFT: Camera-Radar 3D Object Detection with Spatio ...",
+          "abstract": "by Y Kim · 2022 · Cited by 198 — Here we propose a novel proposal-level early fusion approach that effectively exploits both spatial and contextual properties of camera and ...",
+          "url": "https://arxiv.org/abs/2209.06535"
+        },
+        {
+          "title": "CRAFT: Camera-Radar 3D Object Detection with Spatio ...",
+          "abstract": "CRAFT: Camera-Radar 3D Object Detection with Spatio-Contextual Fusion Transformer bookmark. Transcript English (automatic)",
+          "url": "https://underline.io/lecture/69109-craft-camera-radar-3d-object-detection-with-spatio-contextual-fusion-transformer"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "Micro-Doppler signatures capture the time-varying Doppler spectrum produced by an object's moving sub-components",
+      "evidence": [
+        {
+          "title": "Radar Micro-Doppler Signatures: Processing and ...",
+          "abstract": "This research explores the processing and applications of radar micro-Doppler signatures, focusing on the analysis of human signatures using high-range ...",
+          "url": "https://www.academia.edu/111031153/Radar_Micro_Doppler_Signatures_Processing_and_Applications"
+        },
+        {
+          "title": "Micro-Doppler Signatures - Review, Challenges, and ...",
+          "abstract": "This paper proposes a new approach for classifying ground moving targets captured by pulsed Doppler radar. Radar echo signals express the Doppler effect",
+          "url": "https://www.researchgate.net/publication/316936205_Micro-Doppler_Signatures_-_Review_Challenges_and_Perspectives"
+        },
+        {
+          "title": "Radar Micro‐Doppler Signature Generation Based on Time ...",
+          "abstract": "by SR Wang · 2024 · Cited by 43 — The presented metasurface contains time‐varying modulation periods, ‐motions of different objects.",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11109607/"
+        },
+        {
+          "title": "Review of micro‐Doppler signatures - IET Journals - Wiley",
+          "abstract": "The micro-Doppler signature of a subject allows the recognition of the subject's identity or activity through its movement. Extracting useful ...",
+          "url": "https://ietresearch.onlinelibrary.wiley.com/doi/10.1049/iet-rsn.2015.0118"
+        },
+        {
+          "title": "Micro-Doppler signatures of subwavelength nonrigid bodies in ...",
+          "abstract": "by V Kozlov · 2021 · Cited by 10 — In this paper, a time-dependent coupled dipoles theory is developed and demonstrated experimentally by examining a simple system of two ...",
+          "url": "https://link.aps.org/doi/10.1103/PhysRevB.104.054307"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "Radar point clouds often include radial-Doppler velocity information",
+      "evidence": [
+        {
+          "title": "Dynamical and microphysical retrieval from Doppler radar ...",
+          "abstract": "Doppler radar observations using a cloud model ・ radar observed variables, that is, the radial velocity and reflectivity. r i is the distance between a grid ...",
+          "url": "https://opensky.ucar.edu/islandora/object/articles%3A3272"
+        },
+        {
+          "title": "Doppler Radar - an overview",
+          "abstract": "Doppler weather radars are used to estimate and map the hydrometeor's fields of reflectivity (proportional to the number density and size of the hydrometeors) ...",
+          "url": "https://www.sciencedirect.com/topics/agricultural-and-biological-sciences/doppler-radar"
+        },
+        {
+          "title": "Dealiasing Wind Information from Doppler Radar for ...",
+          "abstract": "by M WUEST · 2001 · Cited by 12 — A sim- ulated PPI and radar observations during different meteorological situations are well corrected to provide the radial velocity information.",
+          "url": "https://iacweb.ethz.ch/doc/publications/wueest_diss.pdf"
+        },
+        {
+          "title": "Talk by M. Zeller: Radar Velocity Transformer: Single-scan ...",
+          "abstract": "... Radar Velocity Transformer: Single-scan Moving Object Segmentation in Noisy Radar Point Clouds,” in Proc. of the IEEE Intl. Conf. on ...",
+          "url": "https://www.youtube.com/watch?v=dTDgzWIBgpE"
+        },
+        {
+          "title": "Robust 4D Radar-aided Inertial Navigation for Aerial ...",
+          "abstract": "Radar can acquire information about the azimuth, elevation angle, radial Doppler velocity, and distance of the object being measured.",
+          "url": "https://arxiv.org/html/2502.15452v1"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "K-Radar is a 4D radar object detection dataset for autonomous driving in various weather conditions",
+      "evidence": [
+        {
+          "title": "K-Radar: 4D Radar Object Detection for Autonomous Driving in Various ...",
+          "abstract": "KAIST-Radar is introduced, a novel large-scale object detection dataset and benchmark that contains 35K frames of 4D Radar tensor (4DRT) data",
+          "url": "https://www.semanticscholar.org/paper/K-Radar%3A-4D-Radar-Object-Detection-for-Autonomous-Paek-Kong/8098fbba14d7a67a929916e1123b1212bc0a29f9"
+        },
+        {
+          "title": "K-Radar: 4D Radar Object Detection for Autonomous Driving in Various ...",
+          "abstract": "K-Radar includes challenging driving conditions such as adverse weathers (fog, rain, and snow) on various road structures (urban, suburban roads ...",
+          "url": "https://arxiv.org/abs/2206.08171"
+        },
+        {
+          "title": "GitHub - kaist-avelab/K-Radar: 4D Radar Object Detection for ...",
+          "abstract": "K-Radar is the world's first and largest publicly available autonomous driving 4D radar dataset that provides full RAED (Range–Azimuth–Elevation–Doppler) data ...",
+          "url": "https://github.com/kaist-avelab/K-Radar"
+        },
+        {
+          "title": "K-Radar: 4D Radar Dataset for Driving | PDF | Lidar - Scribd",
+          "abstract": "This document introduces K-Radar, a new large-scale dataset for 4D radar object detection. K-Radar contains 35,000 frames of 4D radar tensor data with ...",
+          "url": "https://www.scribd.com/document/633088147/335-k-radar-4d-radar-object-detect"
+        },
+        {
+          "title": "K-Radar: 4D radar object detection for autonomous driving in various ...",
+          "abstract": "K-Radar: 4D radar object detection for autonomous driving in various weather conditions ... dataset for automotive perception in bad weather ...",
+          "url": "https://dl.acm.org/doi/10.5555/3600270.3600546"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    }
+  ]
+}

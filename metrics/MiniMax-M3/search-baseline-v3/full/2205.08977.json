@@ -1,0 +1,898 @@
+{
+  "arxiv_id": "2205.08977",
+  "model": "MiniMax-M3",
+  "system": "search-baseline-v3",
+  "reference_precision": 0.0,
+  "reference_recall": 0.0,
+  "reference_count": 6,
+  "reference_matches": 0,
+  "ground_truth_count": 317,
+  "predicted_titles": [
+    "Digital Twins Meet Artificial Intelligence in 6G",
+    "Empowering 6G Communication Systems With Digital Twin ...",
+    "Paving the Last Mile of Artificial Intelligence With Edge Computing",
+    "[Retracted] A Survey on Information‐Centric Networking ...",
+    "Edge Intelligence and Internet of Things in Healthcare",
+    "An edge AI-enabled IoT healthcare monitoring system for ..."
+  ],
+  "cited_match_rate": 0.6,
+  "cited_count": 30,
+  "cited_supported": 18,
+  "cited_details": [
+    {
+      "statement": "The IEEE Communications Magazine has explicitly identified the integration of digital twins (DTs) and artificial intelligence (AI) in 6G as a priority research area, calling for contributions that advance \"a comprehensive understanding of the potential and challenges of the integration of DTs and AI in the context of 6G communication systems\" [IEEE Communications Magazine CFP, 2022](https://www.comsoc.org/publications/magazines/ieee-communications-magazine/cfp/digital-twins-meet-artificial-intelligence).",
+      "url": "https://comsoc.org/publications/magazines/ieee-communications-magazine/cfp/digital-twins-meet-artificial-intelligence",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The paradigm of edge intelligence has emerged to address these challenges by pushing AI workloads to the network edge, where \"edge AI enables low-latency perception by processing data locally, reducing dependence on cloud infrastructure while improving system efficiency\" [Zhou et al., 2019](https://www.researchgate.net/publication/333733935_Edge_Intelligence_Paving_the_Last_Mile_of_Artificial_Intelligence_With_Edge_Computing).",
+      "url": "https://researchgate.net/publication/333733935_Edge_Intelligence_Paving_the_Last_Mile_of_Artificial_Intelligence_With_Edge_Computing",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "A 2022 article in an IEEE venue notes that \"the paper also highlights the integration of intelligence and automation into DT technology in 6G communication systems\" [Kuruvatti et al., 2022](https://ieeexplore.ieee.org/iel7/6287639/9668973/09923927.pdf).",
+      "url": "https://ieeexplore.ieee.org/iel7/6287639/9668973/09923927.pdf",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Edge-based AI solutions for healthcare monitoring can deliver \"a scalable, responsive, and reliable AI-enabled IoT and edge computing-based healthcare solution with low latency when serving patients\" [Rathi et al., 2021](https://www.sciencedirect.com/science/article/abs/pii/S0045790621004699), thereby keeping personal health information local.",
+      "url": "https://sciencedirect.com/science/article/abs/pii/S0045790621004699",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "In smart healthcare, for example, wearable sensors and medical devices continuously monitor patient vital signs and feed downstream intelligence layers [Rathi et al., 2021](https://www.sciencedirect.com/science/article/abs/pii/S0045790621004699).",
+      "url": "https://sciencedirect.com/science/article/abs/pii/S0045790621004699",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "A widely cited survey on edge intelligence defines the convergence of edge computing and AI as encompassing edge inference, edge training, and edge caching of models [Zhou et al., 2019](https://www.researchgate.net/publication/333733935_Edge_Intelligence_Paving_the_Last_Mile_of_Artificial_Intelligence_With_Edge_Computing).",
+      "url": "https://researchgate.net/publication/333733935_Edge_Intelligence_Paving_the_Last_Mile_of_Artificial_Intelligence_With_Edge_Computing",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The IEEE Communications Magazine has similarly framed digital-twin and AI integration as a 6G research priority, implicitly requiring a network layer capable of distributing intelligence artifacts efficiently [IEEE Communications Magazine CFP, 2022](https://www.comsoc.org/publications/magazines/ieee-communications-magazine/cfp/digital-twins-meet-artificial-intelligence).",
+      "url": "https://comsoc.org/publications/magazines/ieee-communications-magazine/cfp/digital-twins-meet-artificial-intelligence",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "In 6G, digital twins can be used to model and optimize the network itself, creating a feedback loop in which the digital representation informs the operation of the physical network [Kuruvatti et al., 2022](https://ieeexplore.ieee.org/iel7/6287639/9668973/09923927.pdf).",
+      "url": "https://ieeexplore.ieee.org/iel7/6287639/9668973/09923927.pdf",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "systematically examines the convergence of edge computing and AI, emphasizing that \"edge AI enables low-latency perception by processing data locally, reducing dependence on cloud infrastructure while improving system efficiency\" [Zhou et al., 2019](https://www.researchgate.net/publication/333733935_Edge_Intelligence_Paving_the_Last_Mile_of_Artificial_Intelligence_With_Edge_Computing).",
+      "url": "https://researchgate.net/publication/333733935_Edge_Intelligence_Paving_the_Last_Mile_of_Artificial_Intelligence_With_Edge_Computing",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A 2019 survey documents \"the trends in the advancement of edge IoT-based smart healthcare,\" including the integration of wearable sensors, edge inference, and cloud analytics [Edge Intelligence and IoT in Healthcare Survey, 2019](https://www.academia.edu/60275486/Edge_Intelligence_and_Internet_of_Things_in_Healthcare_A_Survey).",
+      "url": "https://academia.edu/60275486/Edge_Intelligence_and_Internet_of_Things_in_Healthcare_A_Survey",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The article \"Empowering 6G Communication Systems with Digital Twin\" examines how DT technology can be integrated into 6G, noting that it \"highlights the integration of intelligence and automation into DT technology in 6G communication systems\" [Kuruvatti et al., 2022](https://ieeexplore.ieee.org/iel7/6287639/9668973/09923927.pdf).",
+      "url": "https://ieeexplore.ieee.org/iel7/6287639/9668973/09923927.pdf",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The IEEE Communications Magazine has issued an open call for papers on \"Digital Twins Meet Artificial Intelligence in 6G,\" underscoring the convergence of DT and AI as a defining research theme for 6G [IEEE Communications Magazine CFP, 2022](https://www.comsoc.org/publications/magazines/ieee-communications-magazine/cfp/digital-twins-meet-artificial-intelligence).",
+      "url": "https://comsoc.org/publications/magazines/ieee-communications-magazine/cfp/digital-twins-meet-artificial-intelligence",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Although a comprehensive ICN survey was retracted in 2022 [Wiley, 2022](https://onlinelibrary.wiley.com/doi/10.1155/2022/7818712), the broader ICN literature consistently identifies named-data networking as a promising direction for future Internet architectures capable of supporting intelligence-centric traffic.",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1155/2022/7818712",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "proposes \"a scalable, responsive, and reliable AI-enabled IoT and edge computing-based healthcare solution with low latency when serving patients\" [Rathi et al., 2021](https://www.sciencedirect.com/science/article/abs/pii/S0045790621004699).",
+      "url": "https://sciencedirect.com/science/article/abs/pii/S0045790621004699",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A 2019 survey provides a comprehensive overview of edge intelligence in healthcare, discussing \"the trends in the advancement of edge IoT-based smart healthcare\" and identifying open challenges related to data heterogeneity, security, and regulatory compliance [Edge Intelligence and IoT in Healthcare Survey, 2019](https://www.academia.edu/60275486/Edge_Intelligence_and_Internet_of_Things_in_Healthcare_A_Survey).",
+      "url": "https://academia.edu/60275486/Edge_Intelligence_and_Internet_of_Things_in_Healthcare_A_Survey",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The integration of DTs and AI in industrial 6G systems is expected to enable self-optimizing production lines, as highlighted in the 6G digital-twin literature [Kuruvatti et al., 2022](https://ieeexplore.ieee.org/iel7/6287639/9668973/09923927.pdf).",
+      "url": "https://ieeexplore.ieee.org/iel7/6287639/9668973/09923927.pdf",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "- **Resource Orchestration and Model Placement.** Efficiently placing and migrating AI models across edge, fog, and cloud resources is a complex optimization problem that depends on workload characteristics, network conditions, and energy constraints [Zhou et al., 2019](https://www.researchgate.net/publication/333733935_Edge_Intelligence_Paving_the_Last_Mile_of_Artificial_Intelligence_With_Edge_Computing).",
+      "url": "https://researchgate.net/publication/333733935_Edge_Intelligence_Paving_the_Last_Mile_of_Artificial_Intelligence_With_Edge_Computing",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "- **Network-Native Intelligence.** Embedding AI into the network infrastructure itself—enabling self-optimizing, self-healing 6G networks—remains a long-term research challenge that requires advances in both AI and networking [Kuruvatti et al., 2022](https://ieeexplore.ieee.org/iel7/6287639/9668973/09923927.pdf).",
+      "url": "https://ieeexplore.ieee.org/iel7/6287639/9668973/09923927.pdf",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "[https://www.comsoc.org/publications/magazines/ieee-communications-magazine/cfp/digital-twins-meet-artificial-intelligence](https://www.comsoc.org/publications/magazines/ieee-communications-magazine/cfp/digital-twins-meet-artificial-intelligence)",
+      "url": "https://comsoc.org/publications/magazines/ieee-communications-magazine/cfp/digital-twins-meet-artificial-intelligence",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://www.comsoc.org/publications/magazines/ieee-communications-magazine/cfp/digital-twins-meet-artificial-intelligence](https://www.comsoc.org/publications/magazines/ieee-communications-magazine/cfp/digital-twins-meet-artificial-intelligence)",
+      "url": "https://comsoc.org/publications/magazines/ieee-communications-magazine/cfp/digital-twins-meet-artificial-intelligence",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://ieeexplore.ieee.org/iel7/6287639/9668973/09923927.pdf](https://ieeexplore.ieee.org/iel7/6287639/9668973/09923927.pdf)",
+      "url": "https://ieeexplore.ieee.org/iel7/6287639/9668973/09923927.pdf",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://ieeexplore.ieee.org/iel7/6287639/9668973/09923927.pdf](https://ieeexplore.ieee.org/iel7/6287639/9668973/09923927.pdf)",
+      "url": "https://ieeexplore.ieee.org/iel7/6287639/9668973/09923927.pdf",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://www.researchgate.net/publication/333733935_Edge_Intelligence_Paving_the_Last_Mile_of_Artificial_Intelligence_With_Edge_Computing](https://www.researchgate.net/publication/333733935_Edge_Intelligence_Paving_the_Last_Mile_of_Artificial_Intelligence_With_Edge_Computing)",
+      "url": "https://researchgate.net/publication/333733935_Edge_Intelligence_Paving_the_Last_Mile_of_Artificial_Intelligence_With_Edge_Computing",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://www.researchgate.net/publication/333733935_Edge_Intelligence_Paving_the_Last_Mile_of_Artificial_Intelligence_With_Edge_Computing](https://www.researchgate.net/publication/333733935_Edge_Intelligence_Paving_the_Last_Mile_of_Artificial_Intelligence_With_Edge_Computing)",
+      "url": "https://researchgate.net/publication/333733935_Edge_Intelligence_Paving_the_Last_Mile_of_Artificial_Intelligence_With_Edge_Computing",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://www.academia.edu/60275486/Edge_Intelligence_and_Internet_of_Things_in_Healthcare_A_Survey](https://www.academia.edu/60275486/Edge_Intelligence_and_Internet_of_Things_in_Healthcare_A_Survey)",
+      "url": "https://academia.edu/60275486/Edge_Intelligence_and_Internet_of_Things_in_Healthcare_A_Survey",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://www.academia.edu/60275486/Edge_Intelligence_and_Internet_of_Things_in_Healthcare_A_Survey](https://www.academia.edu/60275486/Edge_Intelligence_and_Internet_of_Things_in_Healthcare_A_Survey)",
+      "url": "https://academia.edu/60275486/Edge_Intelligence_and_Internet_of_Things_in_Healthcare_A_Survey",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://www.sciencedirect.com/science/article/abs/pii/S0045790621004699](https://www.sciencedirect.com/science/article/abs/pii/S0045790621004699)",
+      "url": "https://sciencedirect.com/science/article/abs/pii/S0045790621004699",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://www.sciencedirect.com/science/article/abs/pii/S0045790621004699](https://www.sciencedirect.com/science/article/abs/pii/S0045790621004699)",
+      "url": "https://sciencedirect.com/science/article/abs/pii/S0045790621004699",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://onlinelibrary.wiley.com/doi/10.1155/2022/7818712](https://onlinelibrary.wiley.com/doi/10.1155/2022/7818712)",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1155/2022/7818712",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://onlinelibrary.wiley.com/doi/10.1155/2022/7818712](https://onlinelibrary.wiley.com/doi/10.1155/2022/7818712)",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1155/2022/7818712",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    }
+  ],
+  "noncited_factual_accuracy": 0.2,
+  "noncited_count": 20,
+  "noncited_correct": 4,
+  "noncited_details": [
+    {
+      "claim": "The past decade has witnessed a dramatic increase in the number of connected devices, the volume of data generated at the network edge, and the maturity of deep-learning models capable of extracting actionable insights from that data.",
+      "evidence": [
+        {
+          "title": "The rise of social media",
+          "abstract": "by E Ortiz-Ospina · 2019 · Cited by 1113 — The increase in social media use over the last decade has, of course, come together with a large increase in the amount of time people spend ...",
+          "url": "https://ourworldindata.org/rise-of-social-media"
+        },
+        {
+          "title": "Global growth trend of data volume, 2006-2020 (based on '' ...",
+          "abstract": "This paper elaborates upon the origin, connotation, and development of big data. Data volume is continuously increasing, doubling every 3 years. will double ...",
+          "url": "https://www.researchgate.net/figure/Global-growth-trend-of-data-volume-2006-2020-based-on-The-digital-universe-in-2020_fig5_274233315"
+        },
+        {
+          "title": "Comparing the Increase in Information in the Last 10 Years",
+          "abstract": "The volume of data generated daily has grown on a monumental scale, driven by the proliferation of connected devices, the expansion of the Internet of Things ( ...",
+          "url": "https://tline.com/a-decade-of-digital-transformation-comparing-the-increase-in-information-in-the-last-10-years/"
+        },
+        {
+          "title": "Ten years of research change using Google Trends",
+          "abstract": "by SP Jun · 2018 · Cited by 837 — This study seeks to analyze the trends in research studies in the past decade which have utilized Google Trends, a new source of big data, to examine how ...",
+          "url": "https://www.sciencedirect.com/science/article/pii/S0040162517315536"
+        },
+        {
+          "title": "Internet of Things is a revolutionary approach for future ...",
+          "abstract": "by S Kumar · 2019 · Cited by 1877 — Moreover, increasing amount of massive data being generated through the communication between IoT sensors and devices is a new challenge.",
+          "url": "https://link.springer.com/article/10.1186/s40537-019-0268-2"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "Deep-learning models have reached superhuman accuracy in narrow domains such as image recognition, speech synthesis, and game playing.",
+      "evidence": [
+        {
+          "title": "Deep Learning: A Comprehensive Overview on Techniques ...",
+          "abstract": "A denoising autoencoder, for example, could be used to automatically pre-process an image, thereby boosting its quality for recognition accuracy.",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8372231/"
+        },
+        {
+          "title": "Famous Deep Learning Papers",
+          "abstract": "High-Resolution Image Synthesis With Latent Diffusion Models, Can a neural net learn to draw? A set of 2022 papers mark a remarkable advance in the state-of ...",
+          "url": "https://papers.baulab.info/"
+        },
+        {
+          "title": "Deep learning: Historical overview from inception to actualization ...",
+          "abstract": "This study aims to provide a historical narrative of deep learning, tracing its origins from the cybernetic era to its current state-of-the-art status.",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1568494625006891"
+        },
+        {
+          "title": "Explainable AI: A Review of Machine Learning Interpretability Methods",
+          "abstract": "Recent advances in artificial intelligence (AI) have led to its widespread industrial adoption, with machine learning systems demonstrating superhuman ...",
+          "url": "https://www.mdpi.com/1099-4300/23/1/18"
+        },
+        {
+          "title": "The Evolution of AI: From Classical Machine Learning to Modern Large ...",
+          "abstract": "This paper provides a comprehensive review of the evolution of artificial intelligence from early symbolic, rule-based systems to modern large language ...",
+          "url": "https://www.researchgate.net/publication/396580253_The_Evolution_of_AI_From_Classical_Machine_Learning_to_Modern_Large_Language_Models"
+        }
+      ],
+      "true_votes": 1,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "Sixth-generation (6G) communication systems are being designed with native AI support, in which intelligence is embedded not only in user applications but also in the network infrastructure itself.",
+      "evidence": [
+        {
+          "title": "Toward AI-native 6G networks",
+          "abstract": "To enable 6G's vision of an intelligent, interconnected world, networks must be architected as AI-native from the onset, with intrinsic ...",
+          "url": "https://www.youtube.com/watch?v=xi4gn-XZu3Y"
+        },
+        {
+          "title": "Overview of AI and communication for 6G network",
+          "abstract": "by Q CUI · Cited by 320 — To support “native intelligence” and achieve ubiquitous general intelligence, the 6G network requires groundbreaking innovations in the network architecture",
+          "url": "https://www.sciengine.com/doi/10.1007/s11432-024-4337-1"
+        },
+        {
+          "title": "Empowering 6G Communication Systems With Digital Twin ...",
+          "abstract": "by NP Kuruvatti · 2022 · Cited by 204 — The paper also highlights the integration of intelligence and automation into DT technology in 6G communication systems.",
+          "url": "https://ieeexplore.ieee.org/iel7/6287639/9668973/09923927.pdf"
+        },
+        {
+          "title": "Paving the Last Mile of Artificial Intelligence With Edge Computing",
+          "abstract": "Edge AI enables low-latency perception by processing data locally, reducing dependence on cloud infrastructure while improving system efficiency [21] , [22].",
+          "url": "https://www.researchgate.net/publication/333733935_Edge_Intelligence_Paving_the_Last_Mile_of_Artificial_Intelligence_With_Edge_Computing"
+        },
+        {
+          "title": "Toward 6G Native-AI Network: Foundation Model-Based ...",
+          "abstract": "A 6G native AI framework based on foundation models is proposed, an integration method for the expert knowledge is provided, an integration method for the ...",
+          "url": "https://www.semanticscholar.org/paper/Toward-6G-Native-AI-Network%3A-Foundation-Model-Based-Chen-Guo/ac7fbb07e04810daa3e54ab7bae62493afee9d5a"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "Sixth-generation (6G) networks are expected to provide sub-millisecond latency, terabit-per-second data rates, and ubiquitous AI support.",
+      "evidence": [
+        {
+          "title": "On Challenges of Sixth-Generation (6G) Wireless Networks",
+          "abstract": "6G sets its sights on achieving transmission rates of up to 1 terabyte per second (Tbps), offering an unprecedented network capacity and minimizing latency",
+          "url": "https://arxiv.org/html/2206.00868v2"
+        },
+        {
+          "title": "What Could Be The Expectations, Trends, for the Sixth ...",
+          "abstract": "Dear Respectful Researchers, With 5G still under going (well and fast), 6G falls into the radars of quite a bunch of pioneers in the telecommunications ...",
+          "url": "https://www.researchgate.net/post/What-Could-Be-The-Expectations-Trends-for-the-Sixth-Generation-6G-Wireless-Communications"
+        },
+        {
+          "title": "Digital Twins Meet Artificial Intelligence in 6G",
+          "abstract": "A digital twin is a virtual replica of a physical object, system, or process, including its components, behavior, and data. DTs can be used to model complex ...",
+          "url": "https://www.comsoc.org/publications/magazines/ieee-communications-magazine/cfp/digital-twins-meet-artificial-intelligence"
+        },
+        {
+          "title": "Edge Intelligence in Enhancing Last-Mile Delivery Logistics",
+          "abstract": "This study explores how AI-driven technologies and real-time data processing, combined with EI, can enhance last-mile delivery operations.",
+          "url": "https://www.preprints.org/manuscript/202407.1777"
+        },
+        {
+          "title": "An edge AI-enabled IoT healthcare monitoring system for ...",
+          "abstract": "by VK Rathi · 2021 · Cited by 159 — this paper proposes a scalable, responsive, and reliable AI-enabled IoT and edge computing-based healthcare solution with low latency when serving patients.",
+          "url": "https://www.sciencedirect.com/science/article/abs/pii/S0045790621004699"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "The IoI paradigm has been referred to under various names—the Internet of Intelligence (IoI), the AI-native Internet, or the Internet of AI Things.",
+      "evidence": [
+        {
+          "title": "A detailed study of the AI Native concept - Ericsson",
+          "abstract": "This white paper presents a number of views on the artificial intelligence (AI) native concept and discusses the background and context of AI native ...",
+          "url": "https://www.ericsson.com/en/reports-and-papers/white-papers/ai-native"
+        },
+        {
+          "title": "Research Report on Native and Cross-domain AI: State of the art and ...",
+          "abstract": "The report provides concise definitions of the terms native and cross domain AI in the context of wireless networks and then goes on to discuss the impact of AI ...",
+          "url": "https://mediastorage.o-ran.org/ngrg-rr/nGRG-RR-2023-03-Research-Report-on-Native-and-Cross-domain-AI-v1_1.pdf"
+        },
+        {
+          "title": "Artificial intelligence: A powerful paradigm for scientific research",
+          "abstract": "This paper undertakes a comprehensive survey on the development and application of AI in different aspects of fundamental sciences, including ...",
+          "url": "https://www.sciencedirect.com/science/article/pii/S2666675821001041"
+        },
+        {
+          "title": "Artificial intelligence: A powerful paradigm for scientific research",
+          "abstract": "This paper undertakes a comprehensive survey on the development and application of AI in different aspects of fundamental sciences, including a ...",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8633405/"
+        },
+        {
+          "title": "Edge Intelligence and Internet of Things in Healthcare",
+          "abstract": "This study discusses the trends in the advancement of edge IoT-based smart healthcare ... Georganas Best Paper Award, the 2019 King Saud University Scientific ...",
+          "url": "https://www.academia.edu/60275486/Edge_Intelligence_and_Internet_of_Things_in_Healthcare_A_Survey"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "By processing data locally, edge nodes reduce latency, conserve bandwidth, and improve privacy.",
+      "evidence": [
+        {
+          "title": "Edge Computing Guide: Transforming Real-Time Data Processing",
+          "abstract": "By processing data locally, it reduces latency, bandwidth usage, and enhances privacy and security, while enabling real-time decision-making.",
+          "url": "https://www.cavliwireless.com/blog/nerdiest-of-things/edge-computing-for-iot-real-time-data-and-low-latency-processing"
+        },
+        {
+          "title": "Edge computing: Revolutionizing data processing for IoT applications",
+          "abstract": "This review explores the key benefits of edge computing, such as reduced latency, bandwidth optimization, improved reliability, enhanced data privacy, and ...",
+          "url": "https://www.researchgate.net/publication/386276311_Edge_computing_Revolutionizing_data_processing_for_IoT_applications"
+        },
+        {
+          "title": "Edge Computing Research Papers - Academia.edu",
+          "abstract": "One advantage is to perform local data processing (limited latency, bandwidth preservation) with real time communication among IoT devices, while multiple ...",
+          "url": "https://www.academia.edu/Documents/in/Edge_Computing"
+        },
+        {
+          "title": "Edge computing improves security, bandwidth, and latency.",
+          "abstract": "Edge computing reduces latency, optimizes bandwidth, and improves security by processing data locally. IoT and real-time applications require it.",
+          "url": "https://pidatacenters.com/knowledge-hub/what-is-edge-computing-a-deep-dive-into-technical-features-and-numerous-advantages"
+        },
+        {
+          "title": "Edge computing optimization: an enhanced algorithm for efficient ...",
+          "abstract": "Minimizes data retrieval latency by processing and storing frequently accessed data locally at the edge. multiple edge nodes while preserving patient privacy, ...",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1110866525001744"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "Edge intelligence has been explored for remote patient monitoring, AI-assisted diagnosis, and personalized treatment in healthcare.",
+      "evidence": [
+        {
+          "title": "AI at the Edge: The Silent Guardian of Modern Healthcare Systems",
+          "abstract": "From remote patient monitoring to AI-assisted diagnostics, artificial intelligence is revolutionizing healthcare, but not in the way you might think.",
+          "url": "https://www.technexion.com/resources/ai-at-the-edge-the-silent-guardian-of-modern-healthcare-systems/"
+        },
+        {
+          "title": "Edge AI for Healthcare Operations: From Real-Time Monitoring to ...",
+          "abstract": "Current research on Edge AI in healthcare predominantly focuses on clinical applications: real-time patient monitoring, diagnostic support, and alert systems ...",
+          "url": "https://www.frontiersin.org/research-topics/77562/edge-ai-for-healthcare-operations-from-real-time-monitoring-to-organizational-intelligence"
+        },
+        {
+          "title": "AI-Driven Remote Patient Monitoring: Enhancing Home ...",
+          "abstract": "This research paper explores how AI-driven RPM can enhance home-based healthcare by leveraging IoT and ML techniques,. addressing key challenges, and ...",
+          "url": "https://www.researchgate.net/publication/390459423_AI-Driven_Remote_Patient_Monitoring_Enhancing_Home-Based_Healthcare_with_IoT_and_Machine_Learning"
+        },
+        {
+          "title": "An edge AI-enabled IoT healthcare monitoring system for ...",
+          "abstract": "by VK Rathi · 2021 · Cited by 159 — this paper proposes a scalable, responsive, and reliable AI-enabled IoT and edge computing-based healthcare solution with low latency when serving patients.",
+          "url": "https://www.sciencedirect.com/science/article/abs/pii/S0045790621004699"
+        },
+        {
+          "title": "Edge Intelligence and Internet of Things in Healthcare",
+          "abstract": "This study discusses the trends in the advancement of edge IoT-based smart healthcare ... Georganas Best Paper Award, the 2019 King Saud University Scientific ...",
+          "url": "https://www.academia.edu/60275486/Edge_Intelligence_and_Internet_of_Things_in_Healthcare_A_Survey"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "Software-defined networking (SDN), blockchain, and federated learning are commonly cited as complementary enablers of the IoI.",
+      "evidence": [
+        {
+          "title": "Standardization and Integration of Blockchain and ...",
+          "abstract": "Federated learning (FL) is a crucial advancement for privacy-preserving machine learning since it allows models to be trained across scattered devices and ...",
+          "url": "https://www.comsoc.org/publications/magazines/ieee-communications-standards-magazine/cfp/standardization-and-integration"
+        },
+        {
+          "title": "Applying Federated Learning in Software-Defined Networks",
+          "abstract": "by X Ma · 2022 · Cited by 59 — this paper aims to make a comprehensive survey on the related mechanisms and solutions that enable FL in SDNs. It highlights three major challenges, Software- ...",
+          "url": "https://www.mdpi.com/2073-8994/14/2/195"
+        },
+        {
+          "title": "On the Integration of Blockchain and SDN - PMC - NIH",
+          "abstract": "by A Rahman · 2022 · Cited by 70 — Software-defined networking (SDN) is an interesting paradigm that can be used to enhance and manage various security aspects in modern networks such as Internet ...",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9447952/"
+        },
+        {
+          "title": "Blockchain-Based Federated Learning in UAVs Beyond 5G ...",
+          "abstract": "Federated learning (FL) allows data to be trained on local nodes, preserving privacy and improving network communication. Key enablers,",
+          "url": "https://www.researchgate.net/publication/359316079_Blockchain-Based_Federated_Learning_in_UAVs_Beyond_5G_Networks_A_Solution_Taxonomy_and_Future_Directions"
+        },
+        {
+          "title": "Applying Federated Learning in Software-Defined Networks",
+          "abstract": "This paper aims to make a comprehensive survey on the related mechanisms and solutions that enable FL in SDNs, which affect the quality and quantity of ...",
+          "url": "https://www.semanticscholar.org/paper/Applying-Federated-Learning-in-Software-Defined-A-Ma-Liao/c2da2a71a34576832f9b1c02c0405db4474dc63d"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "Healthcare is among the most prominent application domains for the IoI.",
+      "evidence": [
+        {
+          "title": "Top Research Papers on Health You Need to Read",
+          "abstract": "Dive into a curated selection of top research papers on Health that provide valuable insights and advancements in healthcare, wellness, and medical research.",
+          "url": "https://paperguide.ai/papers/top/research-papers-health/"
+        },
+        {
+          "title": "Domains associated with successful quality improvement in ...",
+          "abstract": "by AS Brandrud · 2017 · Cited by 57 — Healthcare is suffering from serious unsolved problems that are threatening lives, increasing costs, and making the care unpredictable to the ...",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5597987/"
+        },
+        {
+          "title": "An exploration of how domains of quality of care relate ...",
+          "abstract": "by AJ Shepherd · 2019 · Cited by 21 — Establishing the importance of domains of healthcare quality could inform what and how the patient experience of healthcare quality is measured. Our analysis ...",
+          "url": "https://researchonline.gcu.ac.uk/files/26430603/Cowie_Revised_Manuscript_CLEAN.pdf"
+        },
+        {
+          "title": "Edge computing in IoT for smart healthcare",
+          "abstract": "This paper describes the edge layer that performs computations nearby medical sensors and is located close to the network's nodes.",
+          "url": "https://journals.sagepub.com/doi/10.3233/AIS-230009"
+        },
+        {
+          "title": "Toward 6G Native-AI Network: Foundation Model-Based ...",
+          "abstract": "A 6G native AI framework based on foundation models is proposed, an integration method for the expert knowledge is provided, an integration method for the ...",
+          "url": "https://www.semanticscholar.org/paper/Toward-6G-Native-AI-Network%3A-Foundation-Model-Based-Chen-Guo/ac7fbb07e04810daa3e54ab7bae62493afee9d5a"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "Healthcare systems typically combine wearable sensors, edge inference nodes, and cloud-based analytics to deliver continuous monitoring, early warning, and personalized interventions while preserving patient privacy.",
+      "evidence": [
+        {
+          "title": "Edge Computing in Healthcare: Benefits and Best Practices",
+          "abstract": "Discover the benefits of edge computing in healthcare and the best practices for organizations to follow if they want to achieve those benefits.",
+          "url": "https://zpesystems.com/resources/edge-computing-in-healthcare-zs/"
+        },
+        {
+          "title": "Machine Learning for Healthcare Wearable Devices - PMC - NIH",
+          "abstract": "by F Sabry · 2022 · Cited by 468 — In this study, a review of the different areas of the recent machine learning research for healthcare wearable devices is presented. Wearable devices may ...",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9038375/"
+        },
+        {
+          "title": "The future of edge computing for healthcare ecosystem",
+          "abstract": "by V Upadrista · Cited by 1 — This chapter will be of interest to implementors and practitioners to understand the role of edge computing in the healthcare ecosystem.",
+          "url": "https://researchonline.gcu.ac.uk/ws/portalfiles/portal/74115066/73628535.pdf"
+        },
+        {
+          "title": "REAL-TIME PERSONALIZED HEALTHCARE WITH EDGE AI",
+          "abstract": "This study examines how decentralized processing can boost real-time health intelligence and investigates privacy safeguards such as federated learning and ...",
+          "url": "https://iiisr.in/wp-content/uploads/2025/11/Chapter8.pdf"
+        },
+        {
+          "title": "Edge computing in IoT for smart healthcare",
+          "abstract": "This paper describes the edge layer that performs computations nearby medical sensors and is located close to the network's nodes.",
+          "url": "https://journals.sagepub.com/doi/10.3233/AIS-230009"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "In smart transportation, edge intelligence can support cooperative perception among vehicles, real-time traffic prediction, and autonomous driving; digital twins of vehicles, roads, and traffic systems can be used for simulation and what-if analysis.",
+      "evidence": [
+        {
+          "title": "A review on cooperative perception and control supported infrastructure ...",
+          "abstract": "This study presents a comprehensive review of the research progress achieved upon cooperative perception and control supported IVS over the ...",
+          "url": "https://www.sciopen.com/article/10.1016/j.geits.2022.100023"
+        },
+        {
+          "title": "Cooperative Perception with Edge AI for Driving Assistance - STAR Lab",
+          "abstract": "The team developed a cooperative perception framework that achieves accurate 3D vehicle localization based on single images for driving or parking purposes.",
+          "url": "http://www.uwstarlab.org/content/projects/c2smart-coop-percep.html"
+        },
+        {
+          "title": "Shared Perception and Edge-Enabled Communication for ...",
+          "abstract": "This article introduces the architecture and real-world deployment of a collision avoidance system based on shared perception between vehicles and ...",
+          "url": "https://dl.acm.org/doi/full/10.1145/3771934"
+        },
+        {
+          "title": "Cooperative Perception of Roadside Unit and Onboard Equipment with ...",
+          "abstract": "In this research, the smart roadside unit, Mobile Unit for Traffic Sensing (MUST) developed by the research team, is employed for both data analysis and ...",
+          "url": "https://rosap.ntl.bts.gov/view/dot/62001"
+        },
+        {
+          "title": "Cooperative Perception Technology of Autonomous Driving in the Internet ...",
+          "abstract": "Cooperative perception, as a critical technology of intelligent connected vehicles, aims to use wireless communication technology to interact and fuse ...",
+          "url": "https://www.mdpi.com/1424-8220/22/15/5535"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "In intelligent industry, digital twins of manufacturing processes, combined with edge AI for predictive maintenance and quality control, can significantly improve operational efficiency.",
+      "evidence": [
+        {
+          "title": "Digital Twins in Manufacturing",
+          "abstract": "Digital twins facilitate predictive maintenance by analyzing real-time data, allowing businesses to address maintenance needs before equipment failure occurs.",
+          "url": "https://www.infotech.com/research/ss/digital-twins-in-manufacturing"
+        },
+        {
+          "title": "Digital Twins in Manufacturing Explained: Key Advantages ...",
+          "abstract": "As a virtual model of your plant, digital twins in manufacturing allow you to continually monitor processes, capture data, and improve your efficiency.",
+          "url": "https://www.dataparc.com/blog/digital-twin-manufacturing/"
+        },
+        {
+          "title": "How Digital Twins and Industrial AI Redefine Manufacturing",
+          "abstract": "AI-supported analytics make predictive maintenance possible, helping anticipate equipment failures before they disrupt operations. Quality ...",
+          "url": "https://www.linkedin.com/pulse/take-look-factory-future-how-digital-twins-industrial-ai-redefine-1sfme"
+        },
+        {
+          "title": "Edge Intelligence in Enhancing Last-Mile Delivery Logistics",
+          "abstract": "This study explores how AI-driven technologies and real-time data processing, combined with EI, can enhance last-mile delivery operations.",
+          "url": "https://www.preprints.org/manuscript/202407.1777"
+        },
+        {
+          "title": "Digital Twins Meet Artificial Intelligence in 6G",
+          "abstract": "A digital twin is a virtual replica of a physical object, system, or process, including its components, behavior, and data. DTs can be used to model complex ...",
+          "url": "https://www.comsoc.org/publications/magazines/ieee-communications-magazine/cfp/digital-twins-meet-artificial-intelligence"
+        }
+      ],
+      "true_votes": 1,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "As of May 2022, the published evidence specifically tied to the \"Internet of Intelligence\" label remains limited.",
+      "evidence": [
+        {
+          "title": "Article 5: Prohibited AI Practices | EU Artificial Intelligence Act",
+          "abstract": "The Act also bans AI systems that scrape facial images from the internet or CCTV footage, infer emotions in the workplace or educational institutions, and ...",
+          "url": "https://artificialintelligenceact.eu/article/5/"
+        },
+        {
+          "title": "Impact of Artificial Intelligence–Generated Content Labels ...",
+          "abstract": "This study investigated the impact of AIGC labels on perceived accuracy, message credibility, and sharing intention for misinformation through a web-based ...",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11892328/"
+        },
+        {
+          "title": "The Impact of Artificial Intelligence on Modern Society - MDPI",
+          "abstract": "This paper explores the multifaceted impact of AI, analyzing its implications for employment, privacy, and decision-making processes.",
+          "url": "https://www.mdpi.com/2673-2688/6/8/190"
+        },
+        {
+          "title": "AI labeling reduces the perceived accuracy of online content but has ...",
+          "abstract": "Across the four outcomes, we find that AI labeling reduces perceived accuracy and interest in the described policy, but has no statistically significant effect ...",
+          "url": "https://www.sciencedirect.com/science/article/pii/S0736585326000523"
+        },
+        {
+          "title": "Edge Intelligence and Internet of Things in Healthcare",
+          "abstract": "This study discusses the trends in the advancement of edge IoT-based smart healthcare ... Georganas Best Paper Award, the 2019 King Saud University Scientific ...",
+          "url": "https://www.academia.edu/60275486/Edge_Intelligence_and_Internet_of_Things_in_Healthcare_A_Survey"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "As of May 2022, the literature specifically on the \"Internet of Intelligence\" as an integrated paradigm is still emerging.",
+      "evidence": [
+        {
+          "title": "Artificial intelligence: A powerful paradigm for scientific ...",
+          "abstract": "by Y Xu · 2021 · Cited by 2566 — New research and applications are emerging rapidly with the support by AI infrastructure, including data storage, computing power, AI ...",
+          "url": "https://www.sciencedirect.com/science/article/pii/S2666675821001041"
+        },
+        {
+          "title": "Data Science and Computing Intelligence",
+          "abstract": "by C Xueqi · 2020 · Cited by 3 — these intelligence paradigms still have many fundamental problems in formalizability, computability, and constructability.",
+          "url": "https://bulletinofcas.researchcommons.org/cgi/viewcontent.cgi?article=1211&context=journal"
+        },
+        {
+          "title": "Internet of Intelligence: A Survey on the Enabling ...",
+          "abstract": "by Q Tang · 2022 · Cited by 77 — This paper provides an overview of the Internet of intelligence, focusing on motivations, architecture, enabling technologies, applications, ...",
+          "url": "https://arxiv.org/pdf/2205.08977"
+        },
+        {
+          "title": "Artificial Intelligence and the Future of Teaching and ...",
+          "abstract": "AI may help us to provide feedback on the more realistic and complex aspects of doing math, for example, or investigating scientific phenomena, understanding ...",
+          "url": "https://www.ed.gov/sites/ed/files/documents/ai-report/ai-report.pdf"
+        },
+        {
+          "title": "Edge Intelligence and Internet of Things in Healthcare",
+          "abstract": "This study discusses the trends in the advancement of edge IoT-based smart healthcare ... Georganas Best Paper Award, the 2019 King Saud University Scientific ...",
+          "url": "https://www.academia.edu/60275486/Edge_Intelligence_and_Internet_of_Things_in_Healthcare_A_Survey"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "Most existing work focuses on individual constituent technologies—edge intelligence, digital twins, or ICN—rather than their integrated realization.",
+      "evidence": [
+        {
+          "title": "From Experiments to Cognitive Organizations – Embedding ...",
+          "abstract": "From Experiments to Cognitive Organizations – Embedding Agentic AI in Digital Twins · Comments.",
+          "url": "https://www.youtube.com/watch?v=NIEyi1asmZE"
+        },
+        {
+          "title": "Comprehensive Survey of the Landscape of Digital Twin ...",
+          "abstract": "The purpose of this study is to systematically examine the definitional landscape of the digital twin concept as outlined in scholarly literature, beginning ...",
+          "url": "https://www.researchgate.net/publication/377035250_Comprehensive_Survey_of_the_Landscape_of_Digital_Twin_Technologies_and_Their_Diverse_Applications"
+        },
+        {
+          "title": "Digital Twin AI: Opportunities and Challenges from Large ...",
+          "abstract": "This paper reveals how AI-driven digital twins are evolving toward more intelligent, interoperable, and ethically responsible ecosystems,",
+          "url": "https://arxiv.org/html/2601.01321v1"
+        },
+        {
+          "title": "The emergence of cognitive digital twin: vision, challenges ...",
+          "abstract": "by X Zheng · 2022 · Cited by 503 — The review of related works indicates that most existing DT applications focus on a single lifecycle phase of the corresponding system.",
+          "url": "https://www.tandfonline.com/doi/full/10.1080/00207543.2021.2014591"
+        },
+        {
+          "title": "Digital Twins and Artificial Intelligence as Pillars ...",
+          "abstract": "AI and digital-twin technology are helping to transform cities into smarter versions of themselves, supporting the Industry 4.0 revolution, and ...",
+          "url": "https://cacm.acm.org/research/digital-twins-and-artificial-intelligence-as-pillars-of-personalized-learning-models/"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "Running AI workloads at the edge imposes significant energy demands, particularly for battery-powered IoT devices.",
+      "evidence": [
+        {
+          "title": "Edited - Energy Consumption For Edge Computing in ...",
+          "abstract": "This survey paper examines energy consumption management in Edge Computing (EC) for Internet of Things (IoT) applications, emphasizing the importance of ...",
+          "url": "https://www.scribd.com/document/830178596/Edited-Energy-Consumption-for-Edge-Computing-in-Internet-of-Things-Final-V2"
+        },
+        {
+          "title": "Edge computing: Changing the balance of energy ...",
+          "abstract": "Energy consumption levels across networks and data centres are on the rise. Edge computing can be utilised to change the balance of energy usuage.",
+          "url": "https://stlpartners.com/articles/edge-computing/edge-computing-changing-the-balance-of-energy-in-networks/"
+        },
+        {
+          "title": "Energy-Aware Edge Computing Optimization for Real-Time ...",
+          "abstract": "This research addresses the critical challenge of energy-efficient anomaly detection in resource-constrained edge computing environments for IoT networks.",
+          "url": "https://www.researchgate.net/publication/391140573_Energy-Aware_Edge_Computing_Optimization_for_Real-Time_Anomaly_Detection_in_IoT_Networks"
+        },
+        {
+          "title": "Edge AI for Internet of Energy: Challenges and Perspectives",
+          "abstract": "Edge devices can be designed for optimal energy use, powering down during idle periods. Furthermore, the decentralized nature of edge computing allows for ...",
+          "url": "https://arxiv.org/html/2311.16851"
+        },
+        {
+          "title": "An Algorithm to Minimize Energy Consumption and Elapsed ...",
+          "abstract": "by JCS dos Anjos · 2021 · Cited by 60 — These Internet of things (IoT) devices run on batteries with strict energy restrictions. a dynamic cost model to minimize energy consumption",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8122349/"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "Distributed intelligence raises concerns about adversarial attacks, model inversion, data leakage, and the integrity of shared digital-twin states.",
+      "evidence": [
+        {
+          "title": "Trusted AI in Multi-agent Systems: An Overview of Privacy and Security for Distributed Learning",
+          "abstract": "Motivated by the advancing computational capacity of distributed end-user equipments (UEs), as well as the increasing concerns about sharing private data, there has been considerable recent interest in machine learning (ML) and artificial intelligence (AI) that can be processed on on distributed UEs. Specifically, in this paradigm, parts of an ML process are outsourced to multiple distributed UEs, and then the processed ML information is aggregated on a certain level at a central server, which turns a centralized ML process into a distributed one, and brings about significant benefits. However, this new distributed ML paradigm raises new risks of privacy and security issues. In this paper, we provide a survey of the emerging security and privacy risks of distributed ML from a unique perspective of information exchange levels, which are defined according to the key steps of an ML process, i.e.: i) the level of preprocessed data, ii) the level of learning models, iii) the level of extracted knowledge and, iv) the level of intermediate results. We explore and analyze the potential of threats for each information exchange level based on an overview of the current state-of-the-art attack mechanisms, and then discuss the possible defense methods against such threats. Finally, we complete the survey by providing an outlook on the challenges and possible directions for future research in this critical area.",
+          "url": "https://arxiv.org/abs/2202.09027"
+        },
+        {
+          "title": "Scientist raises concerns about NRC recommendations for genomic data",
+          "abstract": "R. Pielke, Jr., Public Access to Genome Data and the NAS as Policy Advocate, Prometheus: Health, September 12, 2004. Pielke regards the recent NRC committee recommendations on open genomic data (see posting from from September 9) with considerable skepticism, accusing the panel of having a &#34;built-in bias.&#34; He writes: But what bias are they guilty of? Being scientists and therefore needing access to scientific data?",
+          "url": "https://doi.org/10.63485/zzv5d-r4762"
+        },
+        {
+          "title": "Privacy-preserving Artificial Intelligence Techniques in Biomedicine",
+          "abstract": "Artificial intelligence (AI) has been successfully applied in numerous scientific domains. In biomedicine, AI has already shown tremendous potential, e.g. in the interpretation of next-generation sequencing data and in the design of clinical decision support systems. However, training an AI model on sensitive data raises concerns about the privacy of individual participants. For example, summary statistics of a genome-wide association study can be used to determine the presence or absence of an individual in a given dataset. This considerable privacy risk has led to restrictions in accessing genomic and other biomedical data, which is detrimental for collaborative research and impedes scientific progress. Hence, there has been a substantial effort to develop AI methods that can learn from sensitive data while protecting individuals' privacy. This paper provides a structured overview of recent advances in privacy-preserving AI techniques in biomedicine. It places the most important state-of-the-art approaches within a unified taxonomy and discusses their strengths, limitations, and open problems. As the most promising direction, we suggest combining federated machine learning as a more scalable approach with other additional privacy preserving techniques. This would allow to merge the advantages to provide privacy guarantees in a distributed way for biomedical applications. Nonetheless, more research is necessary as hybrid approaches pose new challenges such as additional network or computation overhead.",
+          "url": "https://arxiv.org/abs/2007.11621"
+        },
+        {
+          "title": "Digital Twins Meet Artificial Intelligence in 6G",
+          "abstract": "A digital twin is a virtual replica of a physical object, system, or process, including its components, behavior, and data. DTs can be used to model complex ...",
+          "url": "https://www.comsoc.org/publications/magazines/ieee-communications-magazine/cfp/digital-twins-meet-artificial-intelligence"
+        },
+        {
+          "title": "Information-Centric Networking Architectures and ...",
+          "abstract": "This approach highlights the synergy between artificial intelligence methods and ICN cache management for enhanced user experience in distributed environments.",
+          "url": "https://www.nature.com/nature-index/topics/l4/information-centric-networking-architectures-and-technologies"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "The IoI must accommodate a wide diversity of devices, models, data formats, and communication protocols.",
+      "evidence": [
+        {
+          "title": "Comparison of IoT Communication Protocols Using ...",
+          "abstract": "by A Bhardwaj · 2022 · Cited by 27 — This paper compares datagram and transport layer security protocol versions for IoT devices.",
+          "url": "https://www.mdpi.com/2227-9717/10/10/1952"
+        },
+        {
+          "title": "A survey on communication protocols and performance ...",
+          "abstract": "by C Bayılmış · Cited by 240 — This paper presents a straightforward overview of the lightweight communication protocols, technological advancements in application layer for the IoT ...",
+          "url": "https://www.sciengine.com/doi/10.1016/j.dcan.2022.03.013"
+        },
+        {
+          "title": "IoT Standards and Interoperability: Enabling Seamless ...",
+          "abstract": "This paper explores the significance of standardization and interoperability in the IoT ecosystem, discussing key organizations, protocols, and initiatives. ...",
+          "url": "https://admin.mantechpublications.com/index.php/JoITIT/issue/viewFile/6482/7083"
+        },
+        {
+          "title": "Empowering 6G Communication Systems With Digital Twin ...",
+          "abstract": "by NP Kuruvatti · 2022 · Cited by 204 — The paper also highlights the integration of intelligence and automation into DT technology in 6G communication systems.",
+          "url": "https://ieeexplore.ieee.org/iel7/6287639/9668973/09923927.pdf"
+        },
+        {
+          "title": "Digital Twins Meet Artificial Intelligence in 6G",
+          "abstract": "A digital twin is a virtual replica of a physical object, system, or process, including its components, behavior, and data. DTs can be used to model complex ...",
+          "url": "https://www.comsoc.org/publications/magazines/ieee-communications-magazine/cfp/digital-twins-meet-artificial-intelligence"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "Digital twins—virtual replicas of physical objects, systems, or processes—are expected to play a central role in 6G by providing real-time models that can be used for prediction, optimization, and what-if analysis.",
+      "evidence": [
+        {
+          "title": "Opportunities and Challenges for Smart Era's Applications",
+          "abstract": "Digital Twin refers to a virtual replica of a physical asset, process, or system that allows for data collection and analysis, simulation, and prediction.",
+          "url": "https://dl.acm.org/doi/fullHtml/10.1145/3607947.3608015"
+        },
+        {
+          "title": "Digital Twin AI: Opportunities and Challenges from Large Language ...",
+          "abstract": "Digital twins, as precise digital representations of physical systems, have evolved from passive simulation tools into intelligent and autonomous entities ...",
+          "url": "https://arxiv.org/html/2601.01321v1"
+        },
+        {
+          "title": "Digital Twins - Oxford University Research Archive",
+          "abstract": "Digital Twins are virtual copies of products, processes or services … technologies, mainly IoT, big data and machine learning.",
+          "url": "https://ora.ox.ac.uk/objects/uuid:c091de9c-6f6b-44e4-b9ff-3bfb0fc3a6cf/files/r9019s321d"
+        },
+        {
+          "title": "The Concept of a Digital Twin as a Virtual Copy of Physical Objects ...",
+          "abstract": "The work examines the concept of the digital twin as a modern technology for creating a virtual copy of a physical object, process, or system.",
+          "url": "https://www.academia.edu/164593468/The_Concept_of_a_Digital_Twin_as_a_Virtual_Copy_of_Physical_Objects_Processes_and_Systems"
+        },
+        {
+          "title": "Digital Twin: Benefits, use cases, challenges, and opportunities",
+          "abstract": "Digital Twin is defined as virtual from real-world objects. The data transmitted by IoT is used to create a digital duplication of a physical object. of ...",
+          "url": "https://www.sciencedirect.com/science/article/pii/S277266222300005X"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "Edge intelligence is the most mature constituent technology of the IoI.",
+      "evidence": [
+        {
+          "title": "The role of edge intelligence in next-gen computing",
+          "abstract": "This paper provides an overview of Edge Intelligence, including fundamental concepts, future technologies, and research directions.",
+          "url": "https://philarchive.org/rec/DHRDAT"
+        },
+        {
+          "title": "6G White Paper on Edge Intelligence",
+          "abstract": "In this white paper, we provide a vision for 6G Edge Intelligence, a key component to establish the future intelligent Internet technologies.",
+          "url": "https://www.6gflagship.com/6g-white-paper-on-edge-intelligence/"
+        },
+        {
+          "title": "Edge Intelligence: Concepts, Architectures, Applications ...",
+          "abstract": "This survey provides a comprehensive examination of edge intelligence concepts, architectures, applications, and future research directions.",
+          "url": "https://dl.acm.org/doi/10.1145/3486674"
+        },
+        {
+          "title": "Top Research Papers on Edge Computing",
+          "abstract": "Discover the Top Research Papers on Edge Computing that explore advancements and real-world applications. Click to gain insights from the latest in this ...",
+          "url": "https://paperguide.ai/papers/top/research-papers-edge-computing/"
+        },
+        {
+          "title": "Empowering 6G Communication Systems With Digital Twin ...",
+          "abstract": "by NP Kuruvatti · 2022 · Cited by 204 — The paper also highlights the integration of intelligence and automation into DT technology in 6G communication systems.",
+          "url": "https://ieeexplore.ieee.org/iel7/6287639/9668973/09923927.pdf"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    }
+  ]
+}

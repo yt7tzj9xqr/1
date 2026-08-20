@@ -1,0 +1,313 @@
+{
+  "arxiv_id": "2004.05937",
+  "model": "MiniMax-M3",
+  "system": "citation-rag-v13",
+  "reference_precision": 0.6666666666666666,
+  "reference_recall": 0.006557377049180328,
+  "reference_count": 3,
+  "reference_matches": 2,
+  "ground_truth_count": 305,
+  "predicted_titles": [
+    "FitNets: Hints for Thin Deep Nets",
+    "Distilling the Knowledge in a Neural Network",
+    "Knowledge Distillation: Compressing Large Models into Efficient Learners"
+  ],
+  "cited_match_rate": 0.9629629629629629,
+  "cited_count": 27,
+  "cited_supported": 26,
+  "cited_details": [
+    {
+      "statement": "Knowledge distillation (KD) is a model compression and knowledge transfer mechanism in which a large teacher model transfers learned behavior to a smaller student model [https://www.lightly.ai/blog/knowledge-distillation].",
+      "url": "https://lightly.ai/blog/knowledge-distillation",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The motivation behind the technique stems from the fact that modern deep learning models often achieve state-of-the-art performance at the cost of massive computational resources, making them impractical for real-time or edge deployment [https://www.lightly.ai/blog/knowledge-distillation].",
+      "url": "https://lightly.ai/blog/knowledge-distillation",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "KD addresses this tension by transferring the capabilities of large models into smaller, efficient ones without significant loss in accuracy, producing a model that is faster, lighter, and suitable for deployment on resource-constrained devices such as mobile phones or embedded systems [https://www.lightly.ai/blog/knowledge-distillation].",
+      "url": "https://lightly.ai/blog/knowledge-distillation",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The goal is typically to have the student model's accuracy approach, or sometimes even exceed, the teacher's accuracy [https://www.lightly.ai/blog/knowledge-distillation].",
+      "url": "https://lightly.ai/blog/knowledge-distillation",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "in \"Distilling the Knowledge in a Neural Network,\" which demonstrated that an ensemble of large models can be compressed into a single smaller, more deployable model [https://arxiv.org/abs/1503.02531].",
+      "url": "https://arxiv.org/abs/1503.02531",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The abstract notes that a very simple way to improve the performance of almost any machine learning algorithm is to train many different models on the same data and then average their predictions, but that making predictions using a whole ensemble is cumbersome and may be too computationally expensive to allow deployment to a large number of users [https://arxiv.org/abs/1503.02531].",
+      "url": "https://arxiv.org/abs/1503.02531",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The work builds on earlier work by Caruana and collaborators showing that it is possible to compress the knowledge in an ensemble into a single model, and develops this approach further using a different compression technique, achieving surprising results on MNIST and significantly improving a heavily used commercial acoustic model [https://arxiv.org/abs/1503.02531].",
+      "url": "https://arxiv.org/abs/1503.02531",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "abstract also introduces a new type of ensemble composed of one or more full models and many specialist models which learn to distinguish fine-grained classes that the full models confuse, and notes that unlike a mixture of experts, these specialist models can be trained rapidly and in parallel [https://arxiv.org/abs/1503.02531].",
+      "url": "https://arxiv.org/abs/1503.02531",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "(2015), stating that a compact model can be trained to reproduce the behavior and performance of a more complex model [https://www.lightly.ai/blog/knowledge-distillation].",
+      "url": "https://lightly.ai/blog/knowledge-distillation",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The teacher-student framework involves first training a complex teacher network, such as a deep neural network with many parameters, on the target task [https://www.lightly.ai/blog/knowledge-distillation].",
+      "url": "https://lightly.ai/blog/knowledge-distillation",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "For each example in the training set, the input is then passed through the teacher to obtain its output probabilities, which become the soft targets or teacher's probability distribution over classes [https://www.lightly.ai/blog/knowledge-distillation].",
+      "url": "https://lightly.ai/blog/knowledge-distillation",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The student network is trained on the same task, but instead of learning only from ground-truth labels, it learns to match the teacher model's predictions, the soft probabilities over classes [https://www.lightly.ai/blog/knowledge-distillation].",
+      "url": "https://lightly.ai/blog/knowledge-distillation",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A distillation loss, often implemented as the Kullback–Leibler divergence between teacher and student outputs, is combined with a standard supervised loss to align the student's outputs with the teacher's [https://www.lightly.ai/blog/knowledge-distillation].",
+      "url": "https://lightly.ai/blog/knowledge-distillation",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "(2015), softens the teacher's probability distribution to provide richer supervisory signal than hard labels alone [https://www.lightly.ai/blog/knowledge-distillation].",
+      "url": "https://lightly.ai/blog/knowledge-distillation",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Originally applied in computer vision for tasks such as image classification and recognition, and later in natural language processing, KD is now common whenever large and complex models need to be compressed [https://www.lightly.ai/blog/knowledge-distillation].",
+      "url": "https://lightly.ai/blog/knowledge-distillation",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Response-based knowledge refers to distilling the final outputs of the teacher, often the soft probability distribution across all classes [https://www.lightly.ai/blog/knowledge-distillation].",
+      "url": "https://lightly.ai/blog/knowledge-distillation",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Feature-based knowledge, by contrast, leverages intermediate representations from the teacher's hidden layers [https://www.lightly.ai/blog/knowledge-distillation].",
+      "url": "https://lightly.ai/blog/knowledge-distillation",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "explicitly proposed using hints from intermediate layers to address the network compression problem by taking advantage of depth, with the goal of training thin and deep student networks [https://arxiv.org/pdf/1412.6550].",
+      "url": "https://arxiv.org/pdf/1412.6550",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Relation-based knowledge forms a third category, capturing relationships between different examples or feature maps rather than individual outputs [https://www.lightly.ai/blog/knowledge-distillation].",
+      "url": "https://lightly.ai/blog/knowledge-distillation",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "In the standard offline setting, the teacher is pre-trained and fixed, while in online distillation, the teacher and student are co-trained rather than treated as a static authority [https://www.lightly.ai/blog/knowledge-distillation].",
+      "url": "https://lightly.ai/blog/knowledge-distillation",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Multi-teacher distillation extends the framework to use multiple teachers simultaneously, with use cases including leveraging an ensemble of models as a single compact model [https://www.lightly.ai/blog/knowledge-distillation].",
+      "url": "https://lightly.ai/blog/knowledge-distillation",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Self-distillation is another recognized variant, in which the model teaches itself, often via its own layers [https://www.lightly.ai/blog/knowledge-distillation].",
+      "url": "https://lightly.ai/blog/knowledge-distillation",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "KD has also been applied across different data modalities, with cross-modal distillation referring to settings where teacher and student operate on different modalities [https://www.lightly.ai/blog/knowledge-distillation].",
+      "url": "https://lightly.ai/blog/knowledge-distillation",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "online distillation, self-distillation, using multiple teacher models, or cross-modal distillation [https://www.lightly.ai/blog/knowledge-distillation].",
+      "url": "https://lightly.ai/blog/knowledge-distillation",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "work demonstrated success on MNIST and an acoustic modeling task, the empirical generality of distillation across diverse visual tasks is not detailed in the abstract [https://arxiv.org/abs/1503.02531].",
+      "url": "https://arxiv.org/abs/1503.02531",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Second, the FitNets card summarizes the motivation of exploiting depth in thin deep nets but does not detail empirical results or specific limitations [https://arxiv.org/pdf/1412.6550].",
+      "url": "https://arxiv.org/pdf/1412.6550",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Third, the blog's taxonomy of knowledge types and framework variants is presented at a high level, without empirical comparisons or quantitative evidence for each category [https://www.lightly.ai/blog/knowledge-distillation].",
+      "url": "https://lightly.ai/blog/knowledge-distillation",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    }
+  ],
+  "noncited_factual_accuracy": 0.6666666666666666,
+  "noncited_count": 3,
+  "noncited_correct": 2,
+  "noncited_details": [
+    {
+      "claim": "A foundational formulation of knowledge distillation was popularized by Hinton et al.",
+      "evidence": [
+        {
+          "title": "Distilling the Knowledge in a Neural Network",
+          "abstract": "Knowledge distillation, as introduced by Hinton, Vinyals, and Dean, represents a fundamental contribution to the field of deep learning.",
+          "url": "https://www.alphaxiv.org/abs/1503.02531"
+        },
+        {
+          "title": "Distilling the Knowledge in a Neural Network",
+          "abstract": "by G Hinton · 2015 · Cited by 34559 — Access Paper: View a PDF of the paper titled Distilling the Knowledge in a Neural Network, by Geoffrey Hinton and 2 other authors. View PDF ...",
+          "url": "https://arxiv.org/abs/1503.02531"
+        },
+        {
+          "title": "Back to Basics: Understanding the Foundational Paper on “ ...",
+          "abstract": "Today, we'll delve into the foundational concept of knowledge distillation, tracing back to Geoffrey Hinton's influential 2015 paper ...",
+          "url": "https://medium.com/@nayounghoon0223/back-to-the-basic-a-foundational-knowledge-distillation-paper-of-distilling-the-knowledge-in-a-10fba70bab3c"
+        },
+        {
+          "title": "Distilling knowledge in Neural Nets, by Geoffery Hinton ...",
+          "abstract": "\"Dark Knowledge\" is a typical Hinton-ism - the guy likes colorful names. But in an academic paper (especially in the title/abstract) it's better ...",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/2yk6a2/distilling_knowledge_in_neural_nets_by_geoffery/"
+        },
+        {
+          "title": "Knowledge Distillation: Principles, Algorithms & Applications",
+          "abstract": "Begin with the Hinton et al. paper: Understand the fundamental principles of KD. Get hands-on experience with DistilBERT and other ...",
+          "url": "https://www.sundeepteki.org/blog/knowledge-distillation-principles-algorithms-applications"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "A temperature parameter T, introduced in Hinton et al.",
+      "evidence": [
+        {
+          "title": "Geoffrey E. Hinton's Publications: in reverse chronological order",
+          "abstract": "Hinton's Publications in Reverse Chronological. Parameter estimation for linear dynamical systems. Free energy coding.",
+          "url": "http://www.cs.toronto.edu/~hinton/papers.html"
+        },
+        {
+          "title": "‪Geoffrey Hinton‬ - ‪Google Scholar‬",
+          "abstract": "Emeritus Prof. Computer Science, University of Toronto - ‪‪Cited by 1074258‬‬ - ‪machine learning‬ - ‪psychology‬ - ‪artificial intelligence‬ - ‪cognitive‬ ...",
+          "url": "https://scholar.google.com/citations?user=JicYPdAAAAAJ&hl=en"
+        },
+        {
+          "title": "What is LLM Temperature? - IBM",
+          "abstract": "Temperature is a parameter for adjusting the output of LLMs. Temperature controls the randomness or creativity generated by LLMs during inference.",
+          "url": "https://www.ibm.com/think/topics/llm-temperature"
+        },
+        {
+          "title": "What is the temperature parameter in deep learning? - Quora",
+          "abstract": "A standard deep learning model has a bunch of convolution/pooling/fully-connected layers, followed by the final fully-connected layer.",
+          "url": "https://www.quora.com/What-is-the-temperature-parameter-in-deep-learning"
+        },
+        {
+          "title": "Curriculum Temperature for Knowledge Distillation",
+          "abstract": "In this paper, we propose a simple curriculum-based technique, termed Curriculum Temperature for Knowledge. Distillation (CTKD), which controls the task ...",
+          "url": "https://ojs.aaai.org/index.php/AAAI/article/view/25236/25008"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "The FitNets work by Romero et al.",
+      "evidence": [
+        {
+          "title": "FitNets: Hints for Thin Deep Nets",
+          "abstract": "In this paper, we aim to address the network compression problem by taking advantage of depth. We propose a novel approach to train thin and deep networks, ...",
+          "url": "https://www.researchgate.net/publication/269935397_FitNets_Hints_for_Thin_Deep_Nets"
+        },
+        {
+          "title": "FitNets Romero et al. (2015) network architecture used in ...",
+          "abstract": "In this paper, we propose a method for image-set classification based on convex cone models, focusing on the effectiveness of convolutional neural network (CNN) ...",
+          "url": "https://www.researchgate.net/figure/FitNets-Romero-et-al-2015-network-architecture-used-in-experiments-Non-linearity_tbl1_284476548"
+        },
+        {
+          "title": "FitNets: Hints for Thin Deep Nets | Request PDF",
+          "abstract": "FitNet (Romero et al. 2015) , which use unmodified feature maps and outputs, achieved higher classification performance than other feature-based methods.",
+          "url": "https://www.researchgate.net/publication/319770191_FitNets_Hints_for_Thin_Deep_Nets"
+        },
+        {
+          "title": "FitNets: Hints for Thin Deep Nets",
+          "abstract": "by A Romero · 2014 · Cited by 7003 — View a PDF of the paper titled FitNets: Hints for Thin Deep Nets, by Adriana Romero. In this paper, we extend this idea to allow the training ...",
+          "url": "https://arxiv.org/abs/1412.6550"
+        },
+        {
+          "title": "[Knowledge Distillation] FitNets: Hints For Thin Deep Nets",
+          "abstract": "FitNet 2, 3, and 4 have better accuracy than the teacher network thereby proving that both the depth as well as hint training works.",
+          "url": "https://medium.com/data-science/knowledge-distillation-fitnets-hints-for-thin-deep-nets-c64840aa2baa"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    }
+  ]
+}

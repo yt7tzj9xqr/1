@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2401.07915",
+  "model": "MiniMax-M3",
+  "system": "search-baseline-v3",
+  "reference_precision": 0.25,
+  "reference_recall": 0.007692307692307693,
+  "reference_count": 8,
+  "reference_matches": 2,
+  "ground_truth_count": 260,
+  "predicted_titles": [
+    "Hybrid Imitation Learning Framework for Robotic Manipulation Tasks",
+    "Learning dexterous in-hand manipulation",
+    "DexMV: Imitation Learning for Dexterous Manipulation from Human Videos",
+    "Tactile-Driven Non-Prehensile Object Manipulation via ...",
+    "Learning Robot In-Hand Manipulation with Tactile Features",
+    "DexYCB: A Benchmark for Capturing Hand Grasping of Objects",
+    "DexArt: Benchmarking Generalizable Dexterous Manipulation ...",
+    "Learning a State Estimator for Tactile In-Hand Manipulation"
+  ]
+}

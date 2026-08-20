@@ -1,0 +1,15 @@
+{
+  "arxiv_id": "2205.08977",
+  "model": "MiniMax-M3",
+  "system": "citation-rag-v13",
+  "reference_precision": 0.0,
+  "reference_recall": 0.0,
+  "reference_count": 3,
+  "reference_matches": 0,
+  "ground_truth_count": 317,
+  "predicted_titles": [
+    "Edge Intelligence and Internet of Things in Healthcare",
+    "Information-Centric Networking Architectures and ...",
+    "Paving the Last Mile of Artificial Intelligence With Edge Computing"
+  ]
+}

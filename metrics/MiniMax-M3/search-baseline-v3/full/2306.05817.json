@@ -1,0 +1,731 @@
+{
+  "arxiv_id": "2306.05817",
+  "model": "MiniMax-M3",
+  "system": "search-baseline-v3",
+  "reference_precision": 0.125,
+  "reference_recall": 0.0033222591362126247,
+  "reference_count": 8,
+  "reference_matches": 1,
+  "ground_truth_count": 301,
+  "predicted_titles": [
+    "RecSys 2023 Tutorial: Large Language Models for Recommendation",
+    "GitHub - SAI990323/TALLRec",
+    "TALLRec: An Effective and Efficient Tuning Framework to Align Large ...",
+    "Chat-REC: Towards Interactive and Explainable LLMs ... - ar5iv",
+    "Improving Sequential Recommendation with LLMs - GitHub",
+    "Leveraging Large Language Models for Sequential Recommendation",
+    "Retrieval-Augmented Generation for Large Language Models: A Survey",
+    "Large Language Models for Next-Generation Recommendation Systems"
+  ],
+  "cited_match_rate": 0.5,
+  "cited_count": 20,
+  "cited_supported": 10,
+  "cited_details": [
+    {
+      "statement": "The RecSys 2023 tutorial on *Large Language Models for Recommendation* (He et al., 2023) frames this transition as an evolution \"from shallow models to deep models and to large models,\" arguing that formulating recommendation tasks as language instructions enables a *universal recommendation engine* capable of handling rating prediction, sequential recommendation, straightforward recommendation, and explanation generation within a single interface ([llmrecsys.github.io](https://llmrecsys.github.io/)).",
+      "url": "https://llmrecsys.github.io",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The literature, as catalogued in the RecSys 2023 tutorial, organizes LLM-for-Rec methods along two main axes ([llmrecsys.github.io](https://llmrecsys.github.io/)):",
+      "url": "https://llmrecsys.github.io",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "A key enabling observation is that LLMs are *pre-trained on broad web-scale corpora*, which gives them open-domain knowledge that partially substitutes for the domain-specific training data required by classical recommenders (PremAI, 2024; [premai.io](https://www.premai.io/blog/large-language-models-for-next-generation-recommendation-systems/)).",
+      "url": "https://premai.io/blog/large-language-models-for-next-generation-recommendation-systems",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "**TALLRec** (Bao et al., 2023) proposes an *effective and efficient* framework built on parameter-efficient tuning (specifically LoRA-style adapters on a LLaMA backbone) to align an LLM with recommendation data ([arXiv:2305.00447](https://arxiv.org/pdf/2305.00447)).",
+      "url": "https://arxiv.org/pdf/2305.00447",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The open-source release of TALLRec provides reference implementation details that practitioners can adapt ([GitHub: SAI990323/TALLRec](https://github.com/SAI990323/TALLRec)).",
+      "url": "https://github.com/SAI990323/TALLRec",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "**Chat-Rec** (Gao et al., 2023), a collaboration between Fudan University, UC Davis, and Tongji University, addresses both by converting user profiles and historical interactions into *prompts* for a frozen LLM, augmented through *in-context learning* rather than fine-tuning ([arXiv:2303.14524](https://ar5iv.labs.arxiv.org/html/2303.14524)).",
+      "url": "https://ar5iv.labs.arxiv.org/html/2303.14524",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The RecSys 2023 Late-Breaking Results paper **\"Leveraging Large Language Models for Sequential Recommendation\"** (Harald et al., 2023) explores how LLM-derived representations and language-based scoring functions can be exploited to model user intent over time ([DOI: 10.1145/3604915.3610639](https://dl.acm.org/doi/10.1145/3604915.3610639)).",
+      "url": "https://dl.acm.org/doi/10.1145/3604915.3610639",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The associated code release confirms that the paper substantially extends an earlier RecSys submission and benchmarks the LLM-based approach against classical sequential baselines such as SASRec and BERT4Rec ([GitHub: dh-r/llm-sequential-recommendation](https://github.com/dh-r/llm-sequential-recommendation)).",
+      "url": "https://github.com/dh-r/llm-sequential-recommendation",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "(2023) provides a comprehensive taxonomy — *Naive RAG*, *Advanced RAG*, and *Modular RAG* — and describes how external retrieval from a knowledge base can be coupled to an LLM to mitigate these problems ([arXiv:2312.10997](https://arxiv.org/abs/2312.10997)).",
+      "url": "https://arxiv.org/abs/2312.10997",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Across all four, the open-domain pre-training of LLMs is the unifying enabler, addressing the \"domain-specific data\" bottleneck of classical recommenders highlighted in the broader literature (PremAI, 2024; [premai.io](https://www.premai.io/blog/large-language-models-for-next-generation-recommendation-systems/)).",
+      "url": "https://premai.io/blog/large-language-models-for-next-generation-recommendation-systems",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "- **Latency and cost.** TALLRec's parameter-efficient design ([arXiv:2305.00447](https://arxiv.org/pdf/2305.00447)) and Chat-Rec's training-free prompting ([arXiv:2303.14524](https://ar5iv.labs.arxiv.org/html/2303.14524)) each address cost in different ways, but industrial deployment at scale in latency-sensitive channels (in-app offers, contact-center prompts) remains non-trivial.",
+      "url": "https://arxiv.org/pdf/2305.00447",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "- **Latency and cost.** TALLRec's parameter-efficient design ([arXiv:2305.00447](https://arxiv.org/pdf/2305.00447)) and Chat-Rec's training-free prompting ([arXiv:2303.14524](https://ar5iv.labs.arxiv.org/html/2303.14524)) each address cost in different ways, but industrial deployment at scale in latency-sensitive channels (in-app offers, contact-center prompts) remains non-trivial.",
+      "url": "https://ar5iv.labs.arxiv.org/html/2303.14524",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "- **Reliability and hallucination.** The RAG survey ([arXiv:2312.10997](https://arxiv.org/abs/2312.10997)) documents that RAG mitigates — but does not eliminate — hallucination; for regulated financial advice, additional guardrails are required.",
+      "url": "https://arxiv.org/abs/2312.10997",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "<https://llmrecsys.github.io/>",
+      "url": "https://llmrecsys.github.io",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "<https://arxiv.org/pdf/2305.00447>",
+      "url": "https://arxiv.org/pdf/2305.00447",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "<https://ar5iv.labs.arxiv.org/html/2303.14524>",
+      "url": "https://ar5iv.labs.arxiv.org/html/2303.14524",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "<https://dl.acm.org/doi/10.1145/3604915.3610639>",
+      "url": "https://dl.acm.org/doi/10.1145/3604915.3610639",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "<https://arxiv.org/abs/2312.10997>",
+      "url": "https://arxiv.org/abs/2312.10997",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "<https://www.premai.io/blog/large-language-models-for-next-generation-recommendation-systems/>",
+      "url": "https://premai.io/blog/large-language-models-for-next-generation-recommendation-systems",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "<https://github.com/SAI990323/TALLRec>",
+      "url": "https://github.com/SAI990323/TALLRec",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    }
+  ],
+  "noncited_factual_accuracy": 0.35294117647058826,
+  "noncited_count": 17,
+  "noncited_correct": 6,
+  "noncited_details": [
+    {
+      "claim": "Traditional recommender systems, most prominently collaborative filtering and content-based filtering, face well-documented limitations in cold-start scenarios, cross-domain generalization, and the generation of natural-language explanations that justify recommendations to end users.",
+      "evidence": [
+        {
+          "title": "A Deep Dive into Collaborative Filtering",
+          "abstract": "Recommendation systems quietly power many of the decisions we see every day, from which movie Netflix suggests next to which product shows ...",
+          "url": "https://www.youtube.com/watch?v=EdDj06vxjnw"
+        },
+        {
+          "title": "How to solve the cold start problem in recommender systems",
+          "abstract": "Sometimes, collaborative filtering methods that rely on user-item interactions may not work well for item cold start problems.",
+          "url": "https://thingsolver.com/blog/the-cold-start-problem/"
+        },
+        {
+          "title": "What is collaborative filtering?",
+          "abstract": "Collaborative filtering groups users based on behavior and uses general group characteristics to recommend items to a target user.",
+          "url": "https://www.ibm.com/think/topics/collaborative-filtering"
+        },
+        {
+          "title": "Collaborative Filtering and Deep Learning Based ...",
+          "abstract": "Collaborative filtering (CF) is the most popular user experience and trust of recommender systems, and effectively promote cold start items. Research on cold ...",
+          "url": "https://www.researchgate.net/publication/309224171_Collaborative_Filtering_and_Deep_Learning_Based_Recommendation_System_For_Cold_Start_Items"
+        },
+        {
+          "title": "Computing Recommendations with Collaborative Filtering",
+          "abstract": "by N Lathia · 2009 · Cited by 3 — This question explores collaborative filtering: what it is, how it works, and how different fields of research have led collaborative fil- tering to be ...",
+          "url": "https://nlathia.github.io/papers/lathia_computingrecs08.pdf"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "The RecSys 2023 tutorial on LLMs for recommendation distinguishes between discriminative recommenders, which score candidate items, and generative recommenders, which directly produce item identifiers or natural-language outputs.",
+      "evidence": [
+        {
+          "title": "Large Language Models (LLMs) for Recommendations ... - YouTube",
+          "abstract": "... between items and users. To provide a comprehensive understanding of the existing LLM-based recommendation systems, this survey presents a ...",
+          "url": "https://www.youtube.com/watch?v=g0EJgVAO7QM"
+        },
+        {
+          "title": "RecSys 2023 Tutorial: Large Language Models for ...",
+          "abstract": "We introduce how recommender system advanced from shallow models to deep models and to large models, how LLMs enable generative recommendation in contrast to ...",
+          "url": "https://llmrecsys.github.io/"
+        },
+        {
+          "title": "Training an LLM-RecSys Hybrid for Steerable Recs with Semantic IDs",
+          "abstract": "An LLM that can converse in English & item IDs, and make recommendations w/o retrieval or tools.",
+          "url": "https://eugeneyan.com/writing/semantic-ids/"
+        },
+        {
+          "title": "Aman's AI Journal • Recommendation Systems • LLM",
+          "abstract": "In the ranking phase of recommendation engines, the goal is to sort a list of candidate items based on specific criteria or preferences. This sorting process ...",
+          "url": "https://aman.ai/recsys/LLM/"
+        },
+        {
+          "title": "Tutorial on Large Language Models for Recommendation",
+          "abstract": "LLM as Scoring Function • Instruct LLM to generate a binary score (like or dislike) for each item • Discriminative as traditional recommenders",
+          "url": "https://yongfeng.me/attach/LLM4RecSys.pdf"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "In finance and business services, customer-facing product catalogs (e.g., investment products, insurance plans, B2B offerings) are long-tailed.",
+      "evidence": [
+        {
+          "title": "The Value-Based Pricing Guide",
+          "abstract": "Value-based pricing is a strategy that assigns prices to goods or services based on their perceived value to customers. Essentially, the ...",
+          "url": "https://www.netsuite.com/portal/resource/articles/business-strategy/value-based-pricing.shtml"
+        },
+        {
+          "title": "The Complete Guide to B2B Customer Experience",
+          "abstract": "Delivering great B2B customer experience is about building and sustaining successful, long-term relationships with your customers.",
+          "url": "https://inmoment.com/blog/b2b-customer-experience/"
+        },
+        {
+          "title": "Creating the Future of Insurance Customer Experiences",
+          "abstract": "Digital-first insurers and insurtechs provide innovative products to fill those coverage and technology gaps, often leapfrogging traditional carriers.",
+          "url": "https://www.duckcreek.com/wp-content/uploads/2022/07/eBook-Creating-the-Future-of-Insurance-Customer-Experiences.pdf"
+        },
+        {
+          "title": "Value creation in data-centric B2B platforms: A model ...",
+          "abstract": "by I Mancuso · 2024 · Cited by 46 — Data-centric B2B platforms are platforms where multiple B2B users relate and manage data for creating value. B2B platforms firstly stimulate innovation by ...",
+          "url": "https://www.sciencedirect.com/science/article/pii/S001985012400049X"
+        },
+        {
+          "title": "Insurance Product and Service Catalog Implementation",
+          "abstract": "Discover how group insurers can stand out in today's complex market through the development and implementation of a product and service catalog.",
+          "url": "https://www.deloitte.com/us/en/services/consulting/articles/group-insurance-service-catalog-implementation.html"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "In finance and business services, customer-facing product catalogs have rich textual metadata.",
+      "evidence": [
+        {
+          "title": "B2B: World-Class Customer Experiences Requires ... - Earley",
+          "abstract": "Together, rich product data and taxonomy can enable very sophisticated dynamic display of related products and content.",
+          "url": "https://info.earley.com/hubfs/EIS_Assets/EIS-Whitepaper-World-Class-CX-Requires-World-Class-Product-Data.pdf"
+        },
+        {
+          "title": "A Conceptual Approach to Understanding the Customer ...",
+          "abstract": "by PB Pires · 2024 · Cited by 83 — This study aimed to identify the constructs related to customer experience that underpin e-commerce, as well as their interconnections, to develop a ...",
+          "url": "https://www.mdpi.com/0718-1876/19/3/96"
+        },
+        {
+          "title": "Business data structures for B2B commerce",
+          "abstract": "This paper elaborates on how product profiles and other business information can be integrated into a business data repository serving an electronic commerce ...",
+          "url": "https://www.researchgate.net/publication/228987075_Business_data_structures_for_B2B_commerce"
+        },
+        {
+          "title": "Creating customer value from data: foundations and ...",
+          "abstract": "by F Hunke · 2021 · Cited by 73 — The objective of this paper is to identify ABS archetypes to provide a systematic differentiation of possible business opportunities.",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8549426/"
+        },
+        {
+          "title": "INSIGHTS INTO METADATA COMPONENTS",
+          "abstract": "This study delves into existing research on metadata and data catalogue management in enterprises, utilizing a systematic literature review (SLR) ...",
+          "url": "http://www.jatit.org/volumes/Vol102No22/13Vol102No22.pdf"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "In finance and business services, customer-facing product catalogs demand transparent justifications for regulatory and trust reasons.",
+      "evidence": [
+        {
+          "title": "TRUST IN ONLINE FINANCIAL SERVICES - CBS Research Portal",
+          "abstract": "Thus, this study aims to determine the underlying means of the six attributes in context to online financial services from a consumer-driven perspective.",
+          "url": "https://research.cbs.dk/files/59794360/679382_TRUST_IN_ONLINE_FINANCIAL_SERVICES.pdf"
+        },
+        {
+          "title": "Building Trust in Fintech: An Analysis of Ethical and Privacy ...",
+          "abstract": "This research paper explores the ethical considerations in using financial technology (fintech), focusing on big data, artificial intelligence ...",
+          "url": "https://www.researchgate.net/publication/372299927_Building_Trust_in_Fintech_An_Analysis_of_Ethical_and_Privacy_Considerations_in_the_Intersection_of_Big_Data_AI_and_Customer_Trust"
+        },
+        {
+          "title": "Data governance & quality management—Innovation and ...",
+          "abstract": "Recent trends demonstrate that the world and its market are being characterized by an increase in compliance and regulatory requirements, advances and changes ...",
+          "url": "https://www.sciencedirect.com/science/article/pii/S2444569X24001379"
+        },
+        {
+          "title": "Chat-REC: Towards Interactive and Explainable LLMs-Augmented Recommender System",
+          "abstract": "View recent discussion. Abstract: Large language models (LLMs) have demonstrated their significant potential to be applied for addressing various ...",
+          "url": "https://www.alphaxiv.org/audio/2303.14524"
+        },
+        {
+          "title": "Improving Sequential Recommendation with LLMs - GitHub",
+          "abstract": "Implementation and reproducible experiments behind the research paper \"Leveraging Large Language Models for Sequential Recommendation\" published in RecSys'23 ...",
+          "url": "https://github.com/dh-r/llm-sequential-recommendation"
+        }
+      ],
+      "true_votes": 1,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "Collaborative filtering typically fails when no historical interaction signal exists for a complex financial product.",
+      "evidence": [
+        {
+          "title": "RecSys: ACM Conference On Recommender Systems",
+          "abstract": "Classical recommender systems often assume that historical data are stationary and fail to account for the dynamic nature of user preferences,",
+          "url": "https://dl.acm.org/doi/proceedings/10.1145/3604915?tocHeading=heading15"
+        },
+        {
+          "title": "Adaptive Collaborative Filtering with Personalized Time ...",
+          "abstract": "by A Ghiye · 2023 · Cited by 31 — Our findings emphasize the importance of incorporating time explicitly in the model to enhance the accuracy of financial product recommendation.",
+          "url": "https://hal.science/hal-04487141/document"
+        },
+        {
+          "title": "History-Augmented Collaborative Filtering for Financial ...",
+          "abstract": "This work proposes a time-dependent collaborative filtering algorithm that can adaptively discount distant client-product interactions using personalized decay ...",
+          "url": "https://www.semanticscholar.org/paper/2ee4de50970ba6262d24c9c8cf379d968ae4419d"
+        },
+        {
+          "title": "Collaborative Filtering - an overview",
+          "abstract": "In systems that use collaborative filtering approaches, recommendations are made by matching a user to other users that have similar interests and preferences.",
+          "url": "https://www.sciencedirect.com/topics/computer-science/collaborative-filtering"
+        },
+        {
+          "title": "What is collaborative filtering?",
+          "abstract": "Collaborative filtering groups users based on behavior and uses general group characteristics to recommend items to a target user.",
+          "url": "https://www.ibm.com/think/topics/collaborative-filtering"
+        }
+      ],
+      "true_votes": 1,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "TALLRec's lightweight alignment substantially improves AUC on movie- and book-domain benchmarks relative to non-tuned LLMs.",
+      "evidence": [
+        {
+          "title": "TALLRec: An Effective and Efficient Tuning Framework to Align Large ...",
+          "abstract": "We have demonstrated that the proposed TALLRec framework can significantly enhance the recommendation capabilities of LLMs in the movie and book ...",
+          "url": "https://arxiv.org/abs/2305.00447"
+        },
+        {
+          "title": "GitHub - SAI990323/TALLRec",
+          "abstract": "We introduce a novel framework (TALLRec) that enables the efficient and effective adaptation of LLMs to recommendation tasks. Main results. movie, book. Few- ...",
+          "url": "https://github.com/SAI990323/TALLRec"
+        },
+        {
+          "title": "TALLRec: An Effective and Efficient Tuning Framework to Align Large ...",
+          "abstract": "The research demonstrates that TALLRec substantially enhances LLMs' recommendation abilities in movie and book domains, even when trained ...",
+          "url": "https://www.swiftscholar.net/paper/697845a7fe4cc3affbb67983"
+        },
+        {
+          "title": "TALLRec: An Effective and Efficient Tuning Framework to Align Large ...",
+          "abstract": "Experiments on sequential recommendation benchmarks show that HCGRec substantially improves over supervised fine-tuning and vanilla reward-based post ...",
+          "url": "https://www.researchgate.net/publication/373934714_TALLRec_An_Effective_and_Efficient_Tuning_Framework_to_Align_Large_Language_Model_with_Recommendation"
+        },
+        {
+          "title": "TALLRec: An Effective and Efficient Tuning Framework to Align Large ...",
+          "abstract": "TALLRec significantly outperforms both traditional and LLM-based recommendation models, demonstrating its effectiveness in leveraging LLMs for ...",
+          "url": "https://liner.com/review/tallrec-effective-and-efficient-tuning-framework-to-align-large-language"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "TALLRec requires only a small number of trainable parameters.",
+      "evidence": [
+        {
+          "title": "TALLRec: Lightweight Tuning Framework for LLMs in ...",
+          "abstract": "TALLRec paper introduces a lightweight tuning framework to align LLMs with recommendation tasks, and shows impressive few-shot performance.",
+          "url": "https://www.linkedin.com/posts/karunt_tallrec-paper-introduces-a-lightweight-tuning-activity-7477703747763118080-cfxZ"
+        },
+        {
+          "title": "TALLRec: An Effective and Efficient Tuning Framework to ...",
+          "abstract": "Large Language added low-rank matrices are optimized, significantly reducing the number of trainable parameters and thus computational cost and ...",
+          "url": "https://www.swiftscholar.net/paper/697845a7fe4cc3affbb67983"
+        },
+        {
+          "title": "TALLRec: An Effective and Efficient Tuning Framework to ...",
+          "abstract": "by K Bao · 2023 · Cited by 1090 — TALLRec employs a lightweight tuning approach … utilizing only a limited number of tuning examples. tuning only a small subset of parameters",
+          "url": "https://dl.acm.org/doi/fullHtml/10.1145/3604915.3608857"
+        },
+        {
+          "title": "tallrec-an-effective-and-efficient-tuning-framework-to-align- ...",
+          "abstract": "we propose an effective and efficient tuning framework to align LLMs for making recommendations (TALLRec) with a small number of tuning samples … we can ...",
+          "url": "https://scispace.com/pdf/tallrec-an-effective-and-efficient-tuning-framework-to-align-2rfj8l4e.pdf"
+        },
+        {
+          "title": "TALLRec: An Effective and Efficient Tuning Framework to ...",
+          "abstract": "TALLRec is trained on only 64 rec-tuning samples (i.e., in the 64-shot training setting). only 16 training samples, domain-specific datasets, ...",
+          "url": "https://liner.com/review/tallrec-effective-and-efficient-tuning-framework-to-align-large-language"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "Chat-Rec uses a training-free pipeline that employs an LLM of GPT-3.5 class as a conversational recommender.",
+      "evidence": [
+        {
+          "title": "GitHub - WLiK/LLM4Rec-Awesome-Papers ...",
+          "abstract": "A list of awesome papers and resources of recommender system on large language model (LLM). News: Our LLM4Rec survey has been released.",
+          "url": "https://github.com/WLiK/LLM4Rec-Awesome-Papers"
+        },
+        {
+          "title": "Chat-REC: Towards Interactive and Explainable LLMs-Augmented ...",
+          "abstract": "This paper presents one of the first user studies that measure users' perceptions of ChatGPT-generated explanations while acting as an RS, and reveals that ...",
+          "url": "https://www.semanticscholar.org/paper/Chat-REC%3A-Towards-Interactive-and-Explainable-Gao-Sheng/0cfdd655100055f234fd23ebecd915504b8e00e3"
+        },
+        {
+          "title": "Chat-REC: Towards Interactive and Explainable LLMs-Augmented ...",
+          "abstract": "Chat-Rec offers a novel approach to improving recommender systems and presents new practical scenarios for the implementation of AIGC (AI ...",
+          "url": "https://www.researchgate.net/publication/369557235_Chat-REC_Towards_Interactive_and_Explainable_LLMs-Augmented_Recommender_System"
+        },
+        {
+          "title": "LLM-based Recommendation",
+          "abstract": "(Chat-Rec, 2023) pioneered using LLMs as conversational recommendation interfaces via in-context learning, achieving +11% NDCG over LightGCN on MovieLens ...",
+          "url": "https://papers.lunadong.com/area/rec"
+        },
+        {
+          "title": "Rank-GRPO: Training LLM-based Conversational Recommender ...",
+          "abstract": "This manuscript introduces ConvRec-R1, a two-stage framework for training LLM-based conversational recommender systems.",
+          "url": "https://openreview.net/forum?id=Xgw2D9cALS"
+        }
+      ],
+      "true_votes": 1,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "Chat-Rec provides empirical evidence that user preferences learned through this approach can transfer across products for cross-domain recommendation.",
+      "evidence": [
+        {
+          "title": "Chat-REC: Towards Interactive and Explainable LLMs-Augmented ...",
+          "abstract": "This paper presents one of the first user studies that measure users' perceptions of ChatGPT-generated explanations while acting as an RS, and reveals that ...",
+          "url": "https://www.semanticscholar.org/paper/Chat-REC%3A-Towards-Interactive-and-Explainable-Gao-Sheng/0cfdd655100055f234fd23ebecd915504b8e00e3"
+        },
+        {
+          "title": "Chat-REC: Towards Interactive and Explainable LLMs-Augmented ...",
+          "abstract": "The key conclusions are that LLMs can effectively enhance recommender systems via prompt-only integration, enabling conversational interaction, ...",
+          "url": "https://www.swiftscholar.net/paper/69f61b52b03fbbc8eb02761a"
+        },
+        {
+          "title": "Chat-REC: Towards Interactive and Explainable LLMs-Augmented ...",
+          "abstract": "Chat-Rec is demonstrated to be effective in learning user preferences and establishing connections between users and products through in-context learning,",
+          "url": "https://ui.adsabs.harvard.edu/abs/2023arXiv230314524G/abstract"
+        },
+        {
+          "title": "Conversational recommendation based on end-to-end learning",
+          "abstract": "Conversational recommender systems (CRS) are software agents that support users in their decision-making process in an interactive way.",
+          "url": "https://www.sciencedirect.com/science/article/pii/S2451958821000877"
+        },
+        {
+          "title": "Chat-REC: Towards Interactive and Explainable LLMs-Augmented ...",
+          "abstract": "Chat-Rec is demonstrated to be effective in learning user preferences and establishing connections between users and products through in-context learning,",
+          "url": "https://ar5iv.labs.arxiv.org/html/2303.14524"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "Chat-Rec uses prompt-based injection of new-item information to mitigate cold-start failures.",
+      "evidence": [
+        {
+          "title": "Prompt Injection Attacks: Examples, Impact, Defenses - Alice",
+          "abstract": "A prompt injection attack manipulates an AI system by hiding instructions inside user input, external content, files, webpages, or tool outputs.",
+          "url": "https://alice.io/blog/prompt-injection-attack"
+        },
+        {
+          "title": "Mitigating adversarial manipulation in LLMs: a prompt-based approach to ...",
+          "abstract": "In various attack scenarios, Prompt-G significantly reduced jailbreak success rates and effectively identified prompts that caused confusion or ...",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11622839/"
+        },
+        {
+          "title": "LLM Prompt Injection Prevention - OWASP Cheat Sheet Series",
+          "abstract": "Prompt injection is a vulnerability in Large Language Model (LLM) applications that allows attackers to manipulate the model's behavior by injecting malicious ...",
+          "url": "https://cheatsheetseries.owasp.org/cheatsheets/LLM_Prompt_Injection_Prevention_Cheat_Sheet.html"
+        },
+        {
+          "title": "From prompt injections to protocol exploits: Threats in LLM-powered AI ...",
+          "abstract": "The authors present a comprehensive study of prompt-to-SQL (P2SQL) injection attacks in LangChain-based web applications.",
+          "url": "https://www.sciencedirect.com/science/article/pii/S2405959525001997"
+        },
+        {
+          "title": "AI-Powered Paper Summarization about the arXiv paper 2303.14524v2",
+          "abstract": "prompt-based injection of information into LLMs can also handle the cold-start scenarios with new items. In our experiments, Chat-Rec ...",
+          "url": "https://www.summarizepaper.com/en/arxiv-id/2303.14524v2/"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "Chat-Rec produces natural-language explanations as a by-product of the generative process.",
+      "evidence": [
+        {
+          "title": "Leveraging ChatGPT for Automated Human-centered Explanations in ...",
+          "abstract": "Our paper presents one of the first user studies that measure users' perceptions of ChatGPT-generated explanations while acting as an RS. Regarding ...",
+          "url": "https://dl.acm.org/doi/fullHtml/10.1145/3640543.3645171"
+        },
+        {
+          "title": "Rationalization for explainable NLP: a survey",
+          "abstract": "The NILE framework can generate natural language explanations for each possible decision and process these explanations to produce a final decision for the ...",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10560994/"
+        },
+        {
+          "title": "Ten Natural Language Processing Tasks with Generative Artificial ...",
+          "abstract": "The review enumerates the predominant applications of large language models (LLMs) in natural language processing (NLP) tasks, with a particular emphasis on ...",
+          "url": "https://www.mdpi.com/2076-3417/15/16/9057"
+        },
+        {
+          "title": "Opinion Paper: “So what if ChatGPT wrote it?” Multidisciplinary ...",
+          "abstract": "Transformative artificially intelligent tools, such as ChatGPT, designed to generate sophisticated text indistinguishable from that produced by a human, ...",
+          "url": "https://www.sciencedirect.com/science/article/pii/S0268401223000233"
+        },
+        {
+          "title": "Chat-REC: Towards Interactive and Explainable LLMs-Augmented ...",
+          "abstract": "Chat-Rec is demonstrated to be effective in learning user preferences and establishing connections between users and products through in-context ...",
+          "url": "https://www.researchgate.net/publication/369557235_Chat-REC_Towards_Interactive_and_Explainable_LLMs-Augmented_Recommender_System"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "In financial services, sequential modeling is essential for cross-sell and next-best-action recommendation.",
+      "evidence": [
+        {
+          "title": "Predicting l-CrossSold products using connected components",
+          "abstract": "This paper introduces a new model of applying clustering analysis concepts to RSs along with advancements in graph theory to react effectively to user changes",
+          "url": "https://www.sciencedirect.com/science/article/abs/pii/S1567422322000321"
+        },
+        {
+          "title": "Cross-Selling in Bank-Household Relationships - Oxford Academic",
+          "abstract": "Abstract. We show that banks cross-sell future deposits and loans to existing household depositors. A bank is 20-percentage-points more likely to sell a lo.",
+          "url": "https://academic.oup.com/rfs/article/39/6/1751/7241521"
+        },
+        {
+          "title": "Boost customer relationships with next best offer for banking - Dataiku",
+          "abstract": "NBO models use machine learning to analyze customer data to recommend products statistically more likely to see uptake.",
+          "url": "https://www.dataiku.com/blog/next-best-offer-banking"
+        },
+        {
+          "title": "The Next Best Action for Banks - Chapter 3 - WWT",
+          "abstract": "The Next Best Action series provides banks and financial services organizations with actionable insights to build more proactive, ...",
+          "url": "https://www.wwt.com/article/the-next-best-action-for-banks-chapter-3-formulating-recommendations"
+        },
+        {
+          "title": "Predictive Selling for Cross Sell - ProSight Financial Association",
+          "abstract": "What cross-sell? Most banks offer on average over 100 products and services but 56% of customers only have one product, according to our company's research.",
+          "url": "https://www.prosightfa.org/insights/predictive-selling-for-cross-sell/"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "Product catalogs, prices, fees, and regulatory disclosures change continuously.",
+      "evidence": [
+        {
+          "title": "Credit Cards: Increased Complexity in Rates and Fees ...",
+          "abstract": "With credit card penalty rates and fees now common, the Federal. Reserve has begun efforts to revise disclosures to better inform.",
+          "url": "https://www.gao.gov/assets/gao-06-929.pdf"
+        },
+        {
+          "title": "Fee Disclosures Can Improve Investor Decision-Making",
+          "abstract": "Yes, fee reform worked. Participants' sensitivity to fees increases after the reform. after the regulatory change. participants become ...",
+          "url": "https://alphaarchitect.com/fee-disclosures-can-improve-investor-decision-making/"
+        },
+        {
+          "title": "The Use and Misuse of Disclosure as a Regulatory System",
+          "abstract": "by PJ Dalley · 2007 · Cited by 185 — This Article seeks to examine regulatory disclosure systems gen- erally, using the securities laws as a paradigm, in an effort to deter- mine when and how ...",
+          "url": "https://ir.law.fsu.edu/cgi/viewcontent.cgi?article=1160&context=lr"
+        },
+        {
+          "title": "FRB: Designing Disclosures to Inform Consumer Financial ...",
+          "abstract": "The Federal Reserve Board has studied ways to improve the information and materials--including required disclosures--that consumers draw on when ...",
+          "url": "https://www.federalreserve.gov/pubs/bulletin/2011/articles/designingdisclosures/default.htm"
+        },
+        {
+          "title": "Understanding Regulation Z's Advertising Requirements",
+          "abstract": "Payment information in an advertisement is also a triggering term requiring additional disclosures. Specifically, if an advertisement for credit to finance the ...",
+          "url": "https://www.consumercomplianceoutlook.org/2021/first-issue/understanding-regulation-zs-advertising-requirements"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "Financial regulators increasingly require audit trails for recommendations.",
+      "evidence": [
+        {
+          "title": "Regulatory compliance and efficiency in financial ...",
+          "abstract": "This study explores the integration of Regulatory Technology (RegTech) within dynamic regulatory frameworks tailored to the financial ...",
+          "url": "https://www.researchgate.net/publication/382680654_Regulatory_compliance_and_efficiency_in_financial_technologies_Challenges_and_innovations"
+        },
+        {
+          "title": "Strengthening Regulatory Compliance and Financial ...",
+          "abstract": "by M Kamal · 2023 · Cited by 13 — This study examined the extent to which blockchain-enabled audit trails and secure ledger systems were associated with regulatory compliance ...",
+          "url": "https://ajates-scholarly.com/index.php/ajates/article/view/73"
+        },
+        {
+          "title": "Audit Trails and Explainability for Compliance: Building the ...",
+          "abstract": "regulators globally have signaled that firms discovered without adequate audit trails face not just fines but operational restrictions.",
+          "url": "https://lawrence-emenike.medium.com/audit-trails-and-explainability-for-compliance-building-the-transparency-layer-financial-services-d24961bad987"
+        },
+        {
+          "title": "RecSys 2023 Tutorial: Large Language Models for Recommendation",
+          "abstract": "LLMs offer significant advantages for recommender systems, This tutorial introduces Foundation Models such as LLMs for recommendation. Examples include ChatGPT ...",
+          "url": "https://llmrecsys.github.io/"
+        },
+        {
+          "title": "Chat-REC: Towards Interactive and Explainable LLMs-Augmented Recommender System",
+          "abstract": "View recent discussion. Abstract: Large language models (LLMs) have demonstrated their significant potential to be applied for addressing various ...",
+          "url": "https://www.alphaxiv.org/audio/2303.14524"
+        }
+      ],
+      "true_votes": 2,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "Most LLM4Rec benchmarks (movies, books, e-commerce) do not directly mirror the regulatory, sparsity, and concept-drift characteristics of financial data.",
+      "evidence": [
+        {
+          "title": "Recommender Systems in the Era of Large Language ...",
+          "abstract": "Therefore, in this paper, we conduct a comprehensive review of LLM-empowered recommender systems from various aspects including. Pre-training, ...",
+          "url": "https://wenqifan03.github.io/papers/2023-LLMs4Rec.pdf"
+        },
+        {
+          "title": "WLiK/LLM4Rec-Awesome-Papers: A list of ...",
+          "abstract": "A list of awesome papers and resources of recommender system on large language model (LLM). News: Our LLM4Rec survey has been released.",
+          "url": "https://github.com/WLiK/LLM4Rec-Awesome-Papers"
+        },
+        {
+          "title": "LLM4Rec: A Comprehensive Survey on the Integration of ...",
+          "abstract": "This survey covers the usage of LLMs for content recommendations (LLM4Rec). LLM4Rec has opened up a whole set of challenges in terms of scale, real-time ...",
+          "url": "https://www.researchgate.net/publication/392425400_LLM4Rec_A_Comprehensive_Survey_on_the_Integration_of_Large_Language_Models_in_Recommender_Systems-Approaches_Applications_and_Challenges"
+        },
+        {
+          "title": "LLM4Rec: Scaling Large Language Model based ...",
+          "abstract": "This study aims to explore whether the classical Text Collaborative Filtering (TCF) recommendation algorithm can demonstrate the potential of a ...",
+          "url": "https://medium.com/@lifengyi_6964/llm4rec-exploring-the-extremes-of-llm-based-recommender-system-d9086d548d9a"
+        },
+        {
+          "title": "A Survey on Large Language Models for Recommendation",
+          "abstract": "Currently, most of the research in this area primarily tests the recommendation capability and zero/few-shot capability of LLMs using datasets like MovieLens, ...",
+          "url": "https://arxiv.org/html/2305.19860v5"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "The works cited in the survey do not yet report large-scale finance-specific results.",
+      "evidence": [
+        {
+          "title": "APA, MLA, and Chicago Survey Citation Guide - EduBirdie.com",
+          "abstract": "Learn how to accurately cite surveys in APA, MLA, and Chicago styles. Follow our step-by-step guide for published, unpublished, and personal survey ...",
+          "url": "https://edubirdie.com/blog/survey-citation-guide"
+        },
+        {
+          "title": "What leads to measurement errors? Evidence from reports of program ...",
+          "abstract": "We first confirm that the extent of survey error is large, with up to 59 percent of non-imputed true recipients failing to report program receipt",
+          "url": "https://www.sciencedirect.com/science/article/pii/S030440762300297X"
+        },
+        {
+          "title": "Predicting Citation Impact in Business Research Using Data Science - MDPI",
+          "abstract": "These publications typically result from large-scale diagnostic studies replicated across multiple countries. After filtering and removing duplicate author ...",
+          "url": "https://www.mdpi.com/2304-6775/13/3/42"
+        },
+        {
+          "title": "Abstracts and Bibliography: Survey of Small Business Finances",
+          "abstract": "Abstracts and Bibliography: Survey of Small Business Finances A downloadable version of the bibliography is available in PDF format below.",
+          "url": "https://www.federalreserve.gov/pubs/oss/oss3/abstract.html"
+        },
+        {
+          "title": "How do I cite raw data from a survey or poll I created ... - MLA Style Center",
+          "abstract": "In a report on data collected from a survey you designed and distributed, clarify the data source in the body of the report instead of creating ...",
+          "url": "https://style.mla.org/citing-raw-data-from-a-survey/"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    }
+  ]
+}

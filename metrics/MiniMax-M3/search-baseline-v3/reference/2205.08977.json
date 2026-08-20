@@ -1,0 +1,18 @@
+{
+  "arxiv_id": "2205.08977",
+  "model": "MiniMax-M3",
+  "system": "search-baseline-v3",
+  "reference_precision": 0.0,
+  "reference_recall": 0.0,
+  "reference_count": 6,
+  "reference_matches": 0,
+  "ground_truth_count": 317,
+  "predicted_titles": [
+    "Digital Twins Meet Artificial Intelligence in 6G",
+    "Empowering 6G Communication Systems With Digital Twin ...",
+    "Paving the Last Mile of Artificial Intelligence With Edge Computing",
+    "[Retracted] A Survey on Information‐Centric Networking ...",
+    "Edge Intelligence and Internet of Things in Healthcare",
+    "An edge AI-enabled IoT healthcare monitoring system for ..."
+  ]
+}

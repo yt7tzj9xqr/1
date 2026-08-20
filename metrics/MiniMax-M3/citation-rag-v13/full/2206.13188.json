@@ -1,0 +1,617 @@
+{
+  "arxiv_id": "2206.13188",
+  "model": "MiniMax-M3",
+  "system": "citation-rag-v13",
+  "reference_precision": 0.0,
+  "reference_recall": 0.0,
+  "reference_count": 4,
+  "reference_matches": 0,
+  "ground_truth_count": 252,
+  "predicted_titles": [
+    "Self-Supervised Learning Techniques in Remote Sensing ...",
+    "Self-Supervised Learning for Scene Classification in Remote Sensing",
+    "Self-Supervised Learning with Generative Adversarial Networks for Electron Microscopy",
+    "Self-Supervised Learning - Xiaohang Zhan"
+  ],
+  "cited_match_rate": 0.8888888888888888,
+  "cited_count": 9,
+  "cited_supported": 8,
+  "cited_details": [
+    {
+      "statement": "https://link.springer.com/subjects/self-supervised-learning-techniques-in-remote-sensing-image-analysis",
+      "url": "https://link.springer.com/subjects/self-supervised-learning-techniques-in-remote-sensing-image-analysis",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://www.mdpi.com/2072-4292/14/16/3995",
+      "url": "https://mdpi.com/2072-4292/14/16/3995",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://xiaohangzhan.github.io/pdf/talk-st-2020.pdf These are presented under the explicit heading \"Self-Supervised Proxy/Pretext Tasks\" in the cited talk.",
+      "url": "https://xiaohangzhan.github.io/pdf/talk-st-2020.pdf",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://xiaohangzhan.github.io/pdf/talk-st-2020.pdf",
+      "url": "https://xiaohangzhan.github.io/pdf/talk-st-2020.pdf",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://arxiv.org/html/2402.18286v2 The same source states that self-supervised learning aims to learn representations from the data itself without explicit manual supervision.",
+      "url": "https://arxiv.org/html/2402.18286v2",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://arxiv.org/html/2402.18286v2 It also states that the approach can be used to pretrain a model on a large amount of unlabeled data, allowing it to learn general features and representations from the data, which can then be transferred and fine-tuned for a specific task.",
+      "url": "https://arxiv.org/html/2402.18286v2",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://arxiv.org/html/2402.18286v2 The claim that pretrained models exhibit faster convergence during fine-tuning, possess broader applicability across tasks, and provide resource-efficient solutions is also explicit in the same source.",
+      "url": "https://arxiv.org/html/2402.18286v2",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://arxiv.org/html/2402.18286v2 However, the supplied evidence frames this generative SSL discussion within electron microscopy datasets rather than remote sensing imagery, so direct claims about generative SSL applied to remote sensing data are not supported by the provided cards.",
+      "url": "https://arxiv.org/html/2402.18286v2",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://arxiv.org/html/2402.18286v2",
+      "url": "https://arxiv.org/html/2402.18286v2",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    }
+  ],
+  "noncited_factual_accuracy": 0.375,
+  "noncited_count": 16,
+  "noncited_correct": 6,
+  "noncited_details": [
+    {
+      "claim": "Self-supervised learning is documented as an active research area in remote sensing image analysis.",
+      "evidence": [
+        {
+          "title": "Self-Supervised Learning of Remote Sensing Scene ...",
+          "abstract": "by V Stojnic · Cited by 163 — In this work, we conduct an extensive analysis of the applicability of self-supervised learning in remote sensing image classification. We analyze the influence ...",
+          "url": "https://www.grss-ieee.org/wp-content/uploads/earthvision2021/papers/Stojnic_Self-Supervised_Learning_of_Remote_Sensing_Scene_Representations_Using_Contrastive_Multiview_CVPRW_2021_paper.pdf"
+        },
+        {
+          "title": "A General Self-Supervised Framework for Remote Sensing ...",
+          "abstract": "by Y Gao · 2022 · Cited by 30 — This paper provides insights into the interpretation beyond simply combining self-supervised learning (SSL) with remote sensing (RS).",
+          "url": "https://www.mdpi.com/2072-4292/14/19/4824"
+        },
+        {
+          "title": "Retell a Paper: “Self-supervised Learning in Remote Sensing",
+          "abstract": "The paper discusses an overview of self-supervised learning strategies for remote sensing applications.",
+          "url": "https://medium.com/mlearning-ai/retell-a-paper-self-supervised-learning-in-remote-sensing-a-review-3922475a7386"
+        },
+        {
+          "title": "Disaster Analysis using Satellite Image Data with ...",
+          "abstract": "by P Jain · 2021 · Cited by 1 — How can disaster analysis from satellite data sources leverage trans- fer learning using semi-supervised and self-supervised learning tech-.",
+          "url": "https://arrow.tudublin.ie/cgi/viewcontent.cgi?article=1011&context=scschcomrep"
+        },
+        {
+          "title": "satellite-image-deep-learning/techniques",
+          "abstract": "This repository provides an exhaustive overview of deep learning techniques specifically tailored for satellite and aerial image processing.",
+          "url": "https://github.com/satellite-image-deep-learning/techniques"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "Dedicated subject collections exist that track ongoing self-supervised learning work in remote sensing image analysis.",
+      "evidence": [
+        {
+          "title": "A comparison review of transfer learning and self-supervised learning",
+          "abstract": "This review paper explores the recent applications of these pre-training methods in various fields within the past three years. A novel self-supervised ...",
+          "url": "https://www.sciencedirect.com/science/article/pii/S0957417423033092"
+        },
+        {
+          "title": "https://scholar.google.com/citations?view_op=view_...",
+          "abstract": "No information is available for this page. · Learn why",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=37m2U7QAAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=37m2U7QAAAAJ:7PzlFSSx8tAC"
+        },
+        {
+          "title": "A General Self-Supervised Framework for Remote Sensing Image ... - MDPI",
+          "abstract": "This paper provides insights into the interpretation beyond simply combining self-supervised learning (SSL) with remote sensing (RS).",
+          "url": "https://www.mdpi.com/2072-4292/14/19/4824"
+        },
+        {
+          "title": "Remote sensing and machine learning - UK Parliament",
+          "abstract": "Overview. ▫ Environmental remote sensing involves the use of satellites and other airborne instruments to collect data about the environment.",
+          "url": "http://researchbriefings.files.parliament.uk/documents/POST-PN-0628/POST-PN-0628.pdf"
+        },
+        {
+          "title": "A Survey on Self-Supervised Learning: Algorithms, Applications, and ...",
+          "abstract": "We present an extensive and up-to-date review of the frontiers of visual SSL, dividing it into four key areas: context-based, CL, generative, and contrastive ...",
+          "url": "https://www.computer.org/csdl/journal/tp/2024/12/10559458/1XR0ep31Wr6"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "Remote sensing provides the imagery for self-supervised learning methods applied within the energy and environmental sustainability application domain.",
+      "evidence": [
+        {
+          "title": "Automated Extraction of Energy Systems Information from Remotely ...",
+          "abstract": "Remotely sensed data (e.g., satellite imagery, aerial photography) have emerged as a potentially rich source of energy systems information [2] ...",
+          "url": "https://www.sciencedirect.com/science/article/abs/pii/S0306261922011424"
+        },
+        {
+          "title": "A General Self-Supervised Framework for Remote Sensing Image ... - MDPI",
+          "abstract": "This paper provides insights into the interpretation beyond simply combining self-supervised learning (SSL) with remote sensing (RS).",
+          "url": "https://www.mdpi.com/2072-4292/14/19/4824"
+        },
+        {
+          "title": "GitHub - px39n/Awesome-Self-Supervised ...",
+          "abstract": "Most existing remote sensing datasets are used for supervised learning, and there is a need to explore the use of large-scale unlabeled datasets for self- ...",
+          "url": "https://github.com/px39n/Awesome-Self-Supervised-Learning-for-Remote-Sensing"
+        },
+        {
+          "title": "Remote Sensing | The Nicholas Institute for Energy, Environment ...",
+          "abstract": "Using remote sensing data, like satellite or drone imagery, we can infer powerful insights about the energy sector.",
+          "url": "http://nicholasinstitute.duke.edu/issues/remote-sensing"
+        },
+        {
+          "title": "Machine learning and remote sensing integration for leveraging urban ...",
+          "abstract": "This paper provides a comprehensive review and an integrative framework for machine learning and remote sensing, enriching insights into their potential for ...",
+          "url": "https://www.sciencedirect.com/science/article/pii/S2210670723002640"
+        }
+      ],
+      "true_votes": 1,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "A peer-reviewed article in the Remote Sensing journal reviews self-supervised methods with a focus on the scene classification task for remote sensing imagery.",
+      "evidence": [
+        {
+          "title": "Self-Supervised Learning for Scene Classification in ...",
+          "abstract": "by P Berg · 2022 · Cited by 89 — In this article, we review the underlying principles developed by various self-supervised methods with a focus on scene classification task.",
+          "url": "https://www.mdpi.com/2072-4292/14/16/3995"
+        },
+        {
+          "title": "Remote Sensing Image Scene Classification With Self ...",
+          "abstract": "This article reviews the underlying principles developed by various self-supervised methods with a focus on scene classification task,",
+          "url": "https://www.semanticscholar.org/paper/Remote-Sensing-Image-Scene-Classification-With-Tao-Qi/a32b0920323c0508f516f671e65ad181fc1e7eae"
+        },
+        {
+          "title": "Self-Supervised Spatio-Temporal Representation Learning ...",
+          "abstract": "In this paper, a new self-supervised strategy for learning meaningful representations of complex optical Satellite Image Time Series (SITS) ...",
+          "url": "https://www.researchgate.net/publication/377712228_Self-Supervised_Spatio-Temporal_Representation_Learning_of_Satellite_Image_Time_Series"
+        },
+        {
+          "title": "A General Self-Supervised Framework for Remote Sensing ...",
+          "abstract": "by Y Gao · 2022 · Cited by 30 — In this paper, we investigate MIM self-supervised learning in the task of remote sensing image scene classification for the first time. Using the MIM ...",
+          "url": "https://www.mdpi.com/2072-4292/14/19/4824"
+        },
+        {
+          "title": "Self-Supervised Learning of Remote Sensing Scene ...",
+          "abstract": "by V Stojnic · Cited by 163 — In this work, we conduct an extensive analysis of the applicability of self-supervised learning in remote sensing image classification.",
+          "url": "https://www.grss-ieee.org/wp-content/uploads/earthvision2021/papers/Stojnic_Self-Supervised_Learning_of_Remote_Sensing_Scene_Representations_Using_Contrastive_Multiview_CVPRW_2021_paper.pdf"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "Predictive self-supervised methods construct pretext or proxy tasks from the image content.",
+      "evidence": [
+        {
+          "title": "Survey on Self-Supervised Learning: Auxiliary Pretext ...",
+          "abstract": "by S Albelwi · 2022 · Cited by 237 — This paper surveys self-supervised feature-learning methods drawn from images. provides an examination of pretext tasks and SSL methods, as well as contrastive ...",
+          "url": "https://www.mdpi.com/1099-4300/24/4/551"
+        },
+        {
+          "title": "Self-Supervised Learning of Pretext-Invariant ...",
+          "abstract": "by I Misra · 2020 · Cited by 2203 — The goal of self-supervised learning from images is to construct image representations that are semantically meaningful via pretext tasks that do not require ...",
+          "url": "https://openaccess.thecvf.com/content_CVPR_2020/papers/Misra_Self-Supervised_Learning_of_Pretext-Invariant_Representations_CVPR_2020_paper.pdf"
+        },
+        {
+          "title": "Self-Supervised Learning - Xiaohang Zhan",
+          "abstract": "Self-Supervised Proxy/Pretext Tasks. Image Colorization. Solving Jigsaw Puzzles. Image In-painting. Rotation Prediction. Motion prediction. Moving foreground ...",
+          "url": "https://xiaohangzhan.github.io/pdf/talk-st-2020.pdf"
+        },
+        {
+          "title": "Self-Supervised Learning Techniques in Remote Sensing ...",
+          "abstract": "Find the latest research papers and news in Self-Supervised Learning Techniques in Remote Sensing Image Analysis.",
+          "url": "https://link.springer.com/subjects/self-supervised-learning-techniques-in-remote-sensing-image-analysis"
+        },
+        {
+          "title": "Self-Supervised Learning for Scene Classification in Remote Sensing",
+          "abstract": "In this article, we review the underlying principles developed by various self-supervised methods with a focus on scene classification task. developed to solve ...",
+          "url": "https://www.mdpi.com/2072-4292/14/16/3995"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "Image colorization is a representative proxy task used in self-supervised learning for remote sensing.",
+      "evidence": [
+        {
+          "title": "A General Self-Supervised Framework for Remote Sensing Image ...",
+          "abstract": "This paper provides insights into the interpretation beyond simply combining self-supervised learning (SSL) with remote sensing (RS).",
+          "url": "https://www.researchgate.net/publication/363934702_A_General_Self-Supervised_Framework_for_Remote_Sensing_Image_Classification"
+        },
+        {
+          "title": "Self-supervised in-domain representation learning for remote ...",
+          "abstract": "Transferring the ImageNet pre-trained weights to the various remote sensing tasks has produced acceptable results and reduced the need for labeled samples.",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11456821/"
+        },
+        {
+          "title": "A General Self-Supervised Framework for Remote Sensing Image ... - MDPI",
+          "abstract": "This paper provides insights into the interpretation beyond simply combining self-supervised learning (SSL) with remote sensing (RS).",
+          "url": "https://www.mdpi.com/2072-4292/14/19/4824"
+        },
+        {
+          "title": "Colorization as a Proxy Task for Visual Understanding - Semantic Scholar",
+          "abstract": "This work investigates and improves self-supervision as a drop-in replacement for ImageNet pretraining, focusing on automatic colorization as the proxy task ...",
+          "url": "https://www.semanticscholar.org/paper/Colorization-as-a-Proxy-Task-for-Visual-Larsson-Maire/164b8826b9a30adf69630e634b308046b8cec619"
+        },
+        {
+          "title": "Colorization as a Proxy Task for Visual Understanding - CVF Open Access",
+          "abstract": "We investigate and improve self-supervision as a drop- in replacement for ImageNet pretraining, focusing on auto- matic colorization as the proxy task.",
+          "url": "https://openaccess.thecvf.com/content_cvpr_2017/papers/Larsson_Colorization_as_a_CVPR_2017_paper.pdf"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "Solving jigsaw puzzles is a representative proxy task used in self-supervised learning for remote sensing.",
+      "evidence": [
+        {
+          "title": "Solving Jigsaw Puzzles as Pretext Task for Self-Supervised Learning",
+          "abstract": "Solving Jigsaw puzzles is treated as a pretext task, which requires no manual labeling. representation is learnt and used for several transfer ...",
+          "url": "https://sh-tsang.medium.com/review-unsupervised-learning-of-visual-representations-by-solving-jigsaw-puzzles-50b14d755004"
+        },
+        {
+          "title": "Self-Supervised Learning of Remote Sensing Scene Representations ...",
+          "abstract": "Unsupervised learning of visual representations by solving jigsaw puzzles. Repre- sentation learning with contrastive predictive coding.",
+          "url": "https://www.grss-ieee.org/wp-content/uploads/earthvision2021/papers/Stojnic_Self-Supervised_Learning_of_Remote_Sensing_Scene_Representations_Using_Contrastive_Multiview_CVPRW_2021_paper.pdf"
+        },
+        {
+          "title": "Self-supervised learning for point cloud data: A survey - ScienceDirect",
+          "abstract": "Noroozi M., Favaro P. Unsupervised learning of visual representations by solving jigsaw puzzles. European conference on computer vision, Springer (2016), pp ...",
+          "url": "https://www.sciencedirect.com/science/article/pii/S0957417423018560"
+        },
+        {
+          "title": "Representation Learning Through Self-Prediction Task Optimization",
+          "abstract": "The jigsaw puzzle pretext task is formulated as a 1000-way classification task, optimized using the cross-entropy loss. Training classification ...",
+          "url": "https://sthalles.github.io/self-supervised-pretext-task-learning/"
+        },
+        {
+          "title": "Self-supervised in-domain representation learning for remote ...",
+          "abstract": "self-supervised learning methods consist of two steps. In the first step, a pretext task is designed, and by solving this proxy task, visual representations ...",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11456821/"
+        }
+      ],
+      "true_votes": 1,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "Image in-painting is a representative proxy task used in self-supervised learning for remote sensing.",
+      "evidence": [
+        {
+          "title": "US12554992B2 - Self-supervised learning using in-painting",
+          "abstract": "Self-supervised learning of a machine learning model using images. The computing device masks a section of each image in an image database to generate a ...",
+          "url": "https://patents.google.com/patent/US12554992/en"
+        },
+        {
+          "title": "px39n/Awesome-Self-Supervised-Learning-for-Remote ...",
+          "abstract": "More research is needed to explore which proxy tasks and data augmentation techniques are useful for different types of remote sensing data. Pre-training ...",
+          "url": "https://github.com/px39n/Awesome-Self-Supervised-Learning-for-Remote-Sensing"
+        },
+        {
+          "title": "Retell a Paper: “Self-supervised Learning in Remote Sensing",
+          "abstract": "The paper discusses an overview of self-supervised learning strategies for remote sensing applications. tasks and augmentation methods work for ...",
+          "url": "https://medium.com/mlearning-ai/retell-a-paper-self-supervised-learning-in-remote-sensing-a-review-3922475a7386"
+        },
+        {
+          "title": "Self-Supervised Learning of Remote Sensing Scene ...",
+          "abstract": "by V Stojnic · Cited by 163 — In this work, we conduct an extensive analysis of the applicability of self-supervised learning in remote sensing image classification.",
+          "url": "https://www.grss-ieee.org/wp-content/uploads/earthvision2021/papers/Stojnic_Self-Supervised_Learning_of_Remote_Sensing_Scene_Representations_Using_Contrastive_Multiview_CVPRW_2021_paper.pdf"
+        },
+        {
+          "title": "A General Self-Supervised Framework for Remote Sensing ...",
+          "abstract": "by Y Gao · 2022 · Cited by 30 — In this paper, we use the MIM model, using it to perform unlabeled self-supervised learning training results on the imagenet-1k dataset. To further combine self ...",
+          "url": "https://www.mdpi.com/2072-4292/14/19/4824"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "Rotation prediction is a representative proxy task used in self-supervised learning for remote sensing.",
+      "evidence": [
+        {
+          "title": "Self-Supervised Learning for Scene Classification in ...",
+          "abstract": "by P Berg · 2022 · Cited by 89 — Based on comparative results, we investigate the impact of individual augmentations when applied to remote sensing data as well as the use of self-supervised ...",
+          "url": "https://www.mdpi.com/2072-4292/14/16/3995"
+        },
+        {
+          "title": "Retell a Paper: “Self-supervised Learning in Remote Sensing",
+          "abstract": "The paper discusses an overview of self-supervised learning strategies for remote sensing applications.",
+          "url": "https://medium.com/mlearning-ai/retell-a-paper-self-supervised-learning-in-remote-sensing-a-review-3922475a7386"
+        },
+        {
+          "title": "px39n/Awesome-Self-Supervised-Learning-for-Remote ...",
+          "abstract": "More research is needed to explore which proxy tasks and data augmentation techniques are useful for different types of remote sensing data. Pre-training ...",
+          "url": "https://github.com/px39n/Awesome-Self-Supervised-Learning-for-Remote-Sensing"
+        },
+        {
+          "title": "Self-Supervised Learning of Remote Sensing Scene ...",
+          "abstract": "by V Stojnic · Cited by 163 — In this work, we conduct an extensive analysis of the applicability of self-supervised learning in remote sensing image classification.",
+          "url": "https://www.grss-ieee.org/wp-content/uploads/earthvision2021/papers/Stojnic_Self-Supervised_Learning_of_Remote_Sensing_Scene_Representations_Using_Contrastive_Multiview_CVPRW_2021_paper.pdf"
+        },
+        {
+          "title": "Self-Supervised Learning - Xiaohang Zhan",
+          "abstract": "Self-Supervised Proxy/Pretext Tasks. Image Colorization. Solving Jigsaw Puzzles. Image In-painting. Rotation Prediction. Motion prediction. Moving foreground ...",
+          "url": "https://xiaohangzhan.github.io/pdf/talk-st-2020.pdf"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "Motion prediction is a representative proxy task used in self-supervised learning for remote sensing.",
+      "evidence": [
+        {
+          "title": "Current State of the Art and Perspectives | remote sensing",
+          "abstract": "by P Berg · 2022 · Cited by 89 — In this article, we review the underlying principles developed by various self-supervised methods with a focus on scene classification task.",
+          "url": "https://hal.science/hal-03934160/file/remotesensing-14-03995-v2.pdf"
+        },
+        {
+          "title": "A General Self-Supervised Framework for Remote Sensing ...",
+          "abstract": "This paper provides insights into the interpretation beyond simply combining self-supervised learning (SSL) with remote sensing (RS).",
+          "url": "https://www.researchgate.net/publication/363934702_A_General_Self-Supervised_Framework_for_Remote_Sensing_Image_Classification"
+        },
+        {
+          "title": "A General Self-Supervised Framework for Remote Sensing ...",
+          "abstract": "by Y Gao · 2022 · Cited by 30 — This paper provides insights into the interpretation beyond simply combining self-supervised learning (SSL) with remote sensing (RS).",
+          "url": "https://www.mdpi.com/2072-4292/14/19/4824"
+        },
+        {
+          "title": "Retell a Paper: “Self-supervised Learning in Remote Sensing",
+          "abstract": "The paper discusses an overview of self-supervised learning strategies for remote sensing applications. What you can expect from this story is ...",
+          "url": "https://medium.com/mlearning-ai/retell-a-paper-self-supervised-learning-in-remote-sensing-a-review-3922475a7386"
+        },
+        {
+          "title": "Self-Supervised Learning of Remote Sensing Scene ...",
+          "abstract": "by V Stojnic · Cited by 163 — In this work, we conduct an extensive analysis of the applicability of self-supervised learning in remote sensing image classification.",
+          "url": "https://www.grss-ieee.org/wp-content/uploads/earthvision2021/papers/Stojnic_Self-Supervised_Learning_of_Remote_Sensing_Scene_Representations_Using_Contrastive_Multiview_CVPRW_2021_paper.pdf"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "Moving-foreground extraction is a representative proxy task used in self-supervised learning for remote sensing.",
+      "evidence": [
+        {
+          "title": "Prompt-Enhanced Self-supervised Representation Learning for ... - arXiv",
+          "abstract": "Learning representations through self-supervision on a large-scale, unlabeled dataset has proven to be highly effective for understanding diverse images, such ...",
+          "url": "https://arxiv.org/html/2310.00022v1"
+        },
+        {
+          "title": "Self-supervised learning for point cloud data: A survey - ScienceDirect",
+          "abstract": "A review of deep learning methods for semantic segmentation of remote sensing imagery Expert Systems with Applications, 169 (2021), Article 114417",
+          "url": "https://www.sciencedirect.com/science/article/pii/S0957417423018560"
+        },
+        {
+          "title": "Semantic Segmentation of Remote Sensing Images With Self ... - Levir",
+          "abstract": "This article proposes a self-supervised representation learning method for remote sensing semantic segmentation. Considering the characteristics of remote ...",
+          "url": "https://levir.buaa.edu.cn/static/pdfs/2021_wenyuan_li_semantic.pdf"
+        },
+        {
+          "title": "Self-Supervised Learning of Remote Sensing Scene Representations ...",
+          "abstract": "In this work, we conduct an extensive analysis of the applicability of self-supervised learning in remote sensing image classification.",
+          "url": "https://www.grss-ieee.org/wp-content/uploads/earthvision2021/papers/Stojnic_Self-Supervised_Learning_of_Remote_Sensing_Scene_Representations_Using_Contrastive_Multiview_CVPRW_2021_paper.pdf"
+        },
+        {
+          "title": "GitHub - satellite-image-deep-learning ...",
+          "abstract": "This repository provides an exhaustive overview of deep learning techniques specifically tailored for satellite and aerial image processing. It covers a range ...",
+          "url": "https://github.com/satellite-image-deep-learning/techniques"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "Self-supervised learning has been applied using Generative Adversarial Networks (GANs).",
+      "evidence": [
+        {
+          "title": "258 - Semi-supervised learning with GANs",
+          "abstract": "Semi-supervised refers to the training process where the model gets trained only on a few labeled images but the data set contains a lot more ...",
+          "url": "https://www.youtube.com/watch?v=AP0A8PgYfro"
+        },
+        {
+          "title": "Self-Supervised GANs",
+          "abstract": "This article will show how Self-Supervised Learning can overcome the need for class labels for training GANs and rival the performance of ...",
+          "url": "https://medium.com/data-science/self-supervised-gans-2aec1eadaccd"
+        },
+        {
+          "title": "Exploring DeshuffleGANs in Self-Supervised Generative ...",
+          "abstract": "by G Baykal · 2022 · Cited by 24 — Self-supervised GANs are later proposed to avoid the catastrophic forgetting of the discriminator and to improve the image generation quality without needing ...",
+          "url": "https://www.sciencedirect.com/science/article/abs/pii/S0031320321004167"
+        },
+        {
+          "title": "Self-Supervised GAN to Counter Forgetting",
+          "abstract": "by T Chen · 2018 · Cited by 10 — To counter forgetting, we encourage the discriminator to maintain useful representations by adding a self-supervision. Conditional GANs have a similar effect ...",
+          "url": "https://research.google/pubs/self-supervised-gan-to-counter-forgetting/"
+        },
+        {
+          "title": "Self-Supervised GANs with Label Augmentation",
+          "abstract": "by L Hou · Cited by 23 — Abstract: Recently, transformation-based self-supervised learning has been applied to generative adversarial networks (GANs) to mitigate ...",
+          "url": "https://openreview.net/forum?id=MT0pTKLyzkT"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "Self-supervised pretraining facilitates efficient fine-tuning for semantic segmentation.",
+      "evidence": [
+        {
+          "title": "Keypoint-Augmented Self-Supervised Learning for Medical ...",
+          "abstract": "Pretraining CNN models (i.e., UNet) through self-supervision has become a powerful approach to facilitate medical image segmentation under low annotation ...",
+          "url": "https://neurips.cc/virtual/2023/poster/71030"
+        },
+        {
+          "title": "Enhancing Semantic Segmentation with Continual Self- ...",
+          "abstract": "In this work, we address the challenge of adapting vision foundation models to low-data target domains through continual self-supervised pre-training, ...",
+          "url": "https://arxiv.org/html/2509.17816"
+        },
+        {
+          "title": "PASS dataset for self-supervised pretraining without humans",
+          "abstract": "We study the performance of this approach by benchmarking on over 30 different existing computer vision datasets, spanning tasks such as OCR, ...",
+          "url": "https://www.facebook.com/groups/DeepNetGroup/posts/1554459448280265/"
+        },
+        {
+          "title": "[D] Usefulness of self-supervised pretraining",
+          "abstract": "A few questions: Is it usually any more effective than pretraining an autoencoder/denoising autoencoder using all of data and then fine-tuning ...",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/qfm81h/d_usefulness_of_selfsupervised_pretraining/"
+        },
+        {
+          "title": "Self-Supervised Learning Techniques in Remote Sensing ...",
+          "abstract": "Self-supervised learning has emerged as a powerful strategy to exploit vast quantities of unlabelled satellite and aerial imagery for tasks such as land-co.",
+          "url": "https://www.nature.com/nature-index/topics/l4/self-supervised-learning-techniques-in-remote-sensing-image-analysis"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "Self-supervised pretraining facilitates efficient fine-tuning for denoising.",
+      "evidence": [
+        {
+          "title": "Self-Supervised Pretraining Improves Self-Supervised ... - YouTube",
+          "abstract": "... pretrain must use existing models with lower performance. This paper explores Hierarchical PreTraining (HPT), which decreases convergence ...",
+          "url": "https://www.youtube.com/watch?v=WR3xtCywPeY"
+        },
+        {
+          "title": "DDD2Self: Self-Supervised Image Denoising with <italic ... - IEEE Xplore",
+          "abstract": "self-supervised denoising stems from its ability to train solely on noisy images, eliminating the need for paired clean-noisy data as needed in traditional ...",
+          "url": "https://ieeexplore.ieee.org/iel8/6287639/6514899/11203917.pdf"
+        },
+        {
+          "title": "[D] Usefulness of self-supervised pretraining : r/MachineLearning",
+          "abstract": "A few questions: Is it usually any more effective than pretraining an autoencoder/denoising autoencoder using all of data and then fine-tuning ...",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/qfm81h/d_usefulness_of_selfsupervised_pretraining/"
+        },
+        {
+          "title": "Label-Efficient Fine-Tuning for Remote Sensing Imagery ... - MDPI",
+          "abstract": "Auto-Encoders (AEs) are pioneering self-supervised methods in pre-training models [34,35,36]. AEs generate images based on latent variables obtained from the ...",
+          "url": "https://www.mdpi.com/2072-4292/17/15/2579"
+        },
+        {
+          "title": "USP: Unified Self-Supervised Pretraining for Image Generation ...",
+          "abstract": "To empirically validate the hypothe- sis, we utilized a supervised fine-tuning (SFT) model, which achieved 82.6% top-1 accuracy on the ImageNet validation.",
+          "url": "https://openaccess.thecvf.com/content/ICCV2025/papers/Chu_USP_Unified_Self-Supervised_Pretraining_for_Image_Generation_and_Understanding_ICCV_2025_paper.pdf"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "Self-supervised pretraining facilitates efficient fine-tuning for noise and background removal.",
+      "evidence": [
+        {
+          "title": "Self-Supervised Pretraining Improves Self-Supervised ... - YouTube",
+          "abstract": "... pretrain must use existing models with lower performance. This paper explores Hierarchical PreTraining (HPT), which decreases convergence ...",
+          "url": "https://www.youtube.com/watch?v=WR3xtCywPeY"
+        },
+        {
+          "title": "Self-Supervised Learning with Dual-modal Masked Autoencoders ...",
+          "abstract": "... pretrained baselines; (2) effective fine-tuning with few labels via self-supervised pretraining, thereby reducing annotation cost; and (3) enhance ...",
+          "url": "https://papers.ssrn.com/sol3/Delivery.cfm/a4673c62-a779-4dae-80bc-0a8c1babbb7f-MECA.pdf?abstractid=6083904&mirid=1"
+        },
+        {
+          "title": "Daily Papers - Hugging Face",
+          "abstract": "Reinforcement learning, while powerful in scaling reasoning, is introduced only as the very last phase of post-training, preceded by supervised fine-tuning.",
+          "url": "https://huggingface.co/papers?q=pretraining"
+        },
+        {
+          "title": "Data-efficient self-supervised algorithms for fine-grained birdsong ...",
+          "abstract": "The first stage is self-supervised learning from unlabeled data. Two of the most successful pretraining paradigms are explored, namely, masked prediction and ...",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1574954126002682"
+        },
+        {
+          "title": "Overleaf Example - NSF Public Access Repository",
+          "abstract": "Our results suggest that finetuning is much more effective due to the speaker-specific self-supervised pretraining. By comparing the middle shaded bars in ...",
+          "url": "https://par.nsf.gov/servlets/purl/10579501"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "Self-supervised pretraining facilitates efficient fine-tuning for super-resolution.",
+      "evidence": [
+        {
+          "title": "Feature-Differencing-Based Self-Supervised Pre-Training for ...",
+          "abstract": "We evaluated the performance of a self-supervised pre-trained model through fine-tuning using an existing CNN-based CD algorithm. We selected the improved UNet ...",
+          "url": "https://www.mdpi.com/2073-445X/13/7/927"
+        },
+        {
+          "title": "Self-Supervised Pretraining Improves Self-Supervised ... - YouTube",
+          "abstract": "... pretrain must use existing models with lower performance. This paper explores Hierarchical PreTraining (HPT), which decreases convergence ...",
+          "url": "https://www.youtube.com/watch?v=WR3xtCywPeY"
+        },
+        {
+          "title": "[D] Usefulness of self-supervised pretraining : r/MachineLearning",
+          "abstract": "A few questions: Is it usually any more effective than pretraining an autoencoder/denoising autoencoder using all of data and then fine-tuning ...",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/qfm81h/d_usefulness_of_selfsupervised_pretraining/"
+        },
+        {
+          "title": "Self-Supervised Fine-tuning for Correcting Super-resolution CNNs",
+          "abstract": "In this project, we propose an efficient, fully self-supervised approach to remove the observed artifacts. At test time, given an image and its known image ...",
+          "url": "https://sites.northwestern.edu/ivpl/self-supervised-fine-tuning-for-image-enhancement-of-sr-cnns/"
+        },
+        {
+          "title": "A universal parameter-efficient fine-tuning approach for stereo ...",
+          "abstract": "In this paper, we propose an efficient method for transferring a pre-trained single-image super-resolution transformer network to the domain of stereo image ...",
+          "url": "https://www.sciencedirect.com/science/article/abs/pii/S0952197625007031"
+        }
+      ],
+      "true_votes": 2,
+      "total_votes": 3,
+      "decision": true
+    }
+  ]
+}

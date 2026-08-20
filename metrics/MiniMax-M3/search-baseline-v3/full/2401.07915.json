@@ -1,0 +1,826 @@
+{
+  "arxiv_id": "2401.07915",
+  "model": "MiniMax-M3",
+  "system": "search-baseline-v3",
+  "reference_precision": 0.25,
+  "reference_recall": 0.007692307692307693,
+  "reference_count": 8,
+  "reference_matches": 2,
+  "ground_truth_count": 260,
+  "predicted_titles": [
+    "Hybrid Imitation Learning Framework for Robotic Manipulation Tasks",
+    "Learning dexterous in-hand manipulation",
+    "DexMV: Imitation Learning for Dexterous Manipulation from Human Videos",
+    "Tactile-Driven Non-Prehensile Object Manipulation via ...",
+    "Learning Robot In-Hand Manipulation with Tactile Features",
+    "DexYCB: A Benchmark for Capturing Hand Grasping of Objects",
+    "DexArt: Benchmarking Generalizable Dexterous Manipulation ...",
+    "Learning a State Estimator for Tactile In-Hand Manipulation"
+  ],
+  "cited_match_rate": 0.27906976744186046,
+  "cited_count": 43,
+  "cited_supported": 12,
+  "cited_details": [
+    {
+      "statement": "([roboticsproceedings.org/rss20/p135.pdf](https://www.roboticsproceedings.org/rss20/p135.pdf)) show that, by mounting tactile sensors on the fingertips of a multi-fingered hand, one can simultaneously estimate the in-hand object pose *and* the contact location from a single physical interaction.",
+      "url": "https://roboticsproceedings.org/rss20/p135.pdf",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "([users.cs.utah.edu/~thermans/papers/vanhoof-ichr2015-in-hand-learning.pdf](https://users.cs.utah.edu/~thermans/papers/vanhoof-ichr2015-in-hand-learning.pdf)) reach a similar conclusion from a different starting point.",
+      "url": "https://users.cs.utah.edu/~thermans/papers/vanhoof-ichr2015-in-hand-learning.pdf",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "([elib.dlr.de/190608/1/IROS22_LearningTactileEstimator.pdf](https://elib.dlr.de/190608/1/IROS22_LearningTactileEstimator.pdf)) have formalized the state-estimation problem in this setting.",
+      "url": "https://elib.dlr.de/190608/1/IROS22_LearningTactileEstimator.pdf",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "([matthiasplappert.com/publications/2020_OpenAI_Dexterous-Manipulation_IJRR.pdf](https://matthiasplappert.com/publications/2020_OpenAI_Dexterous-Manipulation_IJRR.pdf)) provide the canonical demonstration of this paradigm.",
+      "url": "https://matthiasplappert.com/publications/2020_OpenAI_Dexterous-Manipulation_IJRR.pdf",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "DexArt ([cvpr.thecvf.com/virtual/2023/poster/22341](https://cvpr.thecvf.com/virtual/2023/poster/22341)) extends the RL paradigm to a more demanding class of objects: articulated items such as frying pans, laptops, and boxes.",
+      "url": "https://cvpr.thecvf.com/virtual/2023/poster/22341",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "([arxiv.org/abs/2108.05877](https://arxiv.org/abs/2108.05877)) introduce DexMV, a pipeline that learns dexterous manipulation *from human videos* rather than from robot teleoperation.",
+      "url": "https://arxiv.org/abs/2108.05877",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The DexYCB benchmark ([dex-ycb.github.io](https://dex-ycb.github.io/)) provides a large-scale dataset of human grasps captured with a multi-view camera rig, together with ground-truth 6D object poses and 3D hand poses.",
+      "url": "https://dex-ycb.github.io",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The Hybrid Imitation Learning (HIL) framework ([mdpi.com/1424-8220/21/10/3409](https://www.mdpi.com/1424-8220/21/10/3409)) combines behavior cloning (BC) with state cloning (SC) in a unified objective.",
+      "url": "https://mdpi.com/1424-8220/21/10/3409",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The tactile-modeling community has shown that rich manipulation behavior can be obtained from purely local observations when an explicit observation model is available ([roboticsproceedings.org/rss20/p135.pdf](https://www.roboticsproceedings.org/rss20/p135.pdf); [elib.dlr.de/190608/1/IROS22_LearningTactileEstimator.pdf](https://elib.dlr.de/190608/1/IROS22_LearningTactileEstimator.pdf)).",
+      "url": "https://roboticsproceedings.org/rss20/p135.pdf",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The tactile-modeling community has shown that rich manipulation behavior can be obtained from purely local observations when an explicit observation model is available ([roboticsproceedings.org/rss20/p135.pdf](https://www.roboticsproceedings.org/rss20/p135.pdf); [elib.dlr.de/190608/1/IROS22_LearningTactileEstimator.pdf](https://elib.dlr.de/190608/1/IROS22_LearningTactileEstimator.pdf)).",
+      "url": "https://elib.dlr.de/190608/1/IROS22_LearningTactileEstimator.pdf",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Vision-based RL, by contrast, typically delegates pose estimation to an external motion-capture system ([matthiasplappert.com/publications/2020_OpenAI_Dexterous-Manipulation_IJRR.pdf](https://matthiasplappert.com/publications/2020_OpenAI_Dexterous-Manipulation_IJRR.pdf)).",
+      "url": "https://matthiasplappert.com/publications/2020_OpenAI_Dexterous-Manipulation_IJRR.pdf",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Imitation learning straddles the two: when demonstrations are extracted from human videos, the pose estimator must run on in-the-wild footage, and the quality of the learned imitation policy is tightly coupled to the quality of the extracted 3D hand and object poses ([arxiv.org/abs/2108.05877](https://arxiv.org/abs/2108.05877); [dex-ycb.github.io](https://dex-ycb.github.io/)).",
+      "url": "https://arxiv.org/abs/2108.05877",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Imitation learning straddles the two: when demonstrations are extracted from human videos, the pose estimator must run on in-the-wild footage, and the quality of the learned imitation policy is tightly coupled to the quality of the extracted 3D hand and object poses ([arxiv.org/abs/2108.05877](https://arxiv.org/abs/2108.05877); [dex-ycb.github.io](https://dex-ycb.github.io/)).",
+      "url": "https://dex-ycb.github.io",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Model-driven approaches construct an explicit transition model—either from first principles or from data—and condition the policy on its predictions ([users.cs.utah.edu/~thermans/papers/vanhoof-ichr2015-in-hand-learning.pdf](https://users.cs.utah.edu/~thermans/papers/vanhoof-ichr2015-in-hand-learning.pdf)).",
+      "url": "https://users.cs.utah.edu/~thermans/papers/vanhoof-ichr2015-in-hand-learning.pdf",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Model-free RL avoids an explicit transition model but pays for it with extreme sample complexity, only achieving transfer thanks to large-scale simulation and domain randomization ([matthiasplappert.com/publications/2020_OpenAI_Dexterous-Manipulation_IJRR.pdf](https://matthiasplappert.com/publications/2020_OpenAI_Dexterous-Manipulation_IJRR.pdf); [cvpr.thecvf.com/virtual/2023/poster/22341](https://cvpr.thecvf.com/virtual/2023/poster/22341)).",
+      "url": "https://matthiasplappert.com/publications/2020_OpenAI_Dexterous-Manipulation_IJRR.pdf",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Model-free RL avoids an explicit transition model but pays for it with extreme sample complexity, only achieving transfer thanks to large-scale simulation and domain randomization ([matthiasplappert.com/publications/2020_OpenAI_Dexterous-Manipulation_IJRR.pdf](https://matthiasplappert.com/publications/2020_OpenAI_Dexterous-Manipulation_IJRR.pdf); [cvpr.thecvf.com/virtual/2023/poster/22341](https://cvpr.thecvf.com/virtual/2023/poster/22341)).",
+      "url": "https://cvpr.thecvf.com/virtual/2023/poster/22341",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Imitation learning sidesteps dynamics modeling by treating the demonstrator as an implicit model; the price is brittleness when the learner drifts off the demonstration manifold, which the HIL framework addresses by augmenting BC with a state-distribution-matching term ([mdpi.com/1424-8220/21/10/3409](https://www.mdpi.com/1424-8220/21/10/3409)).",
+      "url": "https://mdpi.com/1424-8220/21/10/3409",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "RL discovers policies from scratch and benefits from external reward shaping, but inherits the exploration difficulties of high-dimensional, contact-rich action spaces ([matthiasplappert.com/publications/2020_OpenAI_Dexterous-Manipulation_IJRR.pdf](https://matthiasplappert.com/publications/2020_OpenAI_Dexterous-Manipulation_IJRR.pdf); [cvpr.thecvf.com/virtual/2023/poster/22341](https://cvpr.thecvf.com/virtual/2023/poster/22341)).",
+      "url": "https://matthiasplappert.com/publications/2020_OpenAI_Dexterous-Manipulation_IJRR.pdf",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "RL discovers policies from scratch and benefits from external reward shaping, but inherits the exploration difficulties of high-dimensional, contact-rich action spaces ([matthiasplappert.com/publications/2020_OpenAI_Dexterous-Manipulation_IJRR.pdf](https://matthiasplappert.com/publications/2020_OpenAI_Dexterous-Manipulation_IJRR.pdf); [cvpr.thecvf.com/virtual/2023/poster/22341](https://cvpr.thecvf.com/virtual/2023/poster/22341)).",
+      "url": "https://cvpr.thecvf.com/virtual/2023/poster/22341",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Imitation learning replaces exploration with supervised signals from demonstrations, but its success hinges on the alignment between demonstrator and learner embodiment and on algorithmic devices that prevent error accumulation ([arxiv.org/abs/2108.05877](https://arxiv.org/abs/2108.05877); [mdpi.com/1424-8220/21/10/3409](https://www.mdpi.com/1424-8220/21/10/3409)).",
+      "url": "https://arxiv.org/abs/2108.05877",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Imitation learning replaces exploration with supervised signals from demonstrations, but its success hinges on the alignment between demonstrator and learner embodiment and on algorithmic devices that prevent error accumulation ([arxiv.org/abs/2108.05877](https://arxiv.org/abs/2108.05877); [mdpi.com/1424-8220/21/10/3409](https://www.mdpi.com/1424-8220/21/10/3409)).",
+      "url": "https://mdpi.com/1424-8220/21/10/3409",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Model-driven learning typically produces a relatively simple policy around a richer model, trading policy complexity for representational complexity ([roboticsproceedings.org/rss20/p135.pdf](https://www.roboticsproceedings.org/rss20/p135.pdf); [elib.dlr.de/190608/1/IROS22_LearningTactileEstimator.pdf](https://elib.dlr.de/190608/1/IROS22_LearningTactileEstimator.pdf)).",
+      "url": "https://roboticsproceedings.org/rss20/p135.pdf",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Model-driven learning typically produces a relatively simple policy around a richer model, trading policy complexity for representational complexity ([roboticsproceedings.org/rss20/p135.pdf](https://www.roboticsproceedings.org/rss20/p135.pdf); [elib.dlr.de/190608/1/IROS22_LearningTactileEstimator.pdf](https://elib.dlr.de/190608/1/IROS22_LearningTactileEstimator.pdf)).",
+      "url": "https://elib.dlr.de/190608/1/IROS22_LearningTactileEstimator.pdf",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The three paradigms are therefore best viewed as complementary rather than competing, and recent work increasingly combines them—for example, by using demonstrations to seed RL ([arxiv.org/abs/2108.05877](https://arxiv.org/abs/2108.05877)) or by using tactile models to reduce the observation burden of an RL policy ([roboticsproceedings.org/rss20/p135.pdf](https://www.roboticsproceedings.org/rss20/p135.pdf)).",
+      "url": "https://arxiv.org/abs/2108.05877",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The three paradigms are therefore best viewed as complementary rather than competing, and recent work increasingly combines them—for example, by using demonstrations to seed RL ([arxiv.org/abs/2108.05877](https://arxiv.org/abs/2108.05877)) or by using tactile models to reduce the observation burden of an RL policy ([roboticsproceedings.org/rss20/p135.pdf](https://www.roboticsproceedings.org/rss20/p135.pdf)).",
+      "url": "https://roboticsproceedings.org/rss20/p135.pdf",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Closing the remaining gap between laboratory demonstrations and reliable, general-purpose dexterity will require further integration of all three paradigms, together with benchmarks—such as DexYCB ([dex-ycb.github.io](https://dex-ycb.github.io/)) and DexArt ([cvpr.thecvf.com/virtual/2023/poster/22341](https://cvpr.thecvf.com/virtual/2023/poster/22341))—that allow direct, apples-to-apples comparison.",
+      "url": "https://dex-ycb.github.io",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Closing the remaining gap between laboratory demonstrations and reliable, general-purpose dexterity will require further integration of all three paradigms, together with benchmarks—such as DexYCB ([dex-ycb.github.io](https://dex-ycb.github.io/)) and DexArt ([cvpr.thecvf.com/virtual/2023/poster/22341](https://cvpr.thecvf.com/virtual/2023/poster/22341))—that allow direct, apples-to-apples comparison.",
+      "url": "https://cvpr.thecvf.com/virtual/2023/poster/22341",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "[https://www.roboticsproceedings.org/rss20/p135.pdf](https://www.roboticsproceedings.org/rss20/p135.pdf)",
+      "url": "https://roboticsproceedings.org/rss20/p135.pdf",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "[https://www.roboticsproceedings.org/rss20/p135.pdf](https://www.roboticsproceedings.org/rss20/p135.pdf)",
+      "url": "https://roboticsproceedings.org/rss20/p135.pdf",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://users.cs.utah.edu/~thermans/papers/vanhoof-ichr2015-in-hand-learning.pdf](https://users.cs.utah.edu/~thermans/papers/vanhoof-ichr2015-in-hand-learning.pdf)",
+      "url": "https://users.cs.utah.edu/~thermans/papers/vanhoof-ichr2015-in-hand-learning.pdf",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://users.cs.utah.edu/~thermans/papers/vanhoof-ichr2015-in-hand-learning.pdf](https://users.cs.utah.edu/~thermans/papers/vanhoof-ichr2015-in-hand-learning.pdf)",
+      "url": "https://users.cs.utah.edu/~thermans/papers/vanhoof-ichr2015-in-hand-learning.pdf",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://elib.dlr.de/190608/1/IROS22_LearningTactileEstimator.pdf](https://elib.dlr.de/190608/1/IROS22_LearningTactileEstimator.pdf)",
+      "url": "https://elib.dlr.de/190608/1/IROS22_LearningTactileEstimator.pdf",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://elib.dlr.de/190608/1/IROS22_LearningTactileEstimator.pdf](https://elib.dlr.de/190608/1/IROS22_LearningTactileEstimator.pdf)",
+      "url": "https://elib.dlr.de/190608/1/IROS22_LearningTactileEstimator.pdf",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://matthiasplappert.com/publications/2020_OpenAI_Dexterous-Manipulation_IJRR.pdf](https://matthiasplappert.com/publications/2020_OpenAI_Dexterous-Manipulation_IJRR.pdf)",
+      "url": "https://matthiasplappert.com/publications/2020_OpenAI_Dexterous-Manipulation_IJRR.pdf",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://matthiasplappert.com/publications/2020_OpenAI_Dexterous-Manipulation_IJRR.pdf](https://matthiasplappert.com/publications/2020_OpenAI_Dexterous-Manipulation_IJRR.pdf)",
+      "url": "https://matthiasplappert.com/publications/2020_OpenAI_Dexterous-Manipulation_IJRR.pdf",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://cvpr.thecvf.com/virtual/2023/poster/22341](https://cvpr.thecvf.com/virtual/2023/poster/22341)",
+      "url": "https://cvpr.thecvf.com/virtual/2023/poster/22341",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://cvpr.thecvf.com/virtual/2023/poster/22341](https://cvpr.thecvf.com/virtual/2023/poster/22341)",
+      "url": "https://cvpr.thecvf.com/virtual/2023/poster/22341",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://arxiv.org/abs/2108.05877](https://arxiv.org/abs/2108.05877)",
+      "url": "https://arxiv.org/abs/2108.05877",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://arxiv.org/abs/2108.05877](https://arxiv.org/abs/2108.05877)",
+      "url": "https://arxiv.org/abs/2108.05877",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://dex-ycb.github.io/](https://dex-ycb.github.io/)",
+      "url": "https://dex-ycb.github.io",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://dex-ycb.github.io/](https://dex-ycb.github.io/)",
+      "url": "https://dex-ycb.github.io",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "[https://www.mdpi.com/1424-8220/21/10/3409](https://www.mdpi.com/1424-8220/21/10/3409)",
+      "url": "https://mdpi.com/1424-8220/21/10/3409",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "[https://www.mdpi.com/1424-8220/21/10/3409](https://www.mdpi.com/1424-8220/21/10/3409)",
+      "url": "https://mdpi.com/1424-8220/21/10/3409",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    }
+  ],
+  "noncited_factual_accuracy": 0.06666666666666667,
+  "noncited_count": 15,
+  "noncited_correct": 1,
+  "noncited_details": [
+    {
+      "claim": "They use model-free RL to train a five-fingered hand to reorient a wide variety of objects using only vision-based object-pose feedback, and they subsequently transfer the resulting policy to a physical robot.",
+      "evidence": [
+        {
+          "title": "Learning dexterity",
+          "abstract": "We've trained a human-like robot hand to manipulate physical objects with unprecedented dexterity.",
+          "url": "https://openai.com/index/learning-dexterity/"
+        },
+        {
+          "title": "AI advances robotic dexterity w/in-hand reorientation",
+          "abstract": "A versatile dextrous manipulation system which can reorient many complex shapes just just with one depth camera and everything is now open source.",
+          "url": "https://www.youtube.com/watch?v=5HoLBaAhK-s"
+        },
+        {
+          "title": "Deep Dynamics Models for Learning Dexterous Manipulation",
+          "abstract": "by A Nagabandi · Cited by 591 — In-hand reorientation: Next, we scale up our method to a 24-DoF five-fingered hand reorienting a free-floating object to arbitrary goal configurations (Figure 6) ...",
+          "url": "https://proceedings.mlr.press/v100/nagabandi20a/nagabandi20a.pdf"
+        },
+        {
+          "title": "Learning a Shape-Conditioned Agent for Purely Tactile In- ...",
+          "abstract": "In this work, we address this gap by training shape-conditioned agents to reorient diverse objects in hand, relying purely on tactile feedback (via torque and ...",
+          "url": "https://arxiv.org/html/2407.18834v2"
+        },
+        {
+          "title": "OpenAI Demonstrates Complex Manipulation Transfer from ...",
+          "abstract": "researchers at OpenAI have used reinforcement learning to train a convolutional neural network to control a five-fingered Shadow hand to manipulate objects, ...",
+          "url": "https://spectrum.ieee.org/openai-demonstrates-complex-manipulation-transfer-from-simulation-to-real-world"
+        }
+      ],
+      "true_votes": 2,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "The work establishes the use of domain randomization to bridge the sim-to-real gap, the necessity of long training horizons (on the order of several years of simulated experience per task), and the value of asymmetric actor–critic architectures in which the critic is granted privileged state information unavailable at test time.",
+      "evidence": [
+        {
+          "title": "Natural Language Can Help Bridge the Sim2Real Gap - Robotics",
+          "abstract": "In this paper, we introduce Lang4Sim2Real, friction and damping coefficients, task goals, long-horizon multi-step real- world tasks,",
+          "url": "https://www.roboticsproceedings.org/rss20/p126.pdf"
+        },
+        {
+          "title": "Sim2Real VLA: Zero-Shot Generalization of Synthesized Skills ...",
+          "abstract": "TL;DR: This paper introduces Sim2Real-VLA, a generalist robotic control model that enables zero-shot transfer from synthetic simulation to real-world ...",
+          "url": "https://openreview.net/forum?id=H4SyKHjd4c"
+        },
+        {
+          "title": "What Went Wrong? Closing the Sim-to-Real Gap via Differentiable ...",
+          "abstract": "In this work, we propose a method that aims to align the simulator with the real world by discovering the causality between environment parameters and the sim- ...",
+          "url": "https://proceedings.mlr.press/v229/huang23c/huang23c.pdf"
+        },
+        {
+          "title": "Crossing the Gap: A Deep Dive into Zero-Shot Sim-to-Real Transfer for ...",
+          "abstract": "Domain Randomisation (DR): This is the most commonly used technique when training networks to cross the reality gap. It consists of choosing a large set of ...",
+          "url": "https://www.robot-learning.uk/crossing-the-gap"
+        },
+        {
+          "title": "Robot Learning From Randomized Simulations: A Review",
+          "abstract": "We provide a comprehensive review of sim-to-real research for robotics, focusing on a technique named “domain randomization” Bongard et al. (2006) bridged the ...",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9038844/"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "The pose-estimation challenge is handled by feeding the policy either ground-truth pose in simulation or external motion-capture-based pose on the real robot, sidestepping in-hand perception.",
+      "evidence": [
+        {
+          "title": "A Pipeline for Generating Ground Truth Labels for Real RGBD Data of ...",
+          "abstract": "The pipeline produces ground truth segmentations and ground truth 32 6DOF poses for multiple objects in scenes with clutter, occlusions, and varied lighting ...",
+          "url": "https://groups.csail.mit.edu/robotics-center/public_papers/Marion17.pdf"
+        },
+        {
+          "title": "Dynamics-Regulated Kinematic Policy for Egocentric Pose Estimation",
+          "abstract": "We propose a method for object-aware 3D egocentric pose estimation that tightly integrates kinematics modeling, dynamics modeling, and scene object information.",
+          "url": "https://papers.neurips.cc/paper_files/paper/2021/file/d1fe173d08e959397adf34b1d77e88d7-Paper.pdf"
+        },
+        {
+          "title": "The accuracy of several pose estimation methods for 3D joint ...",
+          "abstract": "Pose estimation derived joint centres demonstrated systematic differences at the hip and knee (~ 30–50 mm), most likely due to mislabeling of ground truth data ...",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8526586/"
+        },
+        {
+          "title": "Pose Estimation Challenge - Kelvins - European Space Agency",
+          "abstract": "The goal of this challenge is to estimate the pose, i.e., the relative position and attitude, of a known spacecraft from individual grayscale images.",
+          "url": "https://kelvins.esa.int/satellite-pose-estimation-challenge/challenge/"
+        },
+        {
+          "title": "Efficient 3D human pose estimation for IoT-based motion capture using ...",
+          "abstract": "The core objective of 3D pose estimation is to reconstruct the 3D positions and poses of human skeletons from single, binocular, or multi-view image sequences,",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1110016825006969"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "The benchmark couples RL with learned 3D point-cloud representations of the scene, and the authors systematically study how the choice of representation learning objective affects downstream policy learning.",
+      "evidence": [
+        {
+          "title": "Open3DSG: Open-Vocabulary 3D Scene Graphs from ... - CVPR",
+          "abstract": "We present Open3DSG the first approach for learning to predict open-vocabulary 3D scene graphs from 3D point clouds. The advantage of our method is that it ...",
+          "url": "https://cvpr.thecvf.com/virtual/2024/poster/29563"
+        },
+        {
+          "title": "Open-Vocabulary 3D Scene Graphs from Point Clouds with ...",
+          "abstract": "We show how such a representation can be converted into an explicit open-vocabulary 3D scene graph. Thus effectively proposing the first open-vocabulary scene ...",
+          "url": "https://arxiv.org/html/2402.12259v2"
+        },
+        {
+          "title": "Dynamic Scene Graph Generation of Point Clouds with ...",
+          "abstract": "by C Qi · 2024 · Cited by 11 — Scene graphs of point clouds help to understand object-level relationships in the 3D space. Most graph generation methods work on 2D ...",
+          "url": "https://www.sciopen.com/article/10.26599/TST.2023.9010002"
+        },
+        {
+          "title": "Object-Centric Representation Learning for Enhanced 3D ...",
+          "abstract": "by KH Heo · Cited by 7 — This paper proposes a new method for scene graph generation. Given existing scene point clouds with instance masks, the method could infer the relationships ...",
+          "url": "https://openreview.net/forum?id=LjmXrUsSrg"
+        },
+        {
+          "title": "Enriching Point Clouds with Implicit Representations for 3D ...",
+          "abstract": "by Z Yang · 2022 · Cited by 15 — Continuous implicit representations can flexibly describe complex 3D geometry and offer excellent potential for 3D point cloud analysis.",
+          "url": "https://www.mdpi.com/2072-4292/15/1/61"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "DexArt treats the articulated object as a partially known dynamical system and embeds this prior into the reward function.",
+      "evidence": [
+        {
+          "title": "DexArt: Benchmarking Generalizable Dexterous Manipulation ...",
+          "abstract": "In this paper, we propose a new benchmark on learning generalizable manipulation policy on articulated objects with point cloud observations.",
+          "url": "https://ar5iv.labs.arxiv.org/html/2305.05706"
+        },
+        {
+          "title": "DexArt: Benchmarking Generalizable Dexterous ...",
+          "abstract": "To study this problem systematically, we introduce DexCraft, a simulation benchmark for dexterous articulated tool use. While prior benchmarks [9, 10] have ...",
+          "url": "https://www.researchgate.net/publication/373316617_DexArt_Benchmarking_Generalizable_Dexterous_Manipulation_with_Articulated_Objects"
+        },
+        {
+          "title": "DexArt: Benchmarking Generalizable Dexterous ...",
+          "abstract": "We propose DexArt, a task suite of Dexterous manipulation with Articulated object using point cloud observation. We experiment with extensive benchmark methods",
+          "url": "https://www.chenbao.tech/dexart/"
+        },
+        {
+          "title": "DexArt: Benchmarking Generalizable Dexterous Manipulation ...",
+          "abstract": "by C Bao · 2023 · Cited by 113 — In this paper, we propose a new benchmark for. Dexterous manipulation with diverse Articulated objects. (DexArt). We introduce multiple tasks with a dexterous.",
+          "url": "https://openaccess.thecvf.com/content/CVPR2023/papers/Bao_DexArt_Benchmarking_Generalizable_Dexterous_Manipulation_With_Articulated_Objects_CVPR_2023_paper.pdf"
+        },
+        {
+          "title": "Benchmarking Generalizable Dexterous Manipulation with ...",
+          "abstract": "This research aims to address the bottleneck of generalizability in dexterous articulated object manipulation by integrating 3D visual ...",
+          "url": "https://liner.com/review/dexart-benchmarking-generalizable-dexterous-manipulation-with-articulated-objects"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "The pipeline extracts 3D hand and object poses from RGB videos of a human performing the task, then translates the human motion into robot-executable demonstrations via a learned retargeting network.",
+      "evidence": [
+        {
+          "title": "Accurate Hand Contact Detection from RGB Images via Image-to-Image ...",
+          "abstract": "Our method is built on top of 3D hand trackers that predict the articulated pose of two hands, enriching them with camera-space probability maps of contact ...",
+          "url": "http://www.mslab.es/projects/AHCD25/"
+        },
+        {
+          "title": "Hand-Object Interaction: From Human Demonstrations to Robot ... - Frontiers",
+          "abstract": "This article presents a deep dive into hand-object interaction and human demonstrations, highlighting the main challenges in this research area ...",
+          "url": "https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2021.714023/pdf"
+        },
+        {
+          "title": "Hand-held Object Reconstruction from RGB Video with Dynamic Interaction",
+          "abstract": "This work aims to reconstruct the 3D geometry of a rigid object manipulated by one or both hands using monocular RGB video.",
+          "url": "https://cvpr.thecvf.com/virtual/2025/poster/33963"
+        },
+        {
+          "title": "Can We Infer Object Pose Changes from Hand Movements?",
+          "abstract": "We investigate this general approach, which we call Object-from-Hand (ObHa), building three probes, drawing on insights from experimental psychology research on ...",
+          "url": "https://dl.acm.org/doi/full/10.1145/3772318.3790384"
+        },
+        {
+          "title": "Tracking and Reconstructing Hand Object Interactions from Point Cloud ...",
+          "abstract": "Abstract. In this work, we tackle the challenging task of jointly tracking hand object pose and reconstructing their shapes from depth.",
+          "url": "https://ojs.aaai.org/index.php/AAAI/article/view/25103/24875"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "Multiple imitation-learning algorithms are benchmarked on these demonstrations.",
+      "evidence": [
+        {
+          "title": "Imitation learning vs. offline reinforcement learning",
+          "abstract": "Lecture by Sergey Levine discussing how imitation learning compares to offline reinforcement learning.",
+          "url": "https://www.youtube.com/watch?v=sVPm7zOrBxM"
+        },
+        {
+          "title": "Towards Diverse Behaviors: A Benchmark for Imitation ...",
+          "abstract": "In this work, we introduce simulation benchmark environments and the corresponding Datasets with Diverse human Demonstrations for Imitation Learning (D3IL), ...",
+          "url": "https://alrhub.github.io/d3il-website/"
+        },
+        {
+          "title": "Towards Diverse Behaviors: A Benchmark for Imitation ...",
+          "abstract": "by X Jia · Cited by 65 — In this work, we introduce simulation benchmark environments and the corresponding Datasets with Diverse human Demonstrations for Imitation ...",
+          "url": "https://openreview.net/forum?id=6pPYRXKPpw"
+        },
+        {
+          "title": "A Benchmark for Imitation Learning with Human ...",
+          "abstract": "Imitation learning with human data has demonstrated remarkable success in teaching robots in a wide range of skills. Diverse Human ...",
+          "url": "https://arxiv.org/html/2402.14606v1"
+        },
+        {
+          "title": "Ch. 21 - Imitation Learning - Underactuated Robotics",
+          "abstract": "Imitation learning, also known as \"learning from demonstrations\" (LfD), is the problem of learning a policy from a collection of demonstrations.",
+          "url": "http://underactuated.mit.edu/imitation.html"
+        }
+      ],
+      "true_votes": 1,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "A central finding is that demonstrations are not merely a performance booster: they solve tasks that pure RL, given a comparable compute budget, cannot solve at all.",
+      "evidence": [
+        {
+          "title": "The Benefits and Challenges of Using the Demonstration Method in STEM ...",
+          "abstract": "Demonstrations may be less effective at fostering academic performance.",
+          "url": "https://www.mdpi.com/2227-7102/16/1/161"
+        },
+        {
+          "title": "2141-Examination Guidelines for Determining Obviousness Under 35 ...",
+          "abstract": "2141 Examination Guidelines for Determining Obviousness Under 35 U.S.C. 103 [R-01.2024]. [Editor Note: This MPEP section is applicable regardless of whether ...",
+          "url": "https://www.uspto.gov/web/offices/pac/mpep/s2141.html"
+        },
+        {
+          "title": "Rethinking the Role of Demonstrations - arXiv",
+          "abstract": "In this paper, we show that ground truth demonstrations are in fact not required -- randomly replacing labels in the demonstrations barely hurts ...",
+          "url": "https://arxiv.org/abs/2202.12837"
+        },
+        {
+          "title": "Exploring the effects of demonstration and enactment in facilitating recall ...",
+          "abstract": "Both manipulations improved recall, with demonstration providing relatively larger boosts to performance across conditions.",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7186251/"
+        },
+        {
+          "title": "A survey of demonstration learning - ScienceDirect.com",
+          "abstract": "Demonstration Learning is a paradigm in which an agent learns to perform a task by imitating the behavior of an expert shown in demonstrations.",
+          "url": "https://www.sciencedirect.com/science/article/pii/S0921889024001969"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "Beyond serving as a perception benchmark, DexYCB enables systematic study of two questions that are central to imitation learning: how dense the demonstration coverage must be for a given object, and how best to retarget a human grasp onto a robot hand.",
+      "evidence": [
+        {
+          "title": "DexYCB: A Benchmark for Capturing Hand Grasping of Objects",
+          "abstract": "DexYCB: A Benchmark for Capturing Hand Grasping of Objects | NVIDIA Learning and Perception Research. Conference on Computer Vision and Pattern Recognition",
+          "url": "https://research.nvidia.com/labs/lpr/publication/chao2021dexycb/"
+        },
+        {
+          "title": "DexYCB: A Benchmark for Capturing Hand Grasping of Objects",
+          "abstract": "We introduce DexYCB, a new dataset for capturing hand grasping of objects. We first compare DexYCB with a related one through cross-dataset evaluation.",
+          "url": "https://www.researchgate.net/publication/350835006_DexYCB_A_Benchmark_for_Capturing_Hand_Grasping_of_Objects"
+        },
+        {
+          "title": "DexYCB: A Benchmark for Capturing Hand Grasping of Objects",
+          "abstract": "We introduce DexYCB, a new dataset for capturing hand grasping of objects. 2D object and keypoint detection, 6D object pose estimation, and 3D hand pose ...",
+          "url": "https://dex-ycb.github.io/"
+        },
+        {
+          "title": "DexYCB: A Benchmark for Capturing Hand Grasping of Objects",
+          "abstract": "We introduce DexYCB, a new dataset for capturing hand grasping of objects. We first compare DexYCB with a related one through cross-dataset ...",
+          "url": "https://papers.cool/arxiv/2104.04631"
+        },
+        {
+          "title": "DexYCB: A Benchmark for Capturing Hand Grasping of Objects - arXiv",
+          "abstract": "We introduce DexYCB, a new dataset for capturing hand grasping of objects. We first compare DexYCB with a related one through cross-dataset ...",
+          "url": "https://arxiv.org/abs/2104.04631"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "The DexYCB dataset has become a standard substrate for training pose estimators and for benchmarking imitation-learning pipelines on in-hand tasks.",
+      "evidence": [
+        {
+          "title": "DexYCB: A Benchmark for Capturing Hand Grasping of Objects - arXiv",
+          "abstract": "We introduce DexYCB, a new dataset for capturing hand grasping of objects. We first compare DexYCB with a related one through cross-dataset ...",
+          "url": "https://arxiv.org/abs/2104.04631"
+        },
+        {
+          "title": "DexYCB: A Benchmark for Capturing Hand Grasping of Objects",
+          "abstract": "We introduce DexYCB, a new dataset for capturing hand grasping of objects. 6D object pose estimation, and 3D hand pose estimation.",
+          "url": "https://dex-ycb.github.io/"
+        },
+        {
+          "title": "What Matters in Learning from Large-Scale Datasets for Robot...",
+          "abstract": "This paper presents a comprehensive study on key factors that influence the effectiveness of large-scale robotics datasets for manipulation tasks. The authors ...",
+          "url": "https://openreview.net/forum?id=LqhorpRLIm"
+        },
+        {
+          "title": "DexYCB: A Benchmark for Capturing Hand Grasping of Objects | Research",
+          "abstract": "We introduce DexYCB, a new dataset for capturing hand grasping of objects. We first compare DexYCB with a related one through cross-dataset ...",
+          "url": "https://research.nvidia.com/publication/2021-06_dexycb-benchmark-capturing-hand-grasping-objects"
+        },
+        {
+          "title": "GitHub - NVlabs/dex-ycb-toolkit: A Python package that provides ...",
+          "abstract": "DexYCB provides a benchmark to evaluate four tasks: (1) 2D object and keypoint detection (COCO), (2) 6D object pose estimation (BOP), (3) 3D hand pose ...",
+          "url": "https://github.com/NVlabs/dex-ycb-toolkit"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "For dexterous hands, the cost of real-world exploration is prohibitive, and most successful demonstrations rely on large-scale simulation followed by transfer to the physical robot.",
+      "evidence": [
+        {
+          "title": "GENDEXHAND: GENERATIVE SIMULATION FOR DEX",
+          "abstract": "In this paper, we introduced GenDexHand, a fully automated pipeline for generating dexterous hand manipulation tasks in simulation.",
+          "url": "https://openreview.net/pdf/779da69a611267b014cfab764442795377e81f59.pdf"
+        },
+        {
+          "title": "Demonstrating Learning from Humans on Open-Source Dexterous Robot ...",
+          "abstract": "Our demonstration will show our three different open-source robot hands that each cost around $2000 and are extremely easy to fabricate and 3D ...",
+          "url": "https://www.roboticsproceedings.org/rss20/p014.pdf"
+        },
+        {
+          "title": "Dexterous Manipulation with Reinforcement Learning",
+          "abstract": "In this post, we demonstrate how deep reinforcement learning (deep RL) can be used to learn how to control dexterous hands for a variety of ...",
+          "url": "https://bair.berkeley.edu/blog/2018/08/31/dexterous-manip/"
+        },
+        {
+          "title": "Learning Robot Fine and Dexterous Manipulation: Perception and Control",
+          "abstract": "Despite decades of research, most demonstrations of dexterous manipulation still rely heavily on teleoperation. ... Simulation to Real World ...",
+          "url": "https://dex-manipulation.github.io/corl2024/"
+        },
+        {
+          "title": "Daily Papers - Hugging Face",
+          "abstract": "... dexterous manipulation requires large-scale demonstrations across many robotic hands. In addition, as new dexterous embodiments appear rapidly, collecting ...",
+          "url": "https://huggingface.co/papers?q=dexterous%20hand"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "The authors couple a tactile-feature extractor with a learned dynamics model, yielding a closed-loop controller that performs non-prehensile manipulation on the grasped object.",
+      "evidence": [
+        {
+          "title": "Tactile-Driven Non-Prehensile Object Manipulation via Extrinsic Contact ...",
+          "abstract": "In this paper, we consider the problem of non-prehensile manipulation using grasped objects. Closed-loop Controller:",
+          "url": "https://arxiv.org/html/2405.18214v1"
+        },
+        {
+          "title": "Reactive planar non-prehensile manipulation with hybrid model ...",
+          "abstract": "This article presents an offline solution and online approximation to the hybrid control problem of planar non-prehensile manipulation.",
+          "url": "https://www.researchgate.net/publication/341296648_Reactive_planar_non-prehensile_manipulation_with_hybrid_model_predictive_control"
+        },
+        {
+          "title": "Non-Prehensile Manipulation Actions and Visual 6D Pose Estimation for ...",
+          "abstract": "This paper proposes a solution that exploits a state-of-the-art neural network. This work solves this issue by resorting to a grasp controller ...",
+          "url": "https://www.mdpi.com/2218-6581/12/4/92"
+        },
+        {
+          "title": "Learning Robot In-Hand Manipulation with Tactile Features",
+          "abstract": "In this paper, we show that this approach successfully acquires a tactile manipulation skill using a passively compliant hand.",
+          "url": "https://users.cs.utah.edu/~thermans/papers/vanhoof-ichr2015-in-hand-learning.pdf"
+        },
+        {
+          "title": "Daily Papers - Hugging Face",
+          "abstract": "Our tactile-informed dynamics model, learned from real-world data, can solve downstream robotics tasks with model-predictive control. We demonstrate our ...",
+          "url": "https://huggingface.co/papers?q=tactile%20dynamics"
+        }
+      ],
+      "true_votes": 1,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "Working with a passively compliant under-actuated hand, they propose a policy search algorithm in which the policy is conditioned on a small set of learned tactile features rather than on raw signals.",
+      "evidence": [
+        {
+          "title": "A Design and Analysis Tool for Underactuated Compliant ...",
+          "abstract": "by M Ciocarlie · Cited by 43 — In this paper we propose a quasistatic force analysis tool for underactuated hands. We use a 3D framework with frictional constraints which poses",
+          "url": "https://roam.me.columbia.edu/sites/roam.me.columbia.edu/files/content/papers/iros09_design.pdf"
+        },
+        {
+          "title": "Development of a Compliant Lower-Limb Rehabilitation ...",
+          "abstract": "by Y Yang · 2023 · Cited by 6 — this paper proposes a novel robot with portability and compliance features. The developed robot consists of an underactuated mechanism and a ...",
+          "url": "https://www.mdpi.com/2079-9292/12/16/3436"
+        },
+        {
+          "title": "A survey on policy search algorithms for learning robot ...",
+          "abstract": "by K Chatzilygeroudis · 2020 · Cited by 236 — Abstract—Most policy search algorithms require thousands of training episodes to find an effective policy, which is often.",
+          "url": "https://inria.hal.science/hal-02393432v1/document"
+        },
+        {
+          "title": "A Novel Type of Compliant, Underactuated Robotic Hand ...",
+          "abstract": "by R Deimel · Cited by 1524 — In this paper, we want to show that in addition to the two aforementioned advantages, passively compliant hands can also perform dexterous grasping. Further ...",
+          "url": "https://www.static.tu.berlin/fileadmin/www/10002220/Publications/deimel-14-RSS-draft.pdf"
+        },
+        {
+          "title": "Learning Robot In-Hand Manipulation with Tactile Features",
+          "abstract": "by H van Hoof · Cited by 222 — In this paper, we show that this approach successfully acquires a tactile manipulation skill using a passively compliant hand.",
+          "url": "https://users.cs.utah.edu/~thermans/papers/vanhoof-ichr2015-in-hand-learning.pdf"
+        }
+      ],
+      "true_votes": 1,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "The tactile features form a low-dimensional, task-relevant state representation; the resulting skill is acquired using a probabilistic model that captures the transition dynamics of the latent state.",
+      "evidence": [
+        {
+          "title": "Neural Representations of Task-relevant and ...",
+          "abstract": "by J Chen · 2021 · Cited by 10 — These results suggest that both relevant and irrelevant features may be represented in visual and parietal cortex but in different forms.",
+          "url": "https://www.biorxiv.org/content/10.1101/2021.05.21.445168.full"
+        },
+        {
+          "title": "Tactile Memory - an overview",
+          "abstract": "Recognizing objects by touch is a complex skill involving several different subcomponents. First, it involves learning",
+          "url": "https://www.sciencedirect.com/topics/neuroscience/tactile-memory"
+        },
+        {
+          "title": "Generation of tactile data using deep learning",
+          "abstract": "In this paper, we propose a generative model to simulate realistic tactile sensory data for use in downstream robotics tasks. The proposed generative model ...",
+          "url": "https://ori.ox.ac.uk/groups/srl/generation-of-tactile-data-using-deep-learning"
+        },
+        {
+          "title": "Data-Efficient Tactile Representation Learning with ...",
+          "abstract": "This video demonstrates UniT, a data-efficient tactile representation learning framework that learns a compact latent tactile representation ...",
+          "url": "https://www.youtube.com/watch?v=K7dULei0I3Y"
+        },
+        {
+          "title": "Learning task-state representations - PMC - NIH",
+          "abstract": "by Y Niv · 2019 · Cited by 464 — In this Perspective, we summarize our recent research into the computational and neural underpinnings of “representation learning” — how humans (and other ...",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7241310/"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "They study the problem of recovering the pose of an object manipulated by a multi-fingered hand using only proprioceptive feedback, and train a state estimator from data.",
+      "evidence": [
+        {
+          "title": "In-Hand Object Localization with Proprioception and Tactile ...",
+          "abstract": "This dissertation makes several contributions to in-hand object pose estimation using proprioceptive and tactile feedback. Firstly, I provide a proprioceptive ...",
+          "url": "https://deepblue.lib.umich.edu/items/e36e95ba-b5df-464e-bfff-6cb877546f79"
+        },
+        {
+          "title": "Dexterous In-Hand Manipulation of Slender Cylindrical Objects ...",
+          "abstract": "Abstract—Continuous in-hand manipulation is an important physical interaction skill, where tactile sensing provides indis- pensable contact information to ...",
+          "url": "https://papers.ssrn.com/sol3/Delivery.cfm/8479c632-b13e-4ef9-aad2-3a04c9ebc89f-MECA.pdf?abstractid=4674022&mirid=1"
+        },
+        {
+          "title": "In robotics, dexterity and perception go hand-in-hand, literally ...",
+          "abstract": "We combined vision and touch sensing on a multifingered hand to estimate an object's pose and shape during in-hand manipulation.",
+          "url": "https://www.facebook.com/BostonDynamicsOfficial/posts/in-robotics-dexterity-and-perception-go-hand-in-hand-literally-our-atlas-manipul/1111779084324483/"
+        },
+        {
+          "title": "Object Feature Reconstruction via Robotic In-Hand- ...",
+          "abstract": "by C Dowds · Cited by 1 — Two types of manipulation are used to gather proprioceptive data about the held object. These are a fixed-base rolling manipulation (previously used in [4,2,3]) ...",
+          "url": "https://www.imperial.ac.uk/media/imperial-college/research-centres-and-groups/manipulation-and-touch-lab/TAROS_Ciaran---FINAL.pdf"
+        },
+        {
+          "title": "A Survey of Multifingered Robotic Manipulation - PMC - NIH",
+          "abstract": "by Y Li · 2022 · Cited by 45 — This article aims to give a brief overview of multifingered robotic manipulation from three aspects: a) the biological results, b) the structural evolvements, ...",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9097019/"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    }
+  ]
+}

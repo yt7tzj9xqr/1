@@ -1,0 +1,19 @@
+{
+  "arxiv_id": "2105.01605",
+  "model": "MiniMax-M3",
+  "system": "search-baseline-v3",
+  "reference_precision": 0.14285714285714285,
+  "reference_recall": 0.02040816326530612,
+  "reference_count": 7,
+  "reference_matches": 1,
+  "ground_truth_count": 49,
+  "predicted_titles": [
+    "GitHub - ShuangLI59/person_search: Joint Detection and Identification Feature Learning for Person Search",
+    "Joint Detection and Identification Feature Learning for Person Search",
+    "Asymmetric Cross-Scale Alignment for Text-Based Person Search - Cronfa",
+    "wangxiao5791509/Person-Search-Paper-List",
+    "End-to-End Deep Learning for Person Search",
+    "Person Re-identification in Identity Regression Space",
+    "Triplet Online Instance Matching Loss for Person Re-identification"
+  ]
+}

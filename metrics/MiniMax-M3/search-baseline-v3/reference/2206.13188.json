@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2206.13188",
+  "model": "MiniMax-M3",
+  "system": "search-baseline-v3",
+  "reference_precision": 0.25,
+  "reference_recall": 0.007936507936507936,
+  "reference_count": 8,
+  "reference_matches": 2,
+  "ground_truth_count": 252,
+  "predicted_titles": [
+    "A General Self-Supervised Framework for Remote Sensing ...",
+    "Momentum Contrast for Unsupervised Visual Representation Learning",
+    "A Simple Framework for Contrastive Learning of Visual Representations",
+    "Generative Adversarial Network (GAN) for Remote Sensing ...",
+    "Self-Supervised Learning for Scene Classification in Remote Sensing",
+    "Self-Supervised Learning - Xiaohang Zhan",
+    "erative Adversarial Networks in Remote Sensing Applications",
+    "A Survey on Self-Supervised Learning: Algorithms, Applications, and ..."
+  ]
+}

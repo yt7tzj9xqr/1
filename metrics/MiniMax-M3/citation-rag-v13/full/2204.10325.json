@@ -1,0 +1,195 @@
+{
+  "arxiv_id": "2204.10325",
+  "model": "MiniMax-M3",
+  "system": "citation-rag-v13",
+  "reference_precision": 0.0,
+  "reference_recall": 0.0,
+  "reference_count": 6,
+  "reference_matches": 0,
+  "ground_truth_count": 36,
+  "predicted_titles": [
+    "Wav2vec2 A Framework for Self-Supervised Learning of Speech Representations - Paper Explained",
+    "An automated tool for the assessment of childhood apraxia ...",
+    "Automatic Pronunciation Scoring And Mispronunciation ...",
+    "Deep-Learning-Based Automated Classification of Chinese Speech Sound Disorders",
+    "Speech Therapy for Apraxia App - NACD International",
+    "Hybrid + Traditional Speech Therapy for Speech Sound Disorder · Info for Participants · Clinical Trial 2026 | Power | Power"
+  ],
+  "cited_match_rate": 0.8333333333333334,
+  "cited_count": 24,
+  "cited_supported": 20,
+  "cited_details": [
+    {
+      "statement": "Speech sound disorders are common in preschool and school-age children, with shortages of qualified speech–language pathologists noted in some regions and lengthy clinical assessment procedures reported (https://pmc.ncbi.nlm.nih.gov/articles/PMC9324778/).",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9324778",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Automated computer-assisted tools for assessment have been developed that include a clinician interface, a mobile application, and a speech processing engine (https://www.sciencedirect.com/science/article/abs/pii/S0167639315000382).",
+      "url": "https://sciencedirect.com/science/article/abs/pii/S0167639315000382",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Automated computer-assisted tools for therapy delivery have also been developed in the form of mobile applications for home practice (https://www.nacd.org/products/speech-therapy-for-apraxia-app/).",
+      "url": "https://nacd.org/products/speech-therapy-for-apraxia-app",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "An automated tool to assess productions from children with apraxia of speech consists of a clinician interface, a mobile application, and a speech processing engine (https://www.sciencedirect.com/science/article/abs/pii/S0167639315000382).",
+      "url": "https://sciencedirect.com/science/article/abs/pii/S0167639315000382",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "More recent work has applied deep learning to classification of speech sound disorders in languages other than English, with a 2022 study describing a system for analyzing acoustic data to assist in the diagnosis and classification of children's speech sound disorders across four distinct types of Chinese SSDs (https://pmc.ncbi.nlm.nih.gov/articles/PMC9324778/).",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9324778",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The authors assembled a speech corpus of 2,540 stopping, backing, final consonant deletion process, and affrication samples from 90 children aged 3–6 years with normal or pathological articulatory features, with each recording annotated by two speech–language pathologists (https://pmc.ncbi.nlm.nih.gov/articles/PMC9324778/).",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9324778",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Classification was performed using three well-established neural network models for image classification, with feature maps built from three sets of Mel-frequency cepstral coefficients arranged into a three-dimensional data structure (https://pmc.ncbi.nlm.nih.gov/articles/PMC9324778/).",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9324778",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The best multi-class classification using a single Chinese phrase achieved an accuracy of 74.4 percent (https://pmc.ncbi.nlm.nih.gov/articles/PMC9324778/).",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9324778",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The same study reports that speech sound disorders are among the most common disorders in preschool and school-age children, with a reported prevalence of 2.3 to 24.6 percent in school-aged children and an average assessment time of roughly 54 minutes per case in clinical settings (https://pmc.ncbi.nlm.nih.gov/articles/PMC9324778/).",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9324778",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The authors additionally employed six data augmentation techniques to expand the training set and reduce overfitting (https://pmc.ncbi.nlm.nih.gov/articles/PMC9324778/).",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9324778",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The National Association for Child Development's \"Speech Therapy for Apraxia\" app is described as a tool used by parents, individuals, and speech therapists to develop or improve articulation and motor planning, with a progression of levels that moves from single syllables through increasingly difficult production sequences to sequences of random syllables (https://www.nacd.org/products/speech-therapy-for-apraxia-app/).",
+      "url": "https://nacd.org/products/speech-therapy-for-apraxia-app",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The app is designed for children with childhood apraxia of speech or dyspraxia and for adults with apraxia, and emphasizes daily targeted intervention as a means of triggering neuroplasticity (https://www.nacd.org/products/speech-therapy-for-apraxia-app/).",
+      "url": "https://nacd.org/products/speech-therapy-for-apraxia-app",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "It was developed by the NACD team, which includes a certified speech-language pathologist (https://www.nacd.org/products/speech-therapy-for-apraxia-app/).",
+      "url": "https://nacd.org/products/speech-therapy-for-apraxia-app",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A trial registration for the GENESIS study, run by Syracuse University, evaluates whether hybrid therapy combining traditional speech therapy with an AI tool named Jessica is more effective at helping children articulate sounds such as \"r\" and \"s\" than traditional methods alone (https://www.withpower.com/trial/phase-speech-sound-disorder-4-2025-15e45).",
+      "url": "https://withpower.com/trial/phase-speech-sound-disorder-4-2025-15e45",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "In the described protocol, children receive weekly speech therapy sessions for 8 weeks, with the hybrid group additionally practicing with the AI tool for 60 minutes per week and receiving real-time feedback on articulation and progress tracking (https://www.withpower.com/trial/phase-speech-sound-disorder-4-2025-15e45).",
+      "url": "https://withpower.com/trial/phase-speech-sound-disorder-4-2025-15e45",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The registration page also references an existing study in which participants in an AI-based program improved their pronunciation of the /ɹ/ sound in untreated words, indicating generalization beyond practiced items (https://www.withpower.com/trial/phase-speech-sound-disorder-4-2025-15e45).",
+      "url": "https://withpower.com/trial/phase-speech-sound-disorder-4-2025-15e45",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The page further notes that past studies of similar AI-assisted speech therapy tools reported improved speech sound production without major side effects, providing preliminary safety evidence for the hybrid design (https://www.withpower.com/trial/phase-speech-sound-disorder-4-2025-15e45).",
+      "url": "https://withpower.com/trial/phase-speech-sound-disorder-4-2025-15e45",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The capabilities of these assessment and therapy tools rest on automatic speech recognition and self-supervised speech representation learning (https://aclanthology.org/W12-5808.pdf).",
+      "url": "https://aclanthology.org/W12-5808.pdf",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Work on computer-aided pronunciation scoring and mispronunciation detection has utilized ASR technology to facilitate learning of spoken language and reading skills, applying these methods to detect learner errors (https://aclanthology.org/W12-5808.pdf).",
+      "url": "https://aclanthology.org/W12-5808.pdf",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Self-supervised frameworks for learning speech representations, such as wav2vec 2.0, have been introduced by Facebook Artificial Intelligence Research and are explained in publicly available technical walkthroughs (https://www.youtube.com/watch?v=fMqYul2TvBE).",
+      "url": "https://youtube.com/watch?v=fMqYul2TvBE",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The Chinese SSD classifier reached only 74.4 percent multi-class accuracy, indicating that distinguishing among multiple error types remains difficult (https://pmc.ncbi.nlm.nih.gov/articles/PMC9324778/).",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9324778",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The same source also notes the lack of standardized assessment tools in Taiwan and the resulting variability between SLP evaluations (https://pmc.ncbi.nlm.nih.gov/articles/PMC9324778/).",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9324778",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The hybrid therapy trial is described in the materials reviewed as a feasibility-oriented study whose primary efficacy outcomes are not yet reported in the cited pages (https://www.withpower.com/trial/phase-speech-sound-disorder-4-2025-15e45).",
+      "url": "https://withpower.com/trial/phase-speech-sound-disorder-4-2025-15e45",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The strongest quantitative result in the available evidence is the 74.4 percent multi-class accuracy reported for Chinese speech sound disorder classification (https://pmc.ncbi.nlm.nih.gov/articles/PMC9324778/), with the other reviewed sources each describing an individual system, application, or trial.",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9324778",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    }
+  ],
+  "noncited_factual_accuracy": 0.0,
+  "noncited_count": 0,
+  "noncited_correct": 0,
+  "noncited_details": []
+}

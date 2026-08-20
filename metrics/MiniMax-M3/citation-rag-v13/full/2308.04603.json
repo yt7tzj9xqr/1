@@ -1,0 +1,195 @@
+{
+  "arxiv_id": "2308.04603",
+  "model": "MiniMax-M3",
+  "system": "citation-rag-v13",
+  "reference_precision": 0.3333333333333333,
+  "reference_recall": 0.029850746268656716,
+  "reference_count": 6,
+  "reference_matches": 2,
+  "ground_truth_count": 67,
+  "predicted_titles": [
+    "Robust Spatial-spread Deep Neural Image Watermarking",
+    "SoK: How Robust is Image Classification Deep Neural Network Watermarking?",
+    "jirenz/HiDDeN - Hiding Data with Deep Networks.",
+    "StegaStamp: Invisible Hyperlinks in Physical Photographs",
+    "Hidden in the Noise: Two-Stage Robust Watermarking for ...",
+    "HiDDeN: Hiding Data With Deep Networks"
+  ],
+  "cited_match_rate": 0.875,
+  "cited_count": 24,
+  "cited_supported": 21,
+  "cited_details": [
+    {
+      "statement": "The end-to-end jointly trained encoder-decoder paradigm is instantiated in the supplied evidence by HiDDeN, which demonstrated that neural networks can learn to use invisible perturbations to encode a rich amount of useful information (https://www.semanticscholar.org/paper/HiDDeN%3A-Hiding-Data-With-Deep-Networks-Zhu-Kaplan/a4c4c865ed31d88df7458e9f19db54f766f042a1).",
+      "url": "https://semanticscholar.org/paper/HiDDeN%3A-Hiding-Data-With-Deep-Networks-Zhu-Kaplan/a4c4c865ed31d88df7458e9f19db54f766f042a1",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The accompanying open-source implementation describes a pipeline for hiding data with deep networks, notes that a sample training set is generated from the COCO dataset, and is associated with the ECCV 2018 publication authored by Jiren Zhu, Russell Kaplan, Justin Johnson, and Li Fei-Fei (https://github.com/jirenz/HiDDeN).",
+      "url": "https://github.com/jirenz/HiDDeN",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The accompanying open-source implementation also includes a script, HiDDeN/coco_prep.lua, for generating the training dataset from COCO after the user downloads train2014 (https://github.com/jirenz/HiDDeN).",
+      "url": "https://github.com/jirenz/HiDDeN",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The repository also states that the project is still a work in progress and provides a sample dataset in data/yuv_coco_debug.t7 (https://github.com/jirenz/HiDDeN).",
+      "url": "https://github.com/jirenz/HiDDeN",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A second end-to-end contribution is the Robust Spatial-spread Deep Neural Image Watermarking method, which presents a novel end-to-end solution for embedding and recovering the watermark in a digital image using convolutional neural networks together with a spreading operation (https://www.semanticscholar.org/paper/b1ffb4adfc9ec647d5dee15cd3dacce1a662ffe5).",
+      "url": "https://semanticscholar.org/paper/b1ffb4adfc9ec647d5dee15cd3dacce1a662ffe5",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The combination of a convolutional encoder-decoder with a spreading transform within an end-to-end solution is described in the source as a robust spatial-spread approach (https://www.semanticscholar.org/paper/b1ffb4adfc9ec647d5dee15cd3dacce1a662ffe5).",
+      "url": "https://semanticscholar.org/paper/b1ffb4adfc9ec647d5dee15cd3dacce1a662ffe5",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "StegaStamp extends the end-to-end paradigm from digital images to physical photographs by presenting a learned steganographic algorithm that enables robust encoding and decoding of arbitrary hyperlink bitstrings into photos in a manner that approaches perceptual invisibility (https://papertalk.org/papertalks/15001).",
+      "url": "https://papertalk.org/papertalks/15001",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "StegaStamp comprises a deep neural network that learns an encoding and decoding algorithm robust to image perturbations approximating the space of distortions resulting from real printing and photography (https://papertalk.org/papertalks/15001).",
+      "url": "https://papertalk.org/papertalks/15001",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The system demonstrates real-time decoding of hyperlinks in photos from in-the-wild videos that contain variation in lighting, shadows, perspective, occlusion, and viewing distance (https://papertalk.org/papertalks/15001).",
+      "url": "https://papertalk.org/papertalks/15001",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The prototype robustly retrieves 56-bit hyperlinks after error correction, a capacity sufficient to embed a unique code within every photo (https://papertalk.org/papertalks/15001).",
+      "url": "https://papertalk.org/papertalks/15001",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The work is indexed on the papertalk.org platform as a video presentation of a scientific result, with associated keywords including steganography, qr, camera, printed, hidden, message, adversarial, hyperlink, secret, and real-world (https://papertalk.org/papertalks/15001).",
+      "url": "https://papertalk.org/papertalks/15001",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A systematization of knowledge on the robustness of image classification deep neural network watermarking is offered by Nils Lukas of the University of Waterloo, together with Edward Jiang and Xinda Li (https://www.youtube.com/watch?v=ZHhlnd5J_2k).",
+      "url": "https://youtube.com/watch?v=ZHhlnd5J_2k",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "This line of work concerns the watermarking of classification models rather than the embedding of marks into image content, and therefore addresses a related but distinct problem from the encoder-decoder image watermarking methods discussed in the previous section (https://www.youtube.com/watch?v=ZHhlnd5J_2k).",
+      "url": "https://youtube.com/watch?v=ZHhlnd5J_2k",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Although the supplied evidence card for this work consists primarily of the title and author list, the work is presented through a video recording (https://www.youtube.com/watch?v=ZHhlnd5J_2k).",
+      "url": "https://youtube.com/watch?v=ZHhlnd5J_2k",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A two-stage formulation of robust watermarking is represented by the OpenReview submission titled \"Hidden in the Noise: Two-Stage Robust Watermarking for...\", whose title explicitly separates the watermarking process into two stages (https://openreview.net/forum?id=ll2nz6qwRG).",
+      "url": "https://openreview.net/forum?id=ll2nz6qwRG",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Because the full abstract of the OpenReview submission is not accessible through the supplied evidence card, only the existence and the two-stage structure implied by the title can be cited from the available material (https://openreview.net/forum?id=ll2nz6qwRG).",
+      "url": "https://openreview.net/forum?id=ll2nz6qwRG",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Second, the only concrete robustness evaluation that is explicitly described in the available abstracts is StegaStamp's robustness to image perturbations approximating printing and photography distortions (https://papertalk.org/papertalks/15001).",
+      "url": "https://papertalk.org/papertalks/15001",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Third, the public HiDDeN repository is described by its authors as still a work in progress, indicating that the implementation itself is not finalized (https://github.com/jirenz/HiDDeN).",
+      "url": "https://github.com/jirenz/HiDDeN",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The end-to-end jointly trained encoder-decoder paradigm has been instantiated by HiDDeN, which learns to encode information through invisible perturbations (https://www.semanticscholar.org/paper/HiDDeN%3A-Hiding-Data-With-Deep-Networks-Zhu-Kaplan/a4c4c865ed31d88df7458e9f19db54f766f042a1).",
+      "url": "https://semanticscholar.org/paper/HiDDeN%3A-Hiding-Data-With-Deep-Networks-Zhu-Kaplan/a4c4c865ed31d88df7458e9f19db54f766f042a1",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A reference implementation of this paradigm is provided by the public HiDDeN repository, which trains an encoder-decoder on COCO (https://github.com/jirenz/HiDDeN).",
+      "url": "https://github.com/jirenz/HiDDeN",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A variant of the paradigm is provided by Robust Spatial-spread Deep Neural Image Watermarking, which combines a convolutional encoder-decoder with a spreading transform (https://www.semanticscholar.org/paper/b1ffb4adfc9ec647d5dee15cd3dacce1a662ffe5).",
+      "url": "https://semanticscholar.org/paper/b1ffb4adfc9ec647d5dee15cd3dacce1a662ffe5",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A further extension of the paradigm is provided by StegaStamp, which targets robustness to real-world printing and photography (https://papertalk.org/papertalks/15001).",
+      "url": "https://papertalk.org/papertalks/15001",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A robustness-focused systematization for the related setting of watermarking image classifiers is offered by Lukas, Jiang, and Li (https://www.youtube.com/watch?v=ZHhlnd5J_2k).",
+      "url": "https://youtube.com/watch?v=ZHhlnd5J_2k",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A two-stage formulation is represented by the OpenReview submission \"Hidden in the Noise\" (https://openreview.net/forum?id=ll2nz6qwRG).",
+      "url": "https://openreview.net/forum?id=ll2nz6qwRG",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    }
+  ],
+  "noncited_factual_accuracy": 0.0,
+  "noncited_count": 0,
+  "noncited_correct": 0,
+  "noncited_details": []
+}

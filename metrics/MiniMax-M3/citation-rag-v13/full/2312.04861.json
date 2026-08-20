@@ -1,0 +1,166 @@
+{
+  "arxiv_id": "2312.04861",
+  "model": "MiniMax-M3",
+  "system": "citation-rag-v13",
+  "reference_precision": 0.2,
+  "reference_recall": 0.0036101083032490976,
+  "reference_count": 5,
+  "reference_matches": 1,
+  "ground_truth_count": 277,
+  "predicted_titles": [
+    "Towards Deep Radar Perception for Autonomous Driving",
+    "Object 3D Perception via Camera-Radar Cross-Modality Learning for Autonomous Driving",
+    "Camera–Radar Fusion with Modality Interaction and Radar Gaussian ...",
+    "Range-Doppler Detection in Automotive Radar with Deep ...",
+    "Radar Object Detection Using Cross-Modal Supervision"
+  ],
+  "cited_match_rate": 0.65,
+  "cited_count": 20,
+  "cited_supported": 13,
+  "cited_details": [
+    {
+      "statement": "Radar sensors are valued in autonomous driving because they provide range, velocity, and angle measurements and remain robust under adverse lighting and weather conditions [https://pmc.ncbi.nlm.nih.gov/articles/PMC9185239/].",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9185239",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Automotive radars operating at 77 GHz have a wavelength of approximately 3.9 mm, which is several orders of magnitude larger than the 905 nm or 1550 nm wavelengths used by automotive LiDARs, and this gap produces fundamental differences in the resulting point clouds [https://pmc.ncbi.nlm.nih.gov/articles/PMC9185239/].",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9185239",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Because most of the reflected energy is not captured at a small aperture and angular resolution is limited, radar point clouds remain much sparser than LiDAR point clouds [https://pmc.ncbi.nlm.nih.gov/articles/PMC9185239/].",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9185239",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The next generation of 4D imaging radar addresses this limitation by achieving an angular resolution of about 1° in both the horizontal and vertical views and by providing 3D position together with Doppler velocity for each detection [https://pmc.ncbi.nlm.nih.gov/articles/PMC9185239/].",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9185239",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "4D radar additionally offers detection ranges up to 300 m, all-weather operation, low power consumption, and low cost, making it a complement to LiDAR and cameras [https://pmc.ncbi.nlm.nih.gov/articles/PMC9185239/].",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9185239",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A common representation used in recent camera-radar datasets is the range-azimuth frequency heatmap, also called RAMap, which encodes carefully processed radar frequency data in a 2D image-like format suitable for convolutional networks [https://arxiv.org/abs/2003.01816].",
+      "url": "https://arxiv.org/abs/2003.01816",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The same line of work formalizes this choice by treating the RF image as the primary radar data representation, which allows the use of architectures originally developed for camera imagery [https://digital.lib.washington.edu/researchworks/items/584e2f40-e50a-4284-8bf2-97c92df3d71d].",
+      "url": "https://digital.lib.washington.edu/researchworks/items/584e2f40-e50a-4284-8bf2-97c92df3d71d",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Range-Doppler maps, which organize returns by range and radial velocity, are another representation used in deep-learning-based automotive radar detection [http://vigir.ee.missouri.edu/~gdesouza/Research/Conference_CDs/IEEE_WCCI_2020/IJCNN/Papers/N-21054.pdf].",
+      "url": "http://vigir.ee.missouri.edu/~gdesouza/Research/Conference_CDs/IEEE_WCCI_2020/IJCNN/Papers/N-21054.pdf",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "High-resolution 4D point clouds produced by imaging radar provide a third representation in which each detection includes 3D position and Doppler velocity [https://pmc.ncbi.nlm.nih.gov/articles/PMC9185239/].",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9185239",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The fusion of millimeter-wave radar with cameras has also been explored as a way to improve the accuracy and completeness of 3D object detection [https://spj.science.org/doi/pdf/10.34133/cbsystems.0079].",
+      "url": "https://spj.science.org/doi/pdf/10.34133/cbsystems.0079",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The application of deep learning to radar perception has accelerated, and recent reviews state that the era of deep learning for radar perception has arrived [https://pmc.ncbi.nlm.nih.gov/articles/PMC9185239/].",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9185239",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A representative method is RODNet, a deep radar object detection network that takes snippets of range-azimuth heatmaps as input and predicts object confidence maps using three different 3D autoencoder based architectures [https://arxiv.org/abs/2003.01816].",
+      "url": "https://arxiv.org/abs/2003.01816",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "RODNet is trained with annotations generated automatically by a 3D localization procedure based on a camera-radar fusion strategy, avoiding the need for human-labeled radar ground truth [https://arxiv.org/abs/2003.01816].",
+      "url": "https://arxiv.org/abs/2003.01816",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "After object confidence is predicted, location-based non-maximum suppression (L-NMS) is used to obtain final detections [https://arxiv.org/abs/2003.01816].",
+      "url": "https://arxiv.org/abs/2003.01816",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The same research direction has been extended into a complete camera-radar cross-modality learning system that introduces a camera-only 3D localization pipeline, a camera-radar fusion framework for 3D detection, a radar-only RODNet detector, a radar multi-object tracking method called RadarMOT, and a cross-modality check pipeline that enforces geometric and temporal consistency between camera and radar detections [https://digital.lib.washington.edu/researchworks/items/584e2f40-e50a-4284-8bf2-97c92df3d71d].",
+      "url": "https://digital.lib.washington.edu/researchworks/items/584e2f40-e50a-4284-8bf2-97c92df3d71d",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The CRUW dataset contains synchronized camera, radar, and LiDAR frames covering a variety of driving scenarios and is paired with the ROD2021 benchmark, which evaluates radar-only object detection on RF images [https://digital.lib.washington.edu/researchworks/items/584e2f40-e50a-4284-8bf2-97c92df3d71d].",
+      "url": "https://digital.lib.washington.edu/researchworks/items/584e2f40-e50a-4284-8bf2-97c92df3d71d",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Ten radar datasets were released in 2021 and 2022, and this growth in open data has been accompanied by the release of models and toolboxes for deep radar perception [https://pmc.ncbi.nlm.nih.gov/articles/PMC9185239/].",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9185239",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The literature identifies three persistent challenges for deep radar perception, namely multi-path effects, uncertainty problems, and adverse weather effects, and presents preliminary attempts to address each [https://pmc.ncbi.nlm.nih.gov/articles/PMC9185239/].",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9185239",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Radar data representation remains a central design choice in autonomous driving perception systems, with image-like RF heatmaps, range-Doppler maps, and 4D point clouds constituting the dominant formats documented in recent work [https://pmc.ncbi.nlm.nih.gov/articles/PMC9185239/].",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9185239",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Recent work on radar perception documents advances in 4D imaging radar, deep-learning methods, and public benchmarks such as CRUW and ROD2021, but multi-path effects, measurement uncertainty, and adverse-weather robustness remain open problems [https://pmc.ncbi.nlm.nih.gov/articles/PMC9185239/].",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9185239",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    }
+  ],
+  "noncited_factual_accuracy": 0.0,
+  "noncited_count": 0,
+  "noncited_correct": 0,
+  "noncited_details": []
+}

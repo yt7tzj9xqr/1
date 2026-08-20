@@ -1,0 +1,18 @@
+{
+  "arxiv_id": "2004.05937",
+  "model": "MiniMax-M3",
+  "system": "search-baseline-v3",
+  "reference_precision": 0.5,
+  "reference_recall": 0.009836065573770493,
+  "reference_count": 6,
+  "reference_matches": 3,
+  "ground_truth_count": 305,
+  "predicted_titles": [
+    "Knowledge Distillation: Compressing Large Models into Efficient Learners",
+    "Distilling the Knowledge in a Neural Network",
+    "FitNets: Hints for Thin Deep Nets",
+    "Born-Again Neural Networks",
+    "Multi-Teacher Distillation: An Ensemble-Then- ...",
+    "Improve the Performance of Convolutional Neural ..."
+  ]
+}

@@ -1,0 +1,409 @@
+{
+  "arxiv_id": "2204.10325",
+  "model": "MiniMax-M3",
+  "system": "search-baseline-v3",
+  "reference_precision": 0.0,
+  "reference_recall": 0.0,
+  "reference_count": 7,
+  "reference_matches": 0,
+  "ground_truth_count": 36,
+  "predicted_titles": [
+    "Deep-Learning-Based Automated Classification of Chinese Speech Sound Disorders",
+    "Automatic Pronunciation Scoring And Mispronunciation ...",
+    "Automatic Analysis of Pronunciations for Children with Speech Sound Disorders",
+    "A STUDY ON THE IMPACT OF SELF-SUPERVISED LEARNING ON AUTOMATIC DYSARTHRIC SPEECH ASSESSMENT",
+    "An automated tool for the assessment of childhood apraxia ...",
+    "Research Paper: Mobile Speech Therapy Application",
+    "3 A Longitudinal Evaluation of Tablet-Based Child Speech ..."
+  ],
+  "cited_match_rate": 0.5,
+  "cited_count": 26,
+  "cited_supported": 13,
+  "cited_details": [
+    {
+      "statement": "A 2022 study constructed a corpus of 2,540 stopping, backing, final consonant deletion process (FCDP), and affrication samples collected from 90 children aged 3–6 years, with each recording annotated by two speech–language pathologists [SOURCE 1](https://pmc.ncbi.nlm.nih.gov/articles/PMC9324778/).",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9324778",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The system used three deep-learning classifiers to distinguish the four Chinese SSD subtypes, illustrating how convolutional and recurrent architectures can operationalize expert SLP annotations at scale [SOURCE 1](https://pmc.ncbi.nlm.nih.gov/articles/PMC9324778/).",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9324778",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Computer-Assisted Pronunciation Training (CAPT) systems aim to help children learn correct word pronunciations, but the field has lacked consensus among speech-language therapists regarding which systems provide reliable feedback [SOURCE 4](https://pmc.ncbi.nlm.nih.gov/articles/PMC5884147/).",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5884147",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A 2017 study proposed two new GOP techniques for children with SSDs and reported that pronunciation models incorporating explicit knowledge of error patterns yield more accurate phoneme-level classification than a baseline state-of-the-art GOP approach [SOURCE 4](https://pmc.ncbi.nlm.nih.gov/articles/PMC5884147/).",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5884147",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Earlier work similarly leveraged automatic speech recognition technology to facilitate learning of spoken language and reading skills, laying the groundwork for modern CAPT [SOURCE 3](https://aclanthology.org/W12-5808.pdf).",
+      "url": "https://aclanthology.org/W12-5808.pdf",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Dysarthria, caused by impaired articulatory control and muscle weakness, produces abnormal speech rate, pitch, and phoneme articulation [SOURCE 5](https://arxiv.org/html/2306.04337v2).",
+      "url": "https://arxiv.org/html/2306.04337v2",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Automating dysarthria assessment offers a path to low-cost, objective tools that overcome the subjectivity of manual evaluation, but the small size of dysarthria datasets has historically limited model development [SOURCE 5](https://arxiv.org/html/2306.04337v2).",
+      "url": "https://arxiv.org/html/2306.04337v2",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Self-supervised learning (SSL) representations pre-trained on large unlabeled corpora have recently been shown to enhance automatic speech recognition for dysarthric speech [SOURCE 5](https://arxiv.org/html/2306.04337v2).",
+      "url": "https://arxiv.org/html/2306.04337v2",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "HuBERT emerged as the most versatile feature extractor, achieving accuracy gains of +24.7% in disease classification, +61% in word recognition, and +7.2% in intelligibility classification relative to classical acoustic features [SOURCE 5](https://arxiv.org/html/2306.04337v2).",
+      "url": "https://arxiv.org/html/2306.04337v2",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A 2015 study introduced an automated tool consisting of a clinician interface, a mobile application, and a speech processing engine to assess productions from children with apraxia of speech [SOURCE 6](https://www.sciencedirect.com/science/article/abs/pii/S0167639315000382).",
+      "url": "https://sciencedirect.com/science/article/abs/pii/S0167639315000382",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A 2021 longitudinal evaluation of this system examined tablet-based delivery of child speech therapy and reported sustained engagement and measurable gains over time [SOURCE 10](https://psi.engr.tamu.edu/wp-content/uploads/2021/03/hair2021taccess.pdf).",
+      "url": "https://psi.engr.tamu.edu/wp-content/uploads/2021/03/hair2021taccess.pdf",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Mobile speech therapy applications have been documented to support children with apraxia and other speech disorders by allowing users to select target phonemes and progress through structured levels [SOURCE 8](http://jmr.tums.ac.ir/index.php/jmr/article/download/133/80).",
+      "url": "http://jmr.tums.ac.ir/index.php/jmr/article/download/133/80",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "These apps are designed to be usable by parents and individuals without continuous SLP supervision while remaining customizable for professional clinicians, thereby addressing the shortage of intensive therapy opportunities [SOURCE 8](http://jmr.tums.ac.ir/index.php/jmr/article/download/133/80).",
+      "url": "http://jmr.tums.ac.ir/index.php/jmr/article/download/133/80",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "First, the small size of pathological speech datasets, particularly for dysarthria and CAS, limits the training of robust end-to-end models; SSL pre-training on large unlabeled corpora is a promising mitigation [SOURCE 5](https://arxiv.org/html/2306.04337v2).",
+      "url": "https://arxiv.org/html/2306.04337v2",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Second, there remains no consensus among speech-language therapists on which CAPT systems are clinically reliable, and traditional GOP methods are being supplemented or replaced by models that encode explicit error-pattern knowledge [SOURCE 4](https://pmc.ncbi.nlm.nih.gov/articles/PMC5884147/).",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5884147",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Third, the clinical validation of mobile and tablet-based tools requires longitudinal evidence rather than short-term feasibility studies; emerging longitudinal data for CAS therapy apps indicate that sustained engagement is achievable but continued evaluation is needed [SOURCE 10](https://psi.engr.tamu.edu/wp-content/uploads/2021/03/hair2021taccess.pdf).",
+      "url": "https://psi.engr.tamu.edu/wp-content/uploads/2021/03/hair2021taccess.pdf",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Future systems are likely to integrate SSL-based acoustic representations [SOURCE 5](https://arxiv.org/html/2306.04337v2), disorder-specific classifiers [SOURCE 1](https://pmc.ncbi.nlm.nih.gov/articles/PMC9324778/), and adaptive CAPT feedback [SOURCE 4](https://pmc.ncbi.nlm.nih.gov/articles/PMC5884147/) into unified therapy platforms that span assessment, scoring, and intervention.",
+      "url": "https://arxiv.org/html/2306.04337v2",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Future systems are likely to integrate SSL-based acoustic representations [SOURCE 5](https://arxiv.org/html/2306.04337v2), disorder-specific classifiers [SOURCE 1](https://pmc.ncbi.nlm.nih.gov/articles/PMC9324778/), and adaptive CAPT feedback [SOURCE 4](https://pmc.ncbi.nlm.nih.gov/articles/PMC5884147/) into unified therapy platforms that span assessment, scoring, and intervention.",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9324778",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Future systems are likely to integrate SSL-based acoustic representations [SOURCE 5](https://arxiv.org/html/2306.04337v2), disorder-specific classifiers [SOURCE 1](https://pmc.ncbi.nlm.nih.gov/articles/PMC9324778/), and adaptive CAPT feedback [SOURCE 4](https://pmc.ncbi.nlm.nih.gov/articles/PMC5884147/) into unified therapy platforms that span assessment, scoring, and intervention.",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5884147",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9324778/",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9324778",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://aclanthology.org/W12-5808.pdf",
+      "url": "https://aclanthology.org/W12-5808.pdf",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5884147/",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5884147",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://arxiv.org/html/2306.04337v2",
+      "url": "https://arxiv.org/html/2306.04337v2",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://www.sciencedirect.com/science/article/abs/pii/S0167639315000382",
+      "url": "https://sciencedirect.com/science/article/abs/pii/S0167639315000382",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "http://jmr.tums.ac.ir/index.php/jmr/article/download/133/80",
+      "url": "http://jmr.tums.ac.ir/index.php/jmr/article/download/133/80",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "https://psi.engr.tamu.edu/wp-content/uploads/2021/03/hair2021taccess.pdf",
+      "url": "https://psi.engr.tamu.edu/wp-content/uploads/2021/03/hair2021taccess.pdf",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    }
+  ],
+  "noncited_factual_accuracy": 0.5,
+  "noncited_count": 6,
+  "noncited_correct": 3,
+  "noncited_details": [
+    {
+      "claim": "The prevailing method for scoring pronunciation is the Goodness of Pronunciation (GOP) technique.",
+      "evidence": [
+        {
+          "title": "Pronunciation Scoring With Goodness of ...",
+          "abstract": "by K Sheoran · 2023 · Cited by 27 — This paper proposes a novel method to overcome such limitations by using combined scores of prosodic, fluency, completeness, and accuracy.",
+          "url": "https://ieeexplore.ieee.org/iel7/6287639/10005208/10042421.pdf"
+        },
+        {
+          "title": "Pronunciation Scoring With Goodness of ...",
+          "abstract": "In this paper, a novel method is proposed for computing scores calculated using combined scores of prosodic, fluency, completeness, and accuracy.",
+          "url": "https://www.researchgate.net/publication/368513899_Pronunciation_Scoring_with_Goodness_of_Pronunciation_and_Dynamic_Time_Warping"
+        },
+        {
+          "title": "An Analysis of Goodness of Pronunciation for Child Speech",
+          "abstract": "by X Cao · Cited by 8 — In this paper, we study the use of goodness of pronunciation. (GOP) on child speech. We first compare the distributions of. GOP scores on several open ...",
+          "url": "https://www.isca-archive.org/interspeech_2023/cao23_interspeech.pdf"
+        },
+        {
+          "title": "Phone-level pronunciation scoring and assessment for ...",
+          "abstract": "by SM Witt · 2000 · Cited by 922 — This paper has presented a likelihood-based method for GOP scoring and proposed a number of metrics which can be used to assess performance in comparison to ...",
+          "url": "https://www.sciencedirect.com/science/article/abs/pii/S0167639399000448"
+        },
+        {
+          "title": "Automatic Analysis of Pronunciations for Children with Speech ...",
+          "abstract": "by S Dudy · 2017 · Cited by 60 — The most common method for assessing pronunciation performance is the Goodness of Pronunciation (GOP) technique. Our paper proposes two new GOP techniques.",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5884147/"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "A comparative study evaluated SSL features across three downstream tasks—disease classification, word recognition, and intelligibility classification—under three noise scenarios on the UA-Speech dataset.",
+      "evidence": [
+        {
+          "title": "A Generic Self-Supervised Learning (SSL) Framework for ...",
+          "abstract": "by X Zhang · 2023 · Cited by 24 — In this work, we evaluate the performance of the proposed ObjSSL through a downstream multilabel classification task. We have conducted three types of ...",
+          "url": "https://www.mdpi.com/2072-4292/15/21/5238"
+        },
+        {
+          "title": "Self-Supervised Learning (SSL) in Deep Learning Contexts",
+          "abstract": "Self-supervised learning (SSL) is a potential deep learning (DL) technique that uses massive volumes of unlabeled data to train neural ...",
+          "url": "https://encyclopedia.pub/entry/55863"
+        },
+        {
+          "title": "A STUDY ON THE IMPACT OF SELF-SUPERVISED LEARNING ON AUTOMATIC DYSARTHRIC SPEECH ASSESSMENT",
+          "abstract": "The HuBERT and wav2vec2 representations demonstrated a word recognition accuracy ranging from 56.5% to 70.6%, surpassing the acoustic models ...",
+          "url": "https://arxiv.org/html/2306.04337v2"
+        },
+        {
+          "title": "Deep-Learning-Based Automated Classification of Chinese Speech Sound Disorders",
+          "abstract": "by YM Kuo · 2022 · Cited by 14 — Abstract. This article describes a system for analyzing acoustic data to assist in the diagnosis and classification of children's speech sound disorders ...",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9324778/"
+        },
+        {
+          "title": "Role of ML in diagnosing and treating speech disorders",
+          "abstract": "by Z Brahmi · 2024 · Cited by 46 — This study addresses the gap in systematic reviews concerning machine learning-based assistive technology for individuals with speech disorders.",
+          "url": "https://www.dovepress.com/exploring-the-role-of-machine-learning-in-diagnosing-and-treating-spee-peer-reviewed-fulltext-article-PRBM"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "These results suggest that SSL-based embeddings can compensate for limited pathological speech data and provide robust features across multiple clinical tasks.",
+      "evidence": [
+        {
+          "title": "INTERSPEECH.2022 - Others | Cool Papers - Immersive Paper Discovery",
+          "abstract": "Our results show that although SSL has shown success with minimally resourced healthy speech, we do not find this to be the case with pathological speech.",
+          "url": "https://papers.cool/venue/INTERSPEECH.2022?group=Others"
+        },
+        {
+          "title": "Boosting Self-Supervised Embeddings for Speech ...",
+          "abstract": "In this study, we used a cross-domain feature to solve the problem that SSL embeddings may lack fine-grained information to regenerate speech signals. By ...",
+          "url": "https://www.isca-archive.org/interspeech_2022/hung22_interspeech.html"
+        },
+        {
+          "title": "Applications of speech analysis in diseases' assessment, prediction ...",
+          "abstract": "These findings suggest that, in COPD, speech-based systems may be most effective as decision-support or triage tools, rather than standalone diagnostic ...",
+          "url": "https://www.oaepublish.com/articles/ais.2025.70"
+        },
+        {
+          "title": "Multimodal representations of biomedical knowledge from limited ...",
+          "abstract": "This paper introduces a multimodal architecture creating a robust biomedical data representation encoding fine-grained text representations within image ...",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1361841524002287"
+        },
+        {
+          "title": "Describe Where You Are: Improving Noise-Robustness for Speech ...",
+          "abstract": "These results indicate that guiding the SER model with LLM-based representation can improve the noise-robustness for the SER task.",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13099230/"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "Childhood Apraxia of Speech (CAS) has been an early target of automated assessment and therapy systems.",
+      "evidence": [
+        {
+          "title": "Treatment Methods - Child Apraxia Treatment",
+          "abstract": "The Kaufman approach (K-SLP) was designed to treat children with speech sound disorders, including CAS, and expressive language disorders. It has not yet been ...",
+          "url": "https://childapraxiatreatment.org/treatment-methods/"
+        },
+        {
+          "title": "Treatment of Childhood Apraxia of Speech (CAS) - YouTube",
+          "abstract": "Professor, Mayo College of Medicine. Dr. Strand's research has focused on developmental, acquired and progressive apraxia of speech, and ...",
+          "url": "https://www.youtube.com/watch?v=ML7JxJbGxWI"
+        },
+        {
+          "title": "Architecture of an automated therapy tool for childhood apraxia of speech",
+          "abstract": "We present a multi-tier system for the remote administration of speech therapy to children with apraxia of speech. The system uses a client- ...",
+          "url": "https://dl.acm.org/doi/10.1145/2513383.2513450"
+        },
+        {
+          "title": "An automated tool for the assessment of childhood apraxia of speech",
+          "abstract": "This paper describes the speech processing engine within “Tabby Talks,” which was designed to iden- tify the three main types of errors commonly ...",
+          "url": "https://psi.engr.tamu.edu/wp-content/uploads/2018/01/shahin2015specom.pdf"
+        },
+        {
+          "title": "The SLP's Guide to Treating Childhood Apraxia of Speech",
+          "abstract": "This is a guest blog post by Monica, a school-based SLP, all about treating childhood Apraxia of Speech also known as CAS.",
+          "url": "https://slpnow.com/blog/the-slps-guide-to-treating-childhood-apraxia-of-speech/"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "This tri-component architecture separated expert-facing controls, child-facing interaction, and backend analysis, establishing a template for subsequent clinical deployments.",
+      "evidence": [
+        {
+          "title": "Transpiler-Based Architecture Design Model for Back-End ...",
+          "abstract": "by A Bastidas Fuertes · 2023 · Cited by 16 — This study introduces an innovative software architecture design model that integrates transpilers into the back-end layer, enabling the automatic ...",
+          "url": "https://www.mdpi.com/2076-3417/13/20/11371"
+        },
+        {
+          "title": "Human interaction with structure in designing big data ...",
+          "abstract": "The architecture is intended to address some of the challenges encountered in gathering, retrieving, using or managing big data in organisations.",
+          "url": "https://scielo.org.za/scielo.php?script"
+        },
+        {
+          "title": "Component Based Architecture",
+          "abstract": "Though we can split controllers (routers) from component related code to separate the handling of HTTP requests from the component itself.",
+          "url": "https://medium.com/omarelgabrys-blog/component-based-architecture-3c3c23c7e348"
+        },
+        {
+          "title": "Understanding the architecture of a 3-tier application",
+          "abstract": "This model structures an application into three distinct tiers: presentation (user interface), logic(business logic), and data (data storage).",
+          "url": "https://vfunction.com/blog/3-tier-application/"
+        },
+        {
+          "title": "The Evolution of Component-Based Architecture in Front- ...",
+          "abstract": "This paper discusses the evolution of component-based architecture in front-end development and how it has moved from the traditional structure,",
+          "url": "https://www.researchgate.net/publication/384076366_The_Evolution_of_Component-Based_Architecture_in_Front-End_Development"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "Building on this work, the mobile game Apraxia World delivers repetition-based therapy directly to children with CAS on tablet devices.",
+      "evidence": [
+        {
+          "title": "3 A Longitudinal Evaluation of Tablet-Based Child Speech ...",
+          "abstract": "we have designed a mobile game for speech therapy called Apraxia World that delivers repetition-based therapy to address childhood apraxia of speech (CAS).",
+          "url": "https://psi.engr.tamu.edu/wp-content/uploads/2021/03/hair2021taccess.pdf"
+        },
+        {
+          "title": "A Longitudinal Evaluation of Tablet-Based Child Speech ...",
+          "abstract": "We found that children made therapeutically significant speech improvements while using Apraxia World, and that the game successfully increased engagement ...",
+          "url": "https://dl.acm.org/doi/fullHtml/10.1145/3433607"
+        },
+        {
+          "title": "Apraxia world - Academia.edu",
+          "abstract": "This paper presents Apraxia World, a remote therapy tool for speech sound disorders that integrates speech exercises into an engaging platformer-style game.",
+          "url": "https://www.academia.edu/70093363/Apraxia_world"
+        },
+        {
+          "title": "A Longitudinal Evaluation of Tablet-Based Child Speech ...",
+          "abstract": "It is found that children made therapeutically significant speech improvements while using Apraxia World, and that the game successfully ...",
+          "url": "https://www.semanticscholar.org/paper/A-Longitudinal-Evaluation-of-Tablet-Based-Child-Hair-Ballard/232c451654fe162cf20d3b3c66d63118b560ac00"
+        },
+        {
+          "title": "Application of Digital Games for Speech Therapy in Children",
+          "abstract": "Apraxia world: a speech therapy game for children with speech sound disorders. A computer game based approach for increasing fluency in the ...",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9061057/"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    }
+  ]
+}

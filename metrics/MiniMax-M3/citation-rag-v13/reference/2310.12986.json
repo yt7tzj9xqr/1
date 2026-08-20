@@ -1,0 +1,18 @@
+{
+  "arxiv_id": "2310.12986",
+  "model": "MiniMax-M3",
+  "system": "citation-rag-v13",
+  "reference_precision": 0.0,
+  "reference_recall": 0.0,
+  "reference_count": 6,
+  "reference_matches": 0,
+  "ground_truth_count": 61,
+  "predicted_titles": [
+    "A Survey of Manifold Learning for Images - J-Stage",
+    "Locally Linear Embedding (LLE) Homepage",
+    "Tenenbaum Reduction A Global Geometric ...",
+    "On Laplacian Eigenmaps for Dimensionality Reduction",
+    "Reduction A Global Geometric Framework for Nonlinear ...",
+    "Enhance explainability of manifold learning"
+  ]
+}

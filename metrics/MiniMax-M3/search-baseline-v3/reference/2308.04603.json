@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2308.04603",
+  "model": "MiniMax-M3",
+  "system": "search-baseline-v3",
+  "reference_precision": 0.2,
+  "reference_recall": 0.029850746268656716,
+  "reference_count": 10,
+  "reference_matches": 2,
+  "ground_truth_count": 67,
+  "predicted_titles": [
+    "Image Watermarking between Conventional and Learning ...",
+    "jirenz/HiDDeN - Hiding Data with Deep Networks.",
+    "HiDDeN: Hiding Data With Deep Networks",
+    "StegaStamp: Invisible Hyperlinks in Physical Photographs",
+    "StegaStamp: Invisible Hyperlinks",
+    "Hidden in the Noise: Two-Stage Robust Watermarking for ...",
+    "A robust watermarking algorithm against JPEG compression ...",
+    "Robust Spatial-spread Deep Neural Image Watermarking",
+    "A robust watermarking algorithm against JPEG ...",
+    "Transform domain watermarking"
+  ]
+}

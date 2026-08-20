@@ -1,0 +1,343 @@
+{
+  "arxiv_id": "2105.01605",
+  "model": "MiniMax-M3",
+  "system": "citation-rag-v13",
+  "reference_precision": 0.3333333333333333,
+  "reference_recall": 0.02040816326530612,
+  "reference_count": 3,
+  "reference_matches": 1,
+  "ground_truth_count": 49,
+  "predicted_titles": [
+    "GitHub - ShuangLI59/person_search: Joint Detection and Identification Feature Learning for Person Search",
+    "Joint Detection and Identification Feature Learning for Person Search",
+    "wangxiao5791509/Person-Search-Paper-List"
+  ],
+  "cited_match_rate": 0.8333333333333334,
+  "cited_count": 36,
+  "cited_supported": 30,
+  "cited_details": [
+    {
+      "statement": "Person search is a research direction that plays an important role in practical video surveillance, addressing the problem of localizing and identifying target individuals across camera networks [https://github.com/wangxiao5791509/Person-Search-Paper-List].",
+      "url": "https://github.com/wangxiao5791509/Person-Search-Paper-List",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The field encompasses two principal subfields distinguished by query modality: image-based person search and text-based person search [https://github.com/wangxiao5791509/Person-Search-Paper-List].",
+      "url": "https://github.com/wangxiao5791509/Person-Search-Paper-List",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The paper \"Joint Detection and Identification Feature Learning for Person Search\" was first published in 2016, with a substantially improved version released in 2017 [https://github.com/ShuangLI59/person_search].",
+      "url": "https://github.com/ShuangLI59/person_search",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The work is by Tong Xiao and others and jointly optimizes detection and re-identification [https://www.researchgate.net/publication/320968559_Joint_Detection_and_Identification_Feature_Learning_for_Person_Search].",
+      "url": "https://researchgate.net/publication/320968559_Joint_Detection_and_Identification_Feature_Learning_for_Person_Search",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The reference implementation modifies the py-faster-rcnn framework by Ross Girshick and uses a Caffe fork with multi-GPU support and memory optimization [https://github.com/ShuangLI59/person_search].",
+      "url": "https://github.com/ShuangLI59/person_search",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Evaluation produces a results JSON file that can be visualized through a local HTTP server, demonstrating the end-to-end detection-to-identification pipeline [https://github.com/ShuangLI59/person_search].",
+      "url": "https://github.com/ShuangLI59/person_search",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "A community-maintained paper list catalogs subsequent works in the field [https://github.com/wangxiao5791509/Person-Search-Paper-List].",
+      "url": "https://github.com/wangxiao5791509/Person-Search-Paper-List",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "For image-based person search, several works target richer feature designs [https://github.com/wangxiao5791509/Person-Search-Paper-List].",
+      "url": "https://github.com/wangxiao5791509/Person-Search-Paper-List",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "\"Person search by multi-scale matching\" was published at ECCV 2018 by Lan, Zhu, and Gong [https://github.com/wangxiao5791509/Person-Search-Paper-List].",
+      "url": "https://github.com/wangxiao5791509/Person-Search-Paper-List",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "\"Person search via a mask-guided two-stream cnn model\" was published at ECCV 2018 by Chen, Zhang, Ouyang, Yang, and Tai [https://github.com/wangxiao5791509/Person-Search-Paper-List].",
+      "url": "https://github.com/wangxiao5791509/Person-Search-Paper-List",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "\"Learning Context Graph for Person Search\" was presented as a CVPR-2019 Oral by Yan, Zhang, Ni, Zhang, Xu, and Yang [https://github.com/wangxiao5791509/Person-Search-Paper-List].",
+      "url": "https://github.com/wangxiao5791509/Person-Search-Paper-List",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "\"Norm-Aware Embedding for Efficient Person Search\" was published at CVPR-2020 by Chen, Zhang, Yang, and Schiele [https://github.com/wangxiao5791509/Person-Search-Paper-List].",
+      "url": "https://github.com/wangxiao5791509/Person-Search-Paper-List",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "\"Robust Partial Matching for Person Search in the Wild\" was published at CVPR-2020 by Zhong, Wang, and Zhang [https://github.com/wangxiao5791509/Person-Search-Paper-List].",
+      "url": "https://github.com/wangxiao5791509/Person-Search-Paper-List",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "\"Tasks Integrated Networks: Joint Detection and Retrieval for Image Search\" was published in T-PAMI 2020 by Zhang, He, Yang, Wang, and Gao, framing detection and retrieval as a unified task [https://github.com/wangxiao5791509/Person-Search-Paper-List].",
+      "url": "https://github.com/wangxiao5791509/Person-Search-Paper-List",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "332-340, 2019, by Xiao, Xie, Tillo, Huang, Wei, and Feng [https://github.com/wangxiao5791509/Person-Search-Paper-List].",
+      "url": "https://github.com/wangxiao5791509/Person-Search-Paper-List",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "For text-based person search, attention-based designs appear [https://github.com/wangxiao5791509/Person-Search-Paper-List].",
+      "url": "https://github.com/wangxiao5791509/Person-Search-Paper-List",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "\"Pose-Guided Multi-Granularity Attention Network for Text-Based Person Search\" was published as an oral at AAAI-2020 by Jing, Si, Wang, Wang, Wang, and Tan [https://github.com/wangxiao5791509/Person-Search-Paper-List].",
+      "url": "https://github.com/wangxiao5791509/Person-Search-Paper-List",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://github.com/wangxiao5791509/Person-Search-Paper-List].",
+      "url": "https://github.com/wangxiao5791509/Person-Search-Paper-List",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://github.com/wangxiao5791509/Person-Search-Paper-List].",
+      "url": "https://github.com/wangxiao5791509/Person-Search-Paper-List",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The third challenge is reconciling pedestrian detection with identity-sensitive re-identification, and the literature offers several joint and two-stage designs [https://github.com/wangxiao5791509/Person-Search-Paper-List].",
+      "url": "https://github.com/wangxiao5791509/Person-Search-Paper-List",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "\"RCAA: Relational Context-Aware Agents for Person Search\" was published at ECCV-2018 by Chang, Huang, Shen, Liang, Yang, and Hauptmann [https://github.com/wangxiao5791509/Person-Search-Paper-List].",
+      "url": "https://github.com/wangxiao5791509/Person-Search-Paper-List",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "\"Query-guided End-to-End Person Search\" was published at CVPR-2019 by Munjal, Amin, Tombari, and Galasso [https://github.com/wangxiao5791509/Person-Search-Paper-List].",
+      "url": "https://github.com/wangxiao5791509/Person-Search-Paper-List",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "\"TCTS: A Task-Consistent Two-Stage Framework for Person Search\" was published at CVPR-2020 by Wang, Ma, Chang, Shan, and Chen [https://github.com/wangxiao5791509/Person-Search-Paper-List].",
+      "url": "https://github.com/wangxiao5791509/Person-Search-Paper-List",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "\"Instance Guided Proposal Network for Person Search\" was published at CVPR-2020 by Dong, Zhang, Song, and Tan [https://github.com/wangxiao5791509/Person-Search-Paper-List].",
+      "url": "https://github.com/wangxiao5791509/Person-Search-Paper-List",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "\"Bi-Directional Interaction Network for Person Search\" was published at CVPR-2020 by Dong, Zhang, Song, and Tan [https://github.com/wangxiao5791509/Person-Search-Paper-List].",
+      "url": "https://github.com/wangxiao5791509/Person-Search-Paper-List",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "\"Re-ID Driven Localization Refinement for Person Search\" was published at ICCV 2019 by Han, Ye, Zhong, Tan, Zhang, Gao, and Sang [https://github.com/wangxiao5791509/Person-Search-Paper-List].",
+      "url": "https://github.com/wangxiao5791509/Person-Search-Paper-List",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "\"End-to-end detection and re-identification integrated net for person search\" was published at the Asian Conference on Computer Vision 2018 by He and Zhang [https://github.com/wangxiao5791509/Person-Search-Paper-List].",
+      "url": "https://github.com/wangxiao5791509/Person-Search-Paper-List",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "\"Segmentation mask guided end-to-end person search\" was published in Signal Processing: Image Communication, 2020, by Zheng, Xiao, and Huang [https://github.com/wangxiao5791509/Person-Search-Paper-List].",
+      "url": "https://github.com/wangxiao5791509/Person-Search-Paper-List",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The text-based subfield traces to \"Person Search with Natural Language Description,\" published at CVPR-2017 [https://github.com/wangxiao5791509/Person-Search-Paper-List].",
+      "url": "https://github.com/wangxiao5791509/Person-Search-Paper-List",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "\"Fusion-Attention Network for person search with free-form natural language\" was published in Pattern Recognition Letters 116 (2018) by Ji, Li, and Pang [https://github.com/wangxiao5791509/Person-Search-Paper-List].",
+      "url": "https://github.com/wangxiao5791509/Person-Search-Paper-List",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "\"Online Multi-modal Person Search in Videos\" was published at ECCV-2020 [https://github.com/wangxiao5791509/Person-Search-Paper-List].",
+      "url": "https://github.com/wangxiao5791509/Person-Search-Paper-List",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The principal evidence available is a community-maintained paper list that records titles, authors, and venues but does not provide per-paper abstracts [https://github.com/wangxiao5791509/Person-Search-Paper-List].",
+      "url": "https://github.com/wangxiao5791509/Person-Search-Paper-List",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Claims about the specific technical mechanisms of the listed works are therefore restricted to what their titles explicitly state, and quantitative comparisons between methods are not extractable from the supplied cards [https://github.com/wangxiao5791509/Person-Search-Paper-List].",
+      "url": "https://github.com/wangxiao5791509/Person-Search-Paper-List",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The reference implementation for the foundational joint-detection paper documents a Caffe-based pipeline with multi-GPU support and an approximate 18-hour training time on 8 GPUs [https://github.com/ShuangLI59/person_search].",
+      "url": "https://github.com/ShuangLI59/person_search",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The card does not report benchmark scores [https://github.com/ShuangLI59/person_search].",
+      "url": "https://github.com/ShuangLI59/person_search",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The abstract-level statement that \"Tong Xiao and others published Joint Detection and Identification Feature Learning for Person Search\" is the only point of detailed methodological evidence on the joint paradigm [https://www.researchgate.net/publication/320968559_Joint_Detection_and_Identification_Feature_Learning_for_Person_Search].",
+      "url": "https://researchgate.net/publication/320968559_Joint_Detection_and_Identification_Feature_Learning_for_Person_Search",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    }
+  ],
+  "noncited_factual_accuracy": 1.0,
+  "noncited_count": 2,
+  "noncited_correct": 2,
+  "noncited_details": [
+    {
+      "claim": "\"Deep Adversarial Graph Attention Convolution Network for Text-Based Person Search\" appeared in the Proceedings of the 27th ACM International Conference on Multimedia in 2019 by Liu et al.",
+      "evidence": [
+        {
+          "title": "Edge-Enhanced Global Disentangled Graph Neural ...",
+          "abstract": "In this paper, we propose an Edge-Enhanced Global Disentangled Graph Neural Network (EGD-GNN) model to capture the relation information between items for global ...",
+          "url": "https://arxiv.org/html/2111.10539v2"
+        },
+        {
+          "title": "Deep Adversarial Graph Attention Convolution Network for ...",
+          "abstract": "In this work, we propose a novel deep adversarial graph attention convolution network (A-GANet) for text-based person search. The A-GANet ...",
+          "url": "https://dl.acm.org/doi/10.1145/3343031.3350991"
+        },
+        {
+          "title": "IndexFziQ/GNN4NLP-Papers",
+          "abstract": "A list of recent papers about GNN methods applied in NLP areas. Now, the repository includes papers published at ACL, EMNLP, NAACL-HLT, COLING, ICLR, WWW, ...",
+          "url": "https://github.com/IndexFziQ/GNN4NLP-Papers"
+        },
+        {
+          "title": "ACM Proceedings",
+          "abstract": "In this paper, we propose an interpretation framework to understand and describe how representation vectors distribute in the latent space.",
+          "url": "https://www.wsdm-conference.org/2019/acm-proceedings.php"
+        },
+        {
+          "title": "Domain-Adversarial Graph Neural Networks for Text ...",
+          "abstract": "by M Wu · Cited by 55 — This paper proposes an end-to-end, domain-adversarial graph neural networks (DAGNN), for cross- domain text classification. Our motivation is to model documents.",
+          "url": "https://shiruipan.github.io/publication/icdm-19-wu/icdm-19-wu.pdf"
+        }
+      ],
+      "true_votes": 2,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "\"A discriminatively learned feature embedding based on multi-loss fusion for person search\" was presented at ICASSP 2018 by Liu et al.",
+      "evidence": [
+        {
+          "title": "Leaning Compact and Representative Features for Cross-Modality Person ...",
+          "abstract": "Liu, H., .: A discriminatively learned feature embedding based on multi-loss fusion for person search. and Signal Processing (ICASSP), pp.",
+          "url": "https://arxiv.org/html/2103.14210v2"
+        },
+        {
+          "title": "Person search: New paradigm of person re-identification: A survey ...",
+          "abstract": "This survey paper includes brief discussion about feature representation learning and deep metric learning with novel loss functions. We thoroughly review ...",
+          "url": "https://www.sciencedirect.com/science/article/pii/S0262885620301025"
+        },
+        {
+          "title": "GitHub - wangxiao5791509/Person-Search ...",
+          "abstract": "Liu, Hong, et al. \"A discriminatively learned feature embedding based on multi-loss fusion for person search.\" 2018 IEEE International Conference on Acoustics,",
+          "url": "https://github.com/wangxiao5791509/Person-Search-Paper-List"
+        },
+        {
+          "title": "Multi-Modal Disordered Representation Learning Network ...",
+          "abstract": "Text-based Person Search via Multi-Granularity Embedding Learning. Learning discriminative features with multiple granularities for person re-identification.",
+          "url": "https://ojs.aaai.org/index.php/AAAI/article/view/29567/30951"
+        },
+        {
+          "title": "Person Search Challenges and Solutions: A Survey - IJCAI",
+          "abstract": "A Discriminatively Learned Feature Embed- ding Based on Multi-Loss Fusion For Person Search. In. Speech and Signal Processing (ICASSP), pages 1668–1672, April ...",
+          "url": "https://www.ijcai.org/proceedings/2021/0613.pdf"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    }
+  ]
+}

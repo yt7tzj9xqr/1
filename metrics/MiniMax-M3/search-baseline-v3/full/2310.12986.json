@@ -1,0 +1,389 @@
+{
+  "arxiv_id": "2310.12986",
+  "model": "MiniMax-M3",
+  "system": "search-baseline-v3",
+  "reference_precision": 0.0,
+  "reference_recall": 0.0,
+  "reference_count": 8,
+  "reference_matches": 0,
+  "ground_truth_count": 61,
+  "predicted_titles": [
+    "Enhance explainability of manifold learning",
+    "Nonlinear dimensionality reduction by locally linear ...",
+    "Tenenbaum Reduction A Global Geometric ...",
+    "Reduction A Global Geometric Framework for Nonlinear ...",
+    "Laplacian Eigenmaps for Dimensionality Reduction and ...",
+    "Manifold-manifold distance and its application to face recognition with ...",
+    "The Laplacian eigenmaps dimensionality reduction of fMRI ...",
+    "Face recognition with image sets using manifold density divergence"
+  ],
+  "cited_match_rate": 0.6956521739130435,
+  "cited_count": 23,
+  "cited_supported": 16,
+  "cited_details": [
+    {
+      "statement": "As Han (2022) notes, \"manifold learning is believed to be good at handling nonlinear data and discovering their intrinsic local geometry in the low-dimensional\" embedding space, which makes it particularly well suited to multimedia content whose semantic structure is not captured by linear projections [https://www.sciencedirect.com/science/article/abs/pii/S0925231222007044].",
+      "url": "https://sciencedirect.com/science/article/abs/pii/S0925231222007044",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Roweis and Saul (2000) introduced Locally Linear Embedding, an unsupervised learning algorithm that \"computes low dimensional, neighborhood preserving embeddings of high\" dimensional data [https://www.semanticscholar.org/paper/Nonlinear-dimensionality-reduction-by-locally-Roweis-Saul/f0a3e1752e1146da927adc24ae07144ab2e744ec].",
+      "url": "https://semanticscholar.org/paper/Nonlinear-dimensionality-reduction-by-locally-Roweis-Saul/f0a3e1752e1146da927adc24ae07144ab2e744ec",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Tenenbaum, Silva, and Langford (2000) proposed Isomap, a \"global geometric framework\" that extends classical Multidimensional Scaling by approximating geodesic distances along the data manifold rather than Euclidean distances in the ambient space [https://pdodds.w3.uvm.edu/files/papers/others/2000/tenenbaum2000a.pdf].",
+      "url": "https://pdodds.w3.uvm.edu/files/papers/others/2000/tenenbaum2000a.pdf",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "According to the source evidence, \"Isomap's global coordinates provide a simple way to analyze and manipulate high-dimensional observations in terms of their intrinsic nonlinear\" structure, and the paper studies Isomap's performance on both artificial and natural datasets [https://www.semanticscholar.org/paper/Reduction-A-Global-Geometric-Framework-for-Tenenbaum-Silva/2878f950f0ad19ccec6bab04873895e89f5bece0].",
+      "url": "https://semanticscholar.org/paper/Reduction-A-Global-Geometric-Framework-for-Tenenbaum-Silva/2878f950f0ad19ccec6bab04873895e89f5bece0",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Their presentation observes that \"IsoMAP, LLE and Laplacian eigenmaps partially solve\" the problem of nonlinear dimensionality reduction, and that \"the heart of these approaches is some kind of non-linear method\" that targets the intrinsic geometry of the data [https://www.aoml.noaa.gov/ftp/pub/phod/thacker/SSAmanifoldPapers/BelkinNiyogi2007Presentation.pdf].",
+      "url": "https://aoml.noaa.gov/ftp/pub/phod/thacker/SSAmanifoldPapers/BelkinNiyogi2007Presentation.pdf",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Wang and colleagues developed a manifold–manifold distance framework specifically for face recognition with image sets, treating each subject's gallery and probe as points on potentially different low-dimensional manifolds and computing a geometric distance between them [https://pubmed.ncbi.nlm.nih.gov/22752133/].",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/22752133",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The \"Face recognition with image sets using manifold density divergence\" approach proposes \"a flexible, semiparametric model for learning probability densities confined to highly non-linear but intrinsically low-dimensional manifolds\" and recasts recognition as a problem of \"minimizing the divergence between densities estimated on these manifolds\" [https://research-portal.st-andrews.ac.uk/en/publications/face-recognition-with-image-sets-using-manifold-density-divergenc/].",
+      "url": "https://research-portal.st-andrews.ac.uk/en/publications/face-recognition-with-image-sets-using-manifold-density-divergenc",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Pospelov (2021) \"examined the efficiency of the named nonlinear manifold learning methods (Isomap, LE and LLE) compared to the linear dimensionality reduction\" techniques on fMRI data [https://www.sciencedirect.com/science/article/pii/S2666956021000337].",
+      "url": "https://sciencedirect.com/science/article/pii/S2666956021000337",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Han (2022) directly addresses this issue, focusing on how to \"enhance explainability of manifold learning\" while preserving the method's ability to \"handle nonlinear data and discover their intrinsic local geometry in the low-dimensional\" space [https://www.sciencedirect.com/science/article/abs/pii/S0925231222007044].",
+      "url": "https://sciencedirect.com/science/article/abs/pii/S0925231222007044",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://www.sciencedirect.com/science/article/abs/pii/S0925231222007044](https://www.sciencedirect.com/science/article/abs/pii/S0925231222007044)",
+      "url": "https://sciencedirect.com/science/article/abs/pii/S0925231222007044",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://www.sciencedirect.com/science/article/abs/pii/S0925231222007044](https://www.sciencedirect.com/science/article/abs/pii/S0925231222007044)",
+      "url": "https://sciencedirect.com/science/article/abs/pii/S0925231222007044",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://www.semanticscholar.org/paper/Nonlinear-dimensionality-reduction-by-locally-Roweis-Saul/f0a3e1752e1146da927adc24ae07144ab2e744ec](https://www.semanticscholar.org/paper/Nonlinear-dimensionality-reduction-by-locally-Roweis-Saul/f0a3e1752e1146da927adc24ae07144ab2e744ec)",
+      "url": "https://semanticscholar.org/paper/Nonlinear-dimensionality-reduction-by-locally-Roweis-Saul/f0a3e1752e1146da927adc24ae07144ab2e744ec",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://www.semanticscholar.org/paper/Nonlinear-dimensionality-reduction-by-locally-Roweis-Saul/f0a3e1752e1146da927adc24ae07144ab2e744ec](https://www.semanticscholar.org/paper/Nonlinear-dimensionality-reduction-by-locally-Roweis-Saul/f0a3e1752e1146da927adc24ae07144ab2e744ec)",
+      "url": "https://semanticscholar.org/paper/Nonlinear-dimensionality-reduction-by-locally-Roweis-Saul/f0a3e1752e1146da927adc24ae07144ab2e744ec",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://pdodds.w3.uvm.edu/files/papers/others/2000/tenenbaum2000a.pdf](https://pdodds.w3.uvm.edu/files/papers/others/2000/tenenbaum2000a.pdf)",
+      "url": "https://pdodds.w3.uvm.edu/files/papers/others/2000/tenenbaum2000a.pdf",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://pdodds.w3.uvm.edu/files/papers/others/2000/tenenbaum2000a.pdf](https://pdodds.w3.uvm.edu/files/papers/others/2000/tenenbaum2000a.pdf)",
+      "url": "https://pdodds.w3.uvm.edu/files/papers/others/2000/tenenbaum2000a.pdf",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://www.aoml.noaa.gov/ftp/pub/phod/thacker/SSAmanifoldPapers/BelkinNiyogi2007Presentation.pdf](https://www.aoml.noaa.gov/ftp/pub/phod/thacker/SSAmanifoldPapers/BelkinNiyogi2007Presentation.pdf)",
+      "url": "https://aoml.noaa.gov/ftp/pub/phod/thacker/SSAmanifoldPapers/BelkinNiyogi2007Presentation.pdf",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://www.aoml.noaa.gov/ftp/pub/phod/thacker/SSAmanifoldPapers/BelkinNiyogi2007Presentation.pdf](https://www.aoml.noaa.gov/ftp/pub/phod/thacker/SSAmanifoldPapers/BelkinNiyogi2007Presentation.pdf)",
+      "url": "https://aoml.noaa.gov/ftp/pub/phod/thacker/SSAmanifoldPapers/BelkinNiyogi2007Presentation.pdf",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "[https://pubmed.ncbi.nlm.nih.gov/22752133/](https://pubmed.ncbi.nlm.nih.gov/22752133/)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/22752133",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "[https://pubmed.ncbi.nlm.nih.gov/22752133/](https://pubmed.ncbi.nlm.nih.gov/22752133/)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/22752133",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "[https://research-portal.st-andrews.ac.uk/en/publications/face-recognition-with-image-sets-using-manifold-density-divergenc/](https://research-portal.st-andrews.ac.uk/en/publications/face-recognition-with-image-sets-using-manifold-density-divergenc/)",
+      "url": "https://research-portal.st-andrews.ac.uk/en/publications/face-recognition-with-image-sets-using-manifold-density-divergenc",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://research-portal.st-andrews.ac.uk/en/publications/face-recognition-with-image-sets-using-manifold-density-divergenc/](https://research-portal.st-andrews.ac.uk/en/publications/face-recognition-with-image-sets-using-manifold-density-divergenc/)",
+      "url": "https://research-portal.st-andrews.ac.uk/en/publications/face-recognition-with-image-sets-using-manifold-density-divergenc",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://www.sciencedirect.com/science/article/pii/S2666956021000337](https://www.sciencedirect.com/science/article/pii/S2666956021000337)",
+      "url": "https://sciencedirect.com/science/article/pii/S2666956021000337",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://www.sciencedirect.com/science/article/pii/S2666956021000337](https://www.sciencedirect.com/science/article/pii/S2666956021000337)",
+      "url": "https://sciencedirect.com/science/article/pii/S2666956021000337",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    }
+  ],
+  "noncited_factual_accuracy": 0.5,
+  "noncited_count": 6,
+  "noncited_correct": 3,
+  "noncited_details": [
+    {
+      "claim": "The original publication on Locally Linear Embedding appeared in Science, volume 290, issue 5500, pages 2323-2326.",
+      "evidence": [
+        {
+          "title": "When Locally Linear Embedding Hits Boundary",
+          "abstract": "by HT Wu · 2023 · Cited by 10 — In this paper, we are interested in exploring the asymptotic behavior of LLE when the manifold has a boundary. First, we show that asymptotically LLE ...",
+          "url": "https://www.jmlr.org/papers/volume24/21-0697/21-0697.pdf"
+        },
+        {
+          "title": "Locally linear embedding: a survey",
+          "abstract": "by J Chen · 2011 · Cited by 127 — Locally linear embedding: a survey Published: 07 January 2011 Volume 36, pages 29–48 (2011) metrics Abstract As a classic method of nonlinear dimensional ...",
+          "url": "https://link.springer.com/article/10.1007/s10462-010-9200-z"
+        },
+        {
+          "title": "An Introduction to Locally Linear Embedding",
+          "abstract": "Locally linear embedding is described, an unsupervised learning algorithm that computes low dimensional, neighborhood preserving embeddings of high ...",
+          "url": "https://www.semanticscholar.org/paper/An-Introduction-to-Locally-Linear-Embedding-Saul-Roweis/da6495102377f8332b21cef50c35d27fbff627df"
+        },
+        {
+          "title": "Local Linear Embedding with Adaptive Neighbors",
+          "abstract": "by J Xue · 2023 · Cited by 39 — Locally Linear Embedding (LLE) as a typical manifold learning algorithm computes neighborhood preserving embeddings of high-dimensional inputs.",
+          "url": "https://www.sciencedirect.com/science/article/abs/pii/S0031320322006847"
+        },
+        {
+          "title": "Nonlinear Dimensionality Reduction by Locally Linear ...",
+          "abstract": "by ST Roweis · 1993 · Cited by 19849 — Here, we introduce locally linear embedding (LLE), an unsupervised learning algorithm that computes low-dimensional, neighbor- hood-preserving embeddings of ...",
+          "url": "https://hajim.rochester.edu/ece/sites/zduan/teaching/ece408/readings/lle.pdf"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "Belkin and Niyogi introduced Laplacian Eigenmaps in 2003.",
+      "evidence": [
+        {
+          "title": "Towards a theoretical foundation for Laplacian-based ...",
+          "abstract": "by M Belkin · 2008 · Cited by 555 — Belkin, P. Niyogi. Laplacian eigenmaps for dimensionality reduction and data representation. Neural Comput., 15 (6) (2003), pp. 1373-1396. View in Scopus ...",
+          "url": "https://www.sciencedirect.com/science/article/pii/S0022000007001274"
+        },
+        {
+          "title": "Laplacian eigenmaps 2023",
+          "abstract": "Our study is primarily inspired by the work of Belkin and Niyogi “Towards a theoretical foundation for Laplacian-based manifold methods.",
+          "url": "https://mathreu.uconn.edu/2023/05/18/laplacian-eigenmaps-2023/"
+        },
+        {
+          "title": "Convergence of Laplacian Eigenmaps - Mikhail Belkin",
+          "abstract": "by M Belkin · 2008 · Cited by 455 — In [3] we introduced an algorithmic framework based on the Laplace-. Beltrami operator of a manifold to motivate using the graph Laplacian asso-.",
+          "url": "http://misha.belkin-wang.org/papers/CLEM_08.pdf"
+        },
+        {
+          "title": "Convergence of Laplacian Eigenmaps",
+          "abstract": "by M Belkin · 2006 · Cited by 447 — Mikhail Belkin, Partha Niyogi Abstract. In this paper we show convergence of eigenvectors of the point cloud Laplacian to the eigen- functions of the Laplace- ...",
+          "url": "https://proceedings.neurips.cc/paper_files/paper/2006/hash/5848ad959570f87753a60ce8be1567f3-Abstract.html"
+        },
+        {
+          "title": "Laplacian Eigenmaps and Spectral Techniques for ...",
+          "abstract": "Mikhail BelkinP. Niyogi. Mathematics, Computer Science. NIPS. 2006. TLDR. This paper shows convergence of eigenvectors of the point cloud Laplacian to the ...",
+          "url": "https://www.semanticscholar.org/paper/Laplacian-Eigenmaps-and-Spectral-Techniques-for-and-Belkin-Niyogi/9d16c547d15a08091e68c86a99731b14366e3f0d"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "A face recognition algorithm achieved 94% recognition rate on average when evaluated on a dataset with severe illumination variation.",
+      "evidence": [
+        {
+          "title": "An improved face recognition algorithm and its application in ...",
+          "abstract": "Face Recognition Rate ​= ​90.49%. In Table 3, we show the performance evaluation of our improved face recognition method using equation ( ...",
+          "url": "https://www.sciencedirect.com/science/article/pii/S2590005619300141"
+        },
+        {
+          "title": "Quantifying How Lighting and Focus Affect Face Recognition Performance",
+          "abstract": "This paper presents a new study that explains the edge density effect in terms of illumination. Error rates for recent algorithms on La- beled Faces in the ...",
+          "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/IR/nistir7674.pdf"
+        },
+        {
+          "title": "Face Recognition Algorithms Surpass Humans Matching Faces over ...",
+          "abstract": "The algorithms that partici- pated in the controlled illumination experiment achieved a median verification rate of 0.91 at the 0.001 false acceptance rate— ...",
+          "url": "https://personal.utdallas.edu/~herve/Abdi-opjapa2007.pdf"
+        },
+        {
+          "title": "Robust Face Recognition Under Challenging Conditions - MDPI",
+          "abstract": "This achieved 99.76% accuracy on real-world masked face datasets and maintained 99.48% accuracy under challenging conditions such as poor lighting and contrast.",
+          "url": "https://www.mdpi.com/2076-3417/15/17/9390"
+        },
+        {
+          "title": "Illumination Normalisation for Face Recognition Using Generative ...",
+          "abstract": "PIE face databases were built in an illumination changing environment and the average recognition rates of 99.418%, 93.658% and 99.55% were obtained by the ...",
+          "url": "https://digital-library.theiet.org/doi/full/10.1049/ipr2.70406"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "A study on Laplacian eigenmaps dimensionality reduction of fMRI data has been cited 22 times according to the source metadata.",
+      "evidence": [
+        {
+          "title": "The steps of Laplacian eigenmaps algorithm. 1-3: ...",
+          "abstract": "Laplacian Eigenmaps were effective for negative reviews with 500 dimensions but less accurate for positive ones. This study highlights EasyEnsemble's superior ...",
+          "url": "https://www.researchgate.net/figure/The-steps-of-Laplacian-eigenmaps-algorithm-1-3-Neighborhood-graph-construction-4_fig1_353212890"
+        },
+        {
+          "title": "Laplacian Eigenmaps for Dimensionality Reduction and ...",
+          "abstract": "by M Belkin · 2003 · Cited by 11059 — Many times we need to skip eigenvectors, as eigenvectors with bigger eigenvalues give better results. However variations for doing so exist.",
+          "url": "https://www.aoml.noaa.gov/ftp/pub/phod/thacker/SSAmanifoldPapers/BelkinNiyogi2007Presentation.pdf"
+        },
+        {
+          "title": "Manifold learning for fMRI time-varying functional connectivity",
+          "abstract": "by J Gonzalez-Castillo · 2023 · Cited by 15 — Figure 1E shows one such representation of our tvFC matrix generated using a manifold learning method called Laplacian Eigenmaps (LEs; Belkin and Niyogi, 2003 ) ...",
+          "url": "https://www.frontiersin.org/journals/human-neuroscience/articles/10.3389/fnhum.2023.1134012/full"
+        },
+        {
+          "title": "The Laplacian eigenmaps dimensionality reduction of fMRI ...",
+          "abstract": "by N Pospelov · 2021 · Cited by 22 — It has been successfully used to find the separation between the activated manifold and the background time series in event-related fMRI (Shen and Meyer, 2005).",
+          "url": "https://www.sciencedirect.com/science/article/pii/S2666956021000337"
+        },
+        {
+          "title": "Decoding brain states on the intrinsic manifold of human ...",
+          "abstract": "by J Rué-Queralt · 2021 · Cited by 68 — In this work, we apply Laplacian eigenmaps to the temporal dimension of fMRI data ... Previous studies have attempted to reduce the dimensionality ...",
+          "url": "https://www.nature.com/articles/s42003-021-02369-7"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "The paper 'Face recognition with image sets using manifold density divergence' is associated with the St Andrews Research Portal.",
+      "evidence": [
+        {
+          "title": "Manifold-manifold distance and its application to face ...",
+          "abstract": "by R Wang · 2012 · Cited by 144 — In this paper, we address the problem of classifying image sets for face recognition, By modeling each image set as a manifold, we formulate the problem as the ...",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/22752133/"
+        },
+        {
+          "title": "Discriminant analysis on Riemannian manifold of Gaussian ...",
+          "abstract": "by W WANG · 2018 · Cited by 185 — This paper presents a method named Discriminant Anal- ysis on Riemannian manifold of Gaussian distributions (DARG) to solve the problem of face recognition ...",
+          "url": "https://ink.library.smu.edu.sg/cgi/viewcontent.cgi?article"
+        },
+        {
+          "title": "Manifold Projection for Adversarial Defense on Face ...",
+          "abstract": "by J Zhou · Cited by 43 — Estimated by VAE, off-manifold and on-manifold adversarial images reduce the lower bound of log- likelihood by causing reconstruction loss and KL divergence ...",
+          "url": "https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123750290.pdf"
+        },
+        {
+          "title": "Manifold-Manifold Distance with application to face ...",
+          "abstract": "In this paper, we address the problem of classifying image sets, each of which contains images belonging to the same class",
+          "url": "https://www.researchgate.net/publication/221362061_Manifold-Manifold_Distance_with_application_to_face_recognition_based_on_image_set"
+        },
+        {
+          "title": "Face Recognition with Image Sets Using Manifold Density ...",
+          "abstract": "by O Arandjelovic · Cited by 407 — In this paper, we describe a novel method for face recognition using image sets. We propose a flexible, semi- parametric model for learning probability ...",
+          "url": "https://home.ttic.edu/~gregory/papers/cvpr05.pdf"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "The paper 'Manifold-manifold distance and its application to face recognition with image sets' was published in IEEE Transactions on Image Processing.",
+      "evidence": [
+        {
+          "title": "Manifold-Manifold Distance with application to face ...",
+          "abstract": "In this paper, we address the problem of classifying image sets, each of which contains images belonging to the same class but covering ...",
+          "url": "https://www.researchgate.net/publication/221362061_Manifold-Manifold_Distance_with_application_to_face_recognition_based_on_image_set"
+        },
+        {
+          "title": "Manifold–Manifold Distance and its Application to Face ...",
+          "abstract": "The proposed manifold-manifold distance (MMD) method is applied to the task of face recognition with image sets, where identification is achieved. IEEE ...",
+          "url": "https://www.semanticscholar.org/paper/Manifold%E2%80%93Manifold-Distance-and-its-Application-to-Wang-Shan/64ca2b37229a5517334a55a4892f6bcfb43fcc76"
+        },
+        {
+          "title": "Multi-Manifold Metric Learning for Face Recognition Based on ...",
+          "abstract": "by L Huang · 2014 · Cited by 19 — In this paper, we propose a new multi-manifold metric learning (MMML) method for the task of face recognition based on image sets. IEEE Transactions on PAMI ( ...",
+          "url": "https://dr.ntu.edu.sg/bitstream/10356/103837/1/Multi-Manifold%20Metric%20Learning%20for%20Face%20Recognition.pdf"
+        },
+        {
+          "title": "Manifold Distance and its Application to Face Recognition ...",
+          "abstract": "by R Wang · 2012 · Cited by 144 — Abstract—In this paper, we address the problem of classifying image sets for face recognition, where each set contains images.",
+          "url": "https://ieeexplore.ieee.org/iel5/83/6303957/06226465.pdf"
+        },
+        {
+          "title": "Manifold-manifold distance and its application to face ...",
+          "abstract": "by R Wang · 2012 · Cited by 144 — In this paper, we address the problem of classifying image sets for face recognition, where each set contains images belonging to the same subject and ...",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/22752133/"
+        }
+      ],
+      "true_votes": 2,
+      "total_votes": 3,
+      "decision": true
+    }
+  ]
+}

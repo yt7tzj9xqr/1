@@ -1,0 +1,449 @@
+{
+  "arxiv_id": "2206.13188",
+  "model": "MiniMax-M3",
+  "system": "search-baseline-v3",
+  "reference_precision": 0.25,
+  "reference_recall": 0.007936507936507936,
+  "reference_count": 8,
+  "reference_matches": 2,
+  "ground_truth_count": 252,
+  "predicted_titles": [
+    "A General Self-Supervised Framework for Remote Sensing ...",
+    "Momentum Contrast for Unsupervised Visual Representation Learning",
+    "A Simple Framework for Contrastive Learning of Visual Representations",
+    "Generative Adversarial Network (GAN) for Remote Sensing ...",
+    "Self-Supervised Learning for Scene Classification in Remote Sensing",
+    "Self-Supervised Learning - Xiaohang Zhan",
+    "erative Adversarial Networks in Remote Sensing Applications",
+    "A Survey on Self-Supervised Learning: Algorithms, Applications, and ..."
+  ],
+  "cited_match_rate": 0.75,
+  "cited_count": 8,
+  "cited_supported": 6,
+  "cited_details": [
+    {
+      "statement": "https://www.mdpi.com/2072-4292/14/19/4824",
+      "url": "https://mdpi.com/2072-4292/14/19/4824",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://www.chapterpal.com/s/i7vxu8cr/momentum-contrast-for-unsupervised-visual-representation-learning",
+      "url": "https://chapterpal.com/s/i7vxu8cr/momentum-contrast-for-unsupervised-visual-representation-learning",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "https://www.youtube.com/watch?v=5lsmGWtxnKA",
+      "url": "https://youtube.com/watch?v=5lsmGWtxnKA",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "https://www.academia.edu/144665935/Generative_Adversarial_Network_GAN_for_Remote_Sensing_Images_unsupervised_Learning",
+      "url": "https://academia.edu/144665935/Generative_Adversarial_Network_GAN_for_Remote_Sensing_Images_unsupervised_Learning",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://www.mdpi.com/2072-4292/14/16/3995",
+      "url": "https://mdpi.com/2072-4292/14/16/3995",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://xiaohangzhan.github.io/pdf/talk-st-2020.pdf",
+      "url": "https://xiaohangzhan.github.io/pdf/talk-st-2020.pdf",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://www.diva-portal.org/smash/get/diva2:1573013/ATTACHMENT01.pdf",
+      "url": "https://diva-portal.org/smash/get/diva2:1573013/ATTACHMENT01.pdf",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://www.computer.org/csdl/journal/tp/2024/12/10559458/1XR0ep31Wr6",
+      "url": "https://computer.org/csdl/journal/tp/2024/12/10559458/1XR0ep31Wr6",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    }
+  ],
+  "noncited_factual_accuracy": 0.7272727272727273,
+  "noncited_count": 11,
+  "noncited_correct": 8,
+  "noncited_details": [
+    {
+      "claim": "Multispectral imagery captures discrete spectral bands across the visible and infrared.",
+      "evidence": [
+        {
+          "title": "Spectral Imaging for Remote Sensing - Center for Detectors",
+          "abstract": "Experiments with line-scanning sensors pro- viding up to twenty spectral bands in the visible and infrared were undertaken to prove the concepts [9]. This ...",
+          "url": "https://ridl.cfd.rit.edu/products/publications/lincoln%20lab/14_1remotesensing.pdf"
+        },
+        {
+          "title": "Multispectral Imaging - RP Photonics",
+          "abstract": "Multispectral imaging produces images with multiple spectral channels, often going beyond the visible spectral region into the ultraviolet or infrared.",
+          "url": "https://www.rp-photonics.com/multispectral_imaging.html"
+        },
+        {
+          "title": "Multispectral imaging - Wikipedia",
+          "abstract": "Multispectral imaging captures image data within specific wavelength ranges across the electromagnetic spectrum. (i.e. infrared and ultraviolet). Near infrared ...",
+          "url": "https://en.wikipedia.org/wiki/Multispectral_imaging"
+        },
+        {
+          "title": "Multispectral Imagery - an overview | ScienceDirect Topics",
+          "abstract": "Multispectral imagery is defined as the technique of collecting a few discrete spectral bands, typically less than 10, including RGB channels and bands from ...",
+          "url": "https://www.sciencedirect.com/topics/agricultural-and-biological-sciences/multispectral-imagery"
+        },
+        {
+          "title": "Self-Supervised Learning Techniques in Remote Sensing ...",
+          "abstract": "Find the latest research papers and news in Self-Supervised Learning Techniques in Remote Sensing Image Analysis.",
+          "url": "https://link.springer.com/subjects/self-supervised-learning-techniques-in-remote-sensing-image-analysis"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "Hyperspectral imagery contains hundreds of contiguous spectral bands.",
+      "evidence": [
+        {
+          "title": "Information Extraction from Hyperspectral Images",
+          "abstract": "The narrow contiguous bands of hyperspectral sensors are able to detect subtle changes in spectral signatures. a few hundred spectral bands.",
+          "url": "https://www.vliz.be/imisdocs/publications/121922.pdf"
+        },
+        {
+          "title": "Spectral Imaging for Remote Sensing",
+          "abstract": "by GA Shaw · 2003 · Cited by 957 — A new class of sensor, the hyperspectral imager, has also emerged, employing hundreds of contiguous bands to detect and identify a variety of natural and man- ...",
+          "url": "https://ridl.cfd.rit.edu/products/publications/lincoln%20lab/14_1remotesensing.pdf"
+        },
+        {
+          "title": "Hyper- and Multi-spectral Imaging Technologies",
+          "abstract": "Hyperspectral imaging–an emerging process analytical tool for food quality and safety control.",
+          "url": "https://link.springer.com/rwe/10.1007/978-3-030-89123-7_65-1"
+        },
+        {
+          "title": "Hyperspectral imaging",
+          "abstract": "Hyperspectral imaging measures continuous spectral bands, as opposed to multiband imaging which measures spaced spectral bands. Engineers build hyperspectral ...",
+          "url": "https://en.wikipedia.org/wiki/Hyperspectral_imaging"
+        },
+        {
+          "title": "Self-Supervised Learning Techniques in Remote Sensing ...",
+          "abstract": "Find the latest research papers and news in Self-Supervised Learning Techniques in Remote Sensing Image Analysis.",
+          "url": "https://link.springer.com/subjects/self-supervised-learning-techniques-in-remote-sensing-image-analysis"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "SAR imagery provides active microwave measurements robust to weather and lighting.",
+      "evidence": [
+        {
+          "title": "SAR data applications in earth observation: An overview",
+          "abstract": "The microwave signals transmitted by SAR sensors can penetrate clouds, fog, and, in some cases, leaves, snow, and sand [5] .",
+          "url": "https://www.researchgate.net/publication/360419529_SAR_data_applications_in_earth_observation_An_overview"
+        },
+        {
+          "title": "Microwave Satellite Measurements for Coastal Area and ...",
+          "abstract": "by F Nunziata · 2021 · Cited by 30 — “Microwave satellite measurements for coastal area and extreme weather monitoring” are reported. SAR has been proven to be a useful tool in monitoring ...",
+          "url": "https://www.mdpi.com/2072-4292/13/16/3126"
+        },
+        {
+          "title": "Synthetic Aperture Radar (SAR)",
+          "abstract": "SAR is one of the power technologies of remote sensing, and enables high resolution imagery to be created night or day, regardless of weather conditions.",
+          "url": "https://www.earthdata.nasa.gov/learn/earth-observation-data-basics/sar"
+        },
+        {
+          "title": "Self-Supervised Learning Techniques in Remote Sensing ...",
+          "abstract": "Find the latest research papers and news in Self-Supervised Learning Techniques in Remote Sensing Image Analysis.",
+          "url": "https://link.springer.com/subjects/self-supervised-learning-techniques-in-remote-sensing-image-analysis"
+        },
+        {
+          "title": "A General Self-Supervised Framework for Remote Sensing ...",
+          "abstract": "by Y Gao · 2022 · Cited by 30 — This paper provides insights into the interpretation beyond simply combining self-supervised learning (SSL) with remote sensing (RS).",
+          "url": "https://www.mdpi.com/2072-4292/14/19/4824"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "The most documented generative SSL approach in the provided remote sensing literature is GANs.",
+      "evidence": [
+        {
+          "title": "Generative adversarial networks in satellite image datasets ...",
+          "abstract": "The following story is an introduction to scientific research, the results of which you will find in Remote Sensing.",
+          "url": "https://blog.softwaremill.com/generative-adversarial-networks-in-satellite-image-datasets-augmentation-b7045d2f51ab"
+        },
+        {
+          "title": "erative Adversarial Networks in Remote Sensing Applications",
+          "abstract": "by D Nyberg · Cited by 4 — In a 2018 research paper success in generating fake satellite imagery using generative adver- sarial networks was published in order to help ...",
+          "url": "https://www.diva-portal.org/smash/get/diva2:1573013/ATTACHMENT01.pdf"
+        },
+        {
+          "title": "px39n/Awesome-Self-Supervised-Learning-for-Remote ...",
+          "abstract": "SSL bridges the gap between a lack of quality labels and increasing amounts of remote sensing data by utilizing unlabeled data to learn valuable information. ...",
+          "url": "https://github.com/px39n/Awesome-Self-Supervised-Learning-for-Remote-Sensing"
+        },
+        {
+          "title": "Erasing Clouds from Satellite Imagery Using GANs ...",
+          "abstract": "“Generative adversarial learning in YUV color space for thin cloud removal on satellite imagery.” Remote Sensing 13, no. 6 (2021): 1079 ...",
+          "url": "https://medium.com/data-science/erasing-clouds-from-satellite-imagery-using-gans-generative-adversarial-networks-2d7f8467ef2e"
+        },
+        {
+          "title": "Survey of Deep-Learning Approaches for Remote Sensing ...",
+          "abstract": "by G Tsagkatakis · 2019 · Cited by 190 — In this section, we provide an overview of the three major DNN approaches related to remote sensing image enhancement, namely Autoencoders (AE), Convolutional ...",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6767260/"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "The paper 'A General Self-Supervised Framework for Remote Sensing Image Classification' is published in Remote Sensing, volume 14, issue 19, page 4824.",
+      "evidence": [
+        {
+          "title": "A Self-Supervised Learning Framework for Land Cover ... - IJNRD",
+          "abstract": "To improve land cover categorization from satellite imagery, this paper investigates an SSL architecture that makes use of ResNet and Masked Autoencoder. (MAE).",
+          "url": "https://ijnrd.org/papers/IJNRD2503083.pdf"
+        },
+        {
+          "title": "Self-Supervised In-Domain Representation Learning for ... - arXiv",
+          "abstract": "Providing this volume of remote-sensing images is very costly and time-consuming. In addition, it requires experts to annotate data points carefully. When.",
+          "url": "https://arxiv.org/pdf/2302.01793"
+        },
+        {
+          "title": "A General Self-Supervised Framework for Remote Sensing Image ... - MDPI",
+          "abstract": "This paper provides insights into the interpretation beyond simply combining self-supervised learning (SSL) with remote sensing (RS).",
+          "url": "https://www.mdpi.com/2072-4292/14/19/4824"
+        },
+        {
+          "title": "A General Self-Supervised Framework for Remote Sensing Image ...",
+          "abstract": "This paper proposes a self-supervised pre-training framework for the first time by applying the masked image modeling (MIM) method to RS image research. MIM) ...",
+          "url": "https://www.semanticscholar.org/paper/52be2330207ab72e04b617893954a368c8a351fc"
+        },
+        {
+          "title": "flyakon/SSLRemoteSensing: Codes for paper \"Semantic Segmentation ...",
+          "abstract": "In this repository, we implement the training of self-supervised multi-task representation learning for remote sensing images with pytorch and generate ...",
+          "url": "https://github.com/flyakon/SSLRemoteSensing"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "The paper 'Momentum Contrast for Unsupervised Visual Representation Learning' exists.",
+      "evidence": [
+        {
+          "title": "Paper explained: Momentum Contrast for Unsupervised ...",
+          "abstract": "In this story, we will go over the MoCo papers, an unsupervised approach to pre-training computer vision models using Momentum Contrast (MoCo)",
+          "url": "https://towardsdatascience.com/paper-explained-momentum-contrast-for-unsupervised-visual-representation-learning-ff2b0e08acfb/"
+        },
+        {
+          "title": "Momentum Contrast for Unsupervised Visual ...",
+          "abstract": "by K He · Cited by 21194 — Momentum Contrast for Unsupervised Visual Representation Learning. Unsupervised pre-training: surpass supervised counterparts • ... in 7 vision tasks on ...",
+          "url": "https://www.sainingxie.com/pdf/moco_slides.pdf"
+        },
+        {
+          "title": "MoCo: Momentum Contrast for Unsupervised Visual ...",
+          "abstract": "Unofficial pytorch implementation of Momentum Contrast for Unsupervised Visual Representation Learning (Paper). Requirements. The environment that this ...",
+          "url": "https://github.com/eveningglow/MoCo"
+        },
+        {
+          "title": "Momentum Contrast for Unsupervised Visual ...",
+          "abstract": "This paper presents a novel yet intuitive approach to unsupervised feature learning. Inspired by the human visual system, we explore whether low-level motion- ...",
+          "url": "https://www.researchgate.net/publication/343456678_Momentum_Contrast_for_Unsupervised_Visual_Representation_Learning"
+        },
+        {
+          "title": "[R] Momentum Contrast for Unsupervised Visual ...",
+          "abstract": "Abstract: We present Momentum Contrast (MoCo) for unsupervised visual representation learning. From a perspective on contrastive learning as ...",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/dwcbcz/r_momentum_contrast_for_unsupervised_visual/"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "The paper 'A Simple Framework for Contrastive Learning of Visual Representations' exists.",
+      "evidence": [
+        {
+          "title": "A Simple Framework for Contrastive Learning of Visual ...",
+          "abstract": "This paper presents SimCLR: a simple framework for contrastive learning of visual representations. We simplify recently proposed contrastive self-supervised ...",
+          "url": "https://www.alphaxiv.org/abs/2002.05709"
+        },
+        {
+          "title": "A Simple Framework for Contrastive ...",
+          "abstract": "This paper presents SimCLR: a simple framework for contrastive learning of visual representations. We simplify recently proposed contrastive ...",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/f3u4yu/200205709_a_simple_framework_for_contrastive/"
+        },
+        {
+          "title": "A Simple Framework for Contrastive Learning of Visual ...",
+          "abstract": "This paper presents SimCLR: a simple framework for contrastive learning of visual representations. We simplify recently proposed contrastive self-supervised ...",
+          "url": "https://www.researchgate.net/publication/339251894_A_Simple_Framework_for_Contrastive_Learning_of_Visual_Representations"
+        },
+        {
+          "title": "A Simple Framework for Contrastive Learning of Visual ...",
+          "abstract": "This is a short article trying to reproduce the some of the findings of the SimCLR paper [1]. The SimCLR paper was published at the ICML conference in 2020 ...",
+          "url": "https://hal.science/hal-04175012"
+        },
+        {
+          "title": "Paper explained: A Simple Framework for Contrastive ...",
+          "abstract": "Paper explained: A Simple Framework for Contrastive Learning of Visual Representations. Going over the ideas presented in the SimCLR paper.",
+          "url": "https://medium.com/data-science/paper-explained-a-simple-framework-for-contrastive-learning-of-visual-representations-6a2a63bfa703"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "The work 'Generative Adversarial Network (GAN) for Remote Sensing Images Unsupervised Learning' exists.",
+      "evidence": [
+        {
+          "title": "erative Adversarial Networks in Remote Sensing Applications",
+          "abstract": "A generative adversarial network. (GAN) is a deep learning model that can generate synthetic data and can be used as a method for data ...",
+          "url": "https://www.diva-portal.org/smash/get/diva2:1573013/ATTACHMENT01.pdf"
+        },
+        {
+          "title": "Remote Sensing Image Dataset Expansion Based on Generative ...",
+          "abstract": "Generative adversarial networks (GANs) are a generative unsupervised learning model, which is mainly inspired by the idea of a zero-sum game.",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8309944/"
+        },
+        {
+          "title": "Generative adversarial networks in satellite image datasets augmentation",
+          "abstract": "The following story is an introduction to scientific research, the results of which you will find in Remote Sensing.",
+          "url": "https://blog.softwaremill.com/generative-adversarial-networks-in-satellite-image-datasets-augmentation-b7045d2f51ab"
+        },
+        {
+          "title": "A Review of GAN-Based Super-Resolution Reconstruction ...",
+          "abstract": "this paper presents a comprehensive overview of the super-resolution image reconstruction technique that utilizes generative adversarial networks. The ...",
+          "url": "https://www.mdpi.com/2072-4292/15/20/5062"
+        },
+        {
+          "title": "Generative Adversarial Networks for Image Super-Resolution: A Survey",
+          "abstract": "This paper provides a comparative study that elucidates the application differences of GANs in this field. We begin by reviewing the development of GANs",
+          "url": "https://www.sciencedirect.com/org/science/article/pii/S1546221826003231"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "The paper 'Self-Supervised Learning for Scene Classification in Remote Sensing' is published in Remote Sensing, volume 14, issue 16, page 3995.",
+      "evidence": [
+        {
+          "title": "Semi-supervised remote sensing image scene classification with ...",
+          "abstract": "In this paper, first, we propose a Semi-supervised Scene classification method with Prototype-based Consistency (SSPC) for remote sensing images.",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1000936123004272"
+        },
+        {
+          "title": "Self-Supervised Learning for Scene Classification in Remote Sensing",
+          "abstract": "This article reviews the underlying principles developed by various self-supervised methods with a focus on scene classification task, and investigates the ...",
+          "url": "https://www.semanticscholar.org/paper/Self-Supervised-Learning-for-Scene-Classification-Berg-Pham/69e9fcc1b85732d822cc0f02fb2942c0fdd74dba"
+        },
+        {
+          "title": "Self-supervised learning for remote sensing scene classification ...",
+          "abstract": "To address this issue, this paper proposes a deep attention Convolutional Neural Network (CNN) for scene classification in remote sensing. CNN models use ...",
+          "url": "https://www.researchgate.net/publication/366984755_Self-supervised_learning_for_remote_sensing_scene_classification_under_the_few_shot_scenario"
+        },
+        {
+          "title": "Self-Supervised Learning for Scene Classification in Remote Sensing",
+          "abstract": "In this article, we review the underlying principles developed by various self-supervised methods with a focus on scene classification task.",
+          "url": "https://www.mdpi.com/2072-4292/14/16/3995"
+        },
+        {
+          "title": "Self-Supervised In-Domain Representation Learning for ... - arXiv",
+          "abstract": "We have investigated the generalizability of the. SimSiam algorithm for learning visual representations in remote sensing images by conducting detailed and.",
+          "url": "https://arxiv.org/pdf/2302.01793"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "The thesis 'Generative Adversarial Networks in Remote Sensing Applications' exists.",
+      "evidence": [
+        {
+          "title": "Investigating the Use of Generative Adversarial Networks (GANs) for ...",
+          "abstract": "Remote sensing can be defined as the science of obtaining information about the Earth from a distance, typically using images from a of non- ...",
+          "url": "https://scholarship.claremont.edu/context/hmc_theses/article/1272/viewcontent/Coleman_RedWilllow_Thesis.pdf"
+        },
+        {
+          "title": "Remote Sensing Image Dataset Expansion Based on Generative ...",
+          "abstract": "In this paper, we modify a shuffle attention network and introduce it into GAN to generate higher quality pictures with limited inputs.",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8309944/"
+        },
+        {
+          "title": "Artificial Enhancement of Remote Sensing Data using Generative ...",
+          "abstract": "Through this research, we show the potential for using the complex generative abilities of GANs to improve the accuracy and quality of remote sensing data taken ...",
+          "url": "https://studenttheses.uu.nl/items/3b581823-962c-4fb9-a63d-ac2eef502ab1"
+        },
+        {
+          "title": "Exploring the Capabilities of Generative Adversarial Networks in ...",
+          "abstract": "This thesis explores ways generative adversarial networks (GANs) can be applied in a variety of remote sensing applications. To evaluate this, ...",
+          "url": "http://liu.diva-portal.org/smash/record.jsf?pid=diva2%3A1573013"
+        },
+        {
+          "title": "A review and meta-analysis of Generative Adversarial Networks ...",
+          "abstract": "In this regard, we conducted a comprehensive review and meta-analysis of GAN-related RS papers, with the goals of familiarizing the RS community with the ...",
+          "url": "https://ui.adsabs.harvard.edu/abs/2022IJAEO.10802734J/abstract"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "The paper 'A Survey on Self-Supervised Learning: Algorithms, Applications, and Future Trends' is published in IEEE Transactions on Pattern Analysis and Machine Intelligence.",
+      "evidence": [
+        {
+          "title": "A Survey on Self-Supervised Learning: Algorithms ...",
+          "abstract": "A detailed introduction to the motivations behind most SSL algorithms is provided and their commonalities and differences are compared, ...",
+          "url": "https://www.semanticscholar.org/paper/A-Survey-on-Self-Supervised-Learning%3A-Algorithms%2C-Gui-Chen/0b2134e5ae6f62d66686d5ca9bbbaadc1ddce61e"
+        },
+        {
+          "title": "Survey on Self-Supervised Learning Trends | PDF",
+          "abstract": "This paper presents a review of diverse SSL methods, encompassing algorithmic aspects, application domains, three key trends, and open research questions.",
+          "url": "https://www.scribd.com/document/815529283/A-Survey-on-Self-supervised-Learning-Algorithms-Applications-and-Future-Trends"
+        },
+        {
+          "title": "A Survey on Self-Supervised Learning: Algorithms ...",
+          "abstract": "This paper presents a review of diverse SSL methods, encompassing algorithmic aspects, application domains, three key trends, and open research questions.",
+          "url": "https://dl.acm.org/doi/10.1109/TPAMI.2024.3415112"
+        },
+        {
+          "title": "A Survey on Self-Supervised Learning: Algorithms, Applications, and ...",
+          "abstract": "Pretext tasks, also referred to as surrogate or proxy tasks, Prominent examples of pretext tasks include rotation prediction. Illustration of three common ...",
+          "url": "https://www.computer.org/csdl/journal/tp/2024/12/10559458/1XR0ep31Wr6"
+        },
+        {
+          "title": "Self-Supervised Learning Techniques in Remote Sensing ...",
+          "abstract": "Find the latest research papers and news in Self-Supervised Learning Techniques in Remote Sensing Image Analysis.",
+          "url": "https://link.springer.com/subjects/self-supervised-learning-techniques-in-remote-sensing-image-analysis"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    }
+  ]
+}

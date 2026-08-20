@@ -1,0 +1,16 @@
+{
+  "arxiv_id": "2206.13188",
+  "model": "MiniMax-M3",
+  "system": "citation-rag-v13",
+  "reference_precision": 0.0,
+  "reference_recall": 0.0,
+  "reference_count": 4,
+  "reference_matches": 0,
+  "ground_truth_count": 252,
+  "predicted_titles": [
+    "Self-Supervised Learning Techniques in Remote Sensing ...",
+    "Self-Supervised Learning for Scene Classification in Remote Sensing",
+    "Self-Supervised Learning with Generative Adversarial Networks for Electron Microscopy",
+    "Self-Supervised Learning - Xiaohang Zhan"
+  ]
+}

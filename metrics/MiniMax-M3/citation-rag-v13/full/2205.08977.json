@@ -1,0 +1,213 @@
+{
+  "arxiv_id": "2205.08977",
+  "model": "MiniMax-M3",
+  "system": "citation-rag-v13",
+  "reference_precision": 0.0,
+  "reference_recall": 0.0,
+  "reference_count": 3,
+  "reference_matches": 0,
+  "ground_truth_count": 317,
+  "predicted_titles": [
+    "Edge Intelligence and Internet of Things in Healthcare",
+    "Information-Centric Networking Architectures and ...",
+    "Paving the Last Mile of Artificial Intelligence With Edge Computing"
+  ],
+  "cited_match_rate": 0.25,
+  "cited_count": 8,
+  "cited_supported": 2,
+  "cited_details": [
+    {
+      "statement": "Academic research has documented trends in the advancement of edge IoT-based smart healthcare, reflecting a shift toward edge-resident computation in latency-sensitive and data-intensive applications, motivating distributed intelligence acquisition and sharing across heterogeneous devices and network domains (https://www.academia.edu/60275486/Edge_Intelligence_and_Internet_of_Things_in_Healthcare_A_Survey).",
+      "url": "https://academia.edu/60275486/Edge_Intelligence_and_Internet_of_Things_in_Healthcare_A_Survey",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Research on edge intelligence in IoT contexts adopts a layered architectural model (https://www.academia.edu/60275486/Edge_Intelligence_and_Internet_of_Things_in_Healthcare_A_Survey).",
+      "url": "https://academia.edu/60275486/Edge_Intelligence_and_Internet_of_Things_in_Healthcare_A_Survey",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "*3.1 Edge AI.* Edge AI enables low-latency perception by processing data locally, reducing dependence on cloud infrastructure while improving system efficiency (https://www.researchgate.net/publication/333733935_Edge_Intelligence_Paving_the_Last_Mile_of_Artificial_Intelligence_With_Edge_Computing).",
+      "url": "https://researchgate.net/publication/333733935_Edge_Intelligence_Paving_the_Last_Mile_of_Artificial_Intelligence_With_Edge_Computing",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "*3.2 Information-Centric Networking.* Research has identified the synergy between artificial intelligence methods and information-centric networking (ICN) cache management as a means to enhance user experience in distributed environments (https://www.nature.com/nature-index/topics/l4/information-centric-networking-architectures-and-technologies).",
+      "url": "https://nature.com/nature-index/topics/l4/information-centric-networking-architectures-and-technologies",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "*4.1 Smart Healthcare.* The academic literature documents trends in the advancement of edge IoT-based smart healthcare, examining how edge intelligence and the IoT converge in healthcare contexts (https://www.academia.edu/60275486/Edge_Intelligence_and_Internet_of_Things_in_Healthcare_A_Survey).",
+      "url": "https://academia.edu/60275486/Edge_Intelligence_and_Internet_of_Things_in_Healthcare_A_Survey",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "*5.1 Distributed Inference and Orchestration.* Edge-intelligence systems must reconcile distributed inference with network-wide orchestration, requiring new mechanisms for workload placement, model synchronization, and resource allocation across heterogeneous devices (https://www.academia.edu/60275486/Edge_Intelligence_and_Internet_of_Things_in_Healthcare_A_Survey).",
+      "url": "https://academia.edu/60275486/Edge_Intelligence_and_Internet_of_Things_in_Healthcare_A_Survey",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "*5.2 Adaptive Caching in ICN.* Incorporating AI methods into ICN cache management raises questions about how to balance caching performance, content freshness, and computational overhead in environments where intelligence artifacts may themselves be cacheable (https://www.nature.com/nature-index/topics/l4/information-centric-networking-architectures-and-technologies).",
+      "url": "https://nature.com/nature-index/topics/l4/information-centric-networking-architectures-and-technologies",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "*5.3 System Efficiency at Scale.* Edge AI is positioned to reduce dependence on cloud infrastructure while improving system efficiency, but realizing these gains at scale requires advances in model compression, hardware acceleration, and robust mechanisms for distributed training and inference (https://www.researchgate.net/publication/333733935_Edge_Intelligence_Paving_the_Last_Mile_of_Artificial_Intelligence_With_Edge_Computing).",
+      "url": "https://researchgate.net/publication/333733935_Edge_Intelligence_Paving_the_Last_Mile_of_Artificial_Intelligence_With_Edge_Computing",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    }
+  ],
+  "noncited_factual_accuracy": 0.75,
+  "noncited_count": 4,
+  "noncited_correct": 3,
+  "noncited_details": [
+    {
+      "claim": "This local-processing capability is foundational to embedding intelligence into the network edge, allowing time-critical inferences to be drawn without round-trips to remote data centers.",
+      "evidence": [
+        {
+          "title": "Overview of the LF Edge Taxonomy and Framework",
+          "abstract": "With edge computing, industrial operators can perform time-critical analytics close to their sensors, machines and robots, reducing the latency for operational ...",
+          "url": "https://lfedge.org/wp-content/uploads/sites/24/2020/07/LFedge_Whitepaper.pdf"
+        },
+        {
+          "title": "2.1 Edge computing and embedded Artificial Intelligence",
+          "abstract": "This chapter focuses on computing components, and more specifically on embedded architectures, edge computing devices and systems using Artificial Intelligence ...",
+          "url": "https://ecssria.eu/2025_2.1"
+        },
+        {
+          "title": "Edge Intelligence and Internet of Things in Healthcare",
+          "abstract": "This study discusses the trends in the advancement of edge IoT-based smart healthcare ... Georganas Best Paper Award, the 2019 King Saud University Scientific ...",
+          "url": "https://www.academia.edu/60275486/Edge_Intelligence_and_Internet_of_Things_in_Healthcare_A_Survey"
+        },
+        {
+          "title": "Edge Intelligence in Enhancing Last-Mile Delivery Logistics",
+          "abstract": "This study explores how AI-driven technologies and real-time data processing, combined with EI, can enhance last-mile delivery operations.",
+          "url": "https://www.preprints.org/manuscript/202407.1777"
+        },
+        {
+          "title": "Paving the Last Mile of Artificial Intelligence With Edge Computing",
+          "abstract": "Edge AI enables low-latency perception by processing data locally, reducing dependence on cloud infrastructure while improving system efficiency [21] , [22].",
+          "url": "https://www.researchgate.net/publication/333733935_Edge_Intelligence_Paving_the_Last_Mile_of_Artificial_Intelligence_With_Edge_Computing"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "Integrating AI with ICN allows caches to be managed adaptively, supporting content retrieval patterns driven by intelligent applications and enabling the network to align caching decisions with anticipated intelligence demand.",
+      "evidence": [
+        {
+          "title": "A Performance Analysis of Caching Schemes in ICN-Based Internet of ...",
+          "abstract": "This paper compares and thoroughly investigates ICN-based caching strategies in terms of content retrieval latency, cache hit ratio, stretch, ...",
+          "url": "https://www.researchgate.net/publication/354471222_Caching_Content_on_the_Network_Layer_A_Performance_Analysis_of_Caching_Schemes_in_ICN-Based_Internet_of_Things"
+        },
+        {
+          "title": "Selective Content Retrieval in Information-Centric Networking",
+          "abstract": "This paper presents an approach that progresses the base operation of ICN and leverages content identification right at the network layer,",
+          "url": "https://www.mdpi.com/1424-8220/22/22/8742"
+        },
+        {
+          "title": "A Novel caching framework for information-centric IoT using deep ...",
+          "abstract": "Integrating ML with ICN-based caching models allows for intelligent encryption and delivery strategies, which essentially improve network performance and user ...",
+          "url": "https://www.sciencedirect.com/science/article/abs/pii/S014036642500218X"
+        },
+        {
+          "title": "Full article: In-network caching in information-centric networks for ...",
+          "abstract": "A key feature of ICN is to take advantage of the feature of in-network caching to improve the efficiency of content dissemination and information retrieval. ...",
+          "url": "https://www.tandfonline.com/doi/full/10.1080/23311916.2023.2210000"
+        },
+        {
+          "title": "Efficient Caching Strategies in NDN-Enabled IoT Networks",
+          "abstract": "This study focused on the importance of information-centric networks (ICNs), especially the NDN, in addressing the problems faced by traditional networks in ...",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12390149/"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "The challenge is compounded when models must be updated continuously in response to changing data distributions.",
+      "evidence": [
+        {
+          "title": "Monitoring machine learning models: a categorization of ...",
+          "abstract": "by T Schröder · 2022 · Cited by 94 — This study identified six categories of challenges for verification and validation of machine learning applications during production. due to changes in data ...",
+          "url": "https://www.sciencedirect.com/science/article/pii/S2666764922000303"
+        },
+        {
+          "title": "Continual Learning: Discover how to Adapt to the Ever- ...",
+          "abstract": "The fresh data access challenge refers to the need for a continuous and reliable stream of new data to facilitate frequent model updates in ...",
+          "url": "https://medium.com/@juanc.olamendy/continual-learning-discover-how-to-adapt-to-the-ever-changing-data-landscape-cdf3a379fb89"
+        },
+        {
+          "title": "Toward AI-native 6G networks",
+          "abstract": "To enable 6G's vision of an intelligent, interconnected world, networks must be architected as AI-native from the onset, with intrinsic ...",
+          "url": "https://www.youtube.com/watch?v=xi4gn-XZu3Y"
+        },
+        {
+          "title": "Paving the Last Mile of Artificial Intelligence With Edge Computing",
+          "abstract": "Edge AI enables low-latency perception by processing data locally, reducing dependence on cloud infrastructure while improving system efficiency [21] , [22].",
+          "url": "https://www.researchgate.net/publication/333733935_Edge_Intelligence_Paving_the_Last_Mile_of_Artificial_Intelligence_With_Edge_Computing"
+        },
+        {
+          "title": "Edge Intelligence and Internet of Things in Healthcare",
+          "abstract": "This study discusses the trends in the advancement of edge IoT-based smart healthcare ... Georganas Best Paper Award, the 2019 King Saud University Scientific ...",
+          "url": "https://www.academia.edu/60275486/Edge_Intelligence_and_Internet_of_Things_in_Healthcare_A_Survey"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "Designing learning-based cache replacement policies that generalize across diverse traffic patterns remains an open problem.",
+      "evidence": [
+        {
+          "title": "Designing a Cost-Effective Cache Replacement Policy ...",
+          "abstract": "This paper reviews some of the machine-learning based cache replacement policies that outperformed the static heuristics and drives the development towards ...",
+          "url": "https://www.semanticscholar.org/paper/Designing-a-Cost-Effective-Cache-Replacement-Policy-Sethumurugan-Yin/b2e27156457d78f330d8018f99fab1da94d901e9"
+        },
+        {
+          "title": "Reinforcement Learning-Based Cache Replacement ...",
+          "abstract": "We suggest a reinforcement learning-based strategy that learns from past eviction decisions and applies this knowledge to make better decisions in the future.",
+          "url": "https://www.researchgate.net/publication/381182523_Reinforcement_Learning-Based_Cache_Replacement_Policies_for_Multicore_Processors"
+        },
+        {
+          "title": "An End-to-End Automatic Cache Replacement Policy ...",
+          "abstract": "by Y Zhou · 2022 · Cited by 26 — We train an end-to-end cache replacement policy only on the past requested address through two simple and stable cache replacement policies.",
+          "url": "https://ojs.aaai.org/index.php/ICAPS/article/view/19840"
+        },
+        {
+          "title": "An Imitation Learning Approach for Cache Replacement",
+          "abstract": "by EZ Liu · Cited by 162 — As a result, current replacement policies typically resort to heuris- tics designed for specific common access patterns, which fail on more diverse and complex ...",
+          "url": "https://proceedings.mlr.press/v119/liu20f/liu20f.pdf"
+        },
+        {
+          "title": "Information-Centric Networking Architectures and ...",
+          "abstract": "This approach highlights the synergy between artificial intelligence methods and ICN cache management for enhanced user experience in distributed environments.",
+          "url": "https://www.nature.com/nature-index/topics/l4/information-centric-networking-architectures-and-technologies"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    }
+  ]
+}

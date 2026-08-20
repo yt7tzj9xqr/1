@@ -1,0 +1,18 @@
+{
+  "arxiv_id": "2306.05817",
+  "model": "MiniMax-M3",
+  "system": "citation-rag-v13",
+  "reference_precision": 0.3333333333333333,
+  "reference_recall": 0.006644518272425249,
+  "reference_count": 6,
+  "reference_matches": 2,
+  "ground_truth_count": 301,
+  "predicted_titles": [
+    "RecSys 2023 Tutorial: Large Language Models for Recommendation",
+    "Improving Sequential Recommendation with LLMs - GitHub",
+    "Chat-REC: Towards Interactive and Explainable LLMs-Augmented Recommender System",
+    "Retrieval-Augmented Generation for Large Language Models: A Survey",
+    "GitHub - SAI990323/TALLRec",
+    "Leveraging Large Language Models for Sequential Recommendation"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "arxiv_id": "2004.05937",
+  "model": "MiniMax-M3",
+  "system": "citation-rag-v13",
+  "reference_precision": 0.6666666666666666,
+  "reference_recall": 0.006557377049180328,
+  "reference_count": 3,
+  "reference_matches": 2,
+  "ground_truth_count": 305,
+  "predicted_titles": [
+    "FitNets: Hints for Thin Deep Nets",
+    "Distilling the Knowledge in a Neural Network",
+    "Knowledge Distillation: Compressing Large Models into Efficient Learners"
+  ]
+}

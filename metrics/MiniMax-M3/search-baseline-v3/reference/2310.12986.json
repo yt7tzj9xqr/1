@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2310.12986",
+  "model": "MiniMax-M3",
+  "system": "search-baseline-v3",
+  "reference_precision": 0.0,
+  "reference_recall": 0.0,
+  "reference_count": 8,
+  "reference_matches": 0,
+  "ground_truth_count": 61,
+  "predicted_titles": [
+    "Enhance explainability of manifold learning",
+    "Nonlinear dimensionality reduction by locally linear ...",
+    "Tenenbaum Reduction A Global Geometric ...",
+    "Reduction A Global Geometric Framework for Nonlinear ...",
+    "Laplacian Eigenmaps for Dimensionality Reduction and ...",
+    "Manifold-manifold distance and its application to face recognition with ...",
+    "The Laplacian eigenmaps dimensionality reduction of fMRI ...",
+    "Face recognition with image sets using manifold density divergence"
+  ]
+}
