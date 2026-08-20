@@ -55,6 +55,18 @@ class CoreTests(unittest.TestCase):
         self.assertIn("experimental evidence", parsed["text"])
         self.assertNotIn("navigation", parsed["text"])
 
+    def test_page_reader_does_not_replace_complete_search_title(self):
+        from reportbench_mm.web_reader import WebPageReader
+
+        class Reader(WebPageReader):
+            def read(self, url):
+                return {"title": "Complete Paper Title | Publisher Website", "text": "body"}
+
+        paper = Paper("p", "Complete Paper Title", 2020, "https://example.org")
+        Reader(None).enrich(paper)
+        self.assertEqual(paper.title, "Complete Paper Title")
+        self.assertEqual(paper.full_text, "body")
+
     def test_search_planner_rejects_generic_and_duplicate_queries(self):
         class PlannerSettings:
             model = "planner"

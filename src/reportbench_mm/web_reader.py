@@ -144,11 +144,7 @@ class WebPageReader:
         current = paper.title.strip()
         # Search engines often truncate titles. Prefer explicit scholarly page
         # metadata, but avoid replacing a good paper title with a site heading.
-        if page_title and (
-            "..." in current
-            or "…" in current
-            or (len(page_title) > len(current) and len(page_title.split()) >= 4)
-        ):
+        if page_title and ("..." in current or "…" in current):
             paper.title = page_title[:500]
         paper.full_text = page.get("text", "")
         return paper

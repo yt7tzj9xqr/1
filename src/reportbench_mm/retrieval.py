@@ -37,7 +37,10 @@ def plan_search_queries(task: Task, model: MiniMaxClient, limit: int = 5) -> lis
     try:
         value = model.generate_json(
             [{"role": "user", "content": prompt}], temperature=0,
-            max_tokens=4096, cache_namespace=f"search-planner-v3:{model.settings.model}",
+            # M3 may spend most of a 4k budget in hidden reasoning and return no
+            # final JSON. Successful plans stay cached; failed plans get enough
+            # room on retry instead of dropping to weak heuristic fragments.
+            max_tokens=8192, cache_namespace=f"search-planner-v3:{model.settings.model}",
         )
         planned = value.get("queries", []) if isinstance(value, dict) else value
     except Exception as exc:
