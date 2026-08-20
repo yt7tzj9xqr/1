@@ -123,6 +123,29 @@ def normalize_source_citations(report: str, papers: list[Paper]) -> str:
     return normalized
 
 
+def sanitize_report(report: str) -> str:
+    """Enforce the atomic-citation contract before ReportBench extraction."""
+    # A trailing bibliography repeats bare URLs, which the statement extractor
+    # reasonably interprets as additional (unsupported) cited statements.
+    report = re.split(
+        r"(?im)^\s*(?:#{1,6}\s*|\*\*)?(?:references|bibliography)\s*:?[ \t]*(?:\*\*)?\s*$",
+        report,
+        maxsplit=1,
+    )[0]
+    kept: list[str] = []
+    for line in report.splitlines():
+        sentences = re.split(r"(?<=[.!?])\s+(?=(?:[A-Z]|\*\*|#{1,6}\s))", line)
+        atomic: list[str] = []
+        for sentence in sentences:
+            urls = re.findall(r"https?://[^\s)\]>]+", sentence, flags=re.I)
+            # Multi-source synthesis cannot be attributed atomically. Omitting it
+            # is safer than pretending every source supports the combined claim.
+            if len({url.rstrip(".,;:'\"") for url in urls}) <= 1:
+                atomic.append(sentence)
+        kept.append(" ".join(atomic))
+    return "\n".join(kept).strip()
+
+
 class CitationRagPipeline:
     """Builds an ephemeral, per-task citation graph; only raw API responses are cached."""
 
@@ -243,5 +266,6 @@ class CitationRagPipeline:
             [{"role": "system", "content": RAG_SYSTEM}, {"role": "user", "content": user}],
             cache_namespace=f"citation-rag-report-v6:{self.settings.model}",
         )
+        report = sanitize_report(report)
         report = normalize_source_citations(report, writing_papers)
         return report, papers

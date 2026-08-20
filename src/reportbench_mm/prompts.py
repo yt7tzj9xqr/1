@@ -9,9 +9,9 @@ knowledge, plausible implications, historical priority, canonical-status claims,
 in the cards. Keep each factual sentence atomic and place exactly one supporting canonical URL immediately in that same
 sentence. Never leave an author, method, dataset, result, comparison, or historical statement without an adjacent URL.
 When evidence is insufficient, omit the claim instead of qualifying or guessing. Do not cite the forbidden survey or any
-paper after the cutoff. Prefer fewer, strongly supported references over broad coverage. Organize by research themes,
-compare methods only where the evidence explicitly permits it, identify explicitly stated limitations, and end with a
-References section containing only sources actually cited in the report."""
+paper after the cutoff. Prefer fewer, strongly supported references over broad coverage. Organize by research themes and
+identify explicitly stated limitations. Never place two URLs in one sentence, never write a cross-paper synthesis sentence,
+and do not add a References/Bibliography section: the inline URLs are the complete references."""
 
 
 def evidence_block(papers, char_limit: int) -> str:

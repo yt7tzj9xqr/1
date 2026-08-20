@@ -9,7 +9,7 @@ from reportbench_mm.providers.openalex import compact_query, extract_cutoff, fil
 from reportbench_mm.schemas import Paper
 from reportbench_mm.pipelines.rag import (
     anchor_coverage, keywords, matches_anchor_phrase, normalize_source_citations,
-    score_paper, select_writing_papers, writing_score,
+    sanitize_report, score_paper, select_writing_papers, writing_score,
 )
 from reportbench_mm.config import Settings
 from reportbench_mm.providers.composite import CompositeScholarProvider
@@ -97,6 +97,18 @@ class CoreTests(unittest.TestCase):
         self.assertIn("(https://example.org/one)", normalized)
         self.assertIn("- https://example.org/one", normalized)
         self.assertNotIn("Source 1", normalized)
+
+    def test_report_sanitizer_removes_multi_source_synthesis_and_bibliography(self):
+        report = (
+            "Atomic claim (https://example.org/a). Combined claim (https://example.org/a, https://example.org/b). "
+            "Second atomic claim (https://example.org/b).\n\n"
+            "**References**\n- https://example.org/a"
+        )
+        cleaned = sanitize_report(report)
+        self.assertIn("Atomic claim", cleaned)
+        self.assertIn("Second atomic claim", cleaned)
+        self.assertNotIn("Combined claim", cleaned)
+        self.assertNotIn("References", cleaned)
 
     def test_scholar_provider_falls_back_after_failure(self):
         class Failed:
