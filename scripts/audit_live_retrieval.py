@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import argparse
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from dataclasses import replace
 import json
 from pathlib import Path
 
@@ -21,9 +22,10 @@ def main() -> None:
     parser.add_argument("--limit", type=int, default=10)
     parser.add_argument("--workers", type=int, default=2)
     parser.add_argument("--output", default="artifacts/retrieval_audit_10.json")
+    parser.add_argument("--pool-limit", type=int, default=12, help="Candidate papers retained per task")
     args = parser.parse_args()
 
-    settings = Settings.load()
+    settings = replace(Settings.load(), baseline_papers=max(1, args.pool_limit))
     cache = JsonCache(settings.root / "cache" / "runtime.sqlite3")
     pipeline = BaselinePipeline(
         settings, MiniMaxClient(settings, cache), scholar_provider(cache, settings), WebPageReader(cache)
