@@ -29,6 +29,7 @@ class Settings:
     openalex_mailto: str
     request_timeout: int = 300
     max_output_tokens: int = 32768
+    rag_output_tokens: int = 65536
     baseline_search_budget: int = 5
     rag_seed_count: int = 6
     rag_depth: int = 3

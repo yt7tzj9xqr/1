@@ -269,6 +269,7 @@ class CitationRagPipeline:
         )
         report = self.model.generate(
             [{"role": "system", "content": RAG_SYSTEM}, {"role": "user", "content": user}],
+            max_tokens=self.settings.rag_output_tokens,
             cache_namespace=f"citation-rag-report-v6:{self.settings.model}",
         )
         report = sanitize_report(report)

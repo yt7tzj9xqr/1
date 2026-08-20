@@ -81,6 +81,7 @@ class CoreTests(unittest.TestCase):
     def test_rag_writer_uses_smaller_evidence_budget(self):
         settings = Settings.load(Path.cwd())
         self.assertLess(settings.rag_evidence_papers, settings.rag_max_papers)
+        self.assertGreater(settings.rag_output_tokens, settings.max_output_tokens)
 
     def test_writing_selection_keeps_deep_nodes_traversal_only(self):
         task = load_tasks(Path("data/subsets/reportbench_30.jsonl"))[0]
