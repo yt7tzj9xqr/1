@@ -160,7 +160,7 @@ class CitationRagPipeline:
         # Inspect a broader set of references, then admit only the best global
         # candidates at each depth. Reference-list order is not a relevance rank.
         inspect_per_parent = {1: 8, 2: 4, 3: 3}
-        depth_budget = {1: 20, 2: 10, 3: 6}
+        depth_budget = {1: 18, 2: 10, 3: 6}
         preserve_per_parent = {1: 5, 2: 2, 3: 1}
         for depth in range(1, self.settings.rag_depth + 1):
             candidates: dict[str, Paper] = {}
