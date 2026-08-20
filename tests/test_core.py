@@ -16,9 +16,19 @@ from reportbench_mm.providers.composite import CompositeScholarProvider
 from reportbench_mm.evaluation.reference import maximum_matches, normalize_url, title_match
 from reportbench_mm.evaluation.statements import cited_statements, extract_noncited
 from reportbench_mm.evaluation.aggregate import aggregate
+from reportbench_mm.models.minimax import MiniMaxClient
 
 
 class CoreTests(unittest.TestCase):
+    def test_invalid_embedded_json_is_a_recoverable_runtime_error(self):
+        class BrokenJsonClient(MiniMaxClient):
+            def generate(self, messages, **kwargs):
+                return 'prefix {"decisions":[{"match":"unterminated}]}'
+
+        client = BrokenJsonClient(object())
+        with self.assertRaises(RuntimeError):
+            client.generate_json([])
+
     def test_cache_roundtrip(self):
         with tempfile.TemporaryDirectory() as directory:
             cache = JsonCache(Path(directory) / "cache.sqlite3")

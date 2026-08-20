@@ -101,5 +101,8 @@ class MiniMaxClient:
         except json.JSONDecodeError as exc:
             match = re.search(r"(\{.*\}|\[.*\])", cleaned, re.S)
             if match:
-                return json.loads(match.group(1))
+                try:
+                    return json.loads(match.group(1))
+                except json.JSONDecodeError:
+                    pass
             raise RuntimeError(f"Model did not return valid JSON: {text[:500]}") from exc
