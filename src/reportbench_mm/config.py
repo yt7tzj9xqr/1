@@ -31,6 +31,8 @@ class Settings:
     max_output_tokens: int = 32768
     rag_output_tokens: int = 65536
     baseline_search_budget: int = 5
+    search_results_per_query: int = 20
+    search_workers: int = 5
     rag_seed_count: int = 6
     rag_depth: int = 3
     rag_max_papers: int = 40

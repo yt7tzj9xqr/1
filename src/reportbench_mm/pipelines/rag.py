@@ -7,6 +7,7 @@ from ..config import Settings
 from ..models import MiniMaxClient
 from ..prompts import RAG_SYSTEM, evidence_block
 from ..providers.openalex import extract_cutoff, filter_papers, search_queries
+from ..retrieval import parallel_search, plan_search_queries
 from ..schemas import Paper, Task
 
 
@@ -162,23 +163,16 @@ class CitationRagPipeline:
     def retrieve(self, task: Task) -> list[Paper]:
         cutoff = extract_cutoff(task.prompt)
         terms = keywords(f"{task.application_domain} {task.prompt}")
-        queries = search_queries(task.prompt, limit=5)
+        queries = plan_search_queries(task, self.model, self.settings.baseline_search_budget)
         anchor_query = queries[0] if queries else ""
         anchor_terms = keywords(anchor_query) if anchor_query else terms
-        seeds: list[Paper] = []
-        for query in queries:
-            # Match the baseline search page size so both systems reuse the
-            # exact same cached free-API response for a fair comparison.
-            seeds.extend(self.scholar.search(query, cutoff=cutoff, limit=10))
+        print(f"{task.arxiv_id} search queries: {queries}", flush=True)
+        seeds = parallel_search(
+            self.scholar, queries, cutoff=cutoff,
+            per_query=self.settings.search_results_per_query, workers=self.settings.search_workers,
+        )
         seeds = filter_papers(seeds, forbidden_title=task.title, cutoff=cutoff)
-        strict_seeds = [paper for paper in seeds if matches_anchor_phrase(paper, anchor_query)]
-        if strict_seeds:
-            seeds = strict_seeds
-        else:
-            seeds = [
-                paper for paper in seeds
-                if anchor_coverage(paper, anchor_terms) >= 0.5 or score_paper(paper, terms) >= 0.16
-            ]
+        seeds = [paper for paper in seeds if paper.abstract and paper.url]
         for paper in seeds:
             paper.relevance = score_paper(paper, terms)
         seeds.sort(key=lambda paper: paper.relevance, reverse=True)

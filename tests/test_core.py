@@ -17,9 +17,39 @@ from reportbench_mm.evaluation.reference import maximum_matches, normalize_url, 
 from reportbench_mm.evaluation.statements import cited_statements, extract_noncited
 from reportbench_mm.evaluation.aggregate import aggregate
 from reportbench_mm.models.minimax import MiniMaxClient
+from reportbench_mm.retrieval import parallel_search, plan_search_queries
 
 
 class CoreTests(unittest.TestCase):
+    def test_search_planner_rejects_generic_and_duplicate_queries(self):
+        class PlannerSettings:
+            model = "planner"
+
+        class Planner:
+            settings = PlannerSettings()
+
+            def generate_json(self, messages, **kwargs):
+                return {"queries": [
+                    "person search deep metric learning before May 2021",
+                    "person search deep metric learning",
+                    "person search identity driven detection",
+                    "bad",
+                ]}
+
+        task = load_tasks(Path("data/subsets/reportbench_30.jsonl"))[8]
+        queries = plan_search_queries(task, Planner(), limit=3)
+        self.assertEqual(len(queries), 3)
+        self.assertNotIn("before", queries[0].lower())
+        self.assertEqual(len({query.lower() for query in queries}), 3)
+
+    def test_parallel_search_deduplicates_doi(self):
+        class Scholar:
+            def search(self, query, **kwargs):
+                return [Paper(query, query, 2020, f"https://example.org/{query}", "abstract", doi="same")]
+
+        papers = parallel_search(Scholar(), ["query one", "query two"], cutoff=None, workers=2)
+        self.assertEqual(len(papers), 1)
+
     def test_invalid_embedded_json_is_a_recoverable_runtime_error(self):
         class BrokenJsonClient(MiniMaxClient):
             def generate(self, messages, **kwargs):

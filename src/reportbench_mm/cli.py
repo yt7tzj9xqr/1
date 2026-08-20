@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import argparse
+from concurrent.futures import ThreadPoolExecutor, as_completed
 import json
 from pathlib import Path
 
@@ -69,12 +70,17 @@ def command_run_baseline(args: argparse.Namespace) -> None:
     cache = JsonCache(settings.root / "cache" / "runtime.sqlite3")
     model = MiniMaxClient(settings, cache)
     pipeline = BaselinePipeline(settings, model, scholar_provider(cache, settings))
-    runner = ExperimentRunner(settings.root / "runs", settings.model, "baseline")
+    if not args.system or any(char not in "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-_" for char in args.system):
+        raise ValueError("--system may contain only letters, digits, hyphens, and underscores")
+    runner = ExperimentRunner(settings.root / "runs", settings.model, args.system)
     summary = {"completed": 0, "skipped": 0, "failed": 0}
-    for task in tasks:
-        status = runner.run_task(task, pipeline, overwrite=args.overwrite)
-        summary[status] += 1
-        print(f"{task.arxiv_id}: {status}")
+    with ThreadPoolExecutor(max_workers=max(1, args.workers)) as executor:
+        futures = {executor.submit(runner.run_task, task, pipeline, overwrite=args.overwrite): task for task in tasks}
+        for future in as_completed(futures):
+            task = futures[future]
+            status = future.result()
+            summary[status] += 1
+            print(f"{task.arxiv_id}: {status}", flush=True)
     print(json.dumps(summary, indent=2))
 
 
@@ -91,10 +97,13 @@ def command_run_rag(args: argparse.Namespace) -> None:
         raise ValueError("--system may contain only letters, digits, hyphens, and underscores")
     runner = ExperimentRunner(settings.root / "runs", settings.model, args.system)
     summary = {"completed": 0, "skipped": 0, "failed": 0}
-    for task in tasks:
-        status = runner.run_task(task, pipeline, overwrite=args.overwrite)
-        summary[status] += 1
-        print(f"{task.arxiv_id}: {status}")
+    with ThreadPoolExecutor(max_workers=max(1, args.workers)) as executor:
+        futures = {executor.submit(runner.run_task, task, pipeline, overwrite=args.overwrite): task for task in tasks}
+        for future in as_completed(futures):
+            task = futures[future]
+            status = future.result()
+            summary[status] += 1
+            print(f"{task.arxiv_id}: {status}", flush=True)
     print(json.dumps(summary, indent=2))
 
 
@@ -168,6 +177,8 @@ def build_parser() -> argparse.ArgumentParser:
     baseline.add_argument("--ids", default="", help="Comma-separated arXiv IDs to run")
     baseline.add_argument("--execute", action="store_true")
     baseline.add_argument("--overwrite", action="store_true")
+    baseline.add_argument("--system", default="baseline", help="Result directory label")
+    baseline.add_argument("--workers", type=int, default=1, help="Concurrent task workers")
     baseline.set_defaults(func=command_run_baseline)
     rag = sub.add_parser("run-rag")
     rag.add_argument("--tasks", default="data/subsets/reportbench_30.jsonl")
@@ -176,6 +187,7 @@ def build_parser() -> argparse.ArgumentParser:
     rag.add_argument("--system", default="citation-rag", help="Result directory label, e.g. citation-rag-v6")
     rag.add_argument("--execute", action="store_true")
     rag.add_argument("--overwrite", action="store_true")
+    rag.add_argument("--workers", type=int, default=1, help="Concurrent task workers")
     rag.set_defaults(func=command_run_rag)
     reference = sub.add_parser("evaluate-reference")
     reference.add_argument("--run-root", required=True)

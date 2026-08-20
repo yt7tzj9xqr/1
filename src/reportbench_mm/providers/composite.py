@@ -11,25 +11,30 @@ class CompositeScholarProvider:
 
     def search(self, query: str, *, cutoff: date | None, limit: int = 20) -> list[Paper]:
         errors: list[str] = []
-        collected: list[Paper] = []
+        pages: list[list[Paper]] = []
         seen: set[str] = set()
         for provider in self.providers:
             try:
                 papers = provider.search(query, cutoff=cutoff, limit=limit)
-                for paper in papers:
-                    key = " ".join(paper.title.lower().split())
-                    if key and key not in seen:
-                        seen.add(key)
-                        collected.append(paper)
-                usable = sum(bool(paper.abstract and paper.url) for paper in collected)
-                # Avoid extra public-API traffic when the first provider already
-                # supplied a useful page; otherwise let the next free provider
-                # repair sparse or abstract-less search results.
-                if usable >= min(limit, max(3, limit // 2)):
-                    return collected[:limit]
+                if papers:
+                    pages.append(papers)
             except Exception as exc:
                 errors.append(f"{type(provider).__name__}: {exc}")
                 print(f"scholar fallback: {errors[-1]}", flush=True)
+        # Interleave provider ranks so OpenAlex cannot monopolize the result page.
+        collected: list[Paper] = []
+        for rank in range(max((len(page) for page in pages), default=0)):
+            for page in pages:
+                if rank >= len(page):
+                    continue
+                paper = page[rank]
+                key = (paper.doi or " ".join(paper.title.lower().split())).lower()
+                if not key or key in seen:
+                    continue
+                seen.add(key)
+                collected.append(paper)
+                if len(collected) >= limit:
+                    return collected
         if collected:
             return collected[:limit]
         raise RuntimeError("All free scholarly providers failed: " + " | ".join(errors))

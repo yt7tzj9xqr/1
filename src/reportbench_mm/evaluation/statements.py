@@ -1,11 +1,13 @@
 from __future__ import annotations
 
 from collections import defaultdict
+from concurrent.futures import ThreadPoolExecutor
 import json
 from pathlib import Path
 import re
 
 from ..models import MiniMaxClient
+from ..providers.openalex import compact_query
 from .reference import URL_RE, normalize_url
 
 
@@ -181,8 +183,7 @@ def evaluate_noncited(
     statements: list[str], model: MiniMaxClient, scholar, cutoff, votes: int = 3,
     local_papers: list[dict] | None = None,
 ) -> dict:
-    records = []
-    for statement in statements:
+    def build_record(statement: str) -> dict:
         claim_terms = set(re.findall(r"[a-z][a-z0-9-]{2,}", statement.lower()))
         ranked_local = sorted(
             (paper for paper in (local_papers or []) if paper.get("abstract")),
@@ -191,19 +192,35 @@ def evaluate_noncited(
             ),
             reverse=True,
         )
-        evidence_rows = [
+        local_rows = [
             {"title": p.get("title"), "abstract": p.get("abstract"), "url": p.get("url")}
             for p in ranked_local[:3]
         ]
-        if not evidence_rows:
-            evidence = scholar.search(statement[:300], cutoff=cutoff, limit=3)
-            evidence_rows = [
-                {"title": p.title, "abstract": p.abstract, "url": p.url} for p in evidence if p.abstract
-            ][:3]
-        records.append({
+        # The paper uses web-connected judges for every claim. Searching only
+        # when local report papers are absent systematically withholds relevant
+        # evidence, so always retrieve claim-specific evidence and merge it.
+        try:
+            evidence = scholar.search(compact_query(statement, max_terms=12), cutoff=cutoff, limit=5)
+        except Exception as exc:
+            print(f"noncited evidence search fallback: {exc}", flush=True)
+            evidence = []
+        web_rows = [
+            {"title": p.title, "abstract": p.abstract, "url": p.url} for p in evidence if p.abstract
+        ]
+        evidence_rows = []
+        seen_urls: set[str] = set()
+        for row in web_rows + local_rows:
+            key = row.get("url") or row.get("title") or ""
+            if key and key not in seen_urls:
+                seen_urls.add(key)
+                evidence_rows.append(row)
+        return {
             "claim": statement,
-            "evidence": evidence_rows,
-        })
+            "evidence": evidence_rows[:5],
+        }
+
+    with ThreadPoolExecutor(max_workers=min(5, max(1, len(statements)))) as executor:
+        records = list(executor.map(build_record, statements))
     vote_rows: list[list[bool]] = []
     if records:
         vote_rows = _judge_batches(

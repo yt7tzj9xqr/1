@@ -196,7 +196,9 @@ class OpenAlexProvider:
         )
 
     def search(self, query: str, *, cutoff: date | None, limit: int = 20) -> list[Paper]:
-        filters = ["type:article|review"]
+        # ReportBench gold sets contain conference papers, preprints, books,
+        # datasets and standards in addition to journal articles/reviews.
+        filters: list[str] = []
         if cutoff:
             filters.append(f"from_publication_date:1900-01-01")
             filters.append(f"to_publication_date:{cutoff.isoformat()}")
@@ -204,12 +206,6 @@ class OpenAlexProvider:
             "/works",
             {"search": query, "filter": ",".join(filters), "per-page": min(limit, 50), "sort": "relevance_score:desc"},
         )
-        if not data.get("results"):
-            fallback_filters = [item for item in filters if not item.startswith("type:")]
-            data = self._get(
-                "/works",
-                {"search": query, "filter": ",".join(fallback_filters), "per-page": min(limit, 50), "sort": "relevance_score:desc"},
-            )
         return [self._paper(work) for work in data.get("results", [])]
 
     def get_work(self, paper_id: str, depth: int = 0) -> Paper | None:
