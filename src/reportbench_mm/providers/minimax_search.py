@@ -19,7 +19,10 @@ class MiniMaxSearchProvider:
         self.cache, self.api_key, self.base_url, self.timeout = cache, api_key, base_url.rstrip("/"), timeout
 
     def search(self, query: str, *, cutoff: date | None, limit: int = 20) -> list[Paper]:
-        search_query = f"{query} before:{cutoff.isoformat()}" if cutoff else query
+        # The Coding Plan endpoint is not Google: advanced ``before:`` syntax
+        # intermittently returns status 1027 with no organic results. Ask for
+        # scholarly material plainly, then enforce the cutoff on parsed years.
+        search_query = query if re.search(r"\b(?:paper|study|research)\b", query, re.I) else f"{query} academic paper"
         payload = {"q": search_query}
 
         def request() -> dict[str, Any]:
@@ -42,7 +45,13 @@ class MiniMaxSearchProvider:
                 time.sleep(min(16, 2 ** attempt))
             raise RuntimeError("MiniMax search failed")
 
-        data = self.cache.get_or_create("minimax-web-search-v1", payload, request)
+        data = self.cache.get_or_create("minimax-web-search-v2", payload, request)
+        status = (data.get("base_resp") or {}).get("status_code", 0)
+        if status not in {0, None} and not data.get("organic"):
+            raise RuntimeError(
+                f"MiniMax search rejected query with status {status}: "
+                f"{(data.get('base_resp') or {}).get('status_msg', 'unknown')}"
+            )
         papers: list[Paper] = []
         for index, item in enumerate(data.get("organic") or []):
             title = re.sub(r"\s+", " ", item.get("title") or "").strip()

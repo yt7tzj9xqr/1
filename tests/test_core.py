@@ -19,9 +19,29 @@ from reportbench_mm.evaluation.aggregate import aggregate
 from reportbench_mm.models.minimax import MiniMaxClient
 from reportbench_mm.retrieval import diverse_top_papers, parallel_search, plan_search_queries
 from reportbench_mm.web_reader import parse_academic_html
+from reportbench_mm.providers.minimax_search import MiniMaxSearchProvider
 
 
 class CoreTests(unittest.TestCase):
+    def test_minimax_search_uses_plain_query_and_local_cutoff(self):
+        class CacheStub:
+            def get_or_create(self, namespace, payload, factory):
+                self.namespace = namespace
+                self.payload = payload
+                return {"organic": [
+                    {"title": "Useful Older Paper", "link": "https://example.org/old", "date": "2020"},
+                    {"title": "Future Paper", "link": "https://example.org/new", "date": "2026"},
+                ], "base_resp": {"status_code": 0}}
+
+        from datetime import date
+        cache = CacheStub()
+        provider = MiniMaxSearchProvider(cache, "unused", "https://example.org")
+        papers = provider.search("knowledge distillation", cutoff=date(2021, 6, 1), limit=10)
+        self.assertEqual(cache.namespace, "minimax-web-search-v2")
+        self.assertNotIn("before:", cache.payload["q"])
+        self.assertIn("academic paper", cache.payload["q"])
+        self.assertEqual([paper.title for paper in papers], ["Useful Older Paper"])
+
     def test_page_reader_prefers_citation_metadata_and_extracts_body(self):
         parsed = parse_academic_html(
             '<html><head><title>Short - Site</title>'
