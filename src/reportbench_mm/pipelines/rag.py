@@ -159,12 +159,16 @@ class CitationRagPipeline:
 
         # Inspect a broader set of references, then admit only the best global
         # candidates at each depth. Reference-list order is not a relevance rank.
-        inspect_per_parent = {1: 12, 2: 6, 3: 4}
-        depth_budget = {1: 16, 2: 12, 3: 8}
+        inspect_per_parent = {1: 8, 2: 4, 3: 3}
+        depth_budget = {1: 20, 2: 10, 3: 6}
+        preserve_per_parent = {1: 5, 2: 2, 3: 1}
         for depth in range(1, self.settings.rag_depth + 1):
             candidates: dict[str, Paper] = {}
+            parent_coverage_ids: list[str] = []
             for parent in frontier:
-                for reference_id in parent.referenced_work_ids[: inspect_per_parent.get(depth, 4)]:
+                for reference_rank, reference_id in enumerate(
+                    parent.referenced_work_ids[: inspect_per_parent.get(depth, 3)]
+                ):
                     if reference_id in graph:
                         continue
                     paper = self.scholar.get_work(reference_id, depth=depth)
@@ -181,13 +185,24 @@ class CitationRagPipeline:
                     previous = candidates.get(paper.paper_id)
                     if previous is None or paper.relevance > previous.relevance:
                         candidates[paper.paper_id] = paper
+                    if (
+                        reference_rank < preserve_per_parent.get(depth, 1)
+                        and paper.paper_id not in parent_coverage_ids
+                    ):
+                        parent_coverage_ids.append(paper.paper_id)
             ranked_candidates = sorted(
                 candidates.values(),
                 key=lambda paper: paper.relevance,
                 reverse=True,
             )
             remaining = self.settings.rag_max_papers - len(graph)
-            admitted = ranked_candidates[: min(depth_budget.get(depth, 8), remaining)]
+            budget = min(depth_budget.get(depth, 6), remaining)
+            covered = [candidates[paper_id] for paper_id in parent_coverage_ids if paper_id in candidates]
+            covered = covered[:budget]
+            covered_ids = {paper.paper_id for paper in covered}
+            admitted = covered + [
+                paper for paper in ranked_candidates if paper.paper_id not in covered_ids
+            ][: max(0, budget - len(covered))]
             for paper in admitted:
                 graph[paper.paper_id] = paper
             next_frontier = admitted
