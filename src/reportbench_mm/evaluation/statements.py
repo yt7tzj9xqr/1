@@ -122,22 +122,37 @@ def extract_noncited(report: str, cited: list[dict], model: MiniMaxClient, limit
         candidates.append(text)
     # Preserve order and remove repeated prose before asking the model to classify factuality.
     candidates = list(dict.fromkeys(candidates))[:60]
-    prompt = (
-        "From CANDIDATES, select externally verifiable factual claims that lack a URL citation. "
-        "Exclude opinions, headings, common knowledge, vague statements, and methodological instructions. "
-        f"Return JSON {{\"statements\":[strings]}} with at most {limit} atomic claims.\n\n"
-        f"CANDIDATES:\n{json.dumps(candidates, ensure_ascii=False)}"
-    )
-    value = model.generate_json(
-        [{"role": "user", "content": prompt}],
-        model=model.settings.judge_model,
-        temperature=0,
-        max_tokens=16384,
-        cache_namespace=f"noncited-extract-v3:{model.settings.judge_model}",
-    )
-    if isinstance(value, dict):
-        value = value.get("statements", [])
-    return [str(item).strip() for item in value if str(item).strip()][:limit]
+    def extract_batch(batch: list[str], label: str) -> list[str]:
+        prompt = (
+            "From CANDIDATES, select externally verifiable factual claims that lack a URL citation. "
+            "Exclude opinions, headings, common knowledge, vague statements, and methodological instructions. "
+            f"Return JSON {{\"statements\":[strings]}} with at most {limit} atomic claims.\n\n"
+            f"CANDIDATES:\n{json.dumps(batch, ensure_ascii=False)}"
+        )
+        try:
+            value = model.generate_json(
+                [{"role": "user", "content": prompt}],
+                model=model.settings.judge_model,
+                temperature=0,
+                max_tokens=16384,
+                cache_namespace=f"noncited-extract-v4:{model.settings.judge_model}:{label}",
+            )
+        except RuntimeError as exc:
+            if "API HTTP" in str(exc) or "connection failed" in str(exc) or len(batch) == 1:
+                raise
+            middle = len(batch) // 2
+            print(f"noncited extract {label} size={len(batch)} split: {exc}", flush=True)
+            return extract_batch(batch[:middle], label + "a") + extract_batch(batch[middle:], label + "b")
+        if isinstance(value, dict):
+            value = value.get("statements", [])
+        return [str(item).strip() for item in value if str(item).strip()]
+
+    # Smaller independent batches bound the prompt/response size. Recursive splitting
+    # recovers provider length failures without dropping the whole task.
+    selected: list[str] = []
+    for start in range(0, len(candidates), 30):
+        selected.extend(extract_batch(candidates[start:start + 30], f"batch-{start // 30}"))
+    return list(dict.fromkeys(selected))[:limit]
 
 
 def evaluate_noncited(

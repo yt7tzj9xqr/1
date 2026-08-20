@@ -14,7 +14,7 @@ from reportbench_mm.pipelines.rag import (
 from reportbench_mm.config import Settings
 from reportbench_mm.providers.composite import CompositeScholarProvider
 from reportbench_mm.evaluation.reference import maximum_matches, normalize_url, title_match
-from reportbench_mm.evaluation.statements import cited_statements
+from reportbench_mm.evaluation.statements import cited_statements, extract_noncited
 from reportbench_mm.evaluation.aggregate import aggregate
 
 
@@ -149,6 +149,26 @@ class CoreTests(unittest.TestCase):
         items = cited_statements("A factual claim (https://example.org/paper). Another sentence.")
         self.assertEqual(len(items), 1)
         self.assertEqual(items[0]["url"], "https://example.org/paper")
+
+    def test_noncited_extraction_splits_length_failures(self):
+        class SettingsStub:
+            judge_model = "judge"
+
+        class SplittingModel:
+            settings = SettingsStub()
+
+            def generate_json(self, messages, **kwargs):
+                candidates = json.loads(messages[0]["content"].split("CANDIDATES:\n", 1)[1])
+                if len(candidates) > 1:
+                    raise RuntimeError("MiniMax returned empty final content (finish_reason=length)")
+                return {"statements": candidates}
+
+        report = "\n".join([
+            "A sufficiently long externally verifiable factual statement number one.",
+            "A sufficiently long externally verifiable factual statement number two.",
+        ])
+        statements = extract_noncited(report, [], SplittingModel(), limit=20)
+        self.assertEqual(len(statements), 2)
 
     def test_aggregate_reports_micro_and_nonempty_metrics(self):
         with tempfile.TemporaryDirectory() as directory:
