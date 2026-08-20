@@ -24,17 +24,20 @@ def plan_search_queries(task: Task, model: MiniMaxClient, limit: int = 5) -> lis
     prompt = (
         "Plan scholarly literature searches for the research task below. Return JSON only as "
         f"{{\"queries\":[strings]}} with exactly {limit} concise search-engine queries. "
-        "Every query must retain the central research topic. Cover distinct named method families, "
-        "benchmarks, datasets, or application subfields explicitly requested by the task. Do not emit "
+        "Use this fixed allocation: query 1 is the central topic; queries 2 and 3 target likely landmark "
+        "or representative PRIMARY papers (use an exact paper title when you know it with high confidence); "
+        "queries 4 and 5 target distinct named method families, benchmarks, datasets, or application subfields. "
+        "Every query must remain unambiguous in the central research topic. Do not emit "
         "generic fragments, instructions, dates, venue names alone, or the forbidden survey title. "
-        "Prefer terminology likely to occur in titles and abstracts.\n\n"
+        "Never invent a paper title: when uncertain, use technical keywords instead. Prefer terminology likely "
+        "to occur in titles and abstracts.\n\n"
         f"TASK:\n{task.prompt}\n\nFORBIDDEN SURVEY:\n{task.title}\n\n"
         f"DETERMINISTIC CANDIDATES:\n{deterministic}"
     )
     try:
         value = model.generate_json(
             [{"role": "user", "content": prompt}], temperature=0,
-            max_tokens=4096, cache_namespace=f"search-planner-v2:{model.settings.model}",
+            max_tokens=4096, cache_namespace=f"search-planner-v3:{model.settings.model}",
         )
         planned = value.get("queries", []) if isinstance(value, dict) else value
     except Exception as exc:
