@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 import json
-from http.client import RemoteDisconnected
+from http.client import IncompleteRead, RemoteDisconnected
 import re
 import time
 from typing import Any
@@ -57,7 +57,7 @@ class MiniMaxClient:
                     last_error = RuntimeError(f"MiniMax API HTTP {exc.code}: {detail}")
                     if exc.code not in {429, 500, 502, 503, 504, 529} or attempt == 7:
                         raise last_error from exc
-                except (URLError, RemoteDisconnected, ConnectionResetError, TimeoutError) as exc:
+                except (URLError, IncompleteRead, RemoteDisconnected, ConnectionResetError, TimeoutError) as exc:
                     # URLError exposes ``reason``, while socket/http.client
                     # exceptions (notably RemoteDisconnected) do not.
                     detail = getattr(exc, "reason", str(exc))
