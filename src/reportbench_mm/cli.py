@@ -144,8 +144,7 @@ def command_evaluate_statements(args: argparse.Namespace) -> None:
     model = MiniMaxClient(settings, cache)
     scholar = scholar_provider(cache, settings)
     output_root = Path(args.output)
-    metric_files: list[Path] = []
-    for result_path in sorted(Path(args.run_root).glob("*/result.json")):
+    def evaluate_one(result_path: Path) -> tuple[Path, dict]:
         result = json.loads(result_path.read_text(encoding="utf-8"))
         task = result["task"]
         cited = cited_statements(result["response"])
@@ -163,8 +162,24 @@ def command_evaluate_statements(args: argparse.Namespace) -> None:
         metric_path = output_root / f"{task['arxiv_id']}.json"
         metric_path.parent.mkdir(parents=True, exist_ok=True)
         metric_path.write_text(json.dumps(metrics, ensure_ascii=False, indent=2), encoding="utf-8")
-        metric_files.append(metric_path)
-        print(f"{task['arxiv_id']}: cited={metrics['cited_match_rate']:.3f}, noncited={metrics['noncited_factual_accuracy']:.3f}")
+        return metric_path, metrics
+
+    result_paths = sorted(Path(args.run_root).glob("*/result.json"))
+    metric_files: list[Path] = []
+    with ThreadPoolExecutor(max_workers=max(1, args.workers)) as executor:
+        futures = {executor.submit(evaluate_one, path): path for path in result_paths}
+        for future in as_completed(futures):
+            path = futures[future]
+            try:
+                metric_path, metrics = future.result()
+            except Exception as exc:
+                print(f"{path.parent.name}: evaluation failed: {exc}", flush=True)
+                continue
+            metric_files.append(metric_path)
+            print(
+                f"{metrics['arxiv_id']}: cited={metrics['cited_match_rate']:.3f}, "
+                f"noncited={metrics['noncited_factual_accuracy']:.3f}", flush=True,
+            )
     if metric_files:
         print(json.dumps(aggregate(metric_files, output_root / "summary.json"), indent=2))
 
@@ -210,6 +225,7 @@ def build_parser() -> argparse.ArgumentParser:
     statements.add_argument("--output", required=True)
     statements.add_argument("--votes", type=int, default=3)
     statements.add_argument("--max-noncited", type=int, default=20)
+    statements.add_argument("--workers", type=int, default=1, help="Concurrent task evaluators")
     statements.set_defaults(func=command_evaluate_statements)
     return parser
 
