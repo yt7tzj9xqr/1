@@ -21,7 +21,7 @@ class CompositeScholarProvider:
                 # MiniMax Coding Plan search is the free replacement for the
                 # paper's SerpAPI. Avoid exhausting anonymous scholarly APIs
                 # when it already returned a complete search page.
-                if provider_index == 0 and papers:
+                if provider_index == 0 and type(provider).__name__ == "MiniMaxSearchProvider" and papers:
                     return papers[:limit]
             except Exception as exc:
                 errors.append(f"{type(provider).__name__}: {exc}")
