@@ -82,12 +82,14 @@ def command_run_rag(args: argparse.Namespace) -> None:
     settings = Settings.load()
     tasks = selected_tasks(args.tasks, args.limit, args.ids)
     if not args.execute:
-        print(json.dumps({"status": "dry-run", "model": settings.model, "system": "citation-rag", "tasks": [t.arxiv_id for t in tasks]}, indent=2))
+        print(json.dumps({"status": "dry-run", "model": settings.model, "system": args.system, "tasks": [t.arxiv_id for t in tasks]}, indent=2))
         return
     cache = JsonCache(settings.root / "cache" / "runtime.sqlite3")
     model = MiniMaxClient(settings, cache)
     pipeline = CitationRagPipeline(settings, model, scholar_provider(cache, settings))
-    runner = ExperimentRunner(settings.root / "runs", settings.model, "citation-rag")
+    if not args.system or any(char not in "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-_" for char in args.system):
+        raise ValueError("--system may contain only letters, digits, hyphens, and underscores")
+    runner = ExperimentRunner(settings.root / "runs", settings.model, args.system)
     summary = {"completed": 0, "skipped": 0, "failed": 0}
     for task in tasks:
         status = runner.run_task(task, pipeline, overwrite=args.overwrite)
@@ -171,6 +173,7 @@ def build_parser() -> argparse.ArgumentParser:
     rag.add_argument("--tasks", default="data/subsets/reportbench_30.jsonl")
     rag.add_argument("--limit", type=int, default=1)
     rag.add_argument("--ids", default="", help="Comma-separated arXiv IDs to run")
+    rag.add_argument("--system", default="citation-rag", help="Result directory label, e.g. citation-rag-v6")
     rag.add_argument("--execute", action="store_true")
     rag.add_argument("--overwrite", action="store_true")
     rag.set_defaults(func=command_run_rag)
