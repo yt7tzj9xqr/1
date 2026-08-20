@@ -3,10 +3,34 @@ from __future__ import annotations
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import date
 import re
+from urllib.parse import urlparse
 
 from .models import MiniMaxClient
 from .providers.openalex import search_queries
 from .schemas import Paper, Task
+
+
+NON_SCHOLARLY_TITLE_RE = re.compile(
+    r"^(?:client challenge|verifying your browser|what is |the illustrated |awesome[- :]|pubmed\.ncbi\.nlm\.nih\.gov$)"
+    r"|\b(?:paper explained|info for participants|smart speech therapy llc)\b",
+    re.I,
+)
+
+
+def canonical_search_title(value: str) -> str:
+    value = re.sub(r"^\[(?:19|20)?\d{2,4}\.\d+(?:v\d+)?\]\s*", "", value.strip())
+    value = re.sub(r"^(?:GitHub\s+-\s+[^:]+:\s*|[^ /]+/[^ ]+\s+-\s+)", "", value, flags=re.I)
+    value = re.sub(r"\s+(?:\||»|-)\s+(?:Request PDF|PMC|PubMed|Springer Nature|GitHub)\s*$", "", value, flags=re.I)
+    return " ".join(re.findall(r"[a-z0-9]+", value.lower()))
+
+
+def is_scholarly_candidate(paper: Paper) -> bool:
+    if NON_SCHOLARLY_TITLE_RE.search(paper.title.strip()):
+        return False
+    host = (urlparse(paper.url).hostname or "").lower().removeprefix("www.")
+    if host in {"aws.amazon.com", "ibm.com", "medium.com", "m.blog.naver.com"}:
+        return False
+    return len(canonical_search_title(paper.title).split()) >= 3
 
 
 def _clean_query(value: str) -> str:
@@ -79,7 +103,7 @@ def parallel_search(
                 print(f"search query {index + 1} failed: {exc}", flush=True)
     best: dict[str, tuple[int, int, Paper, set[int]]] = {}
     for query_index, rank, paper in rows:
-        title_key = " ".join(re.findall(r"[a-z0-9]+", paper.title.lower()))
+        title_key = canonical_search_title(paper.title)
         key = paper.doi.lower() if paper.doi else title_key
         if not key:
             continue

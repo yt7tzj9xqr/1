@@ -17,12 +17,24 @@ from reportbench_mm.evaluation.reference import maximum_matches, normalize_url, 
 from reportbench_mm.evaluation.statements import cited_statements, extract_noncited
 from reportbench_mm.evaluation.aggregate import aggregate
 from reportbench_mm.models.minimax import MiniMaxClient
-from reportbench_mm.retrieval import diverse_top_papers, parallel_search, plan_search_queries
+from reportbench_mm.retrieval import (
+    canonical_search_title, diverse_top_papers, is_scholarly_candidate, parallel_search,
+    plan_search_queries,
+)
 from reportbench_mm.web_reader import parse_academic_html
 from reportbench_mm.providers.minimax_search import MiniMaxSearchProvider
 
 
 class CoreTests(unittest.TestCase):
+    def test_search_result_cleanup_rejects_wrappers_and_nonscholarly_pages(self):
+        self.assertEqual(
+            canonical_search_title("[1503.02531] Distilling the Knowledge in a Neural Network"),
+            canonical_search_title("Distilling the Knowledge in a Neural Network"),
+        )
+        self.assertFalse(is_scholarly_candidate(Paper("x", "Client Challenge", 2020, "https://x.test", "text")))
+        self.assertFalse(is_scholarly_candidate(Paper("x", "What is Knowledge Distillation?", 2020, "https://ibm.com/a", "text")))
+        self.assertTrue(is_scholarly_candidate(Paper("x", "Distilling the Knowledge in a Neural Network", 2015, "https://arxiv.org/a", "text")))
+
     def test_minimax_search_uses_plain_query_and_local_cutoff(self):
         class CacheStub:
             def get_or_create(self, namespace, payload, factory):
@@ -148,6 +160,13 @@ class CoreTests(unittest.TestCase):
         ]
         kept = filter_papers(papers, forbidden_title="The Forbidden Survey", cutoff=cutoff)
         self.assertEqual([paper.paper_id for paper in kept], ["2"])
+        self.assertEqual(
+            filter_papers(
+                [Paper("4", "The Forbidden Survey ...", 2024, "u4")],
+                forbidden_title="The Forbidden Survey With A Much Longer Subtitle", cutoff=cutoff,
+            ),
+            [],
+        )
         self.assertEqual(normalize_title("A: Test!"), "a test")
         query = compact_query("Please help me research Knowledge Distillation and Student-Teacher Learning before June 2021")
         self.assertIn("Knowledge Distillation", query)

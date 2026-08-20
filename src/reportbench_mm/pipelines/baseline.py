@@ -4,7 +4,7 @@ from ..config import Settings
 from ..models import MiniMaxClient
 from ..prompts import BASELINE_SYSTEM, evidence_block
 from ..providers.openalex import extract_cutoff, filter_papers
-from ..retrieval import diverse_top_papers, parallel_search, plan_search_queries
+from ..retrieval import diverse_top_papers, is_scholarly_candidate, parallel_search, plan_search_queries
 from .rag import anchor_coverage, keywords, matches_anchor_phrase, score_paper
 from ..schemas import Paper, Task
 from ..web_reader import WebPageReader
@@ -34,7 +34,7 @@ class BaselinePipeline:
         ranked = sorted(
             (
                 paper for paper in found
-                if paper.abstract and paper.url and paper.relevance >= 0.06
+                if paper.abstract and paper.url and paper.relevance >= 0.06 and is_scholarly_candidate(paper)
             ),
             key=lambda paper: paper.relevance,
             reverse=True,

@@ -7,7 +7,7 @@ from ..config import Settings
 from ..models import MiniMaxClient
 from ..prompts import RAG_SYSTEM, evidence_block
 from ..providers.openalex import extract_cutoff, filter_papers, search_queries
-from ..retrieval import diverse_top_papers, parallel_search, plan_search_queries
+from ..retrieval import diverse_top_papers, is_scholarly_candidate, parallel_search, plan_search_queries
 from ..schemas import Paper, Task
 from ..web_reader import WebPageReader
 
@@ -174,7 +174,7 @@ class CitationRagPipeline:
             per_query=self.settings.search_results_per_query, workers=self.settings.search_workers,
         )
         seeds = filter_papers(seeds, forbidden_title=task.title, cutoff=cutoff)
-        seeds = [paper for paper in seeds if paper.abstract and paper.url]
+        seeds = [paper for paper in seeds if paper.abstract and paper.url and is_scholarly_candidate(paper)]
         for paper in seeds:
             semantic = score_paper(paper, terms)
             rank_bonus = 1.0 / (1.0 + max(0, paper.search_rank))

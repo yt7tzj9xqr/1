@@ -229,7 +229,11 @@ def filter_papers(papers: list[Paper], *, forbidden_title: str, cutoff: date | N
     accepted: list[Paper] = []
     for paper in papers:
         title = normalize_title(paper.title)
-        if not title or title == forbidden or title in seen:
+        forbidden_overlap = (
+            len(title) >= 18
+            and (forbidden.startswith(title) or title.startswith(forbidden))
+        )
+        if not title or title == forbidden or forbidden_overlap or title in seen:
             continue
         if cutoff and paper.year and paper.year > cutoff.year:
             continue
