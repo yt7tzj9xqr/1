@@ -60,6 +60,6 @@ class BaselinePipeline:
         )
         report = self.model.generate(
             [{"role": "system", "content": BASELINE_SYSTEM}, {"role": "user", "content": user}],
-            cache_namespace=f"baseline-report-v2:{self.settings.model}",
+            cache_namespace=f"baseline-report-v3:{self.settings.model}",
         )
         return report, papers

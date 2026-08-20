@@ -56,7 +56,7 @@ class MiniMaxSearchProvider:
         for index, item in enumerate(data.get("organic") or []):
             title = re.sub(r"\s+", " ", item.get("title") or "").strip()
             title = re.sub(r"^(?:\(PDF\)|\[PDF\])\s*", "", title, flags=re.I)
-            title = re.sub(r"^\[(?:19|20)?\d{2}\.\d+(?:v\d+)?\]\s*", "", title)
+            title = re.sub(r"^\[\d{4}\.\d+(?:v\d+)?\]\s*", "", title)
             title = re.sub(r"\s+(?:-|\|)\s+(?:PMC|PubMed|Springer Nature)\s*$", "", title, flags=re.I)
             url = item.get("link") or ""
             snippet = re.sub(r"\s+", " ", item.get("snippet") or "").strip()

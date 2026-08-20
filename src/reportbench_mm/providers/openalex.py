@@ -229,9 +229,13 @@ def filter_papers(papers: list[Paper], *, forbidden_title: str, cutoff: date | N
     accepted: list[Paper] = []
     for paper in papers:
         title = normalize_title(paper.title)
+        title_without_identifier = re.sub(r"^\d{4}\s+\d+\s+", "", title)
         forbidden_overlap = (
-            len(title) >= 18
-            and (forbidden.startswith(title) or title.startswith(forbidden))
+            len(title_without_identifier) >= 18
+            and (
+                forbidden.startswith(title_without_identifier)
+                or title_without_identifier.startswith(forbidden)
+            )
         )
         if not title or title == forbidden or forbidden_overlap or title in seen:
             continue

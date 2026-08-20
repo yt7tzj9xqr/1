@@ -185,6 +185,13 @@ class CoreTests(unittest.TestCase):
             ),
             [],
         )
+        self.assertEqual(
+            filter_papers(
+                [Paper("5", "[2310.12986] The Forbidden Survey With A Much ...", 2023, "u5")],
+                forbidden_title="The Forbidden Survey With A Much Longer Subtitle", cutoff=cutoff,
+            ),
+            [],
+        )
         self.assertEqual(normalize_title("A: Test!"), "a test")
         query = compact_query("Please help me research Knowledge Distillation and Student-Teacher Learning before June 2021")
         self.assertIn("Knowledge Distillation", query)
