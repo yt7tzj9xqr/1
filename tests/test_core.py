@@ -15,6 +15,7 @@ from reportbench_mm.config import Settings
 from reportbench_mm.providers.composite import CompositeScholarProvider
 from reportbench_mm.evaluation.reference import maximum_matches, normalize_url, title_match
 from reportbench_mm.evaluation.statements import cited_statements
+from reportbench_mm.evaluation.aggregate import aggregate
 
 
 class CoreTests(unittest.TestCase):
@@ -147,6 +148,28 @@ class CoreTests(unittest.TestCase):
         items = cited_statements("A factual claim (https://example.org/paper). Another sentence.")
         self.assertEqual(len(items), 1)
         self.assertEqual(items[0]["url"], "https://example.org/paper")
+
+    def test_aggregate_reports_micro_and_nonempty_metrics(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            rows = [
+                {"reference_matches": 1, "reference_count": 2, "ground_truth_count": 10,
+                 "cited_supported": 3, "cited_count": 4, "noncited_correct": 0,
+                 "noncited_count": 0, "noncited_factual_accuracy": 0},
+                {"reference_matches": 2, "reference_count": 3, "ground_truth_count": 5,
+                 "cited_supported": 1, "cited_count": 2, "noncited_correct": 2,
+                 "noncited_count": 2, "noncited_factual_accuracy": 1},
+            ]
+            paths = []
+            for index, row in enumerate(rows):
+                path = root / f"{index}.json"
+                path.write_text(json.dumps(row), encoding="utf-8")
+                paths.append(path)
+            summary = aggregate(paths, root / "summary.json")
+            self.assertEqual(summary["reference_micro_precision"], 3 / 5)
+            self.assertEqual(summary["reference_micro_recall"], 3 / 15)
+            self.assertEqual(summary["noncited_micro_accuracy"], 1.0)
+            self.assertEqual(summary["noncited_nonempty_task_count"], 1)
 
 
 if __name__ == "__main__":
