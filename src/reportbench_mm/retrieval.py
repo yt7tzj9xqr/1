@@ -14,7 +14,8 @@ def _clean_query(value: str) -> str:
         r"\b(?:before|on or before|published before|published on or before|ensure|reference materials)\b",
         value, maxsplit=1, flags=re.I,
     )[0]
-    return " ".join(re.findall(r"[A-Za-z0-9][A-Za-z0-9+./-]*", value))[:160].strip()
+    words = re.findall(r"[A-Za-z0-9][A-Za-z0-9+./-]*", value)
+    return " ".join(words[:10])[:160].strip()
 
 
 def plan_search_queries(task: Task, model: MiniMaxClient, limit: int = 5) -> list[str]:

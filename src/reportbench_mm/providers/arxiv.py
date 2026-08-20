@@ -29,8 +29,10 @@ class ArxivProvider:
                 delay = 3.1 - (time.monotonic() - self._last_request)
                 if delay > 0:
                     time.sleep(delay)
+                terms = [term for term in re.findall(r"[A-Za-z0-9-]{3,}", query)][:5]
+                search_query = " AND ".join(f"all:{term}" for term in terms)
                 params = {
-                    "search_query": f'all:"{query.replace(chr(34), "")}"',
+                    "search_query": search_query,
                     "start": 0, "max_results": min(limit, 30), "sortBy": "relevance",
                     "sortOrder": "descending",
                 }
