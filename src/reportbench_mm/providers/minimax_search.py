@@ -19,7 +19,8 @@ class MiniMaxSearchProvider:
         self.cache, self.api_key, self.base_url, self.timeout = cache, api_key, base_url.rstrip("/"), timeout
 
     def search(self, query: str, *, cutoff: date | None, limit: int = 20) -> list[Paper]:
-        payload = {"q": query}
+        search_query = f"{query} before:{cutoff.isoformat()}" if cutoff else query
+        payload = {"q": search_query}
 
         def request() -> dict[str, Any]:
             req = Request(
@@ -48,7 +49,7 @@ class MiniMaxSearchProvider:
             url = item.get("link") or ""
             snippet = re.sub(r"\s+", " ", item.get("snippet") or "").strip()
             raw_date = str(item.get("date") or "")
-            match = re.search(r"(?:19|20)\d{2}", raw_date)
+            match = re.search(r"(?:19|20)\d{2}", f"{raw_date} {title} {snippet}")
             year = int(match.group()) if match else None
             if cutoff and year and year > cutoff.year:
                 continue

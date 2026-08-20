@@ -13,11 +13,16 @@ class CompositeScholarProvider:
         errors: list[str] = []
         pages: list[list[Paper]] = []
         seen: set[str] = set()
-        for provider in self.providers:
+        for provider_index, provider in enumerate(self.providers):
             try:
                 papers = provider.search(query, cutoff=cutoff, limit=limit)
                 if papers:
                     pages.append(papers)
+                # MiniMax Coding Plan search is the free replacement for the
+                # paper's SerpAPI. Avoid exhausting anonymous scholarly APIs
+                # when it already returned a complete search page.
+                if provider_index == 0 and len(papers) >= min(limit, max(5, limit // 2)):
+                    return papers[:limit]
             except Exception as exc:
                 errors.append(f"{type(provider).__name__}: {exc}")
                 print(f"scholar fallback: {errors[-1]}", flush=True)
