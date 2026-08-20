@@ -147,6 +147,28 @@ def extract_noncited(report: str, cited: list[dict], model: MiniMaxClient, limit
             value = value.get("statements", [])
         return [str(item).strip() for item in value if str(item).strip()]
 
+    # Reuse successful legacy whole-report cache entries. On a real length failure,
+    # fall through to bounded v4 batches instead of invalidating prior evaluations.
+    try:
+        legacy_prompt = (
+            "From CANDIDATES, select externally verifiable factual claims that lack a URL citation. "
+            "Exclude opinions, headings, common knowledge, vague statements, and methodological instructions. "
+            f"Return JSON {{\"statements\":[strings]}} with at most {limit} atomic claims.\n\n"
+            f"CANDIDATES:\n{json.dumps(candidates, ensure_ascii=False)}"
+        )
+        legacy = model.generate_json(
+            [{"role": "user", "content": legacy_prompt}], model=model.settings.judge_model,
+            temperature=0, max_tokens=16384,
+            cache_namespace=f"noncited-extract-v3:{model.settings.judge_model}",
+        )
+        if isinstance(legacy, dict):
+            legacy = legacy.get("statements", [])
+        return [str(item).strip() for item in legacy if str(item).strip()][:limit]
+    except RuntimeError as exc:
+        if "API HTTP" in str(exc) or "connection failed" in str(exc):
+            raise
+        print(f"noncited legacy extraction split: {exc}", flush=True)
+
     # Smaller independent batches bound the prompt/response size. Recursive splitting
     # recovers provider length failures without dropping the whole task.
     selected: list[str] = []
