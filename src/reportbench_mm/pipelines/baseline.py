@@ -7,13 +7,15 @@ from ..providers.openalex import extract_cutoff, filter_papers
 from ..retrieval import diverse_top_papers, parallel_search, plan_search_queries
 from .rag import anchor_coverage, keywords, matches_anchor_phrase, score_paper
 from ..schemas import Paper, Task
+from ..web_reader import WebPageReader
 
 
 class BaselinePipeline:
-    def __init__(self, settings: Settings, model: MiniMaxClient, scholar):
+    def __init__(self, settings: Settings, model: MiniMaxClient, scholar, reader: WebPageReader | None = None):
         self.settings = settings
         self.model = model
         self.scholar = scholar
+        self.reader = reader
 
     def retrieve(self, task: Task) -> list[Paper]:
         cutoff = extract_cutoff(task.prompt)
@@ -39,7 +41,10 @@ class BaselinePipeline:
         )
         # Query planning already constrains every search to the central topic;
         # an exact first-query anchor discarded valid subtopic results.
-        return diverse_top_papers(ranked, len(queries), self.settings.baseline_papers)
+        selected = diverse_top_papers(ranked, len(queries), self.settings.baseline_papers)
+        if self.reader:
+            selected = self.reader.enrich_many(selected, self.settings.reader_workers)
+        return selected
 
     def run(self, task: Task) -> tuple[str, list[Paper]]:
         papers = self.retrieve(task)
@@ -52,6 +57,6 @@ class BaselinePipeline:
         )
         report = self.model.generate(
             [{"role": "system", "content": BASELINE_SYSTEM}, {"role": "user", "content": user}],
-            cache_namespace=f"baseline-report-v1:{self.settings.model}",
+            cache_namespace=f"baseline-report-v2:{self.settings.model}",
         )
         return report, papers

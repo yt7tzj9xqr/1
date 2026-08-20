@@ -33,6 +33,7 @@ class Settings:
     baseline_search_budget: int = 5
     search_results_per_query: int = 20
     search_workers: int = 5
+    reader_workers: int = 4
     rag_seed_count: int = 6
     rag_depth: int = 3
     rag_max_papers: int = 40

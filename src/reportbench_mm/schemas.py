@@ -31,6 +31,7 @@ class Paper:
     year: int | None
     url: str
     abstract: str = ""
+    full_text: str = ""
     doi: str = ""
     cited_by_count: int = 0
     referenced_work_ids: list[str] = field(default_factory=list)

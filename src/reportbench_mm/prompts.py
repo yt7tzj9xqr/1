@@ -17,10 +17,12 @@ and do not add a References/Bibliography section: the inline URLs are the comple
 def evidence_block(papers, char_limit: int) -> str:
     blocks: list[str] = []
     total = 0
+    per_paper = max(1000, char_limit // max(1, len(papers)) - 220)
     for index, paper in enumerate(papers, 1):
+        evidence = (paper.full_text or paper.abstract)[:per_paper]
         text = (
             f"SOURCE {index}\nTitle: {paper.title}\nYear: {paper.year}\nURL: {paper.url}\n"
-            f"Citation count metadata: {paper.cited_by_count}\nAbstract/evidence: {paper.abstract}\n"
+            f"Citation count metadata: {paper.cited_by_count}\nSource evidence: {evidence}\n"
         )
         if total + len(text) > char_limit:
             break

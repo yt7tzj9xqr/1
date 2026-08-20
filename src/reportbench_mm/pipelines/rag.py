@@ -9,6 +9,7 @@ from ..prompts import RAG_SYSTEM, evidence_block
 from ..providers.openalex import extract_cutoff, filter_papers, search_queries
 from ..retrieval import diverse_top_papers, parallel_search, plan_search_queries
 from ..schemas import Paper, Task
+from ..web_reader import WebPageReader
 
 
 STOP_WORDS = {
@@ -155,10 +156,11 @@ def sanitize_report(report: str) -> str:
 class CitationRagPipeline:
     """Builds an ephemeral, per-task citation graph; only raw API responses are cached."""
 
-    def __init__(self, settings: Settings, model: MiniMaxClient, scholar):
+    def __init__(self, settings: Settings, model: MiniMaxClient, scholar, reader: WebPageReader | None = None):
         self.settings = settings
         self.model = model
         self.scholar = scholar
+        self.reader = reader
 
     def retrieve(self, task: Task) -> list[Paper]:
         cutoff = extract_cutoff(task.prompt)
@@ -249,6 +251,8 @@ class CitationRagPipeline:
         writing_papers = select_writing_papers(papers, task, self.settings.rag_evidence_papers)
         if not writing_papers:
             raise RuntimeError(f"No high-confidence writing evidence found for {task.arxiv_id}")
+        if self.reader:
+            self.reader.enrich_many(writing_papers, self.settings.reader_workers)
         cards = evidence_block(writing_papers, self.settings.evidence_char_limit * 2)
         user = (
             f"RESEARCH TASK:\n{task.prompt}\n\nFORBIDDEN SURVEY:\n{task.title}\n\n"
@@ -266,7 +270,7 @@ class CitationRagPipeline:
         report = self.model.generate(
             [{"role": "system", "content": RAG_SYSTEM}, {"role": "user", "content": user}],
             max_tokens=self.settings.rag_output_tokens,
-            cache_namespace=f"citation-rag-report-v6:{self.settings.model}",
+            cache_namespace=f"citation-rag-report-v7:{self.settings.model}",
         )
         report = sanitize_report(report)
         report = normalize_source_citations(report, writing_papers)

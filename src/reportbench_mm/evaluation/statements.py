@@ -79,13 +79,13 @@ def evaluate_cited(result_path: Path, model: MiniMaxClient, votes: int = 3) -> d
     valid_indexes = []
     for index, item in enumerate(items):
         paper = source_by_url.get(item["url"])
-        if paper and paper.get("abstract"):
+        if paper and (paper.get("full_text") or paper.get("abstract")):
             valid_indexes.append(index)
             evidence_items.append({
                 "id": index,
                 "claim": item["statement"],
                 "source_title": paper.get("title"),
-                "source_text": paper.get("abstract"),
+                "source_text": paper.get("full_text") or paper.get("abstract"),
             })
     vote_rows: list[list[bool]] = []
     if evidence_items:

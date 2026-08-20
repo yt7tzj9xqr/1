@@ -18,9 +18,23 @@ from reportbench_mm.evaluation.statements import cited_statements, extract_nonci
 from reportbench_mm.evaluation.aggregate import aggregate
 from reportbench_mm.models.minimax import MiniMaxClient
 from reportbench_mm.retrieval import diverse_top_papers, parallel_search, plan_search_queries
+from reportbench_mm.web_reader import parse_academic_html
 
 
 class CoreTests(unittest.TestCase):
+    def test_page_reader_prefers_citation_metadata_and_extracts_body(self):
+        parsed = parse_academic_html(
+            '<html><head><title>Short - Site</title>'
+            '<meta name="citation_title" content="A Complete Academic Paper Title">'
+            '<meta name="citation_abstract" content="This abstract contains sufficiently detailed scholarly evidence for testing.">'
+            '</head><body><nav><p>This navigation paragraph must be ignored completely.</p></nav>'
+            '<p>This body paragraph contains additional experimental evidence and useful scientific details.</p>'
+            '<script>not evidence</script></body></html>'
+        )
+        self.assertEqual(parsed["title"], "A Complete Academic Paper Title")
+        self.assertIn("experimental evidence", parsed["text"])
+        self.assertNotIn("navigation", parsed["text"])
+
     def test_search_planner_rejects_generic_and_duplicate_queries(self):
         class PlannerSettings:
             model = "planner"

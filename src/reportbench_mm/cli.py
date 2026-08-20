@@ -19,6 +19,7 @@ from .evaluation.reference import evaluate_reference
 from .evaluation.aggregate import aggregate
 from .evaluation.statements import cited_statements, evaluate_cited, evaluate_noncited, extract_noncited
 from .providers.openalex import extract_cutoff
+from .web_reader import WebPageReader
 
 
 def scholar_provider(cache: JsonCache, settings: Settings) -> CompositeScholarProvider:
@@ -74,7 +75,9 @@ def command_run_baseline(args: argparse.Namespace) -> None:
         return
     cache = JsonCache(settings.root / "cache" / "runtime.sqlite3")
     model = MiniMaxClient(settings, cache)
-    pipeline = BaselinePipeline(settings, model, scholar_provider(cache, settings))
+    pipeline = BaselinePipeline(
+        settings, model, scholar_provider(cache, settings), WebPageReader(cache)
+    )
     if not args.system or any(char not in "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-_" for char in args.system):
         raise ValueError("--system may contain only letters, digits, hyphens, and underscores")
     runner = ExperimentRunner(settings.root / "runs", settings.model, args.system)
@@ -97,7 +100,9 @@ def command_run_rag(args: argparse.Namespace) -> None:
         return
     cache = JsonCache(settings.root / "cache" / "runtime.sqlite3")
     model = MiniMaxClient(settings, cache)
-    pipeline = CitationRagPipeline(settings, model, scholar_provider(cache, settings))
+    pipeline = CitationRagPipeline(
+        settings, model, scholar_provider(cache, settings), WebPageReader(cache)
+    )
     if not args.system or any(char not in "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-_" for char in args.system):
         raise ValueError("--system may contain only letters, digits, hyphens, and underscores")
     runner = ExperimentRunner(settings.root / "runs", settings.model, args.system)
