@@ -12,6 +12,7 @@ from reportbench_mm.dataset import load_tasks
 from reportbench_mm.evaluation.reference import load_gt_titles, maximum_matches
 from reportbench_mm.models import MiniMaxClient
 from reportbench_mm.pipelines import BaselinePipeline
+from reportbench_mm.web_reader import WebPageReader
 
 
 def main() -> None:
@@ -23,7 +24,9 @@ def main() -> None:
 
     settings = Settings.load()
     cache = JsonCache(settings.root / "cache" / "runtime.sqlite3")
-    pipeline = BaselinePipeline(settings, MiniMaxClient(settings, cache), scholar_provider(cache, settings))
+    pipeline = BaselinePipeline(
+        settings, MiniMaxClient(settings, cache), scholar_provider(cache, settings), WebPageReader(cache)
+    )
     tasks = load_tasks(Path(args.tasks))[: args.limit]
     rows = []
     with ThreadPoolExecutor(max_workers=max(1, args.workers)) as executor:
