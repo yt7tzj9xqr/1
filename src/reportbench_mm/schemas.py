@@ -37,6 +37,9 @@ class Paper:
     depth: int = 0
     relevance: float = 0.0
     source: str = "openalex"
+    search_query_index: int = -1
+    search_rank: int = 999
+    query_hits: int = 1
 
     def to_dict(self) -> dict[str, Any]:
         return asdict(self)

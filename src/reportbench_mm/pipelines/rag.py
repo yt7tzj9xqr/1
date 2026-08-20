@@ -7,7 +7,7 @@ from ..config import Settings
 from ..models import MiniMaxClient
 from ..prompts import RAG_SYSTEM, evidence_block
 from ..providers.openalex import extract_cutoff, filter_papers, search_queries
-from ..retrieval import parallel_search, plan_search_queries
+from ..retrieval import diverse_top_papers, parallel_search, plan_search_queries
 from ..schemas import Paper, Task
 
 
@@ -174,9 +174,11 @@ class CitationRagPipeline:
         seeds = filter_papers(seeds, forbidden_title=task.title, cutoff=cutoff)
         seeds = [paper for paper in seeds if paper.abstract and paper.url]
         for paper in seeds:
-            paper.relevance = score_paper(paper, terms)
+            semantic = score_paper(paper, terms)
+            rank_bonus = 1.0 / (1.0 + max(0, paper.search_rank))
+            paper.relevance = 0.72 * semantic + 0.23 * rank_bonus + 0.05 * min(2, paper.query_hits) / 2
         seeds.sort(key=lambda paper: paper.relevance, reverse=True)
-        frontier = seeds[: self.settings.rag_seed_count]
+        frontier = diverse_top_papers(seeds, len(queries), self.settings.rag_seed_count)
         graph: dict[str, Paper] = {paper.paper_id: paper for paper in frontier}
 
         # Inspect a broader set of references, then admit only the best global

@@ -17,7 +17,7 @@ from reportbench_mm.evaluation.reference import maximum_matches, normalize_url, 
 from reportbench_mm.evaluation.statements import cited_statements, extract_noncited
 from reportbench_mm.evaluation.aggregate import aggregate
 from reportbench_mm.models.minimax import MiniMaxClient
-from reportbench_mm.retrieval import parallel_search, plan_search_queries
+from reportbench_mm.retrieval import diverse_top_papers, parallel_search, plan_search_queries
 
 
 class CoreTests(unittest.TestCase):
@@ -49,6 +49,18 @@ class CoreTests(unittest.TestCase):
 
         papers = parallel_search(Scholar(), ["query one", "query two"], cutoff=None, workers=2)
         self.assertEqual(len(papers), 1)
+
+    def test_diverse_selection_reserves_each_query(self):
+        papers = []
+        for query_index in range(3):
+            for rank in range(3):
+                paper = Paper(f"{query_index}-{rank}", f"Paper {query_index}-{rank}", 2020, "u", "a")
+                paper.search_query_index = query_index
+                paper.search_rank = rank
+                paper.relevance = 1.0 if query_index == 0 else 0.1
+                papers.append(paper)
+        selected = diverse_top_papers(papers, query_count=3, limit=6)
+        self.assertEqual({paper.search_query_index for paper in selected}, {0, 1, 2})
 
     def test_invalid_embedded_json_is_a_recoverable_runtime_error(self):
         class BrokenJsonClient(MiniMaxClient):

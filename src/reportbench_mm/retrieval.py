@@ -59,7 +59,7 @@ def parallel_search(
     scholar, queries: list[str], *, cutoff: date | None, per_query: int = 20, workers: int = 5,
 ) -> list[Paper]:
     """Execute the paper's five-search budget concurrently and merge by DOI/title."""
-    rows: list[tuple[int, Paper]] = []
+    rows: list[tuple[int, int, Paper]] = []
     with ThreadPoolExecutor(max_workers=max(1, min(workers, len(queries)))) as executor:
         futures = {
             executor.submit(scholar.search, query, cutoff=cutoff, limit=per_query): index
@@ -68,16 +68,51 @@ def parallel_search(
         for future in as_completed(futures):
             index = futures[future]
             try:
-                rows.extend((index, paper) for paper in future.result())
+                rows.extend((index, rank, paper) for rank, paper in enumerate(future.result()))
             except Exception as exc:
                 print(f"search query {index + 1} failed: {exc}", flush=True)
-    best: dict[str, tuple[int, Paper]] = {}
-    for query_index, paper in rows:
+    best: dict[str, tuple[int, int, Paper, set[int]]] = {}
+    for query_index, rank, paper in rows:
         title_key = " ".join(re.findall(r"[a-z0-9]+", paper.title.lower()))
         key = paper.doi.lower() if paper.doi else title_key
         if not key:
             continue
         previous = best.get(key)
-        if previous is None or query_index < previous[0]:
-            best[key] = (query_index, paper)
-    return [paper for _, paper in sorted(best.values(), key=lambda item: item[0])]
+        if previous is None:
+            best[key] = (query_index, rank, paper, {query_index})
+        else:
+            previous[3].add(query_index)
+            if rank < previous[1]:
+                best[key] = (query_index, rank, paper, previous[3])
+    papers: list[Paper] = []
+    for query_index, rank, paper, query_hits in sorted(best.values(), key=lambda item: (item[0], item[1])):
+        paper.search_query_index = query_index
+        paper.search_rank = rank
+        paper.query_hits = len(query_hits)
+        papers.append(paper)
+    return papers
+
+
+def diverse_top_papers(papers: list[Paper], query_count: int, limit: int) -> list[Paper]:
+    """Reserve top slots per query before globally filling the evidence budget."""
+    selected: list[Paper] = []
+    selected_ids: set[str] = set()
+    per_query = max(1, limit // max(1, query_count))
+    for query_index in range(query_count):
+        candidates = sorted(
+            (paper for paper in papers if paper.search_query_index == query_index),
+            key=lambda paper: (paper.search_rank, -paper.relevance),
+        )
+        for paper in candidates[:per_query]:
+            key = paper.doi or paper.paper_id or paper.title.lower()
+            if key not in selected_ids:
+                selected_ids.add(key)
+                selected.append(paper)
+    for paper in sorted(papers, key=lambda item: item.relevance, reverse=True):
+        key = paper.doi or paper.paper_id or paper.title.lower()
+        if key not in selected_ids:
+            selected_ids.add(key)
+            selected.append(paper)
+        if len(selected) >= limit:
+            break
+    return selected[:limit]

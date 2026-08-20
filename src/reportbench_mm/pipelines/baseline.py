@@ -4,7 +4,7 @@ from ..config import Settings
 from ..models import MiniMaxClient
 from ..prompts import BASELINE_SYSTEM, evidence_block
 from ..providers.openalex import extract_cutoff, filter_papers
-from ..retrieval import parallel_search, plan_search_queries
+from ..retrieval import diverse_top_papers, parallel_search, plan_search_queries
 from .rag import anchor_coverage, keywords, matches_anchor_phrase, score_paper
 from ..schemas import Paper, Task
 
@@ -26,7 +26,9 @@ class BaselinePipeline:
         found = filter_papers(found, forbidden_title=task.title, cutoff=cutoff)
         query_terms = keywords(task.prompt)
         for paper in found:
-            paper.relevance = score_paper(paper, query_terms)
+            semantic = score_paper(paper, query_terms)
+            rank_bonus = 1.0 / (1.0 + max(0, paper.search_rank))
+            paper.relevance = 0.72 * semantic + 0.23 * rank_bonus + 0.05 * min(2, paper.query_hits) / 2
         ranked = sorted(
             (
                 paper for paper in found
@@ -37,7 +39,7 @@ class BaselinePipeline:
         )
         # Query planning already constrains every search to the central topic;
         # an exact first-query anchor discarded valid subtopic results.
-        return ranked[: self.settings.baseline_papers]
+        return diverse_top_papers(ranked, len(queries), self.settings.baseline_papers)
 
     def run(self, task: Task) -> tuple[str, list[Paper]]:
         papers = self.retrieve(task)
