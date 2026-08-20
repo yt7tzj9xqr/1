@@ -45,6 +45,10 @@ def writing_score(paper: Paper, query_terms: set[str], anchor_terms: set[str]) -
     title_overlap = len(keywords(paper.title) & query_terms) / max(1, len(query_terms))
     impact = min(1.0, math.log1p(max(0, paper.cited_by_count)) / 10.0)
     secondary_penalty = 0.09 if paper.depth == 0 and SECONDARY_LITERATURE_RE.search(paper.title) else 0.0
+    # A highly lexical direct-search match is not necessarily a canonical paper.
+    # Keep low-impact work available, but rank it below established citation-path
+    # evidence when both are otherwise relevant.
+    low_impact_direct_penalty = 0.13 if paper.depth == 0 and paper.cited_by_count < 100 else 0.0
     return (
         0.42 * paper.relevance
         + 0.25 * coverage
@@ -52,6 +56,7 @@ def writing_score(paper: Paper, query_terms: set[str], anchor_terms: set[str]) -
         + 0.17 * impact
         - 0.18 * max(0, paper.depth - 1)
         - secondary_penalty
+        - low_impact_direct_penalty
     )
 
 
@@ -254,7 +259,7 @@ class CitationRagPipeline:
             f"APPLICATION DOMAIN:\n{task.application_domain}\n\n"
             "EVIDENCE CARDS (each card is an allowed source; ignore citation-count metadata as factual evidence):\n"
             f"{cards}\n\n"
-            "REFERENCE BUDGET: Cite 6-10 distinct sources. Select the most central primary or canonical works; do not cite a source merely "
+            "REFERENCE BUDGET: Cite 6-8 distinct sources. Select the most central primary or canonical works; do not cite a source merely "
             "because it is highly cited, and avoid secondary surveys when a supplied primary source supports the same point.\n\n"
             "LENGTH: Write a focused survey of 800-1,050 English words. This is a hard maximum. Prioritize the task's central taxonomy and "
             "strongest evidence; omit tangential material.\n\n"

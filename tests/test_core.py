@@ -89,6 +89,11 @@ class CoreTests(unittest.TestCase):
         selected = select_writing_papers([deep, canonical, direct], task, 10)
         self.assertEqual({paper.paper_id for paper in selected}, {"d", "c"})
         self.assertGreater(writing_score(canonical, keywords(task.prompt), {"knowledge", "distillation"}), 0)
+        weak_direct = Paper("w", "Knowledge Distillation Method", 2020, "u4", "Teacher student", cited_by_count=5, depth=0, relevance=canonical.relevance)
+        self.assertGreater(
+            writing_score(canonical, keywords(task.prompt), {"knowledge", "distillation"}),
+            writing_score(weak_direct, keywords(task.prompt), {"knowledge", "distillation"}),
+        )
 
     def test_source_labels_are_normalized_to_urls(self):
         papers = [Paper("1", "Paper One", 2020, "https://example.org/one")]
