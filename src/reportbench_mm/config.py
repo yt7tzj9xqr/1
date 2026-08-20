@@ -29,7 +29,9 @@ class Settings:
     openalex_mailto: str
     request_timeout: int = 300
     max_output_tokens: int = 32768
-    rag_output_tokens: int = 65536
+    # The writer is capped at 1,050 words. A 65k completion allowance caused
+    # multi-minute M3 tail latency without adding report content.
+    rag_output_tokens: int = 24576
     baseline_search_budget: int = 5
     search_results_per_query: int = 20
     search_workers: int = 5
