@@ -332,10 +332,30 @@ class CitationRagPipeline:
             if "finish_reason=length" not in str(exc):
                 raise
             print("RAG writer exhausted its reasoning budget; retrying once with the full completion budget", flush=True)
-            report = self.model.generate(
-                messages, max_tokens=self.settings.max_output_tokens,
-                cache_namespace=f"citation-rag-report-v8-length-retry:{self.settings.model}",
-            )
+            try:
+                report = self.model.generate(
+                    messages, max_tokens=self.settings.max_output_tokens,
+                    cache_namespace=f"citation-rag-report-v8-length-retry:{self.settings.model}",
+                )
+            except RuntimeError as retry_exc:
+                if "finish_reason=length" not in str(retry_exc):
+                    raise
+                # A small minority of M3 calls spend the entire 32k allowance
+                # in hidden reasoning. Preserve the same source ordering but
+                # shorten the evidence context for one final deterministic
+                # recovery attempt instead of failing the experiment task.
+                compact_cards = evidence_block(
+                    writing_papers[:12], self.settings.evidence_char_limit,
+                )
+                compact_user = user.replace(cards, compact_cards).replace(
+                    "800-1,050 English words", "650-900 English words",
+                )
+                print("RAG full-budget retry also exhausted; using compact evidence recovery", flush=True)
+                report = self.model.generate(
+                    [{"role": "system", "content": RAG_SYSTEM}, {"role": "user", "content": compact_user}],
+                    temperature=0, max_tokens=self.settings.max_output_tokens,
+                    cache_namespace=f"citation-rag-report-v8-compact-recovery:{self.settings.model}",
+                )
         report = repair_grounded_report(
             report, writing_papers, self.model,
             f"citation-rag-evidence-repair-v1:{self.settings.model}", "600-800",
