@@ -83,7 +83,20 @@ RAG 相对本轮 baseline 的 reference precision 提高 10.3%，reference recal
 
 ## 当前冻结 baseline 候选（search-baseline-v10）
 
-`search-baseline-v10` 在统一质量门与方括号引用归位修复后完成 10/10 题，所有报告均超过 600 词且至少包含 8 个独立来源。其 reference precision 为 0.2350、recall 为 0.01298、平均引用 10.8 篇、总命中 25 篇；cited 宏平均为 0.7149、micro accuracy 为 0.7378、平均 28.6 条；non-cited raw macro 为 0.2792、micro accuracy 为 0.6825（43/63），5 个非空任务的宏平均为 0.5583。相对 v4，cited 宏平均从 0.5177 提升到 0.7149，non-cited micro 从 0.4146 提升到 0.6825；reference precision 从 0.2221 提升到 0.2350，但宏 recall 从 0.01704 降到 0.01298。该结果没有短报告或零引用报告造成的有利偏差，可作为当前公平 baseline；仍需用当前同一 commit 重跑 RAG 后才能形成最终配对主表。
+`search-baseline-v10` 在统一质量门与方括号引用归位修复后完成 10/10 题，所有报告均超过 600 词且至少包含 8 个独立来源。其 reference precision 为 0.2350、recall 为 0.01298、平均引用 10.8 篇、总命中 25 篇；cited 宏平均为 0.7112、micro accuracy 为 0.7343、平均 28.6 条；non-cited raw macro 为 0.2792、micro accuracy 为 0.6825（43/63），5 个非空任务的宏平均为 0.5583。相对 v4，cited 宏平均从 0.5177 提升到 0.7112，non-cited micro 从 0.4146 提升到 0.6825；reference precision 从 0.2221 提升到 0.2350，但宏 recall 从 0.01704 降到 0.01298。该结果没有短报告或零引用报告造成的有利偏差，可作为当前公平 baseline。
+
+## 最终冻结配对（c7f2f8c）
+
+最终 baseline-v10 与 citation-rag-v18 使用同一提交 `c7f2f8c`、同一固定 10 题和相同三票 M3 judge。Baseline 报告为 662--821 词，RAG 报告为 551--749 词；两组均为 10/10 完成、0 个空报告、0 个失败，36/36 单元测试通过。
+
+| 系统 | Ref. P | Ref. R | Ref. count | Gold hits | Cited match | Cited micro | Cited count | Non-cited raw macro | Non-cited micro | 非空任务 |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| M3 search-baseline-v10 | 0.2350 | 0.01298 | 10.8 | 25 | 0.7112 | 0.7343 | 28.6 | 0.2792 | 0.6825 (43/63) | 5/10 |
+| M3 citation-rag-v18 | **0.2613** | **0.02040** | **10.9** | **28** | **0.8993** | **0.9048** | 25.2 | 0.2267 | 0.5536 (31/56) | 4/10 |
+
+RAG 相对 baseline 的 reference precision 提高 11.2%，reference recall 提高 57.2%，gold reference 命中增加 3 篇，cited match 提高 0.1881。此前 v16 中 2004 题因报告坍缩导致 cited=0；修复后该题为 641 词且 cited=0.963，说明本轮针对空/短报告的修复已经生效。
+
+Non-cited 指标没有同步提高：RAG 的 56 条有效语句 micro accuracy 为 0.5536，低于 baseline 的 0.6825；raw macro 还受到 6 个空集合任务按 0 计分影响。RAG 的 non-cited 语句集中在 2204、2206、2306、2308 四题，其余任务几乎把全部事实绑定了引用。因此当前可以支持“RAG 提高 reference 和 cited grounding”，不能支持“三项指标全部提高”；下一轮应单独校准 non-cited 抽取与生成口径，不能通过删除语句或修改聚合方式制造提升。
 
 ## 可复现文件
 
@@ -92,8 +105,9 @@ RAG 相对本轮 baseline 的 reference precision 提高 10.3%，reference recal
 - 反馈搜索消融：`metrics/MiniMax-M3/search-baseline-v5/reference/` 与 `metrics/MiniMax-M3/search-baseline-v5/full/`
 - 混合免费检索 RAG 验证：`metrics/MiniMax-M3/citation-rag-v16/reference/` 与 `metrics/MiniMax-M3/citation-rag-v16/full/`
 - 当前冻结 baseline 候选：`metrics/MiniMax-M3/search-baseline-v10/reference/` 与 `metrics/MiniMax-M3/search-baseline-v10/full/`
+- 当前冻结 RAG：`metrics/MiniMax-M3/citation-rag-v18/reference/` 与 `metrics/MiniMax-M3/citation-rag-v18/full/`
 - 旧版对照：`metrics/MiniMax-M3/search-baseline-v3/` 与 `metrics/MiniMax-M3/citation-rag-v13/`
 - 生成结果和来源池：`runs/MiniMax-M3/<system>/<arxiv_id>/result.json`（默认不提交 Git）
 - 检索审计：`scripts/audit_live_retrieval.py`
 
-所有代码修改必须先通过 `PYTHONPATH=src python -m unittest discover -s tests -v`；当前 HEAD 为 35/35 通过。
+所有代码修改必须先通过 `PYTHONPATH=src python -m unittest discover -s tests -v`；冻结实验提交为 36/36 通过。

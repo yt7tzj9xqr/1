@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2204.10325",
+  "model": "MiniMax-M3",
+  "system": "citation-rag-v18",
+  "reference_precision": 0.0,
+  "reference_recall": 0.0,
+  "reference_count": 12,
+  "reference_matches": 0,
+  "ground_truth_count": 36,
+  "predicted_titles": [
+    "AI-based automated speech therapy tools for persons with speech sound disorder: a systematic literature review",
+    "Speech and language therapy for aphasia following stroke",
+    "Prospective Validation of Motor-Based Intervention with Automated Mispronunciation Detection of Rhotics in Residual Speech Sound Disorders",
+    "Stuttering Speech Disfluency Prediction using Explainable Attribution Vectors of Facial Muscle Movements",
+    "Deep-Learning-Based Automated Classification of Chinese Speech Sound Disorders",
+    "An automated tool for the assessment of childhood apraxia ...",
+    "Research Paper: Mobile Speech Therapy Application",
+    "Speech Therapy for Apraxia App - NACD International",
+    "Melodic intonation in the rehabilitation of Romanian aphasics with bucco-lingual apraxia.",
+    "Automatic Pronunciation Scoring And Mispronunciation ...",
+    "Role of ML in diagnosing and treating speech disorders",
+    "Automatic Speech and Voice Disorder Detection Using ..."
+  ]
+}

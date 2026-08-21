@@ -1,0 +1,186 @@
+{
+  "arxiv_id": "2310.12986",
+  "model": "MiniMax-M3",
+  "system": "citation-rag-v18",
+  "reference_precision": 0.0,
+  "reference_recall": 0.0,
+  "reference_count": 11,
+  "reference_matches": 0,
+  "ground_truth_count": 61,
+  "predicted_titles": [
+    "Image-Based Human Age Estimation by Manifold Learning and Locally Adjusted Robust Regression",
+    "Human Age Estimation With Regression on Discriminative Aging Manifold",
+    "Face manifold: manifold learning for synthetic face generation",
+    "Discriminating Joint Feature Analysis for Multimedia Data Understanding",
+    "Rank Flow Embedding for Unsupervised and Semi-Supervised Manifold Learning",
+    "Semi-supervised Feature Analysis by Mining Correlations among Multiple Tasks",
+    "Gait-based human age estimation using age group-dependent manifold learning and regression",
+    "Visual Domain Adaptation with Manifold Embedded Distribution Alignment",
+    "Estimating Visual Information From Audio Through Manifold Learning",
+    "Sparse Representation Classifier Guided Grassmann Reconstruction Metric Learning With Applications to Image Set Analysis",
+    "Image Classification Using Correlation Tensor Analysis"
+  ],
+  "cited_match_rate": 0.9090909090909091,
+  "cited_count": 22,
+  "cited_supported": 20,
+  "cited_details": [
+    {
+      "statement": "Facial image analysis for human age estimation has been motivated by potential applications such as human-computer interaction and multimedia communication [https://doi.org/10.1109/tip.2008.924280].",
+      "url": "https://doi.org/10.1109/tip.2008.924280",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The aging process is determined by not only the person's gene, but also many external factors, such as health, living style, living location, and weather conditions, and males and females may also age differently [https://doi.org/10.1109/tip.2008.924280].",
+      "url": "https://doi.org/10.1109/tip.2008.924280",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Recent studies on human faces in the HCI field reveal significant potentials for designing automatic age estimation systems via face image analysis, with success potentially bringing innovative HCI tools for human-centered multimedia communication [https://doi.org/10.1109/tmm.2008.921847].",
+      "url": "https://doi.org/10.1109/tmm.2008.921847",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "An age manifold learning scheme was introduced to extract face aging features from facial images and combined with a locally adjusted robust regressor, achieving improved accuracy over previous methods [https://doi.org/10.1109/tip.2008.924280].",
+      "url": "https://doi.org/10.1109/tip.2008.924280",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Age progression patterns have been extracted from a discriminant subspace learning algorithm and visualized as distinct manifold structures, with the dimensionality redundancy of the original image space significantly reduced through subspace learning, and represented by a multiple linear regression procedure with a quadratic model function [https://doi.org/10.1109/tmm.2008.921847].",
+      "url": "https://doi.org/10.1109/tmm.2008.921847",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Human age estimation from gait has been proposed for applications such as automatic customer counting for marketing research or automatic age-based access control restriction, because gait can be observable at a distance from a camera [https://www.semanticscholar.org/paper/b55438c64dcb2f52404152a90acecce2f7ded2d5].",
+      "url": "https://semanticscholar.org/paper/b55438c64dcb2f52404152a90acecce2f7ded2d5",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The aging process of gait significantly differs among age groups, including children, adults, and the elderly, and previous studies on gait-based human age estimation employ a single age group-independent estimation model that suffers from large estimation errors when age variation increases [https://www.semanticscholar.org/paper/b55438c64dcb2f52404152a90acecce2f7ded2d5].",
+      "url": "https://semanticscholar.org/paper/b55438c64dcb2f52404152a90acecce2f7ded2d5",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "An age group-dependent method has been proposed, in which age groups are first composed by clustering gait features along with their age labels, and a classifier is then learned to classify the gait features for multiple age groups using a directed acyclic graph support vector machine [https://www.semanticscholar.org/paper/b55438c64dcb2f52404152a90acecce2f7ded2d5].",
+      "url": "https://semanticscholar.org/paper/b55438c64dcb2f52404152a90acecce2f7ded2d5",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A semi-supervised feature analyzing framework combined l2,1-norm regularized feature selection with manifold learning to jointly select the most relevant features from all data points and was applied to image annotation, video concept detection, and 3-D motion data analysis [https://doi.org/10.1109/tmm.2012.2199293].",
+      "url": "https://doi.org/10.1109/tmm.2012.2199293",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "In this framework, manifold learning analyzes the feature space by exploiting both labeled and unlabeled data [https://doi.org/10.1109/tmm.2012.2199293].",
+      "url": "https://doi.org/10.1109/tmm.2012.2199293",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A semi-supervised feature selection framework that mines correlations among multiple tasks has been proposed for multimedia applications [https://arxiv.org/abs/1411.6232].",
+      "url": "https://arxiv.org/abs/1411.6232",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A face manifold approach applies manifold learning to synthetic face generation, where the face is one of the most important things for communication with the world around us and estimating face structure is a fundamental task [https://arxiv.org/abs/1910.01403].",
+      "url": "https://arxiv.org/abs/1910.01403",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Images, as high-dimensional data, usually embody large variabilities, and classifying images for versatile applications requires systematically considering the data structure, similarity metric, discriminant subspace, and classifier [https://doi.org/10.1109/tip.2007.914203].",
+      "url": "https://doi.org/10.1109/tip.2007.914203",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A correlation-based similarity metric has been incorporated into supervised multilinear discriminant subspace learning to estimate intrinsic angles and distances for locally isometric embedding, addressing cases where Euclidean metrics are incapable of capturing intrinsic similarities between data points [https://doi.org/10.1109/tip.2007.914203].",
+      "url": "https://doi.org/10.1109/tip.2007.914203",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A novel discriminant subspace learning algorithm, called correlation tensor analysis (CTA), has been designed to incorporate both graph-embedded correlational mapping and discriminant analysis in a Fisher type of learning manner [https://doi.org/10.1109/tip.2007.914203].",
+      "url": "https://doi.org/10.1109/tip.2007.914203",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Modeling a sequence of video frames as a linear subspace on the Grassmann manifold has become increasingly attractive in multiple computer vision applications, with learning an appropriate metric on the Grassmann manifold remaining a key challenge [https://www.semanticscholar.org/paper/fd3bf3a9cef5500aa3b97588498e534c96006567].",
+      "url": "https://semanticscholar.org/paper/fd3bf3a9cef5500aa3b97588498e534c96006567",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A Grassmann Reconstruction Metric Learning (GRML) algorithm guided by a sparse representation-based classifier (SRC) has been proposed for image set classification, where SRC selects the coefficients associated with each class to reconstruct training samples and is employed as a criterion to direct the design of a discriminative mapping [https://www.semanticscholar.org/paper/fd3bf3a9cef5500aa3b97588498e534c96006567].",
+      "url": "https://semanticscholar.org/paper/fd3bf3a9cef5500aa3b97588498e534c96006567",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "A manifold learning approach has been proposed to estimate visual information from audio [https://arxiv.org/abs/2208.02337].",
+      "url": "https://arxiv.org/abs/2208.02337",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Rank flow embedding approaches have been proposed for unsupervised and semi-supervised manifold learning in multimedia collections [https://arxiv.org/abs/2304.12448].",
+      "url": "https://arxiv.org/abs/2304.12448",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A visual domain adaptation method with manifold embedded distribution alignment has been proposed [https://arxiv.org/abs/1807.07258].",
+      "url": "https://arxiv.org/abs/1807.07258",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Face manifold approaches can produce unsatisfactory outputs when inputs deviate largely from example faces in the dataset [https://arxiv.org/abs/1910.01403].",
+      "url": "https://arxiv.org/abs/1910.01403",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Existing Grassmann manifold metric learning approaches rely on nearest neighbor matching of samples on the projected space, which is sensitive to noise and errors [https://www.semanticscholar.org/paper/fd3bf3a9cef5500aa3b97588498e534c96006567].",
+      "url": "https://semanticscholar.org/paper/fd3bf3a9cef5500aa3b97588498e534c96006567",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    }
+  ],
+  "noncited_factual_accuracy": 0.0,
+  "noncited_count": 0,
+  "noncited_correct": 0,
+  "noncited_details": []
+}

@@ -1,0 +1,918 @@
+{
+  "arxiv_id": "2204.10325",
+  "model": "MiniMax-M3",
+  "system": "citation-rag-v18",
+  "reference_precision": 0.0,
+  "reference_recall": 0.0,
+  "reference_count": 12,
+  "reference_matches": 0,
+  "ground_truth_count": 36,
+  "predicted_titles": [
+    "AI-based automated speech therapy tools for persons with speech sound disorder: a systematic literature review",
+    "Speech and language therapy for aphasia following stroke",
+    "Prospective Validation of Motor-Based Intervention with Automated Mispronunciation Detection of Rhotics in Residual Speech Sound Disorders",
+    "Stuttering Speech Disfluency Prediction using Explainable Attribution Vectors of Facial Muscle Movements",
+    "Deep-Learning-Based Automated Classification of Chinese Speech Sound Disorders",
+    "An automated tool for the assessment of childhood apraxia ...",
+    "Research Paper: Mobile Speech Therapy Application",
+    "Speech Therapy for Apraxia App - NACD International",
+    "Melodic intonation in the rehabilitation of Romanian aphasics with bucco-lingual apraxia.",
+    "Automatic Pronunciation Scoring And Mispronunciation ...",
+    "Role of ML in diagnosing and treating speech disorders",
+    "Automatic Speech and Voice Disorder Detection Using ..."
+  ],
+  "cited_match_rate": 0.96875,
+  "cited_count": 32,
+  "cited_supported": 31,
+  "cited_details": [
+    {
+      "statement": "https://doi.org/10.1002/14651858.cd000425.pub4",
+      "url": "https://doi.org/10.1002/14651858.cd000425.pub4",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://doi.org/10.1002/14651858.cd000425.pub4",
+      "url": "https://doi.org/10.1002/14651858.cd000425.pub4",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://doi.org/10.1002/14651858.cd000425.pub4",
+      "url": "https://doi.org/10.1002/14651858.cd000425.pub4",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9324778/",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9324778",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9324778/",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9324778",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://arxiv.org/abs/2305.19090",
+      "url": "https://arxiv.org/abs/2305.19090",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://arxiv.org/abs/2305.19090",
+      "url": "https://arxiv.org/abs/2305.19090",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://arxiv.org/abs/2305.19090",
+      "url": "https://arxiv.org/abs/2305.19090",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://arxiv.org/abs/2305.19090",
+      "url": "https://arxiv.org/abs/2305.19090",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://arxiv.org/abs/2305.19090",
+      "url": "https://arxiv.org/abs/2305.19090",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://aclanthology.org/W12-5808.pdf",
+      "url": "https://aclanthology.org/W12-5808.pdf",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://aclanthology.org/W12-5808.pdf",
+      "url": "https://aclanthology.org/W12-5808.pdf",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://aclanthology.org/W12-5808.pdf",
+      "url": "https://aclanthology.org/W12-5808.pdf",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://arxiv.org/abs/2010.01231",
+      "url": "https://arxiv.org/abs/2010.01231",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://arxiv.org/abs/2010.01231",
+      "url": "https://arxiv.org/abs/2010.01231",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://arxiv.org/abs/2010.01231",
+      "url": "https://arxiv.org/abs/2010.01231",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://arxiv.org/abs/2010.01231",
+      "url": "https://arxiv.org/abs/2010.01231",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://www.sciencedirect.com/science/article/abs/pii/S0167639315000382",
+      "url": "https://sciencedirect.com/science/article/abs/pii/S0167639315000382",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "http://jmr.tums.ac.ir/index.php/jmr/article/download/133/80",
+      "url": "http://jmr.tums.ac.ir/index.php/jmr/article/download/133/80",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://www.nacd.org/products/speech-therapy-for-apraxia-app/",
+      "url": "https://nacd.org/products/speech-therapy-for-apraxia-app",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://www.nacd.org/products/speech-therapy-for-apraxia-app/",
+      "url": "https://nacd.org/products/speech-therapy-for-apraxia-app",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://www.nacd.org/products/speech-therapy-for-apraxia-app/",
+      "url": "https://nacd.org/products/speech-therapy-for-apraxia-app",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://www.nacd.org/products/speech-therapy-for-apraxia-app/",
+      "url": "https://nacd.org/products/speech-therapy-for-apraxia-app",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://www.semanticscholar.org/paper/5321cc2853f0e0dfc57298af98401bf6fa982883",
+      "url": "https://semanticscholar.org/paper/5321cc2853f0e0dfc57298af98401bf6fa982883",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://www.semanticscholar.org/paper/5321cc2853f0e0dfc57298af98401bf6fa982883",
+      "url": "https://semanticscholar.org/paper/5321cc2853f0e0dfc57298af98401bf6fa982883",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://www.semanticscholar.org/paper/5321cc2853f0e0dfc57298af98401bf6fa982883",
+      "url": "https://semanticscholar.org/paper/5321cc2853f0e0dfc57298af98401bf6fa982883",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://www.dovepress.com/exploring-the-role-of-machine-learning-in-diagnosing-and-treating-spee-peer-reviewed-fulltext-article-PRBM",
+      "url": "https://dovepress.com/exploring-the-role-of-machine-learning-in-diagnosing-and-treating-spee-peer-reviewed-fulltext-article-PRBM",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://ieeexplore.ieee.org/iel7/6287639/10380310/10453567.pdf",
+      "url": "https://ieeexplore.ieee.org/iel7/6287639/10380310/10453567.pdf",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://pubmed.ncbi.nlm.nih.gov/1520605",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/1520605",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "https://www.semanticscholar.org/paper/5321cc2853f0e0dfc57298af98401bf6fa982883",
+      "url": "https://semanticscholar.org/paper/5321cc2853f0e0dfc57298af98401bf6fa982883",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://www.semanticscholar.org/paper/5321cc2853f0e0dfc57298af98401bf6fa982883",
+      "url": "https://semanticscholar.org/paper/5321cc2853f0e0dfc57298af98401bf6fa982883",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://www.semanticscholar.org/paper/5321cc2853f0e0dfc57298af98401bf6fa982883",
+      "url": "https://semanticscholar.org/paper/5321cc2853f0e0dfc57298af98401bf6fa982883",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    }
+  ],
+  "noncited_factual_accuracy": 0.5,
+  "noncited_count": 20,
+  "noncited_correct": 10,
+  "noncited_details": [
+    {
+      "claim": "Aphasia is an acquired language impairment following brain damage that affects some or all language modalities: expression and understanding of speech, reading, and writing.",
+      "evidence": [
+        {
+          "title": "Diagnosing and managing post-stroke aphasia - PMC - NIH",
+          "abstract": "by SM Sheppard · 2020 · Cited by 232 — It should be noted that most people with aphasia will have some level of difficulty with comprehension, spontaneous speech, reading, and writing. Typically, ...",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7880889/"
+        },
+        {
+          "title": "Types of Aphasia - Speech Therapy for Adults",
+          "abstract": "Aphasia is an acquired language impairment following brain damage. It affects some or all language modalities such as expression and ...",
+          "url": "https://www.betterspeech.com/post/speech-therapy-for-aphasia"
+        },
+        {
+          "title": "Aphasia Following Acquired Brain Injury",
+          "abstract": "A common consequence of acquired brain injury is aphasia, an impairment of language that can affect speech, as well as reading or writing.",
+          "url": "https://www.psychiatrictimes.com/view/aphasia-following-acquired-brain-injury"
+        },
+        {
+          "title": "Aphasia - an overview",
+          "abstract": "Aphasia is an acquired disorder that affects the ability to produce and/or comprehend language following brain injury. While aphasia can occur in childhood, it ...",
+          "url": "https://www.sciencedirect.com/topics/pharmacology-toxicology-and-pharmaceutical-science/aphasia"
+        },
+        {
+          "title": "Understanding aphasia and its impact on language ...",
+          "abstract": "Aphasia is an inability to comprehend and formulate language because of damage to specific brain regions. auditory comprehension, verbal ...",
+          "url": "https://www.facebook.com/groups/493935520792751/posts/1889916101194679/"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "Approximately one third of people who have a stroke experience aphasia.",
+      "evidence": [
+        {
+          "title": "REVIEW ARTICLE Inclusion of People With Aphasia in Stroke Trials",
+          "abstract": "Affecting approximately one-third of stroke survivors, aphasia can negatively impact an individual's functioning, activities, relationships, rights, wellbeing, ...",
+          "url": "https://www.sciencedirect.com/science/article/pii/S0003999323003684"
+        },
+        {
+          "title": "Stroke and aphasia",
+          "abstract": "Up to 38% of stroke survivors can have aphasia. Every 6 seconds a stroke will result in the reduced quality of life of an individual due to ongoing disability",
+          "url": "https://www.aphasiapathway.com.au/?name=About-aphasia"
+        },
+        {
+          "title": "Chronic post-stroke aphasia severity is determined by fragmentation of ...",
+          "abstract": "Many stroke survivors with aphasia in the acute period experience spontaneous recovery within the first six months after the stroke.",
+          "url": "https://www.nature.com/articles/s41598-017-07607-9"
+        },
+        {
+          "title": "Diagnosing and managing post-stroke aphasia - PMC - NIH",
+          "abstract": "Approximately 1/3 of people who have a stroke will be diagnosed with aphasia (1,2), which is an acquired language disorder where patients experience impairments",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7880889/"
+        },
+        {
+          "title": "Where are we now with aphasia after Stroke? - PMC - NIH",
+          "abstract": "Most studies indicate that one-third of patients with acute stroke present with aphasia.[1] Aphasia is more than just the loss of speech.",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7731688/"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "A 2016 Cochrane review searched the Cochrane Stroke Group Trials Register, CENTRAL, MEDLINE, EMBASE, and CINAHL for trials of speech and language therapy for aphasia following stroke.",
+      "evidence": [
+        {
+          "title": "Databases for Clinical Speech & Language Studies",
+          "abstract": "The EU Clinical Trials Register provides a free and accurate search of clinical trials in European Union member states and the European Economic Area. Lenus ...",
+          "url": "https://libguides.tcd.ie/c.php?g"
+        },
+        {
+          "title": "Cochrane Library",
+          "abstract": "A Cochrane Library subscription provides you with a suite of high-quality health information spanning reviews, protocols, data and editorials as and when ...",
+          "url": "https://www.cochrane.org/products-and-services/cochrane-library"
+        },
+        {
+          "title": "Interventions for apraxia of speech following stroke",
+          "abstract": "We searched the Cochrane Stroke Group Trials Register. Central Register of Controlled Trials. MEDLINE (1966 to April 2004); EMBASE (1980 to April 2004); CINAHL ...",
+          "url": "https://app.overton.io/document.php?policy_document_id"
+        },
+        {
+          "title": "Speech and language therapy for aphasia following stroke",
+          "abstract": "by MC Brady · 2016 · Cited by 1720 — To assess the effects of speech and language therapy (SLT) for aphasia following stroke. Search methods: We searched the Cochrane Stroke Group ...",
+          "url": "https://cora.ucc.ie/items/3705a930-89c8-4f2c-8873-8514846a00c8"
+        },
+        {
+          "title": "PEDro - Search Detailed Search Results",
+          "abstract": "OBJECTIVES: To examine the effectiveness and safety of CCT on mobility in adults with stroke. SEARCH STRATEGY: We searched the Cochrane Stroke Group Trials ...",
+          "url": "https://search.pedro.org.au/search-results/record-detail/25688"
+        }
+      ],
+      "true_votes": 1,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "A 2022 study describes a system for analyzing acoustic data to assist in the diagnosis and classification of children's speech sound disorders.",
+      "evidence": [
+        {
+          "title": "Analysis and classification of speech sounds of children with autism ...",
+          "abstract": "In this study, the distinguishing characteristics of speech production are examined for ASD affected children, with comparison to Normal children's speech.",
+          "url": "https://www.sciencedirect.com/science/article/abs/pii/S0885230821000899"
+        },
+        {
+          "title": "Understanding the 2 types of speech sound disorders - YouTube",
+          "abstract": "Two types of speech disorders can affect how children pronounce speech sounds: articulation disorders and phonological disorders.",
+          "url": "https://www.youtube.com/watch?v=ggVKNIK1x68"
+        },
+        {
+          "title": "Children's Speech Sound Disorders by Caroline Bowen",
+          "abstract": "There are several classification systems for speech sound disorders each with slightly different emphases and terms. What causes speech sound disorders?",
+          "url": "https://www.speech-language-therapy.com/clinical-topics/childrens-speech-sound-disorders-by-caroline-bowen"
+        },
+        {
+          "title": "Speech Sound Disorders: Articulation and Phonology - ASHA",
+          "abstract": "Speech sound disorders: articulation and phonology are functional/ organic deficits that impact the ability to perceive and/or produce speech sounds.",
+          "url": "https://www.asha.org/practice-portal/clinical-topics/articulation-and-phonology/?srsltid=AfmBOoolNG18B9nZmgSAFjiyuFsh3DJt_771MCvae-CCKdirxBd58ymj"
+        },
+        {
+          "title": "How should children with speech sound disorders be classified? A ...",
+          "abstract": "The Speech Disorders Classification System is currently a research tool with eight proposed subgroups. The Psycholinguistic Framework is a potential bridge to ...",
+          "url": "https://www.researchgate.net/publication/234132420_How_should_children_with_speech_sound_disorders_be_classified_A_review_and_critical_evaluation_of_current_classification_systems"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "The analysis concentrated on identifying and categorizing four distinct types of speech sound disorders.",
+      "evidence": [
+        {
+          "title": "Speech Sound Disorders: The Ultimate Guide for SLPs",
+          "abstract": "There are speech sound disorders with known underlying causes (organic) including cleft lip/palate, orofacial conditions, deafness, dysarthria, ...",
+          "url": "https://slpnow.com/blog/the-slps-guide-to-speech-sound-disorders-articulation-phonological-development/"
+        },
+        {
+          "title": "Differential Diagnosis of Pediatric Speech Sound Disorder",
+          "abstract": "by B Dodd · 2014 · Cited by 336 — The diagnostic category of developmental speech sound disorders (SSD) poses a clinical problem due to its size, heterogeneous symptomatology, ...",
+          "url": "https://link.springer.com/article/10.1007/s40474-014-0017-3"
+        },
+        {
+          "title": "The Effects of Speech Sound Disorders on Literacy ...",
+          "abstract": "The purpose of this study is to examine the impact, if any, speech sound disorders have on school-age children and literacy and to determine if a relationship ...",
+          "url": "https://pubs.sciepub.com/education/3/10/10/index.html"
+        },
+        {
+          "title": "What is in a name: Taxonomy of speech sound disorders ...",
+          "abstract": "1. Articulation disorder · 2. Delayed phonological acquisition · 3. Atypical phonological disorder consistent · 4. Atypical phonological disorder ...",
+          "url": "https://onlinelibrary.wiley.com/doi/10.1111/1460-6984.13092"
+        },
+        {
+          "title": "Full article: Diagnosing inconsistent phonological disorder",
+          "abstract": "by B Dodd · 2024 · Cited by 18 — ABSTRACT. Studies of children's consistency of word production allow identification of speech sound disorder.",
+          "url": "https://www.tandfonline.com/doi/full/10.1080/02699206.2023.2224916"
+        }
+      ],
+      "true_votes": 1,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "A 2023 paper from Syracuse University described a prospective validation of motor-based intervention with automated mispronunciation detection of rhotics in residual speech sound disorders.",
+      "evidence": [
+        {
+          "title": "Paper Template for INTERSPEECH 2015",
+          "abstract": "by NR Benway · 2023 · Cited by 8 — Prospective Validation of Motor-Based Intervention with Automated Mispronunciation Detection of Rhotics in Residual Speech Sound Disorders. Syracuse University,",
+          "url": "https://arxiv.org/pdf/2305.19090"
+        },
+        {
+          "title": "Prospective Validation of Motor-Based Intervention with ...",
+          "abstract": "Prospective Validation of Motor-Based Intervention with Automated Mispronunciation Detection of Rhotics. Syracuse University,",
+          "url": "https://www.researchgate.net/publication/371163385_Prospective_Validation_of_Motor-Based_Intervention_with_Automated_Mispronunciation_Detection_of_Rhotics_in_Residual_Speech_Sound_Disorders"
+        },
+        {
+          "title": "Prospective Validation of Motor-Based ...",
+          "abstract": "by NR Benway · 2023 · Cited by 8 — Prospective Validation of Motor-Based Intervention with Automated Mispronunciation Detection of Rhotics in Residual Speech Sound Disorders.",
+          "url": "https://arxiv.org/abs/2305.19090"
+        },
+        {
+          "title": "Artificial Intelligence–Assisted Speech Therapy for /ɹ",
+          "abstract": "by NR Benway · 2024 · Cited by 24 — Prospective validation of motor-based intervention with automated mispronunciation detection of rhotics in residual speech sound disorders.",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12379609/"
+        },
+        {
+          "title": "Prospective Validation of Motor-Based Intervention with ...",
+          "abstract": "by NR Benway · Cited by 8 — Prospective Validation of Motor-Based Intervention with Automated. Mispronunciation Detection of Rhotics in Residual Speech Sound Disorders. Nina R Benway1 ...",
+          "url": "https://www.isca-archive.org/interspeech_2023/benway23b_interspeech.pdf"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "The paper was authored by Nina R Benway and Jonathan L Preston at Syracuse University.",
+      "evidence": [
+        {
+          "title": "Benway, Nina",
+          "abstract": "Nina completed her doctoral training in speech-language pathology (concentration: neuroscience) with Dr. Jonathan Preston at Syracuse University, focusing on ...",
+          "url": "https://ccebh.umd.edu/facultyprofile/benway/nina"
+        },
+        {
+          "title": "Researchers' Artificial Intelligence-Based Speech Sound ...",
+          "abstract": "Jonathan Preston, associate professor. Nina Benway, a recent graduate of the communication sciences and disorders/speech-language pathology ...",
+          "url": "https://ecs.syracuse.edu/about/news/researchers-artificial-intelligence-based-speech-sound-therapy-software-wins-2-5m-nih-grant"
+        },
+        {
+          "title": "\"Acoustic-to-Articulatory Speech Inversion Features for ...",
+          "abstract": "Authors Nina R. Benway, Syracuse University. Jonathan L. Preston, Syracuse University. Publication Date 1-1-2023 Journal / Book. Detection of/ɹ ...",
+          "url": "https://digitalcommons.montclair.edu/communcsci-disorders-facpubs/185/"
+        },
+        {
+          "title": "Artificial intelligence–assisted speech therapy (Benway & Preston, 2024)",
+          "abstract": "... authored by Nina R. Benway, Jonathan L. Preston. Purpose: This feasibility trial describes changes in rhotic production in residual speech ...",
+          "url": "https://asha.figshare.com/articles/online_resource/Artificial_intelligence_assisted_speech_therapy_Benway_Preston_2024_/26662807"
+        },
+        {
+          "title": "Differences Between School-Age Children With Apraxia ...",
+          "abstract": "Jonathan L Preston at Syracuse University. Author manuscript; available in PMC 2021 August 11. Nina R. Benway. The aim of this study was to investigate the ...",
+          "url": "https://www.researchgate.net/publication/341533714_Differences_Between_School-Age_Children_With_Apraxia_of_Speech_and_Other_Speech_Sound_Disorders_on_Multisyllable_Repetition"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "The PERCEPT-R Classifier uses Gaussian mixture model/Hidden Markov models (GMM-HMM) to predict clinician perceptual judgment of the /ɹ/ phoneme.",
+      "evidence": [
+        {
+          "title": "8. GMM-HMM and Language model",
+          "abstract": "GMM-HMM ASR, Gaussian Mixture Models ASR, Hidden Markov Models ... Lec 30: Gaussian Mixture Model and EM Algorithm. NPTEL IIT Guwahati•14K ...",
+          "url": "https://www.youtube.com/watch?v=ye4_fe7Eq6w"
+        },
+        {
+          "title": "Hidden Markov Model - Gaussian Mixture Model and Deep ...",
+          "abstract": "Gaussian Mixture Model. GMM is your way to find an analytic approximation enveloping the space for each phoneme. The HMM will be optimized ...",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/567rxj/hidden_markov_model_gaussian_mixture_model_and/"
+        },
+        {
+          "title": "A Comparative Analytic Study on the Gaussian Mixture and ...",
+          "abstract": "by Y Huang · 2014 · Cited by 45 — Abstract. We conducted a comparative analytic study on the context- dependent Gaussian mixture hidden Markov model (CD-GMM-. HMM) and deep ...",
+          "url": "https://www.isca-archive.org/interspeech_2014/huang14d_interspeech.pdf"
+        },
+        {
+          "title": "Hidden Markov Models and Gaussian Mixture Models",
+          "abstract": "by H Shimodaira · 2014 · Cited by 4 — The mean vector µ is the expectation of x: µ = E[x]. The covariance matrix Σ is the expectation of the deviation of x from the mean:.",
+          "url": "https://www.inf.ed.ac.uk/teaching/courses/asr/2013-14/asr03-hmmgmm.pdf"
+        },
+        {
+          "title": "Speech Recognition — GMM, HMM - Jonathan Hui - Medium",
+          "abstract": "a Gaussian Mixture Model (GMM). be modeled with the Hidden Markov Model (HMM). An HMM model composes of hidden variables and observables.",
+          "url": "https://jonathan-hui.medium.com/speech-recognition-gmm-hmm-8bb5eff8b196"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "In a prospective validation, all five participants experienced statistically significant improvement in untreated words following 10 sessions of combined human-ChainingAI treatment.",
+      "evidence": [
+        {
+          "title": "The Efficacy of the Cycles Approach: A Multiple Baseline Design",
+          "abstract": "The purpose of this study was to evaluate the efficacy of the Cycles Phonological Remediation Approach as an intervention for children with ...",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3959577/"
+        },
+        {
+          "title": "Telerehabilitation with Verb Network Strengthening Treatment (VNeST ...",
+          "abstract": "This study investigates the effects of VNeST through telerehabilitation on word retrieval and sentence production with treated and semantically related ...",
+          "url": "https://www.tandfonline.com/doi/full/10.1080/02687038.2024.2322773"
+        },
+        {
+          "title": "Prospective Validation of Motor-Based Intervention with ...",
+          "abstract": "All five participants experienced statistically-significant improvement in untreated words following 10 sessions of combined human-ChainingAI ...",
+          "url": "https://arxiv.org/abs/2305.19090"
+        },
+        {
+          "title": "Prospective Validation of Motor-Based Intervention with ...",
+          "abstract": "All five participants experienced statistically-significant improvement in untreated words following 10 sessions of combined human-ChainingAI treatment.",
+          "url": "https://www.isca-archive.org/interspeech_2023/benway23b_interspeech.pdf"
+        },
+        {
+          "title": "JULIE WAMBAUGH | Scholarly & creative works | The University of Utah",
+          "abstract": "RESULTS: Three of the four participants experienced statistically significant improvements in WWC with SPT, and three of the four participants with MPT.",
+          "url": "https://profiles.faculty.utah.edu/u0028649/publications"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "One system uses the CMU Sphinx3 system with Hidden Markov Model alignment to compute phoneme, word, and phrase-level pronunciation scores.",
+      "evidence": [
+        {
+          "title": "Investigation Arabic Speech Recognition Using CMU ...",
+          "abstract": "Pronunciation scores can be calculated for each phoneme, word, and phrase by means of Hidden Markov Model alignment with the phonemes of the expected text.",
+          "url": "https://www.academia.edu/Documents/in/Investigation_Arabic_Speech_Recognition_Using_CMU_Sphinx_System?page=0"
+        },
+        {
+          "title": "Automatic Pronunciation Scoring And Mispronunciation ...",
+          "abstract": "by R Srikanth · 2012 · Cited by 25 — Pronunciation scores can be calculated for each phoneme, word, and phrase by means of Hidden Markov Model alignment with the phonemes of the expected text.",
+          "url": "https://aclanthology.org/W12-5808.pdf"
+        },
+        {
+          "title": "PHONEME RECOGNITION BY HIDDEN MARKOV ...",
+          "abstract": "by AP Brighton · 1989 — Examples are given which show how to specify a hidden Markov model and how to implement the algorithms to estimate the model parameters. Applying hidden Markov ...",
+          "url": "https://etd.ohiolink.edu/acprod/odb_etd/ws/send_file/send?accession=ohiou1182283954&disposition=inl"
+        },
+        {
+          "title": "A History of the Sphinx Speech Recognition Systems",
+          "abstract": "by R Singh · Cited by 8 — The system was written in the C programming language, and developed jointly by two people at CMU: its HMM-training modules were developed by Eric Thayer, and ...",
+          "url": "https://www.cs.cmu.edu/~rsingh/homepage/sphinx_history.html"
+        },
+        {
+          "title": "How to Create a Speech Recognition System with CMU ...",
+          "abstract": "This guide walks you through building a production-ready speech recognition system using CMU Sphinx. You'll learn to install the toolkit, ...",
+          "url": "https://reintech.io/blog/how-to-create-a-speech-recognition-system-with-cmu-sphinx"
+        }
+      ],
+      "true_votes": 2,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "Stuttering disrupts normal speech fluency through involuntary repetitions, prolongations, and blocking of sounds and syllables, with a prevalence of approximately 1% in adults.",
+      "evidence": [
+        {
+          "title": "Stuttering (Stammering) - StatPearls - NCBI Bookshelf - NIH",
+          "abstract": "Stuttering, or stammering, is a language fluency disorder characterized by disruptions in speech flow and rhythm by pauses, hesitations, and ...",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK603738/"
+        },
+        {
+          "title": "Understanding Types of Stuttering Disfluencies & Their Impact | AIS",
+          "abstract": "While the primary behaviors of stuttering include prolongations, blocks, and sound or syllable repetitions, there are also accompanying ...",
+          "url": "https://www.stutteringtreatment.org/blog/understanding-types-of-stuttering-disfluencies"
+        },
+        {
+          "title": "Stuttering | Encyclopedia MDPI",
+          "abstract": "Common stuttering behaviors are observable signs of speech disfluencies, for example: repeating sounds, syllables, words or phrases, silent ...",
+          "url": "https://encyclopedia.pub/entry/36067"
+        },
+        {
+          "title": "Stuttering vs. Typical Developmental Disfluency - BreatheWorks",
+          "abstract": "Stuttering is a speech disorder characterized by repetition of sounds/syllables/words, prolongation of sounds, and blocks (interruptions where speech gets “ ...",
+          "url": "https://breatheworks.com/stuttering-vs-typical-developmental-disfluency/"
+        },
+        {
+          "title": "and interruptions in speech known as blocks. People may stutter due to ...",
+          "abstract": "It is a condition where the flow of speech is disrupted by involuntary repetitions, prolongations, or blocks of sounds, syllables, words, or ...",
+          "url": "https://www.facebook.com/blairimani/posts/stuttering-is-one-of-the-many-ways-that-people-speak-featuring-stutterology-akuc/1085930076237882/"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "Approximately 80% of children recover within 15 months from onset.",
+      "evidence": [
+        {
+          "title": "Long COVID Basics",
+          "abstract": "About Long COVID. Long COVID is defined as a chronic condition that occurs after SARS-CoV-2 infection and is present for at least 3 months.",
+          "url": "https://www.cdc.gov/long-covid/about/index.html"
+        },
+        {
+          "title": "NIH RECOVER-Pediatric: Understanding the Long-Term ...",
+          "abstract": "The RECOVER pediatric study is a combined retrospective and prospective, longitudinal, observational meta-cohort of individuals ages newborn-25 years",
+          "url": "https://ega-archive.org/studies/phs003461"
+        },
+        {
+          "title": "Insights from RECOVER's pediatric study can inform future ...",
+          "abstract": "RECOVER researchers have enrolled almost 15,000 children into the pediatric study. Many of these children have experienced prolonged symptoms ...",
+          "url": "https://recovercovid.org/news/insights-recovers-pediatric-study-can-inform-future-clinical-trials"
+        },
+        {
+          "title": "Results from the RECOVER Long Covid Pediatric Study",
+          "abstract": "For this study, the RECOVER-Pediatrics team recruited about 900 children and about 4,500 teenagers from over 100 sites across the country.",
+          "url": "https://solvecfs.org/results-from-the-recover-long-covid-pediatric-study/"
+        },
+        {
+          "title": "Speech and language therapy for aphasia following stroke",
+          "abstract": "BACKGROUND: Aphasia is an acquired language impairment following brain damage that affects some or all language modalities: expression and understanding of speech, reading, and writing. Approximately one third of people who have a stroke experience aphasia. OBJECTIVES: To assess the effects of speech and language therapy (SLT) for aphasia following stroke. SEARCH METHODS: We searched the Cochrane Stroke Group Trials Register (last searched 9 September 2015), CENTRAL (2015, Issue 5) and other Cochrane Library Databases (CDSR, DARE, HTA, to 22 September 2015), MEDLINE (1946 to September 2015), EMBASE (1980 to September 2015), CINAHL (1982 to September 2015), AMED (1985 to September 2015), LLBA (1973 to September 2015), and SpeechBITE (2008 to September 2015). We also searched major trials registers for ongoing trials including ClinicalTrials.gov (to 21 September 2015), the Stroke Trials Registry (to 21 September 2015), Current Controlled Trials (to 22 September 2015), and WHO ICTRP (to 22 September 2015). In an effort to identify further published, unpublished, and ongoing trials we also handsearched the International Journal of Language and Communication Disorders (1969 to 2005) and reference lists of relevant articles, and we contacted academic institutions and other researchers. There were no language restrictions. SELECTION CRITERIA: Randomised controlled trials (RCTs) comparing SLT (a formal intervention that aims to improve language and communication abilities, activity and participation) versus no SLT; social support or stimulation (an intervention that provides social support and communication stimulation but does not include targeted therapeutic interventions); or another SLT intervention (differing in duration, intensity, frequency, intervention methodology or theoretical approach). DATA COLLECTION AND ANALYSIS: We independently extracted the data and assessed the quality of included trials. We sought missing data from investigators. MAIN RESULTS: We included 57 RCTs (74 randomised comparisons) involving 3002 participants in this review (some appearing in more than one comparison). Twenty-seven randomised comparisons (1620 participants) assessed SLT versus no SLT; SLT resulted in clinically and statistically significant benefits to patients' functional communication (standardised mean difference (SMD) 0.28, 95% confidence interval (CI) 0.06 to 0.49, P = 0.01), reading, writing, and expressive language, but (based on smaller numbers) benefits were not evident at follow-up. Nine randomised comparisons (447 participants) assessed SLT with social support and stimulation; meta-analyses found no evidence of a difference in functional communication, but more participants withdrew from social support interventions than SLT. Thirty-eight randomised comparisons (1242 participants) assessed two approaches to SLT. Functional communication was significantly better in people with aphasia that received therapy at a high intensity, high dose, or over a long duration compared to those that received therapy at a lower intensity, lower dose, or over a shorter period of time. The benefits of a high intensity or a high dose of SLT were confounded by a significantly higher dropout rate in these intervention groups. Generally, trials randomised small numbers of participants across a range of characteristics (age, time since stroke, and severity profiles), interventions, and outcomes. AUTHORS' CONCLUSIONS: Our review provides evidence of the effectiveness of SLT for people with aphasia following stroke in terms of improved functional communication, reading, writing, and expressive language compared with no therapy. There is some indication that therapy at high intensity, high dose or over a longer period may be beneficial. HIgh-intensity and high dose interventions may not be acceptable to all.",
+          "url": "https://doi.org/10.1002/14651858.cd000425.pub4"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "Most adults who stutter experience secondary behaviors involving facial muscles before, during, and after a stuttering moment.",
+      "evidence": [
+        {
+          "title": "Stuttering: Clinical and research update",
+          "abstract": "by HR Perez · 2016 · Cited by 188 — Children with mild stuttering might begin to manifest secondary behaviour such as closing their eyes or tensing facial muscles during stuttering episodes.",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4907555/"
+        },
+        {
+          "title": "Secondary Characteristics Of Stuttering | AIS",
+          "abstract": "Secondary behaviors can take many forms, with some common features being physical movements (e.g, throat clearing, eye blinking, foot stomping, ...",
+          "url": "https://www.stutteringtreatment.org/blog/secondary-characteristics-of-stuttering"
+        },
+        {
+          "title": "Neurogenic Stuttering",
+          "abstract": "Secondary or associated behaviors, such as obvious tension and struggle in speech production; movements of head or limbs while speaking; reduced eye contact;",
+          "url": "https://www.stutteringhelp.org/neurogenic-stuttering"
+        },
+        {
+          "title": "Secondary Behaviors",
+          "abstract": "An example of secondaries being a natural reaction is the loss of eye contact that many people who stutter have at least some of the time. Every ...",
+          "url": "https://isad.live/secondary-behaviors/"
+        },
+        {
+          "title": "Ch. 11: Stuttering and Other Fluency Disorders Flashcards",
+          "abstract": "Secondary behaviors do not occur in conjunction with moments of stuttering. Adaptation does not occur. Secondary behaviors are present.",
+          "url": "https://quizlet.com/191524717/ch-11-stuttering-and-other-fluency-disorders-flash-cards/"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "A 2020 study explored automatic detection of stuttering using explainable attribution vectors of facial muscle movements.",
+      "evidence": [
+        {
+          "title": "Multimodal explainable AI predicts upcoming speech behavior ...",
+          "abstract": "In this study, we examined adults who stutter (AWS) to understand the relations between dynamic brain and facial muscle activity and predictions ...",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9376608/"
+        },
+        {
+          "title": "Machine Learning for Stuttering Identification - HAL",
+          "abstract": "Including traditional classifiers, many sta- tistical machine learning techniques have been explored in the automatic detection of stuttering.",
+          "url": "https://hal.science/hal-03634072v2/file/draft.pdf"
+        },
+        {
+          "title": "Rediscovering Automatic Detection of Stuttering and Its Subclasses ...",
+          "abstract": "This work deals with automatically detecting stuttering and its subclasses. The present investigation shows a methodology that can support a ...",
+          "url": "https://www.mdpi.com/2076-3417/13/10/6192"
+        },
+        {
+          "title": "Fluent: An AI Augmented Writing Tool for People who Stutter",
+          "abstract": "Fluent, an AI augmented writing tool. Stuttering Speech Disfluency Prediction using Explainable Attribution Vectors of Facial Muscle Movements. ...",
+          "url": "https://dl.acm.org/doi/abs/10.1145/3441852.3471211"
+        },
+        {
+          "title": "Interpretable Self-Supervised Facial Micro-Expression Learning ...",
+          "abstract": "Our explainability study found facial muscle movements around the eyes (p <0.×001) and lips (p <0.001) differ significantly before producing fluent vs. ...",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8252663/"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "An automated tool to assess productions from children with apraxia of speech consists of a clinician interface, mobile application, and speech processing engine.",
+      "evidence": [
+        {
+          "title": "An automated tool for the assessment of childhood apraxia ...",
+          "abstract": "by M Shahin · 2015 · Cited by 77 — Automated tool to assess productions from children with apraxia of speech. • Consists of clinician interface, mobile application and speech processing engine.",
+          "url": "https://www.sciencedirect.com/science/article/abs/pii/S0167639315000382"
+        },
+        {
+          "title": "An automated tool for the assessment of childhood apraxia ...",
+          "abstract": "Tabby Talks is one of the automated tools for assessing childhood apraxia of speech. Devices are composed of clinician interface, mobile application, and speech ...",
+          "url": "https://www.researchgate.net/publication/275060395_Tabby_Talks_An_automated_tool_for_the_assessment_of_childhood_apraxia_of_speech"
+        },
+        {
+          "title": "Speech assessment tool methods for speech impaired children",
+          "abstract": "by GP Usha · 2023 · Cited by 53 — Tabby Talks is one of the automated tools for assessing childhood apraxia of speech. Devices are composed of clinician interface, mobile ...",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9986674/"
+        },
+        {
+          "title": "Telehealth intervention and childhood apraxia of speech",
+          "abstract": "by N Bahar · 2022 · Cited by 13 — The app's interface operates as an automated mediator which provides real-time feedback to the child while reporting the details of the child's progress to the ...",
+          "url": "https://www.tandfonline.com/doi/full/10.1080/2050571X.2021.1947649"
+        },
+        {
+          "title": "Exploring the use of Technology for Assessment and Intensive ...",
+          "abstract": "by JG McKechnie · 2019 · Cited by 4 — Childhood Apraxia of Speech, An automated lexical stress tool for assessing dysprosody in childhood apraxia of speech. clinic using free software and smart ...",
+          "url": "https://ses.library.usyd.edu.au/bitstream/handle/2123/20722/mckechnie_jg_thesis.pdf?sequence=2&isAllowed=y"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "The NACD 'Speech Therapy for Apraxia' app provides choices of different phonemes to target and moves through a progression of eight levels.",
+      "evidence": [
+        {
+          "title": "Speech Therapy iPad App for Apraxia - YouTube",
+          "abstract": "... Speech Therapy for Apraxia” is a successful tool that has been used by ... This app provides choices of different phonemes to target and moves ...",
+          "url": "https://www.youtube.com/watch?v=6LliNqTEEyk"
+        },
+        {
+          "title": "Interventions for childhood apraxia of speech - PMC - NIH",
+          "abstract": "Childhood apraxia of speech (CAS) affects a child's ability to produce sounds and syllables precisely and consistently, and to produce words and sentences ...",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6494637/"
+        },
+        {
+          "title": "Treatment for Childhood Apraxia of Speech: Past, Present, and Future",
+          "abstract": "The purposes of this review article were to provide an introduction to and “bird's-eye” overview of the current evidence base for treatment ...",
+          "url": "https://pubs.asha.org/doi/10.1044/2024_JSLHR-23-00233"
+        },
+        {
+          "title": "Speech Therapy for Apraxia App - NACD International",
+          "abstract": "“Speech Therapy for Apraxia” is designed for children with Childhood Apraxia of Speech/dyspraxia and adults with apraxia. This app provides choices of different ...",
+          "url": "https://www.nacd.org/products/speech-therapy-for-apraxia-app/"
+        },
+        {
+          "title": "Speech Therapy for Apraxia-Words App - NACD.org",
+          "abstract": "Moves through a logical progression of 8 different levels for motor planning for speech. Illustration and audio provided for each word. Option to repeat ...",
+          "url": "https://www.nacd.org/products/speech-therapy-for-apraxia-words-app/"
+        }
+      ],
+      "true_votes": 1,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "The app is designed for children with Childhood Apraxia of Speech and adults with apraxia.",
+      "evidence": [
+        {
+          "title": "Differential Diagnosis of Apraxia of Speech in Children and Adults",
+          "abstract": "Differential diagnosis of apraxia of speech in adults and children continues to be a major clinical and research challenge, despite decades of research.",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7890226/"
+        },
+        {
+          "title": "Treatment for Childhood Apraxia of Speech: Past, Present, and Future",
+          "abstract": "This review article, based in part on an invited presentation at AKRS 2022, overviews the current state of CAS treatment research evidence.",
+          "url": "https://pubs.asha.org/doi/10.1044/2024_JSLHR-23-00233"
+        },
+        {
+          "title": "Mobile Apps for Speech-Language Therapy in Adults With ...",
+          "abstract": "This study aims to (1) identify the available apps designed for adults ... Apraxia World: a Speech Therapy Game for Children With Speech ...",
+          "url": "https://mhealth.jmir.org/2020/10/e18858/"
+        },
+        {
+          "title": "Article Library - Apraxia Kids",
+          "abstract": "Article Library. Apraxia Kids is dedicated to providing high-quality evidence-based information about diagnosis and treatment of childhood apraxia of speech.",
+          "url": "https://www.apraxia-kids.org/education/apraxia-kids-library/"
+        },
+        {
+          "title": "Speech Therapy for Apraxia App - NACD International",
+          "abstract": "“Speech Therapy for Apraxia” is designed for children with Childhood Apraxia of Speech/dyspraxia and adults with apraxia. This app provides choices of ...",
+          "url": "https://www.nacd.org/products/speech-therapy-for-apraxia-app/"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "A 2024 systematic review by Brahmi, Mahyoob, Al-Sarem, Algaraady, Bousselmi, and Alblwi, published in Volume 2024:17 Pages 2205—2232 of Psychology Research and Behavior Management, explored the role of machine learning in diagnosing and treating speech disorders.",
+      "evidence": [
+        {
+          "title": "Exploring the Role of Machine Learning in Diagnosing and ...",
+          "abstract": "This study addresses the gap in systematic reviews concerning machine learning-based assistive technology for individuals with speech disorders.",
+          "url": "https://www.researchgate.net/publication/381011293_Exploring_the_Role_of_Machine_Learning_in_Diagnosing_and_Treating_Speech_Disorders_A_Systematic_Literature_Review"
+        },
+        {
+          "title": "Artificial Intelligence in Communication Sciences and ...",
+          "abstract": "This article outlines the challenges of traditional machine learning models in clinical settings and advocates the use of clinically validated ...",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11567088/"
+        },
+        {
+          "title": "Health and Social Care | Journals & Articles | Taylor & Francis Online",
+          "abstract": "Zaki Brahmi, Mohammad Mahyoob, Mohammed Al-Sarem, Jeehaan Algaraady, Khadija Bousselmi & Abdulaziz Alblwi · Psychology Research and Behavior Management, Volume ...",
+          "url": "https://www.tandfonline.com/subjects/health-and-social-care?target=default&content=standard&sortBy=downloaded%28y0%29_desc&countTerms=true&dateRange=&Ppub=%5B20240307+TO+202503072359%5D&pageSize=10&subjectTitle=&SeriesKey=dprb20&startPage=&ContentItemType=review"
+        },
+        {
+          "title": "Health and Social Care | Journals & Articles | Taylor & Francis Online",
+          "abstract": "Psychology Research and Behavior Management, Volume ... Mahyoob, Mohammed Al-Sarem, Jeehaan Algaraady, Khadija Bousselmi & Abdulaziz Alblwi.",
+          "url": "https://www.tandfonline.com/subjects/health-and-social-care?countTerms=true&dateRange=&Ppub=%5B20240407+TO+202504072359%5D&target=default&content=standard&SeriesKey=dprb20&sortBy=downloaded%28y0%29_desc&pageSize=10&subjectTitle=&startPage=1"
+        },
+        {
+          "title": "Exploring the Role of Machine Learning in Diagnosing and ...",
+          "abstract": "This study addresses the gap in systematic reviews concerning machine learning-based assistive technology for individuals with speech disorders",
+          "url": "https://www.semanticscholar.org/paper/Exploring-the-Role-of-Machine-Learning-in-and-A-Brahmi-Mahyoob/d2dee2c92b804b0501131f71e8685028e456e8b7"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "The review applied PRISMA guidelines across five databases for studies published between January 2007 and February 2022 and included 24 studies.",
+      "evidence": [
+        {
+          "title": "All About PRISMA: Spring 2024 Systematic Reviews Webinar Series",
+          "abstract": "You may have heard of PRISMA diagrams or seen the abbreviation in published reviews. What is the correct way to implement these standards ...",
+          "url": "https://www.youtube.com/watch?v=qzXWsPXPoU4"
+        },
+        {
+          "title": "PRISMA 2020 explanation and elaboration: updated guidance and ...",
+          "abstract": "The Preferred Reporting Items for Systematic reviews and Meta-Analyses (PRISMA) statement was developed to facilitate transparent and complete ...",
+          "url": "https://www.bmj.com/content/372/bmj.n160"
+        },
+        {
+          "title": "Updating the PRISMA reporting guideline for network meta-analysis",
+          "abstract": "This scoping review is the first step in the process of updating the 2015 Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA) extension",
+          "url": "https://www.sciencedirect.com/science/article/pii/S089543562500318X"
+        },
+        {
+          "title": "PRISMA statement",
+          "abstract": "PRISMA provides authors with guidance and examples of how to completely report why a systematic review was done, what methods were used, and what results were ...",
+          "url": "https://www.prisma-statement.org/"
+        },
+        {
+          "title": "PRISMA 2020: A Practical Guide to Reporting Systematic Reviews and ...",
+          "abstract": "PRISMA 2020 added a separate 12-item abstract checklist, new items on automation tools, certainty of evidence, and data availability.",
+          "url": "https://www.journalmetrics.org/blog/prisma-2020-systematic-review-reporting-guide-2026"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "A 1992 study examined melodic intonation in the rehabilitation of Romanian aphasics with bucco-lingual apraxia.",
+      "evidence": [
+        {
+          "title": "Melodic intonation therapy - Academia.edu",
+          "abstract": "Melodic Intonation Therapy (MIT) is an effective therapeutic approach for treating aphasia, particularly in patients with nonfluent forms such as Broca's ...",
+          "url": "https://www.academia.edu/31076759/Melodic_intonation_therapy"
+        },
+        {
+          "title": "Melodic Intonation Therapy (MIT) for Aphasia & Apraxia: A 'How To' Guide",
+          "abstract": "A step-by-step guide to melodic intonation therapy to improve talking in aphasia & apraxia. MIT is an evidence-based speech treatment for verbal expression.",
+          "url": "https://tactustherapy.com/mit-melodic-intonation-therapy-how-to/"
+        },
+        {
+          "title": "Melodic Intonation Therapy: Back to Basics for Future Research - Frontiers",
+          "abstract": "Melodic intonation therapy in the rehabilitation of Romanian aphasics with buccolingual apraxia. Rom J Neurol Psychiatry (1992) 30:99–113. Pubmed Abstract ...",
+          "url": "https://www.frontiersin.org/journals/neurology/articles/10.3389/fneur.2014.00007/full"
+        },
+        {
+          "title": "Melodic intonation in the rehabilitation of Romanian aphasics with bucco ...",
+          "abstract": "The main objective of the present study was to assess the efficiency of the melodic intonation therapy (MIT) in the rehabilitation of Romanian aphasics.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/1520605/"
+        },
+        {
+          "title": "Melodic Intonation Therapy: Present Controversies and Future ...",
+          "abstract": "∙ Mihăilescu, L. Melodic intonation in the rehabilitation of Romanian aphasics with bucco-lingual apraxia. Rom J Neurol Psychiat. 1992; 30:99-113. PubMed.",
+          "url": "https://www.archives-pmr.org/article/S0003-9993(11)00810-0/fulltext"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    }
+  ]
+}

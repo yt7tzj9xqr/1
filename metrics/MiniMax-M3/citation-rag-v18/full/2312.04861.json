@@ -1,0 +1,179 @@
+{
+  "arxiv_id": "2312.04861",
+  "model": "MiniMax-M3",
+  "system": "citation-rag-v18",
+  "reference_precision": 0.2727272727272727,
+  "reference_recall": 0.010830324909747292,
+  "reference_count": 11,
+  "reference_matches": 3,
+  "ground_truth_count": 277,
+  "predicted_titles": [
+    "Radars for Autonomous Driving: A Review of Deep Learning Methods and Challenges",
+    "Radar Camera Fusion via Representation Learning in Autonomous Driving",
+    "A Survey of Autonomous Driving: Common Practices and Emerging Technologies",
+    "Towards Deep Radar Perception for Autonomous Driving",
+    "Object 3D Perception via Camera-Radar Cross-Modality Learning for Autonomous Driving",
+    "K-Radar: 4D Radar Object Detection for Autonomous Driving in Various Weather Conditions",
+    "Deep Radar Detector",
+    "4D Radar Object Detection Dataset and Benchmark for ...",
+    "Camera–Radar Fusion with Modality Interaction and Radar Gaussian ...",
+    "Range-Doppler Detection in Automotive Radar with Deep ...",
+    "RODNet: Radar Object Detection using Cross-Modal ..."
+  ],
+  "cited_match_rate": 1.0,
+  "cited_count": 21,
+  "cited_supported": 21,
+  "cited_details": [
+    {
+      "statement": "Radars and cameras are mature, cost-effective, and robust sensors with complementary properties that have been widely used in the perception stack of mass-produced autonomous driving systems (https://arxiv.org/abs/2103.07825).",
+      "url": "https://arxiv.org/abs/2103.07825",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Automated driving systems aim to provide a safe, comfortable, and efficient driving experience, though fatalities involving ADS-equipped vehicles are on the rise and the robustness of state-of-the-art methods must still be improved (https://doi.org/10.1109/access.2020.2983149).",
+      "url": "https://doi.org/10.1109/access.2020.2983149",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A broad survey of automated driving reviewed present challenges, high-level system architectures, emerging methodologies, and core functions including localization, mapping, perception, planning, and human–machine interfaces, and provided an overview of available datasets and tools for ADS development (https://doi.org/10.1109/access.2020.2983149).",
+      "url": "https://doi.org/10.1109/access.2020.2983149",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The same survey discusses unsolved problems and surveys the technical aspect of automated driving, and implements and compares many state-of-the-art algorithms on its own platform in a real-world driving setting (https://doi.org/10.1109/access.2020.2983149).",
+      "url": "https://doi.org/10.1109/access.2020.2983149",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "4D radar can achieve imaging capability in the form of high-resolution point clouds (https://pmc.ncbi.nlm.nih.gov/articles/PMC9185239/).",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9185239",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Radars operate at relatively longer wavelength radio bands of 77–81 GHz, in contrast to RGB cameras operating at 384–769 THz and LiDARs operating at 361–331 THz, which results in robust measurements in adverse weather (https://proceedings.neurips.cc/paper_files/paper/2022/hash/185fdf627eaae2abab36205dcd19b817-Abstract-Datasets_and_Benchmarks.html).",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2022/hash/185fdf627eaae2abab36205dcd19b817-Abstract-Datasets_and_Benchmarks.html",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The performance of automotive radar has improved significantly with recent developments (https://pmc.ncbi.nlm.nih.gov/articles/PMC9185239/).",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9185239",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Most existing radar datasets provide 3D Radar Tensor (3DRT) data containing power measurements along the Doppler, range, and azimuth dimensions, and the absence of elevation information makes it challenging to estimate the 3D bounding box of an object from 3DRT (https://proceedings.neurips.cc/paper_files/paper/2022/hash/185fdf627eaae2abab36205dcd19b817-Abstract-Datasets_and_Benchmarks.html).",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2022/hash/185fdf627eaae2abab36205dcd19b817-Abstract-Datasets_and_Benchmarks.html",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A 4D Radar Tensor (4DRT) extends this with power measurements along an additional elevation dimension (https://proceedings.neurips.cc/paper_files/paper/2022/hash/185fdf627eaae2abab36205dcd19b817-Abstract-Datasets_and_Benchmarks.html).",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2022/hash/185fdf627eaae2abab36205dcd19b817-Abstract-Datasets_and_Benchmarks.html",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Range-Doppler detection in automotive radar has been addressed with deep learning methods (http://vigir.ee.missouri.edu/~gdesouza/Research/Conference_CDs/IEEE_WCCI_2020/IJCNN/Papers/N-21054.pdf).",
+      "url": "http://vigir.ee.missouri.edu/~gdesouza/Research/Conference_CDs/IEEE_WCCI_2020/IJCNN/Papers/N-21054.pdf",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "While camera and LiDAR processing have been revolutionized since the introduction of deep learning, radar processing still relies on classical tools, and a deep learning approach has been introduced that works directly with the radar complex data, uses radar calibration data during training to overcome the lack of labeled data, and is evaluated on the radar 4D detection task (https://arxiv.org/pdf/1906.12187).",
+      "url": "https://arxiv.org/pdf/1906.12187",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The same approach introduces new radar augmentation techniques (https://arxiv.org/pdf/1906.12187).",
+      "url": "https://arxiv.org/pdf/1906.12187",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "RODNet performs radar object detection using cross-modal supervision, and the associated CRUW3D dataset includes 66K synchronized and well-calibrated camera, radar, and LiDAR frames in various driving scenarios (https://www.semanticscholar.org/paper/RODNet%3A-Radar-Object-Detection-using-Cross-Modal-Wang-Jiang/3b858058c04da3871848b81e8d8304e24c1282d5).",
+      "url": "https://semanticscholar.org/paper/RODNet%3A-Radar-Object-Detection-using-Cross-Modal-Wang-Jiang/3b858058c04da3871848b81e8d8304e24c1282d5",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The K-Radar dataset is a novel large-scale object detection dataset and benchmark for autonomous driving that contains 35K frames of 4D Radar tensor (4DRT) data with power measurements along the Doppler, range, azimuth, and elevation dimensions (https://proceedings.neurips.cc/paper_files/paper/2022/hash/185fdf627eaae2abab36205dcd19b817-Abstract-Datasets_and_Benchmarks.html).",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2022/hash/185fdf627eaae2abab36205dcd19b817-Abstract-Datasets_and_Benchmarks.html",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "K-Radar has been described in its source page as introducing the first true imaging-radar dataset (https://www.semanticscholar.org/paper/K-Radar%3A-4D-Radar-Object-Detection-Dataset-and-for-Paek-Kong/9a6f72226f6cb0e8b68d6108b06ede5bd43cbd01).",
+      "url": "https://semanticscholar.org/paper/K-Radar%3A-4D-Radar-Object-Detection-Dataset-and-for-Paek-Kong/9a6f72226f6cb0e8b68d6108b06ede5bd43cbd01",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Existing radar datasets only contain a relatively small number of samples compared to existing camera and LiDAR datasets, which may hinder the development of sophisticated data-driven deep learning techniques for radar-based perception (https://proceedings.neurips.cc/paper_files/paper/2022/hash/185fdf627eaae2abab36205dcd19b817-Abstract-Datasets_and_Benchmarks.html).",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2022/hash/185fdf627eaae2abab36205dcd19b817-Abstract-Datasets_and_Benchmarks.html",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Autonomous vehicles are usually multi-sensor platforms, and it is crucial to both exploit and effectively fuse information from different sensors to compensate for individual limitations under different driving scenarios (https://digital.lib.washington.edu/researchworks/items/584e2f40-e50a-4284-8bf2-97c92df3d71d).",
+      "url": "https://digital.lib.washington.edu/researchworks/items/584e2f40-e50a-4284-8bf2-97c92df3d71d",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Cameras can capture rich semantic information, while radar has reliable ranging and speed estimation capability, and together they can support object perception results including 3D object detection and 3D object tracking (https://digital.lib.washington.edu/researchworks/items/584e2f40-e50a-4284-8bf2-97c92df3d71d).",
+      "url": "https://digital.lib.washington.edu/researchworks/items/584e2f40-e50a-4284-8bf2-97c92df3d71d",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The fusion of millimeter-wave radar and camera modalities is crucial for improving the accuracy and completeness of 3D object detection (https://spj.science.org/doi/pdf/10.34133/cbsystems.0079).",
+      "url": "https://spj.science.org/doi/pdf/10.34133/cbsystems.0079",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Modality interaction combined with radar Gaussian representations has been studied for camera–radar fusion (https://spj.science.org/doi/pdf/10.34133/cbsystems.0079).",
+      "url": "https://spj.science.org/doi/pdf/10.34133/cbsystems.0079",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A dedicated review titled \"Radars for Autonomous Driving: A Review of Deep Learning Methods and Challenges\" was published in IEEE Access in 2023 (https://arxiv.org/abs/2306.09304).",
+      "url": "https://arxiv.org/abs/2306.09304",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    }
+  ],
+  "noncited_factual_accuracy": 0.0,
+  "noncited_count": 0,
+  "noncited_correct": 0,
+  "noncited_details": []
+}
