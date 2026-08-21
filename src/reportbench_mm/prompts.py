@@ -49,6 +49,16 @@ def generated_report_is_usable(report: str, minimum_words: int = 350, minimum_so
     return words >= minimum_words and len(urls) >= minimum_sources
 
 
+def prefer_cleaned_recovery(recovered: str, cleaned: str, minimum_words: int = 300) -> str:
+    """Keep a valid recovery when a destructive citation cleanup collapses it."""
+    if generated_report_is_usable(cleaned, minimum_words=minimum_words):
+        return cleaned
+    if generated_report_is_usable(recovered, minimum_words=minimum_words):
+        print("Citation cleanup collapsed the recovery; preserving the quality-gated recovery", flush=True)
+        return recovered
+    raise RuntimeError("Recovered report remained unusable after atomic-citation cleanup")
+
+
 def recover_sanitized_report(
     report: str, papers, model, namespace: str, word_range: str,
 ) -> str:

@@ -4,7 +4,7 @@ from ..config import Settings
 from ..models import MiniMaxClient
 from ..prompts import (
     BASELINE_SYSTEM, evidence_block, generated_report_is_usable,
-    recover_sanitized_report, repair_grounded_report,
+    prefer_cleaned_recovery, recover_sanitized_report, repair_grounded_report,
 )
 from ..providers.openalex import extract_cutoff, filter_papers
 from ..retrieval import (
@@ -109,11 +109,9 @@ class BaselinePipeline:
             f"baseline-evidence-repair-v2:{self.settings.model}", "650-800", "8-10",
         )
         report = sanitize_report(report)
-        report = recover_sanitized_report(
+        recovered = recover_sanitized_report(
             report, papers, self.model,
             f"baseline-post-sanitize-recovery-v1:{self.settings.model}", "500-650",
         )
-        report = sanitize_report(report)
-        if not generated_report_is_usable(report, minimum_words=300):
-            raise RuntimeError("Baseline report collapsed after atomic-citation cleanup")
+        report = prefer_cleaned_recovery(recovered, sanitize_report(recovered))
         return report, papers

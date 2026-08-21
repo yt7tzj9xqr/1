@@ -55,6 +55,15 @@ class CoreTests(unittest.TestCase):
         self.assertTrue(generated_report_is_usable(recovered, minimum_words=300))
         self.assertEqual(model.calls, 1)
 
+    def test_cleanup_cannot_discard_a_quality_gated_recovery(self):
+        from reportbench_mm.prompts import prefer_cleaned_recovery
+
+        recovered = ("Supported factual evidence https://example.org/a " * 80) + " ".join(
+            f"https://example.org/{suffix}" for suffix in "bcde"
+        )
+        collapsed = "Short fragment without enough evidence."
+        self.assertEqual(prefer_cleaned_recovery(recovered, collapsed), recovered)
+
     def test_grounding_repair_requires_atomic_cited_sentences(self):
         class Model:
             def generate(self, messages, **kwargs):
