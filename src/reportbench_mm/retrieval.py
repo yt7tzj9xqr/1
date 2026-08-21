@@ -186,8 +186,11 @@ def adaptive_search(
     )
     try:
         value = model.generate_json(
-            [{"role": "user", "content": prompt}], temperature=0, max_tokens=2048,
-            cache_namespace=f"search-feedback-v3:{model.settings.model}",
+            # M3 can consume a 2k allowance entirely in hidden reasoning. Use
+            # the same bounded allowance as the initial planner so the adaptive
+            # stage reliably returns its two short visible queries.
+            [{"role": "user", "content": prompt}], temperature=0, max_tokens=8192,
+            cache_namespace=f"search-feedback-v4:{model.settings.model}",
         )
         proposed = value.get("queries", []) if isinstance(value, dict) else value
     except Exception as exc:
