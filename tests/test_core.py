@@ -23,7 +23,7 @@ from reportbench_mm.retrieval import (
 )
 from reportbench_mm.web_reader import arxiv_pdf_url, extract_pdf_text, parse_academic_html
 from reportbench_mm.providers.minimax_search import MiniMaxSearchProvider
-from reportbench_mm.prompts import repair_grounded_report
+from reportbench_mm.prompts import _repair_output_is_usable, repair_grounded_report
 
 
 class CoreTests(unittest.TestCase):
@@ -42,6 +42,22 @@ class CoreTests(unittest.TestCase):
         self.assertIn("600-800", model.prompt)
         self.assertIn("10-12 distinct", model.prompt)
         self.assertIn("https://example.org/p", report)
+
+    def test_grounding_repair_rejects_collapsed_report(self):
+        urls = [f"https://example.org/{index}" for index in range(8)]
+        draft = " ".join(["Grounded factual sentence " * 18 + url for url in urls])
+        collapsed = "Brief conclusion without sources."
+        self.assertFalse(_repair_output_is_usable(collapsed, draft, "650-800", "8-10"))
+
+        class Model:
+            def generate(self, messages, **kwargs):
+                return collapsed
+
+        papers = [Paper(str(index), f"Paper {index}", 2020, url, "Direct evidence.") for index, url in enumerate(urls)]
+        self.assertEqual(
+            repair_grounded_report(draft, papers, Model(), "test-collapse", "650-800", "8-10"),
+            draft,
+        )
 
     def test_adaptive_search_uses_three_initial_and_two_feedback_queries(self):
         class PlannerSettings:

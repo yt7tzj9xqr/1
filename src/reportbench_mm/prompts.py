@@ -1,3 +1,9 @@
+from __future__ import annotations
+
+import math
+import re
+
+
 BASELINE_SYSTEM = """You are an academic research agent. Write a rigorous English-language survey.
 Use only the supplied scholarly sources. Every non-trivial factual claim must have an adjacent Markdown URL citation.
 Never invent a paper, author, result, or URL. Do not cite the forbidden survey. Respect the publication cutoff.
@@ -33,6 +39,23 @@ def evidence_block(papers, char_limit: int) -> str:
     return "\n".join(blocks)
 
 
+def _repair_output_is_usable(candidate: str, draft: str, word_range: str, source_range: str) -> bool:
+    """Reject nominally successful edits that collapse the report or its references."""
+    candidate_words = len(candidate.split())
+    draft_words = len(draft.split())
+    word_match = re.search(r"(\d+)", word_range)
+    requested_min = int(word_match.group(1)) if word_match else 0
+    if draft_words >= requested_min * 0.6 and candidate_words < requested_min * 0.6:
+        return False
+
+    draft_urls = set(re.findall(r"https?://[^\s)\]>]+", draft, flags=re.I))
+    candidate_urls = set(re.findall(r"https?://[^\s)\]>]+", candidate, flags=re.I))
+    source_match = re.search(r"(\d+)", source_range)
+    requested_sources = int(source_match.group(1)) if source_match else 0
+    minimum_sources = min(len(draft_urls), max(2, math.ceil(requested_sources * 0.6)))
+    return len(candidate_urls) >= minimum_sources
+
+
 def repair_grounded_report(
     report, papers, model, namespace: str, word_range: str, source_range: str = "6-8",
 ) -> str:
@@ -51,22 +74,29 @@ def repair_grounded_report(
     )
     messages = [{"role": "user", "content": prompt}]
     try:
-        return model.generate(
+        candidate = model.generate(
             messages, temperature=0, max_tokens=24576, cache_namespace=namespace,
         )
+        if _repair_output_is_usable(candidate, report, word_range, source_range):
+            return candidate
+        print("Evidence repair collapsed report coverage; retrying with compact evidence", flush=True)
     except RuntimeError as exc:
         if "finish_reason=length" not in str(exc):
             raise
-        compact_evidence = evidence_block(papers[:12], 12000)
-        compact_prompt = prompt.replace(evidence, compact_evidence)
         print("Evidence repair exhausted its reasoning budget; retrying with compact evidence", flush=True)
-        try:
-            return model.generate(
-                [{"role": "user", "content": compact_prompt}], temperature=0, max_tokens=32768,
-                cache_namespace=f"{namespace}-compact-recovery",
-            )
-        except RuntimeError as retry_exc:
-            if "finish_reason=length" not in str(retry_exc):
-                raise
-            print("Compact evidence repair also exhausted; preserving the grounded draft", flush=True)
-            return report
+    compact_evidence = evidence_block(papers[:12], 12000)
+    compact_prompt = prompt.replace(evidence, compact_evidence)
+    try:
+        candidate = model.generate(
+            [{"role": "user", "content": compact_prompt}], temperature=0, max_tokens=32768,
+            cache_namespace=f"{namespace}-compact-recovery",
+        )
+        if _repair_output_is_usable(candidate, report, word_range, source_range):
+            return candidate
+        print("Compact evidence repair collapsed report coverage; preserving the grounded draft", flush=True)
+        return report
+    except RuntimeError as retry_exc:
+        if "finish_reason=length" not in str(retry_exc):
+            raise
+        print("Compact evidence repair also exhausted; preserving the grounded draft", flush=True)
+        return report
