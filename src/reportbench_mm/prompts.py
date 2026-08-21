@@ -35,7 +35,7 @@ def evidence_block(papers, char_limit: int) -> str:
 
 def repair_grounded_report(report, papers, model, namespace: str, word_range: str) -> str:
     """Run a bounded evidence editor that deletes unsupported or uncited factual prose."""
-    evidence = evidence_block(papers, 30000)
+    evidence = evidence_block(papers, 18000)
     prompt = (
         "Edit DRAFT into a concise evidence-grounded English survey. Use only EVIDENCE. Preserve useful organization, "
         f"but keep the final answer within {word_range} words. Every externally verifiable factual prose sentence must "
@@ -43,10 +43,28 @@ def repair_grounded_report(report, papers, model, namespace: str, word_range: st
         "whose complete claim is not directly stated by that evidence, including broad trends, historical priority, "
         "comparisons, implications, introductions, transitions, and conclusions. Do not invent or alter URLs. Headings "
         "may be uncited only when they contain no factual claim. Do not include a References or Bibliography section. "
-        "Return only the revised Markdown report.\n\n"
+        "Remove empty headings. When the evidence permits, retain 6-8 distinct directly supporting sources so that "
+        "grounding does not collapse topical coverage. Return only the revised Markdown report.\n\n"
         f"EVIDENCE:\n{evidence}\n\nDRAFT:\n{report}"
     )
-    return model.generate(
-        [{"role": "user", "content": prompt}], temperature=0, max_tokens=24576,
-        cache_namespace=namespace,
-    )
+    messages = [{"role": "user", "content": prompt}]
+    try:
+        return model.generate(
+            messages, temperature=0, max_tokens=24576, cache_namespace=namespace,
+        )
+    except RuntimeError as exc:
+        if "finish_reason=length" not in str(exc):
+            raise
+        compact_evidence = evidence_block(papers[:12], 12000)
+        compact_prompt = prompt.replace(evidence, compact_evidence)
+        print("Evidence repair exhausted its reasoning budget; retrying with compact evidence", flush=True)
+        try:
+            return model.generate(
+                [{"role": "user", "content": compact_prompt}], temperature=0, max_tokens=32768,
+                cache_namespace=f"{namespace}-compact-recovery",
+            )
+        except RuntimeError as retry_exc:
+            if "finish_reason=length" not in str(retry_exc):
+                raise
+            print("Compact evidence repair also exhausted; preserving the grounded draft", flush=True)
+            return report
