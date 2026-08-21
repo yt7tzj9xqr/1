@@ -302,6 +302,11 @@ class CoreTests(unittest.TestCase):
         with self.assertRaises(RuntimeError):
             client.generate_json([])
 
+    def test_minimax_stream_text_accepts_cumulative_and_delta_chunks(self):
+        self.assertEqual(MiniMaxClient._merge_stream_text("abc", "abcdef"), "abcdef")
+        self.assertEqual(MiniMaxClient._merge_stream_text("abc", "def"), "abcdef")
+        self.assertEqual(MiniMaxClient._merge_stream_text("abcdef", "def"), "abcdef")
+
     def test_cache_roundtrip(self):
         with tempfile.TemporaryDirectory() as directory:
             cache = JsonCache(Path(directory) / "cache.sqlite3")

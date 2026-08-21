@@ -35,6 +35,19 @@ class MiniMaxClient:
             # this completion budget on M3/M2.7.
             "max_completion_tokens": max_tokens or self.settings.max_output_tokens,
         }
+        # M2.x always reasons before producing visible text.  A long, non-streaming
+        # request can therefore exceed the socket timeout even while the server is
+        # making progress.  Streaming keeps the connection active and separates
+        # hidden reasoning from the report/JSON consumed by the pipeline.
+        if str(payload["model"]).startswith("MiniMax-M2"):
+            payload.update({
+                "stream": True,
+                "reasoning_split": True,
+                # MiniMax documents 1.0 as the recommended M2.x sampling
+                # temperature.  The near-zero M3 setting can cause M2.7 to
+                # spend its entire completion budget in reasoning.
+                "temperature": 1.0,
+            })
 
         def request() -> dict[str, Any]:
             body = json.dumps(payload, ensure_ascii=False).encode("utf-8")
@@ -51,6 +64,8 @@ class MiniMaxClient:
             for attempt in range(8):
                 try:
                     with urlopen(http_request, timeout=self.settings.request_timeout) as response:
+                        if payload.get("stream"):
+                            return self._read_stream_response(response)
                         return json.loads(response.read().decode("utf-8"))
                 except HTTPError as exc:
                     detail = exc.read().decode("utf-8", errors="replace")[:500]
@@ -92,6 +107,48 @@ class MiniMaxClient:
             return data["choices"][0]["message"].get("content") or ""
         except (KeyError, IndexError, TypeError, AttributeError):
             return ""
+
+    @staticmethod
+    def _merge_stream_text(buffer: str, value: str) -> str:
+        """Accept both cumulative MiniMax chunks and ordinary delta chunks."""
+        if not value:
+            return buffer
+        if value.startswith(buffer):
+            return value
+        if buffer.endswith(value):
+            return buffer
+        return buffer + value
+
+    @classmethod
+    def _read_stream_response(cls, response: Any) -> dict[str, Any]:
+        content = ""
+        finish_reason = None
+        usage: dict[str, Any] = {}
+        for raw_line in response:
+            line = raw_line.decode("utf-8", errors="replace").strip()
+            if not line.startswith("data:"):
+                continue
+            raw_data = line[5:].strip()
+            if not raw_data or raw_data == "[DONE]":
+                continue
+            try:
+                event = json.loads(raw_data)
+            except json.JSONDecodeError:
+                continue
+            if isinstance(event.get("usage"), dict):
+                usage = event["usage"]
+            choices = event.get("choices") or []
+            if not choices:
+                continue
+            choice = choices[0]
+            delta = choice.get("delta") or {}
+            value = delta.get("content") or ""
+            content = cls._merge_stream_text(content, value)
+            finish_reason = choice.get("finish_reason") or finish_reason
+        return {
+            "choices": [{"message": {"content": content}, "finish_reason": finish_reason}],
+            "usage": usage,
+        }
 
     def generate_json(self, messages: list[dict[str, str]], **kwargs: Any) -> Any:
         text = self.generate(messages, **kwargs)
