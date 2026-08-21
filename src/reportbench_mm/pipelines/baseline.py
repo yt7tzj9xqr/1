@@ -65,16 +65,29 @@ class BaselinePipeline:
         papers = self.retrieve(task)
         if not papers:
             raise RuntimeError(f"No usable scholarly sources found for {task.arxiv_id}")
+        cards = evidence_block(papers, self.settings.evidence_char_limit)
         user = (
             f"TASK:\n{task.prompt}\n\nFORBIDDEN SURVEY:\n{task.title}\n\n"
             f"DOMAIN:\n{task.application_domain}\n\nSOURCES:\n"
-            + evidence_block(papers, self.settings.evidence_char_limit)
+            + cards
             + "\n\nLENGTH: Write 700-850 English words. This is a hard range. Delete any factual sentence without one directly supporting URL."
         )
-        report = self.model.generate(
-            [{"role": "system", "content": BASELINE_SYSTEM}, {"role": "user", "content": user}],
-            cache_namespace=f"baseline-report-v4:{self.settings.model}",
-        )
+        messages = [{"role": "system", "content": BASELINE_SYSTEM}, {"role": "user", "content": user}]
+        try:
+            report = self.model.generate(
+                messages, cache_namespace=f"baseline-report-v4:{self.settings.model}",
+            )
+        except RuntimeError as exc:
+            if "finish_reason=length" not in str(exc):
+                raise
+            compact_cards = evidence_block(papers[:12], 12000)
+            compact_user = user.replace(cards, compact_cards).replace("700-850", "600-750")
+            print("Baseline writer exhausted its reasoning budget; using compact evidence recovery", flush=True)
+            report = self.model.generate(
+                [{"role": "system", "content": BASELINE_SYSTEM}, {"role": "user", "content": compact_user}],
+                temperature=0, max_tokens=self.settings.max_output_tokens,
+                cache_namespace=f"baseline-report-v4-compact-recovery:{self.settings.model}",
+            )
         report = repair_grounded_report(
             report, papers, self.model,
             f"baseline-evidence-repair-v1:{self.settings.model}", "650-800",
