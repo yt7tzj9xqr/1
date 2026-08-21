@@ -1,0 +1,25 @@
+{
+  "arxiv_id": "2205.08977",
+  "model": "MiniMax-M3",
+  "system": "citation-rag-v15",
+  "reference_precision": 0.0,
+  "reference_recall": 0.0,
+  "reference_count": 13,
+  "reference_matches": 0,
+  "ground_truth_count": 317,
+  "predicted_titles": [
+    "Cognitive Internet of Vehicles: Motivation, Layered Architecture and Security Issues",
+    "Survey on Digital Twin Edge Networks (DITEN) Toward 6G",
+    "Industrial digital twins at the nexus of NextG wireless networks and computational intelligence: A survey",
+    "Towards 6G wireless communication networks: vision, enabling technologies, and new paradigm shifts",
+    "Communications in the 6G Era",
+    "Toward Intelligent Cyber-Physical Systems: Digital Twin Meets Artificial Intelligence",
+    "Edge Artificial Intelligence for 6G: Vision, Enabling Technologies, and Applications",
+    "Integrated Sensing and Communications: Toward Dual-Functional Wireless Networks for 6G and Beyond",
+    "6G White Paper on Edge Intelligence",
+    "Edge Intelligence and Internet of Things in Healthcare",
+    "Massive Internet of Things for Industrial Applications: Addressing Wireless IIoT Connectivity Challenges and Ecosystem Fragmentation",
+    "Designing CPS/IoT applications for smart buildings and cities",
+    "The role of data fusion in predictive maintenance using digital twin"
+  ]
+}

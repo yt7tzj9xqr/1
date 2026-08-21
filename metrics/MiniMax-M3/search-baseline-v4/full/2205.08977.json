@@ -1,0 +1,1474 @@
+{
+  "arxiv_id": "2205.08977",
+  "model": "MiniMax-M3",
+  "system": "search-baseline-v4",
+  "reference_precision": 0.0,
+  "reference_recall": 0.0,
+  "reference_count": 15,
+  "reference_matches": 0,
+  "ground_truth_count": 317,
+  "predicted_titles": [
+    "Towards 6G wireless communication networks: vision, enabling technologies, and new paradigm shifts",
+    "Edge Artificial Intelligence for 6G: Vision, Enabling Technologies, and Applications",
+    "Integrated Sensing and Communications: Toward Dual-Functional Wireless Networks for 6G and Beyond",
+    "Communications in the 6G Era",
+    "Survey on Digital Twin Edge Networks (DITEN) Toward 6G",
+    "Industrial digital twins at the nexus of NextG wireless networks and computational intelligence: A survey",
+    "Toward Intelligent Cyber-Physical Systems: Digital Twin Meets Artificial Intelligence",
+    "6G White Paper on Edge Intelligence",
+    "Survey on Intelligence Edge Computing in 6G: Characteristics, Challenges, Potential Use Cases, and Market Drivers",
+    "Cognitive Internet of Vehicles: Motivation, Layered Architecture and Security Issues",
+    "Edge Intelligence and Internet of Things in Healthcare",
+    "Paving the Last Mile of Artificial Intelligence With Edge Computing",
+    "Information-Centric Networking Architectures and ...",
+    "Edge Intelligence‐Based RAN Architecture for 6G Internet of Things",
+    "Enhancing Autonomy with Blockchain and Multi-Access Edge Computing in Distributed Robotic Systems"
+  ],
+  "cited_match_rate": 0.36936936936936937,
+  "cited_count": 111,
+  "cited_supported": 41,
+  "cited_details": [
+    {
+      "statement": "As the number of connected endpoints scales into the tens of billions, however, two new bottlenecks emerge: the communication infrastructure can no longer guarantee the latency, reliability, and energy efficiency demanded by emerging cyber-physical applications, and the volume of generated data overwhelms centralized cloud analytics [Source 1](https://doi.org/10.1007/s11432-020-2955-6).",
+      "url": "https://doi.org/10.1007/s11432-020-2955-6",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The IoI is enabled by three converging forces: (i) the maturation of sixth-generation (6G) wireless research, which promises global coverage, sub-millisecond latency, integrated sensing, and native AI support [Source 1](https://doi.org/10.1007/s11432-020-2955-6), [Source 4](https://doi.org/10.1109/access.2020.2981745); (ii) the rise of *edge intelligence*, which pushes model training and inference toward the data source to address latency, privacy, and bandwidth constraints [Source 2](https://doi.org/10.1109/jsac.2021.3126076), [Source 8](http://arxiv.org/abs/2004.14850), [Source 9](https://doi.org/10.3390/fi13050118), [Source 12](https://www.semanticscholar.org/paper/Edge-Intelligence%3A-Paving-the-Last-Mile-of-With-Zhou-Chen/928cd808aba140ec298508df87c5579811ff2f41); and (iii) the emergence of *digital twins* as living replicas of physical entities that can be reasoned over, predicted, and optimized [Source 5](https://doi.org/10.1109/ojcoms.2022.3197811), [Source 6](https://doi.org/10.1016/j.jnca.2021.103309), [Source 7](https://doi.org/10.1109/mcom.001.2001237).",
+      "url": "https://doi.org/10.1007/s11432-020-2955-6",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The IoI is enabled by three converging forces: (i) the maturation of sixth-generation (6G) wireless research, which promises global coverage, sub-millisecond latency, integrated sensing, and native AI support [Source 1](https://doi.org/10.1007/s11432-020-2955-6), [Source 4](https://doi.org/10.1109/access.2020.2981745); (ii) the rise of *edge intelligence*, which pushes model training and inference toward the data source to address latency, privacy, and bandwidth constraints [Source 2](https://doi.org/10.1109/jsac.2021.3126076), [Source 8](http://arxiv.org/abs/2004.14850), [Source 9](https://doi.org/10.3390/fi13050118), [Source 12](https://www.semanticscholar.org/paper/Edge-Intelligence%3A-Paving-the-Last-Mile-of-With-Zhou-Chen/928cd808aba140ec298508df87c5579811ff2f41); and (iii) the emergence of *digital twins* as living replicas of physical entities that can be reasoned over, predicted, and optimized [Source 5](https://doi.org/10.1109/ojcoms.2022.3197811), [Source 6](https://doi.org/10.1016/j.jnca.2021.103309), [Source 7](https://doi.org/10.1109/mcom.001.2001237).",
+      "url": "https://doi.org/10.1109/access.2020.2981745",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The IoI is enabled by three converging forces: (i) the maturation of sixth-generation (6G) wireless research, which promises global coverage, sub-millisecond latency, integrated sensing, and native AI support [Source 1](https://doi.org/10.1007/s11432-020-2955-6), [Source 4](https://doi.org/10.1109/access.2020.2981745); (ii) the rise of *edge intelligence*, which pushes model training and inference toward the data source to address latency, privacy, and bandwidth constraints [Source 2](https://doi.org/10.1109/jsac.2021.3126076), [Source 8](http://arxiv.org/abs/2004.14850), [Source 9](https://doi.org/10.3390/fi13050118), [Source 12](https://www.semanticscholar.org/paper/Edge-Intelligence%3A-Paving-the-Last-Mile-of-With-Zhou-Chen/928cd808aba140ec298508df87c5579811ff2f41); and (iii) the emergence of *digital twins* as living replicas of physical entities that can be reasoned over, predicted, and optimized [Source 5](https://doi.org/10.1109/ojcoms.2022.3197811), [Source 6](https://doi.org/10.1016/j.jnca.2021.103309), [Source 7](https://doi.org/10.1109/mcom.001.2001237).",
+      "url": "https://doi.org/10.1109/jsac.2021.3126076",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The IoI is enabled by three converging forces: (i) the maturation of sixth-generation (6G) wireless research, which promises global coverage, sub-millisecond latency, integrated sensing, and native AI support [Source 1](https://doi.org/10.1007/s11432-020-2955-6), [Source 4](https://doi.org/10.1109/access.2020.2981745); (ii) the rise of *edge intelligence*, which pushes model training and inference toward the data source to address latency, privacy, and bandwidth constraints [Source 2](https://doi.org/10.1109/jsac.2021.3126076), [Source 8](http://arxiv.org/abs/2004.14850), [Source 9](https://doi.org/10.3390/fi13050118), [Source 12](https://www.semanticscholar.org/paper/Edge-Intelligence%3A-Paving-the-Last-Mile-of-With-Zhou-Chen/928cd808aba140ec298508df87c5579811ff2f41); and (iii) the emergence of *digital twins* as living replicas of physical entities that can be reasoned over, predicted, and optimized [Source 5](https://doi.org/10.1109/ojcoms.2022.3197811), [Source 6](https://doi.org/10.1016/j.jnca.2021.103309), [Source 7](https://doi.org/10.1109/mcom.001.2001237).",
+      "url": "http://arxiv.org/abs/2004.14850",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The IoI is enabled by three converging forces: (i) the maturation of sixth-generation (6G) wireless research, which promises global coverage, sub-millisecond latency, integrated sensing, and native AI support [Source 1](https://doi.org/10.1007/s11432-020-2955-6), [Source 4](https://doi.org/10.1109/access.2020.2981745); (ii) the rise of *edge intelligence*, which pushes model training and inference toward the data source to address latency, privacy, and bandwidth constraints [Source 2](https://doi.org/10.1109/jsac.2021.3126076), [Source 8](http://arxiv.org/abs/2004.14850), [Source 9](https://doi.org/10.3390/fi13050118), [Source 12](https://www.semanticscholar.org/paper/Edge-Intelligence%3A-Paving-the-Last-Mile-of-With-Zhou-Chen/928cd808aba140ec298508df87c5579811ff2f41); and (iii) the emergence of *digital twins* as living replicas of physical entities that can be reasoned over, predicted, and optimized [Source 5](https://doi.org/10.1109/ojcoms.2022.3197811), [Source 6](https://doi.org/10.1016/j.jnca.2021.103309), [Source 7](https://doi.org/10.1109/mcom.001.2001237).",
+      "url": "https://doi.org/10.3390/fi13050118",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The IoI is enabled by three converging forces: (i) the maturation of sixth-generation (6G) wireless research, which promises global coverage, sub-millisecond latency, integrated sensing, and native AI support [Source 1](https://doi.org/10.1007/s11432-020-2955-6), [Source 4](https://doi.org/10.1109/access.2020.2981745); (ii) the rise of *edge intelligence*, which pushes model training and inference toward the data source to address latency, privacy, and bandwidth constraints [Source 2](https://doi.org/10.1109/jsac.2021.3126076), [Source 8](http://arxiv.org/abs/2004.14850), [Source 9](https://doi.org/10.3390/fi13050118), [Source 12](https://www.semanticscholar.org/paper/Edge-Intelligence%3A-Paving-the-Last-Mile-of-With-Zhou-Chen/928cd808aba140ec298508df87c5579811ff2f41); and (iii) the emergence of *digital twins* as living replicas of physical entities that can be reasoned over, predicted, and optimized [Source 5](https://doi.org/10.1109/ojcoms.2022.3197811), [Source 6](https://doi.org/10.1016/j.jnca.2021.103309), [Source 7](https://doi.org/10.1109/mcom.001.2001237).",
+      "url": "https://semanticscholar.org/paper/Edge-Intelligence%3A-Paving-the-Last-Mile-of-With-Zhou-Chen/928cd808aba140ec298508df87c5579811ff2f41",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The IoI is enabled by three converging forces: (i) the maturation of sixth-generation (6G) wireless research, which promises global coverage, sub-millisecond latency, integrated sensing, and native AI support [Source 1](https://doi.org/10.1007/s11432-020-2955-6), [Source 4](https://doi.org/10.1109/access.2020.2981745); (ii) the rise of *edge intelligence*, which pushes model training and inference toward the data source to address latency, privacy, and bandwidth constraints [Source 2](https://doi.org/10.1109/jsac.2021.3126076), [Source 8](http://arxiv.org/abs/2004.14850), [Source 9](https://doi.org/10.3390/fi13050118), [Source 12](https://www.semanticscholar.org/paper/Edge-Intelligence%3A-Paving-the-Last-Mile-of-With-Zhou-Chen/928cd808aba140ec298508df87c5579811ff2f41); and (iii) the emergence of *digital twins* as living replicas of physical entities that can be reasoned over, predicted, and optimized [Source 5](https://doi.org/10.1109/ojcoms.2022.3197811), [Source 6](https://doi.org/10.1016/j.jnca.2021.103309), [Source 7](https://doi.org/10.1109/mcom.001.2001237).",
+      "url": "https://doi.org/10.1109/ojcoms.2022.3197811",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The IoI is enabled by three converging forces: (i) the maturation of sixth-generation (6G) wireless research, which promises global coverage, sub-millisecond latency, integrated sensing, and native AI support [Source 1](https://doi.org/10.1007/s11432-020-2955-6), [Source 4](https://doi.org/10.1109/access.2020.2981745); (ii) the rise of *edge intelligence*, which pushes model training and inference toward the data source to address latency, privacy, and bandwidth constraints [Source 2](https://doi.org/10.1109/jsac.2021.3126076), [Source 8](http://arxiv.org/abs/2004.14850), [Source 9](https://doi.org/10.3390/fi13050118), [Source 12](https://www.semanticscholar.org/paper/Edge-Intelligence%3A-Paving-the-Last-Mile-of-With-Zhou-Chen/928cd808aba140ec298508df87c5579811ff2f41); and (iii) the emergence of *digital twins* as living replicas of physical entities that can be reasoned over, predicted, and optimized [Source 5](https://doi.org/10.1109/ojcoms.2022.3197811), [Source 6](https://doi.org/10.1016/j.jnca.2021.103309), [Source 7](https://doi.org/10.1109/mcom.001.2001237).",
+      "url": "https://doi.org/10.1016/j.jnca.2021.103309",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The IoI is enabled by three converging forces: (i) the maturation of sixth-generation (6G) wireless research, which promises global coverage, sub-millisecond latency, integrated sensing, and native AI support [Source 1](https://doi.org/10.1007/s11432-020-2955-6), [Source 4](https://doi.org/10.1109/access.2020.2981745); (ii) the rise of *edge intelligence*, which pushes model training and inference toward the data source to address latency, privacy, and bandwidth constraints [Source 2](https://doi.org/10.1109/jsac.2021.3126076), [Source 8](http://arxiv.org/abs/2004.14850), [Source 9](https://doi.org/10.3390/fi13050118), [Source 12](https://www.semanticscholar.org/paper/Edge-Intelligence%3A-Paving-the-Last-Mile-of-With-Zhou-Chen/928cd808aba140ec298508df87c5579811ff2f41); and (iii) the emergence of *digital twins* as living replicas of physical entities that can be reasoned over, predicted, and optimized [Source 5](https://doi.org/10.1109/ojcoms.2022.3197811), [Source 6](https://doi.org/10.1016/j.jnca.2021.103309), [Source 7](https://doi.org/10.1109/mcom.001.2001237).",
+      "url": "https://doi.org/10.1109/mcom.001.2001237",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Yet by 2030, the dominant traffic is expected to be machine-generated, originating from sensors, vehicles, drones, robots, and industrial controllers [Source 1](https://doi.org/10.1007/s11432-020-2955-6).",
+      "url": "https://doi.org/10.1007/s11432-020-2955-6",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The 6G white paper on edge intelligence argues that future networks must provide not only connectivity but also \"intelligence as a service\", supporting distributed training, federated inference, and model marketplaces [Source 8](http://arxiv.org/abs/2004.14850).",
+      "url": "http://arxiv.org/abs/2004.14850",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Likewise, the 6G vision in [Source 1](https://doi.org/10.1007/s11432-020-2955-6) identifies four paradigm shifts for 6G: ubiquitous coverage (terrestrial plus non-terrestrial), AI-native air-interface design, cell-free architectures, and cloud–fog–edge computing—each of which directly enables the IoI vision.",
+      "url": "https://doi.org/10.1007/s11432-020-2955-6",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Echoing this, the *Communications in the 6G Era* perspective argues that future connectivity will be defined by the construction of *digital twin worlds* that unify physical, biological, and digital realities, requiring network functions to embed perception, reasoning, and actuation at every layer [Source 4](https://doi.org/10.1109/access.2020.2981745).",
+      "url": "https://doi.org/10.1109/access.2020.2981745",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The edge-AI literature reinforces this: by moving model training and inference to the network edge, the IoI can simultaneously improve latency, energy efficiency, privacy, and security [Source 2](https://doi.org/10.1109/jsac.2021.3126076), [Source 12](https://www.semanticscholar.org/paper/Edge-Intelligence%3A-Paving-the-Last-Mile-of-With-Zhou-Chen/928cd808aba140ec298508df87c5579811ff2f41).",
+      "url": "https://doi.org/10.1109/jsac.2021.3126076",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The edge-AI literature reinforces this: by moving model training and inference to the network edge, the IoI can simultaneously improve latency, energy efficiency, privacy, and security [Source 2](https://doi.org/10.1109/jsac.2021.3126076), [Source 12](https://www.semanticscholar.org/paper/Edge-Intelligence%3A-Paving-the-Last-Mile-of-With-Zhou-Chen/928cd808aba140ec298508df87c5579811ff2f41).",
+      "url": "https://semanticscholar.org/paper/Edge-Intelligence%3A-Paving-the-Last-Mile-of-With-Zhou-Chen/928cd808aba140ec298508df87c5579811ff2f41",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "| **L1 – Smart Sensing & Perception** | Multi-modal data acquisition, environmental sensing, RF sensing | Integrated sensing and communication (ISAC), IoT sensors, wearables [Source 3](https://doi.org/10.1109/jsac.2022.3156632) |",
+      "url": "https://doi.org/10.1109/jsac.2022.3156632",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "| **L2 – Communication & Networking** | Connectivity, routing, content naming, slicing, programmability | 6G air interface, cell-free massive MIMO, SDN, ICN [Source 1](https://doi.org/10.1007/s11432-020-2955-6), [Source 13](https://www.nature.com/nature-index/topics/l4/information-centric-networking-architectures-and-technologies) |",
+      "url": "https://doi.org/10.1007/s11432-020-2955-6",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "| **L2 – Communication & Networking** | Connectivity, routing, content naming, slicing, programmability | 6G air interface, cell-free massive MIMO, SDN, ICN [Source 1](https://doi.org/10.1007/s11432-020-2955-6), [Source 13](https://www.nature.com/nature-index/topics/l4/information-centric-networking-architectures-and-technologies) |",
+      "url": "https://nature.com/nature-index/topics/l4/information-centric-networking-architectures-and-technologies",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "| **L3 – Edge Intelligence & Computation** | Distributed training, federated learning, model serving, task offloading | MEC, edge AI platforms, split learning, model compression [Source 2](https://doi.org/10.1109/jsac.2021.3126076), [Source 8](http://arxiv.org/abs/2004.14850), [Source 9](https://doi.org/10.3390/fi13050118), [Source 15](https://doi.org/10.1155/2022/4955498) |",
+      "url": "https://doi.org/10.1109/jsac.2021.3126076",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "| **L3 – Edge Intelligence & Computation** | Distributed training, federated learning, model serving, task offloading | MEC, edge AI platforms, split learning, model compression [Source 2](https://doi.org/10.1109/jsac.2021.3126076), [Source 8](http://arxiv.org/abs/2004.14850), [Source 9](https://doi.org/10.3390/fi13050118), [Source 15](https://doi.org/10.1155/2022/4955498) |",
+      "url": "http://arxiv.org/abs/2004.14850",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "| **L3 – Edge Intelligence & Computation** | Distributed training, federated learning, model serving, task offloading | MEC, edge AI platforms, split learning, model compression [Source 2](https://doi.org/10.1109/jsac.2021.3126076), [Source 8](http://arxiv.org/abs/2004.14850), [Source 9](https://doi.org/10.3390/fi13050118), [Source 15](https://doi.org/10.1155/2022/4955498) |",
+      "url": "https://doi.org/10.3390/fi13050118",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "| **L3 – Edge Intelligence & Computation** | Distributed training, federated learning, model serving, task offloading | MEC, edge AI platforms, split learning, model compression [Source 2](https://doi.org/10.1109/jsac.2021.3126076), [Source 8](http://arxiv.org/abs/2004.14850), [Source 9](https://doi.org/10.3390/fi13050118), [Source 15](https://doi.org/10.1155/2022/4955498) |",
+      "url": "https://doi.org/10.1155/2022/4955498",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "| **L4 – Digital Twin & Smart Applications** | Mirroring, simulation, prediction, decision support, autonomous control | Industrial DT, vehicular DT, healthcare DT, blockchain-based trust [Source 5](https://doi.org/10.1109/ojcoms.2022.3197811), [Source 6](https://doi.org/10.1016/j.jnca.2021.103309), [Source 7](https://doi.org/10.1109/mcom.001.2001237), [Source 16](https://arxiv.org/abs/2007.01156) |",
+      "url": "https://doi.org/10.1109/ojcoms.2022.3197811",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "| **L4 – Digital Twin & Smart Applications** | Mirroring, simulation, prediction, decision support, autonomous control | Industrial DT, vehicular DT, healthcare DT, blockchain-based trust [Source 5](https://doi.org/10.1109/ojcoms.2022.3197811), [Source 6](https://doi.org/10.1016/j.jnca.2021.103309), [Source 7](https://doi.org/10.1109/mcom.001.2001237), [Source 16](https://arxiv.org/abs/2007.01156) |",
+      "url": "https://doi.org/10.1016/j.jnca.2021.103309",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "| **L4 – Digital Twin & Smart Applications** | Mirroring, simulation, prediction, decision support, autonomous control | Industrial DT, vehicular DT, healthcare DT, blockchain-based trust [Source 5](https://doi.org/10.1109/ojcoms.2022.3197811), [Source 6](https://doi.org/10.1016/j.jnca.2021.103309), [Source 7](https://doi.org/10.1109/mcom.001.2001237), [Source 16](https://arxiv.org/abs/2007.01156) |",
+      "url": "https://doi.org/10.1109/mcom.001.2001237",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "| **L4 – Digital Twin & Smart Applications** | Mirroring, simulation, prediction, decision support, autonomous control | Industrial DT, vehicular DT, healthcare DT, blockchain-based trust [Source 5](https://doi.org/10.1109/ojcoms.2022.3197811), [Source 6](https://doi.org/10.1016/j.jnca.2021.103309), [Source 7](https://doi.org/10.1109/mcom.001.2001237), [Source 16](https://arxiv.org/abs/2007.01156) |",
+      "url": "https://arxiv.org/abs/2007.01156",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "This four-layer decomposition is consistent with the DITEN reference framework, which combines MEC with digital twins to enable centralized yet network-aware decision making [Source 5](https://doi.org/10.1109/ojcoms.2022.3197811), and with cognitive Internet of Vehicles (CIoV) architectures that couple sensing, communication, and cognition into a unified stack [Source 10](https://arxiv.org/abs/1912.03356).",
+      "url": "https://doi.org/10.1109/ojcoms.2022.3197811",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "This four-layer decomposition is consistent with the DITEN reference framework, which combines MEC with digital twins to enable centralized yet network-aware decision making [Source 5](https://doi.org/10.1109/ojcoms.2022.3197811), and with cognitive Internet of Vehicles (CIoV) architectures that couple sensing, communication, and cognition into a unified stack [Source 10](https://arxiv.org/abs/1912.03356).",
+      "url": "https://arxiv.org/abs/1912.03356",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Compared with 5G, 6G targets global coverage (terrestrial, aerial, satellite, and underwater), peak rates of 1 Tbps, sub-millisecond latency, ultra-high connection density, and native AI support [Source 1](https://doi.org/10.1007/s11432-020-2955-6), [Source 4](https://doi.org/10.1109/access.2020.2981745).",
+      "url": "https://doi.org/10.1007/s11432-020-2955-6",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Compared with 5G, 6G targets global coverage (terrestrial, aerial, satellite, and underwater), peak rates of 1 Tbps, sub-millisecond latency, ultra-high connection density, and native AI support [Source 1](https://doi.org/10.1007/s11432-020-2955-6), [Source 4](https://doi.org/10.1109/access.2020.2981745).",
+      "url": "https://doi.org/10.1109/access.2020.2981745",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Key enablers discussed in the canonical 6G vision include waveform design, novel multiple access, advanced channel coding, cell-free massive MIMO, network slicing, and cloud–fog–edge computing [Source 1](https://doi.org/10.1007/s11432-020-2955-6).",
+      "url": "https://doi.org/10.1007/s11432-020-2955-6",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "For the IoI, the most consequential shift is the move from \"connected things\" to \"connected intelligence\", wherein the radio interface itself becomes programmable and AI-driven [Source 2](https://doi.org/10.1109/jsac.2021.3126076).",
+      "url": "https://doi.org/10.1109/jsac.2021.3126076",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Edge intelligence (EI) is broadly defined as the embedding of model training and inference capabilities at the network edge [Source 2](https://doi.org/10.1109/jsac.2021.3126076).",
+      "url": "https://doi.org/10.1109/jsac.2021.3126076",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The 6G Edge Intelligence white paper identifies five functional domains where EI is critical: edge computing infrastructure, data and network management, software development for edge, real-time and distributed training of ML/AI, and security, privacy, and pricing [Source 8](http://arxiv.org/abs/2004.14850).",
+      "url": "http://arxiv.org/abs/2004.14850",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "A complementary survey frames *Intelligence Edge Computing* (IEC) as a 5G-and-beyond backbone that supports autonomous vehicles, AR/VR, big-data analytics, and customer-oriented services [Source 9](https://doi.org/10.3390/fi13050118).",
+      "url": "https://doi.org/10.3390/fi13050118",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A foundational EI reference is the \"edge intelligence\" framework proposed in [Source 12](https://www.semanticscholar.org/paper/Edge-Intelligence%3A-Paving-the-Last-Mile-of-With-Zhou-Chen/928cd808aba140ec298508df87c5579811ff2f41), which formalizes the training and inference pipelines running across the cloud–edge–device continuum.",
+      "url": "https://semanticscholar.org/paper/Edge-Intelligence%3A-Paving-the-Last-Mile-of-With-Zhou-Chen/928cd808aba140ec298508df87c5579811ff2f41",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Within the radio access network (RAN), edge intelligence has been proposed as a means to virtualize and orchestrate AI workloads alongside RAN functions; for example, the Edge Intelligent Radio Access Network Architecture (EIRA) uses a Markov-chain-based RIC scheduler to allocate intelligence elements across virtualized RAN functions [Source 15](https://doi.org/10.1155/2022/4955498).",
+      "url": "https://doi.org/10.1155/2022/4955498",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The ISAC vision articulated in [Source 3](https://doi.org/10.1109/jsac.2022.3156632) describes a perceptive 6G network in which the same waveforms and infrastructure are used for both data transmission and environmental sensing—enabling applications such as joint communication–radar, indoor localization, gesture recognition, and human activity detection.",
+      "url": "https://doi.org/10.1109/jsac.2022.3156632",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "By extracting intelligence directly from the radio channel, ISAC reduces the need for dedicated sensors and provides a continuous, network-level perception layer that feeds downstream AI models [Source 3](https://doi.org/10.1109/jsac.2022.3156632).",
+      "url": "https://doi.org/10.1109/jsac.2022.3156632",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Edge AI is the most studied instantiation: the canonical edge-AI framework in [Source 2](https://doi.org/10.1109/jsac.2021.3126076) identifies six axes of optimization—wireless-aware model design, split/federated learning, on-device adaptation, and trustworthy inference—and shows that co-designing communication and learning yields multiplicative gains over isolated optimizations.",
+      "url": "https://doi.org/10.1109/jsac.2021.3126076",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The 6G white paper on edge intelligence further specifies how distributed ML/AI training can be made real-time, secure, and privacy-preserving across heterogeneous edges [Source 8](http://arxiv.org/abs/2004.14850).",
+      "url": "http://arxiv.org/abs/2004.14850",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The DITEN survey [Source 5](https://doi.org/10.1109/ojcoms.2022.3197811) defines DITEN as the integration of MEC and digital twins, providing continuous network-state monitoring and supporting centralized optimization of routing, resource management, and caching.",
+      "url": "https://doi.org/10.1109/ojcoms.2022.3197811",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Key design dimensions include DT modeling, updating, deployment, and the resolution at which the twin is synchronized with its physical counterpart [Source 5](https://doi.org/10.1109/ojcoms.2022.3197811).",
+      "url": "https://doi.org/10.1109/ojcoms.2022.3197811",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The industrial perspective in [Source 6](https://doi.com/10.1016/j.jnca.2021.103309) extends this view to Industry 4.0, where DT-enabled smart industries rely on the convergence of IIoT, edge/cloud computing, and advanced analytics.",
+      "url": "https://doi.com/10.1016/j.jnca.2021.103309",
+      "support_votes": 0,
+      "total_votes": 0,
+      "match": false
+    },
+    {
+      "statement": "From the AI side, [Source 7](https://doi.org/10.1109/mcom.001.2001237) frames the DT as the embodiment of a cyber-physical system (CPS) and identifies concrete AI agents operating at the application and infrastructure levels—for example, a movement-prediction agent validated on a robotic-arm twin.",
+      "url": "https://doi.org/10.1109/mcom.001.2001237",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Blockchain has been proposed as a substrate for auditable model and data exchange, complemented by multi-access edge computing (MEC) for low-latency task execution; for example, [Source 16](https://arxiv.org/abs/2007.01156) analyzes how these two technologies jointly enhance the autonomy of distributed robotic systems by enabling tamper-proof task logs and decentralized coordination.",
+      "url": "https://arxiv.org/abs/2007.01156",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "In cognitive IoV architectures, blockchain is similarly positioned as a tool to harden data integrity, identity management, and incentive mechanisms [Source 10](https://arxiv.org/abs/1912.03356).",
+      "url": "https://arxiv.org/abs/1912.03356",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "It is identified as a foundational enabler in 6G and edge-intelligence architectures [Source 1](https://doi.org/10.1007/s11432-020-2955-6), [Source 8](http://arxiv.org/abs/2004.14850).",
+      "url": "https://doi.org/10.1007/s11432-020-2955-6",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "It is identified as a foundational enabler in 6G and edge-intelligence architectures [Source 1](https://doi.org/10.1007/s11432-020-2955-6), [Source 8](http://arxiv.org/abs/2004.14850).",
+      "url": "http://arxiv.org/abs/2004.14850",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Recent surveys discuss the synergy between AI methods and ICN cache management for enhancing user experience in distributed environments [Source 13](https://www.nature.com/nature-index/topics/l4/information-centric-networking-architectures-and-technologies).",
+      "url": "https://nature.com/nature-index/topics/l4/information-centric-networking-architectures-and-technologies",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The motivation for CIoV, articulated in [Source 10](https://arxiv.org/abs/1912.03356), is rooted in the convergence of vehicular ad-hoc networks, IoT, and cognitive radio, and the authors propose a layered architecture that mirrors the IoI stack (perception, communication, cognition, application).",
+      "url": "https://arxiv.org/abs/1912.03356",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The paper further highlights security as a first-class concern—an issue that is exacerbated in the IoI by the cross-domain exchange of learned models [Source 10](https://arxiv.org/abs/1912.03356).",
+      "url": "https://arxiv.org/abs/1912.03356",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "6G-enabled ISAC, edge AI, and digital-twin road infrastructure jointly allow vehicles to offload perception, share high-definition maps, and coordinate trajectories with sub-millisecond latency [Source 3](https://doi.org/10.1109/jsac.2022.3156632), [Source 1](https://doi.org/10.1007/s11432-020-2955-6).",
+      "url": "https://doi.org/10.1109/jsac.2022.3156632",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "6G-enabled ISAC, edge AI, and digital-twin road infrastructure jointly allow vehicles to offload perception, share high-definition maps, and coordinate trajectories with sub-millisecond latency [Source 3](https://doi.org/10.1109/jsac.2022.3156632), [Source 1](https://doi.org/10.1007/s11432-020-2955-6).",
+      "url": "https://doi.org/10.1007/s11432-020-2955-6",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "In the industrial domain, the IoI is manifested through the deep integration of IIoT, digital twins, edge/cloud computing, and AI [Source 6](https://doi.com/10.1016/j.jnca.2021.103309).",
+      "url": "https://doi.com/10.1016/j.jnca.2021.103309",
+      "support_votes": 0,
+      "total_votes": 0,
+      "match": false
+    },
+    {
+      "statement": "The DITEN framework [Source 5](https://doi.org/10.1109/ojcoms.2022.3197811) supplies a network-level instantiation: the twin of the wireless edge, continuously updated with channel, compute, and caching states.",
+      "url": "https://doi.org/10.1109/ojcoms.2022.3197811",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Within a single CPS, AI agents in the application plane (e.g., movement prediction, quality inspection) and in the infrastructure plane (e.g., resource orchestration) cooperate to deliver self-optimizing production [Source 7](https://doi.org/10.1109/mcom.001.2001237).",
+      "url": "https://doi.org/10.1109/mcom.001.2001237",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "MEC and blockchain further support autonomous robotic fleets by providing low-latency task execution and tamper-proof coordination logs [Source 16](https://arxiv.org/abs/2007.01156).",
+      "url": "https://arxiv.org/abs/2007.01156",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The survey in [Source 11](https://www.academia.edu/60275486/Edge_Intelligence_and_Internet_of_Things_in_Healthcare_A_Survey) examines how edge-IoT systems support continuous monitoring, on-device analytics, and privacy-preserving inference, with concrete advances in wearable sensors, ambient assisted living, and remote diagnostics.",
+      "url": "https://academia.edu/60275486/Edge_Intelligence_and_Internet_of_Things_in_Healthcare_A_Survey",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Edge AI is particularly important here because clinical-grade applications impose strict requirements on latency, data minimization, and regulatory compliance that centralized cloud AI cannot easily meet [Source 2](https://doi.org/10.1109/jsac.2021.3126076), [Source 12](https://www.semanticscholar.org/paper/Edge-Intelligence%3A-Paving-the-Last-Mile-of-With-Zhou-Chen/928cd808aba140ec298508df87c5579811ff2f41).",
+      "url": "https://doi.org/10.1109/jsac.2021.3126076",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Edge AI is particularly important here because clinical-grade applications impose strict requirements on latency, data minimization, and regulatory compliance that centralized cloud AI cannot easily meet [Source 2](https://doi.org/10.1109/jsac.2021.3126076), [Source 12](https://www.semanticscholar.org/paper/Edge-Intelligence%3A-Paving-the-Last-Mile-of-With-Zhou-Chen/928cd808aba140ec298508df87c5579811ff2f41).",
+      "url": "https://semanticscholar.org/paper/Edge-Intelligence%3A-Paving-the-Last-Mile-of-With-Zhou-Chen/928cd808aba140ec298508df87c5579811ff2f41",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "When combined with 6G-grade connectivity and digital-twin patient models, the IoI can support closed-loop remote interventions, AI-assisted triage, and continuous personalization of treatment plans [Source 4](https://doi.org/10.1109/access.2020.2981745), [Source 7](https://doi.org/10.1109/mcom.001.2001237).",
+      "url": "https://doi.org/10.1109/access.2020.2981745",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "When combined with 6G-grade connectivity and digital-twin patient models, the IoI can support closed-loop remote interventions, AI-assisted triage, and continuous personalization of treatment plans [Source 4](https://doi.org/10.1109/access.2020.2981745), [Source 7](https://doi.org/10.1109/mcom.001.2001237).",
+      "url": "https://doi.org/10.1109/mcom.001.2001237",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The edge-AI literature emphasizes that training and inference pipelines must be designed jointly with the underlying wireless strategies to avoid bottlenecks in either dimension [Source 2](https://doi.org/10.1109/jsac.2021.3126076), [Source 15](https://doi.org/10.1155/2022/4955498).",
+      "url": "https://doi.org/10.1109/jsac.2021.3126076",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The edge-AI literature emphasizes that training and inference pipelines must be designed jointly with the underlying wireless strategies to avoid bottlenecks in either dimension [Source 2](https://doi.org/10.1109/jsac.2021.3126076), [Source 15](https://doi.org/10.1155/2022/4955498).",
+      "url": "https://doi.org/10.1155/2022/4955498",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Open questions include how to schedule federated learning rounds under stochastic wireless channels, how to allocate RAN intelligence modules to AI workloads [Source 15](https://doi.org/10.1155/2022/4955498), and how to integrate cell-free and cell-free massive MIMO architectures with hierarchical edge tiers [Source 1](https://doi.org/10.1007/s11432-020-2955-6).",
+      "url": "https://doi.org/10.1155/2022/4955498",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Open questions include how to schedule federated learning rounds under stochastic wireless channels, how to allocate RAN intelligence modules to AI workloads [Source 15](https://doi.org/10.1155/2022/4955498), and how to integrate cell-free and cell-free massive MIMO architectures with hierarchical edge tiers [Source 1](https://doi.org/10.1007/s11432-020-2955-6).",
+      "url": "https://doi.org/10.1007/s11432-020-2955-6",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Blockchain and distributed-ledger mechanisms are promising, but their consensus overheads are poorly matched to sub-millisecond IoI control loops [Source 16](https://arxiv.org/abs/2007.01156).",
+      "url": "https://arxiv.org/abs/2007.01156",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "In vehicular settings, the heterogeneity of trust domains makes security an especially acute concern [Source 10](https://arxiv.org/abs/1912.03356).",
+      "url": "https://arxiv.org/abs/1912.03356",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Federated and split learning reduce—but do not eliminate—privacy leakage; differential privacy, secure aggregation, and trusted execution environments remain active areas of investigation [Source 2](https://doi.org/10.1109/jsac.2021.3126076), [Source 8](http://arxiv.org/abs/2004.14850).",
+      "url": "https://doi.org/10.1109/jsac.2021.3126076",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Federated and split learning reduce—but do not eliminate—privacy leakage; differential privacy, secure aggregation, and trusted execution environments remain active areas of investigation [Source 2](https://doi.org/10.1109/jsac.2021.3126076), [Source 8](http://arxiv.org/abs/2004.14850).",
+      "url": "http://arxiv.org/abs/2004.14850",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "DITEN identifies the modeling/updating trade-off, deployment cost, and the need for multi-resolution twins as central research questions [Source 5](https://doi.org/10.1109/ojcoms.2022.3197811).",
+      "url": "https://doi.org/10.1109/ojcoms.2022.3197811",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The industrial perspective further highlights that DT-enabled industries require a careful interplay of communication, computation, and analytics—each with its own latency, energy, and accuracy budgets [Source 6](https://doi.org/10.1016/j.jnca.2021.103309).",
+      "url": "https://doi.org/10.1016/j.jnca.2021.103309",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "AI agents in CPS-based twins must be robust to model drift, sensor failures, and concept drift [Source 7](https://doi.org/10.1109/mcom.001.2001237).",
+      "url": "https://doi.org/10.1109/mcom.001.2001237",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Intelligence Edge Computing has been identified as a market driver across customer services, healthcare, education, agriculture, and energy, but realizing that potential requires both technological and economic innovations [Source 9](https://doi.org/10.3390/fi13050118).",
+      "url": "https://doi.org/10.3390/fi13050118",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Sustainable AI—covering model compression, energy-aware scheduling, and carbon-aware edge placement—remains an open and increasingly critical research area [Source 8](http://arxiv.org/abs/2004.14850), [Source 12](https://www.semanticscholar.org/paper/Edge-Intelligence%3A-Paving-the-Last-Mile-of-With-Zhou-Chen/928cd808aba140ec298508df87c5579811ff2f41).",
+      "url": "http://arxiv.org/abs/2004.14850",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Sustainable AI—covering model compression, energy-aware scheduling, and carbon-aware edge placement—remains an open and increasingly critical research area [Source 8](http://arxiv.org/abs/2004.14850), [Source 12](https://www.semanticscholar.org/paper/Edge-Intelligence%3A-Paving-the-Last-Mile-of-With-Zhou-Chen/928cd808aba140ec298508df87c5579811ff2f41).",
+      "url": "https://semanticscholar.org/paper/Edge-Intelligence%3A-Paving-the-Last-Mile-of-With-Zhou-Chen/928cd808aba140ec298508df87c5579811ff2f41",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Information-centric networking offers a content-oriented substrate that natively supports the data-centric nature of intelligence sharing [Source 13](https://www.nature.com/nature-index/topics/l4/information-centric-networking-architectures-and-technologies), while SDN-based control planes allow AI/ML controllers to dynamically reconfigure slices, routes, and resource quotas [Source 1](https://doi.org/10.1007/s11432-020-2955-6), [Source 8](http://arxiv.org/abs/2004.14850).",
+      "url": "https://nature.com/nature-index/topics/l4/information-centric-networking-architectures-and-technologies",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Information-centric networking offers a content-oriented substrate that natively supports the data-centric nature of intelligence sharing [Source 13](https://www.nature.com/nature-index/topics/l4/information-centric-networking-architectures-and-technologies), while SDN-based control planes allow AI/ML controllers to dynamically reconfigure slices, routes, and resource quotas [Source 1](https://doi.org/10.1007/s11432-020-2955-6), [Source 8](http://arxiv.org/abs/2004.14850).",
+      "url": "https://doi.org/10.1007/s11432-020-2955-6",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Information-centric networking offers a content-oriented substrate that natively supports the data-centric nature of intelligence sharing [Source 13](https://www.nature.com/nature-index/topics/l4/information-centric-networking-architectures-and-technologies), while SDN-based control planes allow AI/ML controllers to dynamically reconfigure slices, routes, and resource quotas [Source 1](https://doi.org/10.1007/s11432-020-2955-6), [Source 8](http://arxiv.org/abs/2004.14850).",
+      "url": "http://arxiv.org/abs/2004.14850",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "[https://doi.org/10.1007/s11432-020-2955-6](https://doi.org/10.1007/s11432-020-2955-6)",
+      "url": "https://doi.org/10.1007/s11432-020-2955-6",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://doi.org/10.1007/s11432-020-2955-6](https://doi.org/10.1007/s11432-020-2955-6)",
+      "url": "https://doi.org/10.1007/s11432-020-2955-6",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://doi.org/10.1109/jsac.2021.3126076](https://doi.org/10.1109/jsac.2021.3126076)",
+      "url": "https://doi.org/10.1109/jsac.2021.3126076",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://doi.org/10.1109/jsac.2021.3126076](https://doi.org/10.1109/jsac.2021.3126076)",
+      "url": "https://doi.org/10.1109/jsac.2021.3126076",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://doi.org/10.1109/jsac.2022.3156632](https://doi.org/10.1109/jsac.2022.3156632)",
+      "url": "https://doi.org/10.1109/jsac.2022.3156632",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://doi.org/10.1109/jsac.2022.3156632](https://doi.org/10.1109/jsac.2022.3156632)",
+      "url": "https://doi.org/10.1109/jsac.2022.3156632",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://doi.org/10.1109/access.2020.2981745](https://doi.org/10.1109/access.2020.2981745)",
+      "url": "https://doi.org/10.1109/access.2020.2981745",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://doi.org/10.1109/access.2020.2981745](https://doi.org/10.1109/access.2020.2981745)",
+      "url": "https://doi.org/10.1109/access.2020.2981745",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://doi.org/10.1109/ojcoms.2022.3197811](https://doi.org/10.1109/ojcoms.2022.3197811)",
+      "url": "https://doi.org/10.1109/ojcoms.2022.3197811",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://doi.org/10.1109/ojcoms.2022.3197811](https://doi.org/10.1109/ojcoms.2022.3197811)",
+      "url": "https://doi.org/10.1109/ojcoms.2022.3197811",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://doi.org/10.1016/j.jnca.2021.103309](https://doi.org/10.1016/j.jnca.2021.103309)",
+      "url": "https://doi.org/10.1016/j.jnca.2021.103309",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://doi.org/10.1016/j.jnca.2021.103309](https://doi.org/10.1016/j.jnca.2021.103309)",
+      "url": "https://doi.org/10.1016/j.jnca.2021.103309",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://doi.org/10.1109/mcom.001.2001237](https://doi.org/10.1109/mcom.001.2001237)",
+      "url": "https://doi.org/10.1109/mcom.001.2001237",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://doi.org/10.1109/mcom.001.2001237](https://doi.org/10.1109/mcom.001.2001237)",
+      "url": "https://doi.org/10.1109/mcom.001.2001237",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[http://arxiv.org/abs/2004.14850](http://arxiv.org/abs/2004.14850)",
+      "url": "http://arxiv.org/abs/2004.14850",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[http://arxiv.org/abs/2004.14850](http://arxiv.org/abs/2004.14850)",
+      "url": "http://arxiv.org/abs/2004.14850",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://doi.org/10.3390/fi13050118](https://doi.org/10.3390/fi13050118)",
+      "url": "https://doi.org/10.3390/fi13050118",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://doi.org/10.3390/fi13050118](https://doi.org/10.3390/fi13050118)",
+      "url": "https://doi.org/10.3390/fi13050118",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://arxiv.org/abs/1912.03356](https://arxiv.org/abs/1912.03356)",
+      "url": "https://arxiv.org/abs/1912.03356",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://arxiv.org/abs/1912.03356](https://arxiv.org/abs/1912.03356)",
+      "url": "https://arxiv.org/abs/1912.03356",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://www.academia.edu/60275486/Edge_Intelligence_and_Internet_of_Things_in_Healthcare_A_Survey](https://www.academia.edu/60275486/Edge_Intelligence_and_Internet_of_Things_in_Healthcare_A_Survey)",
+      "url": "https://academia.edu/60275486/Edge_Intelligence_and_Internet_of_Things_in_Healthcare_A_Survey",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://www.academia.edu/60275486/Edge_Intelligence_and_Internet_of_Things_in_Healthcare_A_Survey](https://www.academia.edu/60275486/Edge_Intelligence_and_Internet_of_Things_in_Healthcare_A_Survey)",
+      "url": "https://academia.edu/60275486/Edge_Intelligence_and_Internet_of_Things_in_Healthcare_A_Survey",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://www.semanticscholar.org/paper/Edge-Intelligence%3A-Paving-the-Last-Mile-of-With-Zhou-Chen/928cd808aba140ec298508df87c5579811ff2f41](https://www.semanticscholar.org/paper/Edge-Intelligence%3A-Paving-the-Last-Mile-of-With-Zhou-Chen/928cd808aba140ec298508df87c5579811ff2f41)",
+      "url": "https://semanticscholar.org/paper/Edge-Intelligence%3A-Paving-the-Last-Mile-of-With-Zhou-Chen/928cd808aba140ec298508df87c5579811ff2f41",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://www.semanticscholar.org/paper/Edge-Intelligence%3A-Paving-the-Last-Mile-of-With-Zhou-Chen/928cd808aba140ec298508df87c5579811ff2f41](https://www.semanticscholar.org/paper/Edge-Intelligence%3A-Paving-the-Last-Mile-of-With-Zhou-Chen/928cd808aba140ec298508df87c5579811ff2f41)",
+      "url": "https://semanticscholar.org/paper/Edge-Intelligence%3A-Paving-the-Last-Mile-of-With-Zhou-Chen/928cd808aba140ec298508df87c5579811ff2f41",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://www.nature.com/nature-index/topics/l4/information-centric-networking-architectures-and-technologies](https://www.nature.com/nature-index/topics/l4/information-centric-networking-architectures-and-technologies)",
+      "url": "https://nature.com/nature-index/topics/l4/information-centric-networking-architectures-and-technologies",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://www.nature.com/nature-index/topics/l4/information-centric-networking-architectures-and-technologies](https://www.nature.com/nature-index/topics/l4/information-centric-networking-architectures-and-technologies)",
+      "url": "https://nature.com/nature-index/topics/l4/information-centric-networking-architectures-and-technologies",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://doi.org/10.1155/2022/4955498](https://doi.org/10.1155/2022/4955498)",
+      "url": "https://doi.org/10.1155/2022/4955498",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://doi.org/10.1155/2022/4955498](https://doi.org/10.1155/2022/4955498)",
+      "url": "https://doi.org/10.1155/2022/4955498",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://arxiv.org/abs/2007.01156](https://arxiv.org/abs/2007.01156)",
+      "url": "https://arxiv.org/abs/2007.01156",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://arxiv.org/abs/2007.01156](https://arxiv.org/abs/2007.01156)",
+      "url": "https://arxiv.org/abs/2007.01156",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    }
+  ],
+  "noncited_factual_accuracy": 0.35,
+  "noncited_count": 20,
+  "noncited_correct": 7,
+  "noncited_details": [
+    {
+      "claim": "The Internet has evolved through several distinct phases—from a network of computers, to a network of people, to a network of things (IoT), and most recently to a network of information.",
+      "evidence": [
+        {
+          "title": "A Brief History of the Internet of Things",
+          "abstract": "By the year 2013, the IoT had become a system using multiple technologies, ranging from the Internet to wireless communication and from micro- ...",
+          "url": "https://www.dataversity.net/articles/brief-history-internet-things/"
+        },
+        {
+          "title": "The Evolution of Internet Of Things (IOT) And Its Impact on ...",
+          "abstract": "The IoTs is driven by an extension of the Internet through the addition of physical objects united with an ability to provide smarter services to the upbringing",
+          "url": "https://www.academia.edu/78433423/The_Evolution_of_Internet_Of_Things_IOT_And_Its_Impact_on_Existing_Technology"
+        },
+        {
+          "title": "Tracking the Evolution of the Internet of Things Concept ...",
+          "abstract": "by JE Ibarra-Esquer · 2017 · Cited by 286 — This paper presents the changes that the IoT has undertaken since its conception and research on how technological advances have shaped it and fostered the ...",
+          "url": "https://www.mdpi.com/1424-8220/17/6/1379"
+        },
+        {
+          "title": "Internet of Things - an overview",
+          "abstract": "The general architecture of IoT is composed of three layers, i.e., (1) the Perception layer, (2) the Network Layer, and (3) 10 Conclusion",
+          "url": "https://www.sciencedirect.com/topics/computer-science/internet-of-things"
+        },
+        {
+          "title": "The evolution of the Internet of Things (IoT) over the past ...",
+          "abstract": "by J Wang · 2021 · Cited by 403 — The concept of the IoT usually refers to achieving smart connections among different people, machines, tasks and knowledge by using the Internet and sensors ( ...",
+          "url": "https://pureportal.coventry.ac.uk/files/40893306/Binder3.pdf"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "The concept of the Internet of Things (IoT) expanded connectivity from human-centric communication to a heterogeneous fabric of sensors, actuators, and embedded devices.",
+      "evidence": [
+        {
+          "title": "Wearable Internet of Things - DigitalCommons@URI",
+          "abstract": "by S Hiemath · 2014 · Cited by 467 — This paper presents an effort to conceptualize WIoT in terms building blocks of WIoT–– including wearable sensors, internet-connected gateways and cloud",
+          "url": "https://digitalcommons.uri.edu/cgi/viewcontent.cgi?article=1085&context=ele_facpubs"
+        },
+        {
+          "title": "IoT (Internet of things) Research Papers",
+          "abstract": "This research area focuses on the multi-layered architectures, networking protocols, and device classifications that allow Internet of Things systems to achieve ...",
+          "url": "https://www.academia.edu/Documents/in/IoT_Internet_of_things_"
+        },
+        {
+          "title": "A Comprehensive Review of Internet of Things: Technology ...",
+          "abstract": "by O Ali · 2022 · Cited by 197 — Abstract. The Internet of Things (IoT) is an extensive network of heterogeneous devices that provides an array of innovative applications and services.",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8840251/"
+        },
+        {
+          "title": "IoT based Technologies | Sensors and actuators| cloud | Ep 121",
+          "abstract": "This video about the two important point internet of things. What is Internet of Things (IoT)? What are the technologies enable to internet ...",
+          "url": "https://www.youtube.com/watch?v=oEg8vvNyAZw"
+        },
+        {
+          "title": "Survey on Digital Twin Edge Networks (DITEN) Toward 6G",
+          "abstract": "The next generation (6G) wireless systems aim to cater to the Internet of Everything (IoE) and revolutionize customer services and applications to a fully intelligent and autonomous system. To achieve this, the digital twin edge network (DITEN) is proposed to combine mobile/multi-access edge computing (MEC) and digital twin (DT), thereby improving the network performance such as throughput and security, and reducing the cost of communication, computation, and caching. In DITENs, the network status can be continuously monitored, and based on the obtained network states, the networking schemes, such as routing and resource management, can be studied in the established DITENs from a centralized perspective. In this survey, we present a comprehensive overview of DITEN for 6G. First, we present the fundamental aspects of DITEN, including concept, framework, and potential. Second, a comprehensive design of DITEN is devised, including the DT modeling/updating, DT deployment, key issues, and enabling technologies. Then, the typical applications of DITEN towards 6G are provided, including the Internet of Things (IoT), vehicular network, space-air-groud integrated network (SAGIN), healthcare, wireless systems, and other applications, along with the design of DITEN in each application, such as DT modeling, DT association, incentive mechanisms, and so on. Finally, challenges and open issues are discussed.",
+          "url": "https://doi.org/10.1109/ojcoms.2022.3197811"
+        }
+      ],
+      "true_votes": 1,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "The current Internet is optimized for the transport of bits, with routing and forwarding designed for content retrieval and exchange.",
+      "evidence": [
+        {
+          "title": "An Efficient Content Store-Based Forwarding Scheme for ...",
+          "abstract": "by NT Dinh · 2021 · Cited by 2 — This paper proposes an efficient design to make CS information of a node available in the data plane to share with neighbor nodes.",
+          "url": "https://www.mdpi.com/1424-8220/21/22/7607"
+        },
+        {
+          "title": "DETOUR: INFORMED INTERNET ROUTING AND ...",
+          "abstract": "by S Savage · Cited by 516 — Detour can potentially provide better end-to-end application performance by routing around Internet performance and availability bottlenecks",
+          "url": "http://www.cs.unc.edu/~jasleen/Courses/COMP631/papers/detourmicro.pdf"
+        },
+        {
+          "title": "Named Data Networking",
+          "abstract": "Routing Protocol Design. The first NDN routing proto- col, intended to rapidly prototype name-based forwarding on the testbed while more adventurous routing ...",
+          "url": "https://www.caida.org/catalog/papers/2014_named_data_networking/named_data_networking.pdf"
+        },
+        {
+          "title": "An Efficient Probe-Based Routing for Content-Centric ...",
+          "abstract": "by PH Tsai · 2022 · Cited by 10 — This paper presents a novel probe-based routing algorithm that explores real-time in-network caching to ensure the routing table storing the ...",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8749700/"
+        },
+        {
+          "title": "Networking Named Content",
+          "abstract": "by V Jacobson · Cited by 6305 — Using new approaches to routing named content, derived from IP, CCN simultaneously achieves scalability, security, and performance. We describe ...",
+          "url": "https://cacm.acm.org/research/networking-named-content/"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "Cloud-centric AI pipelines introduce round-trip latencies of tens to hundreds of milliseconds.",
+      "evidence": [
+        {
+          "title": "Azure network round-trip latency statistics",
+          "abstract": "This article provides round-trip latency statistics between Azure regions to help you optimize your cloud architecture and deployment decisions.",
+          "url": "https://learn.microsoft.com/en-us/azure/networking/azure-network-latency"
+        },
+        {
+          "title": "Low-Latency Pipelines: Achieving Millisecond Response ...",
+          "abstract": "A low-latency pipeline typically targets end-to-end latencies under 100 milliseconds, with some critical applications demanding single-digit millisecond ...",
+          "url": "https://www.conduktor.io/glossary/low-latency-pipeline"
+        },
+        {
+          "title": "Network Latencies in the Data Center (evanjones.ca)",
+          "abstract": "which included \"round trip within same data center\" there were on rare occasions delays longer than 1 ms. The worst observed localhost ...",
+          "url": "https://www.evanjones.ca/network-latencies-2021.html"
+        },
+        {
+          "title": "The Impact of Network Latency on Large-Scale Data ...",
+          "abstract": "If each step adds even 5–10 ms, total latency can quickly exceed hundreds of milliseconds or more. This phenomenon is often called latency ...",
+          "url": "https://medium.com/@manik.ruet08/the-impact-of-network-latency-on-large-scale-data-processing-4b16908ed4dd"
+        },
+        {
+          "title": "Towards 6G wireless communication networks: vision, enabling technologies, and new paradigm shifts",
+          "abstract": "Abstract The fifth generation (5G) wireless communication networks are being deployed worldwide from 2020 and more capabilities are in the process of being standardized, such as mass connectivity, ultra-reliability, and guaranteed low latency. However, 5G will not meet all requirements of the future in 2030 and beyond, and sixth generation (6G) wireless communication networks are expected to provide global coverage, enhanced spectral/energy/cost efficiency, better intelligence level and security, etc. To meet these requirements, 6G networks will rely on new enabling technologies, i.e., air interface and transmission technologies and novel network architecture, such as waveform design, multiple access, channel coding schemes, multi-antenna technologies, network slicing, cell-free architecture, and cloud/fog/edge computing. Our vision on 6G is that it will have four new paradigm shifts. First, to satisfy the requirement of global coverage, 6G will not be limited to terrestrial communication networks, which will need to be complemented with non-terrestrial networks such as satellite and unmanned aerial vehicle (UAV) communication networks, thus achieving a space-air-ground-sea integrated communication network. Second, all spectra will be fully explored to further increase data rates and connection density, including the sub-6 GHz, millimeter wave (mmWave), terahertz (THz), and optical frequency bands. Third, facing the big datasets generated by the use of extremely heterogeneous networks, diverse communication scenarios, large numbers of antennas, wide bandwidths, and new service requirements, 6G networks will enable a new range of smart applications with the aid of artificial intelligence (AI) and big data technologies. Fourth, network security will have to be strengthened when developing 6G networks. This article provides a comprehensive survey of recent advances and future trends in these four aspects. Clearly, 6G with additional technical requirements beyond those of 5G will enable faster and further communications to the extent that the boundary between physical and cyber worlds disappears.",
+          "url": "https://doi.org/10.1007/s11432-020-2955-6"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "Conventional networking treats all payloads as opaque bytes, ignoring the meaning, freshness, and trustworthiness of the underlying data.",
+      "evidence": [
+        {
+          "title": "A Transformer-Based Framework for Payload Malware Detection and ...",
+          "abstract": "The payload bytes are used to detect malicious packets and classify their types. Malicious payloads may include malware, viruses, or phishing attacks, while ...",
+          "url": "https://par.nsf.gov/servlets/purl/10560095"
+        },
+        {
+          "title": "A hybrid explainable intrusion detection system for fair and ...",
+          "abstract": "The contributions of this study significantly advance the understanding and application of eXplainable Artificial Intelligence (XAI) in improving Intrusion ...",
+          "url": "https://www.sciencedirect.com/science/article/pii/S0045790626002909"
+        },
+        {
+          "title": "A Data-Oriented (and Beyond) Network Architecture",
+          "abstract": "we propose the Data-Oriented Network Architecture (DONA), which involves a clean-slate redesign of Internet naming and -relevant issues: long as the underlying ...",
+          "url": "http://ccr.sigcomm.org/online/files/fp177-koponen1.pdf"
+        },
+        {
+          "title": "RFC 9110: HTTP Semantics | RFC Editor",
+          "abstract": "Abstract. The Hypertext Transfer Protocol (HTTP) is a stateless application-level protocol for distributed, collaborative, hypertext information systems.",
+          "url": "https://www.rfc-editor.org/info/rfc9110/"
+        },
+        {
+          "title": "Opaque: An Oblivious and Encrypted Distributed Analytics Platform",
+          "abstract": "In this paper, we proposed Opaque, a distributed data analytics platform providing encryption, oblivious com- putation, and integrity.",
+          "url": "https://www.usenix.org/system/files/conference/nsdi17/nsdi17-zheng.pdf"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "Best-effort and even 5G quality-of-service frameworks cannot dynamically reallocate compute, communication, and storage in response to shifting AI workloads.",
+      "evidence": [
+        {
+          "title": "Dynamic QoS/QoE-aware reliable service composition ...",
+          "abstract": "by V Hayyolalam · 2022 · Cited by 25 — To cope with the mentioned limitations, edge computing [8] is the best choice since it pushes the computation including cloud-oriented data storage services and ...",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8959554/"
+        },
+        {
+          "title": "On the building blocks of quality of service ...",
+          "abstract": "by J SOLDATOS · Cited by 139 — A large number of architectures, technologies, and mecha- nisms enabling IP Quality of Service have been devised toward enhancing the conventional best-effort ...",
+          "url": "http://www.hit.bme.hu/~jakab/edu/litr/QoS/QoS_in_Hetero_IP_01423335.pdf"
+        },
+        {
+          "title": "Research challenges in QoS routing",
+          "abstract": "by X Masip Bruin · 2006 · Cited by 183 — Abstract. Quality of Service Routing is at present an active and remarkable research area, since most emerging network services require specialized.",
+          "url": "https://upcommons.upc.edu/bitstreams/1b3618f0-62b2-40ba-ae70-4f6f0e598344/download"
+        },
+        {
+          "title": "The troubled journey of QoS: From ATM to content networking, ...",
+          "abstract": "For optimal communication, this paper provides complete and standardized research and analysis of Protocol via ATM in a 5G network environment. Our proposed ...",
+          "url": "https://www.sciencedirect.com/science/article/abs/pii/S0140366418303384"
+        },
+        {
+          "title": "A Survey on Machine Learning and Deep Learning based ...",
+          "abstract": "by HKD Sarma · 2021 · Cited by 5 — Abstract: Quality of Service (QoS) is one of the most important parameters to be considered in computer networking and communication. The traditional network ...",
+          "url": "https://www.techrxiv.org/doi/10.36227/techrxiv.16950574"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "Software-defined networking (SDN) decouples control and data planes, providing a programmable substrate that allows AI/ML controllers to reconfigure routing, slicing, and resource allocation in real time.",
+      "evidence": [
+        {
+          "title": "Software-Defined Networking (SDN) and Distributed Denial of Service ...",
+          "abstract": "1) Separation of the control plane from the data plane: SDN decouples the data plane and control plane and thus enables to establish easily large scale ...",
+          "url": "https://csse.szu.edu.cn/attachment/cglr/1643093650_%E4%BB%A3%E8%A1%A8%E4%BD%9C1%E8%AE%BA%E6%96%87.pdf"
+        },
+        {
+          "title": "Software-Defined Network - an overview | ScienceDirect Topics",
+          "abstract": "It decouples the forwarding or data plane and the control plane, allowing for directly programmable network control. (Hani Salah et al., 2020) The controller ...",
+          "url": "https://www.sciencedirect.com/topics/computer-science/software-defined-network"
+        },
+        {
+          "title": "What is Software Defined Networking? SDN Explained",
+          "abstract": "In contrast, SDN decouples the Control Plane from the Data Plane and centrally integrates the network logic at the controller level. A ...",
+          "url": "https://www.bmc.com/blogs/software-defined-networking/"
+        },
+        {
+          "title": "Introduction to Software Defined Networks (SDN - Academia.edu",
+          "abstract": "The paper demonstrates that decoupling the control and data planes allows for centralized control, facilitating network programmability and management. This ...",
+          "url": "https://www.academia.edu/33472020/Introduction_to_Software_Defined_Networks_SDN"
+        },
+        {
+          "title": "A Survey on Software Defined Networking with Multiple Controllers",
+          "abstract": "Compared with traditional network, Software Defined Networking (SDN) decouples control plane and data plane, providing programmability to configure the network.",
+          "url": "https://www.researchgate.net/publication/321690189_A_Survey_on_Software_Defined_Networking_with_Multiple_Controllers"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "Information-centric networking (ICN) shifts the network abstraction from hosts to named content.",
+      "evidence": [
+        {
+          "title": "Information-centric networking | 7606 Citations | Related Topics - SciSpace",
+          "abstract": "Abstract: Network use has evolved to be dominated by content distribution and retrieval, while networking technology still speaks only of connections ...",
+          "url": "https://scispace.com/topics/information-centric-networking-yrhmdfgf"
+        },
+        {
+          "title": "RFC 7927 - Information-Centric Networking (ICN) Research ...",
+          "abstract": "Since the network is able to act on named content, generic names provide a way to address content independently of the underlying device (and access) ...",
+          "url": "https://datatracker.ietf.org/doc/rfc7927/"
+        },
+        {
+          "title": "Revolutionizing Networking Paradigms - arXiv",
+          "abstract": "Information-Centric Networking (ICN) introduces a novel approach by making content, rather than hosts, the cen- tral element of network architecture. In ICN, ...",
+          "url": "https://arxiv.org/pdf/2407.02667"
+        },
+        {
+          "title": "Recent Information-Centric Networking Approaches",
+          "abstract": "In this paper, we will first start with the introduction to the ICN concept, and then follow by recently proposed ICN projects including Name ...",
+          "url": "https://www.cse.wustl.edu/~jain/cse570-13/ftp/icn/index.html"
+        },
+        {
+          "title": "RFC 8793: Information-Centric Networking (ICN): Content-Centric ...",
+          "abstract": "Information-Centric Networking (ICN) is a novel paradigm where network communications are accomplished by requesting named content instead of sending packets",
+          "url": "https://www.rfc-editor.org/info/rfc8793/"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "ICN supports in-network caching, mobility, and content-based security.",
+      "evidence": [
+        {
+          "title": "Security, Privacy, and Access Control in Information- ...",
+          "abstract": "by R Tourani · Cited by 394 — ICN's feature of ubiquitous caching introduces a major challenge for access control enforcement that requires special attention. security, privacy, and access ...",
+          "url": "https://ieeexplore.ieee.org/ielaam/9739/8302422/8027034-aam.pdf"
+        },
+        {
+          "title": "An Efficient Distributed Content Store-Based Caching Policy ...",
+          "abstract": "by NT Dinh · 2022 · Cited by 11 — This paper highlights the importance of coordinating content store information of ICN nodes to improve the performance of in-network caching in ICN.",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8876162/"
+        },
+        {
+          "title": "Selective Content Retrieval in Information-Centric Networking",
+          "abstract": "by J Quevedo · 2022 · Cited by 7 — This paper presents an approach that progresses the base operation of ICN and leverages content identification right at the network layer,",
+          "url": "https://www.mdpi.com/1424-8220/22/22/8742"
+        },
+        {
+          "title": "ICN with edge for 5G: Exploiting in-network caching ...",
+          "abstract": "by R Ullah · 2020 · Cited by 85 — ICN inherently supports client mobility, multihoming, and content security, being suited for fifth generation (5G) networks due to name-based forwarding and ...",
+          "url": "https://www.sciencedirect.com/science/article/abs/pii/S0167739X19328900"
+        },
+        {
+          "title": "Recent Advances in Information-Centric Networking",
+          "abstract": "This article will discuss the advanced technologies recently built in the ICN architecture, including discovering content and network information in Content- ...",
+          "url": "https://www.cse.wustl.edu/~jain/cse570-21/ftp/icn/index.html"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "The cognitive Internet of Vehicles (CIoV) integrates sensing, communication, and cognition to support autonomous driving, cooperative perception, and intelligent traffic management.",
+      "evidence": [
+        {
+          "title": "Cognitive Internet of Vehicles",
+          "abstract": "by M Chen · 2018 · Cited by 296 — Cognitive Internet of Vehicles (CIoV) is proposed in this paper to realize intelligent cognition, control and decision-making for future autonomous driving ...",
+          "url": "https://www.sciencedirect.com/science/article/abs/pii/S0140366417311015"
+        },
+        {
+          "title": "Cooperative Perception with Edge AI - STAR Lab",
+          "abstract": "The team developed a cooperative perception framework that achieves accurate 3D vehicle localization based on single images for driving or parking purposes.",
+          "url": "http://www.uwstarlab.org/content/projects/c2smart-coop-percep.html"
+        },
+        {
+          "title": "Security, Privacy and Trust: Cognitive Internet of Vehicles",
+          "abstract": "by KF Hasan · 2021 · Cited by 16 — Cognitive Internet of Vehicles (C-IoV), which supports cognitive computing capacity to the network employing Machine Learning, Artificial Intelligence, ...",
+          "url": "https://arxiv.org/pdf/2104.12878"
+        },
+        {
+          "title": "Little-Podi/Collaborative_Perception: This repository is a ...",
+          "abstract": "This repository is a paper digest of recent advances in collaborative / cooperative / multi-agent perception for V2I / V2V / V2X autonomous driving scenario.",
+          "url": "https://github.com/Little-Podi/Collaborative_Perception"
+        },
+        {
+          "title": "The Cognitive Internet of Vehicles for Autonomous Driving",
+          "abstract": "This paper introduces two applications of cognition-based communications, including user-centric cognitive communications, and cognitive internet of vehicles,",
+          "url": "https://www.semanticscholar.org/paper/The-Cognitive-Internet-of-Vehicles-for-Autonomous-Lu-Liu/b21d2a9a91b4ac211982eccbd233ad463b3b3ec9"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "Industrial digital twins can mirror production lines, robotics cells, and supply chains, enabling predictive maintenance, closed-loop control, and what-if simulation.",
+      "evidence": [
+        {
+          "title": "Impact of Digital Twins on Real Practices in Manufacturing Industries",
+          "abstract": "Focusing particularly on textiles, machinery, and electronics manufacturing, the authors illustrate how digital twins enhance productivity, anticipate ...",
+          "url": "https://www.mdpi.com/2411-5134/10/6/106"
+        },
+        {
+          "title": "Unlocking the potential of digital twins in supply chains: A systematic review",
+          "abstract": "This paper aims to identify these common challenges and provide a conceptual framework for establishing a Digital Twin (DT) system to improve supply chain ...",
+          "url": "https://www.sciencedirect.com/science/article/pii/S2949863524000189"
+        },
+        {
+          "title": "A Survey on AI-Driven Digital Twins in Industry 4.0 - PMC - NIH",
+          "abstract": "Digital twin (DT) and artificial intelligence ・ are considered by both academia and ・ to mirror the life of its twin ・ production, operations and disposal",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8512418/"
+        },
+        {
+          "title": "Industrial digital twins at the nexus of NextG wireless networks and computational intelligence: A survey",
+          "abstract": "By amalgamating recent communication and control technologies, computing and data analytics techniques, and modular manufacturing, Industry 4.0 promotes integrating cyber–physical worlds through cyber–physical systems (CPS) and digital twin (DT) for monitoring, optimization, and prognostics of industrial processes. A DT enables interaction with the digital image of the industrial physical objects/processes to simulate, analyze, and control their real-time operation. DT is rapidly diffusing in numerous industries with the interdisciplinary advances in the industrial Internet of things (IIoT), edge and cloud computing, machine learning, artificial intelligence, and advanced data analytics. However, the existing literature lacks in identifying and discussing the role and requirements of these technologies in DT-enabled industries from the communication and computing perspective. In this article, we first present the functional aspects, appeal, and innovative use of DT in smart industries. Then, we elaborate on this perspective by systematically reviewing and reflecting on recent research trends in next-generation (NextG) wireless technologies (e.g., 5G-and-Beyond networks) and design tools, and current computational intelligence paradigms (e.g., edge and cloud computing-enabled data analytics, federated learning). Moreover, we discuss the DT deployment strategies at different communication layers to meet the monitoring and control requirements of industrial applications. We also outline several key reflections and future research challenges and directions to facilitate industrial DT’s adoption.",
+          "url": "https://doi.org/10.1016/j.jnca.2021.103309"
+        },
+        {
+          "title": "Survey on Digital Twin Edge Networks (DITEN) Toward 6G",
+          "abstract": "The next generation (6G) wireless systems aim to cater to the Internet of Everything (IoE) and revolutionize customer services and applications to a fully intelligent and autonomous system. To achieve this, the digital twin edge network (DITEN) is proposed to combine mobile/multi-access edge computing (MEC) and digital twin (DT), thereby improving the network performance such as throughput and security, and reducing the cost of communication, computation, and caching. In DITENs, the network status can be continuously monitored, and based on the obtained network states, the networking schemes, such as routing and resource management, can be studied in the established DITENs from a centralized perspective. In this survey, we present a comprehensive overview of DITEN for 6G. First, we present the fundamental aspects of DITEN, including concept, framework, and potential. Second, a comprehensive design of DITEN is devised, including the DT modeling/updating, DT deployment, key issues, and enabling technologies. Then, the typical applications of DITEN towards 6G are provided, including the Internet of Things (IoT), vehicular network, space-air-groud integrated network (SAGIN), healthcare, wireless systems, and other applications, along with the design of DITEN in each application, such as DT modeling, DT association, incentive mechanisms, and so on. Finally, challenges and open issues are discussed.",
+          "url": "https://doi.org/10.1109/ojcoms.2022.3197811"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "Edge intelligence and IoT together constitute a major architectural pattern for smart healthcare.",
+      "evidence": [
+        {
+          "title": "Edge Intelligence and Internet of Things in Healthcare",
+          "abstract": "Along with 5G and state-of-the-art smart Internet of Things (IoT) sensors, edge computing provides intelligent, real-time healthcare solutions that satisfy ...",
+          "url": "https://www.academia.edu/60275486/Edge_Intelligence_and_Internet_of_Things_in_Healthcare_A_Survey"
+        },
+        {
+          "title": "Trends in IoT based solutions for health care: Moving AI to ...",
+          "abstract": "by L Greco · 2020 · Cited by 465 — In this paper, we propose a short review about the general use of IoT solutions in health care, starting from early health monitoring solutions from wearable ...",
+          "url": "https://www.sciencedirect.com/science/article/abs/pii/S0167865520301884"
+        },
+        {
+          "title": "Edge computing in IoT for smart healthcare",
+          "abstract": "This paper describes the edge layer that performs computations nearby medical sensors and is located close to the network's nodes.",
+          "url": "https://journals.sagepub.com/doi/10.3233/AIS-230009"
+        },
+        {
+          "title": "The future of edge computing for healthcare ecosystem",
+          "abstract": "by V Upadrista · Cited by 1 — This paper describes a novel architecture based on Blockchain, IoT, Fog Computing (FC) and Artificial Intelligence (AI) for the RHM systems.",
+          "url": "https://researchonline.gcu.ac.uk/ws/portalfiles/portal/74115066/73628535.pdf"
+        },
+        {
+          "title": "Edge Computing in Smart Health Care Systems",
+          "abstract": "by M Hartmann · 2019 · Cited by 450 — This paper aims first to survey the current and emerging edge computing architectures and techniques for healthcare applications, as well as identify ...",
+          "url": "https://par.nsf.gov/servlets/purl/10122291"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "Intelligence sharing amplifies the attack surface: adversaries can poison training data, perturb sensor inputs, exfiltrate models, or replay stale inferences.",
+      "evidence": [
+        {
+          "title": "Poisoning Attacks Against Machine Learning",
+          "abstract": "Data poisoning attacks con- sider the risk of training data being partially under the control of an adver- sary, while model poisoning attacks consider the risk ...",
+          "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=934932"
+        },
+        {
+          "title": "A Layered Analysis of Data Poisoning in AI-Driven Smart ...",
+          "abstract": "This paper presents a layered analysis of data poisoning risks in AI-driven smart homes, examining how vulnerabilities emerge and propagate across the complete ...",
+          "url": "https://papers.ssrn.com/sol3/Delivery.cfm/c145e9d8-18d0-4eac-a408-3fe148b51014-MECA.pdf?abstractid=7100619&mirid=1"
+        },
+        {
+          "title": "Threats to Training: A Survey of Poisoning Attacks and ...",
+          "abstract": "by Z Wang · 2022 · Cited by 177 — To be specific, adversaries can leverage poisoning attacks to increase misclassification for a image classifier or subvert the result of a recommendation system ...",
+          "url": "https://dl.acm.org/doi/fullHtml/10.1145/3538707"
+        },
+        {
+          "title": "Edge Artificial Intelligence for 6G: Vision, Enabling Technologies, and Applications",
+          "abstract": "The thriving of artificial intelligence (AI) applications is driving the further evolution of wireless networks. It has been envisioned that 6G will be transformative and will revolutionize the evolution of wireless from “connected things” to “connected intelligence”. However, state-of-the-art deep learning and big data analytics based AI systems require tremendous computation and communication resources, causing significant latency, energy consumption, network congestion, and privacy leakage in both of the training and inference processes. By embedding model training and inference capabilities into the network edge, edge AI stands out as a disruptive technology for 6G to seamlessly integrate sensing, communication, computation, and intelligence, thereby improving the efficiency, effectiveness, privacy, and security of 6G networks. In this paper, we shall provide our vision for scalable and trustworthy edge AI systems with integrated design of wireless communication strategies and decentralized machine learning models. New design principles of wireless networks, service-driven resource allocation optimization methods, as well as a holistic end-to-end system architecture to support edge AI will be described. Standardization, software and hardware platforms, and application scenarios are also discussed to facilitate the industrialization and commercialization of edge AI systems.",
+          "url": "https://doi.org/10.1109/jsac.2021.3126076"
+        },
+        {
+          "title": "Communications in the 6G Era",
+          "abstract": "The focus of wireless research is increasingly shifting toward 6G as 5G deployments get underway. At this juncture, it is essential to establish a vision of future communications to provide guidance for that research. In this paper, we attempt to paint a broad picture of communication needs and technologies in the timeframe of 6G. The future of connectivity is in the creation of digital twin worlds that are a true representation of the physical and biological worlds at every spatial and time instant, unifying our experience across these physical, biological and digital worlds. New themes are likely to emerge that will shape 6G system requirements and technologies, such as: (i) new man-machine interfaces created by a collection of multiple local devices acting in unison; (ii) ubiquitous universal computing distributed among multiple local devices and the cloud; (iii) multi-sensory data fusion to create multi-verse maps and new mixed-reality experiences; and (iv) precision sensing and actuation to control the physical world. With rapid advances in artificial intelligence, it has the potential to become the foundation for the 6G air interface and network, making data, compute and energy the new resources to be exploited for achieving superior performance. In addition, in this paper we discuss the other major technology transformations that are likely to define 6G: (i) cognitive spectrum sharing methods and new spectrum bands; (ii) the integration of localization and sensing capabilities into the system definition, (iii) the achievement of extreme performance requirements on latency and reliability; (iv) new network architecture paradigms involving sub-networks and RAN-Core convergence; and (v) new security and privacy schemes.",
+          "url": "https://doi.org/10.1109/access.2020.2981745"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "A digital twin is only as useful as the fidelity of its model and the freshness of its synchronization with the physical system.",
+      "evidence": [
+        {
+          "title": "AI Digital Twin: Synchronization, Simulation, and Control - VarenyaZ",
+          "abstract": "A digital twin synchronizes an identified counterpart with a virtual model; simulations inform action only through an explicit authorization ...",
+          "url": "https://varenyaz.com/glossary/cognitive-science-ai-digital-twin/"
+        },
+        {
+          "title": "A Generalized Feature Model for Digital Twins - arXiv",
+          "abstract": "Validated through three domain-specific use cases, the model demonstrates applicability and utility in emergency services, vehicular systems, and manufacturing.",
+          "url": "https://arxiv.org/html/2603.06308"
+        },
+        {
+          "title": "Digital twin: Data exploration, architecture, implementation ...",
+          "abstract": "Abstract. A Digital Twin (DT) is a digital copy or virtual representation of an object, process, service, or system in the real world.",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10912257/"
+        },
+        {
+          "title": "Digital Twins vs Simulations: Understanding the Different ...",
+          "abstract": "Unlike simulations, digital twins create persistent, bi-directional connections between physical assets and their digital representations. They are living ...",
+          "url": "https://www.nianticspatial.com/en/campaigns/simulation-vs-digital-twin"
+        },
+        {
+          "title": "Digital Twin—A Review of the Evolution from Concept to ... - MDPI",
+          "abstract": "Defined as virtual replicas of physical objects, systems, or processes, Digital Twins enable real-time simulation, monitoring, and analysis of real-world ...",
+          "url": "https://www.mdpi.com/2076-3417/14/13/5454"
+        }
+      ],
+      "true_votes": 1,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "Pushing intelligence to the edge dramatically increases the number of compute endpoints, with attendant energy, cooling, and device-management costs.",
+      "evidence": [
+        {
+          "title": "Getting Closer to the Edge: Data Centers Move Closer to Consumption",
+          "abstract": "Brian Korn, Vice President of Data Center Computing for Advanced Energy, discusses the power requirements for edge computing.",
+          "url": "https://www.datacenterfrontier.com/sponsored/article/21438777/advanced-energy-getting-closer-to-the-edge-data-centers-move-closer-to-consumption"
+        },
+        {
+          "title": "AI augmented edge and fog computing for Internet of Health ...",
+          "abstract": "This study aims to examine future and existing fog and edge computing architectures and methods that have been augmented with artificial intelligence (AI) for ...",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11888859/"
+        },
+        {
+          "title": "What is Edge Intelligence? (Pt.2) — A deep dive | by Zanita Rahimi",
+          "abstract": "Being able to compute closer to the Edge is an advantage from various points of view such as real-time decision-making, lower latency, ...",
+          "url": "https://medium.com/datareply/what-is-edge-intelligence-pt-2-a-deep-dive-22b938c16639"
+        },
+        {
+          "title": "The Impact of Data Analytics Based on Internet of Things, Edge ... - MDPI",
+          "abstract": "This review examines the impact of data analytics powered by the Internet of Things (IoT), edge computing, and artificial intelligence (AI) on improving ...",
+          "url": "https://www.mdpi.com/2076-3417/16/1/225"
+        },
+        {
+          "title": "Research Advances on AI-Powered Thermal Management for Data ...",
+          "abstract": "AI-powered thermal optimization leads to improved process scheduling and consolidation of VMs and eliminates the hotspot from happening. At ...",
+          "url": "https://www.sciopen.com/article/10.26599/TST.2021.9010019"
+        }
+      ],
+      "true_votes": 1,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "For the IoI, sensing is no longer a separate subsystem but a co-equal function of the wireless infrastructure.",
+      "evidence": [
+        {
+          "title": "YouTube",
+          "abstract": "Share your videos with friends, family, and the world.",
+          "url": "https://www.youtube.com/watch?v=uCALF7_90ys"
+        },
+        {
+          "title": "Toward Collaborative Intelligence in IoV Systems - PMC - NIH",
+          "abstract": "by S Danba · 2022 · Cited by 30 — We discuss existing studies about enabling collaborative intelligence in IoV systems by focusing on collaborative communications, collaborative computing, ...",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9503948/"
+        },
+        {
+          "title": "Integrated Sensing and Communications: Towards Dual- ...",
+          "abstract": "In this paper, we provide a comprehensive overview on the background, range of key applications and state-of-the-art approaches of Integrated ...",
+          "url": "https://www.researchgate.net/publication/353941823_Integrated_Sensing_and_Communications_Towards_Dual-functional_Wireless_Networks_for_6G_and_Beyond"
+        },
+        {
+          "title": "Cognitive Radio Wireless Sensor Networks: Applications ...",
+          "abstract": "by GP Joshi · 2013 · Cited by 376 — This paper describes the advantages of cognitive radio wireless sensor networks, with an emphasis on cooperation and spectrum access methods",
+          "url": "https://www.mdpi.com/1424-8220/13/9/11196"
+        },
+        {
+          "title": "Evolution of wireless sensor network design from ...",
+          "abstract": "by AP Singh · 2020 · Cited by 75 — In this article, a systematic review is carried out that captures the evolution of architectural designs and developments in wireless sensor ...",
+          "url": "https://journals.sagepub.com/doi/10.1177/1550147720949138"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "AI is increasingly fused with digital twins to deliver prediction and closed-loop control.",
+      "evidence": [
+        {
+          "title": "Mathematical and Computational Foundations for Enabling Predictive ...",
+          "abstract": "... component, system or process. There is a growing interest in the potential of digital twins to revolutionize decision-making across scientific ...",
+          "url": "https://www.youtube.com/watch?v=DOMyJ1QX9Po"
+        },
+        {
+          "title": "Real-Time Feasibility of Digital Twins for Process Control - MDPI",
+          "abstract": "This paper aims to establish a quantitative mapping between controller computational complexity and achievable real-time performance class in digital twin-based ...",
+          "url": "https://www.mdpi.com/2075-1702/14/6/595"
+        },
+        {
+          "title": "Digital Twin: Benefits, use cases, challenges, and opportunities",
+          "abstract": "The purpose of this paper is to do a literature review and explore how Digital Twins streamline intelligent automation in different industries.",
+          "url": "https://www.sciencedirect.com/science/article/pii/S277266222300005X"
+        },
+        {
+          "title": "Digital twin: Data exploration, architecture, implementation ...",
+          "abstract": "The purpose of this study is to provide an overview of the data level in the digital twin system, and it involves the data at various phases. This paper will ...",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10912257/"
+        },
+        {
+          "title": "Uncertainty-Aware Digital Twins: Robust Model Predictive Control ...",
+          "abstract": "This article presents a simultaneous multistep robust model predictive control (MPC) framework that incorporates real-time decision-making with uncertainty ...",
+          "url": "https://asmedigitalcollection.asme.org/mechanicaldesign/article/148/2/021702/1219466/Uncertainty-Aware-Digital-Twins-Robust-Model"
+        }
+      ],
+      "true_votes": 2,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "The performance of the IoI is dictated by the joint behavior of the communication, computation, and learning subsystems.",
+      "evidence": [
+        {
+          "title": "Access Patterns and Performance Behaviors of Multi-layer ...",
+          "abstract": "by JL Bez · 2022 · Cited by 37 — In this work, we study the I/O access patterns and performance characteristics of two representative supercomputer I/O subsystems.",
+          "url": "https://sdm.lbl.gov/~sbyna/research/papers/2022/2022-HPDC-Bez-IO-perf-analysis.pdf"
+        },
+        {
+          "title": "Recognizing Perceived Interdependence in Face-to- ...",
+          "abstract": "by B Dudzik · 2021 · Cited by 23 — In this article, we have presented a series of machine learning experiments that demonstrate the prin- cipal possibility for automatic recognition of some ...",
+          "url": "https://research.tudelft.nl/files/102152510/3462244.3479935.pdf"
+        },
+        {
+          "title": "Effects of Personalized Intervention on Collaborative ...",
+          "abstract": "This study aimed to provide personalized intervention for each group participating in computer-supported collaborative learning. this paper proposes a ...",
+          "url": "http://index.j-ets.net/Published/24_3/ETS_24_3_13.pdf"
+        },
+        {
+          "title": "Edge Artificial Intelligence for 6G: Vision, Enabling Technologies, and Applications",
+          "abstract": "The thriving of artificial intelligence (AI) applications is driving the further evolution of wireless networks. It has been envisioned that 6G will be transformative and will revolutionize the evolution of wireless from “connected things” to “connected intelligence”. However, state-of-the-art deep learning and big data analytics based AI systems require tremendous computation and communication resources, causing significant latency, energy consumption, network congestion, and privacy leakage in both of the training and inference processes. By embedding model training and inference capabilities into the network edge, edge AI stands out as a disruptive technology for 6G to seamlessly integrate sensing, communication, computation, and intelligence, thereby improving the efficiency, effectiveness, privacy, and security of 6G networks. In this paper, we shall provide our vision for scalable and trustworthy edge AI systems with integrated design of wireless communication strategies and decentralized machine learning models. New design principles of wireless networks, service-driven resource allocation optimization methods, as well as a holistic end-to-end system architecture to support edge AI will be described. Standardization, software and hardware platforms, and application scenarios are also discussed to facilitate the industrialization and commercialization of edge AI systems.",
+          "url": "https://doi.org/10.1109/jsac.2021.3126076"
+        },
+        {
+          "title": "Survey on Digital Twin Edge Networks (DITEN) Toward 6G",
+          "abstract": "The next generation (6G) wireless systems aim to cater to the Internet of Everything (IoE) and revolutionize customer services and applications to a fully intelligent and autonomous system. To achieve this, the digital twin edge network (DITEN) is proposed to combine mobile/multi-access edge computing (MEC) and digital twin (DT), thereby improving the network performance such as throughput and security, and reducing the cost of communication, computation, and caching. In DITENs, the network status can be continuously monitored, and based on the obtained network states, the networking schemes, such as routing and resource management, can be studied in the established DITENs from a centralized perspective. In this survey, we present a comprehensive overview of DITEN for 6G. First, we present the fundamental aspects of DITEN, including concept, framework, and potential. Second, a comprehensive design of DITEN is devised, including the DT modeling/updating, DT deployment, key issues, and enabling technologies. Then, the typical applications of DITEN towards 6G are provided, including the Internet of Things (IoT), vehicular network, space-air-groud integrated network (SAGIN), healthcare, wireless systems, and other applications, along with the design of DITEN in each application, such as DT modeling, DT association, incentive mechanisms, and so on. Finally, challenges and open issues are discussed.",
+          "url": "https://doi.org/10.1109/ojcoms.2022.3197811"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "Sixth-generation networks are widely regarded as the connectivity fabric of the IoI.",
+      "evidence": [
+        {
+          "title": "On Challenges of Sixth-Generation (6G) Wireless Networks",
+          "abstract": "IoE incorporates a massive network of things. The IoE is expected to provide massive connectivity in various domains including healthcare, agriculture, ...",
+          "url": "https://arxiv.org/html/2206.00868v2"
+        },
+        {
+          "title": "A Comprehensive Survey of AI-Enabled 6G Wireless Networks",
+          "abstract": "The rapid evolution of wireless communication has increased the shift towards sixth generation (6G) networks, which are projected to deliver very high data ...",
+          "url": "https://pubs2.ascee.org/index.php/IJRCS/article/download/2214/pdf"
+        },
+        {
+          "title": "Vision and research directions of 6G technologies and ...",
+          "abstract": "by SAA Hakeem · 2022 · Cited by 218 — This paper will overview the sixth-generation (6G) mobile network, including motivations, use case scenarios, requirements, supported research projects, and ...",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1319157822001033"
+        },
+        {
+          "title": "Artificial intelligence for next-generation 6G ...",
+          "abstract": "6G networks are set to exceed the performance of 5G by delivering unprecedented data rates, sub-millisecond latencies, and ubiquitous connectivity.",
+          "url": "https://www.researchgate.net/publication/400794384_Artificial_intelligence_for_next-generation_6G_technologies_and_networks"
+        },
+        {
+          "title": "Towards 6G wireless communication networks: vision, enabling technologies, and new paradigm shifts",
+          "abstract": "Abstract The fifth generation (5G) wireless communication networks are being deployed worldwide from 2020 and more capabilities are in the process of being standardized, such as mass connectivity, ultra-reliability, and guaranteed low latency. However, 5G will not meet all requirements of the future in 2030 and beyond, and sixth generation (6G) wireless communication networks are expected to provide global coverage, enhanced spectral/energy/cost efficiency, better intelligence level and security, etc. To meet these requirements, 6G networks will rely on new enabling technologies, i.e., air interface and transmission technologies and novel network architecture, such as waveform design, multiple access, channel coding schemes, multi-antenna technologies, network slicing, cell-free architecture, and cloud/fog/edge computing. Our vision on 6G is that it will have four new paradigm shifts. First, to satisfy the requirement of global coverage, 6G will not be limited to terrestrial communication networks, which will need to be complemented with non-terrestrial networks such as satellite and unmanned aerial vehicle (UAV) communication networks, thus achieving a space-air-ground-sea integrated communication network. Second, all spectra will be fully explored to further increase data rates and connection density, including the sub-6 GHz, millimeter wave (mmWave), terahertz (THz), and optical frequency bands. Third, facing the big datasets generated by the use of extremely heterogeneous networks, diverse communication scenarios, large numbers of antennas, wide bandwidths, and new service requirements, 6G networks will enable a new range of smart applications with the aid of artificial intelligence (AI) and big data technologies. Fourth, network security will have to be strengthened when developing 6G networks. This article provides a comprehensive survey of recent advances and future trends in these four aspects. Clearly, 6G with additional technical requirements beyond those of 5G will enable faster and further communications to the extent that the boundary between physical and cyber worlds disappears.",
+          "url": "https://doi.org/10.1007/s11432-020-2955-6"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "The Internet of Intelligence is enabled by the convergence of 6G wireless, edge intelligence, integrated sensing, AI/ML, digital twins, blockchain, and the software-defined/information-centric networking substrate.",
+      "evidence": [
+        {
+          "title": "Blockchain in the Digital Twin Context: A Comprehensive ...",
+          "abstract": "This comprehensive survey examines the integration of blockchain technology with digital twin systems, exploring how their convergence addresses critical ...",
+          "url": "https://dl.acm.org/doi/10.1145/3772366"
+        },
+        {
+          "title": "Integrating Artificial Intelligence, Internet of Things ...",
+          "abstract": "• In this article, the authors proposed a futuristic Digital Twin integrated • IoT, and Blockchain-based sophisticated eHealth system solution by which the ...",
+          "url": "https://www.academia.edu/145664871/Integrating_Artificial_Intelligence_Internet_of_Things_Blockchain_and_Digital_Twin_for_Next_Generation_Smart_Systems"
+        },
+        {
+          "title": "Survey on Digital Twin Edge Networks (DITEN) Toward 6G",
+          "abstract": "The next generation (6G) wireless systems aim to cater to the Internet of Everything (IoE) and revolutionize customer services and applications to a fully intelligent and autonomous system. To achieve this, the digital twin edge network (DITEN) is proposed to combine mobile/multi-access edge computing (MEC) and digital twin (DT), thereby improving the network performance such as throughput and security, and reducing the cost of communication, computation, and caching. In DITENs, the network status can be continuously monitored, and based on the obtained network states, the networking schemes, such as routing and resource management, can be studied in the established DITENs from a centralized perspective. In this survey, we present a comprehensive overview of DITEN for 6G. First, we present the fundamental aspects of DITEN, including concept, framework, and potential. Second, a comprehensive design of DITEN is devised, including the DT modeling/updating, DT deployment, key issues, and enabling technologies. Then, the typical applications of DITEN towards 6G are provided, including the Internet of Things (IoT), vehicular network, space-air-groud integrated network (SAGIN), healthcare, wireless systems, and other applications, along with the design of DITEN in each application, such as DT modeling, DT association, incentive mechanisms, and so on. Finally, challenges and open issues are discussed.",
+          "url": "https://doi.org/10.1109/ojcoms.2022.3197811"
+        },
+        {
+          "title": "Industrial digital twins at the nexus of NextG wireless networks and computational intelligence: A survey",
+          "abstract": "By amalgamating recent communication and control technologies, computing and data analytics techniques, and modular manufacturing, Industry 4.0 promotes integrating cyber–physical worlds through cyber–physical systems (CPS) and digital twin (DT) for monitoring, optimization, and prognostics of industrial processes. A DT enables interaction with the digital image of the industrial physical objects/processes to simulate, analyze, and control their real-time operation. DT is rapidly diffusing in numerous industries with the interdisciplinary advances in the industrial Internet of things (IIoT), edge and cloud computing, machine learning, artificial intelligence, and advanced data analytics. However, the existing literature lacks in identifying and discussing the role and requirements of these technologies in DT-enabled industries from the communication and computing perspective. In this article, we first present the functional aspects, appeal, and innovative use of DT in smart industries. Then, we elaborate on this perspective by systematically reviewing and reflecting on recent research trends in next-generation (NextG) wireless technologies (e.g., 5G-and-Beyond networks) and design tools, and current computational intelligence paradigms (e.g., edge and cloud computing-enabled data analytics, federated learning). Moreover, we discuss the DT deployment strategies at different communication layers to meet the monitoring and control requirements of industrial applications. We also outline several key reflections and future research challenges and directions to facilitate industrial DT’s adoption.",
+          "url": "https://doi.org/10.1016/j.jnca.2021.103309"
+        },
+        {
+          "title": "Edge Artificial Intelligence for 6G: Vision, Enabling Technologies, and Applications",
+          "abstract": "The thriving of artificial intelligence (AI) applications is driving the further evolution of wireless networks. It has been envisioned that 6G will be transformative and will revolutionize the evolution of wireless from “connected things” to “connected intelligence”. However, state-of-the-art deep learning and big data analytics based AI systems require tremendous computation and communication resources, causing significant latency, energy consumption, network congestion, and privacy leakage in both of the training and inference processes. By embedding model training and inference capabilities into the network edge, edge AI stands out as a disruptive technology for 6G to seamlessly integrate sensing, communication, computation, and intelligence, thereby improving the efficiency, effectiveness, privacy, and security of 6G networks. In this paper, we shall provide our vision for scalable and trustworthy edge AI systems with integrated design of wireless communication strategies and decentralized machine learning models. New design principles of wireless networks, service-driven resource allocation optimization methods, as well as a holistic end-to-end system architecture to support edge AI will be described. Standardization, software and hardware platforms, and application scenarios are also discussed to facilitate the industrialization and commercialization of edge AI systems.",
+          "url": "https://doi.org/10.1109/jsac.2021.3126076"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    }
+  ]
+}

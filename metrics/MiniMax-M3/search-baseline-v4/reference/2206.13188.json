@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2206.13188",
+  "model": "MiniMax-M3",
+  "system": "search-baseline-v4",
+  "reference_precision": 0.5833333333333334,
+  "reference_recall": 0.027777777777777776,
+  "reference_count": 12,
+  "reference_matches": 7,
+  "ground_truth_count": 252,
+  "predicted_titles": [
+    "Global and Local Contrastive Self-Supervised Learning for Semantic Segmentation of HR Remote Sensing Images",
+    "Remote Sensing Image Scene Classification with Self-Supervised Learning Based on Partially Unlabeled Datasets",
+    "Self-Supervised Representation Learning for Remote Sensing Image Change Detection Based on Temporal Prediction",
+    "Momentum Contrast for Unsupervised Visual Representation Learning",
+    "A Simple Framework for Contrastive Learning of Visual ...",
+    "A General Self-Supervised Framework for Remote Sensing Image Classification",
+    "Self-Supervised Learning of Remote Sensing Scene Representations Using Contrastive Multiview Coding",
+    "Contrastive Self-Supervised Learning With Smoothed Representation for Remote Sensing",
+    "SCL-MLNet: Boosting Few-Shot Remote Sensing Scene Classification via Self-Supervised Contrastive Learning",
+    "Task-Related Self-Supervised Learning for Remote Sensing Image Change Detection",
+    "X-ModalNet: A Semi-Supervised Deep Cross-Modal Network for Classification of Remote Sensing Data",
+    "When Self-Supervised Learning Meets Scene Classification: Remote Sensing Scene Classification Based on a Multitask Learning Framework"
+  ]
+}

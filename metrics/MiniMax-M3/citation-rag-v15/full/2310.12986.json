@@ -1,0 +1,166 @@
+{
+  "arxiv_id": "2310.12986",
+  "model": "MiniMax-M3",
+  "system": "citation-rag-v15",
+  "reference_precision": 0.0,
+  "reference_recall": 0.0,
+  "reference_count": 12,
+  "reference_matches": 0,
+  "ground_truth_count": 61,
+  "predicted_titles": [
+    "Image-Based Human Age Estimation by Manifold Learning and Locally Adjusted Robust Regression",
+    "Visual Understanding via Multi-Feature Shared Learning with Global Consistency",
+    "Human Age Estimation With Regression on Discriminative Aging Manifold",
+    "Face manifold: manifold learning for synthetic face generation",
+    "Discriminating Joint Feature Analysis for Multimedia Data Understanding",
+    "Rank Flow Embedding for Unsupervised and Semi-Supervised Manifold Learning",
+    "Semi-supervised Feature Analysis by Mining Correlations among Multiple Tasks",
+    "Gait-based human age estimation using age group-dependent manifold learning and regression",
+    "Visual Domain Adaptation with Manifold Embedded Distribution Alignment",
+    "Estimating Visual Information From Audio Through Manifold Learning",
+    "Sparse Representation Classifier Guided Grassmann Reconstruction Metric Learning With Applications to Image Set Analysis",
+    "Locally Adjusted Robust Regression for Human Age Estimation"
+  ],
+  "cited_match_rate": 1.0,
+  "cited_count": 19,
+  "cited_supported": 19,
+  "cited_details": [
+    {
+      "statement": "Multimedia collections have grown rapidly while labeled data for supervised training remain expensive and time-consuming to obtain, motivating the development of effective retrieval and classification methods (https://arxiv.org/abs/2304.12448).",
+      "url": "https://arxiv.org/abs/2304.12448",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A 2008 study introduced an age manifold learning scheme for extracting face aging features and designed a locally adjusted robust regressor for learning and prediction of human ages, reporting improved age estimation accuracy over previous methods on a large internal age database and the public FG-NET database (https://doi.org/10.1109/tip.2008.924280).",
+      "url": "https://doi.org/10.1109/tip.2008.924280",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A companion 2008 work demonstrated that aging patterns can be extracted from a discriminant subspace learning algorithm and visualized as distinct manifold structures, with the dimensionality redundancy of the original image space significantly reduced by subspace learning, and a multiple linear regression procedure, especially with a quadratic model function, facilitated by the resulting low dimensionality (https://doi.org/10.1109/tmm.2008.921847).",
+      "url": "https://doi.org/10.1109/tmm.2008.921847",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The locally adjusted robust regressor (LARR) was described separately in a 2008 WACV paper, which reported reduced age estimation errors over previous methods on two aging databases (https://doi.org/10.1109/wacv.2008.4544009).",
+      "url": "https://doi.org/10.1109/wacv.2008.4544009",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Beyond facial images, a 2018 study proposed age group-dependent gait-based human age estimation, composing age groups well-separated by clustering gait features with their age labels, classifying the gait features into multiple age groups with a directed acyclic graph support vector machine, and learning an age regression model for each age group using support vector regression with a Gaussian kernel in conjunction with orthogonal locality preserving projection as a manifold learning technique (https://www.semanticscholar.org/paper/b55438c64dcb2f52404152a90acecce2f7ded2d5).",
+      "url": "https://semanticscholar.org/paper/b55438c64dcb2f52404152a90acecce2f7ded2d5",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The same study reported state-of-the-art performance on a gait database with participants ranging from 2 to 90 years old (https://www.semanticscholar.org/paper/b55438c64dcb2f52404152a90acecce2f7ded2d5).",
+      "url": "https://semanticscholar.org/paper/b55438c64dcb2f52404152a90acecce2f7ded2d5",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A 2012 paper proposed a semi-supervised feature analyzing framework for multimedia data understanding and applied it to image annotation, video concept detection, and 3-D motion data analysis, combining l2,1-norm regularized feature selection with manifold learning that exploits both labeled and unlabeled data by leveraging the manifold structure of multimedia data (https://doi.org/10.1109/tmm.2012.2199293).",
+      "url": "https://doi.org/10.1109/tmm.2012.2199293",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A 2014 paper proposed a semi-supervised feature selection framework by mining correlations among multiple tasks and applied it to different multimedia applications, leveraging shared knowledge from multiple related tasks under the assumption that different tasks share common structures (https://arxiv.org/abs/1411.6232).",
+      "url": "https://arxiv.org/abs/1411.6232",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "For multi-feature visual recognition, a 2015 paper introduced an l2,1-norm based multi-feature shared learning framework that simultaneously learns a global label matrix and multiple sub-classifiers with labeled multi-feature data, and proposed a group graph manifold regularizer composed of the Laplacian and Hessian graph to better preserve the manifold structure of each feature (https://arxiv.org/abs/1505.05233).",
+      "url": "https://arxiv.org/abs/1505.05233",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A study modeling sequences of video frames as linear subspaces on the Grassmann manifold proposed Grassmann Reconstruction Metric Learning (GRML) guided by a sparse representation-based classifier for image set classification, attempting to jointly maximize the inter-class reconstruction residual and minimize the intra-class reconstruction residual in a lower but more discriminative Grassmann manifold (https://www.semanticscholar.org/paper/fd3bf3a9cef5500aa3b97588498e534c96006567).",
+      "url": "https://semanticscholar.org/paper/fd3bf3a9cef5500aa3b97588498e534c96006567",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The same paper also presented Grassmann Reconstruction Multiple Kernel Metric Learning (GRMKML), which aims to jointly learn a metric and the corresponding kernel from a family of kernels for the Grassmann manifold (https://www.semanticscholar.org/paper/fd3bf3a9cef5500aa3b97588498e534c96006567).",
+      "url": "https://semanticscholar.org/paper/fd3bf3a9cef5500aa3b97588498e534c96006567",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A 2023 paper on rank flow embedding addressed the growth of multimedia collections and the scarcity of labeled data by mapping images to points in a high-dimensional feature space and assessing how close representations of collection images are from the query point in that feature space (https://arxiv.org/abs/2304.12448).",
+      "url": "https://arxiv.org/abs/2304.12448",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A 2018 paper titled \"Visual Domain Adaptation with Manifold Embedded Distribution Alignment\" was made available on arXiv (https://arxiv.org/abs/1807.07258).",
+      "url": "https://arxiv.org/abs/1807.07258",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A study on synthetic face generation described manifold learning applied to face structure estimation, noting that deep learning techniques for 3D face reconstruction from flat images require large 3D face datasets and that synthetic face generation is used to handle this need (https://arxiv.org/abs/1910.01403).",
+      "url": "https://arxiv.org/abs/1910.01403",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A 2022 paper proposed a framework for extracting visual information about a scene using only audio signals, based on manifold learning and motivated by audio's ability to operate without line-of-sight and under occlusion or illumination change (https://arxiv.org/abs/2208.02337).",
+      "url": "https://arxiv.org/abs/2208.02337",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The age manifold work reported that current age estimation performance is still not good enough for practical use (https://doi.org/10.1109/tip.2008.924280).",
+      "url": "https://doi.org/10.1109/tip.2008.924280",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The synthetic face generation work noted that the main drawback of its representation is unsatisfactory outputs when the input face deviates largely from the example faces in the dataset, and that RGB-D cameras such as Microsoft Kinect are not common and not of high resolution at low cost as RGB cameras are (https://arxiv.org/abs/1910.01403).",
+      "url": "https://arxiv.org/abs/1910.01403",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The semi-supervised multimedia work observed that its objective function is non-smooth and difficult to solve, requiring an efficient iterative algorithm with fast convergence to be applicable to practical applications (https://doi.org/10.1109/tmm.2012.2199293).",
+      "url": "https://doi.org/10.1109/tmm.2012.2199293",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The rank flow embedding paper noted that the growth of multimedia collections contrasts with the difficulty and cost of obtaining labeled data for supervised training (https://arxiv.org/abs/2304.12448).",
+      "url": "https://arxiv.org/abs/2304.12448",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    }
+  ],
+  "noncited_factual_accuracy": 0.0,
+  "noncited_count": 0,
+  "noncited_correct": 0,
+  "noncited_details": []
+}

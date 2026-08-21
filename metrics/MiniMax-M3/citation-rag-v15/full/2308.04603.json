@@ -1,0 +1,261 @@
+{
+  "arxiv_id": "2308.04603",
+  "model": "MiniMax-M3",
+  "system": "citation-rag-v15",
+  "reference_precision": 0.25,
+  "reference_recall": 0.04477611940298507,
+  "reference_count": 12,
+  "reference_matches": 3,
+  "ground_truth_count": 67,
+  "predicted_titles": [
+    "Watermark Faker: Towards Forgery of Digital Image Watermarking",
+    "Deep Boosting Robustness of DNN-based Image Watermarking via DBMark",
+    "End-to-End Image Steganography Using Deep Convolutional Autoencoders",
+    "A Robust Image Watermarking System Based on Deep Neural Networks",
+    "An Automated and Robust Image Watermarking Scheme Based on Deep Neural Networks",
+    "A Compact Neural Network-based Algorithm for Robust Image Watermarking",
+    "Robust Spatial-spread Deep Neural Image Watermarking",
+    "Robust Zero Watermarking Algorithm for Medical Images Based on Improved NasNet-Mobile and DCT",
+    "Go Wide or Go Deep: Levering Watermarking Performance with Computational Cost for Specific Images",
+    "PTW: Pivotal Tuning Watermarking for Pre-Trained Image Generators",
+    "A General Approach for Using Deep Neural Network for Digital Watermarking",
+    "Integer DCT-based reversible watermarking for images using companding technique"
+  ],
+  "cited_match_rate": 1.0,
+  "cited_count": 23,
+  "cited_supported": 23,
+  "cited_details": [
+    {
+      "statement": "Zhong and Shih proposed a fully automated image watermarking system based on deep neural networks with an unsupervised deep learning structure and a novel loss computation, observing that \"existing deep learning-based watermarking systems cannot achieve robustness, blindness, and automated embedding and extraction simultaneously\" (https://arxiv.org/abs/1908.11331).",
+      "url": "https://arxiv.org/abs/1908.11331",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A 2020 extension from the same group developed this further, noting that \"existing deep learning–based watermarking methods neither fully apply the fitting ability to learn and automate the embedding and extracting algorithms, nor achieve the properties of robustness and blindness simultaneously\" (https://arxiv.org/abs/2007.02460).",
+      "url": "https://arxiv.org/abs/2007.02460",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A related design was introduced as the Invertible Watermarking Network (IWN), described as a \"novel digital image watermarking solution with a compact neural network\" motivated by the finding that \"recent deep learning-based watermarking methods could not tackle the information loss problem well under various separate pipelines of feature encoder and decoder\" (https://arxiv.org/abs/2112.13491).",
+      "url": "https://arxiv.org/abs/2112.13491",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A more general end-to-end DNN watermarking scheme was proposed by Ming et al., who trained on an image set to protect distinct test images \"in a bulk manner\" and described their method as \"the first to propose a general way to perform watermarking using DNN\" (https://arxiv.org/abs/2003.12428).",
+      "url": "https://arxiv.org/abs/2003.12428",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "In the steganography setting, a \"light-weight yet simple deep convolutional autoencoder architecture\" was designed to embed a secret image inside a cover image and to extract it from a stego image, with reported gains in \"hiding capacity, security and robustness, and imperceptibility\" over other deep learning steganography methods (https://doi.org/10.1109/access.2021.3113953).",
+      "url": "https://doi.org/10.1109/access.2021.3113953",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A separate end-to-end solution using convolutional neural networks for both embedding and recovering the watermark was also presented as a spatial-spread DNN watermarking method (https://www.semanticscholar.org/paper/b1ffb4adfc9ec647d5dee15cd3dacce1a662ffe5).",
+      "url": "https://semanticscholar.org/paper/b1ffb4adfc9ec647d5dee15cd3dacce1a662ffe5",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A representative example is a \"robustness zero watermarking strategy for medical pictures based on an Improved NasNet-Mobile convolutional neural network and the discrete cosine transform (DCT),\" in which the original Softmax and classification layers of NasNet-Mobile are replaced by a fully connected layer with 128 outputs and a regression layer, so that 128-dimensional features can be extracted by transfer learning and then transformed with DCT to derive a 32-bit binary feature vector via perceptual hashing (https://doi.org/10.3390/electronics12163444).",
+      "url": "https://doi.org/10.3390/electronics12163444",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "That pipeline also encrypts the watermark using a chaos mapping algorithm before zero-watermark embedding, so that the host medical image is not modified (https://doi.org/10.3390/electronics12163444).",
+      "url": "https://doi.org/10.3390/electronics12163444",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "In a different setting, the PTW approach embeds \"an identifiable code into the generator that is later extractable from its generated images,\" so that deepfake content can be traced back to the producing model (https://arxiv.org/abs/2304.07361).",
+      "url": "https://arxiv.org/abs/2304.07361",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "DBMark situates its contribution against the history of \"least significant bits (LSB) [as] the earliest research on image information hiding\" and notes that \"researchers find that watermarking in the frequency domain is more robust than the spatial ones,\" then proposes a deep boosting framework for DNN-based watermarking (https://arxiv.org/abs/2210.13801).",
+      "url": "https://arxiv.org/abs/2210.13801",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A hybrid pipeline that combines a CNN feature extractor with a traditional transform-domain hashing step has been demonstrated for medical images (https://doi.org/10.3390/electronics12163444).",
+      "url": "https://doi.org/10.3390/electronics12163444",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "In that work, a zero-watermarking technique embeds and extracts the watermark without changing the information contained in the medical image (https://doi.org/10.3390/electronics12163444).",
+      "url": "https://doi.org/10.3390/electronics12163444",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Experimental findings for this approach demonstrate strong resistance to both conventional and geometric assaults (https://doi.org/10.3390/electronics12163444).",
+      "url": "https://doi.org/10.3390/electronics12163444",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "observed that \"traditional watermarking schemes often design in a 'wider' rule,\" motivating their analysis of trading off network width and depth for image-specific watermarking performance (https://arxiv.org/abs/2204.11513).",
+      "url": "https://arxiv.org/abs/2204.11513",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Earlier traditional baselines such as integer-DCT reversible watermarking using a companding technique provided high-capacity transform-domain methods that embed bits in saved LSBs of coefficient blocks with adjustable capacity and quality (https://doi.org/10.1117/12.527216).",
+      "url": "https://doi.org/10.1117/12.527216",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "introduced the concept of forgery of digital image watermarking, illustrating how a \"Watermarker\" pipeline can be subverted to enable \"Circumvention\" of integrity checking and copyright claims (https://arxiv.org/abs/2103.12489).",
+      "url": "https://arxiv.org/abs/2103.12489",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Explicit limitations noted in the cited evidence include the inability of early DNN watermarking systems to deliver robustness, blindness, and automated embedding/extraction together (https://arxiv.org/abs/1908.11331).",
+      "url": "https://arxiv.org/abs/1908.11331",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A further limitation is the information-loss problem in decoupled encoder–decoder pipelines (https://arxiv.org/abs/2112.13491).",
+      "url": "https://arxiv.org/abs/2112.13491",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "End-to-end jointly trained networks embed and extract watermarks without hand-designed rules, as proposed in an early DNN-based watermarking system (https://arxiv.org/abs/1908.11331).",
+      "url": "https://arxiv.org/abs/1908.11331",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A subsequent automated and robust scheme based on deep neural networks observed that prior methods did not simultaneously achieve robustness and blindness (https://arxiv.org/abs/2007.02460).",
+      "url": "https://arxiv.org/abs/2007.02460",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "More compact invertible neural designs have also been explored to reduce information loss between encoder and decoder (https://arxiv.org/abs/2112.13491).",
+      "url": "https://arxiv.org/abs/2112.13491",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Hybrid pipelines combine CNN-based feature extraction with classical DCT-based hashing for medical images (https://doi.org/10.3390/electronics12163444).",
+      "url": "https://doi.org/10.3390/electronics12163444",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Forgery of digital image watermarking has been demonstrated, showing how a watermarker pipeline can be subverted to enable circumvention of integrity checking and copyright claims (https://arxiv.org/abs/2103.12489).",
+      "url": "https://arxiv.org/abs/2103.12489",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    }
+  ],
+  "noncited_factual_accuracy": 0.5,
+  "noncited_count": 2,
+  "noncited_correct": 1,
+  "noncited_details": [
+    {
+      "claim": "Digital image watermarking embeds recoverable information into a host image while attempting to keep the host perceptually intact.",
+      "evidence": [
+        {
+          "title": "its formal model, fundamental properties and possible attacks",
+          "abstract": "by H Nyeem · 2014 · Cited by 104 — The watermark generation and embedding properties generally include visibility, blindness, embedding capacity, and perceptual similarity.",
+          "url": "https://link.springer.com/article/10.1186/1687-6180-2014-135"
+        },
+        {
+          "title": "Digital Image Watermarking Techniques: A Review",
+          "abstract": "by M Begum · 2020 · Cited by 401 — This method increases the capacity of the host image and splits the watermark into two parts, which doubles the protection.",
+          "url": "https://www.mdpi.com/2078-2489/11/2/110"
+        },
+        {
+          "title": "On the Information-Theoretic Fragility of Robust ...",
+          "abstract": "In this paper, we investigate the intersection of diffusion-based image editing and robust image watermarking. We analyze how diffusion-driven image edits can ...",
+          "url": "https://arxiv.org/html/2511.10933"
+        },
+        {
+          "title": "A Comprehensive Review on Digital Image Watermarking",
+          "abstract": "Digital watermarking can prevent illegal duplication of digital data. Robustness is indicated if the embedded watermark even after some attack is not damaged. ...",
+          "url": "https://www.researchgate.net/publication/352876734_A_Comprehensive_Review_on_Digital_Image_Watermarking"
+        },
+        {
+          "title": "A Robust and Secure Image Watermarking Technique for ...",
+          "abstract": "The recent researches on watermarking tools proposed, robust algorithms for watermark embedding and extraction digital data host. Some popular options ...",
+          "url": "https://ijsret.com/wp-content/uploads/2024/11/IJSRET_V10_issue6_623.pdf"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "The cited evidence spans work from 2004 through 2023, all predating the October 2023 cutoff.",
+      "evidence": [
+        {
+          "title": "The “outdated sources” myth - APA Style",
+          "abstract": "The “outdated sources” myth is that sources must have been published recently, such as the last 5 to 10 years. There is no timeliness ...",
+          "url": "https://apastyle.apa.org/blog/outdated-sources-myth"
+        },
+        {
+          "title": "Citing Academic Papers | Dr. Jeff M. Allen",
+          "abstract": "In academic research, a tough rule of thumb is that a 10-page research paper will have between 20 – 30 citations. WHY ARE CITATIONS IMPORTANT?",
+          "url": "https://sageprofessor.com/2020/11/18/citing-academic-papers/"
+        },
+        {
+          "title": "The life cycle of scholarly articles across fields of research - CEPR",
+          "abstract": "Researchers are evaluated using citation counts, often with a cut-off date. But this column shows that the lifecycle of citations differs ...",
+          "url": "https://cepr.org/voxeu/columns/life-cycle-scholarly-articles-across-fields-research"
+        },
+        {
+          "title": "How many citations does it take to indicate an academic article is ...",
+          "abstract": "For all researchers, 5-10 citations of their papers will be great! Publishing in good journals help the citations of our articles.",
+          "url": "https://www.researchgate.net/post/How_many_citations_does_it_take_to_indicate_an_academic_article_is_influential"
+        },
+        {
+          "title": "When to Cite | SPH - Boston University",
+          "abstract": "You must cite the source every time you incorporate research, words, ideas, data, or information that is not your own (2).",
+          "url": "https://www.bu.edu/sph/students/on-campus-students/academic-accommodations-and-support/communication-resources/when-to-cite/"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    }
+  ]
+}

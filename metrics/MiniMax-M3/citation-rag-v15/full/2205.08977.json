@@ -1,0 +1,251 @@
+{
+  "arxiv_id": "2205.08977",
+  "model": "MiniMax-M3",
+  "system": "citation-rag-v15",
+  "reference_precision": 0.0,
+  "reference_recall": 0.0,
+  "reference_count": 13,
+  "reference_matches": 0,
+  "ground_truth_count": 317,
+  "predicted_titles": [
+    "Cognitive Internet of Vehicles: Motivation, Layered Architecture and Security Issues",
+    "Survey on Digital Twin Edge Networks (DITEN) Toward 6G",
+    "Industrial digital twins at the nexus of NextG wireless networks and computational intelligence: A survey",
+    "Towards 6G wireless communication networks: vision, enabling technologies, and new paradigm shifts",
+    "Communications in the 6G Era",
+    "Toward Intelligent Cyber-Physical Systems: Digital Twin Meets Artificial Intelligence",
+    "Edge Artificial Intelligence for 6G: Vision, Enabling Technologies, and Applications",
+    "Integrated Sensing and Communications: Toward Dual-Functional Wireless Networks for 6G and Beyond",
+    "6G White Paper on Edge Intelligence",
+    "Edge Intelligence and Internet of Things in Healthcare",
+    "Massive Internet of Things for Industrial Applications: Addressing Wireless IIoT Connectivity Challenges and Ecosystem Fragmentation",
+    "Designing CPS/IoT applications for smart buildings and cities",
+    "The role of data fusion in predictive maintenance using digital twin"
+  ],
+  "cited_match_rate": 0.8387096774193549,
+  "cited_count": 31,
+  "cited_supported": 26,
+  "cited_details": [
+    {
+      "statement": "The convergence of artificial intelligence with next-generation networks has motivated a shift from \"connected things\" to \"connected intelligence\" as a defining feature of 6G (https://doi.org/10.1109/jsac.2021.3126076).",
+      "url": "https://doi.org/10.1109/jsac.2021.3126076",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A 6G white paper on edge intelligence envisions \"a transition from Internet of Things to Intelligent Internet of Intelligent Things,\" positioning edge computing and AI as core ingredients of future 2030 intelligent Internet technologies (http://arxiv.org/abs/2004.14850).",
+      "url": "http://arxiv.org/abs/2004.14850",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "At the infrastructure layer, mobile/multi-access edge computing (MEC) is recognized as essential, reducing the cost of communication, computation, and caching in 6G networks (https://doi.org/10.1109/ojcoms.2022.3197811).",
+      "url": "https://doi.org/10.1109/ojcoms.2022.3197811",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The combination of edge computing with digital twin further improves throughput and security while reducing communication, computation, and caching costs in 6G (https://doi.org/10.1109/ojcoms.2022.3197811).",
+      "url": "https://doi.org/10.1109/ojcoms.2022.3197811",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Computational intelligence paradigms identified for industrial NextG networks include edge and cloud computing-enabled data analytics and federated learning (https://doi.org/10.1016/j.jnca.2021.103309).",
+      "url": "https://doi.org/10.1016/j.jnca.2021.103309",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "In the vehicular domain, cognitive Internet of Vehicles architectures organize perception, communication, and learning into coordinated strata (https://arxiv.org/abs/1912.03356).",
+      "url": "https://arxiv.org/abs/1912.03356",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "6G is described as a foundational enabler expected to deliver global coverage, enhanced spectral/energy/cost efficiency, better intelligence level and security (https://doi.org/10.1007/s11432-020-2955-6).",
+      "url": "https://doi.org/10.1007/s11432-020-2955-6",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Key 6G paradigm shifts include space-air-ground-sea integrated communication networks, the full exploitation of sub-6 GHz, mmWave, THz, and optical spectra, and pervasive AI and big data use across heterogeneous networks (https://doi.org/10.1007/s11432-020-2955-6).",
+      "url": "https://doi.org/10.1007/s11432-020-2955-6",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The 6G air interface and network are further expected to be built on AI as a foundation, with data, compute, and energy treated as new resources to be exploited for achieving superior performance (https://doi.org/10.1109/access.2020.2981745).",
+      "url": "https://doi.org/10.1109/access.2020.2981745",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Embedding model training and inference at the network edge is presented as a disruptive paradigm for 6G, enabling seamless integration of sensing, communication, computation, and intelligence (https://doi.org/10.1109/jsac.2021.3126076).",
+      "url": "https://doi.org/10.1109/jsac.2021.3126076",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Edge AI is argued to improve efficiency, effectiveness, privacy, and security by avoiding the latency, energy, network congestion, and privacy leakage penalties of centralized AI in both training and inference (https://doi.org/10.1109/jsac.2021.3126076).",
+      "url": "https://doi.org/10.1109/jsac.2021.3126076",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The digital twin is a \"living model of the physical asset or system\" that continually adapts to operational changes based on collected online data and information, and can forecast the future of the corresponding physical counterpart (https://doi.org/10.1063/1.5031520).",
+      "url": "https://doi.org/10.1063/1.5031520",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "In the industrial context, digital twin is presented as a true embodiment of a cyber-physical system in Industry 4.0, with AI appearing as a strong candidate to handle all generated data for automation and smartification (https://doi.org/10.1109/mcom.001.2001237).",
+      "url": "https://doi.org/10.1109/mcom.001.2001237",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A further development is the Digital Twin Edge Network (DITEN), which combines MEC and digital twin to monitor network status and optimize routing and resource management in 6G (https://doi.org/10.1109/ojcoms.2022.3197811).",
+      "url": "https://doi.org/10.1109/ojcoms.2022.3197811",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Data fusion techniques play a significant role in the digital twin framework by propelling the flow of information from raw data to high-level decision making (https://doi.org/10.1063/1.5031520).",
+      "url": "https://doi.org/10.1063/1.5031520",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "ISAC is identified as a key feature of the 6G Radio Access Network, allowing dense cell infrastructure to be repurposed for perceptive networking that jointly supports sensing and communication (https://doi.org/10.1109/jsac.2022.3156632).",
+      "url": "https://doi.org/10.1109/jsac.2022.3156632",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "ISAC is expected to yield performance gains spanning information-theoretic limits, physical-layer tradeoffs, and cross-layer design, motivating communication-assisted sensing and sensing-assisted communications (https://doi.org/10.1109/jsac.2022.3156632).",
+      "url": "https://doi.org/10.1109/jsac.2022.3156632",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The evolution of Intelligent Transportation Systems traces a path from sensor-based data collection to cloud-based exchange and to 5G-enabled cooperative and cognitive operation (https://arxiv.org/abs/1912.03356).",
+      "url": "https://arxiv.org/abs/1912.03356",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Cognitive IoV architectures specifically address the security issues arising from increased connectivity and cooperation among vehicles (https://arxiv.org/abs/1912.03356).",
+      "url": "https://arxiv.org/abs/1912.03356",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Industry 4.0 integrates cyber-physical systems and digital twins with IIoT, edge/cloud computing, and AI for monitoring, optimization, and prognostics of industrial processes (https://doi.org/10.1016/j.jnca.2021.103309).",
+      "url": "https://doi.org/10.1016/j.jnca.2021.103309",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Realizing IIoT at scale requires overcoming connectivity fragmentation and security challenges across heterogeneous standards and platforms (https://doi.org/10.1109/mie.2016.2618724).",
+      "url": "https://doi.org/10.1109/mie.2016.2618724",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Future building automation is highlighted as an illustrative use case for IIoT connectivity challenges (https://doi.org/10.1109/mie.2016.2618724).",
+      "url": "https://doi.org/10.1109/mie.2016.2618724",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Digital twin frameworks for predictive maintenance in aerospace rely on data fusion spanning sensor-to-sensor, sensor-to-model, and model-to-model levels (https://doi.org/10.1063/1.5031520).",
+      "url": "https://doi.org/10.1063/1.5031520",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "An edge-IoT study discusses trends in the advancement of smart healthcare (https://www.academia.edu/60275486/Edge_Intelligence_and_Internet_of_Things_in_Healthcare_A_Survey).",
+      "url": "https://academia.edu/60275486/Edge_Intelligence_and_Internet_of_Things_in_Healthcare_A_Survey",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "CPS/IoT applications for smart buildings and cities aim to reduce energy consumption, enhance safety, and improve comfort through integrated sensing and control (https://doi.org/10.1049/iet-cps.2016.0025), with open challenges spanning middleware, computation models, fault tolerance, data quality, and virtual run-time environments (https://doi.org/10.1049/iet-cps.2016.0025).",
+      "url": "https://doi.org/10.1049/iet-cps.2016.0025",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "CPS/IoT applications for smart buildings and cities aim to reduce energy consumption, enhance safety, and improve comfort through integrated sensing and control (https://doi.org/10.1049/iet-cps.2016.0025), with open challenges spanning middleware, computation models, fault tolerance, data quality, and virtual run-time environments (https://doi.org/10.1049/iet-cps.2016.0025).",
+      "url": "https://doi.org/10.1049/iet-cps.2016.0025",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "State-of-the-art deep learning and big-data AI systems impose heavy computation and communication burdens that cause significant latency, energy consumption, network congestion, and privacy leakage in both training and inference (https://doi.org/10.1109/jsac.2021.3126076).",
+      "url": "https://doi.org/10.1109/jsac.2021.3126076",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The IIoT ecosystem remains fragmented, with secure connectivity across heterogeneous platforms an open problem (https://doi.org/10.1109/mie.2016.2618724).",
+      "url": "https://doi.org/10.1109/mie.2016.2618724",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "At the intelligence layer, AI/ML models and digital twins require robust data fusion mechanisms to move from raw sensor data to high-level decision making (https://doi.org/10.1063/1.5031520).",
+      "url": "https://doi.org/10.1063/1.5031520",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "New security and privacy schemes are called out as a defining transformation of 6G (https://doi.org/10.1109/access.2020.2981745).",
+      "url": "https://doi.org/10.1109/access.2020.2981745",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "At the edge-AI system level, standardization, software and hardware platforms, and trustworthy model operation remain under active development (https://doi.org/10.1109/jsac.2021.3126076).",
+      "url": "https://doi.org/10.1109/jsac.2021.3126076",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    }
+  ],
+  "noncited_factual_accuracy": 0.0,
+  "noncited_count": 0,
+  "noncited_correct": 0,
+  "noncited_details": []
+}

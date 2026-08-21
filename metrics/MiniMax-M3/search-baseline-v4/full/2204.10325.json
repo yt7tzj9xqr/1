@@ -1,0 +1,788 @@
+{
+  "arxiv_id": "2204.10325",
+  "model": "MiniMax-M3",
+  "system": "search-baseline-v4",
+  "reference_precision": 0.0,
+  "reference_recall": 0.0,
+  "reference_count": 12,
+  "reference_matches": 0,
+  "ground_truth_count": 36,
+  "predicted_titles": [
+    "Speech and language therapy for aphasia following stroke",
+    "Stuttering Speech Disfluency Prediction using Explainable Attribution Vectors of Facial Muscle Movements",
+    "Automated assessment of psychiatric disorders using speech: A systematic review",
+    "Deep-Learning-Based Automated Classification of Chinese Speech Sound Disorders",
+    "Automatic Pronunciation Scoring And Mispronunciation ...",
+    "Automatic Analysis of Pronunciations for Children with Speech Sound Disorders",
+    "Evaluating Automatic Speech Recognition for Child ...",
+    "A STUDY ON THE IMPACT OF SELF-SUPERVISED LEARNING ON AUTOMATIC DYSARTHRIC SPEECH ASSESSMENT",
+    "wav2vec 2.0: A Framework for Self-Supervised Learning of ...",
+    "An automated tool for the assessment of childhood apraxia ...",
+    "Research Paper: Mobile Speech Therapy Application",
+    "The clinical practice of speech and language therapists with children with phonologically based speech sound disorders"
+  ],
+  "cited_match_rate": 0.5675675675675675,
+  "cited_count": 37,
+  "cited_supported": 21,
+  "cited_details": [
+    {
+      "statement": "Aphasia alone, an acquired language impairment following brain damage, affects approximately one third of people who have a stroke [https://doi.org/10.1002/14651858.cd000425.pub4].",
+      "url": "https://doi.org/10.1002/14651858.cd000425.pub4",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "In children, SSD represent a large proportion of speech and language therapists' (SLTs) caseloads, and clinical practice surveys have documented widespread but heterogeneous use of articulatory versus phonologically based intervention approaches [https://doi.org/10.1177/0265659014550420].",
+      "url": "https://doi.org/10.1177/0265659014550420",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The Cochrane systematic review by Brady and colleagues remains a foundational evidence synthesis for speech and language therapy (SLT) in post-stroke aphasia, evaluating randomized trials across expression, comprehension, reading, and writing modalities [https://doi.org/10.1002/14651858.cd000425.pub4].",
+      "url": "https://doi.org/10.1002/14651858.cd000425.pub4",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "At the pediatric end of the spectrum, a national survey of Portuguese SLTs' clinical practice with children presenting phonologically based SSD documented that SSD represent a large fraction of SLT caseloads and that a wide range of articulatory-based and phonologically based approaches are applied to children with different SSD profiles [https://doi.org/10.1177/0265659014550420].",
+      "url": "https://doi.org/10.1177/0265659014550420",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A 2022 study developed a system for acoustic data analysis aimed at assisting the diagnosis and classification of children's SSDs, with a focus on identifying and categorizing four distinct types of SSD [https://pmc.ncbi.nlm.nih.gov/articles/PMC9324778/].",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9324778",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A key finding from primary work in this area is that, although there are many online commercial CAPT apps, there is no consensus among Speech Language Therapists (SLPs) or non-professionals about which CAPT systems, if any, work well [https://pmc.ncbi.nlm.nih.gov/articles/PMC5884147/].",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5884147",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Hair and colleagues investigated ASR performance on disordered child speech using limited training data and mobile-device-friendly techniques, focusing on verifying pronunciation targets [https://psi.engr.tamu.edu/wp-content/uploads/2019/08/hair2019evaluating.pdf].",
+      "url": "https://psi.engr.tamu.edu/wp-content/uploads/2019/08/hair2019evaluating.pdf",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Shahin and colleagues developed an automated tool for the assessment of childhood apraxia of speech consisting of three integrated components: a clinician interface, a mobile application, and a speech processing engine [https://www.sciencedirect.com/science/article/abs/pii/S0167639315000382].",
+      "url": "https://sciencedirect.com/science/article/abs/pii/S0167639315000382",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A research evaluation of a mobile speech therapy application reported that such apps can be suitable tools for children with apraxia and speech disorders, allowing users to select target phonemes and progress through structured practice [http://jmr.tums.ac.ir/index.php/jmr/article/download/133/80].",
+      "url": "http://jmr.tums.ac.ir/index.php/jmr/article/download/133/80",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Das and colleagues introduced a system for stuttering speech disfluency prediction that uses explainable attribution vectors of facial muscle movements, leveraging facial kinematics in addition to acoustic information [https://arxiv.org/abs/2010.01231].",
+      "url": "https://arxiv.org/abs/2010.01231",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The wav2vec 2.0 framework demonstrated that learning powerful representations from speech audio alone, followed by fine-tuning on transcribed speech, can outperform previous semi-supervised methods [https://www.semanticscholar.org/paper/wav2vec-2.0%3A-A-Framework-for-Self-Supervised-of-Baevski-Zhou/49a049dc85e2380dde80501a984878341dd8efdf].",
+      "url": "https://semanticscholar.org/paper/wav2vec-2.0%3A-A-Framework-for-Self-Supervised-of-Baevski-Zhou/49a049dc85e2380dde80501a984878341dd8efdf",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Building on wav2vec 2.0 and successor models, a primary study evaluated representations from pre-trained state-of-the-art self-supervised models across three downstream tasks on dysarthric speech: disease classification, word recognition, and intelligibility classification, and under three noise scenarios on the UA-Speech dataset [https://arxiv.org/html/2306.04337v2].",
+      "url": "https://arxiv.org/html/2306.04337v2",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Ronanki and colleagues presented a system for automatic pronunciation evaluation and mispronunciation detection using CMUSphinx, trained on a database of native exemplar pronunciations and non-native examples of frequent mistakes, and employing adaptation techniques to model learner errors [https://aclanthology.org/W12-5808.pdf].",
+      "url": "https://aclanthology.org/W12-5808.pdf",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A 2020 systematic review following PRISMA guidelines synthesized studies using speech samples obtained in the clinic or remotely to identify the presence or severity of disorders within the DSM-5 framework [https://doi.org/10.1002/lio2.354].",
+      "url": "https://doi.org/10.1002/lio2.354",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "First, foundational self-supervised models such as wav2vec 2.0 [https://www.semanticscholar.org/paper/wav2vec-2.0%3A-A-Framework-for-Self-Supervised-of-Baevski-Zhou/49a049dc85e2380dde80501a984878341dd8efdf] have become the dominant starting point for clinical speech AI, enabling transfer learning that mitigates the chronic problem of small clinical datasets, as demonstrated in the dysarthria context where HuBERT was identified as the most versatile feature extractor across classification, word recognition, and intelligibility tasks [https://arxiv.org/html/2306.04337v2].",
+      "url": "https://semanticscholar.org/paper/wav2vec-2.0%3A-A-Framework-for-Self-Supervised-of-Baevski-Zhou/49a049dc85e2380dde80501a984878341dd8efdf",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "First, foundational self-supervised models such as wav2vec 2.0 [https://www.semanticscholar.org/paper/wav2vec-2.0%3A-A-Framework-for-Self-Supervised-of-Baevski-Zhou/49a049dc85e2380dde80501a984878341dd8efdf] have become the dominant starting point for clinical speech AI, enabling transfer learning that mitigates the chronic problem of small clinical datasets, as demonstrated in the dysarthria context where HuBERT was identified as the most versatile feature extractor across classification, word recognition, and intelligibility tasks [https://arxiv.org/html/2306.04337v2].",
+      "url": "https://arxiv.org/html/2306.04337v2",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Second, the clinical literature on SLT for aphasia [https://doi.org/10.1002/14651858.cd000425.pub4] and on routine practice for pediatric SSD [https://doi.org/10.1177/0265659014550420] provides the demand-side motivation for AI tools, but the supply side remains dominated by prototype systems whose clinical validation is uneven.",
+      "url": "https://doi.org/10.1002/14651858.cd000425.pub4",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Second, the clinical literature on SLT for aphasia [https://doi.org/10.1002/14651858.cd000425.pub4] and on routine practice for pediatric SSD [https://doi.org/10.1177/0265659014550420] provides the demand-side motivation for AI tools, but the supply side remains dominated by prototype systems whose clinical validation is uneven.",
+      "url": "https://doi.org/10.1177/0265659014550420",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Third, mobile and app-based delivery, exemplified by the integrated clinician interface, mobile application, and speech processing engine of the apraxia assessment tool [https://www.sciencedirect.com/science/article/abs/pii/S0167639315000382] and the mobile speech therapy application [http://jmr.tums.ac.ir/index.php/jmr/article/download/133/80], enables the high-frequency practice that drives neuroplastic change, but evaluation against SLT-conducted baselines remains limited.",
+      "url": "https://sciencedirect.com/science/article/abs/pii/S0167639315000382",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Third, mobile and app-based delivery, exemplified by the integrated clinician interface, mobile application, and speech processing engine of the apraxia assessment tool [https://www.sciencedirect.com/science/article/abs/pii/S0167639315000382] and the mobile speech therapy application [http://jmr.tums.ac.ir/index.php/jmr/article/download/133/80], enables the high-frequency practice that drives neuroplastic change, but evaluation against SLT-conducted baselines remains limited.",
+      "url": "http://jmr.tums.ac.ir/index.php/jmr/article/download/133/80",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Fourth, the field continues to lack consensus on which CAPT systems actually work for children with SSD, despite the proliferation of commercial apps [https://pmc.ncbi.nlm.nih.gov/articles/PMC5884147/].",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5884147",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Fifth, the gap between acoustic-only assessment and multimodal assessment is beginning to be addressed by incorporating visual and motor signals, as in the explainable attribution vectors of facial muscle movements used to predict stuttering disfluency [https://arxiv.org/abs/2010.01231].",
+      "url": "https://arxiv.org/abs/2010.01231",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "ASR systems trained on adult typical speech degrade on child disordered speech, motivating the use of limited training data and mobile-device-friendly techniques in therapy applications [https://psi.engr.tamu.edu/wp-content/uploads/2019/08/hair2019evaluating.pdf].",
+      "url": "https://psi.engr.tamu.edu/wp-content/uploads/2019/08/hair2019evaluating.pdf",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Pronunciation evaluation systems rooted in CMUSphinx and adaptation techniques for non-native error modeling [https://aclanthology.org/W12-5808.pdf] have provided a methodological foundation, but their clinical extension to disordered speech remains an active research area.",
+      "url": "https://aclanthology.org/W12-5808.pdf",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Automated speech analysis has demonstrated broad applicability to clinical assessment beyond communication disorders, including psychiatric assessment via DSM-5 [https://doi.org/10.1002/lio2.354], suggesting that the methodological pipeline developed for speech therapy may also inform adjacent clinical domains.",
+      "url": "https://doi.org/10.1002/lio2.354",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "https://doi.org/10.1002/14651858.cd000425.pub4",
+      "url": "https://doi.org/10.1002/14651858.cd000425.pub4",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://arxiv.org/abs/2010.01231",
+      "url": "https://arxiv.org/abs/2010.01231",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://doi.org/10.1002/lio2.354",
+      "url": "https://doi.org/10.1002/lio2.354",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9324778/",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9324778",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://aclanthology.org/W12-5808.pdf",
+      "url": "https://aclanthology.org/W12-5808.pdf",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5884147/",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5884147",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://psi.engr.tamu.edu/wp-content/uploads/2019/08/hair2019evaluating.pdf",
+      "url": "https://psi.engr.tamu.edu/wp-content/uploads/2019/08/hair2019evaluating.pdf",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://arxiv.org/html/2306.04337v2",
+      "url": "https://arxiv.org/html/2306.04337v2",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "https://www.semanticscholar.org/paper/wav2vec-2.0%3A-A-Framework-for-Self-Supervised-of-Baevski-Zhou/49a049dc85e2380dde80501a984878341dd8efdf",
+      "url": "https://semanticscholar.org/paper/wav2vec-2.0%3A-A-Framework-for-Self-Supervised-of-Baevski-Zhou/49a049dc85e2380dde80501a984878341dd8efdf",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "https://www.sciencedirect.com/science/article/abs/pii/S0167639315000382",
+      "url": "https://sciencedirect.com/science/article/abs/pii/S0167639315000382",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "http://jmr.tums.ac.ir/index.php/jmr/article/download/133/80",
+      "url": "http://jmr.tums.ac.ir/index.php/jmr/article/download/133/80",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "https://doi.org/10.1177/0265659014550420",
+      "url": "https://doi.org/10.1177/0265659014550420",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    }
+  ],
+  "noncited_factual_accuracy": 0.3333333333333333,
+  "noncited_count": 15,
+  "noncited_correct": 5,
+  "noncited_details": [
+    {
+      "claim": "Stuttering, a fluency disorder with approximately 5% lifetime prevalence and approximately 1% persistence into adulthood, has been investigated through multimodal AI approaches.",
+      "evidence": [
+        {
+          "title": "Prevalence",
+          "abstract": "Three-quarters of those who begin to stutter will recover by late childhood, leaving about 1% of the population with a long-term problem. The sex ratio for ...",
+          "url": "https://www.stutteringhelp.org/prevalence"
+        },
+        {
+          "title": "Evolution of stuttering during a person's lifetime",
+          "abstract": "There have been suggestions that stuttering decreases in prevalence and severity with older age. Shames, G. H., & Beams, H. L. (1956). Incidence ...",
+          "url": "https://isad.live/evolution-of-stuttering-during-a-persons-lifetime/"
+        },
+        {
+          "title": "Study finds that adults who stutter don't stutter when they're ...",
+          "abstract": "Study finds that adults who stutter don't stutter when they're alone. A study led by NYU Steinhardt Professor Eric S. Jackson finds that the ...",
+          "url": "https://www.nyu.edu/about/news-publications/news/2021/october/study-finds-that-adults-who-stutter-don-t-stutter-when-they-re-a.html"
+        },
+        {
+          "title": "A prospective 14-year follow-up study of the persistence ...",
+          "abstract": "by JT Einarsdóttir · 2024 · Cited by 14 — (2020) examined 23 studies on recovery of stuttering and found a mean recovery rate of 58.7 %, but with a range of 6.3 % to 94.0 %. The great variance in the ...",
+          "url": "https://www.sciencedirect.com/science/article/pii/S0094730X24000226"
+        },
+        {
+          "title": "PATHWAYS OF CHILDHOOD STUTTERING",
+          "abstract": "by E Yairi · 1996 · Cited by 461 — This article presents broad preliminary findings from a longitudinal study of stuttering pertaining to differentiation of developmental paths of childhood.",
+          "url": "https://thekeep.eiu.edu/cgi/viewcontent.cgi?article=1002&context=commdis_fac"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "The review searched the Cochrane Stroke Group Trials Register, CENTRAL, MEDLINE, EMBASE, CINAHL, AMED, LLBA, and SpeechBITE, and framed the need for scalable, evidence-based intervention delivery that motivates the development of automated adjuncts.",
+      "evidence": [
+        {
+          "title": "Cochrane Central Register of Controlled Trials (CENTRAL)",
+          "abstract": "The published abstracts in CENTRAL are the controlled trials harvested from the MEDLINE and EMBASE databases using highly sensitive specialized ...",
+          "url": "https://library.mskcc.org/blog/2015/08/cochrane-central-register-of-controlled-trials-central-a-staple-for-systematic-reviews/"
+        },
+        {
+          "title": "Cochrane Central Register of Controlled Trials (CCTR) - Ovid",
+          "abstract": "The Cochrane Central Register of Controlled Trials (CENTRAL) is a highly concentrated source of reports of randomized and quasi-randomized ...",
+          "url": "https://ospguides.ovid.com/cctrdb.htm"
+        },
+        {
+          "title": "Find: Full Text of Articles: Cochrane Databases",
+          "abstract": "A bibliographic database that provides a highly concentrated source of reports of randomized controlled trials. It includes journal articles, books, and ...",
+          "url": "https://libguides.uams.edu/find_articles/cochrane"
+        },
+        {
+          "title": "Searching for Systematic Reviews & Evidence Synthesis - KCL LibGuides",
+          "abstract": "Each Cochrane Review Group maintains a collection of reports of controlled trials relevant to its own area of interest. These are called Specialised Registers.",
+          "url": "https://libguides.kcl.ac.uk/systematicreview/searchdb"
+        },
+        {
+          "title": "Contribution of Stroke to the Cochrane Stroke Group Trials Register",
+          "abstract": "Reports of trials of interventions for the treatment, rehabilitation, and secondary prevention of stroke are included in the Cochrane Stroke Group Trials ...",
+          "url": "https://www.researchgate.net/publication/10910631_Contribution_of_Stroke_to_the_Cochrane_Stroke_Group_Trials_Register"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "The study found that HuBERT is the most versatile feature extractor across dysarthria classification, word recognition, and intelligibility classification.",
+      "evidence": [
+        {
+          "title": "arXiv:2306.04337v2 [cs.CL] 22 Mar 2024",
+          "abstract": "We show that HuBERT is the most versatile fea- ture extractor across dysarthria classification, word recogni- tion, and intelligibility ...",
+          "url": "https://arxiv.org/pdf/2306.04337"
+        },
+        {
+          "title": "Severity Classification and Dysarthric Speech Detection using Self ...",
+          "abstract": "Our findings showed that features derived from distilALHuBERT significantly outperformed those from wav2vec2-BASE in both dysarthric speech detection and ...",
+          "url": "https://aclanthology.org/2024.icon-1.74/"
+        },
+        {
+          "title": "A STUDY ON THE IMPACT OF SELF-SUPERVISED LEARNING ...",
+          "abstract": "We show that HuBERT is the most versatile feature extractor across dysarthria classification, word recognition, and intelligibility ...",
+          "url": "https://arxiv.org/html/2306.04337v2"
+        },
+        {
+          "title": "Multi-Stage Audio-Visual Fusion for Dysarthric Speech Recognition ...",
+          "abstract": "To further improve the accuracy of dysarthric speech recognition, we proposed a Multi-stage AV-HuBERT (MAV-HuBERT) framework by fusing the visual information ...",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37030692/"
+        },
+        {
+          "title": "Pre-trained models for detection and severity level classification of ...",
+          "abstract": "In the current study, we explore the effectiveness of two pre-trained models (wav2vec2 and HuBERT) in speech-based detection and severity level classification ...",
+          "url": "https://www.sciencedirect.com/science/article/pii/S0167639324000190"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "Their work addresses the practical challenge that ASR models trained on adult typical speech degrade substantially on child disordered speech, where limited training data and acoustic variability compound the difficulty.",
+      "evidence": [
+        {
+          "title": "Transfer Learning from Adult to Children for Speech Recognition",
+          "abstract": "by PG Shivakumar · 2020 · Cited by 212 — This work attempts to address the key challenges using transfer learning from adult's models to children's models in a Deep Neural Network (DNN) framework",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7199459/"
+        },
+        {
+          "title": "Recent advancements in automatic disordered speech ...",
+          "abstract": "by N Gohider · 2024 · Cited by 26 — The work concluded that augmenting impaired speech with typical speech to train the source model achieved better results in recognizing severely impaired ...",
+          "url": "https://www.sciencedirect.com/science/article/pii/S294971912400058X"
+        },
+        {
+          "title": "Challenges and Feasibility of Automatic Speech ...",
+          "abstract": "by R Southwell · 2022 · Cited by 73 — Our findings indicate that ASR can be used to extract meaningful information from noisy classroom speech and might be more suitable for applications that ...",
+          "url": "https://educationaldatamining.org/edm2022/proceedings/2022.EDM-long-papers.26/"
+        },
+        {
+          "title": "Top 5 ASR Model Challenges | NLP | WER | STT",
+          "abstract": "This article breaks down the top-five challenges in building ASR (Automatic Speech Recognition) models and shows how high-quality, ethically sourced data ...",
+          "url": "https://defined.ai/top-5-asr-model-challenges"
+        },
+        {
+          "title": "What ASR Still Gets Wrong: A Closer Look at Real-World ...",
+          "abstract": "Under realistic conditions, models frequently exhibit instability, degradation, and even semantic hallucinations—generating plausible but incorrect content",
+          "url": "https://magichub.com/what-asr-still-gets-wrong-a-closer-look-at-real-world-failures/"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "Mobile delivery is particularly significant for speech therapy because the high frequency of practice that drives neuroplastic change is often impractical to deliver in clinic-only settings.",
+      "evidence": [
+        {
+          "title": "Harnessing neuroplasticity for clinical applications | Brain",
+          "abstract": "by SC Cramer · 2011 · Cited by 1841 — Abstract. Neuroplasticity can be defined as the ability of the nervous system to respond to intrinsic or extrinsic stimuli by reorganizing ...",
+          "url": "https://academic.oup.com/brain/article/134/6/1591/369496"
+        },
+        {
+          "title": "The Connection Between Speech Therapy and Brain Plasticity",
+          "abstract": "Delve into the science behind how speech therapy exercises can reshape and retrain the brain, and the potential lifelong benefits of doing so.",
+          "url": "https://www.speechtherapylist.com/resources/the-connection-between-speech-therapy-and-brain-plasticity"
+        },
+        {
+          "title": "The effect of mobile application-based technology on post- ...",
+          "abstract": "by Z Jiang · 2024 · Cited by 9 — The results of the study revealed that eight studies indicated the effectiveness of mobile application-based speech-language therapy (SLT) in ...",
+          "url": "https://www.frontiersin.org/journals/neurology/articles/10.3389/fneur.2024.1405209/full"
+        },
+        {
+          "title": "ASEAN Journal of Community and Special Needs Education",
+          "abstract": "This study explores modern interventions for aphasia rehabilitation, evaluating the integration of traditional speech therapy with neuropsychological techniques",
+          "url": "https://ejournal.bumipublikasinusantara.id/index.php/ajcsne/article/download/663/pdf"
+        },
+        {
+          "title": "Mobile Apps for Speech-Language Therapy in Adults With ...",
+          "abstract": "by A Vaezipour · 2020 · Cited by 91 — Technology-enabled interventions such as mobile apps have the potential to increase the reach of speech-language therapy to treat communication ...",
+          "url": "https://mhealth.jmir.org/2020/10/e18858/"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "Speech and language disorders are heterogeneous conditions affecting speech production, fluency, voice quality, and language.",
+      "evidence": [
+        {
+          "title": "Differential Diagnosis of Pediatric Speech Sound Disorder",
+          "abstract": "The diagnostic category of developmental speech sound disorders (SSD) poses a clinical problem due to its size, heterogeneous symptomatology, ...",
+          "url": "https://link.springer.com/article/10.1007/s40474-014-0017-3"
+        },
+        {
+          "title": "Speech Language Disorder in Children: An Overview",
+          "abstract": "While language disorders affect both spoken and written communication, speech disorders mainly impact the vocal expression of language [1] , [2]. Frequently ...",
+          "url": "https://www.researchgate.net/publication/378540337_Speech_Language_Disorder_in_Children_An_Overview"
+        },
+        {
+          "title": "Speech disorders | Health and Medicine | Research Starters",
+          "abstract": "Speech disorders fall into three main categories: problems associated with speech production, difficulties of articulation, and dysfunction in the ability to ...",
+          "url": "https://www.ebsco.com/research-starters/health-and-medicine/speech-disorders"
+        },
+        {
+          "title": "Neurodevelopmental Disorders - Communication Disorders - Psychiatry.org",
+          "abstract": "People with speech sound disorder have difficulties producing speech and they are often hard to understand. It can lead to problems in school or social ...",
+          "url": "https://www.psychiatry.org/patients-families/neurodevelopment-disorders/neurodevelopment-disorders-communication-disorders"
+        },
+        {
+          "title": "A Biopsychosocial Overview of Speech Disorders - MDPI",
+          "abstract": "Speech disorders encompass a broad range of conditions affecting an individual's ability to produce sounds that result in fluent and clear speech vocabulary, ...",
+          "url": "https://www.mdpi.com/2227-9059/13/1/239"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "They impose substantial personal, social, and economic burdens, and the populations they affect are diverse: post-stroke aphasia patients, children with speech sound disorders (SSD), adults who stutter, individuals with motor speech disorders such as apraxia of speech and dysarthria, and patients requiring voice rehabilitation.",
+      "evidence": [
+        {
+          "title": "Let's Talk About Complications After Stroke",
+          "abstract": "Stroke survivors may experience medical, emotional or functional problems. Access this resource to learn about common complications and ways to treat them.",
+          "url": "https://www.stroke.org/en/help-and-support/resource-library/lets-talk-about-stroke/complications-after-stroke"
+        },
+        {
+          "title": "The impact of social relationships on the risk of stroke and ...",
+          "abstract": "by M Meng · 2024 · Cited by 31 — A positive outcome in pool analysis confirms that poor social relationships are associated with a high risk of post-stroke mortality (OR = 1.36; ...",
+          "url": "https://link.springer.com/article/10.1186/s12889-024-19835-6"
+        },
+        {
+          "title": "Understanding the family burden and caregiver role in stroke ...",
+          "abstract": "by MG Maggio · 2024 · Cited by 65 — Abstract. Introduction. Stroke negatively impacts both patients and their families, who must face multiple changes after the onset of the disease.",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11470910/"
+        },
+        {
+          "title": "Economic Burden of Stroke Disease: A Systematic Review",
+          "abstract": "by TN Rochmah · 2021 · Cited by 336 — Globally, one of the main causes of non-communicable disease as a cause of death every year is stroke. The objective of this study was to analyze the burden ...",
+          "url": "https://www.mdpi.com/1660-4601/18/14/7552"
+        },
+        {
+          "title": "Socioeconomic Status and Stroke: A Review of the Latest ...",
+          "abstract": "The latest research on socioeconomic status (SES) and stroke continues to demonstrate that individuals with low SES are at a higher risk of ...",
+          "url": "https://www.ahajournals.org/doi/10.1161/STROKEAHA.124.049474"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "ASR technology is a useful tool in mobile apps for child speech therapy, where it can empower children to complete practice with limited clinician supervision.",
+      "evidence": [
+        {
+          "title": "29 Best Speech Therapy Apps for SLPs to Target Communication ...",
+          "abstract": "Articulation Station – This is one of the most popular articulation apps in our field — and for good reason! Flashcards, memory, and slot machine-style spinners ...",
+          "url": "https://slpnow.com/blog/speech-therapy-apps-for-interactive-reinforcement/"
+        },
+        {
+          "title": "37 Best Speech Therapy Apps for Kids and Adults",
+          "abstract": "Speech therapy apps (iOS, Android) can make therapy more engaging, accessible, and effective across every area of speech-language pathology practice. Each area ...",
+          "url": "https://constanttherapyhealth.com/brainwire/best-speech-therapy-apps/"
+        },
+        {
+          "title": "Quality of Mobile Phone and Tablet Mobile Apps for Speech Sound ...",
+          "abstract": "This evidence-based appraisal will critically review and synthesize current evidence on available therapy apps for use by children with SSD.",
+          "url": "https://www.researchprotocols.org/2016/4/e233/"
+        },
+        {
+          "title": "Mobile apps for treatment of speech disorders in children: An evidence ...",
+          "abstract": "The My PlayHome app can be a valuable tool for speech therapy, helping children develop and practice language skills in a fun and engaging way.",
+          "url": "https://www.facebook.com/SmartSpeechTherapyLlc/posts/mobile-apps-for-treatment-of-speech-disorders-in-children-an-evidence-based-anal/10156600269492290/"
+        },
+        {
+          "title": "Evaluating Automatic Speech Recognition for Child Speech ...",
+          "abstract": "Automatic speech recognition (ASR) technology can be a useful tool in mobile apps for child speech therapy, empowering children to complete their practice ...",
+          "url": "https://psi.engr.tamu.edu/wp-content/uploads/2019/08/hair2019evaluating.pdf"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "The foundations of automated pronunciation evaluation can be traced to early work on ASR-based mispronunciation detection.",
+      "evidence": [
+        {
+          "title": "Automatic speech recognition technology as an effective ...",
+          "abstract": "by AK Elimat · 2014 · Cited by 129 — This study aimed to explore the effect of using automatic speech recognition technology (asr) on the third grade efl students' per- formance in pronunciation,",
+          "url": "https://files.eric.ed.gov/fulltext/EJ1107929.pdf"
+        },
+        {
+          "title": "Using Automatic Speech Recognition to Facilitate English ...",
+          "abstract": "by W Xiao · 2021 · Cited by 53 — This study aims to investigate the effectiveness of ASR technology in diagnosing English pronunciation errors and to explore teachers' and learners' attitudes ...",
+          "url": "https://ideas.repec.org/a/igg/jcallt/v11y2021i3p74-91.html"
+        },
+        {
+          "title": "Automatic speech recognition and pronunciation learning",
+          "abstract": "by S McCrocklin · Cited by 14 — ASR can be used in conjunction with explicit feedback on particular phonemic errors to highlight mispronunciations and provide explanatory ...",
+          "url": "https://www.cambridge.org/core/journals/language-teaching/article/automatic-speech-recognition-and-pronunciation-learning/E399449253AFD9E7E3E9D65579023A9F"
+        },
+        {
+          "title": "Experiments of ASR-based mispronunciation detection for ...",
+          "abstract": "A mispronunciation assessment system that checks the pronunciation of non-native English speakers, identifies the commonly mispronounced phonemes of Italian ...",
+          "url": "https://www.semanticscholar.org/paper/Experiments-of-ASR-based-mispronunciation-detection-Hosseini-Kivanani-Gretter/5c3384db09392f4166949bc2e9bb2a5683c1dd71"
+        },
+        {
+          "title": "automatic pronunciation verification for speech recognition",
+          "abstract": "by K Rao · Cited by 8 — In this work, we propose an automated pronunciation verifica- tion system that verifies whether a new individual pronunciation, either transcribed by a linguist ...",
+          "url": "https://research.google.com/pubs/archive/43262.pdf"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "This work established the self-supervised pretraining paradigm that now underpins most contemporary downstream clinical speech applications, because it enables transfer learning that mitigates the chronic problem of small clinical datasets.",
+      "evidence": [
+        {
+          "title": "Self-Supervised Representation Learning: Introduction, Advances ...",
+          "abstract": "This comprehensive survey introduces Self-Supervised Representation Learning (SSRL), categorizing its main approaches and detailing its application across ...",
+          "url": "https://www.alphaxiv.org/paper/2110.09327"
+        },
+        {
+          "title": "Weakly-Supervised Speech Pre-training: A Case Study on ...",
+          "abstract": "Abstract. Self-supervised learning (SSL) based speech pre-training has attracted much attention for its capability of extracting rich rep-.",
+          "url": "https://www.isca-archive.org/interspeech_2023/zhang23w_interspeech.pdf"
+        },
+        {
+          "title": "Wei-Ning Hsu - Self-Supervised Learning for Speech Generation",
+          "abstract": "Wei-Ning Hsu, research scientist at Meta Fundamental AI Research (FAIR), presents his work on self-supervised learning for speech generation ...",
+          "url": "https://www.youtube.com/watch?v=aCT9y6mH_38"
+        },
+        {
+          "title": "Investigating Self-supervised Pre-training for End-to-end Speech...",
+          "abstract": "This paper evaluates the impact of the self-supervised pre-training for the task of speech translation (speech -> text in different language).",
+          "url": "https://openreview.net/forum?id=SR2L__h9q9p"
+        },
+        {
+          "title": "Effectiveness of self-supervised pre-training for ASR - Meta AI",
+          "abstract": "This demonstrates that self-supervision can enable speech recognition systems trained on a near-zero amount of transcribed data.",
+          "url": "https://ai.meta.com/research/publications/effectiveness-of-self-supervised-pre-training-for-asr/"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "Computer-Assisted Pronunciation Training (CAPT) systems aim to help a child learn the correct pronunciations of words.",
+      "evidence": [
+        {
+          "title": "Using Computer-Assisted Pronunciation Teaching (CAPT) in ...",
+          "abstract": "This study investigated Iranian teachers' role in using CAPT in teaching pronunciation. It also examined whether using CAPT enhanced a better English ...",
+          "url": "https://eric.ed.gov/?id=EJ1247157"
+        },
+        {
+          "title": "Computer-assisted pronunciation training: A systematic review",
+          "abstract": "This systematic review maps the trends of computer-assisted pronunciation training (CAPT) research based on the pedagogy of second language ...",
+          "url": "https://www.cambridge.org/core/journals/recall/article/computerassisted-pronunciation-training-a-systematic-review/71E786F7DFC99727837909FDED7A2320"
+        },
+        {
+          "title": "Computer Assisted Pronunciation Training - Academia.edu",
+          "abstract": "Computer Assisted Pronunciation Training (CAPT) refers to the use of computer software and technology to enhance language learners' pronunciation skills.",
+          "url": "https://www.academia.edu/Documents/in/Computer_Assisted_Pronunciation_Training"
+        },
+        {
+          "title": "Computer-assisted pronunciation training—Speech synthesis is ...",
+          "abstract": "Highlighting correctly pronounced words as pronunciation errors by the CAPT tool can demotivate students and lower the confidence in the tool.",
+          "url": "https://www.sciencedirect.com/science/article/pii/S0167639322000863"
+        },
+        {
+          "title": "Computer-Assisted Pronunciation Training (CAPT): Current Issues ...",
+          "abstract": "There is some evidence that CAPT can be effective for pronunciation learning, especially for perceptual training and providing visual feedback.",
+          "url": "https://journals.sagepub.com/doi/10.1177/0033688220977406"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "Automated speech analysis has also been applied to clinical assessment outside the traditional communication disorders.",
+      "evidence": [
+        {
+          "title": "Automated analysis of speech as a marker of sub-clinical psychotic ...",
+          "abstract": "Automated speech analysis, however, has been rarely applied in sub-clinical populations – eventhough it could help researchers overcome limited sample sizes,",
+          "url": "https://www.frontiersin.org/journals/psychiatry/articles/10.3389/fpsyt.2023.1265880/full"
+        },
+        {
+          "title": "A Review of Automated Speech and Language Features for Assessment ...",
+          "abstract": "The automated language features were used in conjunction with speech features and clinical test scores to train a support vector machine (SVM) classifier",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8074691/"
+        },
+        {
+          "title": "Applications of speech analysis in diseases' assessment, prediction ...",
+          "abstract": "Eligible studies applied AI-driven speech analysis for clinical diagnosis or monitoring, while those lacking quantitative evaluation or sufficient ...",
+          "url": "https://www.oaepublish.com/articles/ais.2025.70"
+        },
+        {
+          "title": "Full article: Applications of automatic speech recognition and text-to ...",
+          "abstract": "Exploring applications of automatic speech recognition and text-to-speech technologies in hearing assessment and evaluations of hearing aids. Design.",
+          "url": "https://www.tandfonline.com/doi/full/10.1080/14992027.2024.2422390"
+        },
+        {
+          "title": "An End-to-End Overview of Clinical Speech AI - ResearchGate",
+          "abstract": "Recent advances in clinical speech artificial intelligence (AI) have applied supervised learning techniques, similar to those used in general-purpose speech ...",
+          "url": "https://www.researchgate.net/publication/400439484_An_End-to-End_Overview_of_Clinical_Speech_AI"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "The review noted that there are many barriers to accessing mental health assessments, including cost and stigma, and that machine-learning technology using speech samples could one day serve as a biomarker to improve diagnosis and treatment.",
+      "evidence": [
+        {
+          "title": "Exploring Barriers to Mental Health Care in the U.S. | AAMC",
+          "abstract": "This brief looks at the mental health crisis — including workforce shortages, lack of insurance parity, and how to fix it.",
+          "url": "https://www.aamc.org/about-us/mission-areas/clinical-care/exploring-barriers-mental-health-care-us"
+        },
+        {
+          "title": "Barriers to Mental Health Services - Healthline",
+          "abstract": "Structural and systemic racism · Geographical disparities · Cost · Lack of culturally competent care · Stigma · Overcoming barriers · Bottom line.",
+          "url": "https://www.healthline.com/health/barriers-to-mental-health-services"
+        },
+        {
+          "title": "Enhancing mental health with Artificial Intelligence: Current trends and ...",
+          "abstract": "Hence, this review explores the integration of AI into mental healthcare, elucidating current trends, ethical considerations, and future directions in this ...",
+          "url": "https://www.sciencedirect.com/science/article/pii/S2949916X24000525"
+        },
+        {
+          "title": "Stigma, Prejudice and Discrimination Against People with Mental Illness",
+          "abstract": "Stigma around mental illness especially an issue in some diverse racial and ethnic communities and it can be a major barrier to people from those cultures ...",
+          "url": "https://www.psychiatry.org/patients-families/stigma-and-discrimination"
+        },
+        {
+          "title": "Advancing Mental Health Care: A Comprehensive Review of Digital ...",
+          "abstract": "Technology provides innovative mental health treatment by removing stigma, cost, and accessibility barriers. Digital mental health technology may transform",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12185383/"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "The work is representative of an emerging line of research in which deep neural networks are trained on child speech corpora to provide objective, reproducible differential diagnosis that may complement perceptual clinical assessment.",
+      "evidence": [
+        {
+          "title": "Closing the Child Speech Recognition Gap",
+          "abstract": "State-of-the-art STT models generally utilize deep learning approaches, often employing recurrent neural networks (RNNs), convolutional neural networks (CNNs),",
+          "url": "https://the-learning-agency.com/guides-resources/closing-the-child-speech-recognition-gap-evidence-limitations-and-paths-forward/"
+        },
+        {
+          "title": "Deep Learning-Based End-to-End Language Development ...",
+          "abstract": "by BD Oh · 2022 · Cited by 7 — As a consequence, in this study, we present a deep learning-based language development screening model based on word and part-of-speech and ...",
+          "url": "https://www.mdpi.com/2076-3417/12/9/4651"
+        },
+        {
+          "title": "Child speech understanding and generation via neural ...",
+          "abstract": "The shift to DNN and AI-based systems has improved the capacity to train on limited child speech data.",
+          "url": "https://researchrepository.universityofgalway.ie/entities/publication/528574c7-27a3-47d3-8dcf-98ca879c7bad"
+        },
+        {
+          "title": "AI Learns Language Like a Child Researchers ...",
+          "abstract": "The study trained a multimodal AI on video recordings from a child's headcam, covering the early developmental stage up to two years old.",
+          "url": "https://www.facebook.com/neurosciencenews/posts/ai-learns-language-like-a-childresearchers-demonstrated-that-an-ai-system-can-le/780728830752022/"
+        },
+        {
+          "title": "Tracking Child Language Development With Neural ...",
+          "abstract": "by K Sagae · 2021 · Cited by 16 — Training the model requires longitudinal language data from multiple children. For each child, 100-utterance language samples are organized chronologically.",
+          "url": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2021.674402/full"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "This tripartite architecture is characteristic of clinically oriented AI systems designed both to support SLP assessment and to enable home-based practice by families.",
+      "evidence": [
+        {
+          "title": "Understanding Speech-Language Pathology from the ...",
+          "abstract": "by K Underwood · 2024 · Cited by 1 — In this paper, we examine speech-language services as part of a system of services and a site of participation for disabled children.",
+          "url": "https://www.mdpi.com/2076-0760/13/12/656"
+        },
+        {
+          "title": "Speech assessment tool methods for speech impaired children",
+          "abstract": "by GP Usha · 2023 · Cited by 53 — this paper systematically reviews literature for voice assessment tool methods for children with speech impairments criteria in this systematic ...",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9986674/"
+        },
+        {
+          "title": "Using an implementation science framework to co-design ...",
+          "abstract": "by K Margetson · 2024 — Conclusions: Implementation science offers useful frameworks for researchers to partner with clinicians to co-design and test evidence-based clinical tools.",
+          "url": "https://researchoutput.csu.edu.au/en/publications/using-an-implementation-science-framework-to-co-design-and-test-t/"
+        },
+        {
+          "title": "Reference architecture design for computer-based speech ...",
+          "abstract": "Computer-based speech therapy systems could help to resolve service ac- cess problems, particularly for families having limited software elements, relations … ...",
+          "url": "https://www.researchgate.net/publication/364397087_Reference_architecture_design_for_computer-based_speech_therapy_systems"
+        },
+        {
+          "title": "Reference architecture design for computer-based speech ...",
+          "abstract": "by GA Attwell · 2023 · Cited by 13 — 1. The presentation layer contains the Interface and Visualisation feature, which comprises the interfaces and sub-features for the client and speech therapist.",
+          "url": "https://www.sciencedirect.com/science/article/pii/S0885230822000882"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "arxiv_id": "2204.10325",
+  "model": "MiniMax-M3",
+  "system": "citation-rag-v15",
+  "reference_precision": 0.0,
+  "reference_recall": 0.0,
+  "reference_count": 4,
+  "reference_matches": 0,
+  "ground_truth_count": 36,
+  "predicted_titles": [
+    "Stuttering Speech Disfluency Prediction using Explainable Attribution Vectors of Facial Muscle Movements",
+    "Deep-Learning-Based Automated Classification of Chinese Speech Sound Disorders",
+    "An automated tool for the assessment of childhood apraxia ...",
+    "Automatic Pronunciation Scoring And Mispronunciation ..."
+  ]
+}

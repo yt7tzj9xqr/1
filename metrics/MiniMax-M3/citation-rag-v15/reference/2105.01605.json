@@ -1,0 +1,13 @@
+{
+  "arxiv_id": "2105.01605",
+  "model": "MiniMax-M3",
+  "system": "citation-rag-v15",
+  "reference_precision": 1.0,
+  "reference_recall": 0.02040816326530612,
+  "reference_count": 1,
+  "reference_matches": 1,
+  "ground_truth_count": 49,
+  "predicted_titles": [
+    "Deep Adversarial Graph Attention Convolution Network for Text-Based Person Search"
+  ]
+}

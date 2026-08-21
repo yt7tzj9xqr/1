@@ -1,0 +1,825 @@
+{
+  "arxiv_id": "2401.07915",
+  "model": "MiniMax-M3",
+  "system": "search-baseline-v4",
+  "reference_precision": 0.2857142857142857,
+  "reference_recall": 0.015384615384615385,
+  "reference_count": 14,
+  "reference_matches": 4,
+  "ground_truth_count": 260,
+  "predicted_titles": [
+    "Learning Dexterous In-Hand Manipulation",
+    "DexMV: Imitation Learning for Dexterous Manipulation from ...",
+    "Tactile-Driven Non-Prehensile Object Manipulation via ...",
+    "Learning Robot In-Hand Manipulation with Tactile Features",
+    "Learning a State Estimator for Tactile In-Hand Manipulation",
+    "DexYCB: A Benchmark for Capturing Hand Grasping of Objects",
+    "DexArt: Benchmarking Generalizable Dexterous Manipulation ...",
+    "Continual Policy Distillation of Reinforcement Learning-based Controllers for Soft Robotic In-Hand Manipulation",
+    "TacGNN:Learning Tactile-based In-hand Manipulation with a Blind Robot",
+    "Reinforcement and Imitation Learning for Diverse Visuomotor Skills",
+    "Hierarchical reinforcement learning for in-hand robotic manipulation using Davenport chained rotations",
+    "On Policy Learning Robust to Irreversible Events: An Application to Robotic In-Hand Manipulation",
+    "Object Manipulation with an Anthropomorphic Robotic Hand via Deep Reinforcement Learning with a Synergy Space of Natural Hand Poses",
+    "H-InDex: Visual Reinforcement Learning with Hand-Informed Representations for Dexterous Manipulation"
+  ],
+  "cited_match_rate": 0.6190476190476191,
+  "cited_count": 42,
+  "cited_supported": 26,
+  "cited_details": [
+    {
+      "statement": "[introduce a learned state estimator](https://elib.dlr.de/190608/1/IROS22_LearningTactileEstimator.pdf) that infers the pose of an object being manipulated by a multi-fingered hand using only proprioceptive feedback.",
+      "url": "https://elib.dlr.de/190608/1/IROS22_LearningTactileEstimator.pdf",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The broader **DexYCB** benchmark provides a standardized capture protocol and ground-truth annotations for 2D/3D hand pose and 6D object pose estimation during grasping, enabling fair comparison of such estimators in manufacturing-relevant pick-and-handover scenarios [DexYCB](https://dex-ycb.github.io/).",
+      "url": "https://dex-ycb.github.io",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Oller, Berenson, and Fazeli [propose a tactile-driven framework](https://www.roboticsproceedings.org/rss20/p135.pdf) that combines passive compliance modeling with an explicit notion of *extrinsic contact modes* to manipulate a grasped object against the environment (e.g., pivoting on a tabletop).",
+      "url": "https://roboticsproceedings.org/rss20/p135.pdf",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "introduce **TacGNN**, a hierarchical graph neural network that learns a tactile-driven dynamics model for an anthropomorphic hand operating without vision ([TacGNN](https://arxiv.org/abs/2304.00736)).",
+      "url": "https://arxiv.org/abs/2304.00736",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The OpenAI study [\"Learning Dexterous In-Hand Manipulation\"](https://arxiv.org/abs/1808.00177) established that a five-fingered humanoid hand can learn to reorient a block to arbitrary target poses from vision alone, using large-scale distributed RL in simulation and domain randomization to bridge the sim-to-real gap.",
+      "url": "https://arxiv.org/abs/1808.00177",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "earlier showed that **RL with tactile features** can acquire regrasping skills on a passively compliant hand and generalize to novel objects [van Hoof et al., 2015](https://users.cs.utah.edu/~thermans/papers/vanhoof-ichr2015-in-hand-learning.pdf), foreshadowing the role of tactile sensing in fine manipulation.",
+      "url": "https://users.cs.utah.edu/~thermans/papers/vanhoof-ichr2015-in-hand-learning.pdf",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "study **on-policy learning robust to irreversible events** such as object slipping, combining a visual RL policy with a low-level tactile reactive controller that intervenes to prevent drop [Falco et al., 2019](https://arxiv.org/abs/1911.08927).",
+      "url": "https://arxiv.org/abs/1911.08927",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Roldan Sanchez, Wang, and Cordova Bulens propose a **hierarchical RL scheme that uses Davenport chained rotations** to represent in-hand object orientation, thereby reducing the effective action dimensionality for a Shadow-hand-like platform [Roldan Sanchez et al., 2022](https://arxiv.org/abs/2210.00795).",
+      "url": "https://arxiv.org/abs/2210.00795",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Separately, the synergy-space DRL approach learns a low-dimensional manifold of natural hand poses from human demonstrations and trains the policy in that space, achieving an 88.38% success rate on relocation tasks compared to a substantially lower rate for the unstructured baseline [Anthropomorphic Hand via DRL, 2021](https://doi.org/10.3390/s21165301).",
+      "url": "https://doi.org/10.3390/s21165301",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "introduce **H-InDex**, which augments visual RL with hand-informed representations learned by predicting future hand state [H-InDex, 2023](https://arxiv.org/abs/2310.01404).",
+      "url": "https://arxiv.org/abs/2310.01404",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The **DexArt** benchmark extends the evaluation setting to articulated objects (drawers, boxes, faucets) and provides a reproducible testbed for measuring generalization across object instances [DexArt, CVPR 2023](https://cvpr.thecvf.com/virtual/2023/poster/22341).",
+      "url": "https://cvpr.thecvf.com/virtual/2023/poster/22341",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Finally, Li, Donato, Lomonaco, and Falotico study **continual policy distillation** so that soft-hand controllers can be updated to new tasks without catastrophic forgetting of previously acquired skills [Continual Policy Distillation, 2024](https://arxiv.org/abs/2404.04219).",
+      "url": "https://arxiv.org/abs/2404.04219",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "combine a small number of human-collected demonstrations with model-free deep RL to acquire a broad set of visuomotor skills for a simulated hand [Zhu et al., RSS 2018](https://doi.org/10.15607/rss.2018.xiv.009).",
+      "url": "https://doi.org/10.15607/rss.2018.xiv.009",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "**DexMV** learns dexterous manipulation from monocular human videos by first estimating hand and object poses with an off-the-shelf tracker, then re-targeting the human trajectory to a simulated robot hand, and finally training an RL policy in simulation on the re-targeted trajectories [DexMV, 2021](https://arxiv.org/abs/2108.05877).",
+      "url": "https://arxiv.org/abs/2108.05877",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "[https://arxiv.org/abs/1808.00177](https://arxiv.org/abs/1808.00177)",
+      "url": "https://arxiv.org/abs/1808.00177",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://arxiv.org/abs/1808.00177](https://arxiv.org/abs/1808.00177)",
+      "url": "https://arxiv.org/abs/1808.00177",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://arxiv.org/abs/2108.05877](https://arxiv.org/abs/2108.05877)",
+      "url": "https://arxiv.org/abs/2108.05877",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://arxiv.org/abs/2108.05877](https://arxiv.org/abs/2108.05877)",
+      "url": "https://arxiv.org/abs/2108.05877",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://www.roboticsproceedings.org/rss20/p135.pdf](https://www.roboticsproceedings.org/rss20/p135.pdf)",
+      "url": "https://roboticsproceedings.org/rss20/p135.pdf",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://www.roboticsproceedings.org/rss20/p135.pdf](https://www.roboticsproceedings.org/rss20/p135.pdf)",
+      "url": "https://roboticsproceedings.org/rss20/p135.pdf",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://users.cs.utah.edu/~thermans/papers/vanhoof-ichr2015-in-hand-learning.pdf](https://users.cs.utah.edu/~thermans/papers/vanhoof-ichr2015-in-hand-learning.pdf)",
+      "url": "https://users.cs.utah.edu/~thermans/papers/vanhoof-ichr2015-in-hand-learning.pdf",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://users.cs.utah.edu/~thermans/papers/vanhoof-ichr2015-in-hand-learning.pdf](https://users.cs.utah.edu/~thermans/papers/vanhoof-ichr2015-in-hand-learning.pdf)",
+      "url": "https://users.cs.utah.edu/~thermans/papers/vanhoof-ichr2015-in-hand-learning.pdf",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://elib.dlr.de/190608/1/IROS22_LearningTactileEstimator.pdf](https://elib.dlr.de/190608/1/IROS22_LearningTactileEstimator.pdf)",
+      "url": "https://elib.dlr.de/190608/1/IROS22_LearningTactileEstimator.pdf",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://elib.dlr.de/190608/1/IROS22_LearningTactileEstimator.pdf](https://elib.dlr.de/190608/1/IROS22_LearningTactileEstimator.pdf)",
+      "url": "https://elib.dlr.de/190608/1/IROS22_LearningTactileEstimator.pdf",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "\"DexYCB: A Benchmark for Capturing Hand Grasping of Objects.\" [https://dex-ycb.github.io/](https://dex-ycb.github.io/)",
+      "url": "https://dex-ycb.github.io",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "\"DexYCB: A Benchmark for Capturing Hand Grasping of Objects.\" [https://dex-ycb.github.io/](https://dex-ycb.github.io/)",
+      "url": "https://dex-ycb.github.io",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://cvpr.thecvf.com/virtual/2023/poster/22341](https://cvpr.thecvf.com/virtual/2023/poster/22341)",
+      "url": "https://cvpr.thecvf.com/virtual/2023/poster/22341",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "[https://cvpr.thecvf.com/virtual/2023/poster/22341](https://cvpr.thecvf.com/virtual/2023/poster/22341)",
+      "url": "https://cvpr.thecvf.com/virtual/2023/poster/22341",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "[https://arxiv.org/abs/2404.04219](https://arxiv.org/abs/2404.04219)",
+      "url": "https://arxiv.org/abs/2404.04219",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://arxiv.org/abs/2404.04219](https://arxiv.org/abs/2404.04219)",
+      "url": "https://arxiv.org/abs/2404.04219",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://arxiv.org/abs/2304.00736](https://arxiv.org/abs/2304.00736)",
+      "url": "https://arxiv.org/abs/2304.00736",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://arxiv.org/abs/2304.00736](https://arxiv.org/abs/2304.00736)",
+      "url": "https://arxiv.org/abs/2304.00736",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://doi.org/10.15607/rss.2018.xiv.009](https://doi.org/10.15607/rss.2018.xiv.009)",
+      "url": "https://doi.org/10.15607/rss.2018.xiv.009",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "[https://doi.org/10.15607/rss.2018.xiv.009](https://doi.org/10.15607/rss.2018.xiv.009)",
+      "url": "https://doi.org/10.15607/rss.2018.xiv.009",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "[https://arxiv.org/abs/2210.00795](https://arxiv.org/abs/2210.00795)",
+      "url": "https://arxiv.org/abs/2210.00795",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://arxiv.org/abs/2210.00795](https://arxiv.org/abs/2210.00795)",
+      "url": "https://arxiv.org/abs/2210.00795",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://arxiv.org/abs/1911.08927](https://arxiv.org/abs/1911.08927)",
+      "url": "https://arxiv.org/abs/1911.08927",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "[https://arxiv.org/abs/1911.08927](https://arxiv.org/abs/1911.08927)",
+      "url": "https://arxiv.org/abs/1911.08927",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "[https://doi.org/10.3390/s21165301](https://doi.org/10.3390/s21165301)",
+      "url": "https://doi.org/10.3390/s21165301",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "[https://doi.org/10.3390/s21165301](https://doi.org/10.3390/s21165301)",
+      "url": "https://doi.org/10.3390/s21165301",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "[https://arxiv.org/abs/2310.01404](https://arxiv.org/abs/2310.01404)",
+      "url": "https://arxiv.org/abs/2310.01404",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://arxiv.org/abs/2310.01404](https://arxiv.org/abs/2310.01404)",
+      "url": "https://arxiv.org/abs/2310.01404",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    }
+  ],
+  "noncited_factual_accuracy": 0.3333333333333333,
+  "noncited_count": 15,
+  "noncited_correct": 5,
+  "noncited_details": [
+    {
+      "claim": "The last decade has witnessed a substantial shift toward learning-based methods in robotic in-hand manipulation.",
+      "evidence": [
+        {
+          "title": "Survey of learning-based approaches for robotic in-hand ...",
+          "abstract": "In recent decades, significant effort has been put in order to enable in-hand manipulation capabilities to robotic systems.",
+          "url": "https://www.researchgate.net/publication/385558002_Survey_of_learning-based_approaches_for_robotic_in-hand_manipulation"
+        },
+        {
+          "title": "Review of machine learning in robotic grasping control in ...",
+          "abstract": "by H Jahanshahi · 2024 · Cited by 122 — This period witnessed a shift towards the incorporation of an extensive array of sensors, including tactile and force sensors, into robotic platforms.",
+          "url": "https://www.sciencedirect.com/science/article/pii/S009457652400211X"
+        },
+        {
+          "title": "Survey of Learning-based Approaches for Robotic In-Hand ...",
+          "abstract": "by AI Weinberg · Cited by 42 — In recent decades, significant effort has been put in order to enable in-hand manipulation capabilities to robotic systems.",
+          "url": "https://i-newcar.com/uploads/allimg/20241231/2-241231112202115.pdf"
+        },
+        {
+          "title": "Review on human‐like robot manipulation using dexterous ...",
+          "abstract": "by S Kadalagere Sampath · 2023 · Cited by 82 — In recent years, human hand-based robotic hands or dexterous hands have gained attention due to their enormous capabilities of handling soft ...",
+          "url": "https://ietresearch.onlinelibrary.wiley.com/doi/10.1049/ccs2.12073"
+        },
+        {
+          "title": "Learning dexterous in-hand manipulation - OpenAI",
+          "abstract": "by OAIM Andrychowicz · 2020 · Cited by 2580 — We use reinforcement learning (RL) to learn dexterous in-hand manipulation policies that can perform vision-based object reorientation on a ...",
+          "url": "https://journals.sagepub.com/doi/full/10.1177/0278364919887447"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "Reinforcement learning has been the dominant paradigm for in-hand manipulation.",
+      "evidence": [
+        {
+          "title": "Learning dexterous in-hand manipulation",
+          "abstract": "We use reinforcement learning (RL) to learn dexterous in-hand manipulation policies which can perform vision-based object reorientation on a physical Shadow ...",
+          "url": "https://www.researchgate.net/publication/337345997_Learning_dexterous_in-hand_manipulation"
+        },
+        {
+          "title": "Learning Robot In-Hand Manipulation with Tactile Features",
+          "abstract": "by H van Hoof · Cited by 222 — In this paper, we have employed a reinforcement learning method to learn a tactile skill on a compliant, under-actuated robot hand.",
+          "url": "https://users.cs.utah.edu/~thermans/papers/vanhoof-ichr2015-in-hand-learning.pdf"
+        },
+        {
+          "title": "Learning Complex Dexterous Manipulation with Deep ...",
+          "abstract": "Deep reinforcement learning (DRL) provides a model-agnostic approach to control complex dynamical systems, but has not been shown , complex grasping, and tool ...",
+          "url": "https://vikashplus.github.io/Projects/RLwithDemo/dapg.pdf"
+        },
+        {
+          "title": "Dexterous Manipulation with Reinforcement Learning",
+          "abstract": "In this post, we demonstrate how deep reinforcement learning (deep RL) can be used to learn how to control dexterous hands for a variety of ...",
+          "url": "http://bair.berkeley.edu/blog/2018/08/31/dexterous-manip/"
+        },
+        {
+          "title": "Survey of learning-based approaches for robotic in-hand ...",
+          "abstract": "by AI Weinberg · 2024 · Cited by 42 — Efforts for learning in-hand manipulation can be classified into three subfields: model-based methods, Reinforcement Learning (RL) and Imitation Learning (IL).",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11573780/"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "DexMV demonstrates that tasks such as relocation, pouring, and place-inside can be learned purely from observation.",
+      "evidence": [
+        {
+          "title": "Interactive imitation learning for dexterous robotic manipulation",
+          "abstract": "Dexterous manipulation is a crucial yet highly complex challenge in humanoid robotics, demanding precise, adaptable, and sample-efficient learning methods.",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12757213/"
+        },
+        {
+          "title": "Imitation Learning for Dexterous Manipulation from Human Videos",
+          "abstract": "In this paper, we propose a new platform and pipeline DexMV (Dexterous Manipulation from Videos) for imitation learning.",
+          "url": "https://ui.adsabs.harvard.edu/abs/2021arXiv210805877Q/abstract"
+        },
+        {
+          "title": "Imitation Learning for Dexterous Manipulation from Human Videos",
+          "abstract": "In this paper, we propose a new platform and pipeline, DexMV (Dexterous Manipulation from Videos), for imitation learning to bridge the gap between computer.",
+          "url": "https://geometry.stanford.edu/struco3d/papers/07.pdf"
+        },
+        {
+          "title": "Imitation Learning for Dexterous Manipulation from Human Videos",
+          "abstract": "This paper proposes a new platform and pipeline DexMV for imitation learning, and proposes a novel demonstration translation method to convert human motion ...",
+          "url": "https://www.semanticscholar.org/paper/DexMV%3A-Imitation-Learning-for-Dexterous-from-Human-Qin-Wu/93230bed6246400949ac514df46fc1c56af80ec2"
+        },
+        {
+          "title": "DexMV: Imitation Learning for Dexterous Manipulation from ...",
+          "abstract": "This is a seminal paper that demonstrated the capabilities of pure reinforcement learning for solving complex dexterous manipulation tasks. The DexMV paper ...",
+          "url": "https://alphaxiv.org/abs/2108.05877"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "H-InDex injects a model-driven visual prior into a model-free reinforcement learning backbone.",
+      "evidence": [
+        {
+          "title": "H-InDex: Visual Reinforcement Learning with Hand ...",
+          "abstract": "by Y Ze · 2023 · Cited by 38 — We empirically study 12 challenging dexterous manipulation tasks and find that H-InDex largely surpasses strong baseline methods and the recent ...",
+          "url": "https://arxiv.org/abs/2310.01404"
+        },
+        {
+          "title": "H-InDex: Visual Reinforcement Learning with Hand-Informe...",
+          "abstract": "The authors developed a new method called H-InDex that helps robots learn to perform complex tasks using information from how humans use their hands.",
+          "url": "https://bytez.com/docs/neurips/70570/paper?_c=eyJ2IjoxLCJyZWxhdGVkIjpbImNvZGUiLCJyZWZlcmVuY2VzIiwiY29uZmVyZW5jZSJdfQ%3D%3D"
+        },
+        {
+          "title": "H-InDex: Visual Reinforcement Learning with Hand- ...",
+          "abstract": "by Y Ze · Cited by 38 — This paper demonstrates that using a visual backbone pretrained for (human) hand-pose estimation leads to improvements in learning downstream dexterous ...",
+          "url": "https://openreview.net/forum?id=lvvaNwnP6M"
+        },
+        {
+          "title": "H-InDex",
+          "abstract": "In this work, we propose a human Hand-Informed visual representation learning framework to solve difficult Dexterous manipulation tasks (H-InDex).",
+          "url": "https://yanjieze.com/projects/H-InDex/"
+        },
+        {
+          "title": "Visual Pretraining via Contrastive Predictive Model for Pixel ...",
+          "abstract": "by TM Luu · 2022 · Cited by 11 — this paper introduces a method referred to as the visual pretraining via contrastive predictive model (VPCPM). reward-free data",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9460564/"
+        }
+      ],
+      "true_votes": 1,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "Randomization over object mass, friction, and visual appearance is necessary for sim-to-real transfer in in-hand manipulation.",
+      "evidence": [
+        {
+          "title": "Robust visual sim-to-real transfer for robotic manipulation",
+          "abstract": "We learn visuomotor manipulation policies in simulation (row 1) with domain randomization by sampling high-quality textures, lighting, object colors and camera ...",
+          "url": "https://www.di.ens.fr/willow/research/robust_s2r/"
+        },
+        {
+          "title": "Learning Dexterous In-Hand Manipulation - alphaXiv",
+          "abstract": "The extensive randomization of physics parameters like friction, mass, and damping is a key reason for the successful sim-to-real transfer of the manipulation ...",
+          "url": "https://www.alphaxiv.org/abs/1808.00177"
+        },
+        {
+          "title": "Dexterous Manipulation for Multi-Fingered Robotic Hands With ...",
+          "abstract": "However, for some complex tasks such as in-hand manipulation, a simple gripper is not sufficient and a multi-fingered dexterous hand is, therefore, necessary.",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9083362/"
+        },
+        {
+          "title": "OpenAI Demonstrates Complex Manipulation Transfer from ...",
+          "abstract": "By adding randomness to a relatively simple simulation, OpenAI's robot hand learned to perform complex in-hand manipulation.",
+          "url": "https://spectrum.ieee.org/openai-demonstrates-complex-manipulation-transfer-from-simulation-to-real-world"
+        },
+        {
+          "title": "Sim-to-Real Reinforcement Learning for Vision-Based Dexterous ...",
+          "abstract": "1: Overview. We train a humanoid robot with two multi-fingered hands to perform a range of contact-rich dexterous manipulation tasks on various objects.",
+          "url": "https://toruowo.github.io/recipe/assets/recipe.pdf"
+        }
+      ],
+      "true_votes": 2,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "Policy networks for in-hand manipulation must ingest raw visual features rather than a reconstructed state to remain robust.",
+      "evidence": [
+        {
+          "title": "Towards a Unified Understanding of Robot Manipulation - arXiv",
+          "abstract": "This section reviews key resources across six major areas: grasping datasets that support perception–pose learning, single-embodiment ...",
+          "url": "https://arxiv.org/html/2510.10903v2"
+        },
+        {
+          "title": "Learning Deep Visuomotor Policies for Dexterous Hand Manipulation",
+          "abstract": "the student policy learns robust visual features that allow it to locate the object of interest accurately and consistently, regardless of the camera viewpoint.",
+          "url": "https://www.researchgate.net/publication/335144448_Learning_Deep_Visuomotor_Policies_for_Dexterous_Hand_Manipulation"
+        },
+        {
+          "title": "Learning Deep Visuomotor Policies for Dexterous Hand Manipulation",
+          "abstract": "In this work, we study methods to enable learning of sensorimotor policies that are capable of complex dexterous manipulation from raw visual and tactile ...",
+          "url": "https://aravindr93.github.io/assets/research/HMS_visuomotor_policy.pdf"
+        },
+        {
+          "title": "A System for General In-Hand Object Re-Orientation",
+          "abstract": "Our results, therefore, suggest that visual perception may be less important for in-hand manipulation than previously thought.",
+          "url": "https://proceedings.mlr.press/v164/chen22a/chen22a.pdf"
+        },
+        {
+          "title": "GENERALIZABLE MANIPULATION FROM VISION AND TOUCH ...",
+          "abstract": "In this paper, we propose Masked Multimodal Learning (M3L), which leverages both visual and tactile sensing modalities by systematically fusing them for ...",
+          "url": "https://openreview.net/pdf/0e5845d3af1af9b4e9b44249667b7b1187825ee7.pdf"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "The high dimensionality of multi-fingered hands has made analytic control pipelines difficult to scale.",
+      "evidence": [
+        {
+          "title": "Grasp and dexterous manipulation of multi-fingered robotic hands",
+          "abstract": "This paper investigates past research studies on control systems of multi-fingered robotic hands for grasping and manipulation.",
+          "url": "https://www.researchgate.net/publication/319389955_Grasp_and_dexterous_manipulation_of_multi-fingered_robotic_hands_a_review_from_a_control_view_point"
+        },
+        {
+          "title": "Review on human‐like robot manipulation using dexterous hands",
+          "abstract": "In recent years, the development of the multi-fingered hand or dexterous hand has gradually increased. The dexterous hands are available ...",
+          "url": "https://ietresearch.onlinelibrary.wiley.com/doi/10.1049/ccs2.12073"
+        },
+        {
+          "title": "Human-like dexterous manipulation for anthropomorphic five-fingered ...",
+          "abstract": "In this paper, we present a focused review of human-like dexterous manipulation for anthropomorphic five-fingered hands.",
+          "url": "https://www.sciencedirect.com/science/article/pii/S2667379725000038"
+        },
+        {
+          "title": "Multi-fingered Dexterous Hands: From Simplicity to Complexity and ...",
+          "abstract": "In this paper, the research and development of humanoid multi-fingered dexterous hands are reviewed and analyzed.",
+          "url": "https://qikan.cmes.org/jxgcxb/EN/10.3901/JME.2021.15.001"
+        },
+        {
+          "title": "Attention Based Visual Analysis for Fast Grasp Planning With a Multi ...",
+          "abstract": "We present an attention based visual analysis framework to compute grasp-relevant information which helps to guide grasp planning using a multi-fingered robotic ...",
+          "url": "https://www.frontiersin.org/journals/neurorobotics/articles/10.3389/fnbot.2019.00060/full"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "Object pose estimation in in-hand manipulation is complicated by frequent self-occlusion of the held object by the fingers.",
+      "evidence": [
+        {
+          "title": "3D Hand Pose Estimation in Everyday Egocentric Images",
+          "abstract": "by A Prakash · Cited by 37 — WildHands is able to predict hand pose better in images involving occlusion and interaction, e.g. fingers are curled around the object in contact",
+          "url": "https://ap229997.github.io/projects/hands/assets/paper.pdf"
+        },
+        {
+          "title": "Computational Learning for Hand Pose Estimation",
+          "abstract": "In this thesis, we propose novel methods to leverage the paradigm of analysis by synthesis and create a prediction model using a population of realistic 3D hand ...",
+          "url": "https://docs.lib.purdue.edu/dissertations/AAI10743663/"
+        },
+        {
+          "title": "xinghaochen/awesome-hand-pose-estimation",
+          "abstract": "Benchmarks and Challenges in Pose Estimation for Egocentric Hand Interactions with Objects. Occluded Hands: A challenging new dataset for single-image hand ...",
+          "url": "https://github.com/xinghaochen/awesome-hand-pose-estimation"
+        },
+        {
+          "title": "A Survey on Hand Pose Estimation with Wearable Sensors ...",
+          "abstract": "by W Chen · 2020 · Cited by 198 — Hand pose estimation is a big academic and technical challenge due to the complex structure and dexterous movement of human hands.",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7071082/"
+        },
+        {
+          "title": "DexterCap: Affordable and Automated Capture of Complex ...",
+          "abstract": "Capturing fine-grained hand-object interactions is challenging due to severe self-occlusion from closely spaced fingers and the subtlety of in-hand ...",
+          "url": "https://arxiv.org/html/2601.05844v2"
+        }
+      ],
+      "true_votes": 2,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "Contact modes in in-hand manipulation (sticking, sliding, rolling, pivoting) switch discontinuously.",
+      "evidence": [
+        {
+          "title": "Robust In-Hand Manipulation with Extrinsic Contacts",
+          "abstract": "In this paper, we study robust in-hand manipulation of objects using extrinsic contacts. Fig. 1 shows an example scenario where a robot is ...",
+          "url": "https://arxiv.org/html/2403.18960v1"
+        },
+        {
+          "title": "Dynamic On-Palm Manipulation via Controlled Sliding",
+          "abstract": "by W Yang · 2024 · Cited by 26 — The primary exploration of this work is how to plan and regulate between frictional contact modes (sliding, sticking, and breaking contact altogether),",
+          "url": "https://par.nsf.gov/servlets/purl/10576372"
+        },
+        {
+          "title": "Controlling Palm-Object Interactions Via Friction for ...",
+          "abstract": "enables switching between sliding or pivoting/rolling. in-hand manipulation can also benefit from friction modulation at the contact locations,",
+          "url": "https://www.researchgate.net/publication/357923245_Controlling_Palm-Object_Interactions_Via_Friction_for_Enhanced_In-Hand_Manipulation"
+        },
+        {
+          "title": "Learning Robot In-Hand Manipulation with Tactile Features",
+          "abstract": "by H van Hoof · Cited by 222 — In this paper, we show that this approach successfully acquires. Using reinforcement learning and tactile feedback, a rolling primitive can be learned on an ...",
+          "url": "https://users.cs.utah.edu/~thermans/papers/vanhoof-ichr2015-in-hand-learning.pdf"
+        },
+        {
+          "title": "Dynamic In-Hand Sliding Manipulation",
+          "abstract": "by J Shi · Cited by 192 — This paper presents a framework for planning the motion of an n-fingered robot hand to create an inertial load on a grasped object to achieve a desired in- ...",
+          "url": "https://robotics.northwestern.edu/documents/publications/IROS15_1443_FI.pdf"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "Policy learning for in-hand manipulation must contend with high-dimensional action spaces, sparse rewards, and the cost of real-world interaction.",
+      "evidence": [
+        {
+          "title": "Dexterous Manipulation with Reinforcement Learning",
+          "abstract": "In this post, we demonstrate how deep reinforcement learning (deep RL) can be used to learn how to control dexterous hands for a variety of ...",
+          "url": "http://bair.berkeley.edu/blog/2018/08/31/dexterous-manip/"
+        },
+        {
+          "title": "Policy learning in SE(3) action spaces",
+          "abstract": "This paper proposes ASRSE3, a new method for handling higher dimensional spatial action spaces that transforms an original MDP with high di- mensional action ...",
+          "url": "https://proceedings.mlr.press/v155/wang21f/wang21f.pdf"
+        },
+        {
+          "title": "Learning Robot In-Hand Manipulation with Tactile Features",
+          "abstract": "by H van Hoof · Cited by 222 — In this paper, we propose to directly learn a control policy for the unknown system. This approach does not rely on knowing the robot's dynamics or kinematics, ...",
+          "url": "https://users.cs.utah.edu/~thermans/papers/vanhoof-ichr2015-in-hand-learning.pdf"
+        },
+        {
+          "title": "Dexterous Manipulation with Deep Reinforcement Learning",
+          "abstract": "In this work, we study the use of model-free deep reinforcement learning algorithms to learn manipulation policies for dexterous multi-finger ...",
+          "url": "https://arxiv.org/html/1810.06045v1"
+        },
+        {
+          "title": "Efficient Off-Policy Learning for High-Dimensional Action ...",
+          "abstract": "by F Otto · Cited by 1 — The paper proposes a new technique for offline RL that learns a state value function instead of state-action Q-function. Combined with importance sampling, the ...",
+          "url": "https://openreview.net/forum?id=JDzTI9rKls"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "Imitation learning sidesteps the sample-efficiency bottleneck of reinforcement learning by bootstrapping from demonstrations.",
+      "evidence": [
+        {
+          "title": "Imitation Bootstrapped Reinforcement Learning - arXiv",
+          "abstract": "We propose imitation bootstrapped reinforcement learning (IBRL), a method to effectively combine IL and RL for sample-efficient reinforcement ...",
+          "url": "https://arxiv.org/html/2311.02198v4"
+        },
+        {
+          "title": "IMITATION BOOTSTRAPPED REINFORCEMENT LEARNING",
+          "abstract": "In this paper, we propose Imitation Bootstrapped Reinforcement Learning (IBRL), a novel method to combine IL and RL for sample efficient learning.",
+          "url": "https://par.nsf.gov/servlets/purl/10538655"
+        },
+        {
+          "title": "Planning for Sample Efficient Imitation Learning",
+          "abstract": "EfficientImitate (EI), a planning-based imitation learning method that can achieve high in-environment sample efficiency and per- formance simultaneously.",
+          "url": "https://proceedings.neurips.cc/paper_files/paper/2022/file/11715d433f6f8b9106baae0df023deb3-Paper-Conference.pdf"
+        },
+        {
+          "title": "Imitation Bootstrapped Reinforcement Learning - alphaXiv",
+          "abstract": "This paper introduces Reinforcement Learning from Prior Data (RLPD), a strong baseline method that oversamples demonstrations during training.",
+          "url": "https://www.alphaxiv.org/abs/2311.02198"
+        },
+        {
+          "title": "An Adaptive Imitation Learning Framework for Robotic Complex ...",
+          "abstract": "The main contribution of this paper is the development of an adaptive imitation learning framework for robot manipulation (Figure 1), which introduces DMPs into ...",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8787218/"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "Model-driven methods retain an explicit representation of the system, either learned from data or derived from physics.",
+      "evidence": [
+        {
+          "title": "Data-driven modeling and learning in science ...",
+          "abstract": "by FJ Montáns · 2019 · Cited by 471 — In this paper we review the application of data-driven modeling and model learning procedures to different fields in science and engineering.",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1631072119301809"
+        },
+        {
+          "title": "Scientific Machine Learning: Where Physics-based Modeling ...",
+          "abstract": "Scientific Machine Learning: Where Physics-based Modeling Meets Data-driven Learning · Comments.",
+          "url": "https://www.youtube.com/watch?v=JgwwDvvOHk4"
+        },
+        {
+          "title": "Learning dynamical systems from data - PMC - NIH",
+          "abstract": "by R Yu · 2024 · Cited by 174 — Physics-guided DL aims to integrate first-principled physical knowledge into data-driven methods. learning dynamical systems. derived from ...",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11228478/"
+        },
+        {
+          "title": "Discovering Latent Response Laws in Forced Physical ...",
+          "abstract": "The learned low-dimensional representation must remain valid across forcing conditions, while the associated dynamics must capture how external inputs shape the ...",
+          "url": "https://arxiv.org/html/2607.09801v1"
+        },
+        {
+          "title": "Physics-informed and data-driven discovery of governing ...",
+          "abstract": "by M Sahimi · 2024 · Cited by 20 — This perspective describes the emerging field of physics-informed and data-driven (PIDD) modeling of multiscale, multiphysics systems and ...",
+          "url": "https://link.aps.org/doi/10.1103/PhysRevE.109.041001"
+        }
+      ],
+      "true_votes": 2,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "The DexMV pipeline removes the need for teleoperation hardware.",
+      "evidence": [
+        {
+          "title": "DexMV: Imitation Learning for Dexterous Manipulation from ...",
+          "abstract": "In this paper, we propose a new platform. DexMV introduces a comprehensive system for teaching robotic hands complex manipulation skills by learning from human ...",
+          "url": "https://www.alphaxiv.org/abs/2108.05877"
+        },
+        {
+          "title": "DexMV: Imitation Learning for Dexterous Manipulation from ...",
+          "abstract": "by Y Qin · 2021 · Cited by 369 — In this paper, we propose a new platform and pipeline DexMV (Dexterous Manipulation from Videos) for imitation learning.",
+          "url": "https://arxiv.org/abs/2108.05877"
+        },
+        {
+          "title": "DexMV: Imitation Learning for Dexterous Manipulation from ...",
+          "abstract": "by Y Qin · Cited by 369 — In this paper, we propose a new platform and pipeline, DexMV for imitation learning to bridge the gap between computer vision and robot learning.",
+          "url": "https://geometry.stanford.edu/struco3d/papers/07.pdf"
+        },
+        {
+          "title": "DexMV: Imitation Learning for Dexterous Manipulation from ...",
+          "abstract": "This paper proposes a new platform and pipeline DexMV for imitation learning, to convert human motion to robot demonstrations",
+          "url": "https://www.semanticscholar.org/paper/DexMV%3A-Imitation-Learning-for-Dexterous-from-Human-Qin-Wu/93230bed6246400949ac514df46fc1c56af80ec2"
+        },
+        {
+          "title": "DexMV: Imitation Learning for Dexterous Manipulation from ...",
+          "abstract": "DexMV is a novel system and pipeline for learning dexterous manipulation from human demonstration videos. This repo contains the simulated environment and ...",
+          "url": "https://github.com/yzqin/dexmv-sim"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "Modern physics simulators provide the sample throughput necessary for training high-dimensional hand policies.",
+      "evidence": [
+        {
+          "title": "Scientific Machine Learning Through Physics–Informed ...",
+          "abstract": "by S Cuomo · 2022 · Cited by 4007 — Physics–Informed Neural Networks (PINNs) are a scientific machine learning technique used to solve problems involving Partial Differential ...",
+          "url": "https://link.springer.com/article/10.1007/s10915-022-01939-z"
+        },
+        {
+          "title": "Tell Machine Learning Potentials What They Are Needed For",
+          "abstract": "by F Ge · 2024 · Cited by 11 — Here, we systematically investigate the relationship between such test errors and the simulation accuracy with MLPs on an example of a full- ...",
+          "url": "https://pubs.acs.org/doi/10.1021/acs.jpclett.4c00746"
+        },
+        {
+          "title": "Model Misspecification in Machine Learning for Physics",
+          "abstract": "Across particle physics, astrophysics, and cosmology, ML models now serve as fast emulators of expensive simulations, as components of the ...",
+          "url": "https://arxiv.org/html/2608.13633v1"
+        },
+        {
+          "title": "Physics-Informed Machine Learning in Design and ...",
+          "abstract": "Abstract. Machine learning (ML) technique is a critical tool to promote optimal design and ensure reliable and efficient products and processes in the.",
+          "url": "https://asmedigitalcollection.asme.org/computingengineering/article/25/12/120804/1225302/Physics-Informed-Machine-Learning-in-Design-and"
+        },
+        {
+          "title": "Designing accurate emulators for scientific processes ...",
+          "abstract": "by JJ Thiagarajan · 2020 · Cited by 38 — ICF Hydra is a 2D physics code used to simulate capsule-implosion experiments. This has the physics required to simulate National Ignition ...",
+          "url": "https://www.nature.com/articles/s41467-020-19448-8"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "In-hand manipulation for manufacturing has evolved from hand-crafted analytic controllers to a hybrid of model-driven estimation, reinforcement learning, and imitation learning.",
+      "evidence": [
+        {
+          "title": "Robust Model-Based In-Hand Manipulation with Integrated Real ...",
+          "abstract": "To advance the effectiveness and robustness of model-based contact-rich in-hand manipulation, this paper proposes a novel integrated framework that mitigates ...",
+          "url": "https://director-of-g.github.io/in_hand_manipulation_2/"
+        },
+        {
+          "title": "Robot hands one step closer to human thanks to WMG AI algorithms",
+          "abstract": "To give the robotic hand the ability to learn how to manipulate objects researchers from WMG, University of Warwick, have developed new AI ...",
+          "url": "https://www.themanufacturer.com/articles/robot-hands-one-step-closer-human-thanks-wmg-ai-algorithms/"
+        },
+        {
+          "title": "Human-like dexterous manipulation for anthropomorphic five-fingered ...",
+          "abstract": "Central to achieving human-like dexterity is the development of anthropomorphic five-fingered robotic hands, designed to replicate the structure and ...",
+          "url": "https://www.sciencedirect.com/science/article/pii/S2667379725000038"
+        },
+        {
+          "title": "Learning Robot In-Hand Manipulation with Tactile Features",
+          "abstract": "In this paper, we have employed a reinforcement learning method to learn a tactile skill on a compliant, under-actuated robot hand. We have shown, first of ...",
+          "url": "https://users.cs.utah.edu/~thermans/papers/vanhoof-ichr2015-in-hand-learning.pdf"
+        },
+        {
+          "title": "Dexterous Manipulation for Multi-Fingered Robotic Hands With ... - Frontiers",
+          "abstract": "The main contribution of this paper is presenting a state-of-the-art review focused on the dexterous manipulation problem of multi-fingered robotic hands with ...",
+          "url": "https://www.frontiersin.org/journals/neurorobotics/articles/10.3389/fnbot.2022.861825/full"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    }
+  ]
+}

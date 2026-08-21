@@ -1,0 +1,25 @@
+{
+  "arxiv_id": "2306.05817",
+  "model": "MiniMax-M3",
+  "system": "search-baseline-v4",
+  "reference_precision": 0.46153846153846156,
+  "reference_recall": 0.019933554817275746,
+  "reference_count": 13,
+  "reference_matches": 6,
+  "ground_truth_count": 301,
+  "predicted_titles": [
+    "Retrieval-augmented Recommender System: Enhancing Recommender Systems with Large Language Models",
+    "RecSys 2023 Tutorial: Large Language Models for Recommendation",
+    "TALLRec: An Effective and Efficient Tuning Framework to Align Large ...",
+    "Chat-REC: Towards Interactive and Explainable LLMs- ...",
+    "Leveraging Large Language Models for Sequential Recommendation",
+    "LLM-RS: A Large Language Model-Based Sequential ... - MDPI",
+    "LLM-ESR: Large Language Models Enhancement for Long-tailed ...",
+    "Collaborative Large Language Model for Recommender Systems",
+    "Recommender Systems in the Era of Large Language Models (LLMs)",
+    "Large language models as recommender systems: A study of popularity bias",
+    "Prompting Large Language Models for Recommender Systems: A Comprehensive Framework and Empirical Analysis",
+    "Enhanced Recommendation Systems with Retrieval-Augmented Large ...",
+    "LLaMA: Open and Efficient Foundation Language Models"
+  ]
+}

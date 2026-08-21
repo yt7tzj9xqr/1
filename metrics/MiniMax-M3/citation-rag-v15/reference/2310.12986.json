@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2310.12986",
+  "model": "MiniMax-M3",
+  "system": "citation-rag-v15",
+  "reference_precision": 0.0,
+  "reference_recall": 0.0,
+  "reference_count": 12,
+  "reference_matches": 0,
+  "ground_truth_count": 61,
+  "predicted_titles": [
+    "Image-Based Human Age Estimation by Manifold Learning and Locally Adjusted Robust Regression",
+    "Visual Understanding via Multi-Feature Shared Learning with Global Consistency",
+    "Human Age Estimation With Regression on Discriminative Aging Manifold",
+    "Face manifold: manifold learning for synthetic face generation",
+    "Discriminating Joint Feature Analysis for Multimedia Data Understanding",
+    "Rank Flow Embedding for Unsupervised and Semi-Supervised Manifold Learning",
+    "Semi-supervised Feature Analysis by Mining Correlations among Multiple Tasks",
+    "Gait-based human age estimation using age group-dependent manifold learning and regression",
+    "Visual Domain Adaptation with Manifold Embedded Distribution Alignment",
+    "Estimating Visual Information From Audio Through Manifold Learning",
+    "Sparse Representation Classifier Guided Grassmann Reconstruction Metric Learning With Applications to Image Set Analysis",
+    "Locally Adjusted Robust Regression for Human Age Estimation"
+  ]
+}

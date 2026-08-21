@@ -1,0 +1,549 @@
+{
+  "arxiv_id": "2306.05817",
+  "model": "MiniMax-M3",
+  "system": "search-baseline-v4",
+  "reference_precision": 0.46153846153846156,
+  "reference_recall": 0.019933554817275746,
+  "reference_count": 13,
+  "reference_matches": 6,
+  "ground_truth_count": 301,
+  "predicted_titles": [
+    "Retrieval-augmented Recommender System: Enhancing Recommender Systems with Large Language Models",
+    "RecSys 2023 Tutorial: Large Language Models for Recommendation",
+    "TALLRec: An Effective and Efficient Tuning Framework to Align Large ...",
+    "Chat-REC: Towards Interactive and Explainable LLMs- ...",
+    "Leveraging Large Language Models for Sequential Recommendation",
+    "LLM-RS: A Large Language Model-Based Sequential ... - MDPI",
+    "LLM-ESR: Large Language Models Enhancement for Long-tailed ...",
+    "Collaborative Large Language Model for Recommender Systems",
+    "Recommender Systems in the Era of Large Language Models (LLMs)",
+    "Large language models as recommender systems: A study of popularity bias",
+    "Prompting Large Language Models for Recommender Systems: A Comprehensive Framework and Empirical Analysis",
+    "Enhanced Recommendation Systems with Retrieval-Augmented Large ...",
+    "LLaMA: Open and Efficient Foundation Language Models"
+  ],
+  "cited_match_rate": 0.39285714285714285,
+  "cited_count": 56,
+  "cited_supported": 22,
+  "cited_details": [
+    {
+      "statement": "Recommender systems (RSs) have become indispensable infrastructure for digital business services, powering personalized item discovery on e-commerce marketplaces, content streaming platforms, and customer-facing applications [Source 1](https://doi.org/10.1145/3604915.3608889), [Source 10](https://doi.org/10.1109/tkde.2024.3392335).",
+      "url": "https://doi.org/10.1145/3604915.3608889",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Recommender systems (RSs) have become indispensable infrastructure for digital business services, powering personalized item discovery on e-commerce marketplaces, content streaming platforms, and customer-facing applications [Source 1](https://doi.org/10.1145/3604915.3608889), [Source 10](https://doi.org/10.1109/tkde.2024.3392335).",
+      "url": "https://doi.org/10.1109/tkde.2024.3392335",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Despite their commercial success, conventional deep neural network (DNN)–based recommenders struggle to generalize beyond training distributions, to reason about textual side information, and to explain their predictions in human-understandable terms [Source 10](https://doi.org/10.1109/tkde.2024.3392335).",
+      "url": "https://doi.org/10.1109/tkde.2024.3392335",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The emergence of large language models (LLMs) such as the LLaMA family [Source 16](http://arxiv.org/abs/2302.13971) has opened a new design space: recommendation tasks can be reformulated as natural-language instructions, and the semantic, reasoning, and zero-shot capabilities of LLMs can be repurposed to address long-standing weaknesses of classical recommenders [Source 2](https://llmrecsys.github.io/), [Source 10](https://doi.org/10.1109/tkde.2024.3392335).",
+      "url": "http://arxiv.org/abs/2302.13971",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The emergence of large language models (LLMs) such as the LLaMA family [Source 16](http://arxiv.org/abs/2302.13971) has opened a new design space: recommendation tasks can be reformulated as natural-language instructions, and the semantic, reasoning, and zero-shot capabilities of LLMs can be repurposed to address long-standing weaknesses of classical recommenders [Source 2](https://llmrecsys.github.io/), [Source 10](https://doi.org/10.1109/tkde.2024.3392335).",
+      "url": "https://llmrecsys.github.io",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The emergence of large language models (LLMs) such as the LLaMA family [Source 16](http://arxiv.org/abs/2302.13971) has opened a new design space: recommendation tasks can be reformulated as natural-language instructions, and the semantic, reasoning, and zero-shot capabilities of LLMs can be repurposed to address long-standing weaknesses of classical recommenders [Source 2](https://llmrecsys.github.io/), [Source 10](https://doi.org/10.1109/tkde.2024.3392335).",
+      "url": "https://doi.org/10.1109/tkde.2024.3392335",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "- **Contextual adaptability.** Whereas traditional RSs are confined to clearly defined domains and cannot recommend over unexplored items, LLMs exhibit contextual awareness and strong adaptability to unseen data [Source 1](https://doi.org/10.1145/3604915.3608889).",
+      "url": "https://doi.org/10.1145/3604915.3608889",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "- **Unified task formulation.** A diverse set of recommendation problems—rating prediction, sequential recommendation, top-*k* recommendation, and explanation generation—can be cast as language instructions, enabling a single model to serve as a universal recommendation engine [Source 2](https://llmrecsys.github.io/).",
+      "url": "https://llmrecsys.github.io",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "- **Language-grounded reasoning.** LLMs can comprehend user preferences, item descriptions, and contextual information to generate more accurate and contextually relevant recommendations, improving user satisfaction and engagement [Source 2](https://llmrecsys.github.io/), and can mitigate the semantic gap between natural language and recommendation tasks that has hindered prior DNN-based approaches [Source 9](https://doi.org/10.1145/3589334.3645347).",
+      "url": "https://llmrecsys.github.io",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "- **Language-grounded reasoning.** LLMs can comprehend user preferences, item descriptions, and contextual information to generate more accurate and contextually relevant recommendations, improving user satisfaction and engagement [Source 2](https://llmrecsys.github.io/), and can mitigate the semantic gap between natural language and recommendation tasks that has hindered prior DNN-based approaches [Source 9](https://doi.org/10.1145/3589334.3645347).",
+      "url": "https://doi.org/10.1145/3589334.3645347",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "A general framework proposed in early 2024 formalizes the input to an LLM for recommendation as natural-language prompts characterized by two key aspects, and demonstrates how this template can be specialized to a range of downstream tasks [Source 13](https://arxiv.org/html/2401.04997v1).",
+      "url": "https://arxiv.org/html/2401.04997v1",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The empirical study confirms that LLMs such as ChatGPT, when guided by carefully engineered prompts, can solve general recommendation tasks in zero- and few-shot regimes [Source 13](https://arxiv.org/html/2401.04997v1).",
+      "url": "https://arxiv.org/html/2401.04997v1",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The RecSys 2023 tutorial synthesizes this view, showing that prompt-based instruction tuning allows the same underlying LLM to be reused across rating prediction, sequential recommendation, and explanation generation, supporting a \"universal recommendation engine\" abstraction [Source 2](https://llmrecsys.github.io/).",
+      "url": "https://llmrecsys.github.io",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Sequential recommendation—predicting the next item given a user's interaction history—is a central problem for e-commerce and media services [Source 5](https://arxiv.org/abs/2309.09261).",
+      "url": "https://arxiv.org/abs/2309.09261",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "(2023) investigate how LLMs can be leveraged for sequential recommendation and report that reformulating user histories and candidate items in natural language allows a pretrained LLM to produce competitive sequential predictions, especially in low-data regimes [Source 5](https://arxiv.org/abs/2309.09261).",
+      "url": "https://arxiv.org/abs/2309.09261",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "A complementary line of work, LLM-RS, leverages LLMs to enable explicit reasoning chains in sequential recommendation, providing interpretable intermediate steps that explain why a particular item is suggested next [Source 6](https://www.mdpi.com/2227-7390/14/14/2631).",
+      "url": "https://mdpi.com/2227-7390/14/14/2631",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "TALLRec introduces an effective and efficient tuning framework that aligns large language models with recommendation by training a small number of additional parameters while keeping the base LLM frozen, achieving strong gains on benchmark recommendation datasets at a fraction of the computational cost [Source 3](https://arxiv.org/abs/2305.00447).",
+      "url": "https://arxiv.org/abs/2305.00447",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A fundamental tension exists between the dominant ID-based paradigm of recommender systems—which learns distributed embeddings from user–item interaction matrices—and the token-based paradigm of LLMs, which operates on natural language [Source 9](https://doi.org/10.1145/3589334.3645347).",
+      "url": "https://doi.org/10.1145/3589334.3645347",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "CLLM4Rec, presented at WWW 2024, is described as the first generative RS that tightly integrates the LLM and ID paradigms: it extends the vocabulary of a pretrained LLM with user/item ID tokens to faithfully model collaborative and content semantics, and introduces a soft+hard prompting strategy that learns user/item collaborative and content token embeddings via language modeling on RS-specific corpora [Source 9](https://doi.org/10.1145/3589334.3645347).",
+      "url": "https://doi.org/10.1145/3589334.3645347",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The authors identify three concrete failure modes of prior LLM-based recommenders—spuriously correlated user/item descriptors, ineffective language modeling on user/item data, and inefficient recommendations via auto-regression—and argue that the integrated design addresses them simultaneously [Source 9](https://doi.org/10.1145/3589334.3645347).",
+      "url": "https://doi.org/10.1145/3589334.3645347",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The 2023 work on retrieval-augmented recommender systems proposes a hybrid architecture that combines retrieval-based and generative recommenders, leveraging the LLM's contextual understanding to deliver relevant recommendations even in cold scenarios characterized by high data sparsity [Source 1](https://doi.org/10.1145/3604915.3608889).",
+      "url": "https://doi.org/10.1145/3604915.3608889",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A follow-up study published in the Journal of Artificial Intelligence Research formalizes retrieval-augmented LLMs for recommendation and reports gains in user behavior comprehension relative to non-augmented baselines [Source 14](https://dl.acm.org/doi/10.1613/jair.1.17809).",
+      "url": "https://dl.acm.org/doi/10.1613/jair.1.17809",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "(2023) at Fudan University, is an LLMs-augmented recommender system that supports interactive dialogue with users and produces natural-language explanations for its suggestions, addressing two long-standing weaknesses of batch-oriented recommenders: lack of interactivity and lack of explainability [Source 4](https://arxiv.org/abs/2303.14524).",
+      "url": "https://arxiv.org/abs/2303.14524",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The tutorial literature reinforces that explanation generation is one of the canonical tasks readily absorbed by instruction-tuned LLMs [Source 2](https://llmrecsys.github.io/).",
+      "url": "https://llmrecsys.github.io",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A study from Amazon Science documents that popularity bias—where popular items are disproportionately recommended, overshadowing less popular but potentially relevant items—remains a significant challenge for recommender systems even when LLMs are used as the recommendation engine [Source 11](https://www.amazon.science/publications/large-language-models-as-recommender-systems-a-study-of-popularity-bias).",
+      "url": "https://amazon.science/publications/large-language-models-as-recommender-systems-a-study-of-popularity-bias",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Because LLMs inherit the distributional properties of their pretraining corpora, they can amplify rather than correct exposure inequities, a concern that is particularly acute for business platforms seeking to surface long-tail inventory [Source 11](https://www.amazon.science/publications/large-language-models-as-recommender-systems-a-study-of-popularity-bias).",
+      "url": "https://amazon.science/publications/large-language-models-as-recommender-systems-a-study-of-popularity-bias",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Although dedicated long-tail sequential recommenders have been proposed, they often struggle with the seesaw or noisy issues that arise from the intrinsic scarcity of interactions [Source 7](https://neurips.cc/virtual/2024/poster/93061).",
+      "url": "https://neurips.cc/virtual/2024/poster/93061",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "CLLM4Rec explicitly identifies inefficient recommendations via auto-regression as one of the three core issues blocking deployment, alongside spuriously correlated user/item descriptors and ineffective language modeling on user/item data [Source 9](https://doi.org/10.1145/3589334.3645347).",
+      "url": "https://doi.org/10.1145/3589334.3645347",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The IEEE TKDE survey observes that DNN-based methods exhibit difficulties in effectively understanding users' interests and capturing textual side information, and an inability to generalize to various seen and unseen recommendation scenarios, while LLMs offer a credible path forward but at nontrivial inference cost [Source 10](https://doi.org/10.1109/tkde.2024.3392335).",
+      "url": "https://doi.org/10.1109/tkde.2024.3392335",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "- **Catalog churn and cold start.** Retrieval-augmented LLM recommenders are explicitly motivated by cold scenarios characterized by high data sparsity, which are the norm for new sellers, new products, and newly onboarded users in business platforms [Source 1](https://doi.org/10.1145/3604915.3608889).",
+      "url": "https://doi.org/10.1145/3604915.3608889",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "- **Multi-task unification.** E-commerce and media services must support rating prediction, sequential recommendation, and explanation generation within a single product surface; framing these as language instructions reduces engineering fragmentation [Source 2](https://llmrecsys.github.io/).",
+      "url": "https://llmrecsys.github.io",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "- **Conversational customer experience.** Chat-REC demonstrates that LLMs enable interactive recommendation dialogues that can clarify ambiguous intents, a feature that maps naturally onto customer-service and advisory workflows [Source 4](https://arxiv.org/abs/2303.14524).",
+      "url": "https://arxiv.org/abs/2303.14524",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "- **Efficient alignment.** TALLRec's parameter-efficient alignment strategy is directly applicable in business settings where retraining the full base LLM is operationally infeasible [Source 3](https://arxiv.org/abs/2305.00447).",
+      "url": "https://arxiv.org/abs/2305.00447",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "- **Mitigating popularity bias.** The Amazon Science study signals that LLM-based recommenders must be deliberately debiased to surface long-tail catalog items, a critical concern for marketplaces that depend on long-tail seller exposure [Source 11](https://www.amazon.science/publications/large-language-models-as-recommender-systems-a-study-of-popularity-bias).",
+      "url": "https://amazon.science/publications/large-language-models-as-recommender-systems-a-study-of-popularity-bias",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "- **Foundation-model selection.** The LLaMA family of open and efficient foundation language models provides a reference point for open-weight backbones that business teams can self-host and adapt [Source 16](http://arxiv.org/abs/2302.13971).",
+      "url": "http://arxiv.org/abs/2302.13971",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Retrieval-augmented designs [Source 1](https://doi.org/10.1145/3604915.3608889), [Source 14](https://dl.acm.org/doi/10.1613/jair.1.17809), parameter-efficient alignment [Source 3](https://arxiv.org/abs/2305.00447), unified generative ID+language models [Source 9](https://doi.org/10.1145/3589334.3645347), and conversational interfaces [Source 4](https://arxiv.org/abs/2303.14524) constitute the principal paradigmatic axes.",
+      "url": "https://doi.org/10.1145/3604915.3608889",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Retrieval-augmented designs [Source 1](https://doi.org/10.1145/3604915.3608889), [Source 14](https://dl.acm.org/doi/10.1613/jair.1.17809), parameter-efficient alignment [Source 3](https://arxiv.org/abs/2305.00447), unified generative ID+language models [Source 9](https://doi.org/10.1145/3589334.3645347), and conversational interfaces [Source 4](https://arxiv.org/abs/2303.14524) constitute the principal paradigmatic axes.",
+      "url": "https://dl.acm.org/doi/10.1613/jair.1.17809",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Retrieval-augmented designs [Source 1](https://doi.org/10.1145/3604915.3608889), [Source 14](https://dl.acm.org/doi/10.1613/jair.1.17809), parameter-efficient alignment [Source 3](https://arxiv.org/abs/2305.00447), unified generative ID+language models [Source 9](https://doi.org/10.1145/3589334.3645347), and conversational interfaces [Source 4](https://arxiv.org/abs/2303.14524) constitute the principal paradigmatic axes.",
+      "url": "https://arxiv.org/abs/2305.00447",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Retrieval-augmented designs [Source 1](https://doi.org/10.1145/3604915.3608889), [Source 14](https://dl.acm.org/doi/10.1613/jair.1.17809), parameter-efficient alignment [Source 3](https://arxiv.org/abs/2305.00447), unified generative ID+language models [Source 9](https://doi.org/10.1145/3589334.3645347), and conversational interfaces [Source 4](https://arxiv.org/abs/2303.14524) constitute the principal paradigmatic axes.",
+      "url": "https://doi.org/10.1145/3589334.3645347",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Retrieval-augmented designs [Source 1](https://doi.org/10.1145/3604915.3608889), [Source 14](https://dl.acm.org/doi/10.1613/jair.1.17809), parameter-efficient alignment [Source 3](https://arxiv.org/abs/2305.00447), unified generative ID+language models [Source 9](https://doi.org/10.1145/3589334.3645347), and conversational interfaces [Source 4](https://arxiv.org/abs/2303.14524) constitute the principal paradigmatic axes.",
+      "url": "https://arxiv.org/abs/2303.14524",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "For business services, the practical priorities are controlling popularity bias [Source 11](https://www.amazon.science/publications/large-language-models-as-recommender-systems-a-study-of-popularity-bias), managing inference cost [Source 9](https://doi.org/10.1145/3589334.3645347), and choosing open foundation backbones that permit controlled adaptation [Source 16](http://arxiv.org/abs/2302.13971).",
+      "url": "https://amazon.science/publications/large-language-models-as-recommender-systems-a-study-of-popularity-bias",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "For business services, the practical priorities are controlling popularity bias [Source 11](https://www.amazon.science/publications/large-language-models-as-recommender-systems-a-study-of-popularity-bias), managing inference cost [Source 9](https://doi.org/10.1145/3589334.3645347), and choosing open foundation backbones that permit controlled adaptation [Source 16](http://arxiv.org/abs/2302.13971).",
+      "url": "https://doi.org/10.1145/3589334.3645347",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "For business services, the practical priorities are controlling popularity bias [Source 11](https://www.amazon.science/publications/large-language-models-as-recommender-systems-a-study-of-popularity-bias), managing inference cost [Source 9](https://doi.org/10.1145/3589334.3645347), and choosing open foundation backbones that permit controlled adaptation [Source 16](http://arxiv.org/abs/2302.13971).",
+      "url": "http://arxiv.org/abs/2302.13971",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The IEEE TKDE synthesis further situates LLMs as a response to the well-documented generalization, reasoning, and explanation limitations of DNN-based recommenders [Source 10](https://doi.org/10.1109/tkde.2024.3392335), providing a principled motivation for the broader adoption trajectory that the field has pursued since 2023.",
+      "url": "https://doi.org/10.1109/tkde.2024.3392335",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "https://doi.org/10.1145/3604915.3608889",
+      "url": "https://doi.org/10.1145/3604915.3608889",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "https://llmrecsys.github.io/",
+      "url": "https://llmrecsys.github.io",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "https://arxiv.org/abs/2305.00447",
+      "url": "https://arxiv.org/abs/2305.00447",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://arxiv.org/abs/2303.14524",
+      "url": "https://arxiv.org/abs/2303.14524",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://arxiv.org/abs/2309.09261",
+      "url": "https://arxiv.org/abs/2309.09261",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://www.mdpi.com/2227-7390/14/14/2631",
+      "url": "https://mdpi.com/2227-7390/14/14/2631",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://dl.acm.org/doi/10.1613/jair.1.17809",
+      "url": "https://dl.acm.org/doi/10.1613/jair.1.17809",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://doi.org/10.1145/3589334.3645347",
+      "url": "https://doi.org/10.1145/3589334.3645347",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://doi.org/10.1109/tkde.2024.3392335",
+      "url": "https://doi.org/10.1109/tkde.2024.3392335",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://www.amazon.science/publications/large-language-models-as-recommender-systems-a-study-of-popularity-bias",
+      "url": "https://amazon.science/publications/large-language-models-as-recommender-systems-a-study-of-popularity-bias",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://arxiv.org/html/2401.04997v1",
+      "url": "https://arxiv.org/html/2401.04997v1",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "http://arxiv.org/abs/2302.13971",
+      "url": "http://arxiv.org/abs/2302.13971",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    }
+  ],
+  "noncited_factual_accuracy": 0.25,
+  "noncited_count": 4,
+  "noncited_correct": 1,
+  "noncited_details": [
+    {
+      "claim": "Real-world business platforms exhibit long-tailed user activity and item catalogs: most users interact with only a handful of items, while the majority of items are seldom consumed.",
+      "evidence": [
+        {
+          "title": "Long Tail Data: Key Concepts, Examples, & Why It Matters",
+          "abstract": "This post aims to explore long-tail data in detail with real-life examples and applications while explaining how businesses benefit from it.",
+          "url": "https://portable.io/learn/long-tail-data"
+        },
+        {
+          "title": "Uncertainty kills the long tail: demand concentration in peer-to ...",
+          "abstract": "by K Taeuscher · 2019 · Cited by 52 — Theory on the “Long tail effect” predicts that consumer demand in online markets spreads over a long tail of niche products.",
+          "url": "https://link.springer.com/article/10.1007/s12525-019-00339-w"
+        },
+        {
+          "title": "Recognize Strategic Opportunities with Long-Tail Data",
+          "abstract": "by E Sunwall · Cited by 1 — Long-tail patterns appear when popular items become even more popular due to a positive feedback loop (also known as the \"success breeds ...",
+          "url": "https://www.nngroup.com/articles/long-tail/"
+        },
+        {
+          "title": "Long tail",
+          "abstract": "In business, the term long tail is applied to rank-size distributions or rank-frequency distributions (primarily of popularity), which often form power laws and ...",
+          "url": "https://en.wikipedia.org/wiki/Long_tail"
+        },
+        {
+          "title": "Efficient and accurate personalized product recommendations ...",
+          "abstract": "by L Kang · 2024 · Cited by 9 — This paper presents a fusion recommendation algorithm based on frequent item set mining to improve recommendation efficiency and accuracy in the e-commerce ...",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10837627/"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "Full fine-tuning of multi-billion-parameter LLMs is impractical for most business deployments.",
+      "evidence": [
+        {
+          "title": "Fine-Tuning Large Language Models for Specialized Use Cases",
+          "abstract": "by DM Anisuzzaman · 2024 · Cited by 277 — In this review, we outline some of the major methodologic approaches and techniques that can be used to fine-tune LLMs for specialized use cases and enumerate ...",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11976015/"
+        },
+        {
+          "title": "The Ultimate Guide to Fine-Tuning LLMs from Basics ...",
+          "abstract": "A structured seven-stage pipeline for LLM fine-tuning is introduced, covering the complete lifecycle from data preparation to model deployment.",
+          "url": "https://arxiv.org/html/2408.13296v1"
+        },
+        {
+          "title": "The Comprehensive Guide to Fine-tuning LLM | by Sunil Rao",
+          "abstract": "Fine-tuning is the process of taking a pre-trained language model (a large neural network that has learned general language patterns from a ...",
+          "url": "https://medium.com/data-science-collective/comprehensive-guide-to-fine-tuning-llm-4a8fd4d0e0af"
+        },
+        {
+          "title": "Achieving Peak Performance for Large Language Models",
+          "abstract": "by ZRK Rostam · 2024 · Cited by 62 — Enables full parameter fine-tuning (65 billion parame- ter) of LLMs on limited resource GPUs. Potentially reducing deployment costs through lower hardware ...",
+          "url": "https://ieeexplore.ieee.org/iel8/6287639/6514899/10589417.pdf"
+        },
+        {
+          "title": "What is Fine-Tuning? | IBM",
+          "abstract": "Fine-tuning in machine learning is the process of adapting a pre-trained model for specific tasks or use cases through further training on a smaller ...",
+          "url": "https://www.ibm.com/think/topics/fine-tuning"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "Auto-regressive LLMs are inherently slower per recommendation than specialized scoring models.",
+      "evidence": [
+        {
+          "title": "Yann LeCun's Post - LinkedIn",
+          "abstract": "I have claimed that Auto-Regressive LLMs are exponentially diverging diffusion processes. Here is the argument: Let e be the probability ...",
+          "url": "https://www.linkedin.com/posts/yann-lecun_i-have-claimed-that-auto-regressive-llms-activity-7045908925660950528-hJGk"
+        },
+        {
+          "title": "Continuous Autoregressive Language Models - OpenReview",
+          "abstract": "The paper proposes an alternative language modeling method that predicts continuous representations of tokens (instead of next-token probabilities). The aim of ...",
+          "url": "https://openreview.net/forum?id=Ce6Mep9oie"
+        },
+        {
+          "title": "Contra LeCun on \"Autoregressive LLMs are doomed\" - LessWrong",
+          "abstract": "I answer LeCun's arguments against LLMs as exposed in this lesswrong comment. I haven't searched thoroughly or double-checked in detail ...",
+          "url": "https://www.lesswrong.com/posts/zyPaqXgFzqHkQfccq/contra-lecun-on-autoregressive-llms-are-doomed"
+        },
+        {
+          "title": "Autoregressive LLMs and the Limits of the Law of Accelerated Returns",
+          "abstract": "This article examines autoregression, autoregressive LLMs, and why the finite availability of high-quality data imposes limitations on their future progress, ...",
+          "url": "https://www.robometricsagi.com/blog/ai-policy/autoregressive-llms-and-the-limits-of-the-law-of-accelerated-returns"
+        },
+        {
+          "title": "Are Auto-Regressive Large Language Models Here to Stay? - Medium",
+          "abstract": "LLMs are prone to “hallucinate”, meaning it produces fabricated information or inaccurate responses that are not in-line with the ground truth.",
+          "url": "https://medium.com/@nbettencourt2020/are-auto-regressive-large-language-models-here-to-stay-603baee46a3c"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "The specific NeurIPS 2024 proposal (LLM-ESR) post-dates the July 2024 cutoff of this survey and is therefore excluded from detailed analysis here.",
+      "evidence": [
+        {
+          "title": "LLM-ESR: Large Language Models Enhancement for Long ...",
+          "abstract": "As one of the pioneers in this field, we propose the Large Language Models Enhancement framework for Sequential Recommendation (LLM-ESR). This framework ...",
+          "url": "https://neurips.cc/virtual/2024/poster/93061"
+        },
+        {
+          "title": "Recommender Systems in the Era of Large Language Models (LLMs)",
+          "abstract": "With the prosperity of e-commerce and web applications, Recommender Systems (RecSys) have become an indispensable and important component in our daily lives, providing personalized suggestions that cater to user preferences. While Deep Neural Networks (DNNs) have achieved significant advancements in enhancing recommender systems by modeling user-item interactions and incorporating their textual side information, these DNN-based methods still exhibit some limitations, such as difficulties in effectively understanding users' interests and capturing textual side information, inabilities in generalizing to various seen/unseen recommendation scenarios and reasoning on their predictions, etc. Meanwhile, the development of Large Language Models (LLMs), such as ChatGPT and GPT-4, has revolutionized the fields of Natural Language Processing (NLP) and Artificial Intelligence (AI), due to their remarkable abilities in fundamental responsibilities of language understanding and generation, as well as impressive generalization capabilities and reasoning skills. As a result, recent studies have actively attempted to harness the power of LLMs to enhance recommender systems. Given the rapid evolution of this research direction in recommender systems, there is a pressing need for a systematic overview that summarizes existing LLM-empowered recommender systems, so as to provide researchers and practitioners in relevant fields with an in-depth understanding. Therefore, in this survey, we conduct a comprehensive review of LLM-empowered recommender systems from various aspects including pre-training, fine-tuning, and prompting paradigms. More specifically, we first introduce the representative methods to harness the power of LLMs (as a feature encoder) for learning representations of users and items. Then, we systematically review the emerging advanced techniques of LLMs for enhancing recommender systems from three paradigms, namely pre-training, fine-tuning, and prompting. Finally, we comprehensively discuss the promising future directions in this emerging field.",
+          "url": "https://doi.org/10.1109/tkde.2024.3392335"
+        },
+        {
+          "title": "Retrieval-augmented Recommender System: Enhancing Recommender Systems with Large Language Models",
+          "abstract": "Recommender Systems (RSs) play a pivotal role in delivering personalized recommendations across various domains, from e-commerce to content streaming platforms. Recent advancements in natural language processing have introduced Large Language Models (LLMs) that exhibit remarkable capabilities in understanding and generating human-like text. RS are renowned for their effectiveness and proficiency within clearly defined domains; nevertheless, they are limited in adaptability and incapable of providing recommendations for unexplored data. Conversely, LLMs exhibit contextual awareness and strong adaptability to unseen data. Combining these technologies creates a powerful tool for delivering contextual and relevant recommendations, even in cold scenarios characterized by high data sparsity. The proposal aims to explore the possibilities of integrating LLMs into RS, introducing a novel approach called Retrieval-augmented Recommender Systems, which combines the strengths of retrieval-based and generation-based models to enhance the ability of RSs to provide relevant suggestions.",
+          "url": "https://doi.org/10.1145/3604915.3608889"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    }
+  ]
+}

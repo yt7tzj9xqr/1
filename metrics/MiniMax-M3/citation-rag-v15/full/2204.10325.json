@@ -1,0 +1,353 @@
+{
+  "arxiv_id": "2204.10325",
+  "model": "MiniMax-M3",
+  "system": "citation-rag-v15",
+  "reference_precision": 0.0,
+  "reference_recall": 0.0,
+  "reference_count": 4,
+  "reference_matches": 0,
+  "ground_truth_count": 36,
+  "predicted_titles": [
+    "Stuttering Speech Disfluency Prediction using Explainable Attribution Vectors of Facial Muscle Movements",
+    "Deep-Learning-Based Automated Classification of Chinese Speech Sound Disorders",
+    "An automated tool for the assessment of childhood apraxia ...",
+    "Automatic Pronunciation Scoring And Mispronunciation ..."
+  ],
+  "cited_match_rate": 1.0,
+  "cited_count": 9,
+  "cited_supported": 9,
+  "cited_details": [
+    {
+      "statement": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9324778/ The system was built around a speech corpus containing 2,540 stopping, backing, final consonant deletion process, and affrication samples collected from 90 children aged 3–6 years, with each recording accompanied by a detailed diagnostic annotation provided by two speech–language pathologists.",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9324778",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9324778/ Classification of the speech samples was carried out using three established neural network models for image classification, with feature maps generated from three sets of Mel-frequency cepstral coefficients aggregated into a three-dimensional data structure as model input, and the available dataset expanded using six data augmentation techniques to limit overfitting.",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9324778",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9324778/",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9324778",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://www.sciencedirect.com/science/article/abs/pii/S0167639315000382",
+      "url": "https://sciencedirect.com/science/article/abs/pii/S0167639315000382",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://aclanthology.org/W12-5808.pdf Pronunciation scores were calculated for each phoneme, word, and phrase by means of Hidden Markov Model alignment with the phonemes of the expected text, and the system additionally adopted an edit-distance-based criterion to compare scores of the spoken phrase against models for various mispronunciations and alternative correct pronunciations.",
+      "url": "https://aclanthology.org/W12-5808.pdf",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://aclanthology.org/W12-5808.pdf Adaptation techniques using target users' enrollment data were proposed as a means of improving recognition of non-native speech, with the system implemented using the CMU Sphinx3 system together with an Adobe Flash microphone recording interface and an rtmplite/Python user interface.",
+      "url": "https://aclanthology.org/W12-5808.pdf",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://aclanthology.org/W12-5808.pdf",
+      "url": "https://aclanthology.org/W12-5808.pdf",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://arxiv.org/abs/2010.01231 The authors noted that most adults who stutter exhibit observable secondary behaviors before, during, and after a stuttering moment, frequently involving the facial muscles, and situated their work within reported epidemiological figures including a stuttering prevalence of approximately 1% in adults and the observation that approximately 80% of children recover within 15 months from onset.",
+      "url": "https://arxiv.org/abs/2010.01231",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://arxiv.org/abs/2010.01231",
+      "url": "https://arxiv.org/abs/2010.01231",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    }
+  ],
+  "noncited_factual_accuracy": 0.875,
+  "noncited_count": 8,
+  "noncited_correct": 7,
+  "noncited_details": [
+    {
+      "claim": "A 2022 study described a computer system designed to analyze acoustic data in order to assist in the diagnosis and classification of children's SSDs.",
+      "evidence": [
+        {
+          "title": "Computer-aided diagnosis",
+          "abstract": "Computer-aided detection (CADe), also called computer-aided diagnosis (CADx), are systems that assist doctors in the interpretation of medical images.",
+          "url": "https://en.wikipedia.org/wiki/Computer-aided_diagnosis"
+        },
+        {
+          "title": "Computer Assisted Diagnosis - an overview",
+          "abstract": "Computer-aided diagnosis (CAD) refers to a diagnostic approach where both the doctor and computer collaborate to identify lesions, enhancing the detection ...",
+          "url": "https://www.sciencedirect.com/topics/medicine-and-dentistry/computer-assisted-diagnosis"
+        },
+        {
+          "title": "What Is Computer Vision? | IBM",
+          "abstract": "Image classification is a core computer vision task that categorizes images into predefined groups or classes. It predicts the most fitting label",
+          "url": "https://www.ibm.com/think/topics/computer-vision"
+        },
+        {
+          "title": "Real-time deep learning-assisted mechano-acoustic ...",
+          "abstract": "by HK Lee · 2024 · Cited by 24 — In this study we integrate a wireless mechano-acoustic sensor with a multi-modal deep learning system for the real-time analysis of signals ...",
+          "url": "https://www.nature.com/articles/s41528-024-00355-7"
+        },
+        {
+          "title": "A Systematic Survey of Computer-Aided Diagnosis ...",
+          "abstract": "The main aim of the literature survey described in this paper is to provide a comprehensive overview of past and current CAD developments. This survey/review ...",
+          "url": "https://www.researchgate.net/publication/334533554_A_Systematic_Survey_of_Computer-Aided_Diagnosis_in_Medicine_Past_and_Present_Developments"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "The 2022 study's analysis focused on identifying and categorizing four distinct types of Chinese SSDs.",
+      "evidence": [
+        {
+          "title": "When Database Meets New Storage Device - VLDB Endowment",
+          "abstract": "Specifically, we begin with a comprehensive empirical study on performance mismatches covering three tiers of devices (i.e., HDD,. SATA SSD, NVMe SSD) by ...",
+          "url": "https://www.vldb.org/pvldb/vol16/p1712-he.pdf"
+        },
+        {
+          "title": "Deep Learning-based automated classification of Chinese Speech ...",
+          "abstract": "The analysis concentrated on identifying and categorizing four distinct types of Chinese SSDs. The study collected and generated a speech ...",
+          "url": "https://arxiv.org/abs/2205.11748"
+        },
+        {
+          "title": "Development and validation of Chinese form Short Dark Tetrad (C ...",
+          "abstract": "The Short Dark Tetrad (SD4) was developed as a brief measure of the Dark Tetrad, which comprises narcissism, Machiavellianism, psychopathy, and sadism.",
+          "url": "https://www.sciencedirect.com/science/article/pii/S2405844023001366"
+        },
+        {
+          "title": "Identifying China's distinctive academic fields among the top 2 ...",
+          "abstract": "Our approach was threefold: identifying unique fields, subfields, and researchers. Visualizations included scatter plots, KIDMAP, and the Impact ...",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38181244/"
+        },
+        {
+          "title": "a novel method for detecting the unique and enriched species ...",
+          "abstract": "The proposed SSD framework consists of three essential elements. The first is species specificity (SS), a concept that reincarnates the ...",
+          "url": "https://link.springer.com/article/10.1186/s12915-024-02024-7"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "A 2015 publication described an automated tool aimed at assessing productions from children with apraxia of speech.",
+      "evidence": [
+        {
+          "title": "Treatment for Childhood Apraxia of Speech: Past, Present, and Future",
+          "abstract": "The purposes of this review article were to provide an introduction to and “bird's-eye” overview of the current evidence base for treatment ...",
+          "url": "https://pubs.asha.org/doi/10.1044/2024_JSLHR-23-00233"
+        },
+        {
+          "title": "Tabby Talks: An automated tool for the assessment of childhood apraxia ...",
+          "abstract": "This paper describes the speech processing pipeline to automatically detect common errors associated with CAS. The pipeline contains modules for voice activity ...",
+          "url": "https://www.researchgate.net/publication/275060395_Tabby_Talks_An_automated_tool_for_the_assessment_of_childhood_apraxia_of_speech"
+        },
+        {
+          "title": "AI-Based Automated Speech Therapy Tools for persons with ... - arXiv",
+          "abstract": "This paper presents a systematic literature review of published studies on AI-based automated speech therapy tools for persons with speech sound ...",
+          "url": "https://arxiv.org/html/2204.10325v2"
+        },
+        {
+          "title": "Childhood Apraxia of Speech: A Descriptive and Prescriptive Model ...",
+          "abstract": "An Automated Lexical Stress Classification Tool for Assessing Dysprosody in Childhood Apraxia of Speech. Brain Sci. 2021;11:1408.",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11201615/"
+        },
+        {
+          "title": "Automated speech analysis tools for children's speech production",
+          "abstract": "ASA tools show promise for automated analysis and modification of children's speech production within assessment and therapeutic applications. ...",
+          "url": "https://psi.engr.tamu.edu/wp-content/uploads/2019/06/mckechnie-2018-ijslp.pdf"
+        }
+      ],
+      "true_votes": 2,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "The 2015 tool was designed around three components: a clinician interface, a mobile application, and a speech processing engine.",
+      "evidence": [
+        {
+          "title": "AI-Based Automated Speech Therapy Tools for ...",
+          "abstract": "This paper presents a systematic literature review of published studies on AI-based automated speech therapy tools for persons with speech ...",
+          "url": "https://www.researchgate.net/publication/379934669_AI-Based_Automated_Speech_Therapy_Tools_for_persons_with_Speech_Sound_Disorders_A_Systematic_Literature_Review"
+        },
+        {
+          "title": "AI-Based Automated Speech Therapy Tools for persons ...",
+          "abstract": "This paper presents a systematic literature review of published studies on AI-based automated speech therapy tools for persons with speech sound ...",
+          "url": "https://arxiv.org/html/2204.10325v2"
+        },
+        {
+          "title": "An automated tool for the assessment of childhood apraxia ...",
+          "abstract": "by M Shahin · 2015 · Cited by 77 — Automated tool to assess productions from children with apraxia of speech. •. Consists of clinician interface, mobile application and speech processing engine.",
+          "url": "https://www.sciencedirect.com/science/article/abs/pii/S0167639315000382"
+        },
+        {
+          "title": "User-Centered Design of a Speech-Based Application to ...",
+          "abstract": "by D Reichenpfader · 2023 · Cited by 1 — This paper describes the development process of a speech-based application to support nurses, according to the user-centered design approach. User requirements ...",
+          "url": "https://ebooks.iospress.nl/pdf/doi/10.3233/SHTI230265"
+        },
+        {
+          "title": "PhenoPad: Building AI enabled note-taking interfaces for ...",
+          "abstract": "by J Wang · 2022 · Cited by 28 — Based on the results, we developed PhenoPad, a mobile interface for free-form note-taking and standard phenotypic information capture on a ...",
+          "url": "https://www.nature.com/articles/s41746-021-00555-9"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "A 2012 system applied automatic speech recognition to provide feedback on pronunciation.",
+      "evidence": [
+        {
+          "title": "Automatic speech recognition technology as an effective means ...",
+          "abstract": "This study aimed to explore the effect of using automatic speech recognition technology (asr) The student listens to the pronunciation of a word, sentence or ...",
+          "url": "https://files.eric.ed.gov/fulltext/EJ1107929.pdf"
+        },
+        {
+          "title": "Aggregating the evidence of automatic speech recognition research ...",
+          "abstract": "ASR has a demonstrated capacity to accurately identify errors, improve pronunciation, and is strongly associated with a positive student experience.",
+          "url": "https://www.sciencedirect.com/science/article/abs/pii/S0346251X24000320"
+        },
+        {
+          "title": "Using Automatic Speech Recognition to Facilitate English Pronunciation ...",
+          "abstract": "This study aims to investigate the effectiveness of ASR technology in diagnosing English pronunciation errors and to explore teachers' and learners' attitudes ...",
+          "url": "https://ideas.repec.org/a/igg/jcallt/v11y2021i3p74-91.html"
+        },
+        {
+          "title": "Automatic Speech Recognition for Second Language Learning",
+          "abstract": "In this paper, we examine various studies and reviews on the usability of Automatic Speech Recognition (ASR) technology as a tool to train pronunciation",
+          "url": "https://www.internationalphoneticassociation.org/icphs-proceedings/ICPhS2003/papers/p15_1157.pdf"
+        },
+        {
+          "title": "Automatic Speech Recognition - ResearchGate",
+          "abstract": "Automatic speech recognition (ASR) is an independent, machine-based process of decoding and transcribing oral speech. A typical ASR system receives acoustic ...",
+          "url": "https://www.researchgate.net/publication/261287458_Automatic_Speech_Recognition"
+        }
+      ],
+      "true_votes": 2,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "The 2012 system used a Sphinx recognizer trained on a database of native exemplar pronunciations and on non-native examples of frequent mistakes.",
+      "evidence": [
+        {
+          "title": "Statistical Pronunciation Modeling for Non-Native Speech Processing",
+          "abstract": "In this paper we describe our children's Automatic Speech Recognition (ASR) system for the first shared task on ASR for English non-native children's speech.",
+          "url": "https://www.researchgate.net/publication/265716884_Statistical_Pronunciation_Modeling_for_Non-Native_Speech_Processing"
+        },
+        {
+          "title": "Automated speech therapy through personalized pronunciation ...",
+          "abstract": "This study introduces a novel AI-powered system that integrates Reinforcement Learning (RL) and Large Language Models (LLMs) to address these limitations. ...",
+          "url": "https://www.sciencedirect.com/science/article/pii/S2590123025000313"
+        },
+        {
+          "title": "Automatic Pronunciation Scoring And Mispronunciation Detection Using ...",
+          "abstract": "The system was developed for teaching Arabic pronunciation to non-native speakers. It used a speech recognizer and a phoneme duration classification algorithm ...",
+          "url": "https://aclanthology.org/W12-5808.pdf"
+        },
+        {
+          "title": "Pronunciation evaluation for GSoC 2012 - CMU Sphinx",
+          "abstract": "Such speech recognition can be performed using Sphinx trained on a database of native exemplar pronunciation and non-native examples of frequent mistakes.",
+          "url": "https://cmusphinx.github.io/wiki/pronunciation_evaluation/"
+        },
+        {
+          "title": "Implementation of a System for Assessing the Quality of Spoken ...",
+          "abstract": "This paper analyzes and investigates the quality assessment of spoken English pronunciation using a cognitive heuristic computing approach ...",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9286978/"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "A 2020 study presented a system for predicting speech disfluency in stuttering.",
+      "evidence": [
+        {
+          "title": "Individual-independent and cross-language detection of speech ...",
+          "abstract": "To address this issue, researchers have leveraged automatic speech recognition technology to detect speech disfluencies in stuttering and provide real-time ...",
+          "url": "https://www.sciencedirect.com/science/article/abs/pii/S1746809424011091"
+        },
+        {
+          "title": "Stuttering and Typical Disfluency: How to Differentiate - Better Speech",
+          "abstract": "Learn the differences between speech disfluency and stuttering that occurs during the early stages of language development & get tips on how ...",
+          "url": "https://www.betterspeech.com/post/stuttering-and-typical-disfluency-how-to-differentiate"
+        },
+        {
+          "title": "Stuttering Speech Disfluency Prediction using Explainable ... - arXiv",
+          "abstract": "this paper proposes a novel explainable AI (XAI) assisted convolutional neural network (CNN) classifier to predict near future stuttering by ...",
+          "url": "https://arxiv.org/pdf/2010.01231"
+        },
+        {
+          "title": "Stuttering disfluency detection using machine learning approaches",
+          "abstract": "The system model was trained on 35 stuttering samples on certain words and the model's reported accuracy was 96% with MFCC feature extraction had been utilised.",
+          "url": "https://repository.lboro.ac.uk/ndownloader/files/39250049/1"
+        },
+        {
+          "title": "Differential Diagnosis | Stuttering Foundation",
+          "abstract": "Severe stuttering is characterized by speech disfluencies in practically every phrase or sentence; often moments of stuttering are one second or longer in ...",
+          "url": "https://www.stutteringhelp.org/differential-diagnosis"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "The 2020 system used explainable attribution vectors of facial muscle movements.",
+      "evidence": [
+        {
+          "title": "Advances in Facial Expression Recognition: A Survey of ...",
+          "abstract": "by T Kopalidis · 2024 · Cited by 190 — Recent technological developments have enabled computers to identify and categorize facial expressions to determine a person's emotional state in an image ...",
+          "url": "https://www.mdpi.com/2078-2489/15/3/135"
+        },
+        {
+          "title": "~ A Muscle Model for Animating Three-Dimensional Facial ...",
+          "abstract": "1987 · Cited by 1523 — The research presented in this paper represents the action of muscles using the primary motivators on a non-specific deformable topology of the face.",
+          "url": "https://ohiostate.pressbooks.pub/app/uploads/sites/45/2017/09/waters-muscle.pdf"
+        },
+        {
+          "title": "A Comprehensive Technique for Quantifying Facial Muscle ...",
+          "abstract": "In this paper, we present a new algorithm for quantifying facial muscle movements using standard videos. Initially, we extract face manifolds ...",
+          "url": "https://arxiv.org/html/2401.05625v1"
+        },
+        {
+          "title": "Spontaneous Facial Expressions and Micro ...",
+          "abstract": "by Z Dong · 2022 · Cited by 50 — We deconstruct facial muscle movements from the motor cortex and systematically sort out the relationship among facial muscles, AU, and emotion",
+          "url": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2021.784834/full"
+        },
+        {
+          "title": "Stuttering Speech Disfluency Prediction using Explainable Attribution Vectors of Facial Muscle Movements",
+          "abstract": "Speech disorders such as stuttering disrupt the normal fluency of speech by involuntary repetitions, prolongations and blocking of sounds and syllables. In addition to these disruptions to speech fluency, most adults who stutter (AWS) also experience numerous observable secondary behaviors before, during, and after a stuttering moment, often involving the facial muscles. Recent studies have explored automatic detection of stuttering using Artificial Intelligence (AI) based algorithm from respiratory rate, audio, etc. during speech utterance. However, most methods require controlled environments and/or invasive wearable sensors, and are unable explain why a decision (fluent vs stuttered) was made. We hypothesize that pre-speech facial activity in AWS, which can be captured non-invasively, contains enough information to accurately classify the upcoming utterance as either fluent or stuttered. Towards this end, this paper proposes a novel explainable AI (XAI) assisted convolutional neural network (CNN) classifier to predict near future stuttering by learning temporal facial muscle movement patterns of AWS and explains the important facial muscles and actions involved. Statistical analyses reveal significantly high prevalence of cheek muscles (p<0.005) and lip muscles (p<0.005) to predict stuttering and shows a behavior conducive of arousal and anticipation to speak. The temporal study of these upper and lower facial muscles may facilitate early detection of stuttering, promote automated assessment of stuttering and have application in behavioral therapies by providing automatic non-invasive feedback in realtime.",
+          "url": "https://arxiv.org/abs/2010.01231"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    }
+  ]
+}

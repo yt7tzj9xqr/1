@@ -1,0 +1,562 @@
+{
+  "arxiv_id": "2310.12986",
+  "model": "MiniMax-M3",
+  "system": "search-baseline-v4",
+  "reference_precision": 0.0,
+  "reference_recall": 0.0,
+  "reference_count": 14,
+  "reference_matches": 0,
+  "ground_truth_count": 61,
+  "predicted_titles": [
+    "Face manifold: manifold learning for synthetic face generation",
+    "Nonlinear dimensionality reduction by locally linear ...",
+    "Think Globally, Fit Locally: Unsupervised Learning of Low Dimensional Manifolds",
+    "Tenenbaum Reduction A Global Geometric ...",
+    "Laplacian Eigenmaps for Dimensionality Reduction and ...",
+    "Face recognition with image sets using manifold density divergence",
+    "Human Age Estimation With Regression on Discriminative Aging Manifold",
+    "Image-Based Human Age Estimation by Manifold Learning and Locally Adjusted Robust Regression",
+    "Rank Flow Embedding for Unsupervised and Semi-Supervised Manifold Learning",
+    "Gait-based human age estimation using age group-dependent manifold learning and regression",
+    "Visual Domain Adaptation with Manifold Embedded Distribution Alignment",
+    "Estimating Visual Information From Audio Through Manifold Learning",
+    "Sparse Representation Classifier Guided Grassmann Reconstruction Metric Learning With Applications to Image Set Analysis",
+    "Learning a perceptual manifold with deep features for animation video resequencing"
+  ],
+  "cited_match_rate": 0.6428571428571429,
+  "cited_count": 28,
+  "cited_supported": 18,
+  "cited_details": [
+    {
+      "statement": "[Roweis & Saul 2000](https://www.semanticscholar.org/paper/Nonlinear-dimensionality-reduction-by-locally-Roweis-Saul/f0a3e1752e1146da927adc24ae07144ab2e744ec); [Tenenbaum 2000](https://pdodds.w3.uvm.edu/files/papers/others/2000/tenenbaum2000a.pdf); [Belkin & Niyogi 2003](https://www.aoml.noaa.gov/ftp/pub/phod/thacker/SSAmanifoldPapers/BelkinNiyogi2007Presentation.pdf); [Saul & Roweis 2003](https://www.jmlr.org/papers/v4/saul03a.html)",
+      "url": "https://semanticscholar.org/paper/Nonlinear-dimensionality-reduction-by-locally-Roweis-Saul/f0a3e1752e1146da927adc24ae07144ab2e744ec",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "[Roweis & Saul 2000](https://www.semanticscholar.org/paper/Nonlinear-dimensionality-reduction-by-locally-Roweis-Saul/f0a3e1752e1146da927adc24ae07144ab2e744ec); [Tenenbaum 2000](https://pdodds.w3.uvm.edu/files/papers/others/2000/tenenbaum2000a.pdf); [Belkin & Niyogi 2003](https://www.aoml.noaa.gov/ftp/pub/phod/thacker/SSAmanifoldPapers/BelkinNiyogi2007Presentation.pdf); [Saul & Roweis 2003](https://www.jmlr.org/papers/v4/saul03a.html)",
+      "url": "https://pdodds.w3.uvm.edu/files/papers/others/2000/tenenbaum2000a.pdf",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "[Roweis & Saul 2000](https://www.semanticscholar.org/paper/Nonlinear-dimensionality-reduction-by-locally-Roweis-Saul/f0a3e1752e1146da927adc24ae07144ab2e744ec); [Tenenbaum 2000](https://pdodds.w3.uvm.edu/files/papers/others/2000/tenenbaum2000a.pdf); [Belkin & Niyogi 2003](https://www.aoml.noaa.gov/ftp/pub/phod/thacker/SSAmanifoldPapers/BelkinNiyogi2007Presentation.pdf); [Saul & Roweis 2003](https://www.jmlr.org/papers/v4/saul03a.html)",
+      "url": "https://aoml.noaa.gov/ftp/pub/phod/thacker/SSAmanifoldPapers/BelkinNiyogi2007Presentation.pdf",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "[Roweis & Saul 2000](https://www.semanticscholar.org/paper/Nonlinear-dimensionality-reduction-by-locally-Roweis-Saul/f0a3e1752e1146da927adc24ae07144ab2e744ec); [Tenenbaum 2000](https://pdodds.w3.uvm.edu/files/papers/others/2000/tenenbaum2000a.pdf); [Belkin & Niyogi 2003](https://www.aoml.noaa.gov/ftp/pub/phod/thacker/SSAmanifoldPapers/BelkinNiyogi2007Presentation.pdf); [Saul & Roweis 2003](https://www.jmlr.org/papers/v4/saul03a.html)",
+      "url": "https://jmlr.org/papers/v4/saul03a.html",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "[Face Manifold 2019/2023](https://arxiv.org/abs/1910.01403); [Manifold Density Divergence](https://research-portal.st-andrews.ac.uk/en/publications/face-recognition-with-image-sets-using-manifold-density-divergenc/)",
+      "url": "https://arxiv.org/abs/1910.01403",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "[Face Manifold 2019/2023](https://arxiv.org/abs/1910.01403); [Manifold Density Divergence](https://research-portal.st-andrews.ac.uk/en/publications/face-recognition-with-image-sets-using-manifold-density-divergenc/)",
+      "url": "https://research-portal.st-andrews.ac.uk/en/publications/face-recognition-with-image-sets-using-manifold-density-divergenc",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "[Aging Manifold Regression 2008](https://doi.org/10.1109/tmm.2008.921847); [Age Manifold + Robust Regression 2008](https://doi.org/10.1109/tip.2008.924280)",
+      "url": "https://doi.org/10.1109/tmm.2008.921847",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "[Aging Manifold Regression 2008](https://doi.org/10.1109/tmm.2008.921847); [Age Manifold + Robust Regression 2008](https://doi.org/10.1109/tip.2008.924280)",
+      "url": "https://doi.org/10.1109/tip.2008.924280",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "[Gait Age Manifold 2018](https://www.semanticscholar.org/paper/b55438c64dcb2f52404152a90acecce2f7ded2d5)",
+      "url": "https://semanticscholar.org/paper/b55438c64dcb2f52404152a90acecce2f7ded2d5",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "[MEDA 2018](https://arxiv.org/abs/1807.07258)",
+      "url": "https://arxiv.org/abs/1807.07258",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[Audio-Visual Manifold 2022](https://arxiv.org/abs/2208.02337)",
+      "url": "https://arxiv.org/abs/2208.02337",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[Rank Flow Embedding 2023](https://arxiv.org/abs/2304.12448)",
+      "url": "https://arxiv.org/abs/2304.12448",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[Grassmann Metric Learning 2023](https://www.semanticscholar.org/paper/fd3bf3a9cef5500aa3b97588498e534c96006567)",
+      "url": "https://semanticscholar.org/paper/fd3bf3a9cef5500aa3b97588498e534c96006567",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[Perceptual Manifold Animation 2021](https://arxiv.org/abs/2111.01455)",
+      "url": "https://arxiv.org/abs/2111.01455",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://www.semanticscholar.org/paper/Nonlinear-dimensionality-reduction-by-locally-Roweis-Saul/f0a3e1752e1146da927adc24ae07144ab2e744ec",
+      "url": "https://semanticscholar.org/paper/Nonlinear-dimensionality-reduction-by-locally-Roweis-Saul/f0a3e1752e1146da927adc24ae07144ab2e744ec",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://pdodds.w3.uvm.edu/files/papers/others/2000/tenenbaum2000a.pdf",
+      "url": "https://pdodds.w3.uvm.edu/files/papers/others/2000/tenenbaum2000a.pdf",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://www.aoml.noaa.gov/ftp/pub/phod/thacker/SSAmanifoldPapers/BelkinNiyogi2007Presentation.pdf",
+      "url": "https://aoml.noaa.gov/ftp/pub/phod/thacker/SSAmanifoldPapers/BelkinNiyogi2007Presentation.pdf",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://www.jmlr.org/papers/v4/saul03a.html",
+      "url": "https://jmlr.org/papers/v4/saul03a.html",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://arxiv.org/abs/1910.01403",
+      "url": "https://arxiv.org/abs/1910.01403",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://research-portal.st-andrews.ac.uk/en/publications/face-recognition-with-image-sets-using-manifold-density-divergenc/",
+      "url": "https://research-portal.st-andrews.ac.uk/en/publications/face-recognition-with-image-sets-using-manifold-density-divergenc",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://doi.org/10.1109/tmm.2008.921847",
+      "url": "https://doi.org/10.1109/tmm.2008.921847",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://doi.org/10.1109/tip.2008.924280",
+      "url": "https://doi.org/10.1109/tip.2008.924280",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://www.semanticscholar.org/paper/b55438c64dcb2f52404152a90acecce2f7ded2d5",
+      "url": "https://semanticscholar.org/paper/b55438c64dcb2f52404152a90acecce2f7ded2d5",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://arxiv.org/abs/1807.07258",
+      "url": "https://arxiv.org/abs/1807.07258",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://arxiv.org/abs/2208.02337",
+      "url": "https://arxiv.org/abs/2208.02337",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://arxiv.org/abs/2304.12448",
+      "url": "https://arxiv.org/abs/2304.12448",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://www.semanticscholar.org/paper/fd3bf3a9cef5500aa3b97588498e534c96006567",
+      "url": "https://semanticscholar.org/paper/fd3bf3a9cef5500aa3b97588498e534c96006567",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "https://arxiv.org/abs/2111.01455",
+      "url": "https://arxiv.org/abs/2111.01455",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    }
+  ],
+  "noncited_factual_accuracy": 0.8,
+  "noncited_count": 10,
+  "noncited_correct": 8,
+  "noncited_details": [
+    {
+      "claim": "Locally Linear Embedding (LLE) was introduced by Roweis and Saul.",
+      "evidence": [
+        {
+          "title": "An Introduction to Locally Linear Embedding - Semantic Scholar",
+          "abstract": "Locally linear embedding (LLE) is introduced, an unsupervised learning algorithm that computes low-dimensional, neighborhood-preserving embeddings of high- ...",
+          "url": "https://www.semanticscholar.org/paper/An-Introduction-to-Locally-Linear-Embedding-Saul-Roweis/da6495102377f8332b21cef50c35d27fbff627df"
+        },
+        {
+          "title": "Locally Linear Embedding (LLE) Homepage",
+          "abstract": "LLE ... An Introduction to Locally Linear Embedding. Lawrence Saul & Sam Roweis. [draft version (Jan.01)-->ps.gz(1286K) pdf(281K), ps.gz(a4 paper) pdf(a4 paper)] ...",
+          "url": "https://cs.nyu.edu/home/people/in_memoriam/roweis/lle/publications.html"
+        },
+        {
+          "title": "Think Globally, Fit Locally: Unsupervised Learning of Low ...",
+          "abstract": "Here we describe locally linear embedding (LLE), an unsupervised learning algorithm that computes low dimensional, neighborhood preserving embeddings of high ...",
+          "url": "https://www.jmlr.org/papers/v4/saul03a.html"
+        },
+        {
+          "title": "Grouping and dimensionality reduction by locally linear embedding",
+          "abstract": "Locally Linear Embedding (LLE) is an elegant nonlinear dimensionality-reduction technique recently introduced by Roweis and Saul [2].",
+          "url": "http://papers.neurips.cc/paper/2033-grouping-and-dimensionality-reduction-by-locally-linear-embedding.pdf"
+        },
+        {
+          "title": "LLE (Locally linear embedding) and its variants - GitHub",
+          "abstract": "Locally Linear Embedding is a method for non-linear dimensionality reduction. It was proposed by Roweis and Saul in 2000. At that time LLE was a novel techinque ...",
+          "url": "https://github.com/JAVI897/LLE-and-its-variants"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "Isomap generalizes classical Multidimensional Scaling by approximating geodesic distances along the manifold with shortest-path distances in a neighborhood graph.",
+      "evidence": [
+        {
+          "title": "IsoMap - SMILE",
+          "abstract": "Isomap is distinguished by its use of the geodesic distance induced by a neighborhood graph embedded in the classical scaling. This is done to incorporate ...",
+          "url": "http://haifengl.github.io/api/java/smile/manifold/IsoMap.html"
+        },
+        {
+          "title": "Continuum Isomap for manifold learnings - ScienceDirect.com",
+          "abstract": "The focus of this paper is on analyzing the Isomap method, which extends the classical multidimensional scaling (MDS) method by exploiting the ...",
+          "url": "https://www.sciencedirect.com/science/article/abs/pii/S0167947306004518"
+        },
+        {
+          "title": "Deep Isometric Maps - University of Twente Research Information",
+          "abstract": "In this paper, we use the computational infrastructure of neural net- works to model maps that preserve geodesic distances on data mani- folds.",
+          "url": "https://research.utwente.nl/files/482672109/1-s2.0-S0262885622000907-main.pdf"
+        },
+        {
+          "title": "Low‐rank isomap algorithm - Mehrbani - 2022 - IET Journals",
+          "abstract": "Isomap is a global method built upon the MDS model by computing the geodesic distance as a preserving metric instead of the Euclidean distance.",
+          "url": "https://ietresearch.onlinelibrary.wiley.com/doi/10.1049/sil2.12124"
+        },
+        {
+          "title": "Lecture 16 Multidimensional Scaling & Isomap",
+          "abstract": "Isomap • Euclidean distance may be a poor measure of dissimilarity between points • instead use geodesic distance, distance between points along the manifold",
+          "url": "http://www.cs.toronto.edu/~dross/411/16mds.pdf"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "Laplacian Eigenmaps was developed by Belkin and Niyogi.",
+      "evidence": [
+        {
+          "title": "Towards a theoretical foundation for Laplacian-based ...",
+          "abstract": "by M Belkin · 2008 · Cited by 555 — In this paper we take a step towards closing the gap between theory and practice. Belkin, P. Niyogi Laplacian eigenmaps for dimensionality reduction and data ...",
+          "url": "https://www.sciencedirect.com/science/article/pii/S0022000007001274"
+        },
+        {
+          "title": "Convergence of Laplacian Eigenmaps",
+          "abstract": "by M Belkin · 2006 · Cited by 447 — Mikhail Belkin, Partha Niyogi. In this paper we show convergence of eigenvectors of the point cloud Laplacian to the eigen- functions of the Laplace-Beltrami ...",
+          "url": "https://proceedings.neurips.cc/paper_files/paper/2006/hash/5848ad959570f87753a60ce8be1567f3-Abstract.html"
+        },
+        {
+          "title": "Note #3: Laplacian Eigenmaps",
+          "abstract": "Paper review: M. Belkin & P. Niyogi, Laplacian Eigenmaps for Dimensionality Reduction and Data Representation, Neural Computation 2013 ...",
+          "url": "https://leowyy.github.io/note-3"
+        },
+        {
+          "title": "Laplacian Eigenmaps for Dimensionality Reduction and ...",
+          "abstract": "This work proposes a geometrically motivated algorithm for representing the high-dimensional data that provides a computationally efficient approach to ...",
+          "url": "https://www.semanticscholar.org/paper/Laplacian-Eigenmaps-for-Dimensionality-Reduction-Belkin-Niyogi/88816ae492956f3004daa41357166f1181c0c1bf"
+        },
+        {
+          "title": "Laplacian eigenmaps 2023",
+          "abstract": "Versions of the Laplacian eigenmaps of Belkin and Niyogi are a widely used nonlinear dimension reduction technique in data analysis.",
+          "url": "https://mathreu.uconn.edu/2023/05/18/laplacian-eigenmaps-2023/"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "The Think Globally, Fit Locally paper was published by Saul and Roweis in 2003 in the Journal of Machine Learning Research.",
+      "evidence": [
+        {
+          "title": "Truly Incremental Locally Linear Embedding",
+          "abstract": "by S Schuon · Cited by 17 — Saul and S. Roweis, “Think Globally, Fit Locally: Unsupervised. Learning of Low Dimensional Manifolds,” Journal of Machine Learning. Research, vol. 4, no. 2 ...",
+          "url": "http://ai.stanford.edu/~schuon/learning/inclle.pdf"
+        },
+        {
+          "title": "Think Globally, Fit Locally: Unsupervised Learning of ...",
+          "abstract": "Think Globally, Fit Locally: Unsupervised Learning of Nonlinear Manifolds. August 2002; Journal of Machine Learning Research 4. Authors:.",
+          "url": "https://www.researchgate.net/publication/2527213_Think_Globally_Fit_Locally_Unsupervised_Learning_of_Nonlinear_Manifolds"
+        },
+        {
+          "title": "Manifold Learning - Sam Roweis",
+          "abstract": "Roweis, Think globally, fit locally: unsupervised learning of low dimensional manifolds,. Journal of Machine Learning Research, v. 4, pp. 119- ...",
+          "url": "https://people.cs.umass.edu/~mahadeva/cs791bb/reading/msri_manifolds.pdf"
+        },
+        {
+          "title": "Think Globally, Fit Locally: Unsupervised Learning of Low ...",
+          "abstract": "by LK Saul · 2004 · Cited by 2276 — Saul, L. K., & Roweis, S. T. (2004). Think Globally, Fit Locally: Unsupervised Learning of Low Dimensional Manifolds. Journal of Machine Learning Research, 4(2) ...",
+          "url": "http://psycnet.apa.org/record/2004-13930-001"
+        },
+        {
+          "title": "Unsupervised Learning of Nonlinear Manifolds",
+          "abstract": "by LK Saul · Cited by 2289 — Think Globally, Fit Locally: Unsupervised Learning of Nonlinear Manifolds. Roweis roweis@cs.toronto.edu … including machine learning, data compression, ...",
+          "url": "https://www.cse.iitk.ac.in/users/cs676/2011/Readings/saul-roweis-03jmlr_think-globally-fit-locally-manifold-learning.pdf"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "The manifold density divergence method achieved a 94% recognition rate on a large set with severe illumination variation.",
+      "evidence": [
+        {
+          "title": "An information-theoretic approach to face recognition from face motion ...",
+          "abstract": "Recognition rate of 98% was achieved on a database of 100 people under varying illumination. illumination and pose variations are not large. In this paper, we ...",
+          "url": "https://www.sciencedirect.com/science/article/abs/pii/S0262885605001599"
+        },
+        {
+          "title": "Computationally Efficient Application of the Generic Shape-Illumination ...",
+          "abstract": "Face recognition with image sets using manifold density divergence. In Proc. IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 1:581–588 ...",
+          "url": "https://www.academia.edu/8449768/Computationally_Efficient_Application_of_the_Generic_Shape_Illumination_Invariant_to_Face_Recognition_from_Video"
+        },
+        {
+          "title": "Automatic Face Recognition from Video",
+          "abstract": "recognition rates achieved across different combinations of illuminations used for training ... recognition with image sets using manifold density divergence. In ...",
+          "url": "https://arxiv.org/pdf/1504.05308"
+        },
+        {
+          "title": "Boosted manifold principal angles for image set-based recognition",
+          "abstract": "Firstly, the KL-Divergence (KLD) based method achieved by far the worst recognition rate. See- ing that the illumination conditions varied across data",
+          "url": "https://labicvl.github.io/docs/pubs/TK_PR_2007.pdf"
+        },
+        {
+          "title": "Integration of Manifold Learning and Density Estimation for Fine-Tuned ...",
+          "abstract": "This research aims to overcome the limitations of LLE, specifically its reliance on the nearest neighbor concept, its inability to distinguish differences among ...",
+          "url": "https://www.mdpi.com/2073-8994/16/6/765"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "Two influential studies in the IEEE Transactions on Multimedia and IEEE Transactions on Image Processing introduced manifold-based age estimation.",
+      "evidence": [
+        {
+          "title": "A Study on Automatic Age Estimation using a Large ...",
+          "abstract": "by G Guo · Cited by 200 — In this paper we study some problems related to human age estimation using a large database. manifold learning as the face representations for age estimation. ...",
+          "url": "http://vigir.missouri.edu/~gdesouza/Research/Conference_CDs/IEEE_ICCV_2009/contents/pdf/iccv2009_256.pdf"
+        },
+        {
+          "title": "Image-Based Human Age Estimation by Manifold Learning ...",
+          "abstract": "Image-Based Human Age Estimation by Manifold Learning and Locally Adjusted Robust Regression. Published in IEEE Transactions on Image Processing • Jun 10, 2008.",
+          "url": "https://www.nobleblocks.com/publications/W2147278565"
+        },
+        {
+          "title": "Facial Age Estimation",
+          "abstract": "'Human Age Estimation with Regression on Discriminative Aging Manifold', IEEE Transactions on Multimedia, 10(4), pp 578-584. Y. H. Kwon and ...",
+          "url": "http://www.scholarpedia.org/article/Facial_Age_Estimation"
+        },
+        {
+          "title": "Gait-based human age estimation using age group ...",
+          "abstract": "by X Li · 2018 · Cited by 67 — A learning framework for age rank estimation based on face images with scattering transform.",
+          "url": "https://link.springer.com/article/10.1007/s11042-018-6049-7"
+        },
+        {
+          "title": "Estimating Human Age by Manifold Analysis of Face ...",
+          "abstract": "Through manifold analysis of face pictures, a novel age estimation framework is developed to find a sufficient embedding space and model the low-dimensional ...",
+          "url": "https://www.semanticscholar.org/paper/Estimating-Human-Age-by-Manifold-Analysis-of-Face-Fu-Xu/6df44b1fd947abdae1f0d12c914670436a772d15"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "The Rank Flow Embedding method was published by Valem, Pedronette, and Latecki in IEEE Transactions on Image Processing in 2023.",
+      "evidence": [
+        {
+          "title": "RaDE+: A semantic rank-based graph embedding algorithm - ScienceDirect",
+          "abstract": "This paper differs from previous conference paper de Fernando, Pedronette, de ... IEEE Transactions on Image Processing, 28 (12) (2019), pp. 5824-5838.",
+          "url": "https://www.sciencedirect.com/science/article/pii/S2667096822000210"
+        },
+        {
+          "title": "Lucas Pascotti Valem - Google Scholar",
+          "abstract": "Rank flow embedding for unsupervised and semi-supervised manifold learning. LP Valem, DCG Pedronette, LJ Latecki. IEEE Transactions on Image Processing 32, 2811 ...",
+          "url": "https://scholar.google.com/citations?user=jnJ76JAAAAAJ&hl=pt-BR"
+        },
+        {
+          "title": "‪Lucas Pascotti Valem‬ - ‫الباحث العلمي من Google‬",
+          "abstract": "Rank flow embedding for unsupervised and semi-supervised manifold learning‏. LP Valem, DCG Pedronette, LJ Latecki‏. IEEE Transactions on Image Processing 32, ...",
+          "url": "https://scholar.google.com.tr/citations?user=jnJ76JAAAAAJ&hl=ar"
+        },
+        {
+          "title": "Rank Flow Embedding for Unsupervised and Semi ... - arXiv",
+          "abstract": "We propose a novel manifold learning algorithm named Rank Flow Embedding (RFE). The proposed RFE method aims to capture the structure of the ...",
+          "url": "https://arxiv.org/pdf/2304.12448"
+        },
+        {
+          "title": "Neighbor Embedding Projection and Rank-Based Manifold Learning for ...",
+          "abstract": "This work proposes a novel manifold learning algorithm named Rank Flow Embedding (RFE), based on ideas recently exploited by manifold learning approaches,",
+          "url": "https://www.semanticscholar.org/paper/Neighbor-Embedding-Projection-and-Rank-Based-for-Kawai-Leticio/d02d12d43280b81c5f98978c6cb4195ab722a3a1"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "Sparse Representation Classifier Guided Grassmann Reconstruction Metric Learning was published by Wang et al. in 2023.",
+      "evidence": [
+        {
+          "title": "Sparse Representation Classifier Guided Grassmann ...",
+          "abstract": "this paper proposes a Grassmann Reconstruction Metric Learning (GRML) algorithm guided by sparse representation-based classifier (SRC) for image set ...",
+          "url": "https://www.researchgate.net/publication/360511455_Sparse_Representation_Classifier_Guided_Grassmann_Reconstruction_Metric_Learning_With_Applications_to_Image_Set_Analysis"
+        },
+        {
+          "title": "Sparse Representation Classifier Guided Grassmann ...",
+          "abstract": "by D Wei · 2022 · Cited by 14 — this paper proposes a Grassmann Reconstruction Metric Learning (GRML) algorithm guided by sparse representation-based classifier (SRC) for ...",
+          "url": "https://ieeexplore.ieee.org/document/9772377/"
+        },
+        {
+          "title": "A weighted sparse coding model on product Grassmann ...",
+          "abstract": "by Y Wang · 2022 · Cited by 2 — Based on PGM representation of videos, we proposed a sparse coding method by embedding the product Grassmann manifold to the product space of ...",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9044265/"
+        },
+        {
+          "title": "Projection Metric Learning on Grassmann Manifold with ...",
+          "abstract": "This paper proposes a Grassmann Reconstruction Metric Learning (GRML) algorithm guided by sparse representation-based classifier (SRC) for image set ...",
+          "url": "https://www.semanticscholar.org/paper/Projection-Metric-Learning-on-Grassmann-Manifold-to-Huang-Wang/24cb375a998f4af278998f8dee1d33603057e525/figure/0"
+        },
+        {
+          "title": "Sparse Representation Classifier Guided Grassmann ...",
+          "abstract": "by D Wei · 2022 · Cited by 14 — According to the aforementioned analysis, this paper focuses on studying the problem of Grassmann dimensionality reduction. (GDR) based on SRC ...",
+          "url": "https://ieeexplore.ieee.org/iel7/6046/10016790/09772377.pdf"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "Dinashi, Toosi, and Akhaee developed the \"Face Manifold\" framework for generating synthetic face images using manifold learning.",
+      "evidence": [
+        {
+          "title": "manifold learning for synthetic face generation",
+          "abstract": "Toosi, M. Akhaee. This paper divides the face structure into shape and expression groups",
+          "url": "https://www.semanticscholar.org/paper/Face-Manifold%3A-Manifold-Learning-for-Synthetic-Face-Dinashi-Toosi/835d33271fe306ac3ef1fdc83e8dd2740c022fab"
+        },
+        {
+          "title": "Generated faces by drawing 3DMM parameters from a ...",
+          "abstract": "Face Manifold: Manifold Learning for Synthetic Face Generation. Preprint. Full-text available. Oct 2019. Kimia Dinashi · Ramin Toosi.",
+          "url": "https://www.researchgate.net/figure/Generated-faces-by-drawing-3DMM-parameters-from-a-uniform-distribution-instead-of-normal_fig1_336251624"
+        },
+        {
+          "title": "Kimia Dinashi - Face manifold",
+          "abstract": "This paper presents a novel approach to synthetic diverse face dataset generation by leveraging face manifold learning.",
+          "url": "https://www.linkedin.com/posts/kimia-dinashi_activity-7096033973297893376-F_xI?trk=public_profile_share_view"
+        },
+        {
+          "title": "Manifold Learning for Synthetic Face Generation",
+          "abstract": "by K Dinashi · 2019 · Cited by 1 — Authors:Kimia Dinashi, Ramin Toosi, Mohammad Ali Akhaee. Here, we propose a face manifold learning method for synthetic diverse face dataset ...",
+          "url": "https://arxiv.org/abs/1910.01403"
+        },
+        {
+          "title": "Human Age Estimation With Regression on Discriminative Aging Manifold",
+          "abstract": "Recently, extensive studies on human faces in the human-computer interaction (HCI) field reveal significant potentials for designing automatic age estimation systems via face image analysis. The success of such research may bring in many innovative HCI tools used for the applications of human-centered multimedia communication. Due to the temporal property of age progression, face images with aging features may display some sequential patterns with low-dimensional distributions. In this paper, we demonstrate that such aging patterns can be effectively extracted from a discriminant subspace learning algorithm and visualized as distinct manifold structures. Through the manifold method of analysis on face images, the dimensionality redundancy of the original image space can be significantly reduced with subspace learning. A multiple linear regression procedure, especially with a quadratic model function, can be facilitated by the low dimensionality to represent the manifold space embodying the discriminative property. Such a processing has been evaluated by extensive simulations and compared with the state-of-the-art methods. Experimental results on a large size aging database demonstrate the effectiveness and robustness of our proposed framework.",
+          "url": "https://doi.org/10.1109/tmm.2008.921847"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "MEDA (Visual Domain Adaptation with Manifold Embedded Distribution Alignment) learns a Grassmannian manifold of domain features and aligns marginal and conditional distributions on that manifold.",
+      "evidence": [
+        {
+          "title": "MEDA 2.1 Manifol",
+          "abstract": "MEDA learns a domain-invariant classifier in Grassmann manifold with structural risk minimiza- tion, while performing dynamic distribution alignment",
+          "url": "https://jd92.wang/assets/files/poster_mm18.pdf"
+        },
+        {
+          "title": "wenchieh/MEDA: Visual Domain Adaptation with Manifold ...",
+          "abstract": "This directory contains the code for paper Visual Domain Adaptation with Manifold Embedded Distribution Alignment published at ACM Multimedia conference (ACM ...",
+          "url": "https://github.com/wenchieh/MEDA"
+        },
+        {
+          "title": "Visual Domain Adaptation with Manifold Embedded ...",
+          "abstract": "This paper proposes a Manifold Embedded Distribution Alignment (MEDA) approach, which learns a domain-invariant classifier in Grassmann manifold with ...",
+          "url": "https://www.semanticscholar.org/paper/Visual-Domain-Adaptation-with-Manifold-Embedded-Wang-Feng/cc7c62516fbbf5d872d874bd598c8ab8ba903808"
+        },
+        {
+          "title": "Visual Domain Adaptation with Manifold Embedded ...",
+          "abstract": "by J Wang · 2018 · Cited by 827 — MEDA learns a domain-invariant classifier in Grassmann manifold with structural risk minimization, while performing dynamic distribution alignment to ...",
+          "url": "https://dl.acm.org/doi/abs/10.1145/3240508.3240512"
+        },
+        {
+          "title": "Visual Domain Adaptation with Manifold Embedded ...",
+          "abstract": "by J Wang · 2018 · Cited by 827 — In this paper, we propose a novel. Manifold Embedded Distribution Alignment (MEDA) method to address the challenges of both degenerated feature transforma- tion ...",
+          "url": "https://dl.acm.org/doi/pdf/10.1145/3240508.3240512"
+        }
+      ],
+      "true_votes": 2,
+      "total_votes": 3,
+      "decision": true
+    }
+  ]
+}

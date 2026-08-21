@@ -1,0 +1,247 @@
+{
+  "arxiv_id": "2312.04861",
+  "model": "MiniMax-M3",
+  "system": "citation-rag-v15",
+  "reference_precision": 0.25,
+  "reference_recall": 0.010830324909747292,
+  "reference_count": 12,
+  "reference_matches": 3,
+  "ground_truth_count": 277,
+  "predicted_titles": [
+    "Radars for Autonomous Driving: A Review of Deep Learning Methods and Challenges",
+    "Radar Camera Fusion via Representation Learning in Autonomous Driving",
+    "A Survey of Autonomous Driving: Common Practices and Emerging Technologies",
+    "Towards Deep Radar Perception for Autonomous Driving",
+    "Object 3D Perception via Camera-Radar Cross-Modality Learning for Autonomous Driving",
+    "K-Radar: 4D Radar Object Detection for Autonomous Driving in Various Weather Conditions",
+    "Deep Radar Detector",
+    "Data fusion for overtaking vehicle detection based on radar and optical flow",
+    "Camera–Radar Fusion with Modality Interaction and Radar Gaussian ...",
+    "Range-Doppler Detection in Automotive Radar with Deep ...",
+    "A multi-sensor fusion system for moving object detection and tracking in urban driving environments",
+    "RODNet: Radar Object Detection using Cross-Modal ..."
+  ],
+  "cited_match_rate": 0.8571428571428571,
+  "cited_count": 21,
+  "cited_supported": 18,
+  "cited_details": [
+    {
+      "statement": "According to a 2021 study, these radar pins, together with 2D camera bounding boxes, are routinely fused to produce perception results, with the central challenge being accurate radar–camera data association under noisy and sparse radar measurements and depth ambiguity from 2D boxes (https://arxiv.org/abs/2103.07825).",
+      "url": "https://arxiv.org/abs/2103.07825",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The same work observes that traditional rule-based association methods are susceptible to performance degradation in challenging scenarios and failure in corner cases (https://arxiv.org/abs/2103.07825).",
+      "url": "https://arxiv.org/abs/2103.07825",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A complementary 2012 study on overtaking vehicle detection used unprocessed radar information together with optical flow, indicating that the raw sparse radar output is sometimes preserved without further encoding for fusion with vision (http://hdl.handle.net/10016/23609).",
+      "url": "http://hdl.handle.net/10016/23609",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A 2019 paper introduced a deep learning approach for radar processing that operates directly on radar complex data, with training reliant on radar calibration data and new augmentation techniques (https://arxiv.org/pdf/1906.12187).",
+      "url": "https://arxiv.org/pdf/1906.12187",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The same paper reports that working on complex data eliminates the need for an expensive radar calibration process each time and enables classification of detected objects with almost no overhead (https://arxiv.org/pdf/1906.12187).",
+      "url": "https://arxiv.org/pdf/1906.12187",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Range–Doppler maps have been used as a deep-learning input for automotive radar target detection; a study on this topic applies deep learning to range–Doppler data and motivates the work by noting that conventional CFAR detection methods such as Cell-Averaging CFAR rely on assumptions about the distinction between noise and target that may be easily violated in practical scenarios (http://vigir.ee.missouri.edu/~gdesouza/Research/Conference_CDs/IEEE_WCCI_2020/IJCNN/Papers/N-21054.pdf).",
+      "url": "http://vigir.ee.missouri.edu/~gdesouza/Research/Conference_CDs/IEEE_WCCI_2020/IJCNN/Papers/N-21054.pdf",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A 2023 review observes that current radar models are often influenced by lidar and vision models, which are focused on optical features that are relatively weak in radar data, resulting in under-utilization of radar's capabilities (https://arxiv.org/abs/2306.09304).",
+      "url": "https://arxiv.org/abs/2306.09304",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The 2022 K-Radar paper notes that most existing radar datasets provide only 3D Radar Tensor (3DRT) data containing power measurements along the Doppler, range, and azimuth dimensions, and that this absence of elevation makes 3D bounding box estimation challenging (https://proceedings.neurips.cc/paper_files/paper/2022/hash/185fdf627eaae2abab36205dcd19b817-Abstract-Datasets_and_Benchmarks.html).",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2022/hash/185fdf627eaae2abab36205dcd19b817-Abstract-Datasets_and_Benchmarks.html",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The 2022 K-Radar work introduces a 4D Radar Tensor (4DRT) data format with power measurements along the Doppler, range, azimuth, and elevation dimensions, and provides 35K frames of such data with 3D bounding box labels (https://proceedings.neurips.cc/paper_files/paper/2022/hash/185fdf627eaae2abab36205dcd19b817-Abstract-Datasets_and_Benchmarks.html).",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2022/hash/185fdf627eaae2abab36205dcd19b817-Abstract-Datasets_and_Benchmarks.html",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The paper explicitly demonstrates that height information is crucial for 3D object detection by comparing baselines structured similarly to lidar networks (https://proceedings.neurips.cc/paper_files/paper/2022/hash/185fdf627eaae2abab36205dcd19b817-Abstract-Datasets_and_Benchmarks.html).",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2022/hash/185fdf627eaae2abab36205dcd19b817-Abstract-Datasets_and_Benchmarks.html",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "A separate 2022 review states that next-generation 4D radar can achieve imaging capability in the form of high-resolution point clouds, signaling a shift from sparse pins toward volumetric radar representations (https://pmc.ncbi.nlm.nih.gov/articles/PMC9185239/).",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9185239",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "A dissertation on camera–radar perception adopts the RF image as its radar data representation for better radar data exploitation, and introduces the CRUW dataset along with the ROD2021 benchmark to support community development of related algorithms (https://digital.lib.washington.edu/researchworks/items/584e2f40-e50a-4284-8bf2-97c92df3d71d).",
+      "url": "https://digital.lib.washington.edu/researchworks/items/584e2f40-e50a-4284-8bf2-97c92df3d71d",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The same document states that a critical requirement is to propose a system that can also rely purely on the radar for semantic object detection in the format of RF images under scenarios when the camera cannot provide reliable information (https://digital.lib.washington.edu/researchworks/items/584e2f40-e50a-4284-8bf2-97c92df3d71d).",
+      "url": "https://digital.lib.washington.edu/researchworks/items/584e2f40-e50a-4284-8bf2-97c92df3d71d",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A 2024 paper on camera–radar fusion investigates the fusion of millimeter-wave radar and camera modalities to improve the accuracy and completeness of 3D object detection (https://spj.science.org/doi/pdf/10.34133/cbsystems.0079).",
+      "url": "https://spj.science.org/doi/pdf/10.34133/cbsystems.0079",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A 2014 multi-sensor fusion system for urban driving revised earlier motion and observation models for active sensors including radar and LIDAR and introduced a vision module whose pedestrian, bicyclist, and vehicle detections are used to improve tracking model selection, data association, and movement classification (https://doi.org/10.1109/icra.2014.6907100).",
+      "url": "https://doi.org/10.1109/icra.2014.6907100",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The CRUW3D dataset introduced alongside the RODNet work contains 66K synchronized and well-calibrated camera, radar, and LiDAR frames in various driving scenarios, providing the cross-modal data needed for fusion research (https://www.semanticscholar.org/paper/RODNet%3A-Radar-Object-Detection-using-Cross-Modal-Wang-Jiang/3b858058c04da3871848b81e8d8304e24c1282d5).",
+      "url": "https://semanticscholar.org/paper/RODNet%3A-Radar-Object-Detection-using-Cross-Modal-Wang-Jiang/3b858058c04da3871848b81e8d8304e24c1282d5",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The K-Radar dataset includes challenging driving conditions such as fog, rain, and snow across urban, suburban, alleyway, and highway settings, and provides auxiliary measurements from carefully calibrated high-resolution lidars, surround stereo cameras, and RTK-GPS (https://proceedings.neurips.cc/paper_files/paper/2022/hash/185fdf627eaae2abab36205dcd19b817-Abstract-Datasets_and_Benchmarks.html).",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2022/hash/185fdf627eaae2abab36205dcd19b817-Abstract-Datasets_and_Benchmarks.html",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The 2023 review emphasizes that radar deep learning research is limited by lack of good datasets, and that radar data is characterized by low resolution, sparsity, clutter, and high uncertainty (https://arxiv.org/abs/2306.09304).",
+      "url": "https://arxiv.org/abs/2306.09304",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The same review notes that radar's unique capabilities include high-resolution velocity imaging, detection of agents in occlusion and over long ranges, and robust performance in adverse weather conditions (https://arxiv.org/abs/2306.09304).",
+      "url": "https://arxiv.org/abs/2306.09304",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The 2022 deep radar perception review identifies three explicitly stated challenges: multi-path effects, uncertainty problems, and adverse weather effects, and presents some attempts to address them (https://pmc.ncbi.nlm.nih.gov/articles/PMC9185239/).",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9185239",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A 2020 autonomous driving survey concludes that the full potential of automated driving systems cannot be realized unless the robustness of state-of-the-art methods is improved further, situating radar representation research within a broader perception-robustness problem (https://doi.org/10.1109/access.2020.2983149).",
+      "url": "https://doi.org/10.1109/access.2020.2983149",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    }
+  ],
+  "noncited_factual_accuracy": 0.0,
+  "noncited_count": 2,
+  "noncited_correct": 0,
+  "noncited_details": [
+    {
+      "claim": "Early and widely deployed automotive radars output a sparse set of detections, commonly referred to as radar pins, that summarize the scene in a low-dimensional form.",
+      "evidence": [
+        {
+          "title": "4D Automotive Radar Exploiting Sparse Array Optimization ...",
+          "abstract": "by R Zheng · Cited by 10 — In this paper, we introduce a novel workflow for designing 2D MIMO sparse arrays tailored for automotive radar applications.",
+          "url": "https://sites.ua.edu/ssun/files/2025/03/4D_Automotive_Radar_Exploiting_Sparse_Array_Optimization_and_Compressive_Sensing.pdf"
+        },
+        {
+          "title": "4D Automotive Radar Sensing for Autonomous Vehicles",
+          "abstract": "Abstract—We propose a high-resolution imaging radar system to enable high-fidelity four-dimensional (4D) sensing for autonomous.",
+          "url": "https://ieeexplore.ieee.org/iel7/4200690/9448241/09429942.pdf"
+        },
+        {
+          "title": "Object detection for automotive radar point clouds",
+          "abstract": "by N Scheiner · 2021 · Cited by 103 — The nuScenes data set comprises several sensors, but the output of the radar sensor is very sparse even for an automotive radar.",
+          "url": "https://link.springer.com/article/10.1186/s42467-021-00012-z"
+        },
+        {
+          "title": "Webinar- Automotive Radar – A Signal Processing Perspective ...",
+          "abstract": "Radar systems are a key technology of modern vehicle safety & comfort systems. automotive radar systems in both industry and academic worlds.",
+          "url": "https://www.youtube.com/watch?v=IxoPYhXY30k"
+        },
+        {
+          "title": "How Automotive Radars Are Advancing Safety Features",
+          "abstract": "An automotive radar is a radio detection and ranging (radar) vehicle sensor that uses radio waves to measure the positions and trajectories of ...",
+          "url": "https://www.keysight.com/blogs/en/tech/educ/2023/automotive-radar"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "This line of work represents one of the first explicit attempts to bypass intermediate hand-engineered radar representations in favor of raw signal inputs.",
+      "evidence": [
+        {
+          "title": "An Overview and Classification of Machine Learning Approaches for ...",
+          "abstract": "Electronic Warfare (EW) receivers are passive systems that are designed to detect and identify active radar emitters in the environment.",
+          "url": "https://www.researchgate.net/publication/388747823_An_Overview_and_Classification_of_Machine_Learning_Approaches_for_Radar_Signal_Deinterleaving"
+        },
+        {
+          "title": "mmZeAR: Zero-Effort Cross-Category Action Recognition With mmWave ...",
+          "abstract": "In this paper, we present mmZeAR, a mmWave radar-based system for zero-effort cross-category action recognition, including semantic attribute construction and ...",
+          "url": "https://www.computer.org/csdl/journal/tm/2025/10/11014507/26WXVbpoJFK"
+        },
+        {
+          "title": "using natural language processing to advance cognitive radar",
+          "abstract": "The development of cognitive radar systems lies the abilities of an engineer to use performance objectives to design and configure the radar systems.",
+          "url": "https://etda.libraries.psu.edu/files/final_submissions/30576"
+        },
+        {
+          "title": "Survey on Recent mmWave Radar Applications in Robotics - arXiv",
+          "abstract": "We survey the current state of mmWave ( mmWave ) radar applications in robotics with a focus on unique capabilities, and discuss future opportunities based on ...",
+          "url": "https://arxiv.org/html/2305.01135v4"
+        },
+        {
+          "title": "An Extremely Opinionated Annotated List of My Favourite Mechanistic ...",
+          "abstract": "To try helping out, here's a reading list of my favourite mech interp papers: papers which I think are important to be aware of, often worth ...",
+          "url": "https://www.alignmentforum.org/posts/NfFST5Mio7BCAQHPA/an-extremely-opinionated-annotated-list-of-my-favourite-1"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    }
+  ]
+}

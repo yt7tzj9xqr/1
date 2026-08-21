@@ -1,0 +1,26 @@
+{
+  "arxiv_id": "2004.05937",
+  "model": "MiniMax-M3",
+  "system": "search-baseline-v4",
+  "reference_precision": 0.35714285714285715,
+  "reference_recall": 0.01639344262295082,
+  "reference_count": 14,
+  "reference_matches": 5,
+  "ground_truth_count": 305,
+  "predicted_titles": [
+    "Student Network Learning via Evolutionary Knowledge Distillation",
+    "Distilling the Knowledge in a Neural Network",
+    "FitNets: Hints for Thin Deep Nets",
+    "Born-Again Neural Networks",
+    "Improve the Performance of Convolutional Neural ...",
+    "Ensemble Learning of Lightweight Deep Learning Models Using Knowledge Distillation for Image Classification",
+    "Show, Attend and Distill: Knowledge Distillation via Attention-based Feature Matching",
+    "Data-Distortion Guided Self-Distillation for Deep Neural Networks",
+    "Search for Better Students to Learn Distilled Knowledge",
+    "Cross-Layer Distillation with Semantic Calibration",
+    "Learning Student-Friendly Teacher Networks for Knowledge Distillation",
+    "Knowledge Distillation by On-the-Fly Native Ensemble",
+    "Distilling Visual Priors from Self-Supervised Learning",
+    "Improved Knowledge Distillation via Teacher Assistant"
+  ]
+}

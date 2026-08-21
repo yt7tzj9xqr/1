@@ -1,0 +1,204 @@
+{
+  "arxiv_id": "2401.07915",
+  "model": "MiniMax-M3",
+  "system": "citation-rag-v15",
+  "reference_precision": 0.13333333333333333,
+  "reference_recall": 0.007692307692307693,
+  "reference_count": 15,
+  "reference_matches": 2,
+  "ground_truth_count": 260,
+  "predicted_titles": [
+    "Learning dexterous in-hand manipulation",
+    "DexMV: Imitation Learning for Dexterous Manipulation from ...",
+    "Hybrid Imitation Learning Framework for Robotic Manipulation Tasks",
+    "Tactile-Driven Non-Prehensile Object Manipulation via ...",
+    "Learning a State Estimator for Tactile In-Hand Manipulation",
+    "Learning Robot In-Hand Manipulation with Tactile Features",
+    "Interactive imitation learning for dexterous robotic manipulation",
+    "Dexterous Manipulation through Imitation Learning: A Survey",
+    "Learning Haptic-Based Object Pose Estimation for In-Hand ...",
+    "DexArt: Benchmarking Generalizable Dexterous Manipulation ...",
+    "Learning Robot Fine and Dexterous Manipulation: Perception and Control",
+    "DexYCB: A Benchmark for Capturing Hand Grasping of Objects",
+    "Dexterous Manipulation for Multi-Fingered Robotic Hands With Reinforcement Learning: A Review",
+    "GENDEXHAND: GENERATIVE SIMULATION FOR DEX",
+    "Exploring Tactile Temporal Features for Object Pose ..."
+  ],
+  "cited_match_rate": 1.0,
+  "cited_count": 24,
+  "cited_supported": 24,
+  "cited_details": [
+    {
+      "statement": "state that dexterous manipulation enables repositioning of objects and tools within a robot's hand (https://users.cs.utah.edu/~thermans/papers/vanhoof-ichr2015-in-hand-learning.pdf).",
+      "url": "https://users.cs.utah.edu/~thermans/papers/vanhoof-ichr2015-in-hand-learning.pdf",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "also state that object and tool manipulation stands as a fundamental problem in robotics (https://users.cs.utah.edu/~thermans/papers/vanhoof-ichr2015-in-hand-learning.pdf).",
+      "url": "https://users.cs.utah.edu/~thermans/papers/vanhoof-ichr2015-in-hand-learning.pdf",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "study the problem of estimating the pose of an object being manipulated by a multi-fingered robotic hand using only proprioceptive feedback (https://elib.dlr.de/190608/1/IROS22_LearningTactileEstimator.pdf).",
+      "url": "https://elib.dlr.de/190608/1/IROS22_LearningTactileEstimator.pdf",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "explore the use of haptics, i.e., kinesthetic and tactile sensing, for pose estimation and in-hand manipulation (https://dl.acm.org/doi/abs/10.1109/TOH.2022.3232713).",
+      "url": "https://dl.acm.org/doi/abs/10.1109/TOH.2022.3232713",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "explore tactile data's temporal information for estimating the orientation of grasped objects (https://www.mdpi.com/1424-8220/23/9/4535).",
+      "url": "https://mdpi.com/1424-8220/23/9/4535",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "consider the problem of non-prehensile manipulation using grasped objects, a superset of many common manipulation skills including instances of tool-use, e.g., grasped spatula flipping a burger (https://www.roboticsproceedings.org/rss20/p135.pdf).",
+      "url": "https://roboticsproceedings.org/rss20/p135.pdf",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "They present a tactile-driven approach in which the robot models tactile sensors using passive compliance elements, considering the frictional interaction between objects in the scene (https://www.roboticsproceedings.org/rss20/p135.pdf).",
+      "url": "https://roboticsproceedings.org/rss20/p135.pdf",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "use reinforcement learning to learn dexterous in-hand manipulation policies that perform vision-based object reorientation on a physical Shadow Dexterous Hand, manipulating a block from an initial configuration to a goal configuration using vision for sensing (https://arxiv.org/abs/1808.00177).",
+      "url": "https://arxiv.org/abs/1808.00177",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Training is performed in a simulated environment in which many physical properties of the system, such as friction coefficients and an object's appearance, are randomized, and the policies transfer to the physical robot (https://arxiv.org/abs/1808.00177).",
+      "url": "https://arxiv.org/abs/1808.00177",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "propose acquiring in-hand manipulation skills through reinforcement learning, which does not require analytic dynamics or kinematics models (https://users.cs.utah.edu/~thermans/papers/vanhoof-ichr2015-in-hand-learning.pdf).",
+      "url": "https://users.cs.utah.edu/~thermans/papers/vanhoof-ichr2015-in-hand-learning.pdf",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "This approach successfully acquires a tactile manipulation skill using a passively compliant hand, and the learned tactile skill generalizes to novel objects (https://users.cs.utah.edu/~thermans/papers/vanhoof-ichr2015-in-hand-learning.pdf).",
+      "url": "https://users.cs.utah.edu/~thermans/papers/vanhoof-ichr2015-in-hand-learning.pdf",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Wang presents a comprehensive review of techniques for dexterous manipulation with multi-fingered robotic hands, including the latest research and methodologies based on reinforcement learning and its variations (https://pmc.ncbi.nlm.nih.gov/articles/PMC9083362/).",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9083362",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "DexArt introduces a benchmark for dexterous manipulation with articulated objects in a physical simulator (https://cvpr.thecvf.com/virtual/2023/poster/22341).",
+      "url": "https://cvpr.thecvf.com/virtual/2023/poster/22341",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The main focus is to evaluate the generalizability of the learned policy on unseen articulated objects, which is very challenging given the high degrees of freedom of both hands and objects, and the work uses reinforcement learning with 3D representation learning to achieve generalization (https://cvpr.thecvf.com/virtual/2023/poster/22341).",
+      "url": "https://cvpr.thecvf.com/virtual/2023/poster/22341",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "record human videos on manipulation tasks, perform 3D hand-object pose estimation from the videos to construct demonstrations, and use a paired simulation system providing the same dexterous manipulation tasks for the multi-finger robot, including relocate, pour, and place inside, which are then solved using imitation learning with the inferred demonstrations (https://arxiv.org/abs/2108.05877).",
+      "url": "https://arxiv.org/abs/2108.05877",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "DexYCB introduces a new dataset for capturing hand grasping of objects (https://dex-ycb.github.io/).",
+      "url": "https://dex-ycb.github.io",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The dataset includes a thorough benchmark of state-of-the-art approaches on 2D object and keypoint detection, 6D object pose estimation, and 3D hand pose estimation, as well as the task of generating safe robot grasps in human-to-robot object handover (https://dex-ycb.github.io/).",
+      "url": "https://dex-ycb.github.io",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A hybrid imitation learning framework combines behavior cloning and state cloning methods for robotic manipulation tasks (https://www.mdpi.com/1424-8220/21/10/3409).",
+      "url": "https://mdpi.com/1424-8220/21/10/3409",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A survey paper provides a comprehensive examination of imitation learning applied to dexterous manipulation, a critical intersection in modern robotics (https://www.semanticscholar.org/paper/Dexterous-Manipulation-Through-Imitation-Learning%3A-An-Meng/05b43a5fc217b282d56ff2351b3f0344ed1c3055).",
+      "url": "https://semanticscholar.org/paper/Dexterous-Manipulation-Through-Imitation-Learning%3A-An-Meng/05b43a5fc217b282d56ff2351b3f0344ed1c3055",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "GENDEXHAND designs policy learning strategies tailored for dexterous hands, including degree-of-freedom constraints, motion planning integration, and subtask strategies (https://openreview.net/pdf/779da69a611267b014cfab764442795377e81f59.pdf).",
+      "url": "https://openreview.net/pdf/779da69a611267b014cfab764442795377e81f59.pdf",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The 2024 CoRL workshop description notes that, despite decades of research, most demonstrations of dexterous manipulation still rely heavily on teleoperation (https://dex-manipulation.github.io/corl2024/).",
+      "url": "https://dex-manipulation.github.io/corl2024",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Achieving robust and generalizable dexterous manipulation requires advancements in perception integration, data collection, and control (https://dex-manipulation.github.io/corl2024/).",
+      "url": "https://dex-manipulation.github.io/corl2024",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "restrict their framework to non-prehensile manipulation using grasped objects (https://www.roboticsproceedings.org/rss20/p135.pdf).",
+      "url": "https://roboticsproceedings.org/rss20/p135.pdf",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Interactive imitation learning, where human feedback actively refines a robot's behavior during training, has shown success in various robotic tasks, but its application to dexterous manipulation remains limited (https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2025.1682437/full).",
+      "url": "https://frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2025.1682437/full",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    }
+  ],
+  "noncited_factual_accuracy": 0.0,
+  "noncited_count": 0,
+  "noncited_correct": 0,
+  "noncited_details": []
+}

@@ -1,0 +1,163 @@
+{
+  "arxiv_id": "2306.05817",
+  "model": "MiniMax-M3",
+  "system": "citation-rag-v15",
+  "reference_precision": 0.4444444444444444,
+  "reference_recall": 0.013289036544850499,
+  "reference_count": 9,
+  "reference_matches": 4,
+  "ground_truth_count": 301,
+  "predicted_titles": [
+    "Retrieval-augmented Recommender System: Enhancing Recommender Systems with Large Language Models",
+    "Collaborative Large Language Model for Recommender Systems",
+    "RecSys 2023 Tutorial: Large Language Models for Recommendation",
+    "Recommender Systems in the Era of Large Language Models (LLMs)",
+    "Chat-REC: Towards Interactive and Explainable LLMs- ...",
+    "Large language models as recommender systems: A study of popularity bias",
+    "Leveraging Large Language Models for Sequential Recommendation",
+    "LLM-RS: A Large Language Model-Based Sequential ... - MDPI",
+    "LLM-ESR: Large Language Models Enhancement for Long-tailed ..."
+  ],
+  "cited_match_rate": 1.0,
+  "cited_count": 19,
+  "cited_supported": 19,
+  "cited_details": [
+    {
+      "statement": "Deep neural network-based recommender systems, despite their success in modeling user-item interactions and incorporating textual side information, exhibit limitations in effectively understanding user interests, capturing textual side information, generalizing to various seen or unseen recommendation scenarios, and reasoning over their predictions (https://doi.org/10.1109/tkde.2024.3392335).",
+      "url": "https://doi.org/10.1109/tkde.2024.3392335",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The development of large language models such as ChatGPT and GPT-4 has introduced remarkable capabilities in language understanding and generation, generalization, and reasoning, motivating the integration of LLMs into recommender systems serving e-commerce and web applications (https://doi.org/10.1109/tkde.2024.3392335).",
+      "url": "https://doi.org/10.1109/tkde.2024.3392335",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Tutorial overviews highlight that LLMs make it possible to formulate rating prediction, sequential recommendation, straightforward recommendation, and explanation generation as language instructions, enabling the construction of universal recommendation engines that handle different tasks (https://llmrecsys.github.io/).",
+      "url": "https://llmrecsys.github.io",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "evaluated three approaches for using LLMs in sequential recommendation, finding that initializing the BERT4Rec sequential model with embeddings obtained from an LLM improves NDCG by 15-20% compared to the vanilla BERT4Rec model on two datasets, and that a simple approach leveraging LLM embeddings to produce recommendations can provide competitive performance by highlighting semantically related items (https://arxiv.org/abs/2309.09261).",
+      "url": "https://arxiv.org/abs/2309.09261",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Building on this direction, the LLM-RS framework leverages LLMs to enable explicit reasoning chains in sequential recommendation (https://www.mdpi.com/2227-7390/14/14/2631).",
+      "url": "https://mdpi.com/2227-7390/14/14/2631",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "For long-tailed sequential recommendation in business platforms, the LLM-ESR framework utilizes semantic embeddings derived from LLMs to enhance sequential recommender systems without adding extra inference load, designing a dual-view modeling framework that combines LLM semantics with collaborative signals to address the long-tail item challenge, and proposing a retrieval-augmented self-distillation method to address the long-tail user challenge, with experiments on three real-world datasets across three popular sequential models showing consistent improvements over existing baselines (https://neurips.cc/virtual/2024/poster/93061).",
+      "url": "https://neurips.cc/virtual/2024/poster/93061",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "CLLM4Rec is described as the first generative recommender system that tightly integrates the LLM paradigm and the ID paradigm, extending the vocabulary of pretrained LLMs with user and item ID tokens to faithfully model user and item collaborative and content semantics (https://doi.org/10.1145/3589334.3645347).",
+      "url": "https://doi.org/10.1145/3589334.3645347",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The approach introduces a soft+hard prompting strategy to learn user and item collaborative and content token embeddings via language modeling on recommender-specific corpora, a mutual regularization strategy to capture recommendation-related information from noisy user and item content, and a recommendation-oriented finetuning strategy in which an item prediction head with multinomial likelihood predicts hold-out items based on soft+hard prompts established from masked user-item interaction history, allowing multiple items to be generated efficiently without hallucination (https://doi.org/10.1145/3589334.3645347).",
+      "url": "https://doi.org/10.1145/3589334.3645347",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Retrieval-augmented recommender systems combine the strengths of retrieval-based and generation-based models, addressing the limitations of conventional recommender systems in adapting to unexplored data and providing recommendations in cold scenarios characterized by high data sparsity by leveraging the contextual awareness of LLMs (https://doi.org/10.1145/3604915.3608889).",
+      "url": "https://doi.org/10.1145/3604915.3608889",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "This integration is positioned as creating a powerful tool for delivering contextual and relevant recommendations across business domains ranging from e-commerce to content streaming platforms (https://doi.org/10.1145/3604915.3608889).",
+      "url": "https://doi.org/10.1145/3604915.3608889",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Chat-REC augments traditional recommender systems through LLMs to enable interactive and explainable recommendation functionality, demonstrating the significant potential of LLMs for addressing various application tasks (https://arxiv.org/abs/2303.14524).",
+      "url": "https://arxiv.org/abs/2303.14524",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The capacity of LLMs to comprehend user preferences, item descriptions, and contextual information is highlighted as supporting more accurate and relevant recommendations that improve user satisfaction and engagement (https://llmrecsys.github.io/).",
+      "url": "https://llmrecsys.github.io",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A systematic review of LLM-empowered recommender systems organizes advances around three paradigms: pre-training, fine-tuning, and prompting, and introduces representative methods to harness LLMs as feature encoders for learning representations of users and items (https://doi.org/10.1109/tkde.2024.3392335).",
+      "url": "https://doi.org/10.1109/tkde.2024.3392335",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Tutorial overviews broaden the coverage to include data preparation, model design, pre-training, fine-tuning, prompting, model evaluation, multi-modality and multi-task learning, as well as trustworthy perspectives such as fairness and transparency (https://llmrecsys.github.io/).",
+      "url": "https://llmrecsys.github.io",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Popularity bias, defined as the disproportionate recommendation of popular items that overshadows less popular but potentially relevant items, remains a significant challenge in recommender systems, and recent work has investigated the integration of general-purpose LLMs into this setting (https://www.amazon.science/publications/large-language-models-as-recommender-systems-a-study-of-popularity-bias).",
+      "url": "https://amazon.science/publications/large-language-models-as-recommender-systems-a-study-of-popularity-bias",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Trustworthy perspectives on LLM-based recommender systems, including fairness and transparency, are explicitly highlighted as important considerations alongside accuracy (https://llmrecsys.github.io/).",
+      "url": "https://llmrecsys.github.io",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Existing LLM-based recommendation approaches face several stated challenges, including spuriously correlated user and item descriptors, ineffective language modeling on user and item data, and inefficient recommendations via auto-regression in generative frameworks (https://doi.org/10.1145/3589334.3645347).",
+      "url": "https://doi.org/10.1145/3589334.3645347",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Sequential recommender systems additionally struggle with long-tail user and long-tail item issues, where most users interact with only a handful of items while the majority of items are seldom consumed, problems that adversely affect user experience and seller benefits and are difficult to address due to the intrinsic scarcity of interactions (https://neurips.cc/virtual/2024/poster/93061).",
+      "url": "https://neurips.cc/virtual/2024/poster/93061",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Sequential recommendation has received increasing attention in research, and LLMs are introducing disruptive effects in many AI-based applications, motivating continued investigation of how LLMs can build or improve sequential recommendation approaches (https://arxiv.org/abs/2309.09261).",
+      "url": "https://arxiv.org/abs/2309.09261",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    }
+  ],
+  "noncited_factual_accuracy": 0.0,
+  "noncited_count": 0,
+  "noncited_correct": 0,
+  "noncited_details": []
+}

@@ -1,0 +1,26 @@
+{
+  "arxiv_id": "2310.12986",
+  "model": "MiniMax-M3",
+  "system": "search-baseline-v4",
+  "reference_precision": 0.0,
+  "reference_recall": 0.0,
+  "reference_count": 14,
+  "reference_matches": 0,
+  "ground_truth_count": 61,
+  "predicted_titles": [
+    "Face manifold: manifold learning for synthetic face generation",
+    "Nonlinear dimensionality reduction by locally linear ...",
+    "Think Globally, Fit Locally: Unsupervised Learning of Low Dimensional Manifolds",
+    "Tenenbaum Reduction A Global Geometric ...",
+    "Laplacian Eigenmaps for Dimensionality Reduction and ...",
+    "Face recognition with image sets using manifold density divergence",
+    "Human Age Estimation With Regression on Discriminative Aging Manifold",
+    "Image-Based Human Age Estimation by Manifold Learning and Locally Adjusted Robust Regression",
+    "Rank Flow Embedding for Unsupervised and Semi-Supervised Manifold Learning",
+    "Gait-based human age estimation using age group-dependent manifold learning and regression",
+    "Visual Domain Adaptation with Manifold Embedded Distribution Alignment",
+    "Estimating Visual Information From Audio Through Manifold Learning",
+    "Sparse Representation Classifier Guided Grassmann Reconstruction Metric Learning With Applications to Image Set Analysis",
+    "Learning a perceptual manifold with deep features for animation video resequencing"
+  ]
+}

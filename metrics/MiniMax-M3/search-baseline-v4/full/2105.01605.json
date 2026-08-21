@@ -1,0 +1,722 @@
+{
+  "arxiv_id": "2105.01605",
+  "model": "MiniMax-M3",
+  "system": "search-baseline-v4",
+  "reference_precision": 0.08333333333333333,
+  "reference_recall": 0.02040816326530612,
+  "reference_count": 12,
+  "reference_matches": 1,
+  "ground_truth_count": 49,
+  "predicted_titles": [
+    "Natural Language Person Search Using Deep Reinforcement Learning",
+    "Joint Detection and Identification Feature Learning for Person Search",
+    "Multi-Level Joint Feature Learning for Person Re-Identification - MDPI",
+    "End-to-End Deep Learning for Person Search",
+    "CUHK-SYSU Person Search Dataset",
+    "End-to-end person search sequentially trained on ...",
+    "Person Re-identification in Identity Regression Space",
+    "Triplet Online Instance Matching Loss for Person Re ...",
+    "Attention-based Natural Language Person Retrieval",
+    "A Survey of Deep Learning-Based Object Detection",
+    "Deep Multimodal Representation Learning: A Survey",
+    "Deep Metric Learning: A Survey"
+  ],
+  "cited_match_rate": 0.2,
+  "cited_count": 70,
+  "cited_supported": 14,
+  "cited_details": [
+    {
+      "statement": "Person search aims to localize and re-identify a target individual from a large gallery of unconstrained scene images, and has become a critical capability for public-safety and social-governance applications such as video surveillance, missing-person retrieval, and forensic search [Xiao et al., 2016](https://arxiv.org/abs/1604.01850).",
+      "url": "https://arxiv.org/abs/1604.01850",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The query may take two forms—an image (image-based person search) or a natural-language description (text-based person search) [Shah & Vuong, 2018](https://arxiv.org/abs/1809.00365); [Zhou et al., 2017](https://arxiv.org/abs/1705.08923).",
+      "url": "https://arxiv.org/abs/1809.00365",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The query may take two forms—an image (image-based person search) or a natural-language description (text-based person search) [Shah & Vuong, 2018](https://arxiv.org/abs/1809.00365); [Zhou et al., 2017](https://arxiv.org/abs/1705.08923).",
+      "url": "https://arxiv.org/abs/1705.08923",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The query is a cropped image of the target; the system must return the bounding boxes of that identity across a gallery of full scene images [Xiao et al., 2016](https://arxiv.org/abs/1604.01850).",
+      "url": "https://arxiv.org/abs/1604.01850",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The dominant benchmark is CUHK-SYSU, which contains 18,184 images and 8,432 distinct identities collected from street photography and movies [CUHK-SYSU dataset description](https://hyper.ai/en/datasets/17981); a complementary benchmark is PRW, also used for end-to-end evaluation [Loesch et al., 2019](https://cea.hal.science/cea-03251768/document).",
+      "url": "https://hyper.ai/en/datasets/17981",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The dominant benchmark is CUHK-SYSU, which contains 18,184 images and 8,432 distinct identities collected from street photography and movies [CUHK-SYSU dataset description](https://hyper.ai/en/datasets/17981); a complementary benchmark is PRW, also used for end-to-end evaluation [Loesch et al., 2019](https://cea.hal.science/cea-03251768/document).",
+      "url": "https://cea.hal.science/cea-03251768/document",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "(2017) and Shah & Vuong (2018) demonstrated that attention-based and reinforcement-learning-based alignment mechanisms are central to handling this cross-modal setting [Zhou et al., 2017](https://arxiv.org/abs/1705.08923); [Shah & Vuong, 2018](https://arxiv.org/abs/1809.00365).",
+      "url": "https://arxiv.org/abs/1705.08923",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "(2017) and Shah & Vuong (2018) demonstrated that attention-based and reinforcement-learning-based alignment mechanisms are central to handling this cross-modal setting [Zhou et al., 2017](https://arxiv.org/abs/1705.08923); [Shah & Vuong, 2018](https://arxiv.org/abs/1809.00365).",
+      "url": "https://arxiv.org/abs/1809.00365",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "(2016) argue that the detection and re-identification sub-networks should share a common convolutional encoder, since the representation learned for one sub-task is informative for the other; they couple a Faster R-CNN-style detector with an identification head trained by the Online Instance Matching (OIM) loss, which is robust to the sparse, unbalanced labels that arise when supervising scene-level person search [Xiao et al., 2016](https://arxiv.org/abs/1604.01850).",
+      "url": "https://arxiv.org/abs/1604.01850",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "project page](http://www.ee.cuhk.edu.hk/~xgwang/PS/dataset.html).",
+      "url": "http://ee.cuhk.edu.hk/~xgwang/PS/dataset.html",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "(2020) extend OIM with a triplet formulation, mining hard positive/negative pairs online so that the embedding forms compact, well-separated identity clusters [Li et al., 2020](https://arxiv.org/abs/2002.10560).",
+      "url": "https://arxiv.org/abs/2002.10560",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "At a more structural level, Multi-Level Joint Feature Learning combines global holistic descriptors with local part-based features, arguing that fine-grained cues such as logos and garment patches complement the global body shape and yield more discriminative embeddings [Multi-Level Joint Feature Learning, 2020](https://www.mdpi.com/1999-4893/13/5/111).",
+      "url": "https://mdpi.com/1999-4893/13/5/111",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "For text-based retrieval, the representation problem becomes cross-modal: visual and linguistic features must be embedded into a common space in which identity-bearing regions of the image correspond to identity-bearing phrases of the text [Zhou et al., 2017](https://arxiv.org/abs/1705.08923).",
+      "url": "https://arxiv.org/abs/1705.08923",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The broader multimodal-representation literature confirms that the choice between joint, coordinated, and encoder–decoder integration frameworks has profound effects on how the heterogeneity gap is narrowed [Deep Multimodal Representation Learning Survey, 2019](https://doi.org/10.1109/access.2019.2916887).",
+      "url": "https://doi.org/10.1109/access.2019.2916887",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Siamese and triplet networks are the dominant architectural templates, and the design of structured losses plus informative pair-mining strategies is a recurring theme [Deep Metric Learning Survey, 2019](https://doi.org/10.3390/sym11091066).",
+      "url": "https://doi.org/10.3390/sym11091066",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "(2016) provide a non-parametric instance-level metric by maintaining a circular queue of labeled identity prototypes and a circular queue of unlabeled features, then computing a soft classification over both; this functions as an efficient similarity over the gallery without requiring a parametric classifier head [Xiao et al., 2016](https://arxiv.org/abs/1604.01850).",
+      "url": "https://arxiv.org/abs/1604.01850",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "(2020) show that augmenting OIM with a triplet loss simultaneously reduces intra-class variance and increases inter-class margin, outperforming softmax-only OIM on CUHK-SYSU [Li et al., 2020](https://arxiv.org/abs/2002.10560).",
+      "url": "https://arxiv.org/abs/2002.10560",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The identity-regression framework embeds each pedestrian as a point in a continuous identity latent space and turns matching into nearest-neighbor search, which is reported to scale gracefully to large populations and to adapt to gradual appearance drift [Person Re-identification in Identity Regression Space, 2018](https://pmc.ncbi.nlm.nih.gov/articles/PMC6411216/).",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6411216",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Shah & Vuong (2018) use deep reinforcement learning to learn a policy that decides where to attend on both the image and the text, iteratively refining the cross-modal alignment without requiring rigid phrase-region correspondences [Shah & Vuong, 2018](https://arxiv.org/abs/1809.00365).",
+      "url": "https://arxiv.org/abs/1809.00365",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "(2017) instead apply learned attention to both encoders so that the similarity score emphasizes identity-bearing words and image regions [Zhou et al., 2017](https://arxiv.org/abs/1705.08923).",
+      "url": "https://arxiv.org/abs/1705.08923",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "These approaches fit naturally into the broader taxonomy of deep metric learning, where the success of a Siamese or triplet architecture depends critically on the loss and sampling strategy [Deep Metric Learning Survey, 2019](https://doi.org/10.3390/sym11091066).",
+      "url": "https://doi.org/10.3390/sym11091066",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The third challenge is unique to end-to-end person search: pedestrian detection and re-identification are typically trained with different objectives (bounding-box classification/regression versus identity classification), and naively sharing parameters can be suboptimal because the two tasks favor different feature statistics [Xiao et al., 2016](https://arxiv.org/abs/1604.01850).",
+      "url": "https://arxiv.org/abs/1604.01850",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The OIM framework addresses this through a single CNN that produces both detection proposals and re-id embeddings, with identity supervision that is robust to sparse and unbalanced labels [Xiao et al., 2016](https://arxiv.org/abs/1604.01850).",
+      "url": "https://arxiv.org/abs/1604.01850",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "project page](http://www.ee.cuhk.edu.hk/~xgwang/PS/dataset.html).",
+      "url": "http://ee.cuhk.edu.hk/~xgwang/PS/dataset.html",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "(2019) investigate training schedules for end-to-end person search on both CUHK-SYSU and PRW, and report that the balance between detection and identification losses—as well as the order in which the two sub-tasks are unfrozen during training—materially affects the final accuracy, confirming that identity-driven detection is not merely a matter of architecture but also of optimization [Loesch et al., 2019](https://cea.hal.science/cea-03251768/document).",
+      "url": "https://cea.hal.science/cea-03251768/document",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The architectural primitives that make this joint training possible (region proposal networks, feature pyramid networks, anchor-based detection heads) are surveyed systematically in the deep-learning object-detection literature [Deep Learning-Based Object Detection Survey, 2019](https://doi.org/10.1109/access.2019.2939201).",
+      "url": "https://doi.org/10.1109/access.2019.2939201",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Identity-driven detection—supervising the detector with both box labels and identity-aware features—has become the dominant strategy for reconciling the two tasks [Xiao et al., 2016](https://arxiv.org/abs/1604.01850); [Loesch et al., 2019](https://cea.hal.science/cea-03251768/document).",
+      "url": "https://arxiv.org/abs/1604.01850",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Identity-driven detection—supervising the detector with both box labels and identity-aware features—has become the dominant strategy for reconciling the two tasks [Xiao et al., 2016](https://arxiv.org/abs/1604.01850); [Loesch et al., 2019](https://cea.hal.science/cea-03251768/document).",
+      "url": "https://cea.hal.science/cea-03251768/document",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Both subfields require discriminative representations that capture identity-specific cues, whether learned from pixels [Xiao et al., 2016](https://arxiv.org/abs/1604.01850); [Multi-Level Joint Feature Learning, 2020](https://www.mdpi.com/1999-4893/13/5/111) or from cross-modal alignment [Zhou et al., 2017](https://arxiv.org/abs/1705.08923); [Deep Multimodal Representation Learning Survey, 2019](https://doi.org/10.1109/access.2019.2916887).",
+      "url": "https://arxiv.org/abs/1604.01850",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Both subfields require discriminative representations that capture identity-specific cues, whether learned from pixels [Xiao et al., 2016](https://arxiv.org/abs/1604.01850); [Multi-Level Joint Feature Learning, 2020](https://www.mdpi.com/1999-4893/13/5/111) or from cross-modal alignment [Zhou et al., 2017](https://arxiv.org/abs/1705.08923); [Deep Multimodal Representation Learning Survey, 2019](https://doi.org/10.1109/access.2019.2916887).",
+      "url": "https://mdpi.com/1999-4893/13/5/111",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Both subfields require discriminative representations that capture identity-specific cues, whether learned from pixels [Xiao et al., 2016](https://arxiv.org/abs/1604.01850); [Multi-Level Joint Feature Learning, 2020](https://www.mdpi.com/1999-4893/13/5/111) or from cross-modal alignment [Zhou et al., 2017](https://arxiv.org/abs/1705.08923); [Deep Multimodal Representation Learning Survey, 2019](https://doi.org/10.1109/access.2019.2916887).",
+      "url": "https://arxiv.org/abs/1705.08923",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Both subfields require discriminative representations that capture identity-specific cues, whether learned from pixels [Xiao et al., 2016](https://arxiv.org/abs/1604.01850); [Multi-Level Joint Feature Learning, 2020](https://www.mdpi.com/1999-4893/13/5/111) or from cross-modal alignment [Zhou et al., 2017](https://arxiv.org/abs/1705.08923); [Deep Multimodal Representation Learning Survey, 2019](https://doi.org/10.1109/access.2019.2916887).",
+      "url": "https://doi.org/10.1109/access.2019.2916887",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Both require a learned similarity metric—OIM queues, triplet mining, or identity regression in the image case [Li et al., 2020](https://arxiv.org/abs/2002.10560); [Person Re-identification in Identity Regression Space, 2018](https://pmc.ncbi.nlm.nih.gov/articles/PMC6411216/); and attention- or reinforcement-learning-driven cross-modal similarity in the text case [Shah & Vuong, 2018](https://arxiv.org/abs/1809.00365); [Zhou et al., 2017](https://arxiv.org/abs/1705.08923)—all of which fit under the unifying umbrella of deep metric learning [Deep Metric Learning Survey, 2019](https://doi.org/10.3390/sym11091066).",
+      "url": "https://arxiv.org/abs/2002.10560",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Both require a learned similarity metric—OIM queues, triplet mining, or identity regression in the image case [Li et al., 2020](https://arxiv.org/abs/2002.10560); [Person Re-identification in Identity Regression Space, 2018](https://pmc.ncbi.nlm.nih.gov/articles/PMC6411216/); and attention- or reinforcement-learning-driven cross-modal similarity in the text case [Shah & Vuong, 2018](https://arxiv.org/abs/1809.00365); [Zhou et al., 2017](https://arxiv.org/abs/1705.08923)—all of which fit under the unifying umbrella of deep metric learning [Deep Metric Learning Survey, 2019](https://doi.org/10.3390/sym11091066).",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6411216",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Both require a learned similarity metric—OIM queues, triplet mining, or identity regression in the image case [Li et al., 2020](https://arxiv.org/abs/2002.10560); [Person Re-identification in Identity Regression Space, 2018](https://pmc.ncbi.nlm.nih.gov/articles/PMC6411216/); and attention- or reinforcement-learning-driven cross-modal similarity in the text case [Shah & Vuong, 2018](https://arxiv.org/abs/1809.00365); [Zhou et al., 2017](https://arxiv.org/abs/1705.08923)—all of which fit under the unifying umbrella of deep metric learning [Deep Metric Learning Survey, 2019](https://doi.org/10.3390/sym11091066).",
+      "url": "https://arxiv.org/abs/1809.00365",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Both require a learned similarity metric—OIM queues, triplet mining, or identity regression in the image case [Li et al., 2020](https://arxiv.org/abs/2002.10560); [Person Re-identification in Identity Regression Space, 2018](https://pmc.ncbi.nlm.nih.gov/articles/PMC6411216/); and attention- or reinforcement-learning-driven cross-modal similarity in the text case [Shah & Vuong, 2018](https://arxiv.org/abs/1809.00365); [Zhou et al., 2017](https://arxiv.org/abs/1705.08923)—all of which fit under the unifying umbrella of deep metric learning [Deep Metric Learning Survey, 2019](https://doi.org/10.3390/sym11091066).",
+      "url": "https://arxiv.org/abs/1705.08923",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Both require a learned similarity metric—OIM queues, triplet mining, or identity regression in the image case [Li et al., 2020](https://arxiv.org/abs/2002.10560); [Person Re-identification in Identity Regression Space, 2018](https://pmc.ncbi.nlm.nih.gov/articles/PMC6411216/); and attention- or reinforcement-learning-driven cross-modal similarity in the text case [Shah & Vuong, 2018](https://arxiv.org/abs/1809.00365); [Zhou et al., 2017](https://arxiv.org/abs/1705.08923)—all of which fit under the unifying umbrella of deep metric learning [Deep Metric Learning Survey, 2019](https://doi.org/10.3390/sym11091066).",
+      "url": "https://doi.org/10.3390/sym11091066",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "And both benefit from end-to-end, identity-driven detection when the gallery consists of full scene images, since separate detect-then-match pipelines propagate error [Xiao et al., 2016](https://arxiv.org/abs/1604.01850); [Loesch et al., 2019](https://cea.hal.science/cea-03251768/document); [Xiao et al.",
+      "url": "https://arxiv.org/abs/1604.01850",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "And both benefit from end-to-end, identity-driven detection when the gallery consists of full scene images, since separate detect-then-match pipelines propagate error [Xiao et al., 2016](https://arxiv.org/abs/1604.01850); [Loesch et al., 2019](https://cea.hal.science/cea-03251768/document); [Xiao et al.",
+      "url": "https://cea.hal.science/cea-03251768/document",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "project page](http://www.ee.cuhk.edu.hk/~xgwang/PS/dataset.html).",
+      "url": "http://ee.cuhk.edu.hk/~xgwang/PS/dataset.html",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "First, discriminative features for text-based search are still constrained by the size and diversity of paired image–text corpora; methods must remain robust when natural-language descriptions are partial, ambiguous, or written by non-experts [Zhou et al., 2017](https://arxiv.org/abs/1705.08923); [Shah & Vuong, 2018](https://arxiv.org/abs/1809.00365).",
+      "url": "https://arxiv.org/abs/1705.08923",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "First, discriminative features for text-based search are still constrained by the size and diversity of paired image–text corpora; methods must remain robust when natural-language descriptions are partial, ambiguous, or written by non-experts [Zhou et al., 2017](https://arxiv.org/abs/1705.08923); [Shah & Vuong, 2018](https://arxiv.org/abs/1809.00365).",
+      "url": "https://arxiv.org/abs/1809.00365",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Second, although OIM and triplet losses have proven effective, the optimal pair-mining strategy for very large galleries and the integration of multiple loss terms continue to be active research questions [Li et al., 2020](https://arxiv.org/abs/2002.10560); [Deep Metric Learning Survey, 2019](https://doi.org/10.3390/sym11091066).",
+      "url": "https://arxiv.org/abs/2002.10560",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Second, although OIM and triplet losses have proven effective, the optimal pair-mining strategy for very large galleries and the integration of multiple loss terms continue to be active research questions [Li et al., 2020](https://arxiv.org/abs/2002.10560); [Deep Metric Learning Survey, 2019](https://doi.org/10.3390/sym11091066).",
+      "url": "https://doi.org/10.3390/sym11091066",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Third, identity-driven detection has made end-to-end person search viable, but balancing detection and identification objectives without sacrificing one for the other remains a subtle engineering problem whose solution depends on architecture and training schedule alike [Xiao et al., 2016](https://arxiv.org/abs/1604.01850); [Loesch et al., 2019](https://cea.hal.science/cea-03251768/document); [Deep Learning-Based Object Detection Survey, 2019](https://doi.org/10.1109/access.2019.2939201).",
+      "url": "https://arxiv.org/abs/1604.01850",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Third, identity-driven detection has made end-to-end person search viable, but balancing detection and identification objectives without sacrificing one for the other remains a subtle engineering problem whose solution depends on architecture and training schedule alike [Xiao et al., 2016](https://arxiv.org/abs/1604.01850); [Loesch et al., 2019](https://cea.hal.science/cea-03251768/document); [Deep Learning-Based Object Detection Survey, 2019](https://doi.org/10.1109/access.2019.2939201).",
+      "url": "https://cea.hal.science/cea-03251768/document",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Third, identity-driven detection has made end-to-end person search viable, but balancing detection and identification objectives without sacrificing one for the other remains a subtle engineering problem whose solution depends on architecture and training schedule alike [Xiao et al., 2016](https://arxiv.org/abs/1604.01850); [Loesch et al., 2019](https://cea.hal.science/cea-03251768/document); [Deep Learning-Based Object Detection Survey, 2019](https://doi.org/10.1109/access.2019.2939201).",
+      "url": "https://doi.org/10.1109/access.2019.2939201",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "For public-safety deployments, robustness to occlusion, low resolution, viewpoint shift, and long-term appearance drift will continue to be the principal practical hurdles, motivating identity-regression formulations that gracefully absorb appearance change over time [Person Re-identification in Identity Regression Space, 2018](https://pmc.ncbi.nlm.nih.gov/articles/PMC6411216/).",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6411216",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The CUHK-SYSU benchmark has provided a common evaluation ground [CUHK-SYSU dataset description](https://hyper.ai/en/datasets/17981), and joint end-to-end training [Xiao et al., 2016](https://arxiv.org/abs/1604.01850), OIM-style and triplet losses [Li et al., 2020](https://arxiv.org/abs/2002.10560), multi-level feature fusion [Multi-Level Joint Feature Learning, 2020](https://www.mdpi.com/1999-4893/13/5/111), attention-based cross-modal alignment [Zhou et al., 2017](https://arxiv.org/abs/1705.08923), and reinforcement-learning-driven query-to-gallery warping [Shah & Vuong, 2018](https://arxiv.org/abs/1809.00365) are among the most influential methodological threads up to May 2021.",
+      "url": "https://hyper.ai/en/datasets/17981",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The CUHK-SYSU benchmark has provided a common evaluation ground [CUHK-SYSU dataset description](https://hyper.ai/en/datasets/17981), and joint end-to-end training [Xiao et al., 2016](https://arxiv.org/abs/1604.01850), OIM-style and triplet losses [Li et al., 2020](https://arxiv.org/abs/2002.10560), multi-level feature fusion [Multi-Level Joint Feature Learning, 2020](https://www.mdpi.com/1999-4893/13/5/111), attention-based cross-modal alignment [Zhou et al., 2017](https://arxiv.org/abs/1705.08923), and reinforcement-learning-driven query-to-gallery warping [Shah & Vuong, 2018](https://arxiv.org/abs/1809.00365) are among the most influential methodological threads up to May 2021.",
+      "url": "https://arxiv.org/abs/1604.01850",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The CUHK-SYSU benchmark has provided a common evaluation ground [CUHK-SYSU dataset description](https://hyper.ai/en/datasets/17981), and joint end-to-end training [Xiao et al., 2016](https://arxiv.org/abs/1604.01850), OIM-style and triplet losses [Li et al., 2020](https://arxiv.org/abs/2002.10560), multi-level feature fusion [Multi-Level Joint Feature Learning, 2020](https://www.mdpi.com/1999-4893/13/5/111), attention-based cross-modal alignment [Zhou et al., 2017](https://arxiv.org/abs/1705.08923), and reinforcement-learning-driven query-to-gallery warping [Shah & Vuong, 2018](https://arxiv.org/abs/1809.00365) are among the most influential methodological threads up to May 2021.",
+      "url": "https://arxiv.org/abs/2002.10560",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The CUHK-SYSU benchmark has provided a common evaluation ground [CUHK-SYSU dataset description](https://hyper.ai/en/datasets/17981), and joint end-to-end training [Xiao et al., 2016](https://arxiv.org/abs/1604.01850), OIM-style and triplet losses [Li et al., 2020](https://arxiv.org/abs/2002.10560), multi-level feature fusion [Multi-Level Joint Feature Learning, 2020](https://www.mdpi.com/1999-4893/13/5/111), attention-based cross-modal alignment [Zhou et al., 2017](https://arxiv.org/abs/1705.08923), and reinforcement-learning-driven query-to-gallery warping [Shah & Vuong, 2018](https://arxiv.org/abs/1809.00365) are among the most influential methodological threads up to May 2021.",
+      "url": "https://mdpi.com/1999-4893/13/5/111",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The CUHK-SYSU benchmark has provided a common evaluation ground [CUHK-SYSU dataset description](https://hyper.ai/en/datasets/17981), and joint end-to-end training [Xiao et al., 2016](https://arxiv.org/abs/1604.01850), OIM-style and triplet losses [Li et al., 2020](https://arxiv.org/abs/2002.10560), multi-level feature fusion [Multi-Level Joint Feature Learning, 2020](https://www.mdpi.com/1999-4893/13/5/111), attention-based cross-modal alignment [Zhou et al., 2017](https://arxiv.org/abs/1705.08923), and reinforcement-learning-driven query-to-gallery warping [Shah & Vuong, 2018](https://arxiv.org/abs/1809.00365) are among the most influential methodological threads up to May 2021.",
+      "url": "https://arxiv.org/abs/1705.08923",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The CUHK-SYSU benchmark has provided a common evaluation ground [CUHK-SYSU dataset description](https://hyper.ai/en/datasets/17981), and joint end-to-end training [Xiao et al., 2016](https://arxiv.org/abs/1604.01850), OIM-style and triplet losses [Li et al., 2020](https://arxiv.org/abs/2002.10560), multi-level feature fusion [Multi-Level Joint Feature Learning, 2020](https://www.mdpi.com/1999-4893/13/5/111), attention-based cross-modal alignment [Zhou et al., 2017](https://arxiv.org/abs/1705.08923), and reinforcement-learning-driven query-to-gallery warping [Shah & Vuong, 2018](https://arxiv.org/abs/1809.00365) are among the most influential methodological threads up to May 2021.",
+      "url": "https://arxiv.org/abs/1809.00365",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Future progress will likely come from closer integration of these threads with advances in deep metric learning [Deep Metric Learning Survey, 2019](https://doi.org/10.3390/sym11091066), multimodal representation [Deep Multimodal Representation Learning Survey, 2019](https://doi.org/10.1109/access.2019.2916887), and detection architectures [Deep Learning-Based Object Detection Survey, 2019](https://doi.org/10.1109/access.2019.2939201), combined with continuous-identity formulations that better match the temporal nature of real surveillance deployments [Person Re-identification in Identity Regression Space, 2018](https://pmc.ncbi.nlm.nih.gov/articles/PMC6411216/).",
+      "url": "https://doi.org/10.3390/sym11091066",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Future progress will likely come from closer integration of these threads with advances in deep metric learning [Deep Metric Learning Survey, 2019](https://doi.org/10.3390/sym11091066), multimodal representation [Deep Multimodal Representation Learning Survey, 2019](https://doi.org/10.1109/access.2019.2916887), and detection architectures [Deep Learning-Based Object Detection Survey, 2019](https://doi.org/10.1109/access.2019.2939201), combined with continuous-identity formulations that better match the temporal nature of real surveillance deployments [Person Re-identification in Identity Regression Space, 2018](https://pmc.ncbi.nlm.nih.gov/articles/PMC6411216/).",
+      "url": "https://doi.org/10.1109/access.2019.2916887",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Future progress will likely come from closer integration of these threads with advances in deep metric learning [Deep Metric Learning Survey, 2019](https://doi.org/10.3390/sym11091066), multimodal representation [Deep Multimodal Representation Learning Survey, 2019](https://doi.org/10.1109/access.2019.2916887), and detection architectures [Deep Learning-Based Object Detection Survey, 2019](https://doi.org/10.1109/access.2019.2939201), combined with continuous-identity formulations that better match the temporal nature of real surveillance deployments [Person Re-identification in Identity Regression Space, 2018](https://pmc.ncbi.nlm.nih.gov/articles/PMC6411216/).",
+      "url": "https://doi.org/10.1109/access.2019.2939201",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Future progress will likely come from closer integration of these threads with advances in deep metric learning [Deep Metric Learning Survey, 2019](https://doi.org/10.3390/sym11091066), multimodal representation [Deep Multimodal Representation Learning Survey, 2019](https://doi.org/10.1109/access.2019.2916887), and detection architectures [Deep Learning-Based Object Detection Survey, 2019](https://doi.org/10.1109/access.2019.2939201), combined with continuous-identity formulations that better match the temporal nature of real surveillance deployments [Person Re-identification in Identity Regression Space, 2018](https://pmc.ncbi.nlm.nih.gov/articles/PMC6411216/).",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6411216",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "https://arxiv.org/abs/1604.01850",
+      "url": "https://arxiv.org/abs/1604.01850",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "http://www.ee.cuhk.edu.hk/~xgwang/PS/dataset.html",
+      "url": "http://ee.cuhk.edu.hk/~xgwang/PS/dataset.html",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "https://hyper.ai/en/datasets/17981",
+      "url": "https://hyper.ai/en/datasets/17981",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "https://cea.hal.science/cea-03251768/document",
+      "url": "https://cea.hal.science/cea-03251768/document",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "https://arxiv.org/abs/2002.10560",
+      "url": "https://arxiv.org/abs/2002.10560",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://arxiv.org/abs/1809.00365",
+      "url": "https://arxiv.org/abs/1809.00365",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://arxiv.org/abs/1705.08923",
+      "url": "https://arxiv.org/abs/1705.08923",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://www.mdpi.com/1999-4893/13/5/111",
+      "url": "https://mdpi.com/1999-4893/13/5/111",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6411216/",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6411216",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://doi.org/10.3390/sym11091066",
+      "url": "https://doi.org/10.3390/sym11091066",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://doi.org/10.1109/access.2019.2916887",
+      "url": "https://doi.org/10.1109/access.2019.2916887",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://doi.org/10.1109/access.2019.2939201",
+      "url": "https://doi.org/10.1109/access.2019.2939201",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    }
+  ],
+  "noncited_factual_accuracy": 0.5,
+  "noncited_count": 6,
+  "noncited_correct": 3,
+  "noncited_details": [
+    {
+      "claim": "Unlike classical person re-identification (re-id), which assumes pre-cropped pedestrian boxes, person search must handle the full pipeline: detecting the person in the scene and then matching them against the query.",
+      "evidence": [
+        {
+          "title": "A Comprehensive Overview of Person Re-Identification Approaches",
+          "abstract": "The person re-identification datasets should include identities captured from multiple cameras, preferably covering different scenes and regions ...",
+          "url": "https://ieeexplore.ieee.org/iel7/6287639/8948470/09023965.pdf"
+        },
+        {
+          "title": "Person Re-identification: System Design and Evaluation Overview",
+          "abstract": "All the existing person re-identification papers have ignored this step and assume per- fect pedestrian detection by using manually cropped pedestrian images.",
+          "url": "https://www.ee.cuhk.edu.hk/~xgwang/papers/wangZreid.pdf"
+        },
+        {
+          "title": "Person Re-Identification with Effectively Designed Parts - SciOpen",
+          "abstract": "In this paper, we study the person re-identification performance of using variously designed pedestrian parts instead of the horizontal ...",
+          "url": "https://www.sciopen.com/article/10.26599/TST.2019.9010031"
+        },
+        {
+          "title": "Tracking Classroom Movement Patterns with Person Re-ID",
+          "abstract": "In this paper, we adapted a person re-identification (re-ID) system for the unique demands of classroom environments,",
+          "url": "https://educationaldatamining.org/edm2024/proceedings/2024.EDM-posters.72/index.html"
+        },
+        {
+          "title": "Awesome Person Re-identification - GitHub",
+          "abstract": "This is a repository for organizing articles related to person re-identification. some papers require an academic license to browse. For example, IEEE, ...",
+          "url": "https://github.com/bismex/Awesome-person-re-identification"
+        }
+      ],
+      "true_votes": 1,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "The query is a free-form natural-language description, and the system retrieves matching pedestrian boxes in scene images.",
+      "evidence": [
+        {
+          "title": "Structured natural-language descriptions for semantic content ...",
+          "abstract": "Structured natural-language descriptions for semantic content retrieval of visual materials.",
+          "url": "https://www.academia.edu/16008140/Structured_natural_language_descriptions_for_semantic_content_retrieval_of_visual_materials"
+        },
+        {
+          "title": "Text-based Person Search in Full Images via Semantic-Driven ...",
+          "abstract": "Text-based person search (TBPS) aims to retrieve the images of the target person from a large image gallery based on a given natural language description.",
+          "url": "https://dl.acm.org/doi/10.1145/3606041.3618058"
+        },
+        {
+          "title": "GitHub - ChocoWu/Awesome-Scene-Graph ...",
+          "abstract": "We have released a new OmniSG parser, providing a unified toolkit for text, image, video, and 3D scene graph parsing, together with a Web UI demo and ...",
+          "url": "https://github.com/ChocoWu/Awesome-Scene-Graph-Generation"
+        },
+        {
+          "title": "Person search: New paradigm of person re-identification: A survey ...",
+          "abstract": "The most challenging problem in computer vision is visual query [51], [52]: searching a person in image database with the help of free form natural description.",
+          "url": "https://www.sciencedirect.com/science/article/pii/S0262885620301025"
+        },
+        {
+          "title": "Visual Semantic Search: Retrieving Videos via Complex Textual Queries",
+          "abstract": "In this paper, we tackle the problem of retrieving videos using complex natural language queries.",
+          "url": "https://www.cs.utoronto.ca/~fidler/papers/lin_et_al_cvpr14.pdf"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "The accompanying project page explicitly frames this contribution as 'End-to-End Deep Learning for Person Search' [Xiao et al.]",
+      "evidence": [
+        {
+          "title": "Awesome - Most Cited Deep Learning Papers",
+          "abstract": "The most cited deep learning papers. A curated list of the most cited deep learning papers (2012-2016) You can download all top-100 papers with. Random search ...",
+          "url": "https://github.com/terryum/awesome-deep-learning-papers"
+        },
+        {
+          "title": "Query-Guided End-To-End Person Search",
+          "abstract": "by B Munjal · 2019 · Cited by 203 — An improved deep learning architecture for person re-identification. Xiao, S. Li, B. . Wang. Joint detection and identification feature learning for person ...",
+          "url": "https://openaccess.thecvf.com/content_CVPR_2019/papers/Munjal_Query-Guided_End-To-End_Person_Search_CVPR_2019_paper.pdf"
+        },
+        {
+          "title": "A Review of Recent Deep Learning Approaches in Human ...",
+          "abstract": "by T Kaluarachchi · 2021 · Cited by 190 — The majority of this AI research typically explores developing algorithms and optimizing technologies with an emphasis on performant models benchmarked on ...",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8038476/"
+        },
+        {
+          "title": "End-to-End Deep Learning for Person Search",
+          "abstract": "by T Xiao · Cited by 319 — The contributions of this paper are summarized in three folds. (1) We propose an end-to-end deep learning frame- work to search for the query persons from ...",
+          "url": "https://www.ee.cuhk.edu.hk/~xgwang/PS/paper.pdf"
+        },
+        {
+          "title": "Final Project Guidelines",
+          "abstract": "The goal of the final project is for you to implement an entire deep learning pipeline yourself: data loading, model design, training, evaluation, and analysis.",
+          "url": "https://yixinwang.github.io/courses/deeplearning/fall22/deep_learning_project.pdf"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "In text-based search, the metric is cross-modal.",
+      "evidence": [
+        {
+          "title": "Practical Multimodal Embeddings: Video Recommendations ...",
+          "abstract": "developer workflows that embed text, audio, images, and video to power recommendations and semantic search. Using the TwelveLabs Embed API ...",
+          "url": "https://www.youtube.com/watch?v=PwGKtB6AY0o"
+        },
+        {
+          "title": "Calibrating Cross-modal Feature for Text-Based Person ...",
+          "abstract": "A novel and effective method calibrating cross-modal features for text-based person search that is cost-effective and can easily retrieve persons with textual ...",
+          "url": "https://www.semanticscholar.org/paper/06e6276a2b9daf47c22cbd98376d25330f6e9da4"
+        },
+        {
+          "title": "A Survey of Cross-Modal Image-Text Retrieval",
+          "abstract": "This paper presents a comprehensive survey of cross-modal image-text retrieval, addressing the limitations of previous studies that focused on single ...",
+          "url": "https://www.icck.org/filebob/uploads/storage/CJIF_k8UiIafD4xkk4zR.pdf"
+        },
+        {
+          "title": "Text-Based Person Search with Limited Data",
+          "abstract": "by X Han · 2021 · Cited by 183 — The main contributions of this paper are: (1) A novel cross-modal momentum contrastive learning framework is proposed to better utilize the existing small ...",
+          "url": "https://www.bmva-archive.org.uk/bmvc/2021/assets/papers/0044.pdf"
+        },
+        {
+          "title": "Text-based person search via fine-grained cross-modal ...",
+          "abstract": "Text-based Person Search (TBPS) aims to retrieve the person images using natural language descriptions.",
+          "url": "https://www.researchgate.net/publication/399476877_Text-based_person_search_via_fine-grained_cross-modal_semantic_alignment"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "The accompanying project page argues explicitly that breaking the pipeline into separate detection and re-id stages propagates error, and that a joint, end-to-end model is preferable [Xiao et al.]",
+      "evidence": [
+        {
+          "title": "How person re-identification (RE-ID) works with Computer Vision",
+          "abstract": "Person Re-Identification with OSNet is useful for this purpose. How person re-identification (RE-ID) works with Computer Vision",
+          "url": "https://www.youtube.com/watch?v=SMRLT-jbwgo"
+        },
+        {
+          "title": "What is Object Re-identification (Re-ID)?",
+          "abstract": "The core challenge of Re-ID is maintaining identity consistency despite variations in lighting, camera angles, pose, and background clutter. To achieve this, ...",
+          "url": "https://www.ultralytics.com/glossary/object-re-identification-re-id"
+        },
+        {
+          "title": "Deep Multimodal Representation Learning: A Survey",
+          "abstract": "Multimodal representation learning, which aims to narrow the heterogeneity gap among different modalities, plays an indispensable role in the utilization of ubiquitous multimodal data. Due to the powerful representation ability with multiple levels of abstraction, deep learning-based multimodal representation learning has attracted much attention in recent years. In this paper, we provided a comprehensive survey on deep multimodal representation learning which has never been concentrated entirely. To facilitate the discussion on how the heterogeneity gap is narrowed, according to the underlying structures in which different modalities are integrated, we category deep multimodal representation learning methods into three frameworks: joint representation, coordinated representation, and encoder-decoder. Additionally, we review some typical models in this area ranging from conventional models to newly developed technologies. This paper highlights on the key issues of newly developed technologies, such as encoder-decoder model, generative adversarial networks, and attention mechanism in a multimodal representation learning perspective, which, to the best of our knowledge, have never been reviewed previously, even though they have become the major focuses of much contemporary research. For each framework or model, we discuss its basic structure, learning objective, application scenes, key issues, advantages, and disadvantages, such that both novel and experienced researchers can benefit from this survey. Finally, we suggest some important directions for future work.",
+          "url": "https://doi.org/10.1109/access.2019.2916887"
+        },
+        {
+          "title": "Natural Language Person Search Using Deep Reinforcement Learning",
+          "abstract": "Recent success in deep reinforcement learning is having an agent learn how to play Go and beat the world champion without any prior knowledge of the game. In that task, the agent has to make a decision on what action to take based on the positions of the pieces. Person Search is recently explored using natural language based text description of images for video surveillance applications (S.Li et.al). We see (Fu.et al) provides an end to end approach for object-based retrieval using deep reinforcement learning without constraints placed on which objects are being detected. However, we believe for real-world applications such as person search defining specific constraints which identify a person as opposed to starting with a general object detection will have benefits in terms of performance and computational resources required. In our task, Deep reinforcement learning would localize the person in an image by reshaping the sizes of the bounding boxes. Deep Reinforcement learning with appropriate constraints would look only for the relevant person in the image as opposed to an unconstrained approach where each individual objects in the image are ranked. For person search, the agent is trying to form a tight bounding box around the person in the image who matches the description. The bounding box is initialized to the full image and at each time step, the agent makes a decision on how to change the current bounding box so that it has a tighter bound around the person based on the description of the person and the pixel values of the current bounding box. After the agent takes an action, it will be given a reward based on the Intersection over Union (IoU) of the current bounding box and the ground truth box. Once the agent believes that the bounding box is covering the person, it will indicate that the person is found.",
+          "url": "https://arxiv.org/abs/1809.00365"
+        },
+        {
+          "title": "Multi-Level Joint Feature Learning for Person Re-Identification - MDPI",
+          "abstract": "In this paper, we propose a Multi-level Feature Fusion model that combines both global features and local features of images through deep ...",
+          "url": "https://www.mdpi.com/1999-4893/13/5/111"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "Although image-based and text-based person search have historically been developed by largely separate communities, the three core challenges are remarkably aligned.",
+      "evidence": [
+        {
+          "title": "Revisiting Text-Based Person Retrieval: Mitigating Annotation ...",
+          "abstract": "Text-based person retrieval (TBPR) aims to search for target person images from large-scale video clips or image databases based on textual descriptions.",
+          "url": "https://www.mdpi.com/1424-8220/26/5/1599"
+        },
+        {
+          "title": "Text-Based Person Search with Limited Data - BMVA Archive",
+          "abstract": "Abstract. Text-based person search (TBPS) aims at retrieving a target person from an image gallery with a descriptive text query.",
+          "url": "https://www.bmva-archive.org.uk/bmvc/2021/assets/papers/0044.pdf"
+        },
+        {
+          "title": "Local-enhanced representation for text-based person search",
+          "abstract": "Text-based person search is a cross-domain task that combines the characteristics of person ReID and image-text retrieval. The current methods can be classified ...",
+          "url": "https://www.sciencedirect.com/science/article/pii/S0031320324009981"
+        },
+        {
+          "title": "Deep Multimodal Representation Learning: A Survey",
+          "abstract": "Multimodal representation learning, which aims to narrow the heterogeneity gap among different modalities, plays an indispensable role in the utilization of ubiquitous multimodal data. Due to the powerful representation ability with multiple levels of abstraction, deep learning-based multimodal representation learning has attracted much attention in recent years. In this paper, we provided a comprehensive survey on deep multimodal representation learning which has never been concentrated entirely. To facilitate the discussion on how the heterogeneity gap is narrowed, according to the underlying structures in which different modalities are integrated, we category deep multimodal representation learning methods into three frameworks: joint representation, coordinated representation, and encoder-decoder. Additionally, we review some typical models in this area ranging from conventional models to newly developed technologies. This paper highlights on the key issues of newly developed technologies, such as encoder-decoder model, generative adversarial networks, and attention mechanism in a multimodal representation learning perspective, which, to the best of our knowledge, have never been reviewed previously, even though they have become the major focuses of much contemporary research. For each framework or model, we discuss its basic structure, learning objective, application scenes, key issues, advantages, and disadvantages, such that both novel and experienced researchers can benefit from this survey. Finally, we suggest some important directions for future work.",
+          "url": "https://doi.org/10.1109/access.2019.2916887"
+        },
+        {
+          "title": "Natural Language Person Search Using Deep Reinforcement Learning",
+          "abstract": "Recent success in deep reinforcement learning is having an agent learn how to play Go and beat the world champion without any prior knowledge of the game. In that task, the agent has to make a decision on what action to take based on the positions of the pieces. Person Search is recently explored using natural language based text description of images for video surveillance applications (S.Li et.al). We see (Fu.et al) provides an end to end approach for object-based retrieval using deep reinforcement learning without constraints placed on which objects are being detected. However, we believe for real-world applications such as person search defining specific constraints which identify a person as opposed to starting with a general object detection will have benefits in terms of performance and computational resources required. In our task, Deep reinforcement learning would localize the person in an image by reshaping the sizes of the bounding boxes. Deep Reinforcement learning with appropriate constraints would look only for the relevant person in the image as opposed to an unconstrained approach where each individual objects in the image are ranked. For person search, the agent is trying to form a tight bounding box around the person in the image who matches the description. The bounding box is initialized to the full image and at each time step, the agent makes a decision on how to change the current bounding box so that it has a tighter bound around the person based on the description of the person and the pixel values of the current bounding box. After the agent takes an action, it will be given a reward based on the Intersection over Union (IoU) of the current bounding box and the ground truth box. Once the agent believes that the bounding box is covering the person, it will indicate that the person is found.",
+          "url": "https://arxiv.org/abs/1809.00365"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    }
+  ]
+}

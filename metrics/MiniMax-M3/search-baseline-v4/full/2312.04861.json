@@ -1,0 +1,1131 @@
+{
+  "arxiv_id": "2312.04861",
+  "model": "MiniMax-M3",
+  "system": "search-baseline-v4",
+  "reference_precision": 0.2,
+  "reference_recall": 0.010830324909747292,
+  "reference_count": 15,
+  "reference_matches": 3,
+  "ground_truth_count": 277,
+  "predicted_titles": [
+    "Object 3D Perception via Camera-Radar Cross-Modality Learning for Autonomous Driving",
+    "Camera–Radar Fusion with Modality Interaction and Radar Gaussian ...",
+    "Camera-Radar 3D Object Detection with Spatio-Contextual Fusion ...",
+    "RODNet: Radar Object Detection using Cross-Modal ...",
+    "RODNet: A Real-Time Radar Object Detection Network ...",
+    "Range-Doppler Detection in Automotive Radar with Deep ...",
+    "Deep Radar Detector",
+    "K-Radar: 4D Radar Object Detection for Autonomous Driving in Various Weather Conditions",
+    "Radar Camera Fusion via Representation Learning in Autonomous Driving",
+    "PolarNet: Accelerated Deep Open Space Segmentation Using Automotive Radar in Polar Domain",
+    "CenterRadarNet: Joint 3D Object Detection and Tracking Framework using 4D FMCW Radar",
+    "ERASE-Net: Efficient Segmentation Networks for Automotive Radar Signals",
+    "GET-UP: GEomeTric-aware Depth Estimation with Radar Points UPsampling",
+    "Bootstrapping Autonomous Driving Radars with Self-Supervised Learning",
+    "Cross-Domain Spatial Matching for Camera and Radar Sensor Data Fusion in Autonomous Vehicle Perception System"
+  ],
+  "cited_match_rate": 0.7580645161290323,
+  "cited_count": 62,
+  "cited_supported": 47,
+  "cited_details": [
+    {
+      "statement": "Automotive millimeter-wave radar (typically operating in the 77–81 GHz band) is a low-cost, weather-resilient, and reliable sensor that complements cameras and LiDAR in perception stacks for autonomous driving ([K-Radar, NeurIPS 2022](https://proceedings.neurips.cc/paper_files/paper/2022/hash/185fdf627eaae2abab36205dcd19b817-Abstract-Datasets_and_Benchmarks.html)).",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2022/hash/185fdf627eaae2abab36205dcd19b817-Abstract-Datasets_and_Benchmarks.html",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "However, unlike cameras and LiDAR, where deep learning has rapidly displaced classical processing pipelines, radar processing has historically lagged behind because radar signals are sparse, noisy, and lack the rich semantics of images ([Deep Radar Detector, 2019](https://arxiv.org/pdf/1906.12187)).",
+      "url": "https://arxiv.org/pdf/1906.12187",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Brodeski, Bilik, and Giryes introduced the *Deep Radar Detector*, the first framework to apply deep learning directly to complex radar data for a 4D detection task, relying on radar calibration data for supervision and proposing data-augmentation techniques tailored to radar ([Deep Radar Detector, 2019](https://arxiv.org/pdf/1906.12187)).",
+      "url": "https://arxiv.org/pdf/1906.12187",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "They observed that \"while camera and LiDAR processing have been revolutionized since the introduction of deep learning, radar processing still relies on classical tools\" ([Deep Radar Detector, 2019](https://arxiv.org/pdf/1906.12187)).",
+      "url": "https://arxiv.org/pdf/1906.12187",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "CenterRadarNet extends this philosophy to 4D frequency-modulated continuous-wave (FMCW) radar, noting that \"raw radio-frequency (RF) radar tensors contain rich spatiotemporal semantics\" beyond what hand-engineered features preserve, and proposes joint 3D detection and tracking directly on these tensors ([CenterRadarNet, 2023](https://arxiv.org/abs/2311.01423)).",
+      "url": "https://arxiv.org/abs/2311.01423",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "further argue that self-supervised learning on raw radar signals is essential because labeled radar data are scarce; their framework bootstraps representations from unlabeled raw radar ([Bootstrapping Autonomous Driving Radars, 2023](https://arxiv.org/abs/2312.04519)).",
+      "url": "https://arxiv.org/abs/2312.04519",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "demonstrated that RD maps can be fed directly to a deep network for automotive target detection, framing the problem as a classical signal-processing regression task recast as a learning problem ([Range-Doppler Detection with Deep Learning, 2020](http://vigir.ee.missouri.edu/~gdesouza/Research/Conference_CDs/IEEE_WCCI_2020/IJCNN/Papers/N-21054.pdf)).",
+      "url": "http://vigir.ee.missouri.edu/~gdesouza/Research/Conference_CDs/IEEE_WCCI_2020/IJCNN/Papers/N-21054.pdf",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Signal Processing, 2021](https://ui.adsabs.harvard.edu/abs/2021ISTSP..15..954W/abstract)).",
+      "url": "https://ui.adsabs.harvard.edu/abs/2021ISTSP..15..954W/abstract",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "A subsequent contribution, the CRUW3D dataset, extends this line of work by providing 66K synchronized camera–radar–LiDAR frames for cross-modal learning ([RODNet/CRUW3D entry, Semantic Scholar](https://www.semanticscholar.org/paper/RODNet%3A-Radar-Object-Detection-using-Cross-Modal-Wang-Jiang/3b858058c04da3871848b81e8d8304e24c1282d5)).",
+      "url": "https://semanticscholar.org/paper/RODNet%3A-Radar-Object-Detection-using-Cross-Modal-Wang-Jiang/3b858058c04da3871848b81e8d8304e24c1282d5",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The authors observe that \"the common practice to summarize information in raw RAD data by reducing 3D information in the signal to 2D planes via averaging\" tends to downgrade segmentation performance, and propose architectures that mitigate this loss while remaining computationally efficient ([ERASE-Net, 2022](https://arxiv.org/abs/2209.12940)).",
+      "url": "https://arxiv.org/abs/2209.12940",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "As there is no elevation information, it is challenging to estimate the 3D bounding box of an object from 3DRT\" ([K-Radar, NeurIPS 2022](https://proceedings.neurips.cc/paper_files/paper/2022/hash/185fdf627eaae2abab36205dcd19b817-Abstract-Datasets_and_Benchmarks.html)).",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2022/hash/185fdf627eaae2abab36205dcd19b817-Abstract-Datasets_and_Benchmarks.html",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "CenterRadarNet builds directly on this 4D tensor paradigm, exploiting the elevation dimension for joint detection and tracking with 4D FMCW radar ([CenterRadarNet, 2023](https://arxiv.org/abs/2311.01423)).",
+      "url": "https://arxiv.org/abs/2311.01423",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The doctoral work of Dong explicitly motivates camera–radar fusion by noting that \"the camera can capture rich semantic information, while radar has reliable ranging and speed estimation capability,\" and develops a 3D object perception strategy that consumes radar points in 3D space ([UW dissertation, 2023](https://digital.lib.washington.edu/researchworks/items/584e2f40-e50a-4284-8bf2-97c92df3d71d)).",
+      "url": "https://digital.lib.washington.edu/researchworks/items/584e2f40-e50a-4284-8bf2-97c92df3d71d",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "GET-UP (2024) introduces a geometry-aware radar-point upsampling method, observing that naïvely projecting radar points onto the image plane produces a sparse depth map and that learned upsampling significantly improves depth estimation accuracy ([GET-UP, 2024](https://arxiv.org/abs/2409.02720)).",
+      "url": "https://arxiv.org/abs/2409.02720",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A complementary direction, presented in the 2024 *Camera–Radar Fusion with Modality Interaction and Radar Gaussian* work, treats radar points as Gaussian primitives in the fusion space, arguing that this representation is more robust to the inherent positional uncertainty of radar returns than treating each detection as a hard pixel-level measurement ([Camera–Radar Fusion with Radar Gaussian, 2024](https://spj.science.org/doi/pdf/10.34133/cbsystems.0079)).",
+      "url": "https://spj.science.org/doi/pdf/10.34133/cbsystems.0079",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "PolarNet, introduced by Nowruzi et al., performs open-space segmentation directly in the polar domain, exploiting the fact that \"the natural acquisition geometry of FMCW radar is polar\" so that no costly range–azimuth reprojection is required before learning ([PolarNet, 2021](https://arxiv.org/abs/2103.03387)).",
+      "url": "https://arxiv.org/abs/2103.03387",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The CRAFT architecture for camera–radar 3D object detection also operates in the polar coordinate system, observing that \"image proposal with radar points in the polar coordinate system\" efficiently handles the discrepancy between coordinate systems of the two modalities ([CRAFT, 2023](https://underline.io/lecture/69109-craft-camera-radar-3d-object-detection-with-spatio-contextual-fusion-transformer)).",
+      "url": "https://underline.io/lecture/69109-craft-camera-radar-3d-object-detection-with-spatio-contextual-fusion-transformer",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Dong, Zhuang, Mao, and Liu (XSense.ai) introduced *Radar Camera Fusion via Representation Learning* in 2021, which is among the first works to formulate camera–radar fusion as a representation-learning problem rather than a rule-based projection, exploiting the fact that \"radars and cameras are mature, cost-effective, and robust sensors … widely used in the perception stack of mass-produced autonomous driving systems\" ([Radar Camera Fusion, 2021](https://arxiv.org/abs/2103.07825)).",
+      "url": "https://arxiv.org/abs/2103.07825",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The CRAFT model extends this idea with a spatio-contextual fusion transformer that adaptively exchanges features between the two modalities through cross-attention layers ([CRAFT, 2023](https://underline.io/lecture/69109-craft-camera-radar-3d-object-detection-with-spatio-contextual-fusion-transformer)).",
+      "url": "https://underline.io/lecture/69109-craft-camera-radar-3d-object-detection-with-spatio-contextual-fusion-transformer",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "proposed a *Cross-Domain Spatial Matching* (CDSM) method for camera–radar fusion that explicitly addresses the geometric mismatch between the dense image grid and the sparse radar cloud, achieving improved object matching on the NuScenes benchmark ([Cross-Domain Spatial Matching, 2024](https://arxiv.org/abs/2404.16548)).",
+      "url": "https://arxiv.org/abs/2404.16548",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The 2024 *Camera–Radar Fusion with Modality Interaction and Radar Gaussian* work similarly emphasizes that the *form* of the radar representation—Gaussians, points, or heat-maps—directly affects the quality of the fused 3D object estimates ([Camera–Radar Fusion with Radar Gaussian, 2024](https://spj.science.org/doi/pdf/10.34133/cbsystems.0079)).",
+      "url": "https://spj.science.org/doi/pdf/10.34133/cbsystems.0079",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "propose a self-supervised framework that learns radar representations from large amounts of unlabeled raw radar, then transfers them to downstream tasks such as detection ([Bootstrapping Autonomous Driving Radars, 2023](https://arxiv.org/abs/2312.04519)).",
+      "url": "https://arxiv.org/abs/2312.04519",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "GET-UP shows that geometry-aware radar-point upsampling can serve as an auxiliary representation learning objective that improves depth estimation performance without any additional labels ([GET-UP, 2024](https://arxiv.org/abs/2409.02720)).",
+      "url": "https://arxiv.org/abs/2409.02720",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Second, *geometric fidelity matters*: both polar-domain and Gaussian-primitive representations have been shown to outperform naïve Cartesian or hard-pixel projections because they respect the inherent uncertainty of radar returns ([PolarNet, 2021](https://arxiv.org/abs/2103.03387); [Camera–Radar Fusion with Radar Gaussian, 2024](https://spj.science.org/doi/pdf/10.34133/cbsystems.0079)).",
+      "url": "https://arxiv.org/abs/2103.03387",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Second, *geometric fidelity matters*: both polar-domain and Gaussian-primitive representations have been shown to outperform naïve Cartesian or hard-pixel projections because they respect the inherent uncertainty of radar returns ([PolarNet, 2021](https://arxiv.org/abs/2103.03387); [Camera–Radar Fusion with Radar Gaussian, 2024](https://spj.science.org/doi/pdf/10.34133/cbsystems.0079)).",
+      "url": "https://spj.science.org/doi/pdf/10.34133/cbsystems.0079",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Third, the field is moving from hand-crafted, single-sensor representations toward *learned joint representations* that fuse radar with cameras in a shared embedding space ([Radar Camera Fusion, 2021](https://arxiv.org/abs/2103.07825); [CRAFT, 2023](https://underline.io/lecture/69109-craft-camera-radar-3d-object-detection-with-spatio-contextual-fusion-transformer); [Cross-Domain Spatial Matching, 2024](https://arxiv.org/abs/2404.16548)).",
+      "url": "https://arxiv.org/abs/2103.07825",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Third, the field is moving from hand-crafted, single-sensor representations toward *learned joint representations* that fuse radar with cameras in a shared embedding space ([Radar Camera Fusion, 2021](https://arxiv.org/abs/2103.07825); [CRAFT, 2023](https://underline.io/lecture/69109-craft-camera-radar-3d-object-detection-with-spatio-contextual-fusion-transformer); [Cross-Domain Spatial Matching, 2024](https://arxiv.org/abs/2404.16548)).",
+      "url": "https://underline.io/lecture/69109-craft-camera-radar-3d-object-detection-with-spatio-contextual-fusion-transformer",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Third, the field is moving from hand-crafted, single-sensor representations toward *learned joint representations* that fuse radar with cameras in a shared embedding space ([Radar Camera Fusion, 2021](https://arxiv.org/abs/2103.07825); [CRAFT, 2023](https://underline.io/lecture/69109-craft-camera-radar-3d-object-detection-with-spatio-contextual-fusion-transformer); [Cross-Domain Spatial Matching, 2024](https://arxiv.org/abs/2404.16548)).",
+      "url": "https://arxiv.org/abs/2404.16548",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "seek to close ([K-Radar, 2022](https://proceedings.neurips.cc/paper_files/paper/2022/hash/185fdf627eaae2abab36205dcd19b817-Abstract-Datasets_and_Benchmarks.html); [Bootstrapping Radars, 2023](https://arxiv.org/abs/2312.04519))), the lossy nature of 2D reductions of 3D radar data ([ERASE-Net, 2022](https://arxiv.org/abs/2209.12940)), and the persistent difficulty of matching sparse radar points to dense image regions without geometric mismatch ([CDSM, 2024](https://arxiv.org/abs/2404.16548)).",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2022/hash/185fdf627eaae2abab36205dcd19b817-Abstract-Datasets_and_Benchmarks.html",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "seek to close ([K-Radar, 2022](https://proceedings.neurips.cc/paper_files/paper/2022/hash/185fdf627eaae2abab36205dcd19b817-Abstract-Datasets_and_Benchmarks.html); [Bootstrapping Radars, 2023](https://arxiv.org/abs/2312.04519))), the lossy nature of 2D reductions of 3D radar data ([ERASE-Net, 2022](https://arxiv.org/abs/2209.12940)), and the persistent difficulty of matching sparse radar points to dense image regions without geometric mismatch ([CDSM, 2024](https://arxiv.org/abs/2404.16548)).",
+      "url": "https://arxiv.org/abs/2312.04519",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "seek to close ([K-Radar, 2022](https://proceedings.neurips.cc/paper_files/paper/2022/hash/185fdf627eaae2abab36205dcd19b817-Abstract-Datasets_and_Benchmarks.html); [Bootstrapping Radars, 2023](https://arxiv.org/abs/2312.04519))), the lossy nature of 2D reductions of 3D radar data ([ERASE-Net, 2022](https://arxiv.org/abs/2209.12940)), and the persistent difficulty of matching sparse radar points to dense image regions without geometric mismatch ([CDSM, 2024](https://arxiv.org/abs/2404.16548)).",
+      "url": "https://arxiv.org/abs/2209.12940",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "seek to close ([K-Radar, 2022](https://proceedings.neurips.cc/paper_files/paper/2022/hash/185fdf627eaae2abab36205dcd19b817-Abstract-Datasets_and_Benchmarks.html); [Bootstrapping Radars, 2023](https://arxiv.org/abs/2312.04519))), the lossy nature of 2D reductions of 3D radar data ([ERASE-Net, 2022](https://arxiv.org/abs/2209.12940)), and the persistent difficulty of matching sparse radar points to dense image regions without geometric mismatch ([CDSM, 2024](https://arxiv.org/abs/2404.16548)).",
+      "url": "https://arxiv.org/abs/2404.16548",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://ui.adsabs.harvard.edu/abs/2021ISTSP..15..954W/abstract](https://ui.adsabs.harvard.edu/abs/2021ISTSP..15..954W/abstract)",
+      "url": "https://ui.adsabs.harvard.edu/abs/2021ISTSP..15..954W/abstract",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://ui.adsabs.harvard.edu/abs/2021ISTSP..15..954W/abstract](https://ui.adsabs.harvard.edu/abs/2021ISTSP..15..954W/abstract)",
+      "url": "https://ui.adsabs.harvard.edu/abs/2021ISTSP..15..954W/abstract",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://www.semanticscholar.org/paper/RODNet%3A-Radar-Object-Detection-using-Cross-Modal-Wang-Jiang/3b858058c04da3871848b81e8d8304e24c1282d5](https://www.semanticscholar.org/paper/RODNet%3A-Radar-Object-Detection-using-Cross-Modal-Wang-Jiang/3b858058c04da3871848b81e8d8304e24c1282d5)",
+      "url": "https://semanticscholar.org/paper/RODNet%3A-Radar-Object-Detection-using-Cross-Modal-Wang-Jiang/3b858058c04da3871848b81e8d8304e24c1282d5",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://www.semanticscholar.org/paper/RODNet%3A-Radar-Object-Detection-using-Cross-Modal-Wang-Jiang/3b858058c04da3871848b81e8d8304e24c1282d5](https://www.semanticscholar.org/paper/RODNet%3A-Radar-Object-Detection-using-Cross-Modal-Wang-Jiang/3b858058c04da3871848b81e8d8304e24c1282d5)",
+      "url": "https://semanticscholar.org/paper/RODNet%3A-Radar-Object-Detection-using-Cross-Modal-Wang-Jiang/3b858058c04da3871848b81e8d8304e24c1282d5",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://arxiv.org/pdf/1906.12187](https://arxiv.org/pdf/1906.12187)",
+      "url": "https://arxiv.org/pdf/1906.12187",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://arxiv.org/pdf/1906.12187](https://arxiv.org/pdf/1906.12187)",
+      "url": "https://arxiv.org/pdf/1906.12187",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[http://vigir.ee.missouri.edu/~gdesouza/Research/Conference_CDs/IEEE_WCCI_2020/IJCNN/Papers/N-21054.pdf](http://vigir.ee.missouri.edu/~gdesouza/Research/Conference_CDs/IEEE_WCCI_2020/IJCNN/Papers/N-21054.pdf)",
+      "url": "http://vigir.ee.missouri.edu/~gdesouza/Research/Conference_CDs/IEEE_WCCI_2020/IJCNN/Papers/N-21054.pdf",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[http://vigir.ee.missouri.edu/~gdesouza/Research/Conference_CDs/IEEE_WCCI_2020/IJCNN/Papers/N-21054.pdf](http://vigir.ee.missouri.edu/~gdesouza/Research/Conference_CDs/IEEE_WCCI_2020/IJCNN/Papers/N-21054.pdf)",
+      "url": "http://vigir.ee.missouri.edu/~gdesouza/Research/Conference_CDs/IEEE_WCCI_2020/IJCNN/Papers/N-21054.pdf",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://proceedings.neurips.cc/paper_files/paper/2022/hash/185fdf627eaae2abab36205dcd19b817-Abstract-Datasets_and_Benchmarks.html](https://proceedings.neurips.cc/paper_files/paper/2022/hash/185fdf627eaae2abab36205dcd19b817-Abstract-Datasets_and_Benchmarks.html)",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2022/hash/185fdf627eaae2abab36205dcd19b817-Abstract-Datasets_and_Benchmarks.html",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://proceedings.neurips.cc/paper_files/paper/2022/hash/185fdf627eaae2abab36205dcd19b817-Abstract-Datasets_and_Benchmarks.html](https://proceedings.neurips.cc/paper_files/paper/2022/hash/185fdf627eaae2abab36205dcd19b817-Abstract-Datasets_and_Benchmarks.html)",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2022/hash/185fdf627eaae2abab36205dcd19b817-Abstract-Datasets_and_Benchmarks.html",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://arxiv.org/abs/2311.01423](https://arxiv.org/abs/2311.01423)",
+      "url": "https://arxiv.org/abs/2311.01423",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://arxiv.org/abs/2311.01423](https://arxiv.org/abs/2311.01423)",
+      "url": "https://arxiv.org/abs/2311.01423",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://arxiv.org/abs/2209.12940](https://arxiv.org/abs/2209.12940)",
+      "url": "https://arxiv.org/abs/2209.12940",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://arxiv.org/abs/2209.12940](https://arxiv.org/abs/2209.12940)",
+      "url": "https://arxiv.org/abs/2209.12940",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://arxiv.org/abs/2103.03387](https://arxiv.org/abs/2103.03387)",
+      "url": "https://arxiv.org/abs/2103.03387",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://arxiv.org/abs/2103.03387](https://arxiv.org/abs/2103.03387)",
+      "url": "https://arxiv.org/abs/2103.03387",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://arxiv.org/abs/2103.07825](https://arxiv.org/abs/2103.07825)",
+      "url": "https://arxiv.org/abs/2103.07825",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://arxiv.org/abs/2103.07825](https://arxiv.org/abs/2103.07825)",
+      "url": "https://arxiv.org/abs/2103.07825",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "\"CRAFT: Camera-Radar 3D Object Detection with Spatio-Contextual Fusion Transformer.\" [https://underline.io/lecture/69109-craft-camera-radar-3d-object-detection-with-spatio-contextual-fusion-transformer](https://underline.io/lecture/69109-craft-camera-radar-3d-object-detection-with-spatio-contextual-fusion-transformer)",
+      "url": "https://underline.io/lecture/69109-craft-camera-radar-3d-object-detection-with-spatio-contextual-fusion-transformer",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "\"CRAFT: Camera-Radar 3D Object Detection with Spatio-Contextual Fusion Transformer.\" [https://underline.io/lecture/69109-craft-camera-radar-3d-object-detection-with-spatio-contextual-fusion-transformer](https://underline.io/lecture/69109-craft-camera-radar-3d-object-detection-with-spatio-contextual-fusion-transformer)",
+      "url": "https://underline.io/lecture/69109-craft-camera-radar-3d-object-detection-with-spatio-contextual-fusion-transformer",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://arxiv.org/abs/2404.16548](https://arxiv.org/abs/2404.16548)",
+      "url": "https://arxiv.org/abs/2404.16548",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://arxiv.org/abs/2404.16548](https://arxiv.org/abs/2404.16548)",
+      "url": "https://arxiv.org/abs/2404.16548",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://spj.science.org/doi/pdf/10.34133/cbsystems.0079](https://spj.science.org/doi/pdf/10.34133/cbsystems.0079)",
+      "url": "https://spj.science.org/doi/pdf/10.34133/cbsystems.0079",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "[https://spj.science.org/doi/pdf/10.34133/cbsystems.0079](https://spj.science.org/doi/pdf/10.34133/cbsystems.0079)",
+      "url": "https://spj.science.org/doi/pdf/10.34133/cbsystems.0079",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "[https://arxiv.org/abs/2409.02720](https://arxiv.org/abs/2409.02720)",
+      "url": "https://arxiv.org/abs/2409.02720",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://arxiv.org/abs/2409.02720](https://arxiv.org/abs/2409.02720)",
+      "url": "https://arxiv.org/abs/2409.02720",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://arxiv.org/abs/2312.04519](https://arxiv.org/abs/2312.04519)",
+      "url": "https://arxiv.org/abs/2312.04519",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://arxiv.org/abs/2312.04519](https://arxiv.org/abs/2312.04519)",
+      "url": "https://arxiv.org/abs/2312.04519",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://digital.lib.washington.edu/researchworks/items/584e2f40-e50a-4284-8bf2-97c92df3d71d](https://digital.lib.washington.edu/researchworks/items/584e2f40-e50a-4284-8bf2-97c92df3d71d)",
+      "url": "https://digital.lib.washington.edu/researchworks/items/584e2f40-e50a-4284-8bf2-97c92df3d71d",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://digital.lib.washington.edu/researchworks/items/584e2f40-e50a-4284-8bf2-97c92df3d71d](https://digital.lib.washington.edu/researchworks/items/584e2f40-e50a-4284-8bf2-97c92df3d71d)",
+      "url": "https://digital.lib.washington.edu/researchworks/items/584e2f40-e50a-4284-8bf2-97c92df3d71d",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    }
+  ],
+  "noncited_factual_accuracy": 0.6,
+  "noncited_count": 20,
+  "noncited_correct": 12,
+  "noncited_details": [
+    {
+      "claim": "RODNet trains a real-time radar object detection network on range–Doppler heat-maps.",
+      "evidence": [
+        {
+          "title": "Exploring Radar Data Representations in Autonomous ...",
+          "abstract": "RODNet, 2020, Detection. CRUW. WACV. Paper. 5, RODNet: A Real-Time Radar Object Detection Network Cross-Supervised by Camera-Radar Fused Object 3D Localization ...",
+          "url": "https://radar-camera-fusion.github.io/radar/"
+        },
+        {
+          "title": "yizhou-wang/RODNet - Radar object detection network",
+          "abstract": "This is the official implementation of our RODNet papers at WACV 2021 and IEEE J-STSP 2021. A Real-Time Radar Object Detection Network. Radar object detection ...",
+          "url": "https://github.com/yizhou-wang/RODNet"
+        },
+        {
+          "title": "ROD2021",
+          "abstract": "Radar Object Detection Challenge. RODNet: A Real-Time Radar Object Detection Network. Using Deep Learning on Range-Azimuth-Doppler Tensors.\"",
+          "url": "https://www.cruwdataset.org/rod2021"
+        },
+        {
+          "title": "RODNet A Real-Time Radar Object Detection Network",
+          "abstract": "This paper presents RODNet, a real-time radar object detection network that utilizes a cross-supervised learning approach by integrating camera-radar fused ...",
+          "url": "https://www.scribd.com/document/1021702630/RODNet-a-Real-Time-Radar-Object-Detection-Network"
+        },
+        {
+          "title": "RODNet: A Real-Time Radar Object Detection Network ...",
+          "abstract": "A deep radar object detection network, named RODNet, This paper demonstrates a deep-learning-based vehicle detection solution. Wild Using Doppler Radar",
+          "url": "https://www.semanticscholar.org/paper/RODNet%3A-A-Real-Time-Radar-Object-Detection-Network-Wang-Jiang/7e2db3b56c82a4aeae52cd71bbeef6d09e95d2d8"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "RODNet uses a camera-radar fused algorithm for cross-modal supervision to avoid the need for expensive radar-only annotations.",
+      "evidence": [
+        {
+          "title": "27 - RODNet: Radar Object Detection using Cross-Modal ...",
+          "abstract": "In this paper we propose a camera reader cross models perfusion framework.",
+          "url": "https://www.youtube.com/watch?v=UZbxI4o2-7g"
+        },
+        {
+          "title": "Introduction",
+          "abstract": "camera-only annotation is by taking advantage of radar, Fuse the location results from camera and radar by the distances between each pair. During",
+          "url": "https://www.cruwdataset.org/introduction"
+        },
+        {
+          "title": "Radar Object Detection Using Cross-Modal Supervision",
+          "abstract": "by Y Wang · 2020 · Cited by 156 — In this paper, we propose a deep radar object detection network (RODNet), to effectively detect objects purely from the carefully processed ...",
+          "url": "https://arxiv.org/abs/2003.01816"
+        },
+        {
+          "title": "Yizhou Wang · Homepage",
+          "abstract": "RODNet: Radar Object Detection Using Cross-Modal Supervision. We propose a deep radar object detection network (RODNet), to effectively ...",
+          "url": "http://yizhouwang.net/research.html"
+        },
+        {
+          "title": "RODNet: Radar Object Detection using Cross-Modal ...",
+          "abstract": "A deep radar object detection network (RODNet), to effectively detect objects purely from the carefully processed radar frequency data in the format of ...",
+          "url": "https://www.semanticscholar.org/paper/RODNet%3A-Radar-Object-Detection-using-Cross-Modal-Wang-Jiang/3b858058c04da3871848b81e8d8304e24c1282d5"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "ERASE-Net studies efficient segmentation networks that consume automotive radar signals reduced to 2D planes.",
+      "evidence": [
+        {
+          "title": "Deep Open Space Segmentation using Automotive Radar",
+          "abstract": "In this work, we introduce ERASE-Net, an Efficient RAdar SEgmentation Network to segment the raw radar signals semantically.",
+          "url": "https://www.researchgate.net/publication/347957195_Deep_Open_Space_Segmentation_using_Automotive_Radar"
+        },
+        {
+          "title": "Temporal-Aware Radar Semantic Segmentation Network",
+          "abstract": "by Y Zhang · 2024 · Cited by 8 — Considering the above research gaps, this paper conducts a comprehensive discussion from the perspective of RSS for existing time series modeling paradigms, ...",
+          "url": "https://proceedings.neurips.cc/paper_files/paper/2024/file/08a362bd4ae1934e099ce025f06039fe-Paper-Conference.pdf"
+        },
+        {
+          "title": "Terrain detection and segmentation for autonomous ...",
+          "abstract": "by MM Kabir · 2025 · Cited by 98 — This review comprehensively investigates the current state and emerging trends of autonomous vehicle terrain detection and segmentation.",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1566253524004226"
+        },
+        {
+          "title": "Deep segmentation of 3+1D radar point cloud for real-time ...",
+          "abstract": "by S Bhanderi · 2025 · Cited by 2 — This section provides a comprehensive summary of the state of research on machine learning applied to automotive radar point clouds. A neural ...",
+          "url": "https://www.nature.com/articles/s41598-025-23019-6"
+        },
+        {
+          "title": "Sep-RefineNet: A Deinterleaving Method for Radar Signals ...",
+          "abstract": "by Y Mao · 2023 · Cited by 12 — The Sep-RefineNet semantic segmentation network can complete pixel-level segmentation of the frequency characteristic matrix and finally uses position decoding ...",
+          "url": "https://www.mdpi.com/2076-3417/13/4/2726"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "Recent automotive radars can output a 4D radar tensor (4DRT) spanning Doppler, range, azimuth, and elevation.",
+      "evidence": [
+        {
+          "title": "A Deep Automotive Radar Object Detector on Range- ...",
+          "abstract": "by C Decourt · 2022 · Cited by 55 — In this paper, we present DAROD, an adaptation of Faster R-CNN object detector for automotive radar on the range- Doppler spectra.",
+          "url": "https://hal.science/hal-03759535v2/document"
+        },
+        {
+          "title": "ZhangAoCanada/RADDet: Range-Azimuth-Doppler Based ...",
+          "abstract": "Our paper is accepted by 2021 18th Conference on Robots and Vision (CRV). To read the paper, see arXiv preprint or IEEE Version or CRV Conference Version.",
+          "url": "https://github.com/ZhangAoCanada/RADDet"
+        },
+        {
+          "title": "Radar Timing Range–Doppler Spectral Target Detection ...",
+          "abstract": "by F Jia · 2023 · Cited by 21 — In this paper, we propose a new deep learning model for object detection and classification in complex traffic scenes via range–Doppler maps (RD ...",
+          "url": "https://www.mdpi.com/2072-4292/15/17/4150"
+        },
+        {
+          "title": "Range-Azimuth-Doppler based Radar Object Detection ... - ar5iv",
+          "abstract": "In this paper, we collect a novel radar dataset that contains radar data in the form of Range-Azimuth-Doppler tensors along with the bounding boxes on the ...",
+          "url": "https://ar5iv.labs.arxiv.org/html/2105.00363"
+        },
+        {
+          "title": "RADDet: Range-Azimuth-Doppler based Radar Object ...",
+          "abstract": "Vehicle Detection With Automotive Radar Using Deep Learning on Range-Azimuth-Doppler Tensors. Conference Paper. Oct 2019. Bence Major · Daniel ...",
+          "url": "https://www.researchgate.net/publication/353024705_RADDet_Range-Azimuth-Doppler_based_Radar_Object_Detection_for_Dynamic_Road_Users"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "The K-Radar benchmark was introduced at NeurIPS 2022.",
+      "evidence": [
+        {
+          "title": "4D Radar Object Detection for Autonomous Driving in ...",
+          "abstract": "by DH Paek · 2022 · Cited by 308 — In this work, we introduce KAIST-Radar (K-Radar), a novel large-scale object detection dataset and benchmark that contains 35K frames of 4D ...",
+          "url": "https://arxiv.org/abs/2206.08171"
+        },
+        {
+          "title": "K-Radar: 4D Radar Object Detection Dataset and ...",
+          "abstract": "In this paper, we have introduced a 4DRT-based 3D object detection dataset and benchmark, K-Radar. The K-Radar dataset consists of 35K frames with 4DRT, LPC ...",
+          "url": "https://www.researchgate.net/publication/361359662_K-Radar_4D_Radar_Object_Detection_Dataset_and_Benchmark_for_Autonomous_Driving_in_Various_Weather_Conditions"
+        },
+        {
+          "title": "NeurIPS 2025 Datasets & Benchmarks Track Call for Papers",
+          "abstract": "The NeurIPS Datasets and Benchmarks track serves as a venue for high-quality publications on highly valuable machine learning datasets and benchmarks crucial ...",
+          "url": "https://neurips.cc/Conferences/2025/CallForDatasetsBenchmarks"
+        },
+        {
+          "title": "NeurIPS 2025 San Diego Datasets & Benchmarks",
+          "abstract": "In this paper, to bridge the gap created by the absence of 4D Radar datasets in cooperative perception, we present V2X-Radar, the first large-scale, real ...",
+          "url": "https://neurips.cc/virtual/2025/loc/san-diego/events/datasets-benchmarks-2025"
+        },
+        {
+          "title": "4D Radar Object Detection for Autonomous Driving in ...",
+          "abstract": "by DH Paek · 2022 · Cited by 307 — In this work, we introduce KAIST-Radar (K-Radar), a novel large-scale object detection dataset and benchmark that contains 35K frames of 4D Radar tensor (4DRT) ...",
+          "url": "https://proceedings.neurips.cc/paper_files/paper/2022/hash/185fdf627eaae2abab36205dcd19b817-Abstract-Datasets_and_Benchmarks.html"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "K-Radar was the first large-scale public dataset to provide 4DRT data.",
+      "evidence": [
+        {
+          "title": "KuRALS: Ku-Band Radar Datasets for Multi-Scene Long-Range ... - MDPI",
+          "abstract": "Large-scale radar datasets play a vital role in advancing deep learning-based radar perception [15,19,20]. However, perception tasks vary significantly across ...",
+          "url": "https://www.mdpi.com/2072-4292/18/1/173"
+        },
+        {
+          "title": "K-Radar: 4D Radar Object Detection for Autonomous Driving in Various ...",
+          "abstract": "In this work, we introduce KAIST-Radar (K-Radar), a novel large-scale object detection dataset and benchmark that contains 35K frames of 4D Radar tensor (4DRT) ...",
+          "url": "https://proceedings.neurips.cc/paper_files/paper/2022/hash/185fdf627eaae2abab36205dcd19b817-Abstract-Datasets_and_Benchmarks.html"
+        },
+        {
+          "title": "4D Radar Object Detection Dataset and Benchmark for Autonomous ...",
+          "abstract": "KAIST-Radar (K-Radar), a novel large-scale object detection dataset and benchmark that contains 35K frames of 4D Radar tensor (4DRT) data with power ...",
+          "url": "https://www.semanticscholar.org/paper/K-Radar%3A-4D-Radar-Object-Detection-Dataset-and-for-Paek-Kong/9a6f72226f6cb0e8b68d6108b06ede5bd43cbd01"
+        },
+        {
+          "title": "K-Radar: 4D Radar Object Detection for Autonomous Driving in Various ...",
+          "abstract": "To the best of our knowledge, the proposed K-Radar is the first large-scale dataset that provide 4DRT measurements on diverse conditions along with 3D bounding ...",
+          "url": "https://ar5iv.labs.arxiv.org/html/2206.08171"
+        },
+        {
+          "title": "K-Radar: 4D Radar Object Detection for Autonomous Driving in Various ...",
+          "abstract": "We introduce KAIST-Radar (K-Radar), the first large-scale 4DRT-based 3D object detection dataset and benchmark with 35K frames, including ...",
+          "url": "https://liner.com/review/kradar-4d-radar-object-detection-for-autonomous-driving-in-various"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "K-Radar contains 35K frames collected under varied weather conditions.",
+      "evidence": [
+        {
+          "title": "KuRALS: Ku-Band Radar Datasets for Multi-Scene Long-Range ... - MDPI",
+          "abstract": "As an active detection device, radar demonstrates greater robustness compared to cameras and LiDAR in extreme weather conditions (such as rain, snow and fog) ...",
+          "url": "https://www.mdpi.com/2072-4292/18/1/173"
+        },
+        {
+          "title": "GitHub - kaist-avelab/K-Radar: 4D Radar Object Detection for ...",
+          "abstract": "K-Radar includes challenging driving conditions such as adverse weathers (fog, rain, and snow) on various road structures (urban, suburban roads, alleyways, and ...",
+          "url": "https://github.com/kaist-avelab/K-Radar"
+        },
+        {
+          "title": "K-Radar: 4D Radar Object Detection for Autonomous Driving in Various ...",
+          "abstract": "KAIST-Radar is introduced, a novel large-scale object detection dataset and benchmark that contains 35K frames of 4D Radar tensor (4DRT) data with power ...",
+          "url": "https://www.semanticscholar.org/paper/K-Radar%3A-4D-Radar-Object-Detection-for-Autonomous-Paek-Kong/8098fbba14d7a67a929916e1123b1212bc0a29f9"
+        },
+        {
+          "title": "K-Radar: 4D Radar Object Detection for Autonomous Driving in Various ...",
+          "abstract": "In this work, we introduce KAIST-Radar (K-Radar), a novel large-scale object detection dataset and benchmark that contains 35K frames of 4D Radar tensor (4DRT) ...",
+          "url": "https://proceedings.neurips.cc/paper_files/paper/2022/hash/185fdf627eaae2abab36205dcd19b817-Abstract-Datasets_and_Benchmarks.html"
+        },
+        {
+          "title": "K-Radar: 4D Radar Object Detection for Autonomous Driving in Various ...",
+          "abstract": "The K-Radar dataset consists of 35K frames with 4DRT, LPC, surround camera images, and RTK-IMU data, all of which are collected in various time and weather ...",
+          "url": "https://ar5iv.labs.arxiv.org/html/2206.08171"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "The natural acquisition geometry of FMCW radar is polar (range, azimuth, Doppler) rather than Cartesian.",
+      "evidence": [
+        {
+          "title": "A Synchronized FMCW Radar, Depth, IMU and RGB ...",
+          "abstract": "by TY Lim · 2021 · Cited by 93 — we transform this polar image into Cartesian coordinates. Sampling of RGB frames and their associated range-azimuth and range-Doppler plots.",
+          "url": "https://ieeexplore.ieee.org/iel7/4200690/9448241/09361086.pdf"
+        },
+        {
+          "title": "Range-Azimuth-Doppler based Radar Object Detection ... - ar5iv",
+          "abstract": "In this paper, we collect a novel radar dataset that contains radar data in the form of Range-Azimuth-Doppler tensors",
+          "url": "https://ar5iv.labs.arxiv.org/html/2105.00363"
+        },
+        {
+          "title": "RADDet: Range-Azimuth-Doppler based Radar Object ...",
+          "abstract": "Range-Azimuth-Doppler based. Range-Azimuth-Doppler (RAD) tensors, introducing a polar-to-Cartesian transformation to align radar features with the Bird's-Eye. ...",
+          "url": "https://www.researchgate.net/publication/353024705_RADDet_Range-Azimuth-Doppler_based_Radar_Object_Detection_for_Dynamic_Road_Users"
+        },
+        {
+          "title": "A Deep Automotive Radar Object Detector on Range- ...",
+          "abstract": "In this paper we propose a new deep learning model for object detection and classification using radar data. 1Artificial and Natural ...",
+          "url": "https://hal.science/hal-03759535v1/document"
+        },
+        {
+          "title": "Mapping of urban scenes by single-channel mmW FMCW ...",
+          "abstract": "This thesis indicates for the first time the feasibility of processing high-resolution airborne W-band FMCW SAR data acquired from circular trajectories.",
+          "url": "https://mediatum.ub.tum.de/doc/1618641/1618641.pdf"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "RODNet was published by Wang et al. in IEEE Transactions on Signal Processing in 2021.",
+      "evidence": [
+        {
+          "title": "Journal Articles",
+          "abstract": "IEEE Transactions on Signal Processing, 2024. Wang, Z. Ding, IEEE Transactions on Signal Processing, vol. 72, pp. 384-399, 2024, Ling, J. Wang, X. IEEE ...",
+          "url": "https://www.ece.ucdavis.edu/~zding/journals.html"
+        },
+        {
+          "title": "IEEE Transactions on Signal Processing",
+          "abstract": "In this paper, a compressive sensing (CS) approach is proposed for sparse binary signals' compression and reconstruction based on analog fountain codes (AFCs).",
+          "url": "https://journals.scholarsportal.info/browse/1053587x/v63i0024"
+        },
+        {
+          "title": "IEEE Transactions on Signal Processing, Volume 62 - DBLP",
+          "abstract": "IEEE Transactions on Signal Processing, Volume 62. in Time-Frequency Analysis. view electronic edition via DOI",
+          "url": "https://dblp.org/db/journals/tsp/tsp62"
+        },
+        {
+          "title": "IEEE Transactions on Signal Processing, Volume 40 - DBLP",
+          "abstract": "IEEE Transactions on Signal Processing, Volume 40. Xin Wang: On the gradient inverse weighted filter [image processing]. 482-484 view electronic edition via ...",
+          "url": "https://dblp.org/db/journals/tsp/tsp40"
+        },
+        {
+          "title": "IEEE Transactions on Signal Processing - Top Authors - exaly.com",
+          "abstract": "This is the scientometric profile of IEEE Transactions on Signal Processing built by the analysis of articles and citations.",
+          "url": "https://exaly.com/journal/13083/ieee-transactions-on-signal-processing/top-authors"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "Paek et al. published K-Radar at NeurIPS 2022.",
+      "evidence": [
+        {
+          "title": "NeurIPS Poster Non-Line-of-Sight 3D Reconstruction with Radar",
+          "abstract": "In this paper, we introduce HoloRadar, a novel system that accurately reconstructs both LOS and NLOS 3D scenes with a mmWave radar.",
+          "url": "https://neurips.cc/virtual/2025/poster/116868"
+        },
+        {
+          "title": "RAPTR: Radar-based 3D Pose Estimation using Transformer",
+          "abstract": "NeurIPS Paper Abstract Radar-based indoor 3D human pose estimation typically relied on fine-grained 3D keypoint labels, K = 14 for HIBER and K = 17 for MMVR.",
+          "url": "https://neurips.cc/virtual/2025/poster/119916"
+        },
+        {
+          "title": "TARSS-Net: Temporal-Aware Radar Semantic Segmentation ...",
+          "abstract": "NeurIPS Paper Abstract Radar signal interpretation plays a crucial role in remote detection and ranging. Radar is a reliable remote sensing ...",
+          "url": "https://neurips.cc/virtual/2024/poster/96608"
+        },
+        {
+          "title": "NeurIPS 2025 Papers with Code & Data",
+          "abstract": "Highlight: In this paper, we introduce UI-Genie, a self-improving framework addressing two key challenges in GUI agents: verification of ...",
+          "url": "https://www.paperdigest.org/2025/11/neurips-2025-papers-with-code-data/"
+        },
+        {
+          "title": "Availability-aware Sensor Fusion via Unified Canonical ...",
+          "abstract": "by DH Paek · Cited by 3 — The paper proposes a multimodal data (including cameras, LiDAR, radar signals) fusion method for autonomous vehicle perception.",
+          "url": "https://openreview.net/forum?id=foy0BWzOFL"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "Ng et al. published 'Range-Doppler Detection in Automotive Radar with Deep Learning' at IJCNN 2020.",
+      "evidence": [
+        {
+          "title": "Range-Doppler Detection in Automotive Radar with Deep ...",
+          "abstract": "Abstract—This paper presents a comprehensive study on radar detection using deep learning with application to automotive vehicles.",
+          "url": "http://vigir.ee.missouri.edu/~gdesouza/Research/Conference_CDs/IEEE_WCCI_2020/IJCNN/Papers/N-21054.pdf"
+        },
+        {
+          "title": "Range-Doppler Detection in Automotive Radar with Deep ...",
+          "abstract": "We identify deep learning challenges that are specific to radar classification and introduce a set of novel mechanisms that lead to significant improvements in ...",
+          "url": "https://www.researchgate.net/publication/347038749_Range-Doppler_Detection_in_Automotive_Radar_with_Deep_Learning"
+        },
+        {
+          "title": "A Deep Automotive Radar Object Detector on Range- ...",
+          "abstract": "by C Decourt · 2022 · Cited by 55 — In this paper, we present DAROD, an adaptation of Faster R-CNN object detector for automotive radar on the range- Doppler spectra.",
+          "url": "https://hal.science/hal-03759535v2/document"
+        },
+        {
+          "title": "Deep Radar Detector",
+          "abstract": "by D Brodeski · 2019 · Cited by 143 — In this paper, we introduce a deep learning approach for radar processing, working directly with the radar complex data. automotive radar, radar target ...",
+          "url": "https://arxiv.org/pdf/1906.12187"
+        },
+        {
+          "title": "A Deep Automotive Radar Object Detector on Range ...",
+          "abstract": "In this paper, we present DAROD, an adaptation of Faster R-CNN object detector for automotive radar on the range-Doppler spectra.",
+          "url": "https://dl.acm.org/doi/10.1109/IV51971.2022.9827281"
+        }
+      ],
+      "true_votes": 2,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "Fang et al. published ERASE-Net in 2022.",
+      "evidence": [
+        {
+          "title": "ON THE ADAPTIVE ELASTIC-NET WITH A DIVERGING NUMBER OF ...",
+          "abstract": "In this paper, we propose the adaptive Elastic-Net that combines the strengths of the quadratic regularization and the adaptively weighted lasso shrinkage.",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2864037/"
+        },
+        {
+          "title": "EraseFlow: Learning Concept Erasure Policies via GFlowNet-Driven ...",
+          "abstract": "Extensive empirical results demonstrate that EraseFlow outperforms existing baselines and achieves an optimal trade off between performance and ...",
+          "url": "https://arxiv.org/abs/2511.00804"
+        },
+        {
+          "title": "FANG: Leveraging Social Context for Fake News Detection ...",
+          "abstract": "We propose Factual News Graph (FANG), a novel graphical social context representation and learning framework for fake news detection.",
+          "url": "https://www.researchgate.net/publication/343735061_FANG_Leveraging_Social_Context_for_Fake_News_Detection_Using_Graph_Representation"
+        },
+        {
+          "title": "FETNet: Feature Erasing and Transferring Network for Scene Text ...",
+          "abstract": "This is the official PyTorch codes for the paper. Eraser} including 3,004 images with 2,204 images for training and 800 images for testing.",
+          "url": "https://github.com/GuangtaoLyu/FETNet"
+        },
+        {
+          "title": "ESC: Erasing Space Concept for Knowledge Deletion - alphaXiv",
+          "abstract": "The paper focuses on the challenge of achieving feature-level knowledge deletion, ensuring that a model not only fails to classify forgotten data correctly",
+          "url": "https://www.alphaxiv.org/abs/2504.02199"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "Nowruzi et al. published PolarNet in 2021.",
+      "evidence": [
+        {
+          "title": "Publications",
+          "abstract": "2020. The EU-PolarNet White Papers. Integrated European Polar Research Programme. White Paper on Status of Stakeholder Engagement in Polar Research ... Research ...",
+          "url": "https://eu-polarnet.eu/publications/"
+        },
+        {
+          "title": "edwardzhou130/PolarSeg: Implementation for PolarNet ...",
+          "abstract": "PolarNet is a lightweight neural network that aims to provide near-real-time online semantic segmentation for a single LiDAR scan.",
+          "url": "https://github.com/edwardzhou130/polarseg"
+        },
+        {
+          "title": "PolarNet: Accelerated Deep Open Space Segmentation ...",
+          "abstract": "by FE Nowruzi · 2021 · Cited by 19 — In this paper, we propose PolarNet, a deep neural model to process radar information in polar domain for open space segmentation.",
+          "url": "https://www.scitepress.org/PublishedPapers/2021/104346/104346.pdf"
+        },
+        {
+          "title": "An Improved Grid Representation for Online LiDAR Point ...",
+          "abstract": "by Y Zhang · 2020 · Cited by 833 — Abstract page for arXiv paper 2003.14032: PolarNet: An Improved Grid Representation for Online LiDAR Point Clouds Semantic Segmentation.",
+          "url": "https://arxiv.org/abs/2003.14032"
+        },
+        {
+          "title": "Detailed architecture of the PolarNet model.",
+          "abstract": "As in (Nowruzi et al., 2020), we use a depth of 32 within the encoder. After two skip steps, bilinear interpolation is used to resize to the input size. ...",
+          "url": "https://www.researchgate.net/figure/Detailed-architecture-of-the-PolarNet-model_fig2_349880432"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "Hao et al. published 'Bootstrapping Autonomous Driving Radars with Self-Supervised Learning' in 2023.",
+      "evidence": [
+        {
+          "title": "Bootstrapping Autonomous Driving Radars with Self-Supervised Learning",
+          "abstract": "View a PDF of the paper titled Bootstrapping Autonomous Driving Radars with Self-Supervised Learning, by Yiduo Hao and 5 other authors. View ...",
+          "url": "https://arxiv.org/abs/2312.04519"
+        },
+        {
+          "title": "‪Yiduo Hao‬ - ‪Google Scholar‬",
+          "abstract": "Bootstrapping Autonomous Driving Radars with Self-Supervised Learning. Y Hao, S Madani, J Guan, M Alloulah, S Gupta, H Hassanieh. CVPR 24.",
+          "url": "https://scholar.google.com/citations?user=MgppzFwAAAAJ&hl=vi"
+        },
+        {
+          "title": "Bootstrapping Autonomous Driving Radars with Self-Supervised Learning",
+          "abstract": "In this paper, we presented a self-supervised approach to radar object detection in the context of self-driving cars, harnessing the largely ...",
+          "url": "https://arxiv.org/html/2312.04519v3"
+        },
+        {
+          "title": "Bootstrapping Autonomous Radars with Self-Supervised Learning - arXiv",
+          "abstract": "In this paper, we presented a self-supervised approach to radar object detection in the context of self-driving cars, harnessing the largely untapped ...",
+          "url": "https://arxiv.org/html/2312.04519v2"
+        },
+        {
+          "title": "Bootstrapping Autonomous Driving Radars with Self-Supervised Learning",
+          "abstract": "This paper explores a self-supervised learning approach to enhance the perception capabilities of autonomous radars.",
+          "url": "https://www.aimodels.fyi/papers/arxiv/bootstrapping-autonomous-driving-radars-self-supervised-learning"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "CenterRadarNet is a joint 3D object detection and tracking framework using 4D FMCW Radar (Cheng et al., 2023).",
+      "evidence": [
+        {
+          "title": "CenterRadarNet: Joint 3D Object Detection and ...",
+          "abstract": "CenterRadarNet: Joint 3D Object Detection and Tracking Framework using 4D FMCW Radar · Jen-Hao Cheng, Sheng-Yao Kuan, +2 authors. Jenq-Neng Hwang · Published in ...",
+          "url": "https://www.semanticscholar.org/paper/CenterRadarNet%3A-Joint-3D-Object-Detection-and-using-Cheng-Kuan/6142d5dbe4768d6105e7f7c53866367bad8ab3b3"
+        },
+        {
+          "title": "3D Object Perception Benchmark for Autonomous Driving",
+          "abstract": "In this paper, we introduce the CRUW3D dataset, including 66K ... CenterRadarNet: Joint 3D Object Detection and Tracking Framework Using 4D FMCW Radar.",
+          "url": "https://www.scilit.com/publications/e9c064a45362523d7f24e289ef81d810"
+        },
+        {
+          "title": "Radar-based 3D Object Detection and Tracking",
+          "abstract": "This paper proposes CenterRadarNet, a framework that uses raw 4D radar data to jointly perform 3D object detection and tracking for autonomous ...",
+          "url": "https://www.bulletpapers.ai/paper/7fafb1bf-797f-0e8b-5c02-a0557c37b405"
+        },
+        {
+          "title": "Awesome-3D-Detection-with-4D-Radar",
+          "abstract": "CenterRadarNet: Joint 3D Object Detection and Tracking Framework using 4D FMCW Radar. University of Washington (Jen-Hao Cheng) obust 3D Object Detection with ...",
+          "url": "https://github.com/liuzengyun/Awesome-3D-Detection-with-4D-Radar"
+        },
+        {
+          "title": "CenterRadarNet: Joint 3D Object Detection and Tracking ...",
+          "abstract": "Fig. 1: CenterRadarNet is a comprehensive framework designed for 3D object detection and tracking, specifically utilizing 4D FMCW radar tensors as its input.",
+          "url": "https://arxiv.org/html/2311.01423v2"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "PolarNet performs accelerated deep open space segmentation using automotive radar in the polar domain.",
+      "evidence": [
+        {
+          "title": "Deep Open Space Segmentation using Automotive Radar - arXiv",
+          "abstract": "Abstract:In this work, we propose the use of radar with advanced deep segmentation models to identify open space in parking scenarios.",
+          "url": "https://arxiv.org/abs/2004.03449"
+        },
+        {
+          "title": "Deep Open Space Segmentation using Automotive Radar",
+          "abstract": "This work proposes the use of radar with advanced deep segmentation models to identify open space in parking scenarios with low memory usage and real-time ...",
+          "url": "https://www.semanticscholar.org/paper/Deep-Open-Space-Segmentation-using-Automotive-Radar-Nowruzi-Kolhatkar/e4a9e9cf07b5269e682630f8d81d91fbeeb08ed2"
+        },
+        {
+          "title": "PolarNet: Accelerated Deep Open Space Segmentation ...",
+          "abstract": "In this paper, we propose PolarNet, a deep neural model to process radar information in polar domain for open space segmentation. a compact ...",
+          "url": "https://arxiv.org/abs/2103.03387"
+        },
+        {
+          "title": "PolarNet: Accelerated Deep Open Space Segmentation using ...",
+          "abstract": "In this paper, we propose PolarNet, a deep neural model to process radar information in polar domain for open space segmentation.",
+          "url": "https://www.scitepress.org/PublishedPapers/2021/104346/104346.pdf"
+        },
+        {
+          "title": "‪Waqas Malik‬ - ‪Google Scholar‬",
+          "abstract": "Polarnet: Accelerated deep open space segmentation using automotive radar in polar domain ... Simulating object lists using neural networks in automotive radar.",
+          "url": "https://scholar.google.com/citations?user=U3WqktcAAAAJ&hl=en"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "GET-UP is a geometric-aware depth estimation method using radar points upsampling (Sun et al., 2024).",
+      "evidence": [
+        {
+          "title": "GEomeTric-aware Depth Estimation with Radar Points UPsampling - arXiv",
+          "abstract": "View a PDF of the paper titled GET-UP: GEomeTric-aware Depth Estimation with Radar Points UPsampling, by Huawei Sun and 5 other authors. View ...",
+          "url": "https://arxiv.org/abs/2409.02720"
+        },
+        {
+          "title": "TRIDE: A Text-assisted Radar-Image weather-aware fusion network for ...",
+          "abstract": "While GET-UP Sun et al. (2025c) completes depth estimation within one stage, which incorporates point cloud upsampling as an auxiliary task to avoid introducing ...",
+          "url": "https://openreview.net/pdf?id=ZMqMnwMfse"
+        },
+        {
+          "title": "‪Julius Ott‬ - ‪Google Scholar‬",
+          "abstract": "Get-up: Geometric-aware depth estimation with radar points upsampling H Sun, Z Wang, H Feng, J Ott, L Servadei, on Applications of Computer Vision",
+          "url": "https://scholar.google.com/citations?user=w4geeo0AAAAJ&hl=en"
+        },
+        {
+          "title": "GET-UP: GEomeTric-aware Depth Estimation with Radar Points ...",
+          "abstract": "GET-UP: GEomeTric-aware Depth Estimation with Radar Points ... We start by detailing the approach for generating ground truth data, followed by the upsampling ...",
+          "url": "https://www.computer.org/csdl/proceedings-article/wacv/2025/108300b850/25Kn3GEg3Ru"
+        },
+        {
+          "title": "Zixu Wang's research works | Technical University of Munich ...",
+          "abstract": "GET-UP: GEomeTric-aware Depth Estimation with Radar Points UPsampling · Conference Paper. February 2025. ·. 6 Reads. ·. 11 Citations. Huawei Sun. ·. Zixu Wang.",
+          "url": "https://www.researchgate.net/scientific-contributions/Zixu-Wang-2291563792"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "Baranowski published 'Cross-Domain Spatial Matching for Camera and Radar Sensor Data Fusion in Autonomous Vehicle Perception System' in 2024.",
+      "evidence": [
+        {
+          "title": "A Deep Learning-based Radar and Camera Sensor Fusion Architecture ...",
+          "abstract": "Cross-Domain Spatial Matching for Camera and Radar Sensor Data Fusion in Autonomous Vehicle Perception System ... This review paper attempts to ...",
+          "url": "https://www.semanticscholar.org/paper/A-Deep-Learning-based-Radar-and-Camera-Sensor-for-Nobis-Geisslinger/7f06cedeee129ecf7ca1ac382707a19fd85c1ce1"
+        },
+        {
+          "title": "Cross-domain spatial matching for camera and radar sensor data ...",
+          "abstract": "In this paper, we propose a novel approach for camera–radar sensor fusion aimed at 3D object detection in autonomous vehicle perception systems.",
+          "url": "https://www.nature.com/articles/s41598-026-66505-1"
+        },
+        {
+          "title": "GitHub - AGH-CEAI/cdsm: CDSM Fusion",
+          "abstract": "In this paper, we propose a novel approach for camera–radar sensor fusion aimed at 3D object detection in autonomous vehicle perception systems.",
+          "url": "https://github.com/AGH-CEAI/cdsm"
+        },
+        {
+          "title": "Object 3D Perception via Camera-Radar Cross-Modality ...",
+          "abstract": "In this dissertation, we focus on two common and cost-efficient sensors on an autonomous vehicle, i.e., camera and radar, and manage to achieve an accurate and ...",
+          "url": "https://digital.lib.washington.edu/researchworks/items/584e2f40-e50a-4284-8bf2-97c92df3d71d"
+        },
+        {
+          "title": "A Sensor Fusion and Localization System for Improving Vehicle Safety ...",
+          "abstract": "A variety of papers have been published in the field of perception and sensor fusion for autonomous driving. Many of these focus on some combination of RGB ...",
+          "url": "https://safed.vtti.vt.edu/wp-content/uploads/2021/12/04-117-Final-Report-Draft-Ready-for-Site.pdf"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "Liu published 'Radar Camera Fusion via Representation Learning in Autonomous Driving' in 2021.",
+      "evidence": [
+        {
+          "title": "Radar Camera Fusion via Representation Learning in ...",
+          "abstract": "Radars and cameras are mature, cost-effective, and robust sensors and have been widely used in the perception stack of mass-produced autonomous driving systems.",
+          "url": "https://oamonitor.ireland.openaire.eu/rfo/irish-research-elibrary2/search/publication?pid=10.1109%2Fcvprw53098.2021.00183"
+        },
+        {
+          "title": "Representation Learning for Vision-Based Autonomous Driving ...",
+          "abstract": "Representation learning plays a vital role in autonomous driving by extracting meaningful features from raw sensory inputs.",
+          "url": "https://www.mdpi.com/2075-1702/13/3/231"
+        },
+        {
+          "title": "Radar Camera Fusion via Representation Learning in ...",
+          "abstract": "this paper proposes the Multi- Modal Camera-Radar Fusion (MMCRF) method. This approach skips traditional signal processing by directly utilizing raw radar ...",
+          "url": "https://www.researchgate.net/publication/354307704_Radar_Camera_Fusion_via_Representation_Learning_in_Autonomous_Driving"
+        },
+        {
+          "title": "Awesome-Radar-Camera-Fusion - GitHub",
+          "abstract": "Autonomous Driving. Radar-Camera Fusion for Object Detection and Semantic Segmentation in Autonomous Driving: A Comprehensive Review",
+          "url": "https://github.com/Radar-Camera-Fusion/Awesome-Radar-Camera-Fusion"
+        },
+        {
+          "title": "Cross-Dataset Experimental Study of Radar-Camera Fusion in Bird's-Eye ...",
+          "abstract": "Our results further demonstrate that the radar-camera fusion approach significantly outperforms the camera-only and radar-only baselines. Index Terms—Autonomous ...",
+          "url": "https://www.dfki.de/fileadmin/user_upload/import/13361_EUSIPCO_2023_RC_BEVFusion_Dataset_Comparison_CR.pdf"
+        }
+      ],
+      "true_votes": 1,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "Dong authored a doctoral dissertation on 'Object 3D Perception via Camera-Radar Cross-Modality Learning for Autonomous Driving' at the University of Washington.",
+      "evidence": [
+        {
+          "title": "Object 3D Perception via Camera-Radar Cross-Modality ...",
+          "abstract": "In this dissertation, we focus on two common and cost-efficient sensors on an autonomous vehicle, i.e., camera and radar, and manage to achieve an accurate and ...",
+          "url": "https://digital.lib.washington.edu/researchworks/items/584e2f40-e50a-4284-8bf2-97c92df3d71d"
+        },
+        {
+          "title": "Advances in object detection for autonomous driving using ...",
+          "abstract": "This paper aims to offer a comprehensive guide for radar-camera fusion, focusing on the object detection task. Firstly, detailed explanations are provided ...",
+          "url": "https://www.researchgate.net/publication/397804153_Advances_in_object_detection_for_autonomous_driving_using_mmwave_radar_and_camera_A_comprehensive_survey"
+        },
+        {
+          "title": "A Survey of Autonomous Driving from a Deep Learning ...",
+          "abstract": "This comprehensive survey examines deep learning's critical role in advancing autonomous driving technology across multiple interconnected ...",
+          "url": "https://dl.acm.org/doi/10.1145/3729420"
+        },
+        {
+          "title": "Radars for Autonomous Driving: A Review of Deep ...",
+          "abstract": "by A SRIVASTAV · Cited by 127 — Radar is a key component of the suite of perception sensors of autonomous vehicles. Topics covered include early and late fusion, occupancy flow estimation, ...",
+          "url": "http://ael.chungbuk.ac.kr/lectures/graduate/antenna-measurement/2024-1/15-Radars_for_Autonomous_Driving_A_Review_of_Deep_Learning_Methods_and_Challenges.pdf"
+        },
+        {
+          "title": "Advances in object detection for autonomous driving using ...",
+          "abstract": "This paper aims to offer a comprehensive guide for radar-camera fusion, focusing on the object detection task, and comprehensively review and analyze",
+          "url": "https://www.semanticscholar.org/paper/Advances-in-object-detection-for-autonomous-driving-Deng-Xing/9430823c4286673a646dadb6551f2c6519eec1bb"
+        }
+      ],
+      "true_votes": 2,
+      "total_votes": 3,
+      "decision": true
+    }
+  ]
+}

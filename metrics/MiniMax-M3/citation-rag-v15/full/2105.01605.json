@@ -1,0 +1,63 @@
+{
+  "arxiv_id": "2105.01605",
+  "model": "MiniMax-M3",
+  "system": "citation-rag-v15",
+  "reference_precision": 1.0,
+  "reference_recall": 0.02040816326530612,
+  "reference_count": 1,
+  "reference_matches": 1,
+  "ground_truth_count": 49,
+  "predicted_titles": [
+    "Deep Adversarial Graph Attention Convolution Network for Text-Based Person Search"
+  ],
+  "cited_match_rate": 1.0,
+  "cited_count": 1,
+  "cited_supported": 1,
+  "cited_details": [
+    {
+      "statement": "https://www.semanticscholar.org/paper/56e3758cd9acc97f41ed3dbefd66fd76f238e4fb",
+      "url": "https://semanticscholar.org/paper/56e3758cd9acc97f41ed3dbefd66fd76f238e4fb",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    }
+  ],
+  "noncited_factual_accuracy": 0.0,
+  "noncited_count": 1,
+  "noncited_correct": 0,
+  "noncited_details": [
+    {
+      "claim": "A-GANet is evaluated on the CUHK-PEDES and Flickr30k datasets.",
+      "evidence": [
+        {
+          "title": "Flickr30k Entities: Collecting Region-to-Phrase ... - arXiv",
+          "abstract": "Abstract:The Flickr30k dataset has become a standard benchmark for sentence-based image description. This paper presents Flickr30k Entities, ...",
+          "url": "https://arxiv.org/abs/1505.04870"
+        },
+        {
+          "title": "Improving multimodal datasets with image captioning",
+          "abstract": "We also pay particular attention to retrieval performance on Flickr30K [54] and MS-COCO [11]. The retrieval score reported is the average of text-to-image ...",
+          "url": "https://papers.neurips.cc/paper_files/paper/2023/file/45e604a3e33d10fba508e755faa72345-Paper-Datasets_and_Benchmarks.pdf"
+        },
+        {
+          "title": "Relation-aware aggregation network with auxiliary guidance for text ...",
+          "abstract": "This paper introduces a Relation-aware Aggregation Network (RAN) that exploits the relation between the person and local objects and proposes three ...",
+          "url": "https://www.semanticscholar.org/paper/34978a1e2039df605d42029dcdd1ed71079adbf7"
+        },
+        {
+          "title": "Transformer-Based Language-Person Search With ...",
+          "abstract": "Without bells and whistles, we achieve the state-of-the-art performance on the CUHK-PEDES dataset with Rank-1 score of 57.67% and the PA100K ...",
+          "url": "https://www.researchgate.net/publication/350852675_Transformer_based_Language-Person_Search_with_Multiple_Region_Slicing"
+        },
+        {
+          "title": "LEARNING SEMANTIC-ALIGNED FEATURE REPRESENTATION ...",
+          "abstract": "Experimental results on the CUHK-PEDES and Flickr30K datasets show that our method achieves state-of-the-art performances. the evaluation criteria.",
+          "url": "https://openreview.net/pdf?id=51DHOva6ZU"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    }
+  ]
+}

@@ -1,0 +1,768 @@
+{
+  "arxiv_id": "2308.04603",
+  "model": "MiniMax-M3",
+  "system": "search-baseline-v4",
+  "reference_precision": 0.25,
+  "reference_recall": 0.05970149253731343,
+  "reference_count": 16,
+  "reference_matches": 4,
+  "ground_truth_count": 67,
+  "predicted_titles": [
+    "Watermark Faker: Towards Forgery of Digital Image Watermarking",
+    "A Robust Image Watermarking System Based on Deep Neural Networks",
+    "HiDDeN: Hiding Data With Deep Networks",
+    "StegaStamp: Invisible Hyperlinks in Physical Photographs",
+    "Hidden in the Noise: Two-Stage Robust Watermarking for ...",
+    "A robust watermarking algorithm against JPEG compression ...",
+    "Enhancing Robustness of DNN-based Watermarking by Mini",
+    "Robust Spatial-spread Deep Neural Image Watermarking",
+    "Transform domain watermarking",
+    "Deep Boosting Robustness of DNN-based Image Watermarking via DBMark",
+    "End-to-End Image Steganography Using Deep Convolutional Autoencoders",
+    "An Automated and Robust Image Watermarking Scheme Based on Deep Neural Networks",
+    "A Compact Neural Network-based Algorithm for Robust Image Watermarking",
+    "Robust Zero Watermarking Algorithm for Medical Images Based on Improved NasNet-Mobile and DCT",
+    "Go Wide or Go Deep: Levering Watermarking Performance with Computational Cost for Specific Images",
+    "A General Approach for Using Deep Neural Network for Digital Watermarking"
+  ],
+  "cited_match_rate": 0.5116279069767442,
+  "cited_count": 43,
+  "cited_supported": 22,
+  "cited_details": [
+    {
+      "statement": "HiDDeN, introduced by Zhu, Kaplan, Johnson, and Fei-Fei, is the canonical reference point: it formulates the encoder and decoder as convolutional networks, optimizes a reconstruction loss on the recovered message together with an adversarial loss for visual fidelity, and exposes the decoder to a parametric noise layer (e.g., Gaussian, JPEG, crop) during training so that the system learns to be robust against a chosen class of perturbations [HiDDeN](https://arxiv.org/abs/1807.09937).",
+      "url": "https://arxiv.org/abs/1807.09937",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Building on the same template, StegaStamp focuses on the print-cam capture distortion model: Tancik, Bonnet, Noorani, and Fredrikson describe a deep encoder–decoder that learns to embed hyperlink bit-strings into photographs such that they can be decoded back from re-photographed images containing lighting, perspective, and occlusion variation [StegaStamp](https://arxiv.org/abs/1904.05343).",
+      "url": "https://arxiv.org/abs/1904.05343",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "A 2021 IEEE Access paper by Duan, Liu, and colleagues (the convolutional autoencoder for image steganography) trains an encoder/decoder pair end-to-end on datasets such as COCO, CelebA, and ImageNet and reports high PSNR with high hiding capacity, illustrating how the end-to-end paradigm scales gracefully when both inputs and outputs are dense image tensors [End-to-End Image Steganography](https://doi.org/10.1109/access.2021.3113953).",
+      "url": "https://doi.org/10.1109/access.2021.3113953",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Likewise, the *Robust Spatial-spread Deep Neural Image Watermarking* work formulates watermarking as an end-to-end problem in which the message is spread across the spatial dimensions of the image and recovered by a convolutional decoder, a design that improves robustness against localized distortions [Robust Spatial-spread](https://www.semanticscholar.org/paper/b1ffb4adfc9ec647d5dee15cd3dacce1a662ffe5).",
+      "url": "https://semanticscholar.org/paper/b1ffb4adfc9ec647d5dee15cd3dacce1a662ffe5",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Zhong, Huang, Mastorakis, and Shih describe an \"automated and robust\" DNN watermarking scheme that adapts the embedding strength dynamically on a per-image basis and demonstrates multi-bit recovery under common image-processing attacks [Automated Robust DNN Watermarking](https://arxiv.org/abs/2007.02460).",
+      "url": "https://arxiv.org/abs/2007.02460",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Zhong and Shih's earlier 2019 work similarly couples an encoder/decoder with a differentiable approximation of common distortions to yield robustness without manual tuning [Robust DNN Watermarking](https://arxiv.org/abs/1908.11331).",
+      "url": "https://arxiv.org/abs/1908.11331",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "On the efficiency side, Xu, Wang, Wei, and Lu propose a compact neural-network-based watermarking algorithm that preserves the end-to-end training recipe but with a markedly smaller model footprint, which is relevant for deployment on resource-constrained devices [Compact NN Watermarking](https://arxiv.org/abs/2112.13491).",
+      "url": "https://arxiv.org/abs/2112.13491",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Finally, the OpenReview paper \"Hidden in the Noise\" reports a two-stage robust watermarking scheme whose first stage is an end-to-end DNN, again demonstrating the prevalence of jointly trained encoders/decoders as the default learning framework [Hidden in the Noise](https://openreview.net/forum?id=ll2nz6qwRG).",
+      "url": "https://openreview.net/forum?id=ll2nz6qwRG",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The trained model is applied to a *distinct* test set in a bulk manner, illustrating that the network has learned a reusable image-to-feature mapping rather than a single-image lookup [General DNN Watermarking](https://arxiv.org/abs/2003.12428).",
+      "url": "https://arxiv.org/abs/2003.12428",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Because the network never modifies the cover image, the approach is naturally lossless and is robust to a wide range of distortions [NasNet-Mobile + DCT](https://doi.org/10.3390/electronics12163444).",
+      "url": "https://doi.org/10.3390/electronics12163444",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The same idea has been analyzed in a comparative SSRN study of transform-domain watermarking methods versus deep-feature-based detection models, which reports that learned features can outperform hand-crafted transform-domain descriptors in detection accuracy [Transform Domain Watermarking](https://papers.ssrn.com/sol3/Delivery.cfm/f8d0a745-298f-46cc-a18f-2f8d4ff89fe2-MECA.pdf?abstractid=6620161&mirid=1).",
+      "url": "https://papers.ssrn.com/sol3/Delivery.cfm/f8d0a745-298f-46cc-a18f-2f8d4ff89fe2-MECA.pdf?abstractid=6620161&mirid=1",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The deep component provides a learned robustness prior that the hand-crafted block-DCT scheme cannot achieve on its own [Multi-scale Auto-encoder + JPEG](https://ietresearch.onlinelibrary.wiley.com/doi/10.1049/ipr2.12961).",
+      "url": "https://ietresearch.onlinelibrary.wiley.com/doi/10.1049/ipr2.12961",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The NasNet-Mobile + DCT zero-watermarking scheme for medical images discussed above is also a clear hybrid: the deep network supplies features, the DCT supplies a stable representation, and the zero-watermarking construction logic is entirely classical [NasNet-Mobile + DCT](https://doi.org/10.3390/electronics12163444).",
+      "url": "https://doi.org/10.3390/electronics12163444",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Likewise, the *DBMark* system by Ye, Gao, Xie, Yin, and Wei explicitly combines a deep encoder/decoder with a \"deep boosting\" module that draws on classical spread-spectrum intuitions; the deep side learns the residual signal that the classical part cannot model, with a reported improvement in robustness over purely learned baselines [DBMark](https://arxiv.org/abs/2210.13801).",
+      "url": "https://arxiv.org/abs/2210.13801",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Jia and colleagues provide another hybrid exemplar, in which *real* JPEG compression is used to harden the decoder while a *simulated* differentiable JPEG is used during joint training — the network learns a learned codec-aware embedding that is then deployed in a classical JPEG-compatible format [Enhancing Robustness via JPEG](https://dl.acm.org/doi/pdf/10.1145/3474085.3475324).",
+      "url": "https://dl.acm.org/doi/pdf/10.1145/3474085.3475324",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The aforementioned \"Go Wide or Go Deep\" study by Jia, Fang, Ma, and Zhang also straddles the paradigm boundary by treating width/depth as a per-image resource allocation problem that mixes a learned embedding with a classical allocation policy [Go Wide or Go Deep](https://arxiv.org/abs/2204.11513).",
+      "url": "https://arxiv.org/abs/2204.11513",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Wang, Lin, Zhao, and Zhu demonstrate that an adversary can train a \"watermark faker\" network that produces a forged image that fools an existing watermark detector into reporting the presence (or absence) of a watermark that was never embedded, raising the question of whether end-to-end detectors must be hardened against adversarial perturbation [Watermark Faker](https://arxiv.org/abs/2103.12489).",
+      "url": "https://arxiv.org/abs/2103.12489",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "shows that aggressively reducing the encoder/decoder size is feasible without catastrophic loss of robustness, which is important for on-device watermarking [Compact NN Watermarking](https://arxiv.org/abs/2112.13491).",
+      "url": "https://arxiv.org/abs/2112.13491",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "\"Go Wide or Go Deep\" further argues that a one-size-fits-all network is sub-optimal and that the embedding network should be selected per image, suggesting that future systems will mix a learned model zoo with a classical controller [Go Wide or Go Deep](https://arxiv.org/abs/2204.11513).",
+      "url": "https://arxiv.org/abs/2204.11513",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Across the three paradigms, the field has converged on a small set of recurring design patterns: an encoder/decoder pair trained end-to-end against a differentiable noise layer [HiDDeN](https://arxiv.org/abs/1807.09937), a deep feature extractor that feeds a classical transform-domain watermarking rule [NasNet-Mobile + DCT](https://doi.org/10.3390/electronics12163444), and hybrid schemes that fuse learned components with classical signal-processing primitives such as DCT and JPEG [Multi-scale Auto-encoder + JPEG](https://ietresearch.onlinelibrary.wiley.com/doi/10.1049/ipr2.12961), [Enhancing Robustness via JPEG](https://dl.acm.org/doi/pdf/10.1145/3474085.3475324), [DBMark](https://arxiv.org/abs/2210.13801).",
+      "url": "https://arxiv.org/abs/1807.09937",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Across the three paradigms, the field has converged on a small set of recurring design patterns: an encoder/decoder pair trained end-to-end against a differentiable noise layer [HiDDeN](https://arxiv.org/abs/1807.09937), a deep feature extractor that feeds a classical transform-domain watermarking rule [NasNet-Mobile + DCT](https://doi.org/10.3390/electronics12163444), and hybrid schemes that fuse learned components with classical signal-processing primitives such as DCT and JPEG [Multi-scale Auto-encoder + JPEG](https://ietresearch.onlinelibrary.wiley.com/doi/10.1049/ipr2.12961), [Enhancing Robustness via JPEG](https://dl.acm.org/doi/pdf/10.1145/3474085.3475324), [DBMark](https://arxiv.org/abs/2210.13801).",
+      "url": "https://doi.org/10.3390/electronics12163444",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Across the three paradigms, the field has converged on a small set of recurring design patterns: an encoder/decoder pair trained end-to-end against a differentiable noise layer [HiDDeN](https://arxiv.org/abs/1807.09937), a deep feature extractor that feeds a classical transform-domain watermarking rule [NasNet-Mobile + DCT](https://doi.org/10.3390/electronics12163444), and hybrid schemes that fuse learned components with classical signal-processing primitives such as DCT and JPEG [Multi-scale Auto-encoder + JPEG](https://ietresearch.onlinelibrary.wiley.com/doi/10.1049/ipr2.12961), [Enhancing Robustness via JPEG](https://dl.acm.org/doi/pdf/10.1145/3474085.3475324), [DBMark](https://arxiv.org/abs/2210.13801).",
+      "url": "https://ietresearch.onlinelibrary.wiley.com/doi/10.1049/ipr2.12961",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Across the three paradigms, the field has converged on a small set of recurring design patterns: an encoder/decoder pair trained end-to-end against a differentiable noise layer [HiDDeN](https://arxiv.org/abs/1807.09937), a deep feature extractor that feeds a classical transform-domain watermarking rule [NasNet-Mobile + DCT](https://doi.org/10.3390/electronics12163444), and hybrid schemes that fuse learned components with classical signal-processing primitives such as DCT and JPEG [Multi-scale Auto-encoder + JPEG](https://ietresearch.onlinelibrary.wiley.com/doi/10.1049/ipr2.12961), [Enhancing Robustness via JPEG](https://dl.acm.org/doi/pdf/10.1145/3474085.3475324), [DBMark](https://arxiv.org/abs/2210.13801).",
+      "url": "https://dl.acm.org/doi/pdf/10.1145/3474085.3475324",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Across the three paradigms, the field has converged on a small set of recurring design patterns: an encoder/decoder pair trained end-to-end against a differentiable noise layer [HiDDeN](https://arxiv.org/abs/1807.09937), a deep feature extractor that feeds a classical transform-domain watermarking rule [NasNet-Mobile + DCT](https://doi.org/10.3390/electronics12163444), and hybrid schemes that fuse learned components with classical signal-processing primitives such as DCT and JPEG [Multi-scale Auto-encoder + JPEG](https://ietresearch.onlinelibrary.wiley.com/doi/10.1049/ipr2.12961), [Enhancing Robustness via JPEG](https://dl.acm.org/doi/pdf/10.1145/3474085.3475324), [DBMark](https://arxiv.org/abs/2210.13801).",
+      "url": "https://arxiv.org/abs/2210.13801",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Adversarial threats such as the *watermark faker* [Watermark Faker](https://arxiv.org/abs/2103.12489) and practical deployment constraints studied in compact and adaptive networks [Compact NN Watermarking](https://arxiv.org/abs/2112.13491), [Go Wide or Go Deep](https://arxiv.org/abs/2204.11513) are likely to shape the next generation of research in this area.",
+      "url": "https://arxiv.org/abs/2103.12489",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Adversarial threats such as the *watermark faker* [Watermark Faker](https://arxiv.org/abs/2103.12489) and practical deployment constraints studied in compact and adaptive networks [Compact NN Watermarking](https://arxiv.org/abs/2112.13491), [Go Wide or Go Deep](https://arxiv.org/abs/2204.11513) are likely to shape the next generation of research in this area.",
+      "url": "https://arxiv.org/abs/2112.13491",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Adversarial threats such as the *watermark faker* [Watermark Faker](https://arxiv.org/abs/2103.12489) and practical deployment constraints studied in compact and adaptive networks [Compact NN Watermarking](https://arxiv.org/abs/2112.13491), [Go Wide or Go Deep](https://arxiv.org/abs/2204.11513) are likely to shape the next generation of research in this area.",
+      "url": "https://arxiv.org/abs/2204.11513",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "*HiDDeN: Hiding Data With Deep Networks.* https://arxiv.org/abs/1807.09937",
+      "url": "https://arxiv.org/abs/1807.09937",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "*StegaStamp: Invisible Hyperlinks in Physical Photographs.* https://arxiv.org/abs/1904.05343",
+      "url": "https://arxiv.org/abs/1904.05343",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://doi.org/10.1109/access.2021.3113953",
+      "url": "https://doi.org/10.1109/access.2021.3113953",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "- *Robust Spatial-spread Deep Neural Image Watermarking.* https://www.semanticscholar.org/paper/b1ffb4adfc9ec647d5dee15cd3dacce1a662ffe5",
+      "url": "https://semanticscholar.org/paper/b1ffb4adfc9ec647d5dee15cd3dacce1a662ffe5",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "*An Automated and Robust Image Watermarking Scheme Based on Deep Neural Networks.* https://arxiv.org/abs/2007.02460",
+      "url": "https://arxiv.org/abs/2007.02460",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "*A Robust Image Watermarking System Based on Deep Neural Networks.* https://arxiv.org/abs/1908.11331",
+      "url": "https://arxiv.org/abs/1908.11331",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "*A Compact Neural Network-based Algorithm for Robust Image Watermarking.* https://arxiv.org/abs/2112.13491",
+      "url": "https://arxiv.org/abs/2112.13491",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "- *Hidden in the Noise: Two-Stage Robust Watermarking …* https://openreview.net/forum?id=ll2nz6qwRG",
+      "url": "https://openreview.net/forum?id=ll2nz6qwRG",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "*A General Approach for Using Deep Neural Network for Digital Watermarking.* https://arxiv.org/abs/2003.12428",
+      "url": "https://arxiv.org/abs/2003.12428",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://doi.org/10.3390/electronics12163444",
+      "url": "https://doi.org/10.3390/electronics12163444",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "- *Transform Domain Watermarking.* https://papers.ssrn.com/sol3/Delivery.cfm/f8d0a745-298f-46cc-a18f-2f8d4ff89fe2-MECA.pdf?abstractid=6620161&mirid=1",
+      "url": "https://papers.ssrn.com/sol3/Delivery.cfm/f8d0a745-298f-46cc-a18f-2f8d4ff89fe2-MECA.pdf?abstractid=6620161&mirid=1",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://ietresearch.onlinelibrary.wiley.com/doi/10.1049/ipr2.12961",
+      "url": "https://ietresearch.onlinelibrary.wiley.com/doi/10.1049/ipr2.12961",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "*Deep Boosting Robustness of DNN-based Image Watermarking via DBMark.* https://arxiv.org/abs/2210.13801",
+      "url": "https://arxiv.org/abs/2210.13801",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://dl.acm.org/doi/pdf/10.1145/3474085.3475324",
+      "url": "https://dl.acm.org/doi/pdf/10.1145/3474085.3475324",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "*Go Wide or Go Deep: Levering Watermarking Performance with Computational Cost for Specific Images.* https://arxiv.org/abs/2204.11513",
+      "url": "https://arxiv.org/abs/2204.11513",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "*Watermark Faker: Towards Forgery of Digital Image Watermarking.* https://arxiv.org/abs/2103.12489",
+      "url": "https://arxiv.org/abs/2103.12489",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    }
+  ],
+  "noncited_factual_accuracy": 0.15384615384615385,
+  "noncited_count": 13,
+  "noncited_correct": 2,
+  "noncited_details": [
+    {
+      "claim": "Digital image watermarking embeds an imperceptible message into a carrier image such that the message can be reliably recovered even after the image undergoes distortions such as compression, filtering, cropping, or print-cam capture.",
+      "evidence": [
+        {
+          "title": "Digital watermarking",
+          "abstract": "Digital watermarks may be used to verify the authenticity or integrity of the carrier signal or to show the identity of its owners. It is prominently used for ...",
+          "url": "https://en.wikipedia.org/wiki/Digital_watermarking"
+        },
+        {
+          "title": "Toward Reliable Provenance in AI-Generated Content",
+          "abstract": "In short, watermarking offers a promising safety net for generative AI: it doesn't prevent generation, but it tags content for downstream ...",
+          "url": "https://medium.com/@adnanmasood/toward-reliable-provenance-in-ai-generated-content-text-images-and-code-9ebe8c57ceae"
+        },
+        {
+          "title": "How would an “invisible watermark” in AI-generated text ...",
+          "abstract": "I saw that Anthropic is apparently planning to embed invisible watermarks into Claude-generated text, and this part caught my attention: Does anyone here ...",
+          "url": "https://www.reddit.com/r/ClaudeAI/comments/1vl9gq5/how_would_an_invisible_watermark_in_aigenerated/"
+        },
+        {
+          "title": "Latent Seal embeds robust watermarks during image ...",
+          "abstract": "It embeds a customized image watermark while content is being generated, then checks suspicious images by extracting and comparing the recovered ...",
+          "url": "https://www.eurekalert.org/news-releases/1139968"
+        },
+        {
+          "title": "Robust Deep Image Watermarking: A Survey",
+          "abstract": "This results in undetectable message embedding and highly reliable recovery, outperforming current methods with superior BER scores.",
+          "url": "https://www.techscience.com/cmc/v81n1/58332/html"
+        }
+      ],
+      "true_votes": 1,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "The two principal design goals are imperceptibility (the watermarked image should be visually indistinguishable from the cover) and robustness (the watermark should survive common image manipulations).",
+      "evidence": [
+        {
+          "title": "Watermark Removal in AI-Generated Images via Next ...",
+          "abstract": "by H Qiu · Cited by 3 — Image watermarking embeds imperceptible signals into AI-generated images for deepfake detection and provenance verification.",
+          "url": "https://openreview.net/forum?id=yO2zE1yIYZ"
+        },
+        {
+          "title": "Robust Deep Image Watermarking: A Survey",
+          "abstract": "Our review focuses on the innovative deep watermarking approaches that employ neural networks to identify robust embedding spaces, resilient to various attacks.",
+          "url": "https://www.techscience.com/cmc/v81n1/58332/html"
+        },
+        {
+          "title": "How Claude's text watermarking works",
+          "abstract": "The difference between watermarked and un-watermarked text will not be distinguishable to readers; Nothing is added to the text and there are ...",
+          "url": "https://www.anthropic.com/news/claude-text-watermark"
+        },
+        {
+          "title": "Insecure AI Image Watermarking - Is it Really Damaging ...",
+          "abstract": "Intent: The goal of digital watermarking is to protect intellectual property, and embedded information can be either visible or invisible [2]. •. Pixel Level ...",
+          "url": "https://dl.acm.org/doi/10.1145/3788149.3788154"
+        },
+        {
+          "title": "A General Approach for Using Deep Neural Network for Digital Watermarking",
+          "abstract": "Technologies of the Internet of Things (IoT) facilitate digital contents such as images being acquired in a massive way. However, consideration from the privacy or legislation perspective still demands the need for intellectual content protection. In this paper, we propose a general deep neural network (DNN) based watermarking method to fulfill this goal. Instead of training a neural network for protecting a specific image, we train on an image set and use the trained model to protect a distinct test image set in a bulk manner. Respective evaluations both from the subjective and objective aspects confirm the supremacy and practicability of our proposed method. To demonstrate the robustness of this general neural watermarking mechanism, commonly used manipulations are applied to the watermarked image to examine the corresponding extracted watermark, which still retains sufficient recognizable traits. To the best of our knowledge, we are the first to propose a general way to perform watermarking using DNN. Considering its performance and economy, it is concluded that subsequent studies that generalize our work on utilizing DNN for intellectual content protection is a promising research trend.",
+          "url": "https://arxiv.org/abs/2003.12428"
+        }
+      ],
+      "true_votes": 2,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "Traditional watermarking pipelines rely on hand-crafted rules in the spatial or transform domain — for example, least-significant-bit (LSB) substitution or coefficient modulation in the discrete cosine transform (DCT) domain — and consequently face well-known trade-offs between payload, robustness, and visual fidelity.",
+      "evidence": [
+        {
+          "title": "Watermarking Scheme - an overview",
+          "abstract": "Least Significant Bit (LSB) method represents one of the earliest and simplest spatial domain techniques. It can be applied to any form of the watermarking.",
+          "url": "https://www.sciencedirect.com/topics/computer-science/watermarking-scheme"
+        },
+        {
+          "title": "AI Provenance and Watermarking: How It Works ...",
+          "abstract": "Classical methods modify spatial values such as least-significant bits, or place energy in transform coefficients produced by the discrete ...",
+          "url": "https://medium.com/@adnanmasood/ai-provenance-and-watermarking-how-it-works-how-it-breaks-and-why-it-matters-part-1-9fa96c9dd435"
+        },
+        {
+          "title": "Image Watermarking Using Least Significant Bit and Canny ...",
+          "abstract": "by ZB Faheem · 2023 · Cited by 49 — In this paper, a digital image watermarking technique is proposed that employs the least significant bit (LSB) and canny edge detection method.",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9921098/"
+        },
+        {
+          "title": "Digital Image Watermarking Techniques: A Review",
+          "abstract": "by M Begum · 2020 · Cited by 401 — Least significant bit modification is the most commonly used algorithm for spatial domain watermarking. Here, the least significant bit (LSB)",
+          "url": "https://www.mdpi.com/2078-2489/11/2/110"
+        },
+        {
+          "title": "Image Watermarking Using LSB (Least Significant Bit)",
+          "abstract": "This paper presents a watermarking technique which least significant bits (LSB), its steps and its process with matlab images, which provide security",
+          "url": "https://www.semanticscholar.org/paper/Image-Watermarking-Using-LSB-(Least-Significant-Kaur-Kaur/2e0d7091335c95ca3a00b795376e82668a27ee33"
+        }
+      ],
+      "true_votes": 1,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "The introduction of deep neural networks has enabled a new generation of data-driven watermarking systems that can learn embedding and extraction policies directly from image distributions.",
+      "evidence": [
+        {
+          "title": "Watermarking of Deep Recurrent Neural Network Using ...",
+          "abstract": "by P Rathi · 2022 · Cited by 15 — In this paper, a novel algorithm to watermark a popular pre-trained speech-to-text deep recurrent neural network model Deep Speech without affecting the ...",
+          "url": "https://www.tandfonline.com/doi/full/10.1080/08839514.2021.2008613"
+        },
+        {
+          "title": "Digital Image Watermarking Processor Based on Deep ...",
+          "abstract": "by JE Lee · 2021 · Cited by 16 — In this paper, we proposed a hardware dedicated to watermarking that can embed watermarks on digital images and videos at high speed and implement them in the ...",
+          "url": "https://www.mdpi.com/2079-9292/10/10/1183"
+        },
+        {
+          "title": "A survey of Deep Neural Network watermarking techniques",
+          "abstract": "by Y Li · 2021 · Cited by 283 — In this paper, we overview the most recent advances in DNN watermarking, by paying attention to cast them into the bulk of watermarking theory developed during ...",
+          "url": "https://www.sciencedirect.com/science/article/abs/pii/S092523122101095X"
+        },
+        {
+          "title": "A Systematic Review on Model Watermarking for Neural ...",
+          "abstract": "by F Boenisch · 2021 · Cited by 206 — This work presents a taxonomy identifying and analyzing different classes of watermarking schemes for ML models. It introduces a unified threat model",
+          "url": "https://www.frontiersin.org/journals/big-data/articles/10.3389/fdata.2021.729663/full"
+        },
+        {
+          "title": "Attacks On Digital Watermarks For Deep Neural Networks",
+          "abstract": "•As a countermeasure watermarks for deep neural networks have been developed that embed secret information into the model. watermarks into deep neural networks.",
+          "url": "https://sigport.org/sites/default/files/docs/Poster_28.pdf"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "The most influential paradigm treats the encoder (which embeds a message into a cover image) and the decoder (which recovers the message from a possibly distorted stego image) as two neural networks trained jointly with adversarial and distortion objectives.",
+      "evidence": [
+        {
+          "title": "Understanding Encoder And Decoder LLMs - Ahead of AI",
+          "abstract": "Encoder-decoder models are typically used for natural language processing tasks that involve understanding input sequences and generating output ...",
+          "url": "https://magazine.sebastianraschka.com/p/understanding-encoder-and-decoder"
+        },
+        {
+          "title": "Understanding the encoder-decoder model in AI - Telnyx",
+          "abstract": "The encoder-decoder model is a neural network architecture used in machine learning, especially in natural language processing (NLP) and computer vision ...",
+          "url": "https://telnyx.com/learn-ai/encoder-decoder-model"
+        },
+        {
+          "title": "A Systematic Literature Review on Using the Encoder-Decoder Models ...",
+          "abstract": "The visual encoding method supports the caption model to focus on the critical informatics parts. Based on the CNN feature vector, some research works relied ...",
+          "url": "https://www.mdpi.com/2076-3417/13/19/10894"
+        },
+        {
+          "title": "What is an encoder-decoder model? - IBM",
+          "abstract": "Encoder-decoder models are used to handle sequential data, specifically mapping input sequences to output sequences of different lengths, such as neural machine ...",
+          "url": "https://www.ibm.com/think/topics/encoder-decoder-model"
+        },
+        {
+          "title": "Transformer-Based Encoder-Decoder Model for ...",
+          "abstract": "This research presents a Transformer-based encoder-decoder model for medical image captioning that incorporates semantic medical knowledge through.",
+          "url": "https://www.researchgate.net/publication/399610043_Transformer-Based_Encoder-Decoder_Model_for_Medical_Image_Captioning_with_Concept_Embedding"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "The \"noise layer\" idea subsequently became a standard design pattern in this line of work.",
+      "evidence": [
+        {
+          "title": "A Survey of Procedural Noise Functions - HAL-Inria",
+          "abstract": "We discuss how procedural noise functions are used for modeling and how they are applied to surfaces. We then introduce analysis tools and apply ...",
+          "url": "https://inria.hal.science/hal-00920177/file/document.pdf"
+        },
+        {
+          "title": "Evaluating Feature Extraction Methods with Synthetic Noise ...",
+          "abstract": "In this study, we evaluate the performance of different feature extraction methods on texture-less surfaces with the application of ...",
+          "url": "https://www.mdpi.com/2072-4292/12/23/3886"
+        },
+        {
+          "title": "A Comprehensive, Automated, Formal Analysis of Diffie-Hellman Protocols",
+          "abstract": "The Noise specification describes how to systematically construct a large family of Diffie-Hellman based key exchange protocols, including the secure transports ...",
+          "url": "https://eprint.iacr.org/2024/1226.pdf"
+        },
+        {
+          "title": "Noise-Adaptive Intelligent Programmable Meta-Imager",
+          "abstract": "We systematically study how the learned illumination patterns depend on the noise, including noise as well as the subsequent digital processing ...",
+          "url": "https://spj.science.org/doi/10.34133/2022/9825738"
+        },
+        {
+          "title": "Design of a hybrid quantum machine learning architecture and analysis ...",
+          "abstract": "This paper presents a hybrid architecture that combines classical and quantum elements for the development and training of QML models under noisy conditions.",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13111684/"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "The system demonstrates that jointly trained networks can exceed hand-crafted steganographic algorithms on the physically distorted channel.",
+      "evidence": [
+        {
+          "title": "A Comprehensive Survey of Digital Image Steganography and ...",
+          "abstract": "Digital steganography utilizes sophisticated algorithms to conceal secret information within multiple digital formats such as text, audio, images, and video ...",
+          "url": "https://www.emerald.com/atsip/article/13/1/1/1331386/A-Comprehensive-Survey-of-Digital-Image"
+        },
+        {
+          "title": "Advancements and Challenges in Image Steganographer",
+          "abstract": "The article indicates that steganography algorithms must balance payload capacity, detection robustness, and adaptability to cover image patterns. This ...",
+          "url": "https://ijcnis.org/index.php/ijcnis/article/view/7253/1682"
+        },
+        {
+          "title": "StegaStamp: Invisible Hyperlinks in Physical Photographs",
+          "abstract": "Our key technical contribution is StegaStamp, a learned steganographic algorithm to enable robust encoding and decoding of arbitrary hyperlink ...",
+          "url": "https://arxiv.org/html/1904.05343v2"
+        },
+        {
+          "title": "Steganography of Steganographic Networks",
+          "abstract": "by G Li · 2023 · Cited by 39 — To deal with the issue of covert communication of the se- cret decoder, in this paper, we propose a novel scheme for steganography of steganographic networks, ...",
+          "url": "https://ojs.aaai.org/index.php/AAAI/article/view/25647/25419"
+        },
+        {
+          "title": "Generating steganographic images via adversarial training",
+          "abstract": "This paper defines a game between three parties, Alice, Bob and Eve, and shows that adversarial training can produce robust steganographic techniques:",
+          "url": "https://www.semanticscholar.org/paper/Generating-steganographic-images-via-adversarial-Hayes-Danezis/2da1a80955df1612766ffdf63916a6a374780161"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "A complementary end-to-end formulation hides a full secret image rather than a bit-string, which dramatically increases payload.",
+      "evidence": [
+        {
+          "title": "Image Steganography Approaches and Their Detection ...",
+          "abstract": "This article covers the current methods for hiding information in images, alongside steganalysis methods that aim to detect the presence of steganography. By ...",
+          "url": "https://dl.acm.org/doi/10.1145/3694965"
+        },
+        {
+          "title": "A Novel Adaptive Image Data Hiding and Encryption ...",
+          "abstract": "by CF Lan · 2023 · Cited by 10 — This paper presents a constructive and adjustable data hiding algorithm to convey various secret messages and resist modern steganalytic attacks.",
+          "url": "https://www.mdpi.com/2076-3417/13/10/6208"
+        },
+        {
+          "title": "Steganography-The Art of Hiding Data - Science Alert",
+          "abstract": "Steganography can help hide the encrypted messages, images, keys, secret data, etc. This paper discusses the purpose of steganography.",
+          "url": "https://scialert.net/fulltext/index.php?doi=itj.2004.245.269"
+        },
+        {
+          "title": "Data hiding methods based upon DNA sequences",
+          "abstract": "In this paper, three data hiding methods are proposed, based upon properties of DNA sequences. It is highlighted that DNA sequences possess some interesting ...",
+          "url": "https://www.researchgate.net/publication/220311653_Data_hiding_methods_based_upon_DNA_sequences"
+        },
+        {
+          "title": "End-to-End Image Steganography Using Deep Convolutional Autoencoders",
+          "abstract": "Image steganography is used to hide a secret image inside a cover image in plain sight. Traditionally, the secret data is converted into binary bits and the cover image is manipulated statistically to embed the secret binary bits. Overloading the cover image may lead to distortions and the secret information may become visible. Hence the hiding capacity of the traditional methods are limited. In this paper, a light-weight yet simple deep convolutional autoencoder architecture is proposed to embed a secret image inside a cover image as well as to extract the embedded secret image from the stego image. The proposed method is evaluated using three datasets - COCO, CelebA and ImageNet. Peak Signal-to-Noise Ratio, hiding capacity and imperceptibility results on the test set are used to measure the performance. The proposed method has been evaluated using various images including Lena, airplane, baboon and peppers and compared against other traditional image steganography methods. The experimental results have demonstrated that the proposed method has higher hiding capacity, security and robustness, and imperceptibility performances than other deep learning image steganography methods.",
+          "url": "https://doi.org/10.1109/access.2021.3113953"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "Ming, Ding, Cao, and Lin exemplify this paradigm with a \"general approach\" in which a deep network is trained on an image set to produce features that can be perturbed to embed a payload, after which a companion network (or even a classical rule) recovers it.",
+      "evidence": [
+        {
+          "title": "Ming Ding - Semantic Scholar",
+          "abstract": "Semantic Scholar profile for Ming Ding, with 699 highly influential citations and 91 scientific research papers. An Improved Training Method for Graph Neural ...",
+          "url": "https://www.semanticscholar.org/author/Ming-Ding/145573466"
+        },
+        {
+          "title": "Theory-Driven Deep Learning: Methods and Insights for Training ...",
+          "abstract": "Abstract. Deep neural networks have achieved remarkable empirical success across numerous domains, yet their theoretical understanding remains limited.",
+          "url": "https://papers.ssrn.com/sol3/Delivery.cfm/5341247.pdf?abstractid=5341247&mirid=1"
+        },
+        {
+          "title": "NeurIPS-2023 Highlights (Full List) - Paper Digest",
+          "abstract": "We present a method to formulate algorithm discovery as program search, and apply it to discover optimization algorithms for deep neural network training. new ...",
+          "url": "https://www.paperdigest.org/data/neurips-2023-full.html"
+        },
+        {
+          "title": "Advances in Neural Information Processing Systems 33",
+          "abstract": "Benchmarking Deep Inverse Models over time, Methods for Training Deep Neural Networks. Consistent feature selection for analytic deep neural networks Vu C Dinh ...",
+          "url": "https://papers.nips.cc/paper/2020"
+        },
+        {
+          "title": "A Comprehensive Survey on On-Device AI Models - arXiv",
+          "abstract": "One promising approach is federated learning, which enables AI models to be trained across a distributed network of edge devices while maintaining data privacy ...",
+          "url": "https://arxiv.org/html/2503.06027v1"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "The 2023 Electronics paper on medical image protection by Xia, Wu, and colleagues extracts a 128-dimensional feature vector from medical images using a modified NasNet-Mobile network (with the Softmax/classification head replaced by a fully connected layer and a regression layer), then performs the actual zero-watermark construction in the DCT domain using those features.",
+      "evidence": [
+        {
+          "title": "Recent advances of Transformers in medical image analysis: A ...",
+          "abstract": "In this paper, we comprehensively review this rapidly developing area by covering the latest advances of Transformer-based methods in medical ...",
+          "url": "https://onlinelibrary.wiley.com/doi/full/10.1002/mef2.38"
+        },
+        {
+          "title": "Deep Learning in Medical Hyperspectral Images: A Review",
+          "abstract": "In traditional machine-learning algorithms for classification, the features for classification are represented by a one-dimensional vector. In contrast, HSI is ...",
+          "url": "https://www.mdpi.com/1424-8220/22/24/9790"
+        },
+        {
+          "title": "Explainable artificial intelligence (XAI) in deep learning-based medical ...",
+          "abstract": "This survey presents an overview of explainable artificial intelligence (XAI) used in deep learning-based medical image analysis.",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1361841522001177"
+        },
+        {
+          "title": "A Novel Medical Image Protection Scheme Using a 3-Dimensional ...",
+          "abstract": "The proposed scheme provides an effective and efficient way for real-time secure medical image transmission over public networks and enhances the security ...",
+          "url": "https://www.semanticscholar.org/paper/A-Novel-Medical-Image-Protection-Scheme-Using-a-Fu-Zhang/2a94f1726aadc3e76854103741395c00eaec3f43"
+        },
+        {
+          "title": "A Novel Medical Image Protection Scheme Using a 3-Dimensional ...",
+          "abstract": "This paper has suggested a novel chaos-based image cipher for medical image protection. The new scheme utilizes a single 3D chaotic system, Chen's chaotic ...",
+          "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0115773"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "The third paradigm explicitly couples a classical watermarking algorithm (or a transform-domain primitive such as DCT/DWT) with a deep learning component that handles whichever sub-task is hardest — typically feature extraction, distortion modeling, or attack simulation.",
+      "evidence": [
+        {
+          "title": "Watermarking in DCT-DWT Domain",
+          "abstract": "In This paper introduces an algorithm of digital watermarking based on Discrete. Cosine Transform (DCT) and Discrete Wavelet Transform (DWT). & applied various ...",
+          "url": "https://www.ijcsit.com/docs/Volume%202/vol2issue2/ijcsit2011020223.pdf"
+        },
+        {
+          "title": "Encryption Based Image Watermarking Algorithm in 2DWT- ...",
+          "abstract": "by N Hasan · 2021 · Cited by 51 — This paper proposes an encryption-based image watermarking scheme using a combination of second-level discrete wavelet transform (2DWT) and discrete cosine ...",
+          "url": "https://www.mdpi.com/1424-8220/21/16/5540"
+        },
+        {
+          "title": "Combined DWT-DCT Digital Image Watermarking",
+          "abstract": "by A Al-Haj · 2007 · Cited by 611 — In this paper, we describe an imperceptible and a robust combined. DWT-DCT digital image watermarking algorithm. The algorithm watermarks a given digital image.",
+          "url": "https://pdfs.semanticscholar.org/1c47/f281c00cffad4e30deff48a922553cb04d17.pdf"
+        },
+        {
+          "title": "A novel technique for robust image watermarking in the ...",
+          "abstract": "In this paper, we implement watermarking using Transform Domain based techniques DCT, DWT and SVD and compare them practically on standard parameters like ...",
+          "url": "https://www.researchgate.net/publication/224747085_A_novel_technique_for_robust_image_watermarking_in_the_DCT_domain"
+        },
+        {
+          "title": "Analysis of DWT–DCT watermarking algorithm on digital ...",
+          "abstract": "by R Soundrapandiyan · 2023 · Cited by 21 — We propose a multiple watermarking method for securing clinical medical images. a two-level discrete wavelet transform (DWT) a discrete cosine transform (DCT) ...",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10754357/"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "A representative example is the 2023 IET Image Processing paper \"A robust watermarking algorithm against JPEG compression based on multi-scale auto-encoder.\" There, a multi-scale auto-encoder learns to embed a watermark such that it survives JPEG recompression, but the underlying embedding rule and the DCT-block-level processing remain grounded in the classical JPEG pipeline.",
+      "evidence": [
+        {
+          "title": "A robust watermarking framework for High Efficiency Video ...",
+          "abstract": "by T Dutta · 2016 · Cited by 62 — In this paper, we propose a robust watermarking framework with a blind extraction process for HEVC encoded video. A readable watermark is embedded invisibly in ...",
+          "url": "https://www.sciencedirect.com/science/article/abs/pii/S1047320315002473"
+        },
+        {
+          "title": "A content-based digital image watermarking algorithm ...",
+          "abstract": "by A Najafi · Cited by 1 — Researchers have applied a number of highly different algorithms to obtain robustness against. JPEG compression. Tao et al. [4] embeds a binary pattern in the ...",
+          "url": "https://alisiahkoohi.github.io/files/6151601.pdf"
+        },
+        {
+          "title": "A Robust Watermarking Technique Resistant JPEG ...",
+          "abstract": "According to the conclusion, this paper proposes a novel image quantization watermarking algorithm in DWT domain for resisting JPEG-compression attack. The ...",
+          "url": "https://www.researchgate.net/publication/220586886_A_Robust_Watermarking_Technique_Resistant_JPEG_Compression"
+        },
+        {
+          "title": "Secure and Robust Digital Image Watermarking Using ...",
+          "abstract": "by NA Loan · 2018 · Cited by 226 — This approach is robust against common processing attacks but its imperceptivity and payload is low. A DCT domain based watermark embedding ...",
+          "url": "https://ieeexplore.ieee.org/iel7/6287639/8274985/08318579.pdf"
+        },
+        {
+          "title": "A robust watermarking algorithm against JPEG compression ...",
+          "abstract": "In this paper, a watermarking algorithm based on multi-scale auto-encoder is proposed, which can effectively extract the image feature ...",
+          "url": "https://ietresearch.onlinelibrary.wiley.com/doi/10.1049/ipr2.12961"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "End-to-end systems dominate the literature because of their conceptual simplicity and empirical strength, but hybrid systems are gaining traction wherever interpretability, standards compliance, or compute constraints matter.",
+      "evidence": [
+        {
+          "title": "The end-to-end principle in distributed systems",
+          "abstract": "The end-to-end principle is originally all about designing networks. The general idea is, to be resilient to failures, the end-points of the ...",
+          "url": "https://www.tedinski.com/2019/02/27/end-to-end-principle.html"
+        },
+        {
+          "title": "Organizational Structure Change and Hybridity - PMC - NIH",
+          "abstract": "by L Liu · 2022 · Cited by 21 — The hybrids can deal with the uncertainty of the institutional environment by enhancing the uncertainty of the organizational structure.",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8959838/"
+        },
+        {
+          "title": "Global value chains: A review of the multi-disciplinary literature",
+          "abstract": "by L Kano · 2020 · Cited by 1182 — This article reviews the rapidly growing domain of global value chain (GVC) research by analyzing several highly cited conceptual frameworks",
+          "url": "https://link.springer.com/article/10.1057/s41267-020-00304-2"
+        },
+        {
+          "title": "A Compact Neural Network-based Algorithm for Robust Image Watermarking",
+          "abstract": "Digital image watermarking seeks to protect the digital media information from unauthorized access, where the message is embedded into the digital image and extracted from it, even some noises or distortions are applied under various data processing including lossy image compression and interactive content editing. Traditional image watermarking solutions easily suffer from robustness when specified with some prior constraints, while recent deep learning-based watermarking methods could not tackle the information loss problem well under various separate pipelines of feature encoder and decoder. In this paper, we propose a novel digital image watermarking solution with a compact neural network, named Invertible Watermarking Network (IWN). Our IWN architecture is based on a single Invertible Neural Network (INN), this bijective propagation framework enables us to effectively solve the challenge of message embedding and extraction simultaneously, by taking them as a pair of inverse problems for each other and learning a stable invertible mapping. In order to enhance the robustness of our watermarking solution, we specifically introduce a simple but effective bit message normalization module to condense the bit message to be embedded, and a noise layer is designed to simulate various practical attacks under our IWN framework. Extensive experiments demonstrate the superiority of our solution under various distortions.",
+          "url": "https://arxiv.org/abs/2112.13491"
+        },
+        {
+          "title": "A Robust Image Watermarking System Based on Deep Neural Networks",
+          "abstract": "Digital image watermarking is the process of embedding and extracting watermark covertly on a carrier image. Incorporating deep learning networks with image watermarking has attracted increasing attention during recent years. However, existing deep learning-based watermarking systems cannot achieve robustness, blindness, and automated embedding and extraction simultaneously. In this paper, a fully automated image watermarking system based on deep neural networks is proposed to generalize the image watermarking processes. An unsupervised deep learning structure and a novel loss computation are proposed to achieve high capacity and high robustness without any prior knowledge of possible attacks. Furthermore, a challenging application of watermark extraction from camera-captured images is provided to validate the practicality as well as the robustness of the proposed system. Experimental results show the superiority performance of the proposed system as comparing against several currently available techniques.",
+          "url": "https://arxiv.org/abs/1908.11331"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    }
+  ]
+}
