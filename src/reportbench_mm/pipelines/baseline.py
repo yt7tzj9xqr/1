@@ -90,7 +90,7 @@ class BaselinePipeline:
             )
         report = repair_grounded_report(
             report, papers, self.model,
-            f"baseline-evidence-repair-v1:{self.settings.model}", "650-800",
+            f"baseline-evidence-repair-v2:{self.settings.model}", "650-800", "8-10",
         )
         report = sanitize_report(report)
         return report, papers

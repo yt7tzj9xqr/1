@@ -33,7 +33,9 @@ def evidence_block(papers, char_limit: int) -> str:
     return "\n".join(blocks)
 
 
-def repair_grounded_report(report, papers, model, namespace: str, word_range: str) -> str:
+def repair_grounded_report(
+    report, papers, model, namespace: str, word_range: str, source_range: str = "6-8",
+) -> str:
     """Run a bounded evidence editor that deletes unsupported or uncited factual prose."""
     evidence = evidence_block(papers, 18000)
     prompt = (
@@ -43,7 +45,7 @@ def repair_grounded_report(report, papers, model, namespace: str, word_range: st
         "whose complete claim is not directly stated by that evidence, including broad trends, historical priority, "
         "comparisons, implications, introductions, transitions, and conclusions. Do not invent or alter URLs. Headings "
         "may be uncited only when they contain no factual claim. Do not include a References or Bibliography section. "
-        "Remove empty headings. When the evidence permits, retain 6-8 distinct directly supporting sources so that "
+        f"Remove empty headings. When the evidence permits, retain {source_range} distinct directly supporting sources so that "
         "grounding does not collapse topical coverage. Return only the revised Markdown report.\n\n"
         f"EVIDENCE:\n{evidence}\n\nDRAFT:\n{report}"
     )

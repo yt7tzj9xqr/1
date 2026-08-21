@@ -35,9 +35,12 @@ class CoreTests(unittest.TestCase):
 
         model = Model()
         paper = Paper("p", "Paper Title", 2020, "https://example.org/p", "Direct evidence for claim.")
-        report = repair_grounded_report("Unsupported draft.", [paper], model, "test", "600-800")
+        report = repair_grounded_report(
+            "Unsupported draft.", [paper], model, "test", "600-800", "10-12",
+        )
         self.assertIn("exactly one URL", model.prompt)
         self.assertIn("600-800", model.prompt)
+        self.assertIn("10-12 distinct", model.prompt)
         self.assertIn("https://example.org/p", report)
 
     def test_adaptive_search_uses_three_initial_and_two_feedback_queries(self):
