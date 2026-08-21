@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2105.01605",
+  "model": "MiniMax-M3",
+  "system": "citation-rag-v25",
+  "reference_precision": 0.4,
+  "reference_recall": 0.08163265306122448,
+  "reference_count": 10,
+  "reference_matches": 4,
+  "ground_truth_count": 49,
+  "predicted_titles": [
+    "Deep Adversarial Graph Attention Convolution Network for Text-Based Person Search",
+    "Natural Language Person Search Using Deep Reinforcement Learning",
+    "Learning Semantic-Aligned Feature Representation for Text-Based Person Search",
+    "Adversarial Representation Learning for Text-to-Image Matching",
+    "Person search: New paradigm of person re-identification: A survey and outlook of recent works",
+    "Attention-based Natural Language Person Retrieval",
+    "Joint Detection and Identification Feature Learning for Person Search",
+    "Asymmetric Cross-Scale Alignment for Text-Based Person Search - Cronfa",
+    "Text-Based Person Search with Limited Data - BMVA Archive",
+    "End-to-End Deep Learning for Person Search"
+  ]
+}

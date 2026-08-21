@@ -1,0 +1,264 @@
+{
+  "arxiv_id": "2401.07915",
+  "model": "MiniMax-M3",
+  "system": "citation-rag-v25",
+  "reference_precision": 0.5,
+  "reference_recall": 0.023076923076923078,
+  "reference_count": 12,
+  "reference_matches": 6,
+  "ground_truth_count": 260,
+  "predicted_titles": [
+    "Learning Dexterous In-Hand Manipulation",
+    "Continual Policy Distillation of Reinforcement Learning-based Controllers for Soft Robotic In-Hand Manipulation",
+    "Hybrid Imitation Learning Framework for Robotic Manipulation Tasks",
+    "TacGNN:Learning Tactile-based In-hand Manipulation with a Blind Robot",
+    "Reinforcement and Imitation Learning for Diverse Visuomotor Skills",
+    "On Policy Learning Robust to Irreversible Events: An Application to Robotic In-Hand Manipulation",
+    "Object Manipulation with an Anthropomorphic Robotic Hand via Deep Reinforcement Learning with a Synergy Space of Natural Hand Poses",
+    "Learning Dexterous Manipulation for a Soft Robotic Hand from Human Demonstration",
+    "Learning a State Estimator for Tactile In-Hand Manipulation",
+    "On dexterity and dexterous manipulation",
+    "Soft Robotic Grippers",
+    "Dextrous manipulation with rolling contacts"
+  ],
+  "cited_match_rate": 0.6428571428571429,
+  "cited_count": 14,
+  "cited_supported": 9,
+  "cited_details": [
+    {
+      "statement": "A 2011 paper presented a high-level discussion of dexterity in robotic systems, overviewing various definitions of dexterity, specific metrics and quantitative analysis, and classes of in-hand manipulation, while arguing that hand dexterity is desirable or necessary in contrast to the capabilities of a kinematically redundant arm with a simple grasper (https://doi.org/10.1109/icar.2011.6088576).",
+      "url": "https://doi.org/10.1109/icar.2011.6088576",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A 2018 review reported that advances in soft robotics, materials science, and stretchable electronics have enabled rapid progress in soft grippers, and that end-effectors fabricated from flexible and soft components can often grasp or manipulate a larger variety of objects compared to rigid grippers (https://doi.org/10.1002/adma.201707035).",
+      "url": "https://doi.org/10.1002/adma.201707035",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A 2002 study described dextrous manipulation as a problem of paramount importance in the study of multifingered robotic hands (https://doi.org/10.1109/robot.1997.614264).",
+      "url": "https://doi.org/10.1109/robot.1997.614264",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The 2002 study stated that the main objectives are to generate finger joint trajectories transferring the object to a goal grasp configuration through contact constraints, and to derive control algorithms to realize planned trajectories (https://doi.org/10.1109/robot.1997.614264).",
+      "url": "https://doi.org/10.1109/robot.1997.614264",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The 2002 study integrated the theories of contact kinematics, nonholonomic motion planning, and grasp stability to develop a general technique for dextrous manipulation planning with multifingered hands, with experimental results discussed (https://doi.org/10.1109/robot.1997.614264).",
+      "url": "https://doi.org/10.1109/robot.1997.614264",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "A 2022 study addressed the problem of estimating the pose of an object being manipulated by a multi-fingered robotic hand using only proprioceptive feedback (https://elib.dlr.de/190608/1/IROS22_LearningTactileEstimator.pdf).",
+      "url": "https://elib.dlr.de/190608/1/IROS22_LearningTactileEstimator.pdf",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A 2023 framework proposed tactile-based dexterous manipulation learning with a blind anthropomorphic robotic hand without visual sensing, beginning with object-related states (https://arxiv.org/abs/2304.00736).",
+      "url": "https://arxiv.org/abs/2304.00736",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A 2018 paper described a five-fingered humanoid hand trained with reinforcement learning to manipulate a block from an initial configuration to a goal configuration using vision for sensing (https://arxiv.org/abs/1808.00177).",
+      "url": "https://arxiv.org/abs/1808.00177",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A 2019 approach combined reinforcement learning based on visual perception with low-level reactive control based on tactile perception for in-hand manipulation skills with a low-cost, underactuated prosthetic hand in the presence of irreversible events, with the RL objective including minimizing the intervention of the tactile reactive control (https://arxiv.org/abs/1911.08927).",
+      "url": "https://arxiv.org/abs/1911.08927",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "A 2021 study noted that achieving human-like object manipulation remains a challenge especially due to the control complexity of the anthropomorphic robotic hand with a high degree of freedom, and proposed a deep reinforcement learning policy trained using a synergy space created by a continuous normalizing flow network over point clouds of haptic areas representing natural hand poses obtained from human grasping demonstrations, with the proposed synergy-based DRL achieving an average success rate of 88.38% for object manipulation tasks using an anthropomorphic robotic hand (https://doi.org/10.3390/s21165301).",
+      "url": "https://doi.org/10.3390/s21165301",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A 2024 study noted that dexterous manipulation with multi-fingered robotic hands holds solid impact for real-world applications, and that soft robotic hands offer flexibility and adaptability during object grasping and manipulation but face challenges in control development for finger coordination (https://arxiv.org/abs/2404.04219).",
+      "url": "https://arxiv.org/abs/2404.04219",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A 2016 work addressed learning dexterous manipulation for a soft robotic hand from human demonstrations, noting that dexterous multi-fingered hands can accomplish fine manipulation behaviors that are infeasible with simple robotic grippers, and that low-cost soft hands are an appealing alternative to sophisticated multi-fingered hands but present considerable challenges in sensing and control (https://arxiv.org/abs/1603.06348).",
+      "url": "https://arxiv.org/abs/1603.06348",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "A 2018 model-free deep reinforcement learning method leveraged a small amount of demonstration data to assist a reinforcement learning agent, applied to robotic manipulation tasks (https://doi.org/10.15607/rss.2018.xiv.009).",
+      "url": "https://doi.org/10.15607/rss.2018.xiv.009",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A 2021 hybrid imitation learning framework combined behavior cloning and state cloning in a mutually complementary manner to enhance the efficiency of robotic manipulation task learning, efficiently combined BC and SC losses using an adaptive loss mixing method, used pretrained dynamics networks to enhance SC efficiency, performed stochastic state recovery to ensure stable learning of policy networks by transforming the learner's task state into a demo state on the demo task trajectory during SC, and demonstrated training efficiency and policy flexibility in experiments on pick-up, pick-and-place, and stack tasks in which the framework showed about a 2.6 times higher performance improvement than pure BC and about a four times faster training time than pure SC (https://doi.org/10.3390/s21103409).",
+      "url": "https://doi.org/10.3390/s21103409",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    }
+  ],
+  "noncited_factual_accuracy": 1.0,
+  "noncited_count": 4,
+  "noncited_correct": 4,
+  "noncited_details": [
+    {
+      "claim": "Model-free deep reinforcement learning methods can leverage small amounts of demonstration data to assist reinforcement learning agents in robotic manipulation tasks.",
+      "evidence": [
+        {
+          "title": "Reinforcement and Imitation Learning for Diverse Visuomotor Skills",
+          "abstract": "We propose a model-free deep reinforcement learning method that leverages a small amount of demonstration data to assist a reinforcement learning agent. We apply this approach to robotic manipulation tasks and train end-to-end visuomotor policies that map directly from RGB camera inputs to joint velocities. We demonstrate that our approach can solve a wide variety of visuomotor tasks, for which engineering a scripted controller would be laborious. In experiments, our reinforcement and imitation agent achieves significantly better performances than agents trained with reinforcement learning or imitation learning alone. We also illustrate that these policies, trained with large visual and dynamics variations, can achieve preliminary successes in zero-shot sim2real transfer.",
+          "url": "https://doi.org/10.15607/rss.2018.xiv.009"
+        },
+        {
+          "title": "Continual Policy Distillation of Reinforcement Learning-based Controllers for Soft Robotic In-Hand Manipulation",
+          "abstract": "Dexterous manipulation, often facilitated by multi-fingered robotic hands, holds solid impact for real-world applications. Soft robotic hands, due to their compliant nature, offer flexibility and adaptability during object grasping and manipulation. Yet, benefits come with challenges, particularly in the control development for finger coordination. Reinforcement Learning (RL) can be employed to train object-specific in-hand manipulation policies, but limiting adaptability and generalizability. We introduce a Continual Policy Distillation (CPD) framework to acquire a versatile controller for in-hand manipulation, to rotate different objects in shape and size within a four-fingered soft gripper. The framework leverages Policy Distillation (PD) to transfer knowledge from expert policies to a continually evolving student policy network. Exemplar-based rehearsal methods are then integrated to mitigate catastrophic forgetting and enhance generalization. The performance of the CPD framework over various replay strategies demonstrates its effectiveness in consolidating knowledge from multiple experts and achieving versatile and adaptive behaviours for in-hand manipulation tasks.",
+          "url": "https://arxiv.org/abs/2404.04219"
+        },
+        {
+          "title": "Hierarchical reinforcement learning for in-hand robotic manipulation using Davenport chained rotations",
+          "abstract": "End-to-end reinforcement learning techniques are among the most successful methods for robotic manipulation tasks. However, the training time required to find a good policy capable of solving complex tasks is prohibitively large. Therefore, depending on the computing resources available, it might not be feasible to use such techniques. The use of domain knowledge to decompose manipulation tasks into primitive skills, to be performed in sequence, could reduce the overall complexity of the learning problem, and hence reduce the amount of training required to achieve dexterity. In this paper, we propose the use of Davenport chained rotations to decompose complex 3D rotation goals into a concatenation of a smaller set of more simple rotation skills. State-of-the-art reinforcement-learning-based methods can then be trained using less overall simulated experience. We compare its performance with the popular Hindsight Experience Replay method, trained in an end-to-end fashion using the same amount of experience in a simulated robotic hand environment. Despite a general decrease in performance of the primitive skills when being sequentially executed, we find that decomposing arbitrary 3D rotations into elementary rotations is beneficial when computing resources are limited, obtaining increases of success rates of approximately 10% on the most complex 3D rotations with respect to the success rates obtained by HER trained in an end-to-end fashion, and increases of success rates between 20% and 40% on the most simple rotations.",
+          "url": "https://arxiv.org/abs/2210.00795"
+        },
+        {
+          "title": "Reinforcement-Learning-Papers - GitHub",
+          "abstract": "Related papers for reinforcement learning, including classic papers and latest papers in top conferences - yingchengyang/Reinforcement-Learning-Papers.",
+          "url": "https://github.com/yingchengyang/Reinforcement-Learning-Papers"
+        },
+        {
+          "title": "Transfer Learning in Deep Reinforcement Learning: A Survey",
+          "abstract": "In general, demonstration data can help in both offline pretraining for better initialization and online RL for efficient exploration.",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11018366/"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "Multi-fingered robotic hands are commonly used to facilitate dexterous manipulation.",
+      "evidence": [
+        {
+          "title": "Learning Dexterous Manipulation for a Soft Robotic Hand from Human Demonstration",
+          "abstract": "Dexterous multi-fingered hands can accomplish fine manipulation behaviors that are infeasible with simple robotic grippers. However, sophisticated multi-fingered hands are often expensive and fragile. Low-cost soft hands offer an appealing alternative to more conventional devices, but present considerable challenges in sensing and actuation, making them difficult to apply to more complex manipulation tasks. In this paper, we describe an approach to learning from demonstration that can be used to train soft robotic hands to perform dexterous manipulation tasks. Our method uses object-centric demonstrations, where a human demonstrates the desired motion of manipulated objects with their own hands, and the robot autonomously learns to imitate these demonstrations using reinforcement learning. We propose a novel algorithm that allows us to blend and select a subset of the most feasible demonstrations to learn to imitate on the hardware, which we use with an extension of the guided policy search framework to use multiple demonstrations to learn generalizable neural network policies. We demonstrate our approach on the RBO Hand 2, with learned motor skills for turning a valve, manipulating an abacus, and grasping.",
+          "url": "https://arxiv.org/abs/1603.06348"
+        },
+        {
+          "title": "Continual Policy Distillation of Reinforcement Learning-based Controllers for Soft Robotic In-Hand Manipulation",
+          "abstract": "Dexterous manipulation, often facilitated by multi-fingered robotic hands, holds solid impact for real-world applications. Soft robotic hands, due to their compliant nature, offer flexibility and adaptability during object grasping and manipulation. Yet, benefits come with challenges, particularly in the control development for finger coordination. Reinforcement Learning (RL) can be employed to train object-specific in-hand manipulation policies, but limiting adaptability and generalizability. We introduce a Continual Policy Distillation (CPD) framework to acquire a versatile controller for in-hand manipulation, to rotate different objects in shape and size within a four-fingered soft gripper. The framework leverages Policy Distillation (PD) to transfer knowledge from expert policies to a continually evolving student policy network. Exemplar-based rehearsal methods are then integrated to mitigate catastrophic forgetting and enhance generalization. The performance of the CPD framework over various replay strategies demonstrates its effectiveness in consolidating knowledge from multiple experts and achieving versatile and adaptive behaviours for in-hand manipulation tasks.",
+          "url": "https://arxiv.org/abs/2404.04219"
+        },
+        {
+          "title": "Object Manipulation with an Anthropomorphic Robotic Hand via Deep Reinforcement Learning with a Synergy Space of Natural Hand Poses",
+          "abstract": "Anthropomorphic robotic hands are designed to attain dexterous movements and flexibility much like human hands. Achieving human-like object manipulation remains a challenge especially due to the control complexity of the anthropomorphic robotic hand with a high degree of freedom. In this work, we propose a deep reinforcement learning (DRL) to train a policy using a synergy space for generating natural grasping and relocation of variously shaped objects using an anthropomorphic robotic hand. A synergy space is created using a continuous normalizing flow network with point clouds of haptic areas, representing natural hand poses obtained from human grasping demonstrations. The DRL policy accesses the synergistic representation and derives natural hand poses through a deep regressor for object grasping and relocation tasks. Our proposed synergy-based DRL achieves an average success rate of 88.38% for the object manipulation tasks, while the standard DRL without synergy space only achieves 50.66%. Qualitative results show the proposed synergy-based DRL policy produces human-like finger placements over the surface of each object including apple, banana, flashlight, camera, lightbulb, and hammer.",
+          "url": "https://doi.org/10.3390/s21165301"
+        },
+        {
+          "title": "Development of Two-Finger Robot that Performs In-Hand Rotation ...",
+          "abstract": "We developed a two-finger robot that can grasp, rotate in-hand, and place an uneven object. dexterous manipulation of multi-fingered robotic hands: “On ...",
+          "url": "https://www.fujipress.jp/jrm/rb/robot003600020396/"
+        },
+        {
+          "title": "The Future of Dexterous Manipulation with Multifingered Robot Hands",
+          "abstract": "A look at the latest research advancing robotic dexterity with human-guided learning control for multi-fingered robot hands.",
+          "url": "https://www.wevolver.com/article/revolutionizing-robotics-the-future-of-dexterous-manipulation-with-multifingered-robot-hands"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "Soft robotic hands offer flexibility and adaptability during object grasping and manipulation due to their compliant nature.",
+      "evidence": [
+        {
+          "title": "Continual Policy Distillation of Reinforcement Learning-based Controllers for Soft Robotic In-Hand Manipulation",
+          "abstract": "Dexterous manipulation, often facilitated by multi-fingered robotic hands, holds solid impact for real-world applications. Soft robotic hands, due to their compliant nature, offer flexibility and adaptability during object grasping and manipulation. Yet, benefits come with challenges, particularly in the control development for finger coordination. Reinforcement Learning (RL) can be employed to train object-specific in-hand manipulation policies, but limiting adaptability and generalizability. We introduce a Continual Policy Distillation (CPD) framework to acquire a versatile controller for in-hand manipulation, to rotate different objects in shape and size within a four-fingered soft gripper. The framework leverages Policy Distillation (PD) to transfer knowledge from expert policies to a continually evolving student policy network. Exemplar-based rehearsal methods are then integrated to mitigate catastrophic forgetting and enhance generalization. The performance of the CPD framework over various replay strategies demonstrates its effectiveness in consolidating knowledge from multiple experts and achieving versatile and adaptive behaviours for in-hand manipulation tasks.",
+          "url": "https://arxiv.org/abs/2404.04219"
+        },
+        {
+          "title": "Object Manipulation with an Anthropomorphic Robotic Hand via Deep Reinforcement Learning with a Synergy Space of Natural Hand Poses",
+          "abstract": "Anthropomorphic robotic hands are designed to attain dexterous movements and flexibility much like human hands. Achieving human-like object manipulation remains a challenge especially due to the control complexity of the anthropomorphic robotic hand with a high degree of freedom. In this work, we propose a deep reinforcement learning (DRL) to train a policy using a synergy space for generating natural grasping and relocation of variously shaped objects using an anthropomorphic robotic hand. A synergy space is created using a continuous normalizing flow network with point clouds of haptic areas, representing natural hand poses obtained from human grasping demonstrations. The DRL policy accesses the synergistic representation and derives natural hand poses through a deep regressor for object grasping and relocation tasks. Our proposed synergy-based DRL achieves an average success rate of 88.38% for the object manipulation tasks, while the standard DRL without synergy space only achieves 50.66%. Qualitative results show the proposed synergy-based DRL policy produces human-like finger placements over the surface of each object including apple, banana, flashlight, camera, lightbulb, and hammer.",
+          "url": "https://doi.org/10.3390/s21165301"
+        },
+        {
+          "title": "Learning Dexterous Manipulation for a Soft Robotic Hand from Human Demonstration",
+          "abstract": "Dexterous multi-fingered hands can accomplish fine manipulation behaviors that are infeasible with simple robotic grippers. However, sophisticated multi-fingered hands are often expensive and fragile. Low-cost soft hands offer an appealing alternative to more conventional devices, but present considerable challenges in sensing and actuation, making them difficult to apply to more complex manipulation tasks. In this paper, we describe an approach to learning from demonstration that can be used to train soft robotic hands to perform dexterous manipulation tasks. Our method uses object-centric demonstrations, where a human demonstrates the desired motion of manipulated objects with their own hands, and the robot autonomously learns to imitate these demonstrations using reinforcement learning. We propose a novel algorithm that allows us to blend and select a subset of the most feasible demonstrations to learn to imitate on the hardware, which we use with an extension of the guided policy search framework to use multiple demonstrations to learn generalizable neural network policies. We demonstrate our approach on the RBO Hand 2, with learned motor skills for turning a valve, manipulating an abacus, and grasping.",
+          "url": "https://arxiv.org/abs/1603.06348"
+        },
+        {
+          "title": "A Soft-Robotic Approach to Anthropomorphic ...",
+          "abstract": "by J Zhou · 2019 · Cited by 192 — soft robot hands were most successful in reproducing object grasping, rather than in-hand manipulation tasks.",
+          "url": "https://hub.hku.hk/bitstream/10722/275058/1/Content.pdf"
+        },
+        {
+          "title": "Development and Grasp Stability Estimation of Sensorized ...",
+          "abstract": "by PM Khin · 2021 · Cited by 30 — This paper introduces the development of an anthropomorphic soft robotic hand integrated with multiple flexible force sensors in the fingers.",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8044746/"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "Hierarchical reinforcement learning can be applied to in-hand robotic manipulation using Davenport chained rotations.",
+      "evidence": [
+        {
+          "title": "Hierarchical reinforcement learning for in-hand robotic manipulation using Davenport chained rotations",
+          "abstract": "End-to-end reinforcement learning techniques are among the most successful methods for robotic manipulation tasks. However, the training time required to find a good policy capable of solving complex tasks is prohibitively large. Therefore, depending on the computing resources available, it might not be feasible to use such techniques. The use of domain knowledge to decompose manipulation tasks into primitive skills, to be performed in sequence, could reduce the overall complexity of the learning problem, and hence reduce the amount of training required to achieve dexterity. In this paper, we propose the use of Davenport chained rotations to decompose complex 3D rotation goals into a concatenation of a smaller set of more simple rotation skills. State-of-the-art reinforcement-learning-based methods can then be trained using less overall simulated experience. We compare its performance with the popular Hindsight Experience Replay method, trained in an end-to-end fashion using the same amount of experience in a simulated robotic hand environment. Despite a general decrease in performance of the primitive skills when being sequentially executed, we find that decomposing arbitrary 3D rotations into elementary rotations is beneficial when computing resources are limited, obtaining increases of success rates of approximately 10% on the most complex 3D rotations with respect to the success rates obtained by HER trained in an end-to-end fashion, and increases of success rates between 20% and 40% on the most simple rotations.",
+          "url": "https://arxiv.org/abs/2210.00795"
+        },
+        {
+          "title": "Learning Dexterous In-Hand Manipulation",
+          "abstract": "We use reinforcement learning (RL) to learn dexterous in-hand manipulation policies which can perform vision-based object reorientation on a physical Shadow Dexterous Hand. The training is performed in a simulated environment in which we randomize many of the physical properties of the system like friction coefficients and an object's appearance. Our policies transfer to the physical robot despite being trained entirely in simulation. Our method does not rely on any human demonstrations, but many behaviors found in human manipulation emerge naturally, including finger gaiting, multi-finger coordination, and the controlled use of gravity. Our results were obtained using the same distributed RL system that was used to train OpenAI Five. We also include a video of our results: https://youtu.be/jwSbzNHGflM",
+          "url": "https://arxiv.org/abs/1808.00177"
+        },
+        {
+          "title": "Continual Policy Distillation of Reinforcement Learning-based Controllers for Soft Robotic In-Hand Manipulation",
+          "abstract": "Dexterous manipulation, often facilitated by multi-fingered robotic hands, holds solid impact for real-world applications. Soft robotic hands, due to their compliant nature, offer flexibility and adaptability during object grasping and manipulation. Yet, benefits come with challenges, particularly in the control development for finger coordination. Reinforcement Learning (RL) can be employed to train object-specific in-hand manipulation policies, but limiting adaptability and generalizability. We introduce a Continual Policy Distillation (CPD) framework to acquire a versatile controller for in-hand manipulation, to rotate different objects in shape and size within a four-fingered soft gripper. The framework leverages Policy Distillation (PD) to transfer knowledge from expert policies to a continually evolving student policy network. Exemplar-based rehearsal methods are then integrated to mitigate catastrophic forgetting and enhance generalization. The performance of the CPD framework over various replay strategies demonstrates its effectiveness in consolidating knowledge from multiple experts and achieving versatile and adaptive behaviours for in-hand manipulation tasks.",
+          "url": "https://arxiv.org/abs/2404.04219"
+        },
+        {
+          "title": "Deep Reinforcement Learning for Robotic Hand ...",
+          "abstract": "In this project we benchmark the performance of three different deep reinforcement Learning techniques Deep Deterministic Policy Gradient “DDPG” [1], Deep ...",
+          "url": "https://www.raillab.org/publication/saeed-2021-deep/"
+        },
+        {
+          "title": "Learning Dexterous Manipulation",
+          "abstract": "We trained reinforcement learning (RL) for dexterous robotic hands motions and brought it to the real world, For this, we introduced the biomimetic ...",
+          "url": "https://srl.ethz.ch/research/modeling-control/lbm.html"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    }
+  ]
+}

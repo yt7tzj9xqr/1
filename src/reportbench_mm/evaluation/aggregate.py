@@ -17,8 +17,7 @@ def aggregate(metric_files: list[Path], output: Path) -> dict:
     summary = {"task_count": len(rows)}
     for key in numeric:
         values = [float(row[key]) for row in rows if key in row and row[key] is not None]
-        if values:
-            summary[key] = mean(values)
+        summary[key] = mean(values) if values else None
 
     def total(key: str) -> int:
         return sum(int(row.get(key) or 0) for row in rows)
@@ -30,6 +29,7 @@ def aggregate(metric_files: list[Path], output: Path) -> dict:
     cited_count = total("cited_count")
     noncited_correct = total("noncited_correct")
     noncited_count = total("noncited_count")
+    noncited_macro_accuracy = summary.get("noncited_factual_accuracy")
     summary.update({
         "reference_matches_total": reference_matches,
         "ground_truth_count_total": ground_truth_count,
@@ -39,6 +39,11 @@ def aggregate(metric_files: list[Path], output: Path) -> dict:
         "noncited_micro_accuracy": noncited_correct / noncited_count if noncited_count else None,
         "noncited_evaluated_total": noncited_count,
     })
+    # Table 1 defines factual accuracy as the proportion of verified statements,
+    # so the primary field uses pooled statement counts.  Keep the task macro for
+    # diagnostics because sparse reports otherwise receive disproportionate weight.
+    summary["noncited_macro_accuracy"] = noncited_macro_accuracy
+    summary["noncited_factual_accuracy"] = summary["noncited_micro_accuracy"]
     nonempty_noncited = [
         float(row["noncited_factual_accuracy"])
         for row in rows

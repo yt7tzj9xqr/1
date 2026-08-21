@@ -179,6 +179,34 @@ def extract_noncited(report: str, cited: list[dict], model: MiniMaxClient, limit
     return list(dict.fromkeys(selected))[:limit]
 
 
+def merge_claim_evidence(
+    local_rows: list[dict], web_rows: list[dict], *, limit: int = 5, local_reserve: int = 3,
+) -> list[dict]:
+    """Reserve report-local scholarly evidence before noisy free-web results.
+
+    The previous `web_rows + local_rows` ordering filled all five slots whenever
+    web search returned five hits, silently discarding the RAG evidence used to
+    construct the claim.  This is especially damaging for ambiguous phrases
+    such as "student-teacher" or "feature alignment".
+    """
+    selected: list[dict] = []
+    seen: set[str] = set()
+
+    def add(row: dict) -> None:
+        key = row.get("url") or row.get("title") or ""
+        if key and key not in seen and len(selected) < limit:
+            seen.add(key)
+            selected.append(row)
+
+    for row in local_rows[: min(local_reserve, limit)]:
+        add(row)
+    for row in web_rows:
+        add(row)
+    for row in local_rows[min(local_reserve, limit):]:
+        add(row)
+    return selected
+
+
 def evaluate_noncited(
     statements: list[str], model: MiniMaxClient, scholar, cutoff, votes: int = 3,
     local_papers: list[dict] | None = None,
@@ -207,16 +235,9 @@ def evaluate_noncited(
         web_rows = [
             {"title": p.title, "abstract": p.abstract, "url": p.url} for p in evidence if p.abstract
         ]
-        evidence_rows = []
-        seen_urls: set[str] = set()
-        for row in web_rows + local_rows:
-            key = row.get("url") or row.get("title") or ""
-            if key and key not in seen_urls:
-                seen_urls.add(key)
-                evidence_rows.append(row)
         return {
             "claim": statement,
-            "evidence": evidence_rows[:5],
+            "evidence": merge_claim_evidence(local_rows, web_rows, limit=5, local_reserve=3),
         }
 
     with ThreadPoolExecutor(max_workers=min(5, max(1, len(statements)))) as executor:
@@ -241,7 +262,9 @@ def evaluate_noncited(
         correct += int(decision)
         details.append({**record, "true_votes": yes, "total_votes": votes, "decision": decision})
     return {
-        "noncited_factual_accuracy": correct / len(records) if records else 0.0,
+        # An empty extraction set is 0/0, not 0% accuracy.  JSON null prevents
+        # downstream tables from misreporting "not evaluated" as "all wrong".
+        "noncited_factual_accuracy": correct / len(records) if records else None,
         "noncited_count": len(records),
         "noncited_correct": correct,
         "noncited_details": details,

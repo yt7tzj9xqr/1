@@ -400,7 +400,7 @@ class CitationRagPipeline:
         report = normalize_source_citations(report, writing_papers)
         report = add_verified_noncited_facts(
             report, writing_papers, self.model,
-            f"citation-rag-verified-background-v1:{self.settings.model}",
+            f"citation-rag-verified-background-v2:{self.settings.model}",
             target=4, votes=3,
         )
         return report, papers

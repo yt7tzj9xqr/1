@@ -1,0 +1,290 @@
+{
+  "arxiv_id": "2308.04603",
+  "model": "MiniMax-M3",
+  "system": "search-baseline-v12",
+  "reference_precision": 0.3333333333333333,
+  "reference_recall": 0.05970149253731343,
+  "reference_count": 12,
+  "reference_matches": 4,
+  "ground_truth_count": 67,
+  "predicted_titles": [
+    "HiDDeN: Hiding Data With Deep Networks",
+    "StegaStamp: Invisible Hyperlinks in Physical Photographs",
+    "A Robust Image Watermarking System Based on Deep Neural Networks",
+    "An Automated and Robust Image Watermarking Scheme Based on Deep Neural Networks",
+    "A General Approach for Using Deep Neural Network for Digital Watermarking",
+    "Enhancing Robustness of DNN-based Watermarking by Mini",
+    "A Compact Neural Network-based Algorithm for Robust Image Watermarking",
+    "End-to-End Image Steganography Using Deep Convolutional Autoencoders",
+    "Robust Spatial-spread Deep Neural Image Watermarking",
+    "Deep Boosting Robustness of DNN-based Image Watermarking via DBMark",
+    "Go Wide or Go Deep: Levering Watermarking Performance with Computational Cost for Specific Images",
+    "Robust Zero Watermarking Algorithm for Medical Images Based on Improved NasNet-Mobile and DCT"
+  ],
+  "cited_match_rate": 0.38461538461538464,
+  "cited_count": 13,
+  "cited_supported": 5,
+  "cited_details": [
+    {
+      "statement": "The seminal work that established end-to-end deep watermarking is HiDDeN, which introduced a jointly trained encoder, decoder, and adversarial discriminator and showed that a convolutional network can learn to embed a binary message into an image while remaining robust to noise, crop, and JPEG compression [https://arxiv.org/abs/1807.09937].",
+      "url": "https://arxiv.org/abs/1807.09937",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Building on this, StegaStamp extended the idea to physical photographs by training a neural encoder and decoder against a differentiable approximation of printing-and-recapture distortions, enabling hyper-links to be retrieved from camera-captured prints and screens [https://arxiv.org/abs/1904.05343].",
+      "url": "https://arxiv.org/abs/1904.05343",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A compact neural-network watermarking algorithm couples a lightweight encoder–decoder with a separable loss formulation to balance capacity, robustness, and image quality [https://arxiv.org/abs/2112.13491].",
+      "url": "https://arxiv.org/abs/2112.13491",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "A complementary line of work, \"Go Wide or Go Deep,\" trains image-dependent encoder–decoders that trade model width for depth, allowing users to choose an operating point on the robustness–imperceptibility curve for a given cover image [https://arxiv.org/abs/2204.11513].",
+      "url": "https://arxiv.org/abs/2204.11513",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "DBMark consolidates these ideas into a unified pipeline that augments the joint training with a depth-boosting module and a JPEG-simulation layer, demonstrating state-of-the-art bit accuracy under aggressive compression [https://arxiv.org/abs/2210.13801].",
+      "url": "https://arxiv.org/abs/2210.13801",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "A spatial-spread variant of the end-to-end architecture distributes the watermark bits across the image domain using a learned spreading transform, improving robustness against localized cropping [https://www.semanticscholar.org/paper/b1ffb4adfc9ec647d5dee15cd3dacce1a662ffe5].",
+      "url": "https://semanticscholar.org/paper/b1ffb4adfc9ec647d5dee15cd3dacce1a662ffe5",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "A representative example is a robust zero-watermarking scheme for medical images that adapts the pre-trained NasNet-Mobile classifier by replacing its softmax head with a 128-dimensional fully connected regression layer, from which a 128-D feature vector is harvested per image and then transformed by the discrete cosine transform (DCT) to produce a 32-bit perceptual hash that serves as the watermark [https://doi.org/10.3390/electronics12163444].",
+      "url": "https://doi.org/10.3390/electronics12163444",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The same conceptual role of \"neural feature extractor plus classical operator\" also appears in early DNN-based systems, where a convolutional autoencoder first encodes a cover and a secret image and a traditional reconstruction step refines the stego container, reporting higher capacity, security, and imperceptibility than prior handcrafted steganographic methods [https://doi.org/10.1109/access.2021.3113953].",
+      "url": "https://doi.org/10.1109/access.2021.3113953",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The \"Mini\" framework demonstrates this by training the encoder–decoder with a differentiable simulated JPEG layer while a separate real-JPEG forward pass fine-tunes the decoder, thereby closing the train–test gap induced by non-differentiable compression [https://dl.acm.org/doi/pdf/10.1145/3474085.3475324].",
+      "url": "https://dl.acm.org/doi/pdf/10.1145/3474085.3475324",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "DBMark follows a similar philosophy, combining a JPEG-simulation noise layer with an auxiliary booster network and report superior robustness compared to single-noise-layer baselines [https://arxiv.org/abs/2210.13801].",
+      "url": "https://arxiv.org/abs/2210.13801",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Earlier systems also adopt hybrid strategies: a 2019 DNN-based watermarking system couples a convolutional encoder with a noise-aware decoder trained against geometric and signal-processing attacks to maintain watermark integrity under common distortions [https://arxiv.org/abs/1908.11331].",
+      "url": "https://arxiv.org/abs/1908.11331",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "An automated 2020 extension generalizes this design to a multi-bit, distortion-agnostic setting by integrating an attack-simulation layer into the end-to-end loss so that the network adapts to heterogeneous image manipulations [https://arxiv.org/abs/2007.02460].",
+      "url": "https://arxiv.org/abs/2007.02460",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "A \"general\" DNN watermarking framework, in turn, trains one network across an entire image set rather than per-image, so that a single model can protect a distinct test set in bulk while remaining robust to common manipulations [https://arxiv.org/abs/2003.12428].",
+      "url": "https://arxiv.org/abs/2003.12428",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    }
+  ],
+  "noncited_factual_accuracy": 0.2,
+  "noncited_count": 5,
+  "noncited_correct": 1,
+  "noncited_details": [
+    {
+      "claim": "The supplied primary literature spans three recognizable paradigms: end-to-end jointly trained encoder–decoder systems, networks used as feature-extraction or transformation tools, and hybrid methods that fuse classical signal-processing operators with learned components.",
+      "evidence": [
+        {
+          "title": "Go Wide or Go Deep: Levering Watermarking Performance with Computational Cost for Specific Images",
+          "abstract": "Digital watermarking has been widely studied for the protection of intellectual property. Traditional watermarking schemes often design in a \"wider\" rule, which applies one general embedding mechanism to all images. But this will limit the scheme into a robustness-invisibility trade-off, where the improvements of robustness can only be achieved by the increase of embedding intensity thus causing the visual quality decay. However, a new scenario comes out at this stage that many businesses wish to give high level protection to specific valuable images, which requires high robustness and high visual quality at the same time. Such scenario makes the watermarking schemes should be designed in a \"deeper\" way which makes the embedding mechanism customized to specific images. To achieve so, we break the robustness-invisibility trade-off by introducing computation cost in, and propose a novel auto-decoder-like image-specified watermarking framework (ISMark). Based on ISMark, the strong robustness and high visual quality for specific images can be both achieved. In detail, we apply an optimization procedure (OPT) to replace the traditional embedding mechanism. Unlike existing schemes that embed watermarks using a learned encoder, OPT regards the cover image as the optimizable parameters to minimize the extraction error of the decoder, thus the features of each specified image can be effectively exploited to achieve superior performance. Extensive experiments indicate that ISMark outperforms the state-of-the-art methods by a large margin, which improves the average bit error rate by 4.64% (from 4.86% to 0.22%) and PSNR by 2.20dB (from 32.50dB to 34.70dB).",
+          "url": "https://arxiv.org/abs/2204.11513"
+        },
+        {
+          "title": "End-to-End Image Steganography Using Deep Convolutional Autoencoders",
+          "abstract": "Image steganography is used to hide a secret image inside a cover image in plain sight. Traditionally, the secret data is converted into binary bits and the cover image is manipulated statistically to embed the secret binary bits. Overloading the cover image may lead to distortions and the secret information may become visible. Hence the hiding capacity of the traditional methods are limited. In this paper, a light-weight yet simple deep convolutional autoencoder architecture is proposed to embed a secret image inside a cover image as well as to extract the embedded secret image from the stego image. The proposed method is evaluated using three datasets - COCO, CelebA and ImageNet. Peak Signal-to-Noise Ratio, hiding capacity and imperceptibility results on the test set are used to measure the performance. The proposed method has been evaluated using various images including Lena, airplane, baboon and peppers and compared against other traditional image steganography methods. The experimental results have demonstrated that the proposed method has higher hiding capacity, security and robustness, and imperceptibility performances than other deep learning image steganography methods.",
+          "url": "https://doi.org/10.1109/access.2021.3113953"
+        },
+        {
+          "title": "A General Approach for Using Deep Neural Network for Digital Watermarking",
+          "abstract": "Technologies of the Internet of Things (IoT) facilitate digital contents such as images being acquired in a massive way. However, consideration from the privacy or legislation perspective still demands the need for intellectual content protection. In this paper, we propose a general deep neural network (DNN) based watermarking method to fulfill this goal. Instead of training a neural network for protecting a specific image, we train on an image set and use the trained model to protect a distinct test image set in a bulk manner. Respective evaluations both from the subjective and objective aspects confirm the supremacy and practicability of our proposed method. To demonstrate the robustness of this general neural watermarking mechanism, commonly used manipulations are applied to the watermarked image to examine the corresponding extracted watermark, which still retains sufficient recognizable traits. To the best of our knowledge, we are the first to propose a general way to perform watermarking using DNN. Considering its performance and economy, it is concluded that subsequent studies that generalize our work on utilizing DNN for intellectual content protection is a promising research trend.",
+          "url": "https://arxiv.org/abs/2003.12428"
+        },
+        {
+          "title": "Encoder-Decoder Full Residual Deep Networks for Robust ...",
+          "abstract": "by L Li · 2021 · Cited by 44 — In this paper, we present a new architecture of encoder-decoder full residual deep network as a robust solution of deep learning, particularly for applications ...",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8665903/"
+        },
+        {
+          "title": "What is an encoder-decoder model?",
+          "abstract": "Encoder-decoder is a type of neural network architecture used for sequential data processing and generation. In deep learning, the encoder-decoder architecture ...",
+          "url": "https://www.ibm.com/think/topics/encoder-decoder-model"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "HiDDeN's encoder–decoder–adversarial triplet became the canonical architecture for subsequent research.",
+      "evidence": [
+        {
+          "title": "A Compact Neural Network-based Algorithm for Robust Image Watermarking",
+          "abstract": "Digital image watermarking seeks to protect the digital media information from unauthorized access, where the message is embedded into the digital image and extracted from it, even some noises or distortions are applied under various data processing including lossy image compression and interactive content editing. Traditional image watermarking solutions easily suffer from robustness when specified with some prior constraints, while recent deep learning-based watermarking methods could not tackle the information loss problem well under various separate pipelines of feature encoder and decoder. In this paper, we propose a novel digital image watermarking solution with a compact neural network, named Invertible Watermarking Network (IWN). Our IWN architecture is based on a single Invertible Neural Network (INN), this bijective propagation framework enables us to effectively solve the challenge of message embedding and extraction simultaneously, by taking them as a pair of inverse problems for each other and learning a stable invertible mapping. In order to enhance the robustness of our watermarking solution, we specifically introduce a simple but effective bit message normalization module to condense the bit message to be embedded, and a noise layer is designed to simulate various practical attacks under our IWN framework. Extensive experiments demonstrate the superiority of our solution under various distortions.",
+          "url": "https://arxiv.org/abs/2112.13491"
+        },
+        {
+          "title": "An Automated and Robust Image Watermarking Scheme Based on Deep Neural Networks",
+          "abstract": "Digital image watermarking is the process of embedding and extracting a watermark covertly on a cover-image. To dynamically adapt image watermarking algorithms, deep learning-based image watermarking schemes have attracted increased attention during recent years. However, existing deep learning-based watermarking methods neither fully apply the fitting ability to learn and automate the embedding and extracting algorithms, nor achieve the properties of robustness and blindness simultaneously. In this paper, a robust and blind image watermarking scheme based on deep learning neural networks is proposed. To minimize the requirement of domain knowledge, the fitting ability of deep neural networks is exploited to learn and generalize an automated image watermarking algorithm. A deep learning architecture is specially designed for image watermarking tasks, which will be trained in an unsupervised manner to avoid human intervention and annotation. To facilitate flexible applications, the robustness of the proposed scheme is achieved without requiring any prior knowledge or adversarial examples of possible attacks. A challenging case of watermark extraction from phone camera-captured images demonstrates the robustness and practicality of the proposal. The experiments, evaluation, and application cases confirm the superiority of the proposed scheme.",
+          "url": "https://arxiv.org/abs/2007.02460"
+        },
+        {
+          "title": "A General Approach for Using Deep Neural Network for Digital Watermarking",
+          "abstract": "Technologies of the Internet of Things (IoT) facilitate digital contents such as images being acquired in a massive way. However, consideration from the privacy or legislation perspective still demands the need for intellectual content protection. In this paper, we propose a general deep neural network (DNN) based watermarking method to fulfill this goal. Instead of training a neural network for protecting a specific image, we train on an image set and use the trained model to protect a distinct test image set in a bulk manner. Respective evaluations both from the subjective and objective aspects confirm the supremacy and practicability of our proposed method. To demonstrate the robustness of this general neural watermarking mechanism, commonly used manipulations are applied to the watermarked image to examine the corresponding extracted watermark, which still retains sufficient recognizable traits. To the best of our knowledge, we are the first to propose a general way to perform watermarking using DNN. Considering its performance and economy, it is concluded that subsequent studies that generalize our work on utilizing DNN for intellectual content protection is a promising research trend.",
+          "url": "https://arxiv.org/abs/2003.12428"
+        },
+        {
+          "title": "Experimental Research on Encoder-Decoder Architectures ...",
+          "abstract": "In this paper, we offer an experimental view of how recent advances in close areas as machine translation can be adopted for chatbots. In particular, we compare ...",
+          "url": "https://www.researchgate.net/publication/332549468_Experimental_Research_on_Encoder-Decoder_Architectures_with_Attention_for_Chatbots"
+        },
+        {
+          "title": "10.6. The Encoder–Decoder Architecture",
+          "abstract": "Encoder-decoder architectures can handle inputs and outputs that both consist of variable-length sequences and thus are suitable for sequence-to-sequence ...",
+          "url": "https://d2l.ai/chapter_recurrent-modern/encoder-decoder.html"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "A second paradigm treats a pre-trained or fine-tuned neural network as a feature extractor whose outputs are then fed to a classical watermarking stage.",
+      "evidence": [
+        {
+          "title": "Robust Zero Watermarking Algorithm for Medical Images Based on Improved NasNet-Mobile and DCT",
+          "abstract": "In the continuous progress of mobile internet technology, medical image processing technology is also always being upgraded and improved. In this field, digital watermarking technology is significant and provides a strong guarantee for medical image information security. This paper offers a robustness zero watermarking strategy for medical pictures based on an Improved NasNet-Mobile convolutional neural network and the discrete cosine transform (DCT) to address the lack of robustness of existing medical image watermarking algorithms. First, the structure of the pre-training network NasNet-Mobile is adjusted by using a fully connected layer with 128 output and a regression layer instead of the original Softmax layer and classification layer, thus generating a regression network with 128 output, whereby the 128 features are extracted from the medical images using the NasNet-Mobile network with migration learning. Migration learning is then performed on the modified NasNet-Mobile network to obtain the trained network, which is then used to extract medical image features, and finally the extracted image features are subjected to DCT transform to extract low frequency data, and the perceptual hashing algorithm processes the extracted data to obtain a 32-bit binary feature vector. Before performing the watermark embedding, the watermark data is encrypted using the chaos mapping algorithm to increase data security. Next, the zero watermarking technique is used to allow the algorithm to embed and extract the watermark without changing the information contained in the medical image. The experimental findings demonstrate the algorithm’s strong resistance to both conventional and geometric assaults. The algorithm offers some practical application value in the realm of medicine when compared to other approaches.",
+          "url": "https://doi.org/10.3390/electronics12163444"
+        },
+        {
+          "title": "A Compact Neural Network-based Algorithm for Robust Image Watermarking",
+          "abstract": "Digital image watermarking seeks to protect the digital media information from unauthorized access, where the message is embedded into the digital image and extracted from it, even some noises or distortions are applied under various data processing including lossy image compression and interactive content editing. Traditional image watermarking solutions easily suffer from robustness when specified with some prior constraints, while recent deep learning-based watermarking methods could not tackle the information loss problem well under various separate pipelines of feature encoder and decoder. In this paper, we propose a novel digital image watermarking solution with a compact neural network, named Invertible Watermarking Network (IWN). Our IWN architecture is based on a single Invertible Neural Network (INN), this bijective propagation framework enables us to effectively solve the challenge of message embedding and extraction simultaneously, by taking them as a pair of inverse problems for each other and learning a stable invertible mapping. In order to enhance the robustness of our watermarking solution, we specifically introduce a simple but effective bit message normalization module to condense the bit message to be embedded, and a noise layer is designed to simulate various practical attacks under our IWN framework. Extensive experiments demonstrate the superiority of our solution under various distortions.",
+          "url": "https://arxiv.org/abs/2112.13491"
+        },
+        {
+          "title": "A General Approach for Using Deep Neural Network for Digital Watermarking",
+          "abstract": "Technologies of the Internet of Things (IoT) facilitate digital contents such as images being acquired in a massive way. However, consideration from the privacy or legislation perspective still demands the need for intellectual content protection. In this paper, we propose a general deep neural network (DNN) based watermarking method to fulfill this goal. Instead of training a neural network for protecting a specific image, we train on an image set and use the trained model to protect a distinct test image set in a bulk manner. Respective evaluations both from the subjective and objective aspects confirm the supremacy and practicability of our proposed method. To demonstrate the robustness of this general neural watermarking mechanism, commonly used manipulations are applied to the watermarked image to examine the corresponding extracted watermark, which still retains sufficient recognizable traits. To the best of our knowledge, we are the first to propose a general way to perform watermarking using DNN. Considering its performance and economy, it is concluded that subsequent studies that generalize our work on utilizing DNN for intellectual content protection is a promising research trend.",
+          "url": "https://arxiv.org/abs/2003.12428"
+        },
+        {
+          "title": "Fine Tuning Transformer Models for Domain Specific Feature Extraction",
+          "abstract": "This study goes through the current state of the art of transformer models and attempts to ・ trained neural network into the new neural ...",
+          "url": "https://upcommons.upc.edu/bitstreams/23d37053-0616-4a36-9646-9be92e1fac58/download"
+        },
+        {
+          "title": "Ranking and Tuning Pre-trained Models: A New Paradigm for ...",
+          "abstract": "They can further improve transfer learning performance, but empirically these fine-tuning methods do not change the ranking of pre-trained models on downstream ...",
+          "url": "https://jmlr.org/papers/volume23/21-1251/21-1251.pdf"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "End-to-end jointly trained encoder–decoders were inaugurated by HiDDeN.",
+      "evidence": [
+        {
+          "title": "HiDDeN: Hiding Data With Deep Networks",
+          "abstract": "by J Zhu · 2018 · Cited by 1785 — View a PDF of the paper titled HiDDeN: We find that neural networks can learn to use invisible perturbations to encode a rich amount of useful ...",
+          "url": "https://arxiv.org/abs/1807.09937"
+        },
+        {
+          "title": "An Automated and Robust Image Watermarking Scheme Based on Deep Neural Networks",
+          "abstract": "Digital image watermarking is the process of embedding and extracting a watermark covertly on a cover-image. To dynamically adapt image watermarking algorithms, deep learning-based image watermarking schemes have attracted increased attention during recent years. However, existing deep learning-based watermarking methods neither fully apply the fitting ability to learn and automate the embedding and extracting algorithms, nor achieve the properties of robustness and blindness simultaneously. In this paper, a robust and blind image watermarking scheme based on deep learning neural networks is proposed. To minimize the requirement of domain knowledge, the fitting ability of deep neural networks is exploited to learn and generalize an automated image watermarking algorithm. A deep learning architecture is specially designed for image watermarking tasks, which will be trained in an unsupervised manner to avoid human intervention and annotation. To facilitate flexible applications, the robustness of the proposed scheme is achieved without requiring any prior knowledge or adversarial examples of possible attacks. A challenging case of watermark extraction from phone camera-captured images demonstrates the robustness and practicality of the proposal. The experiments, evaluation, and application cases confirm the superiority of the proposed scheme.",
+          "url": "https://arxiv.org/abs/2007.02460"
+        },
+        {
+          "title": "A General Approach for Using Deep Neural Network for Digital Watermarking",
+          "abstract": "Technologies of the Internet of Things (IoT) facilitate digital contents such as images being acquired in a massive way. However, consideration from the privacy or legislation perspective still demands the need for intellectual content protection. In this paper, we propose a general deep neural network (DNN) based watermarking method to fulfill this goal. Instead of training a neural network for protecting a specific image, we train on an image set and use the trained model to protect a distinct test image set in a bulk manner. Respective evaluations both from the subjective and objective aspects confirm the supremacy and practicability of our proposed method. To demonstrate the robustness of this general neural watermarking mechanism, commonly used manipulations are applied to the watermarked image to examine the corresponding extracted watermark, which still retains sufficient recognizable traits. To the best of our knowledge, we are the first to propose a general way to perform watermarking using DNN. Considering its performance and economy, it is concluded that subsequent studies that generalize our work on utilizing DNN for intellectual content protection is a promising research trend.",
+          "url": "https://arxiv.org/abs/2003.12428"
+        },
+        {
+          "title": "RNN Encoder-Decoder Architecture Revolutionizes NLP",
+          "abstract": "This paper proposed a clean solution: two recurrent neural networks working as an encoder-decoder pair, jointly trained to maximize translation ...",
+          "url": "https://www.linkedin.com/posts/abhishake-yadav-0_fundamental-paper-4-learning-phrase-representations-activity-7462102471398780931-TssE"
+        },
+        {
+          "title": "End-to-End Deep Learning in Wireless Communication ...",
+          "abstract": "This paper surveys advancements in applying deep learning (DL) for end-to-end PHY optimization by incorporating the autoencoder (AE) model as a powerful end-to ...",
+          "url": "https://arxiv.org/html/2603.12289"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "Feature-extraction and hybrid schemes extend applicability to domains such as medical imaging.",
+      "evidence": [
+        {
+          "title": "Go Wide or Go Deep: Levering Watermarking Performance with Computational Cost for Specific Images",
+          "abstract": "Digital watermarking has been widely studied for the protection of intellectual property. Traditional watermarking schemes often design in a \"wider\" rule, which applies one general embedding mechanism to all images. But this will limit the scheme into a robustness-invisibility trade-off, where the improvements of robustness can only be achieved by the increase of embedding intensity thus causing the visual quality decay. However, a new scenario comes out at this stage that many businesses wish to give high level protection to specific valuable images, which requires high robustness and high visual quality at the same time. Such scenario makes the watermarking schemes should be designed in a \"deeper\" way which makes the embedding mechanism customized to specific images. To achieve so, we break the robustness-invisibility trade-off by introducing computation cost in, and propose a novel auto-decoder-like image-specified watermarking framework (ISMark). Based on ISMark, the strong robustness and high visual quality for specific images can be both achieved. In detail, we apply an optimization procedure (OPT) to replace the traditional embedding mechanism. Unlike existing schemes that embed watermarks using a learned encoder, OPT regards the cover image as the optimizable parameters to minimize the extraction error of the decoder, thus the features of each specified image can be effectively exploited to achieve superior performance. Extensive experiments indicate that ISMark outperforms the state-of-the-art methods by a large margin, which improves the average bit error rate by 4.64% (from 4.86% to 0.22%) and PSNR by 2.20dB (from 32.50dB to 34.70dB).",
+          "url": "https://arxiv.org/abs/2204.11513"
+        },
+        {
+          "title": "An Automated and Robust Image Watermarking Scheme Based on Deep Neural Networks",
+          "abstract": "Digital image watermarking is the process of embedding and extracting a watermark covertly on a cover-image. To dynamically adapt image watermarking algorithms, deep learning-based image watermarking schemes have attracted increased attention during recent years. However, existing deep learning-based watermarking methods neither fully apply the fitting ability to learn and automate the embedding and extracting algorithms, nor achieve the properties of robustness and blindness simultaneously. In this paper, a robust and blind image watermarking scheme based on deep learning neural networks is proposed. To minimize the requirement of domain knowledge, the fitting ability of deep neural networks is exploited to learn and generalize an automated image watermarking algorithm. A deep learning architecture is specially designed for image watermarking tasks, which will be trained in an unsupervised manner to avoid human intervention and annotation. To facilitate flexible applications, the robustness of the proposed scheme is achieved without requiring any prior knowledge or adversarial examples of possible attacks. A challenging case of watermark extraction from phone camera-captured images demonstrates the robustness and practicality of the proposal. The experiments, evaluation, and application cases confirm the superiority of the proposed scheme.",
+          "url": "https://arxiv.org/abs/2007.02460"
+        },
+        {
+          "title": "A General Approach for Using Deep Neural Network for Digital Watermarking",
+          "abstract": "Technologies of the Internet of Things (IoT) facilitate digital contents such as images being acquired in a massive way. However, consideration from the privacy or legislation perspective still demands the need for intellectual content protection. In this paper, we propose a general deep neural network (DNN) based watermarking method to fulfill this goal. Instead of training a neural network for protecting a specific image, we train on an image set and use the trained model to protect a distinct test image set in a bulk manner. Respective evaluations both from the subjective and objective aspects confirm the supremacy and practicability of our proposed method. To demonstrate the robustness of this general neural watermarking mechanism, commonly used manipulations are applied to the watermarked image to examine the corresponding extracted watermark, which still retains sufficient recognizable traits. To the best of our knowledge, we are the first to propose a general way to perform watermarking using DNN. Considering its performance and economy, it is concluded that subsequent studies that generalize our work on utilizing DNN for intellectual content protection is a promising research trend.",
+          "url": "https://arxiv.org/abs/2003.12428"
+        },
+        {
+          "title": "Feature Extraction Techniques in Medical Imaging",
+          "abstract": "The authors of this paper present an overview of numerous feature extraction approaches used to extract features from medical images obtained via different ...",
+          "url": "https://ijritcc.org/index.php/ijritcc/article/view/6521"
+        },
+        {
+          "title": "Radiomics in Medical Imaging: Methods, Applications, and ...",
+          "abstract": "This paper reviews radiomic feature extraction, selection, and dimensionality reduction strategies;",
+          "url": "https://arxiv.org/html/2602.00102v1"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    }
+  ]
+}

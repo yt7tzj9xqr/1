@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2312.04861",
+  "model": "MiniMax-M3",
+  "system": "citation-rag-v25",
+  "reference_precision": 0.2,
+  "reference_recall": 0.007220216606498195,
+  "reference_count": 10,
+  "reference_matches": 2,
+  "ground_truth_count": 277,
+  "predicted_titles": [
+    "Radar Camera Fusion via Representation Learning in Autonomous Driving",
+    "PolarNet: Accelerated Deep Open Space Segmentation Using Automotive Radar in Polar Domain",
+    "CenterRadarNet: Joint 3D Object Detection and Tracking Framework using 4D FMCW Radar",
+    "NeuRadar: Neural Radiance Fields for Automotive Radar Point Clouds",
+    "ERASE-Net: Efficient Segmentation Networks for Automotive Radar Signals",
+    "Bootstrapping Autonomous Driving Radars with Self-Supervised Learning",
+    "GET-UP: GEomeTric-aware Depth Estimation with Radar Points UPsampling",
+    "Cross-Domain Spatial Matching for Camera and Radar Sensor Data Fusion in Autonomous Vehicle Perception System",
+    "K-Radar: 4D Radar Object Detection for Autonomous Driving in Various Weather Conditions",
+    "Deep Radar Detector"
+  ]
+}

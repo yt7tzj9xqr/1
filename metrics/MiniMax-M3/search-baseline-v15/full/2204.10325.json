@@ -1,0 +1,250 @@
+{
+  "arxiv_id": "2204.10325",
+  "model": "MiniMax-M3",
+  "system": "search-baseline-v12",
+  "reference_precision": 0.0,
+  "reference_recall": 0.0,
+  "reference_count": 12,
+  "reference_matches": 0,
+  "ground_truth_count": 36,
+  "predicted_titles": [
+    "Speech and language therapy for aphasia following stroke",
+    "Stuttering Speech Disfluency Prediction using Explainable Attribution Vectors of Facial Muscle Movements",
+    "Deep-Learning-Based Automated Classification of Chinese Speech Sound Disorders",
+    "Automatic Pronunciation Scoring And Mispronunciation ...",
+    "Automatic Analysis of Pronunciations for Children with Speech Sound Disorders",
+    "Evaluating Automatic Speech Recognition for Child ...",
+    "wav2vec 2.0: A Framework for Self-Supervised Learning of ...",
+    "An automated tool for the assessment of childhood apraxia ...",
+    "Research Paper: Mobile Speech Therapy Application",
+    "Prospective Validation of Motor-Based Intervention with Automated Mispronunciation Detection of Rhotics in Residual Speech Sound Disorders",
+    "Home-Based Activities for Children with Speech Sound Disorders: Requirements for a Tangible User Interface for Internet of Things Artefacts",
+    "The clinical practice of speech and language therapists with children with phonologically based speech sound disorders"
+  ],
+  "cited_match_rate": 0.7419354838709677,
+  "cited_count": 31,
+  "cited_supported": 23,
+  "cited_details": [
+    {
+      "statement": "Speech disorders affect articulation, fluency, voice, and language production across the lifespan, and aphasia represents one of the most studied post-stroke conditions (https://doi.org/10.1002/14651858.cd000425.pub4).",
+      "url": "https://doi.org/10.1002/14651858.cd000425.pub4",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Aphasia, an acquired language impairment following brain damage, affects approximately one third of individuals who experience a stroke (https://doi.org/10.1002/14651858.cd000425.pub4).",
+      "url": "https://doi.org/10.1002/14651858.cd000425.pub4",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Children with speech sound disorders (SSDs) likewise constitute a large proportion of speech-language therapists' caseloads, with intervention typically involving articulatory or phonologically based approaches (https://doi.org/10.1177/0265659014550420).",
+      "url": "https://doi.org/10.1177/0265659014550420",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The clinical diversity of these conditions has motivated growing interest in AI-based automated tools that can supplement traditional therapy and reduce dependence on scarce clinical resources (https://doi.org/10.1177/0265659014550420).",
+      "url": "https://doi.org/10.1177/0265659014550420",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Automatic speech recognition is a central enabling technology for these tools, underpinning both pronunciation evaluation and mispronunciation detection (https://aclanthology.org/W12-5808.pdf).",
+      "url": "https://aclanthology.org/W12-5808.pdf",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Modern self-supervised models such as wav2vec 2.0 demonstrated that representations learned from raw speech audio alone followed by fine-tuning on transcribed speech can outperform previous semi-supervised methods (https://www.semanticscholar.org/paper/wav2vec-2.0%3A-A-Framework-for-Self-Supervised-of-Baevski-Zhou/49a049dc85e2380dde80501a984878341dd8efdf).",
+      "url": "https://semanticscholar.org/paper/wav2vec-2.0%3A-A-Framework-for-Self-Supervised-of-Baevski-Zhou/49a049dc85e2380dde80501a984878341dd8efdf",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Earlier work used ASR toolkits such as CMUSphinx, in which pronunciation evaluation and mispronunciation detection were performed using Sphinx trained on native and non-native exemplar pronunciations with adaptation techniques (https://aclanthology.org/W12-5808.pdf).",
+      "url": "https://aclanthology.org/W12-5808.pdf",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Hair and colleagues specifically evaluated ASR for child speech therapy applications, showing that ASR on disordered child speech with limited training data and mobile-device-friendly techniques can provide utterance feedback suitable for therapy apps (https://psi.engr.tamu.edu/wp-content/uploads/2019/08/hair2019evaluating.pdf).",
+      "url": "https://psi.engr.tamu.edu/wp-content/uploads/2019/08/hair2019evaluating.pdf",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Automated assessment tools have been developed for several disorder categories, with particular attention to childhood speech sound disorders (https://pmc.ncbi.nlm.nih.gov/articles/PMC5884147/).",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5884147",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Shahin and colleagues designed an automated tool to assess productions from children with apraxia of speech, consisting of a clinician interface, a mobile application, and a speech processing engine (https://www.sciencedirect.com/science/article/abs/pii/S0167639315000382).",
+      "url": "https://sciencedirect.com/science/article/abs/pii/S0167639315000382",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A 2017 study on automatic analysis of pronunciations for children with SSDs highlighted that Computer-Assisted Pronunciation Training (CAPT) systems aim to help a child learn the correct pronunciations of words (https://pmc.ncbi.nlm.nih.gov/articles/PMC5884147/).",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5884147",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The same review noted that there is no consensus among Speech-Language Therapists about which CAPT systems work reliably, with the prevailing assumption being that practicing with such programs is less reliable than traditional methods (https://pmc.ncbi.nlm.nih.gov/articles/PMC5884147/).",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5884147",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Benway and Preston (2023) prospectively validated motor-based intervention with automated mispronunciation detection of rhotics in residual SSDs, using GMM-HMM derived intervals fed into a PERCEPT-R classifier to predict clinician perceptual judgment of /ɹ/ (https://arxiv.org/abs/2305.19090).",
+      "url": "https://arxiv.org/abs/2305.19090",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The PERCEPT-R classifier specifically predicts clinician perceptual judgment of /ɹ/ productions, supporting biofeedback-driven intervention in residual SSDs (https://arxiv.org/abs/2305.19090).",
+      "url": "https://arxiv.org/abs/2305.19090",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "For Mandarin-speaking children, a deep-learning system has been described that analyzes acoustic data to assist in the diagnosis and classification of four distinct types of SSDs (https://pmc.ncbi.nlm.nih.gov/articles/PMC9324778/).",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9324778",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Fluency disorders have also been addressed by AI-based modeling (https://arxiv.org/abs/2010.01231).",
+      "url": "https://arxiv.org/abs/2010.01231",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Speech disorders such as stuttering disrupt the normal flow of speech, motivating the development of automated detection systems (https://arxiv.org/abs/2010.01231).",
+      "url": "https://arxiv.org/abs/2010.01231",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Das and colleagues proposed stuttering disfluency prediction using explainable attribution vectors derived from facial muscle movements, noting that stuttering has a prevalence of approximately 1% in adults and a lifetime incidence of about 5% (https://arxiv.org/abs/2010.01231).",
+      "url": "https://arxiv.org/abs/2010.01231",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Their approach emphasizes interpretability by attributing predictions to specific articulatory cues captured from video (https://arxiv.org/abs/2010.01231).",
+      "url": "https://arxiv.org/abs/2010.01231",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Mobile and home-based platforms have expanded the reach of these tools beyond the clinic (https://psi.engr.tamu.edu/wp-content/uploads/2019/08/hair2019evaluating.pdf).",
+      "url": "https://psi.engr.tamu.edu/wp-content/uploads/2019/08/hair2019evaluating.pdf",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A study of mobile speech therapy applications observed that the \"Speech Therapy for Apraxia\" app is suitable for children with apraxia and speech disorders, allowing users to select target phonemes (http://jmr.tums.ac.ir/index.php/jmr/article/download/133/80).",
+      "url": "http://jmr.tums.ac.ir/index.php/jmr/article/download/133/80",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Mobile deployment of ASR for disordered child speech has been shown to be feasible with limited training data (https://psi.engr.tamu.edu/wp-content/uploads/2019/08/hair2019evaluating.pdf).",
+      "url": "https://psi.engr.tamu.edu/wp-content/uploads/2019/08/hair2019evaluating.pdf",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A requirements analysis for tangible user interfaces and Internet of Things artefacts for children with SSDs emphasized that more research is needed and that a unified method or framework to address SSD intervention tools is currently lacking (https://www.semanticscholar.org/paper/0949276b131c3d4b2ed993c167fdf13d2fa886d2).",
+      "url": "https://semanticscholar.org/paper/0949276b131c3d4b2ed993c167fdf13d2fa886d2",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "This work combined a systematic literature review, focus group, and nationwide questionnaire to determine system requirements for home-based interventions, while also addressing data security and privacy issues (https://www.semanticscholar.org/paper/0949276b131c3d4b2ed993c167fdf13d2fa886d2).",
+      "url": "https://semanticscholar.org/paper/0949276b131c3d4b2ed993c167fdf13d2fa886d2",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A persistent challenge in this field is the gap between laboratory accuracy and clinical effectiveness (https://arxiv.org/abs/2305.19090).",
+      "url": "https://arxiv.org/abs/2305.19090",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Because lab accuracy of clinical speech technology systems may be overoptimistic, clinical validation in real patient populations remains vital before deployment (https://arxiv.org/abs/2305.19090).",
+      "url": "https://arxiv.org/abs/2305.19090",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The Cochrane review of speech and language therapy for aphasia following stroke underscores that rigorous evidence is still needed to identify which patients benefit most from specific therapy approaches (https://doi.org/10.1002/14651858.cd000425.pub4).",
+      "url": "https://doi.org/10.1002/14651858.cd000425.pub4",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "AI-based tools will need to incorporate similar evidence-based evaluation frameworks to demonstrate efficacy in everyday settings (https://doi.org/10.1002/14651858.cd000425.pub4).",
+      "url": "https://doi.org/10.1002/14651858.cd000425.pub4",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The GMM-HMM framework used for mispronunciation detection identifies phonetic intervals that can drive classifier feedback in real time (https://arxiv.org/abs/2305.19090).",
+      "url": "https://arxiv.org/abs/2305.19090",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "In summary, AI-based automated speech therapy tools have progressed from rule-based and early ASR systems toward deep learning and self-supervised models, with applications spanning apraxia, aphasia, fluency, and pediatric SSDs (https://arxiv.org/abs/2305.19090).",
+      "url": "https://arxiv.org/abs/2305.19090",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Continued prospective clinical validation in diverse populations will be essential for translating these tools into routine practice (https://arxiv.org/abs/2305.19090).",
+      "url": "https://arxiv.org/abs/2305.19090",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    }
+  ],
+  "noncited_factual_accuracy": null,
+  "noncited_count": 0,
+  "noncited_correct": 0,
+  "noncited_details": []
+}

@@ -1,0 +1,296 @@
+{
+  "arxiv_id": "2205.08977",
+  "model": "MiniMax-M3",
+  "system": "citation-rag-v25",
+  "reference_precision": 0.0,
+  "reference_recall": 0.0,
+  "reference_count": 9,
+  "reference_matches": 0,
+  "ground_truth_count": 317,
+  "predicted_titles": [
+    "Survey on Digital Twin Edge Networks (DITEN) Toward 6G",
+    "Industrial digital twins at the nexus of NextG wireless networks and computational intelligence: A survey",
+    "Towards 6G wireless communication networks: vision, enabling technologies, and new paradigm shifts",
+    "Edge Artificial Intelligence for 6G: Vision, Enabling Technologies, and Applications",
+    "Integrated Sensing and Communications: Toward Dual-Functional Wireless Networks for 6G and Beyond",
+    "6G White Paper on Edge Intelligence",
+    "Edge Computing: Vision and Challenges",
+    "Designing CPS/IoT applications for smart buildings and cities",
+    "Towards Digital Twins Cloud Platform"
+  ],
+  "cited_match_rate": 1.0,
+  "cited_count": 19,
+  "cited_supported": 19,
+  "cited_details": [
+    {
+      "statement": "5G wireless communication networks are being deployed worldwide from 2020 (https://doi.org/10.1007/s11432-020-2955-6).",
+      "url": "https://doi.org/10.1007/s11432-020-2955-6",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "5G will not meet all requirements of 2030 and beyond, and 6G is expected to provide global coverage, enhanced spectral, energy, and cost efficiency, and improved intelligence and security (https://doi.org/10.1007/s11432-020-2955-6).",
+      "url": "https://doi.org/10.1007/s11432-020-2955-6",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The 6G white paper series envisions a transition from the Internet of Things to an Intelligent Internet of Intelligent Things (http://arxiv.org/abs/2004.14850).",
+      "url": "http://arxiv.org/abs/2004.14850",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "State-of-the-art deep learning and big-data analytics impose significant computation, communication, latency, energy, network-congestion, and privacy burdens, motivating the evolution from \"connected things\" to \"connected intelligence\" (https://doi.org/10.1109/jsac.2021.3126076).",
+      "url": "https://doi.org/10.1109/jsac.2021.3126076",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "6G will not be limited to terrestrial communication networks and will be complemented by non-terrestrial networks such as satellite and UAV communications to form a space-air-ground-sea integrated network (https://doi.org/10.1007/s11432-020-2955-6).",
+      "url": "https://doi.org/10.1007/s11432-020-2955-6",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "6G air-interface and network-architecture enablers include waveform design, multiple access, channel coding schemes, multi-antenna technologies, network slicing, cell-free architecture, and cloud/fog/edge computing (https://doi.org/10.1007/s11432-020-2955-6).",
+      "url": "https://doi.org/10.1007/s11432-020-2955-6",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Integrated sensing and communications (ISAC) is emerging as a key feature of the 6G Radio Access Network, enabling dense cell infrastructures to construct a perceptive network, with signal processing aspects covering ISAC waveform design and receive signal processing, and performance tradeoffs spanning from information-theoretical limits to physical-layer and cross-layer design tradeoffs (https://doi.org/10.1109/jsac.2022.3156632).",
+      "url": "https://doi.org/10.1109/jsac.2022.3156632",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Edge computing processes data at the network edge to address response-time, battery-life, bandwidth-cost, data-safety, and privacy concerns, with case studies in cloud offloading, smart home, smart city, and collaborative edge (https://doi.org/10.1109/jiot.2016.2579198).",
+      "url": "https://doi.org/10.1109/jiot.2016.2579198",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The 6G edge-intelligence agenda focuses on edge computing infrastructure and platforms, data and edge network management, software development for edge, real-time and distributed training of ML/AI algorithms, and security, privacy, pricing, and end-user aspects (http://arxiv.org/abs/2004.14850).",
+      "url": "http://arxiv.org/abs/2004.14850",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Edge AI embeds model training and inference at the network edge to integrate sensing, communication, computation, and intelligence, supported by new wireless network design principles, service-driven resource allocation optimization, a holistic end-to-end system architecture, and decentralized machine learning models (https://doi.org/10.1109/jsac.2021.3126076).",
+      "url": "https://doi.org/10.1109/jsac.2021.3126076",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A digital twin (DT) enables interaction with the digital image of industrial physical objects or processes to simulate, analyze, and control their real-time operation (https://doi.org/10.1016/j.jnca.2021.103309).",
+      "url": "https://doi.org/10.1016/j.jnca.2021.103309",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A Digital-Twin-as-a-Service (DTaaS) model implements a simulation model for each process or system as an independent computational service, using a cloud computing platform to orchestrate services and provide scalability (https://doi.org/10.1145/3147213.3149234).",
+      "url": "https://doi.org/10.1145/3147213.3149234",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The digital-twin edge network (DITEN) combines mobile/multi-access edge computing with DTs, with surveyed concept, framework, and potential, design including DT modeling and updating, DT deployment, key issues, and enabling technologies, and operation that continuously monitors network status, studies routing and resource management from a centralized perspective, improves throughput and security, and reduces communication, computation, and caching costs (https://doi.org/10.1109/ojcoms.2022.3197811).",
+      "url": "https://doi.org/10.1109/ojcoms.2022.3197811",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Industry 4.0 integrates cyber-physical worlds through cyber-physical systems (CPS) and DTs for monitoring, optimization, and prognostics, drawing on IIoT, edge and cloud computing, machine learning, AI, and advanced data analytics (https://doi.org/10.1016/j.jnca.2021.103309).",
+      "url": "https://doi.org/10.1016/j.jnca.2021.103309",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "IoT and CPS technologies apply to intelligent greenhouses, intelligent transportation systems, power distribution grids, smart homes, smart buildings, and smart cities, where they can reduce energy consumption and enhance safety (https://doi.org/10.1049/iet-cps.2016.0025).",
+      "url": "https://doi.org/10.1049/iet-cps.2016.0025",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "DITEN applications include the Internet of Things, vehicular networks, space-air-ground integrated networks, healthcare, and wireless systems (https://doi.org/10.1109/ojcoms.2022.3197811).",
+      "url": "https://doi.org/10.1109/ojcoms.2022.3197811",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Edge AI faces significant training and inference latency, energy consumption, network congestion, and privacy leakage, and requires standardization, software and hardware platforms, and trustworthy decentralized machine-learning models (https://doi.org/10.1109/jsac.2021.3126076).",
+      "url": "https://doi.org/10.1109/jsac.2021.3126076",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The existing literature lacks identification of the role and requirements of communication and computing technologies in DT-enabled industries (https://doi.org/10.1016/j.jnca.2021.103309).",
+      "url": "https://doi.org/10.1016/j.jnca.2021.103309",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The 6G edge-intelligence white paper discusses key enablers and challenges and identifies key research questions for the development of intelligent edge services (http://arxiv.org/abs/2004.14850).",
+      "url": "http://arxiv.org/abs/2004.14850",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    }
+  ],
+  "noncited_factual_accuracy": 1.0,
+  "noncited_count": 4,
+  "noncited_correct": 4,
+  "noncited_details": [
+    {
+      "claim": "Edge computing addresses the concerns of response time requirements, battery life constraints, bandwidth cost saving, and data safety and privacy.",
+      "evidence": [
+        {
+          "title": "Edge Computing: Vision and Challenges",
+          "abstract": "The proliferation of Internet of Things (IoT) and the success of rich cloud services have pushed the horizon of a new computing paradigm, edge computing, which calls for processing the data at the edge of the network. Edge computing has the potential to address the concerns of response time requirement, battery life constraint, bandwidth cost saving, as well as data safety and privacy. In this paper, we introduce the definition of edge computing, followed by several case studies, ranging from cloud offloading to smart home and city, as well as collaborative edge to materialize the concept of edge computing. Finally, we present several challenges and opportunities in the field of edge computing, and hope this paper will gain attention from the community and inspire more research in this direction.",
+          "url": "https://doi.org/10.1109/jiot.2016.2579198"
+        },
+        {
+          "title": "Cognitive Internet of Vehicles: Motivation, Layered Architecture and Security Issues",
+          "abstract": "Over the past few years, we have experienced great technological advancements in the information and communication field, which has significantly contributed to reshaping the Intelligent Transportation System (ITS) concept. Evolving from the platform of a collection of sensors aiming to collect data, the data exchanged paradigm among vehicles is shifted from the local network to the cloud. With the introduction of cloud and edge computing along with ubiquitous 5G mobile network, it is expected to see the role of Artificial Intelligence (AI) in data processing and smart decision imminent. So as to fully understand the future automobile scenario in this verge of industrial revolution 4.0, it is necessary first of all to get a clear understanding of the cutting-edge technologies that going to take place in the automotive ecosystem so that the cyber-physical impact on transportation system can be measured. CIoV, which is abbreviated from Cognitive Internet of Vehicle, is one of the recently proposed architectures of the technological evolution in transportation, and it has amassed great attention. It introduces cloud-based artificial intelligence and machine learning into transportation system. What are the future expectations of CIoV. To fully contemplate this architectures future potentials, and milestones set to achieve, it is crucial to understand all the technologies that leaned into it. Also, the security issues to meet the security requirements of its practical implementation. Aiming to that, this paper presents the evolution of CIoV along with the layer abstractions to outline the distinctive functional parts of the proposed architecture. It also gives an investigation of the prime security and privacy issues associated with technological evolution to take measures.",
+          "url": "https://arxiv.org/abs/1912.03356"
+        },
+        {
+          "title": "Towards 6G wireless communication networks: vision, enabling technologies, and new paradigm shifts",
+          "abstract": "Abstract The fifth generation (5G) wireless communication networks are being deployed worldwide from 2020 and more capabilities are in the process of being standardized, such as mass connectivity, ultra-reliability, and guaranteed low latency. However, 5G will not meet all requirements of the future in 2030 and beyond, and sixth generation (6G) wireless communication networks are expected to provide global coverage, enhanced spectral/energy/cost efficiency, better intelligence level and security, etc. To meet these requirements, 6G networks will rely on new enabling technologies, i.e., air interface and transmission technologies and novel network architecture, such as waveform design, multiple access, channel coding schemes, multi-antenna technologies, network slicing, cell-free architecture, and cloud/fog/edge computing. Our vision on 6G is that it will have four new paradigm shifts. First, to satisfy the requirement of global coverage, 6G will not be limited to terrestrial communication networks, which will need to be complemented with non-terrestrial networks such as satellite and unmanned aerial vehicle (UAV) communication networks, thus achieving a space-air-ground-sea integrated communication network. Second, all spectra will be fully explored to further increase data rates and connection density, including the sub-6 GHz, millimeter wave (mmWave), terahertz (THz), and optical frequency bands. Third, facing the big datasets generated by the use of extremely heterogeneous networks, diverse communication scenarios, large numbers of antennas, wide bandwidths, and new service requirements, 6G networks will enable a new range of smart applications with the aid of artificial intelligence (AI) and big data technologies. Fourth, network security will have to be strengthened when developing 6G networks. This article provides a comprehensive survey of recent advances and future trends in these four aspects. Clearly, 6G with additional technical requirements beyond those of 5G will enable faster and further communications to the extent that the boundary between physical and cyber worlds disappears.",
+          "url": "https://doi.org/10.1007/s11432-020-2955-6"
+        },
+        {
+          "title": "Edge Computing: Saving Bandwidth, Time and Money",
+          "abstract": "Learn how edge computing reduces bandwidth use, lowers costs, and speeds up data processing. Explore the benefits and optimize your operations today!",
+          "url": "https://www.digi.com/blog/post/edge-computing-saving-bandwidth-time-and-money"
+        },
+        {
+          "title": "Resource Management for Mission-Critical Applications in ...",
+          "abstract": "Edge devices typically have limited computing power, storage capacity, and battery life. Managing these scarce resources efficiently is therefore a ...",
+          "url": "https://dl.acm.org/doi/10.1145/3762181"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "A digital twin enables interaction with a digital image of industrial physical objects or processes to simulate, analyze, and control their real-time operation.",
+      "evidence": [
+        {
+          "title": "Industrial digital twins at the nexus of NextG wireless networks and computational intelligence: A survey",
+          "abstract": "By amalgamating recent communication and control technologies, computing and data analytics techniques, and modular manufacturing, Industry 4.0 promotes integrating cyber–physical worlds through cyber–physical systems (CPS) and digital twin (DT) for monitoring, optimization, and prognostics of industrial processes. A DT enables interaction with the digital image of the industrial physical objects/processes to simulate, analyze, and control their real-time operation. DT is rapidly diffusing in numerous industries with the interdisciplinary advances in the industrial Internet of things (IIoT), edge and cloud computing, machine learning, artificial intelligence, and advanced data analytics. However, the existing literature lacks in identifying and discussing the role and requirements of these technologies in DT-enabled industries from the communication and computing perspective. In this article, we first present the functional aspects, appeal, and innovative use of DT in smart industries. Then, we elaborate on this perspective by systematically reviewing and reflecting on recent research trends in next-generation (NextG) wireless technologies (e.g., 5G-and-Beyond networks) and design tools, and current computational intelligence paradigms (e.g., edge and cloud computing-enabled data analytics, federated learning). Moreover, we discuss the DT deployment strategies at different communication layers to meet the monitoring and control requirements of industrial applications. We also outline several key reflections and future research challenges and directions to facilitate industrial DT’s adoption.",
+          "url": "https://doi.org/10.1016/j.jnca.2021.103309"
+        },
+        {
+          "title": "Toward Intelligent Cyber-Physical Systems: Digital Twin Meets Artificial Intelligence",
+          "abstract": "Industry 4.0 aims to support smarter and autonomous processes while improving agility, cost efficiency, and user experience. To fulfill its promises, properly processing the data of the industrial processes and infrastructures is required. Artificial intelligence (AI) appears as a strong candidate to handle all generated data, and to help in the automation and smartification process. This article overviews the digital twin as a true embodiment of a cyber-physical system (CPS) in Industry 4.0, showing the mission of AI in this concept. It presents the key enabling technologies of the digital twin such as edge, fog, and 5G, where the physical processes are integrated with the computing and network domains. The role of AI in each technology domain is identified by analyzing a set of AI agents at the application and infrastructure levels. Finally, movement prediction is selected and experimentally validated using real data generated by a digital twin for robotic arms with results showcasing its potential.",
+          "url": "https://doi.org/10.1109/mcom.001.2001237"
+        },
+        {
+          "title": "PROFINET - scalable factory communication for all applications",
+          "abstract": "PROFINET is the industrial Ethernet standard devised by PROFIBUS International (PI) for either modular machine and plant engineering or distributed IO. Using a plant-wide multi-vendor engineering for modular machines, commissioning time as well as costs are reduced. With distributed IO IO-controllers (e.g., PLCs) with their associated IO-devices may also be integrated into PROFINET solutions. Communication is a major part of PROFINET. Real-time communication for standard factory automation applications as well as extensions which enables motion control applications is covered in a common real-time protocol. The advantages of modular and multi-vendor engineering and distributed IO can be used even in applications with time-critical data transfer requirements.",
+          "url": "https://doi.org/10.1109/wfcs.2004.1377673"
+        },
+        {
+          "title": "Building Agentic AI-Powered Digital Twins for Manufacturing ...",
+          "abstract": "This video shows how Sight Machine, Microsoft, Kinetic Vision, and NVIDIA are transforming manufacturing with Agentic AI, live production data,",
+          "url": "https://www.youtube.com/watch?v=8KZiwhWUMa8"
+        },
+        {
+          "title": "The Concept of a Digital Twin as a Virtual Copy of Physical ...",
+          "abstract": "The work examines the concept of the digital twin as a modern technology for creating a virtual copy of a physical object, process, or system.",
+          "url": "https://www.academia.edu/164593468/The_Concept_of_a_Digital_Twin_as_a_Virtual_Copy_of_Physical_Objects_Processes_and_Systems"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "Digital twins are used in industrial contexts for monitoring, optimization, and prognostics of industrial processes.",
+      "evidence": [
+        {
+          "title": "Industrial digital twins at the nexus of NextG wireless networks and computational intelligence: A survey",
+          "abstract": "By amalgamating recent communication and control technologies, computing and data analytics techniques, and modular manufacturing, Industry 4.0 promotes integrating cyber–physical worlds through cyber–physical systems (CPS) and digital twin (DT) for monitoring, optimization, and prognostics of industrial processes. A DT enables interaction with the digital image of the industrial physical objects/processes to simulate, analyze, and control their real-time operation. DT is rapidly diffusing in numerous industries with the interdisciplinary advances in the industrial Internet of things (IIoT), edge and cloud computing, machine learning, artificial intelligence, and advanced data analytics. However, the existing literature lacks in identifying and discussing the role and requirements of these technologies in DT-enabled industries from the communication and computing perspective. In this article, we first present the functional aspects, appeal, and innovative use of DT in smart industries. Then, we elaborate on this perspective by systematically reviewing and reflecting on recent research trends in next-generation (NextG) wireless technologies (e.g., 5G-and-Beyond networks) and design tools, and current computational intelligence paradigms (e.g., edge and cloud computing-enabled data analytics, federated learning). Moreover, we discuss the DT deployment strategies at different communication layers to meet the monitoring and control requirements of industrial applications. We also outline several key reflections and future research challenges and directions to facilitate industrial DT’s adoption.",
+          "url": "https://doi.org/10.1016/j.jnca.2021.103309"
+        },
+        {
+          "title": "Towards Digital Twins Cloud Platform",
+          "abstract": "The concept of \"Industry 4.0\" considers smart factories as data-driven and knowledge enabled enterprise intelligence. In such kind of factory, manufacturing processes and final products are accompanied by virtual models -- Digital Twins. To support Digital Twins concept, a simulation model for each process or system should be implemented as independent computational service. The only way to implement an orchestration of a set of independent services and provide scalability for simulation is to use a cloud computing platform as a provider of the computing infrastructure. In this paper, we describe a Digital Twin-as-a-Service (DTaaS) model for simulation and prediction of industrial processes using Digital Twins.",
+          "url": "https://doi.org/10.1145/3147213.3149234"
+        },
+        {
+          "title": "Toward Intelligent Cyber-Physical Systems: Digital Twin Meets Artificial Intelligence",
+          "abstract": "Industry 4.0 aims to support smarter and autonomous processes while improving agility, cost efficiency, and user experience. To fulfill its promises, properly processing the data of the industrial processes and infrastructures is required. Artificial intelligence (AI) appears as a strong candidate to handle all generated data, and to help in the automation and smartification process. This article overviews the digital twin as a true embodiment of a cyber-physical system (CPS) in Industry 4.0, showing the mission of AI in this concept. It presents the key enabling technologies of the digital twin such as edge, fog, and 5G, where the physical processes are integrated with the computing and network domains. The role of AI in each technology domain is identified by analyzing a set of AI agents at the application and infrastructure levels. Finally, movement prediction is selected and experimentally validated using real data generated by a digital twin for robotic arms with results showcasing its potential.",
+          "url": "https://doi.org/10.1109/mcom.001.2001237"
+        },
+        {
+          "title": "Use of the digital twin concept to optimize the production process ...",
+          "abstract": "The digital twin (DT) optimizes engine block production processes, enhancing productivity by 11-20%. DT integrates physical, virtual, and information processing",
+          "url": "https://www.academia.edu/105905034/Use_of_the_digital_twin_concept_to_optimize_the_production_process_of_engine_blocks_manufacturing"
+        },
+        {
+          "title": "Overview of predictive maintenance based on digital twin technology",
+          "abstract": "In industrial manufacturing enterprises, digital twins are used to optimize the manufacturing life cycle and promote intelligent manufacturing upgrade",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10070392/"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "Industry 4.0 promotes the integration of cyber-physical worlds through cyber-physical systems and digital twins.",
+      "evidence": [
+        {
+          "title": "Industrial digital twins at the nexus of NextG wireless networks and computational intelligence: A survey",
+          "abstract": "By amalgamating recent communication and control technologies, computing and data analytics techniques, and modular manufacturing, Industry 4.0 promotes integrating cyber–physical worlds through cyber–physical systems (CPS) and digital twin (DT) for monitoring, optimization, and prognostics of industrial processes. A DT enables interaction with the digital image of the industrial physical objects/processes to simulate, analyze, and control their real-time operation. DT is rapidly diffusing in numerous industries with the interdisciplinary advances in the industrial Internet of things (IIoT), edge and cloud computing, machine learning, artificial intelligence, and advanced data analytics. However, the existing literature lacks in identifying and discussing the role and requirements of these technologies in DT-enabled industries from the communication and computing perspective. In this article, we first present the functional aspects, appeal, and innovative use of DT in smart industries. Then, we elaborate on this perspective by systematically reviewing and reflecting on recent research trends in next-generation (NextG) wireless technologies (e.g., 5G-and-Beyond networks) and design tools, and current computational intelligence paradigms (e.g., edge and cloud computing-enabled data analytics, federated learning). Moreover, we discuss the DT deployment strategies at different communication layers to meet the monitoring and control requirements of industrial applications. We also outline several key reflections and future research challenges and directions to facilitate industrial DT’s adoption.",
+          "url": "https://doi.org/10.1016/j.jnca.2021.103309"
+        },
+        {
+          "title": "Toward Intelligent Cyber-Physical Systems: Digital Twin Meets Artificial Intelligence",
+          "abstract": "Industry 4.0 aims to support smarter and autonomous processes while improving agility, cost efficiency, and user experience. To fulfill its promises, properly processing the data of the industrial processes and infrastructures is required. Artificial intelligence (AI) appears as a strong candidate to handle all generated data, and to help in the automation and smartification process. This article overviews the digital twin as a true embodiment of a cyber-physical system (CPS) in Industry 4.0, showing the mission of AI in this concept. It presents the key enabling technologies of the digital twin such as edge, fog, and 5G, where the physical processes are integrated with the computing and network domains. The role of AI in each technology domain is identified by analyzing a set of AI agents at the application and infrastructure levels. Finally, movement prediction is selected and experimentally validated using real data generated by a digital twin for robotic arms with results showcasing its potential.",
+          "url": "https://doi.org/10.1109/mcom.001.2001237"
+        },
+        {
+          "title": "Enhancing Autonomy with Blockchain and Multi-Access Edge Computing in Distributed Robotic Systems",
+          "abstract": "This conceptual paper discusses how different aspects involving the autonomous operation of robots and vehicles will change when they have access to next-generation mobile networks. 5G and beyond connectivity is bringing together a myriad of technologies and industries under its umbrella. High-bandwidth, low-latency edge computing services through network slicing have the potential to support novel application scenarios in different domains including robotics, autonomous vehicles, and the Internet of Things. In particular, multi-tenant applications at the edge of the network will boost the development of autonomous robots and vehicles offering computational resources and intelligence through reliable offloading services. The integration of more distributed network architectures with distributed robotic systems can increase the degree of intelligence and level of autonomy of connected units. We argue that the last piece to put together a services framework with third-party integration will be next-generation low-latency blockchain networks. Blockchains will enable a transparent and secure way of providing services and managing resources at the Multi-Access Edge Computing (MEC) layer. We overview the state-of-the-art in MEC slicing, distributed robotic systems and blockchain technology to define a framework for services the MEC layer that will enhance the autonomous operations of connected robots and vehicles.",
+          "url": "https://arxiv.org/abs/2007.01156"
+        },
+        {
+          "title": "Digital Twins vs. Cyber-Physical Systems | PDF",
+          "abstract": "Both digital twins and cyber-physical systems aim to achieve cyber-physical integration, but they differ in their origins, development, engineering practices, ...",
+          "url": "https://www.scribd.com/document/559593735/Digital-Twins-Industry-4-0"
+        },
+        {
+          "title": "Cyber-Physical Systems and Digital Twins in the Industrial ...",
+          "abstract": "Cyber-Physical Systems (CPS) integrate physical processes with computer systems, posing significant integration challenges. Digital Twins (DT) act as real-time ...",
+          "url": "https://www.academia.edu/62422125/Cyber_Physical_Systems_and_Digital_Twins_in_the_Industrial_Internet_of_Things_Cyber_Physical_Systems_"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    }
+  ]
+}

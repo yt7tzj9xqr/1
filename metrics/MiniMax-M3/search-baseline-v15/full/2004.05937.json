@@ -1,0 +1,325 @@
+{
+  "arxiv_id": "2004.05937",
+  "model": "MiniMax-M3",
+  "system": "search-baseline-v12",
+  "reference_precision": 0.5,
+  "reference_recall": 0.01639344262295082,
+  "reference_count": 10,
+  "reference_matches": 5,
+  "ground_truth_count": 305,
+  "predicted_titles": [
+    "Student Network Learning via Evolutionary Knowledge Distillation",
+    "Distilling the Knowledge in a Neural Network",
+    "FitNets: Hints for Thin Deep Nets",
+    "Born-Again Neural Networks",
+    "Multi-Teacher Distillation: An Ensemble-Then- ...",
+    "Show, Attend and Distill: Knowledge Distillation via Attention-based Feature Matching",
+    "Data-Distortion Guided Self-Distillation for Deep Neural Networks",
+    "Cross-Layer Distillation with Semantic Calibration",
+    "Knowledge Distillation by On-the-Fly Native Ensemble",
+    "Improved Knowledge Distillation via Teacher Assistant"
+  ],
+  "cited_match_rate": 0.9285714285714286,
+  "cited_count": 42,
+  "cited_supported": 39,
+  "cited_details": [
+    {
+      "statement": "Knowledge distillation transfers knowledge from a large teacher model into a small student model https://doi.org/10.1609/aaai.v34i04.5963.",
+      "url": "https://doi.org/10.1609/aaai.v34i04.5963",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Deep neural networks are too large to be deployed on edge devices like smartphones or embedded sensor nodes https://doi.org/10.1609/aaai.v34i04.5963.",
+      "url": "https://doi.org/10.1609/aaai.v34i04.5963",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Hinton, Vinyals, and Dean described knowledge distillation in their 2015 paper \"Distilling the Knowledge in a Neural Network.\" https://arxiv.org/abs/1503.02531",
+      "url": "https://arxiv.org/abs/1503.02531",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A very simple way to improve the performance of almost any machine learning algorithm is to train many different models on the same data and then to average their predictions https://arxiv.org/abs/1503.02531.",
+      "url": "https://arxiv.org/abs/1503.02531",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Making predictions using a whole ensemble of models is cumbersome https://arxiv.org/abs/1503.02531.",
+      "url": "https://arxiv.org/abs/1503.02531",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Romero, Ballas, Kahou, Chassang, Gatta, and Bengio published \"FitNets: Hints for Thin Deep Nets\" at ICLR 2015 https://arxiv.org/abs/1412.6550.",
+      "url": "https://arxiv.org/abs/1412.6550",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "While depth tends to improve network performances, it also makes gradient-based training more difficult https://arxiv.org/abs/1412.6550.",
+      "url": "https://arxiv.org/abs/1412.6550",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A 2021 paper proposed Semantic Calibration for Cross-layer Knowledge Distillation (SemCKD) https://doi.org/10.1609/aaai.v35i8.16865.",
+      "url": "https://doi.org/10.1609/aaai.v35i8.16865",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "SemCKD uses an attention mechanism to automatically assign proper target layers of the teacher model for each student layer https://doi.org/10.1609/aaai.v35i8.16865.",
+      "url": "https://doi.org/10.1609/aaai.v35i8.16865",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Each student layer distills knowledge contained in multiple layers rather than a single fixed intermediate layer from the teacher model https://doi.org/10.1609/aaai.v35i8.16865.",
+      "url": "https://doi.org/10.1609/aaai.v35i8.16865",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Manual association of layers might lead to negative regularization caused by semantic mismatch between certain teacher-student layer pairs https://doi.org/10.1609/aaai.v35i8.16865.",
+      "url": "https://doi.org/10.1609/aaai.v35i8.16865",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A 2021 paper titled \"Show, Attend and Distill: Knowledge Distillation via Attention-based Feature Matching\" introduced a feature distillation method utilizing an attention-based meta network https://doi.org/10.1609/aaai.v35i9.16969.",
+      "url": "https://doi.org/10.1609/aaai.v35i9.16969",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The meta network learns relative similarities between features https://doi.org/10.1609/aaai.v35i9.16969.",
+      "url": "https://doi.org/10.1609/aaai.v35i9.16969",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The method applies identified similarities to control distillation intensities of all possible pairs https://doi.org/10.1609/aaai.v35i9.16969.",
+      "url": "https://doi.org/10.1609/aaai.v35i9.16969",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The method determines competent links without manually selecting links https://doi.org/10.1609/aaai.v35i9.16969.",
+      "url": "https://doi.org/10.1609/aaai.v35i9.16969",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The method provides better performance on model compression and transfer learning tasks https://doi.org/10.1609/aaai.v35i9.16969.",
+      "url": "https://doi.org/10.1609/aaai.v35i9.16969",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A 2020 paper titled \"Improved Knowledge Distillation via Teacher Assistant\" showed that student network performance degrades when the gap between student and teacher is large https://doi.org/10.1609/aaai.v34i04.5963.",
+      "url": "https://doi.org/10.1609/aaai.v34i04.5963",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The paper introduced multi-step knowledge distillation, which employs an intermediate-sized network called a teacher assistant to bridge the gap between the student and the teacher https://doi.org/10.1609/aaai.v34i04.5963.",
+      "url": "https://doi.org/10.1609/aaai.v34i04.5963",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The paper extended the framework to multi-step distillation https://doi.org/10.1609/aaai.v34i04.5963.",
+      "url": "https://doi.org/10.1609/aaai.v34i04.5963",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Theoretical analysis and extensive experiments on CIFAR-10,100 and ImageNet datasets and on CNN and ResNet architectures substantiate the effectiveness of the approach https://doi.org/10.1609/aaai.v34i04.5963.",
+      "url": "https://doi.org/10.1609/aaai.v34i04.5963",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Zhang, Zhang, Li, Zeng, and Ge published \"Student Network Learning via Evolutionary Knowledge Distillation.\" https://arxiv.org/abs/2103.13811",
+      "url": "https://arxiv.org/abs/2103.13811",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Most existing distillation approaches apply a fixed pre-trained model as teacher to supervise the learning of student network https://arxiv.org/abs/2103.13811.",
+      "url": "https://arxiv.org/abs/2103.13811",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "This manner usually brings in a big capability gap between teacher and student https://arxiv.org/abs/2103.13811.",
+      "url": "https://arxiv.org/abs/2103.13811",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Furlanello, Lipton, Tschannen, Itti, and Anandkumar described Knowledge Distillation as transferring \"knowledge\" from one machine learning model (the teacher) to another (the student) https://arxiv.org/abs/1805.04770.",
+      "url": "https://arxiv.org/abs/1805.04770",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The teacher is commonly a high-capacity model with formidable performance, while the student is a lower-capacity model https://arxiv.org/abs/1805.04770.",
+      "url": "https://arxiv.org/abs/1805.04770",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Their paper is titled \"Born-Again Neural Networks.\" https://arxiv.org/abs/1805.04770",
+      "url": "https://arxiv.org/abs/1805.04770",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Given a powerful ensemble, one can often find a simpler model—no more complex than one of the ensemble's constituents—that mimics the ensemble and achieves its performance https://arxiv.org/abs/1805.04770.",
+      "url": "https://arxiv.org/abs/1805.04770",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Born-Again Trees by Breiman and Shang (1996) pioneered this idea, learning single trees that mimic ensembles https://arxiv.org/abs/1805.04770.",
+      "url": "https://arxiv.org/abs/1805.04770",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A 2019 paper titled \"Data-Distortion Guided Self-Distillation for Deep Neural Networks\" designed a self-distillation mechanism to transfer knowledge between different distorted versions of the same training data https://doi.org/10.1609/aaai.v33i01.33015565.",
+      "url": "https://doi.org/10.1609/aaai.v33i01.33015565",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The mechanism operates without reliance on accompanying models https://doi.org/10.1609/aaai.v33i01.33015565.",
+      "url": "https://doi.org/10.1609/aaai.v33i01.33015565",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The potential capacity of a single network is excavated by learning consistent global feature distributions and posterior distributions across these distorted versions of data https://doi.org/10.1609/aaai.v33i01.33015565.",
+      "url": "https://doi.org/10.1609/aaai.v33i01.33015565",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Experiments on CIFAR-10, CIFAR-100, and ImageNet demonstrate that the proposed method can effectively improve the generalization performance of various network architectures, including AlexNet, ResNet, Wide ResNet, and DenseNet https://doi.org/10.1609/aaai.v33i01.33015565.",
+      "url": "https://doi.org/10.1609/aaai.v33i01.33015565",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The proposed method outperforms existing distillation methods with little extra training effort https://doi.org/10.1609/aaai.v33i01.33015565.",
+      "url": "https://doi.org/10.1609/aaai.v33i01.33015565",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A 2018 paper titled \"Knowledge Distillation by On-the-Fly Native Ensemble\" presented an On-the-fly Native Ensemble (ONE) strategy for one-stage online distillation https://qmro.qmul.ac.uk/xmlui/handle/123456789/58358.",
+      "url": "https://qmro.qmul.ac.uk/xmlui/handle/123456789/58358",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Existing offline distillation methods rely on a strong pre-trained teacher, which enables favourable knowledge discovery and transfer but requires a complex two-phase training procedure https://qmro.qmul.ac.uk/xmlui/handle/123456789/58358.",
+      "url": "https://qmro.qmul.ac.uk/xmlui/handle/123456789/58358",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Online counterparts address this limitation at the price of lacking a high-capacity teacher https://qmro.qmul.ac.uk/xmlui/handle/123456789/58358.",
+      "url": "https://qmro.qmul.ac.uk/xmlui/handle/123456789/58358",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "ONE trains only a single multi-branch network while simultaneously establishing a strong teacher on-the-fly to enhance the learning of the target network https://qmro.qmul.ac.uk/xmlui/handle/123456789/58358.",
+      "url": "https://qmro.qmul.ac.uk/xmlui/handle/123456789/58358",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "ONE improves the generalization performance of a variety of deep neural networks more significantly than alternative methods on four image classification datasets: CIFAR-10, CIFAR-100, SVHN, and ImageNet https://qmro.qmul.ac.uk/xmlui/handle/123456789/58358.",
+      "url": "https://qmro.qmul.ac.uk/xmlui/handle/123456789/58358",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "ONE has computational efficiency advantages https://qmro.qmul.ac.uk/xmlui/handle/123456789/58358.",
+      "url": "https://qmro.qmul.ac.uk/xmlui/handle/123456789/58358",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A NeurIPS 2024 presentation titled \"Multi-Teacher Distillation: An Ensemble-Then-Distill Approach\" describes knowledge distillation as transferring knowledge from a large model into a small one https://neurips.cc/virtual/2024/106613.",
+      "url": "https://neurips.cc/virtual/2024/106613",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The presentation describes multi-teacher distillation as an ensemble-then-distill approach that builds an ensemble of teacher models to train the student https://neurips.cc/virtual/2024/106613.",
+      "url": "https://neurips.cc/virtual/2024/106613",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Applications discussed include text generation and syntactic parsing https://neurips.cc/virtual/2024/106613.",
+      "url": "https://neurips.cc/virtual/2024/106613",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    }
+  ],
+  "noncited_factual_accuracy": null,
+  "noncited_count": 0,
+  "noncited_correct": 0,
+  "noncited_details": []
+}

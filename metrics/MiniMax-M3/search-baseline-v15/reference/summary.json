@@ -1,0 +1,19 @@
+{
+  "task_count": 10,
+  "reference_precision": 0.22833333333333333,
+  "reference_recall": 0.014435353249042809,
+  "reference_count": 10.6,
+  "cited_match_rate": null,
+  "cited_count": null,
+  "noncited_factual_accuracy": null,
+  "noncited_count": null,
+  "reference_matches_total": 23,
+  "ground_truth_count_total": 1925,
+  "reference_micro_precision": 0.2169811320754717,
+  "reference_micro_recall": 0.011948051948051949,
+  "cited_micro_accuracy": null,
+  "noncited_micro_accuracy": null,
+  "noncited_evaluated_total": 0,
+  "noncited_nonempty_task_accuracy": null,
+  "noncited_nonempty_task_count": 0
+}

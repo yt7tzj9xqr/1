@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2206.13188",
+  "model": "MiniMax-M3",
+  "system": "citation-rag-v25",
+  "reference_precision": 0.4,
+  "reference_recall": 0.015873015873015872,
+  "reference_count": 10,
+  "reference_matches": 4,
+  "ground_truth_count": 252,
+  "predicted_titles": [
+    "Global and Local Contrastive Self-Supervised Learning for Semantic Segmentation of HR Remote Sensing Images",
+    "Remote Sensing Image Scene Classification with Self-Supervised Learning Based on Partially Unlabeled Datasets",
+    "Self-Supervised Representation Learning for Remote Sensing Image Change Detection Based on Temporal Prediction",
+    "A General Self-Supervised Framework for Remote Sensing Image Classification",
+    "Self-Supervised Learning of Remote Sensing Scene Representations Using Contrastive Multiview Coding",
+    "Contrastive Self-Supervised Learning With Smoothed Representation for Remote Sensing",
+    "SCL-MLNet: Boosting Few-Shot Remote Sensing Scene Classification via Self-Supervised Contrastive Learning",
+    "When Self-Supervised Learning Meets Scene Classification: Remote Sensing Scene Classification Based on a Multitask Learning Framework",
+    "Remote Sensing Image Scene Classification: Benchmark and State of the Art",
+    "Deep Learning Classification of Land Cover and Crop Types Using Remote Sensing Data"
+  ]
+}

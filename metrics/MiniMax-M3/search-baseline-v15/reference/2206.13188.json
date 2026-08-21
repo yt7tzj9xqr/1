@@ -1,0 +1,18 @@
+{
+  "arxiv_id": "2206.13188",
+  "model": "MiniMax-M3",
+  "system": "search-baseline-v12",
+  "reference_precision": 0.5,
+  "reference_recall": 0.011904761904761904,
+  "reference_count": 6,
+  "reference_matches": 3,
+  "ground_truth_count": 252,
+  "predicted_titles": [
+    "Global and Local Contrastive Self-Supervised Learning for Semantic Segmentation of HR Remote Sensing Images",
+    "Self-Supervised Representation Learning for Remote Sensing Image Change Detection Based on Temporal Prediction",
+    "Momentum Contrast for Unsupervised Visual Representation Learning",
+    "Contrastive Self-Supervised Learning With Smoothed Representation for Remote Sensing",
+    "SCL-MLNet: Boosting Few-Shot Remote Sensing Scene Classification via Self-Supervised Contrastive Learning",
+    "A Lightweight Self-Supervised Representation Learning Algorithm for Scene Classification in Spaceborne SAR and Optical Images"
+  ]
+}

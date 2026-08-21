@@ -1,0 +1,318 @@
+{
+  "arxiv_id": "2306.05817",
+  "model": "MiniMax-M3",
+  "system": "citation-rag-v25",
+  "reference_precision": 0.5,
+  "reference_recall": 0.013289036544850499,
+  "reference_count": 8,
+  "reference_matches": 4,
+  "ground_truth_count": 301,
+  "predicted_titles": [
+    "Retrieval-augmented Recommender System: Enhancing Recommender Systems with Large Language Models",
+    "Collaborative Large Language Model for Recommender Systems",
+    "Large language models as recommender systems: A study of popularity bias",
+    "Leveraging Large Language Models for Sequential Recommendation",
+    "Large Language Models for Next-Generation Recommendation Systems",
+    "Prompting Large Language Models for Recommender Systems: A Comprehensive Framework and Empirical Analysis",
+    "Enhanced Recommendation Systems with Retrieval-Augmented Large ...",
+    "Factorization Machines with libFM"
+  ],
+  "cited_match_rate": 1.0,
+  "cited_count": 27,
+  "cited_supported": 27,
+  "cited_details": [
+    {
+      "statement": "Recommender systems have emerged as crucial tools to help users navigate large volumes of content by providing personalized suggestions https://www.premai.io/blog/large-language-models-for-next-generation-recommendation-systems/.",
+      "url": "https://premai.io/blog/large-language-models-for-next-generation-recommendation-systems",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Traditional models like Collaborative Filtering and Content-based Filtering face challenges including a reliance on domain-specific data, limited generalization capabilities, and an inability to provide clear explanations for recommendations https://www.premai.io/blog/large-language-models-for-next-generation-recommendation-systems/.",
+      "url": "https://premai.io/blog/large-language-models-for-next-generation-recommendation-systems",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Large language models (LLMs) have recently attracted growing interest as a means to develop the next generation of such systems https://doi.org/10.1145/3589334.3645347.",
+      "url": "https://doi.org/10.1145/3589334.3645347",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Large Language Models such as GPT-4 and LLaMA represent a paradigm shift in artificial intelligence https://www.premai.io/blog/large-language-models-for-next-generation-recommendation-systems/.",
+      "url": "https://premai.io/blog/large-language-models-for-next-generation-recommendation-systems",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "These models are pre-trained on vast amounts of data, enabling them to develop a deep understanding of language and reasoning capabilities https://www.premai.io/blog/large-language-models-for-next-generation-recommendation-systems/.",
+      "url": "https://premai.io/blog/large-language-models-for-next-generation-recommendation-systems",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "explore how LLMs can be used to build or improve sequential recommendation approaches https://arxiv.org/abs/2309.09261.",
+      "url": "https://arxiv.org/abs/2309.09261",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "identify a semantic gap between natural language and recommendation tasks, listing issues including spuriously correlated user/item descriptors, ineffective language modeling on user/item data, and inefficient recommendations via auto-regression https://doi.org/10.1145/3589334.3645347.",
+      "url": "https://doi.org/10.1145/3589334.3645347",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "They propose CLLM4Rec, described as the first generative RS that tightly integrates the LLM paradigm and the ID paradigm https://doi.org/10.1145/3589334.3645347.",
+      "url": "https://doi.org/10.1145/3589334.3645347",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The method extends the vocabulary of pretrained LLMs with user/item ID tokens to faithfully model user/item collaborative and content semantics https://doi.org/10.1145/3589334.3645347.",
+      "url": "https://doi.org/10.1145/3589334.3645347",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A soft+hard prompting strategy is proposed to effectively learn user/item collaborative and content token embeddings via language modeling on RS-specific corpora https://doi.org/10.1145/3589334.3645347.",
+      "url": "https://doi.org/10.1145/3589334.3645347",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Each document is split into a prompt consisting of heterogeneous soft (user/item) tokens and hard (vocab) tokens and a main text consisting of homogeneous item tokens or vocab tokens https://doi.org/10.1145/3589334.3645347.",
+      "url": "https://doi.org/10.1145/3589334.3645347",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A mutual regularization strategy is also introduced https://doi.org/10.1145/3589334.3645347.",
+      "url": "https://doi.org/10.1145/3589334.3645347",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "observe that traditional RSs are effective within clearly defined domains but are limited in adaptability and incapable of providing recommendations for unexplored data https://doi.org/10.1145/3604915.3608889.",
+      "url": "https://doi.org/10.1145/3604915.3608889",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "LLMs exhibit contextual awareness and strong adaptability to unseen data https://doi.org/10.1145/3604915.3608889.",
+      "url": "https://doi.org/10.1145/3604915.3608889",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Combining these technologies creates a powerful tool for delivering contextual and relevant recommendations in cold scenarios characterized by high data sparsity https://doi.org/10.1145/3604915.3608889.",
+      "url": "https://doi.org/10.1145/3604915.3608889",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "They propose Retrieval-augmented Recommender Systems, an approach that combines retrieval-based and generation-based models https://doi.org/10.1145/3604915.3608889.",
+      "url": "https://doi.org/10.1145/3604915.3608889",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A related study reports that LLMs have been integrated into recommendation systems to enhance user behavior comprehension https://dl.acm.org/doi/10.1613/jair.1.17809.",
+      "url": "https://dl.acm.org/doi/10.1613/jair.1.17809",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "propose a general framework for utilizing LLMs in recommendation tasks, formalizing the LLM input into natural language prompts with two key aspects https://arxiv.org/html/2401.04997v1.",
+      "url": "https://arxiv.org/html/2401.04997v1",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Their analysis covers the impact of public availability, tuning strategies, model architecture, parameter scale, and context length on recommendation results https://arxiv.org/html/2401.04997v1.",
+      "url": "https://arxiv.org/html/2401.04997v1",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A 2024 industry article notes that LLMs transform recommendation systems by addressing challenges such as domain-specific limitations, cold-start issues, and explainability gaps https://www.premai.io/blog/large-language-models-for-next-generation-recommendation-systems/.",
+      "url": "https://premai.io/blog/large-language-models-for-next-generation-recommendation-systems",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The same source states that LLMs enable personalized, explainable, and conversational recommendations through zero-shot learning and open-domain knowledge https://www.premai.io/blog/large-language-models-for-next-generation-recommendation-systems/.",
+      "url": "https://premai.io/blog/large-language-models-for-next-generation-recommendation-systems",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Recent advancements have seen the integration of general-purpose LLMs into recommender systems https://www.amazon.science/publications/large-language-models-as-recommender-systems-a-study-of-popularity-bias.",
+      "url": "https://amazon.science/publications/large-language-models-as-recommender-systems-a-study-of-popularity-bias",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A study from Amazon Science investigates popularity bias in LLM-based recommender systems, observing that the disproportionate recommendation of popular items overshadowing less popular but potentially relevant items remains a significant challenge https://www.amazon.science/publications/large-language-models-as-recommender-systems-a-study-of-popularity-bias.",
+      "url": "https://amazon.science/publications/large-language-models-as-recommender-systems-a-study-of-popularity-bias",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "introduce Factorization Machines, a generic approach that can mimic most factorization models through feature engineering https://doi.org/10.1145/2168752.2168771.",
+      "url": "https://doi.org/10.1145/2168752.2168771",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The method combines the generality of feature engineering with the superiority of factorization models in estimating interactions between categorical variables of large domain https://doi.org/10.1145/2168752.2168771.",
+      "url": "https://doi.org/10.1145/2168752.2168771",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The CLLM4Rec paper lists open issues including spuriously correlated user/item descriptors, ineffective language modeling on user/item data, and inefficient auto-regressive recommendation https://doi.org/10.1145/3589334.3645347.",
+      "url": "https://doi.org/10.1145/3589334.3645347",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The popularity-bias study frames the disproportionate recommendation of popular items as an unresolved challenge when LLMs are used as recommenders https://www.amazon.science/publications/large-language-models-as-recommender-systems-a-study-of-popularity-bias.",
+      "url": "https://amazon.science/publications/large-language-models-as-recommender-systems-a-study-of-popularity-bias",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    }
+  ],
+  "noncited_factual_accuracy": 1.0,
+  "noncited_count": 3,
+  "noncited_correct": 3,
+  "noncited_details": [
+    {
+      "claim": "A semantic gap exists between natural language and recommendation tasks in LLM-based recommendation systems.",
+      "evidence": [
+        {
+          "title": "Collaborative Large Language Model for Recommender Systems",
+          "abstract": "Recently, there has been growing interest in developing the next-generation recommender systems (RSs) based on pretrained large language models (LLMs). However, the semantic gap between natural language and recommendation tasks is still not well addressed, leading to multiple issues such as spuriously correlated user/item descriptors, ineffective language modeling on user/item data, inefficient recommendations via auto-regression, etc. In this paper, we propose CLLM4Rec, the first generative RS that tightly integrates the LLM paradigm and ID paradigm of RSs, aiming to address the above challenges simultaneously. We first extend the vocabulary of pretrained LLMs with user/item ID tokens to faithfully model user/item collaborative and content semantics. Accordingly, a novel soft+hard prompting strategy is proposed to effectively learn user/item collaborative/content token embeddings via language modeling on RS-specific corpora, where each document is split into a prompt consisting of heterogeneous soft (user/item) tokens and hard (vocab) tokens and a main text consisting of homogeneous item tokens or vocab tokens to facilitate stable and effective language modeling. In addition, a novel mutual regularization strategy is introduced to encourage CLLM4Rec to capture recommendation-related information from noisy user/item content. Finally, we propose a novel recommendation-oriented finetuning strategy for CLLM4Rec, where an item prediction head with multinomial likelihood is added to the pretrained CLLM4Rec backbone to predict hold-out items based on soft+hard prompts established from masked user-item interaction history, where recommendations of multiple items can be generated efficiently without hallucination.",
+          "url": "https://doi.org/10.1145/3589334.3645347"
+        },
+        {
+          "title": "Prompting Large Language Models for Recommender Systems: A Comprehensive Framework and Empirical Analysis",
+          "abstract": "In this paper, we concentrate on typical prompting strategies for recommendation tasks, i.e., zero-shot prompting, few-shot prompting, recency-focused ...",
+          "url": "https://arxiv.org/html/2401.04997v1"
+        },
+        {
+          "title": "Retrieval-augmented Recommender System: Enhancing Recommender Systems with Large Language Models",
+          "abstract": "Recommender Systems (RSs) play a pivotal role in delivering personalized recommendations across various domains, from e-commerce to content streaming platforms. Recent advancements in natural language processing have introduced Large Language Models (LLMs) that exhibit remarkable capabilities in understanding and generating human-like text. RS are renowned for their effectiveness and proficiency within clearly defined domains; nevertheless, they are limited in adaptability and incapable of providing recommendations for unexplored data. Conversely, LLMs exhibit contextual awareness and strong adaptability to unseen data. Combining these technologies creates a powerful tool for delivering contextual and relevant recommendations, even in cold scenarios characterized by high data sparsity. The proposal aims to explore the possibilities of integrating LLMs into RS, introducing a novel approach called Retrieval-augmented Recommender Systems, which combines the strengths of retrieval-based and generation-based models to enhance the ability of RSs to provide relevant suggestions.",
+          "url": "https://doi.org/10.1145/3604915.3608889"
+        },
+        {
+          "title": "Adapting Large Language Models by Integrating ...",
+          "abstract": "However, there exists a large semantic gap between LLMs and recommender systems, since items to be recommended are often indexed by discrete identifiers ...",
+          "url": "https://tldr.takara.ai/p/2311.09049"
+        },
+        {
+          "title": "Reproducibility of LLM-based Recommender Systems: the ...",
+          "abstract": "Recommender systems can significantly benefit from the availability of pre-trained large language models (LLMs), which can serve as a basic ...",
+          "url": "https://www.youtube.com/watch?v=yGo-vybdoiQ"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "Traditional recommender systems are limited in adaptability and incapable of providing recommendations for unexplored data.",
+      "evidence": [
+        {
+          "title": "Retrieval-augmented Recommender System: Enhancing Recommender Systems with Large Language Models",
+          "abstract": "Recommender Systems (RSs) play a pivotal role in delivering personalized recommendations across various domains, from e-commerce to content streaming platforms. Recent advancements in natural language processing have introduced Large Language Models (LLMs) that exhibit remarkable capabilities in understanding and generating human-like text. RS are renowned for their effectiveness and proficiency within clearly defined domains; nevertheless, they are limited in adaptability and incapable of providing recommendations for unexplored data. Conversely, LLMs exhibit contextual awareness and strong adaptability to unseen data. Combining these technologies creates a powerful tool for delivering contextual and relevant recommendations, even in cold scenarios characterized by high data sparsity. The proposal aims to explore the possibilities of integrating LLMs into RS, introducing a novel approach called Retrieval-augmented Recommender Systems, which combines the strengths of retrieval-based and generation-based models to enhance the ability of RSs to provide relevant suggestions.",
+          "url": "https://doi.org/10.1145/3604915.3608889"
+        },
+        {
+          "title": "Application of Dimensionality Reduction in Recommender System - A Case Study",
+          "abstract": "We investigate the use of dimensionality reduction to improve performance for a new class of data analysis software called \"recommender systems\". Recommender systems apply knowledge discovery techniques to the problem of making product recommendations during a live customer interaction. These systems are achieving wide-spread success in E-commerce nowadays, especially with the advent of the Internet. The tremendous growth of customers and products poses three key challenges for recommender systems in the E-commerce domain. These are: producing high quality recommendations, performing many recommendations per second for millions of customers and products, and achieving high coverage in the face of data sparsity. One successful recommender system technology is collaborative filtering, which works by matching customer preferences to other customers in making recommendations. Collaborative filtering has been shown to produce high quality recommendations, but the performance degrades with the number of customers and products. New recommender system technologies are needed that can quickly produce high quality recommendations, even for very large-scale problems.This paper presents two different experiments where we have explored one technology called Singular Value Decomposition (SVD) to reduce the dimensionality of recommender system databases. Each experiment compares the quality of a recommender system using SVD with the quality of a recommender system using collaborative filtering. The first experiment compares the effectiveness of the two recommender systems at predicting consumer preferences based on a database of explicit ratings of products. The second experiment compares the effectiveness of the two recommender systems at producing Top-N lists based on a real-life customer purchase database from an E-Commerce site. Our experience suggests that SVD has the potential to meet many of the challenges of recommender systems, under certain conditions.",
+          "url": "https://doi.org/10.21236/ada439541"
+        },
+        {
+          "title": "Incorporating contextual information in recommender systems using a multidimensional approach",
+          "abstract": "The article presents a multidimensional (MD) approach to recommender systems that can provide recommendations based on additional contextual information besides the typical information on users and items used in most of the current recommender systems. This approach supports multiple dimensions, profiling information, and hierarchical aggregation of recommendations. The article also presents a multidimensional rating estimation method capable of selecting two-dimensional segments of ratings pertinent to the recommendation context and applying standard collaborative filtering or other traditional two-dimensional rating estimation techniques to these segments. A comparison of the multidimensional and two-dimensional rating estimation approaches is made, and the tradeoffs between the two are studied. Moreover, the article introduces a combined rating estimation method, which identifies the situations where the MD approach outperforms the standard two-dimensional approach and uses the MD approach in those situations and the standard two-dimensional approach elsewhere. Finally, the article presents a pilot empirical study of the combined approach, using a multidimensional movie recommender system that was developed for implementing this approach and testing its performance.",
+          "url": "https://doi.org/10.1145/1055709.1055714"
+        },
+        {
+          "title": "The Best Research Papers in Recommender Systems",
+          "abstract": "Top research papers in recommender systems - Neural Collaborative filtering, Implicit feedback, Factorization Machines, Deep Neural Networks ...",
+          "url": "https://medium.com/codex/the-best-research-papers-in-recommender-systems-335dbba3b252"
+        },
+        {
+          "title": "Incorporating Contextual Information in Recommender ...",
+          "abstract": "by G ADOMAVICIUS · 2005 · Cited by 1766 — The article presents a multidimensional (MD) approach to recommender systems that can provide recommendations based on additional contextual information",
+          "url": "https://pages.stern.nyu.edu/~atuzhili/pdf/TOIS%20Paper%20-%20as%20published.pdf"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "Combining retrieval-based and generative approaches can help deliver contextual and relevant recommendations in cold scenarios characterized by high data sparsity.",
+      "evidence": [
+        {
+          "title": "Retrieval-augmented Recommender System: Enhancing Recommender Systems with Large Language Models",
+          "abstract": "Recommender Systems (RSs) play a pivotal role in delivering personalized recommendations across various domains, from e-commerce to content streaming platforms. Recent advancements in natural language processing have introduced Large Language Models (LLMs) that exhibit remarkable capabilities in understanding and generating human-like text. RS are renowned for their effectiveness and proficiency within clearly defined domains; nevertheless, they are limited in adaptability and incapable of providing recommendations for unexplored data. Conversely, LLMs exhibit contextual awareness and strong adaptability to unseen data. Combining these technologies creates a powerful tool for delivering contextual and relevant recommendations, even in cold scenarios characterized by high data sparsity. The proposal aims to explore the possibilities of integrating LLMs into RS, introducing a novel approach called Retrieval-augmented Recommender Systems, which combines the strengths of retrieval-based and generation-based models to enhance the ability of RSs to provide relevant suggestions.",
+          "url": "https://doi.org/10.1145/3604915.3608889"
+        },
+        {
+          "title": "Application of Dimensionality Reduction in Recommender System - A Case Study",
+          "abstract": "We investigate the use of dimensionality reduction to improve performance for a new class of data analysis software called \"recommender systems\". Recommender systems apply knowledge discovery techniques to the problem of making product recommendations during a live customer interaction. These systems are achieving wide-spread success in E-commerce nowadays, especially with the advent of the Internet. The tremendous growth of customers and products poses three key challenges for recommender systems in the E-commerce domain. These are: producing high quality recommendations, performing many recommendations per second for millions of customers and products, and achieving high coverage in the face of data sparsity. One successful recommender system technology is collaborative filtering, which works by matching customer preferences to other customers in making recommendations. Collaborative filtering has been shown to produce high quality recommendations, but the performance degrades with the number of customers and products. New recommender system technologies are needed that can quickly produce high quality recommendations, even for very large-scale problems.This paper presents two different experiments where we have explored one technology called Singular Value Decomposition (SVD) to reduce the dimensionality of recommender system databases. Each experiment compares the quality of a recommender system using SVD with the quality of a recommender system using collaborative filtering. The first experiment compares the effectiveness of the two recommender systems at predicting consumer preferences based on a database of explicit ratings of products. The second experiment compares the effectiveness of the two recommender systems at producing Top-N lists based on a real-life customer purchase database from an E-Commerce site. Our experience suggests that SVD has the potential to meet many of the challenges of recommender systems, under certain conditions.",
+          "url": "https://doi.org/10.21236/ada439541"
+        },
+        {
+          "title": "Collaborative Large Language Model for Recommender Systems",
+          "abstract": "Recently, there has been growing interest in developing the next-generation recommender systems (RSs) based on pretrained large language models (LLMs). However, the semantic gap between natural language and recommendation tasks is still not well addressed, leading to multiple issues such as spuriously correlated user/item descriptors, ineffective language modeling on user/item data, inefficient recommendations via auto-regression, etc. In this paper, we propose CLLM4Rec, the first generative RS that tightly integrates the LLM paradigm and ID paradigm of RSs, aiming to address the above challenges simultaneously. We first extend the vocabulary of pretrained LLMs with user/item ID tokens to faithfully model user/item collaborative and content semantics. Accordingly, a novel soft+hard prompting strategy is proposed to effectively learn user/item collaborative/content token embeddings via language modeling on RS-specific corpora, where each document is split into a prompt consisting of heterogeneous soft (user/item) tokens and hard (vocab) tokens and a main text consisting of homogeneous item tokens or vocab tokens to facilitate stable and effective language modeling. In addition, a novel mutual regularization strategy is introduced to encourage CLLM4Rec to capture recommendation-related information from noisy user/item content. Finally, we propose a novel recommendation-oriented finetuning strategy for CLLM4Rec, where an item prediction head with multinomial likelihood is added to the pretrained CLLM4Rec backbone to predict hold-out items based on soft+hard prompts established from masked user-item interaction history, where recommendations of multiple items can be generated efficiently without hallucination.",
+          "url": "https://doi.org/10.1145/3589334.3645347"
+        },
+        {
+          "title": "Retrieval-augmented Recommender System: Enhancing ...",
+          "abstract": "Combining these technologies creates a powerful tool for delivering contextual and relevant recommendations, even in cold scenarios ...",
+          "url": "https://www.researchgate.net/publication/373931475_Retrieval-augmented_Recommender_System_Enhancing_Recommender_Systems_with_Large_Language_Models"
+        },
+        {
+          "title": "Retrieval-augmented Recommender System: Enhancing ...",
+          "abstract": "by D Di Palma · 2023 · Cited by 162 — Combining these technologies creates a powerful tool for delivering contextual and relevant recommendations, even in cold scenarios characterized by high data ...",
+          "url": "https://dl.acm.org/doi/fullHtml/10.1145/3604915.3608889"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2205.08977",
+  "model": "MiniMax-M3",
+  "system": "search-baseline-v12",
+  "reference_precision": 0.0,
+  "reference_recall": 0.0,
+  "reference_count": 10,
+  "reference_matches": 0,
+  "ground_truth_count": 317,
+  "predicted_titles": [
+    "Towards 6G wireless communication networks: vision, enabling technologies, and new paradigm shifts",
+    "Edge Artificial Intelligence for 6G: Vision, Enabling Technologies, and Applications",
+    "Integrated Sensing and Communications: Toward Dual-Functional Wireless Networks for 6G and Beyond",
+    "6G White Paper on Edge Intelligence",
+    "Survey on Digital Twin Edge Networks (DITEN) Toward 6G",
+    "Cognitive Internet of Vehicles: Motivation, Layered Architecture and Security Issues",
+    "Industrial digital twins at the nexus of NextG wireless networks and computational intelligence: A survey",
+    "Edge Intelligence and Internet of Things in Healthcare",
+    "Toward Intelligent Cyber-Physical Systems: Digital Twin Meets Artificial Intelligence",
+    "Survey on Intelligence Edge Computing in 6G: Characteristics, Challenges, Potential Use Cases, and Market Drivers"
+  ]
+}

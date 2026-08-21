@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2308.04603",
+  "model": "MiniMax-M3",
+  "system": "search-baseline-v12",
+  "reference_precision": 0.3333333333333333,
+  "reference_recall": 0.05970149253731343,
+  "reference_count": 12,
+  "reference_matches": 4,
+  "ground_truth_count": 67,
+  "predicted_titles": [
+    "HiDDeN: Hiding Data With Deep Networks",
+    "StegaStamp: Invisible Hyperlinks in Physical Photographs",
+    "A Robust Image Watermarking System Based on Deep Neural Networks",
+    "An Automated and Robust Image Watermarking Scheme Based on Deep Neural Networks",
+    "A General Approach for Using Deep Neural Network for Digital Watermarking",
+    "Enhancing Robustness of DNN-based Watermarking by Mini",
+    "A Compact Neural Network-based Algorithm for Robust Image Watermarking",
+    "End-to-End Image Steganography Using Deep Convolutional Autoencoders",
+    "Robust Spatial-spread Deep Neural Image Watermarking",
+    "Deep Boosting Robustness of DNN-based Image Watermarking via DBMark",
+    "Go Wide or Go Deep: Levering Watermarking Performance with Computational Cost for Specific Images",
+    "Robust Zero Watermarking Algorithm for Medical Images Based on Improved NasNet-Mobile and DCT"
+  ]
+}

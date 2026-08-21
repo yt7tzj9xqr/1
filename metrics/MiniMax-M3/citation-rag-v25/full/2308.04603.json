@@ -1,0 +1,331 @@
+{
+  "arxiv_id": "2308.04603",
+  "model": "MiniMax-M3",
+  "system": "citation-rag-v25",
+  "reference_precision": 0.3333333333333333,
+  "reference_recall": 0.04477611940298507,
+  "reference_count": 9,
+  "reference_matches": 3,
+  "ground_truth_count": 67,
+  "predicted_titles": [
+    "Deep Boosting Robustness of DNN-based Image Watermarking via DBMark",
+    "End-to-End Image Steganography Using Deep Convolutional Autoencoders",
+    "A Robust Image Watermarking System Based on Deep Neural Networks",
+    "An Automated and Robust Image Watermarking Scheme Based on Deep Neural Networks",
+    "A Compact Neural Network-based Algorithm for Robust Image Watermarking",
+    "Robust Spatial-spread Deep Neural Image Watermarking",
+    "Robust Zero Watermarking Algorithm for Medical Images Based on Improved NasNet-Mobile and DCT",
+    "Go Wide or Go Deep: Levering Watermarking Performance with Computational Cost for Specific Images",
+    "An Overview of Robust Digital Image Watermarking"
+  ],
+  "cited_match_rate": 0.9583333333333334,
+  "cited_count": 24,
+  "cited_supported": 23,
+  "cited_details": [
+    {
+      "statement": "Digital image watermarking is the process of embedding and extracting a watermark covertly on a cover image (https://arxiv.org/abs/2007.02460).",
+      "url": "https://arxiv.org/abs/2007.02460",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Digital image watermarking seeks to protect digital media information from unauthorized access, where the message is embedded into the digital image and extracted from it, even when some noises or distortions are applied under various data processing (https://arxiv.org/abs/2112.13491).",
+      "url": "https://arxiv.org/abs/2112.13491",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Digital watermarking requires both high robustness and high invisibility (https://arxiv.org/abs/2210.13801).",
+      "url": "https://arxiv.org/abs/2210.13801",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Least significant bits (LSB) was the earliest image watermarking method (https://arxiv.org/abs/2210.13801).",
+      "url": "https://arxiv.org/abs/2210.13801",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Ideally, a robust image watermarking system keeps the watermark intact under a designated class of distortions without the assistance of other techniques (https://arxiv.org/abs/1908.11331).",
+      "url": "https://arxiv.org/abs/1908.11331",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A thorough literature review classifies watermarking schemes with their properties and applications across different domains, discussing the general structure of watermarking systems, different quantitative metrics, and various categories of attacks (https://doi.org/10.1080/02564602.2015.1042927).",
+      "url": "https://doi.org/10.1080/02564602.2015.1042927",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The comparative and quantitative analysis of various watermarking schemes across domains helps researchers quickly review existing algorithms (https://doi.org/10.1080/02564602.2015.1042927).",
+      "url": "https://doi.org/10.1080/02564602.2015.1042927",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Zhong and Shih proposed a robust image watermarking system based on deep neural networks at the University of Nebraska at Omaha and the New Jersey Institute of Technology (https://arxiv.org/abs/1908.11331).",
+      "url": "https://arxiv.org/abs/1908.11331",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Zhong, Huang, Mastorakis, and Shih proposed an automated and robust image watermarking scheme based on deep neural networks, in which modern image watermarking research primarily focuses on multi-bit scenarios that extract the entire communicative watermark (https://arxiv.org/abs/2007.02460).",
+      "url": "https://arxiv.org/abs/2007.02460",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A novel end-to-end solution for embedding and recovering the watermark in a digital image using convolutional neural networks is presented, employing a spreading mechanism (https://www.semanticscholar.org/paper/b1ffb4adfc9ec647d5dee15cd3dacce1a662ffe5).",
+      "url": "https://semanticscholar.org/paper/b1ffb4adfc9ec647d5dee15cd3dacce1a662ffe5",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "DBMark, by Ye, Gao, Xie, Yin, and Wei, is a framework that deeply boosts the robustness of DNN-based image watermarking (https://arxiv.org/abs/2210.13801).",
+      "url": "https://arxiv.org/abs/2210.13801",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The authors are affiliated with the Southern University of Science and Technology, Hunan University, and Changsha University of Science and Technology (https://arxiv.org/abs/2210.13801).",
+      "url": "https://arxiv.org/abs/2210.13801",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Xu, Wang, Wei, and Lu proposed a compact neural network-based algorithm for robust image watermarking (https://arxiv.org/abs/2112.13491).",
+      "url": "https://arxiv.org/abs/2112.13491",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A light-weight deep convolutional autoencoder architecture was proposed to embed a secret image inside a cover image and to extract the embedded secret image from the stego image (https://doi.org/10.1109/access.2021.3113953).",
+      "url": "https://doi.org/10.1109/access.2021.3113953",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The autoencoder method was evaluated on three datasets—COCO, CelebA, and ImageNet—using Peak Signal-to-Noise Ratio, hiding capacity, and imperceptibility metrics (https://doi.org/10.1109/access.2021.3113953).",
+      "url": "https://doi.org/10.1109/access.2021.3113953",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The method was also evaluated using various images including Lena, airplane, baboon, and peppers, and compared against other traditional image steganography methods (https://doi.org/10.1109/access.2021.3113953).",
+      "url": "https://doi.org/10.1109/access.2021.3113953",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Image steganography hides a secret image inside a cover image in plain sight, where traditionally the secret data is converted into binary bits and the cover image is manipulated statistically to embed the secret binary bits (https://doi.org/10.1109/access.2021.3113953).",
+      "url": "https://doi.org/10.1109/access.2021.3113953",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Jia, Fang, Ma, and Zhang at the University of Science and Technology of China in Hefei, Anhui, authored a work titled \"Go Wide or Go Deep: Levering Watermarking Performance with Computational Cost for Specific Images.\" (https://arxiv.org/abs/2204.11513)",
+      "url": "https://arxiv.org/abs/2204.11513",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Medical image processing technology is being continuously upgraded, and digital watermarking technology is significant and provides a strong guarantee for medical image information security (https://doi.org/10.3390/electronics12163444).",
+      "url": "https://doi.org/10.3390/electronics12163444",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A robust zero watermarking algorithm for medical images was proposed, combining an Improved NasNet-Mobile convolutional neural network with the discrete cosine transform (DCT) and a perceptual hashing algorithm (https://doi.org/10.3390/electronics12163444).",
+      "url": "https://doi.org/10.3390/electronics12163444",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The structure of the pre-training network NasNet-Mobile is adjusted by replacing the original Softmax and classification layers with a fully connected layer with 128 outputs and a regression layer, generating a regression network with 128 outputs (https://doi.org/10.3390/electronics12163444).",
+      "url": "https://doi.org/10.3390/electronics12163444",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Migration learning is then performed on the modified NasNet-Mobile network to extract 128 features from the medical images (https://doi.org/10.3390/electronics12163444).",
+      "url": "https://doi.org/10.3390/electronics12163444",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The extracted image features are subjected to DCT transform to extract low frequency data, which the perceptual hashing algorithm processes to obtain a 32-bit binary feature vector (https://doi.org/10.3390/electronics12163444).",
+      "url": "https://doi.org/10.3390/electronics12163444",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Before watermark embedding, the watermark data is encrypted using a chaos mapping algorithm, and the zero watermarking technique allows the algorithm to embed and extract the watermark without changing the information contained in the medical image (https://doi.org/10.3390/electronics12163444).",
+      "url": "https://doi.org/10.3390/electronics12163444",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    }
+  ],
+  "noncited_factual_accuracy": 1.0,
+  "noncited_count": 4,
+  "noncited_correct": 4,
+  "noncited_details": [
+    {
+      "claim": "Digital image watermarking is the process of embedding and extracting a watermark covertly on a carrier image.",
+      "evidence": [
+        {
+          "title": "A Robust Image Watermarking System Based on Deep Neural Networks",
+          "abstract": "Digital image watermarking is the process of embedding and extracting watermark covertly on a carrier image. Incorporating deep learning networks with image watermarking has attracted increasing attention during recent years. However, existing deep learning-based watermarking systems cannot achieve robustness, blindness, and automated embedding and extraction simultaneously. In this paper, a fully automated image watermarking system based on deep neural networks is proposed to generalize the image watermarking processes. An unsupervised deep learning structure and a novel loss computation are proposed to achieve high capacity and high robustness without any prior knowledge of possible attacks. Furthermore, a challenging application of watermark extraction from camera-captured images is provided to validate the practicality as well as the robustness of the proposed system. Experimental results show the superiority performance of the proposed system as comparing against several currently available techniques.",
+          "url": "https://arxiv.org/abs/1908.11331"
+        },
+        {
+          "title": "An Automated and Robust Image Watermarking Scheme Based on Deep Neural Networks",
+          "abstract": "Digital image watermarking is the process of embedding and extracting a watermark covertly on a cover-image. To dynamically adapt image watermarking algorithms, deep learning-based image watermarking schemes have attracted increased attention during recent years. However, existing deep learning-based watermarking methods neither fully apply the fitting ability to learn and automate the embedding and extracting algorithms, nor achieve the properties of robustness and blindness simultaneously. In this paper, a robust and blind image watermarking scheme based on deep learning neural networks is proposed. To minimize the requirement of domain knowledge, the fitting ability of deep neural networks is exploited to learn and generalize an automated image watermarking algorithm. A deep learning architecture is specially designed for image watermarking tasks, which will be trained in an unsupervised manner to avoid human intervention and annotation. To facilitate flexible applications, the robustness of the proposed scheme is achieved without requiring any prior knowledge or adversarial examples of possible attacks. A challenging case of watermark extraction from phone camera-captured images demonstrates the robustness and practicality of the proposal. The experiments, evaluation, and application cases confirm the superiority of the proposed scheme.",
+          "url": "https://arxiv.org/abs/2007.02460"
+        },
+        {
+          "title": "Deep Boosting Robustness of DNN-based Image Watermarking via DBMark",
+          "abstract": "Image watermarking is a technique for hiding information into images that can withstand distortions while requiring the encoded image to be perceptually identical to the original image. Recent work based on deep neural networks (DNN) has achieved impressive progression in digital watermarking. Higher robustness under various distortions is the eternal pursuit of digital image watermarking approaches. In this paper, we propose DBMARK, a novel end-to-end digital image watermarking framework to deep boost the robustness of DNN-based image watermarking. The key novelty is the synergy of invertible neural networks (INN) and effective watermark features generation. The framework generates watermark features with redundancy and error correction ability through the effective neural network based message processor, synergized with the powerful information embedding and extraction abilities of INN to achieve higher robustness and invisibility. The powerful learning ability of neural networks enables the message processor to adapt to various distortions. In addition, we propose to embed the watermark information in the discrete wavelet transform (DWT) domain and design low-low (LL) sub-band loss to enhance invisibility. Extensive experiment results demonstrate the superiority of the proposed framework compared with the state-of-the-art ones under various distortions such as dropout, cropout, crop, Gaussian filter, and JPEG compression.",
+          "url": "https://arxiv.org/abs/2210.13801"
+        },
+        {
+          "title": "CMC | Free Full-Text | Robust Deep Image Watermarking: A Survey",
+          "abstract": "Our review focuses on the innovative deep watermarking approaches that employ neural networks to identify robust embedding spaces, resilient to various attacks.",
+          "url": "https://www.techscience.com/cmc/v81n1/58332/html"
+        },
+        {
+          "title": "A Robust Image Watermarking System Based on Deep Neural Networks",
+          "abstract": "Digital image watermarking is the process of embedding and extracting watermark covertly on a carrier image. Incorporating deep learning networks with image ...",
+          "url": "https://www.researchgate.net/publication/335489328_A_Robust_Image_Watermarking_System_Based_on_Deep_Neural_Networks"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "Digital image watermarking embeds a message into a digital image and extracts it despite the application of noises or distortions.",
+      "evidence": [
+        {
+          "title": "A Compact Neural Network-based Algorithm for Robust Image Watermarking",
+          "abstract": "Digital image watermarking seeks to protect the digital media information from unauthorized access, where the message is embedded into the digital image and extracted from it, even some noises or distortions are applied under various data processing including lossy image compression and interactive content editing. Traditional image watermarking solutions easily suffer from robustness when specified with some prior constraints, while recent deep learning-based watermarking methods could not tackle the information loss problem well under various separate pipelines of feature encoder and decoder. In this paper, we propose a novel digital image watermarking solution with a compact neural network, named Invertible Watermarking Network (IWN). Our IWN architecture is based on a single Invertible Neural Network (INN), this bijective propagation framework enables us to effectively solve the challenge of message embedding and extraction simultaneously, by taking them as a pair of inverse problems for each other and learning a stable invertible mapping. In order to enhance the robustness of our watermarking solution, we specifically introduce a simple but effective bit message normalization module to condense the bit message to be embedded, and a noise layer is designed to simulate various practical attacks under our IWN framework. Extensive experiments demonstrate the superiority of our solution under various distortions.",
+          "url": "https://arxiv.org/abs/2112.13491"
+        },
+        {
+          "title": "Deep Boosting Robustness of DNN-based Image Watermarking via DBMark",
+          "abstract": "Image watermarking is a technique for hiding information into images that can withstand distortions while requiring the encoded image to be perceptually identical to the original image. Recent work based on deep neural networks (DNN) has achieved impressive progression in digital watermarking. Higher robustness under various distortions is the eternal pursuit of digital image watermarking approaches. In this paper, we propose DBMARK, a novel end-to-end digital image watermarking framework to deep boost the robustness of DNN-based image watermarking. The key novelty is the synergy of invertible neural networks (INN) and effective watermark features generation. The framework generates watermark features with redundancy and error correction ability through the effective neural network based message processor, synergized with the powerful information embedding and extraction abilities of INN to achieve higher robustness and invisibility. The powerful learning ability of neural networks enables the message processor to adapt to various distortions. In addition, we propose to embed the watermark information in the discrete wavelet transform (DWT) domain and design low-low (LL) sub-band loss to enhance invisibility. Extensive experiment results demonstrate the superiority of the proposed framework compared with the state-of-the-art ones under various distortions such as dropout, cropout, crop, Gaussian filter, and JPEG compression.",
+          "url": "https://arxiv.org/abs/2210.13801"
+        },
+        {
+          "title": "A Robust Image Watermarking System Based on Deep Neural Networks",
+          "abstract": "Digital image watermarking is the process of embedding and extracting watermark covertly on a carrier image. Incorporating deep learning networks with image watermarking has attracted increasing attention during recent years. However, existing deep learning-based watermarking systems cannot achieve robustness, blindness, and automated embedding and extraction simultaneously. In this paper, a fully automated image watermarking system based on deep neural networks is proposed to generalize the image watermarking processes. An unsupervised deep learning structure and a novel loss computation are proposed to achieve high capacity and high robustness without any prior knowledge of possible attacks. Furthermore, a challenging application of watermark extraction from camera-captured images is provided to validate the practicality as well as the robustness of the proposed system. Experimental results show the superiority performance of the proposed system as comparing against several currently available techniques.",
+          "url": "https://arxiv.org/abs/1908.11331"
+        },
+        {
+          "title": "arXiv Papers of Watermarking",
+          "abstract": "We propose PASA, a principled, robust, and distortion‐free watermarking algorithm that embeds and detects a watermark at the semantic level.",
+          "url": "https://hongsong-wang.github.io/Watermarking/"
+        },
+        {
+          "title": "A Review of Digital Image Watermarking Technology",
+          "abstract": "2)Watermark embedding: Embed digital watermarks into the digital signals that need protection, such as audio, video and images, etc. Figure 2. Digital Watermark ...",
+          "url": "https://www.itm-conferences.org/articles/itmconf/pdf/2025/09/itmconf_cseit2025_04030.pdf"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "Image steganography hides a secret image inside a cover image in plain sight.",
+      "evidence": [
+        {
+          "title": "End-to-End Image Steganography Using Deep Convolutional Autoencoders",
+          "abstract": "Image steganography is used to hide a secret image inside a cover image in plain sight. Traditionally, the secret data is converted into binary bits and the cover image is manipulated statistically to embed the secret binary bits. Overloading the cover image may lead to distortions and the secret information may become visible. Hence the hiding capacity of the traditional methods are limited. In this paper, a light-weight yet simple deep convolutional autoencoder architecture is proposed to embed a secret image inside a cover image as well as to extract the embedded secret image from the stego image. The proposed method is evaluated using three datasets - COCO, CelebA and ImageNet. Peak Signal-to-Noise Ratio, hiding capacity and imperceptibility results on the test set are used to measure the performance. The proposed method has been evaluated using various images including Lena, airplane, baboon and peppers and compared against other traditional image steganography methods. The experimental results have demonstrated that the proposed method has higher hiding capacity, security and robustness, and imperceptibility performances than other deep learning image steganography methods.",
+          "url": "https://doi.org/10.1109/access.2021.3113953"
+        },
+        {
+          "title": "A novel steganography method for image based on Huffman Encoding",
+          "abstract": "Steganography is the science that involves communicating secret data in an appropriate multimedia carrier, e.g., image, audio and video files. It comes under the assumption that if the feature is visible, the point of attack is evident, thus the goal here is always to conceal the very existence of the embedded data. This paper presents a novel technique for image steganography based on Huffman Encoding. Two 8 bit gray level image of size M X N and P X Q are used as cover image and secret image respectively. Huffman Encoding is performed over the secret image/message before embedding and each bit of Huffman code of secret image/message is embedded inside the cover image by altering the least significant bit (LSB) of each of the pixel's intensities of cover image. The size of the Huffman encoded bit stream and Huffman Table are also embedded inside the cover image, so that the Stego-Image becomes standalone information to the receiver. The experimental result shows that the algorithm has a high capacity and a good invisibility. Moreover Peak Signal to Noise Ratio (PSNR) of stego image with cover image shows better result in comparison with other existing steganography approaches. Furthermore, satisfactory security is maintained since the secret message/image cannot be extracted without knowing the decoding rules and Huffman table.",
+          "url": "https://doi.org/10.1109/ncetacs.2012.6203290"
+        },
+        {
+          "title": "Application Of Lsb Based Steganographic Technique For 8-Bit Color Images",
+          "abstract": "Steganography is the process of hiding one file inside another such that others can neither identify the meaning of the embedded object, nor even recognize its existence. Current trends favor using digital image files as the cover file to hide another digital file that contains the secret message or information. One of the most common methods of implementation is Least Significant Bit Insertion, in which the least significant bit of every byte is altered to form the bit-string representing the embedded file. Altering the LSB will only cause minor changes in color, and thus is usually not noticeable to the human eye. While this technique works well for 24-bit color image files, steganography has not been as successful when using an 8-bit color image file, due to limitations in color variations and the use of a colormap. This paper presents the results of research investigating the combination of image compression and steganography. The technique developed starts with a 24-bit color bitmap file, then compresses the file by organizing and optimizing an 8-bit colormap. After the process of compression, a text message is hidden in the final, compressed image. Results indicate that the final technique has potential of being useful in the steganographic world.",
+          "url": "https://doi.org/10.5281/zenodo.1086190"
+        },
+        {
+          "title": "Steganography: Hiding Messages in Plain Sight | by ichigo",
+          "abstract": "Image steganography: It involves embedding secret data within the pixels of an image file by subtly modifying the color values of individual ...",
+          "url": "https://medium.com/@bl34chchig0/steganography-hiding-messages-in-plain-sight-d237ac8097b3"
+        },
+        {
+          "title": "JPEG Steganography: Hiding in Plain Sight",
+          "abstract": "It also provides a historical context alongside a detailed review for steganography and steganalysis of digital images, mainly in JPEG format.",
+          "url": "https://medwinpublishers.com/article/IJFSC/10.23880/ijfsc-16000223/full"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "In traditional image steganography, secret data is converted into binary bits and the cover image is statistically manipulated to embed those bits.",
+      "evidence": [
+        {
+          "title": "End-to-End Image Steganography Using Deep Convolutional Autoencoders",
+          "abstract": "Image steganography is used to hide a secret image inside a cover image in plain sight. Traditionally, the secret data is converted into binary bits and the cover image is manipulated statistically to embed the secret binary bits. Overloading the cover image may lead to distortions and the secret information may become visible. Hence the hiding capacity of the traditional methods are limited. In this paper, a light-weight yet simple deep convolutional autoencoder architecture is proposed to embed a secret image inside a cover image as well as to extract the embedded secret image from the stego image. The proposed method is evaluated using three datasets - COCO, CelebA and ImageNet. Peak Signal-to-Noise Ratio, hiding capacity and imperceptibility results on the test set are used to measure the performance. The proposed method has been evaluated using various images including Lena, airplane, baboon and peppers and compared against other traditional image steganography methods. The experimental results have demonstrated that the proposed method has higher hiding capacity, security and robustness, and imperceptibility performances than other deep learning image steganography methods.",
+          "url": "https://doi.org/10.1109/access.2021.3113953"
+        },
+        {
+          "title": "Go Wide or Go Deep: Levering Watermarking Performance with Computational Cost for Specific Images",
+          "abstract": "Digital watermarking has been widely studied for the protection of intellectual property. Traditional watermarking schemes often design in a \"wider\" rule, which applies one general embedding mechanism to all images. But this will limit the scheme into a robustness-invisibility trade-off, where the improvements of robustness can only be achieved by the increase of embedding intensity thus causing the visual quality decay. However, a new scenario comes out at this stage that many businesses wish to give high level protection to specific valuable images, which requires high robustness and high visual quality at the same time. Such scenario makes the watermarking schemes should be designed in a \"deeper\" way which makes the embedding mechanism customized to specific images. To achieve so, we break the robustness-invisibility trade-off by introducing computation cost in, and propose a novel auto-decoder-like image-specified watermarking framework (ISMark). Based on ISMark, the strong robustness and high visual quality for specific images can be both achieved. In detail, we apply an optimization procedure (OPT) to replace the traditional embedding mechanism. Unlike existing schemes that embed watermarks using a learned encoder, OPT regards the cover image as the optimizable parameters to minimize the extraction error of the decoder, thus the features of each specified image can be effectively exploited to achieve superior performance. Extensive experiments indicate that ISMark outperforms the state-of-the-art methods by a large margin, which improves the average bit error rate by 4.64% (from 4.86% to 0.22%) and PSNR by 2.20dB (from 32.50dB to 34.70dB).",
+          "url": "https://arxiv.org/abs/2204.11513"
+        },
+        {
+          "title": "A novel steganography method for image based on Huffman Encoding",
+          "abstract": "Steganography is the science that involves communicating secret data in an appropriate multimedia carrier, e.g., image, audio and video files. It comes under the assumption that if the feature is visible, the point of attack is evident, thus the goal here is always to conceal the very existence of the embedded data. This paper presents a novel technique for image steganography based on Huffman Encoding. Two 8 bit gray level image of size M X N and P X Q are used as cover image and secret image respectively. Huffman Encoding is performed over the secret image/message before embedding and each bit of Huffman code of secret image/message is embedded inside the cover image by altering the least significant bit (LSB) of each of the pixel's intensities of cover image. The size of the Huffman encoded bit stream and Huffman Table are also embedded inside the cover image, so that the Stego-Image becomes standalone information to the receiver. The experimental result shows that the algorithm has a high capacity and a good invisibility. Moreover Peak Signal to Noise Ratio (PSNR) of stego image with cover image shows better result in comparison with other existing steganography approaches. Furthermore, satisfactory security is maintained since the secret message/image cannot be extracted without knowing the decoding rules and Huffman table.",
+          "url": "https://doi.org/10.1109/ncetacs.2012.6203290"
+        },
+        {
+          "title": "Image Steganography in Cryptography",
+          "abstract": "Steganography is a method of hiding secret data, by embedding it into an audio, video, image, or text file. Convert the secret text to binary",
+          "url": "https://www.geeksforgeeks.org/computer-networks/image-steganography-in-cryptography/"
+        },
+        {
+          "title": "Studies on Image Steganography",
+          "abstract": "by H Khamis · 2021 · Cited by 2 — Secret data can be embedded into audio, video, image, or text files. Embedding secret data into image at sender's side and extracting it at receiver's side. ...",
+          "url": "https://erepo.uef.fi/bitstreams/cb713106-09c0-4c18-9a82-eabfbbef8d0a/download"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    }
+  ]
+}

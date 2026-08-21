@@ -1,0 +1,299 @@
+{
+  "arxiv_id": "2105.01605",
+  "model": "MiniMax-M3",
+  "system": "search-baseline-v12",
+  "reference_precision": 0.08333333333333333,
+  "reference_recall": 0.02040816326530612,
+  "reference_count": 12,
+  "reference_matches": 1,
+  "ground_truth_count": 49,
+  "predicted_titles": [
+    "Natural Language Person Search Using Deep Reinforcement Learning",
+    "Learning Semantic-Aligned Feature Representation for Text-Based Person Search",
+    "Joint Detection and Identification Feature Learning for Person Search",
+    "Multi-Level Joint Feature Learning for Person Re-Identification - MDPI",
+    "Asymmetric Cross-Scale Alignment for Text-Based Person Search - Cronfa",
+    "Text-based Person Search without Parallel Image-Text Data",
+    "Text-Based Person Search with Limited Data - BMVA Archive",
+    "End-to-End Deep Learning for Person Search",
+    "CUHK-SYSU Person Search Dataset",
+    "End-to-end person search sequentially trained on ...",
+    "Person Re-identification in Identity Regression Space",
+    "Triplet Online Instance Matching Loss for Person Re ..."
+  ],
+  "cited_match_rate": 0.9210526315789473,
+  "cited_count": 38,
+  "cited_supported": 35,
+  "cited_details": [
+    {
+      "statement": "Existing person re-identification benchmarks and methods mainly focus on matching cropped pedestrian images between queries and candidates [https://arxiv.org/abs/1604.01850].",
+      "url": "https://arxiv.org/abs/1604.01850",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A new approach investigates how to localize and match query persons from scene images without relying on the annotations of candidate boxes [http://www.ee.cuhk.edu.hk/~xgwang/PS/dataset.html].",
+      "url": "http://ee.cuhk.edu.hk/~xgwang/PS/dataset.html",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Rather than breaking person search into two separate tasks of pedestrian detection and person re-identification, the approach uses an end-to-end deep learning framework to jointly handle both tasks [http://www.ee.cuhk.edu.hk/~xgwang/PS/dataset.html].",
+      "url": "http://ee.cuhk.edu.hk/~xgwang/PS/dataset.html",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The framework introduces a random sampling softmax loss to effectively train the model under the supervision of sparse and unbalanced labels [http://www.ee.cuhk.edu.hk/~xgwang/PS/dataset.html].",
+      "url": "http://ee.cuhk.edu.hk/~xgwang/PS/dataset.html",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The end-to-end deep learning person search dataset is available upon request [http://www.ee.cuhk.edu.hk/~xgwang/PS/dataset.html].",
+      "url": "http://ee.cuhk.edu.hk/~xgwang/PS/dataset.html",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The joint detection and identification feature learning approach was published in 2016 by researchers at The Chinese University of Hong Kong, Sun Yat-Sen University, and SenseTime Group Limited [https://arxiv.org/abs/1604.01850].",
+      "url": "https://arxiv.org/abs/1604.01850",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The joint detection and identification feature learning paper was authored by Tong Xiao, Shuang Li, Bochao Wang, Liang Lin, and Xiaogang Wang [https://arxiv.org/abs/1604.01850].",
+      "url": "https://arxiv.org/abs/1604.01850",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The CUHK-SYSU dataset is a large-scale person search benchmark [https://hyper.ai/en/datasets/17981].",
+      "url": "https://hyper.ai/en/datasets/17981",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The CUHK-SYSU dataset contains 8,432 people and 18,184 images [https://hyper.ai/en/datasets/17981].",
+      "url": "https://hyper.ai/en/datasets/17981",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The CUHK-SYSU dataset is divided into two parts according to image source, including street photography [https://hyper.ai/en/datasets/17981].",
+      "url": "https://hyper.ai/en/datasets/17981",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The CUHK-SYSU dataset contains 18,184 movies and is used together with the PRW dataset to train and evaluate person search models [https://cea.hal.science/cea-03251768/document].",
+      "url": "https://cea.hal.science/cea-03251768/document",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The CUHK-SYSU samples are collected from a few fixed camera views [http://www.ee.cuhk.edu.hk/~xgwang/PS/dataset.html].",
+      "url": "http://ee.cuhk.edu.hk/~xgwang/PS/dataset.html",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Text-based person search (TBPS) aims to retrieve the images of the target person from a large image gallery based on a given natural language description [https://dl.acm.org/doi/abs/10.1145/3581783.3612285].",
+      "url": "https://dl.acm.org/doi/abs/10.1145/3581783.3612285",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Text-based person search aims at retrieving pedestrian images using text queries [https://www.bmva-archive.org.uk/bmvc/2021/assets/papers/0044.pdf].",
+      "url": "https://bmva-archive.org.uk/bmvc/2021/assets/papers/0044.pdf",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Text-based person search aims to retrieve images of a certain pedestrian using textual descriptions [https://arxiv.org/abs/2112.06714].",
+      "url": "https://arxiv.org/abs/2112.06714",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Natural language person search uses deep reinforcement learning to match text queries with person images in galleries [https://arxiv.org/abs/1809.00365].",
+      "url": "https://arxiv.org/abs/1809.00365",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The natural language person search approach using deep reinforcement learning was published in 2018 by researchers at Carnegie Mellon University [https://arxiv.org/abs/1809.00365].",
+      "url": "https://arxiv.org/abs/1809.00365",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The natural language person search paper was authored by Ankit Shah and Tyler Vuong [https://arxiv.org/abs/1809.00365].",
+      "url": "https://arxiv.org/abs/1809.00365",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "In natural language person search, candidate images are cropped to the same size as the candidate person [https://arxiv.org/abs/1809.00365].",
+      "url": "https://arxiv.org/abs/1809.00365",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The text-based person search with limited data was developed at the University of Surrey, iFlyTek-Surrey Joint Research Centre on Artificial Intelligence, and Fudan University [https://www.bmva-archive.org.uk/bmvc/2021/assets/papers/0044.pdf].",
+      "url": "https://bmva-archive.org.uk/bmvc/2021/assets/papers/0044.pdf",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A multi-level feature fusion model combines both global features and local features of images through deep learning for person re-identification [https://www.mdpi.com/1999-4893/13/5/111].",
+      "url": "https://mdpi.com/1999-4893/13/5/111",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The multi-level joint feature learning approach for person re-identification was published in 2020 [https://www.mdpi.com/1999-4893/13/5/111].",
+      "url": "https://mdpi.com/1999-4893/13/5/111",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Global-matching methods cannot effectively explore the distinctive local details of samples [https://arxiv.org/abs/2112.06714].",
+      "url": "https://arxiv.org/abs/2112.06714",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Distinctive local details of samples are beneficial to improving the performance of text-based person search [https://arxiv.org/abs/2112.06714].",
+      "url": "https://arxiv.org/abs/2112.06714",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A semantic-aligned feature representation method has been proposed for text-based person search [https://arxiv.org/abs/2112.06714].",
+      "url": "https://arxiv.org/abs/2112.06714",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The semantic-aligned feature representation method for text-based person search was published in 2021 by researchers at the School of Computer Science and Technology, Soochow University, China [https://arxiv.org/abs/2112.06714].",
+      "url": "https://arxiv.org/abs/2112.06714",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The semantic-aligned feature representation paper was authored by Shiping Li, Min Cao, and Min Zhang [https://arxiv.org/abs/2112.06714].",
+      "url": "https://arxiv.org/abs/2112.06714",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "An asymmetric cross-scale alignment approach has been proposed for text-based person search [https://cronfa.swan.ac.uk/Record/cronfa62251/Download/62251__26475__9db5b190500e40af9bfe9f45e66bbb4f.pdf].",
+      "url": "https://cronfa.swan.ac.uk/Record/cronfa62251/Download/62251__26475__9db5b190500e40af9bfe9f45e66bbb4f.pdf",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Multimodal alignment and attention-based person search via natural language description has been referenced as a related approach in the cross-scale alignment literature [https://cronfa.swan.ac.uk/Record/cronfa62251/Download/62251__26475__9db5b190500e40af9bfe9f45e66bbb4f.pdf].",
+      "url": "https://cronfa.swan.ac.uk/Record/cronfa62251/Download/62251__26475__9db5b190500e40af9bfe9f45e66bbb4f.pdf",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A triplet online instance matching loss has been proposed for person re-identification [https://arxiv.org/abs/2002.10560].",
+      "url": "https://arxiv.org/abs/2002.10560",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The triplet online instance matching loss mines the shared features of the same identity in different scenarios [https://arxiv.org/abs/2002.10560].",
+      "url": "https://arxiv.org/abs/2002.10560",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The triplet online instance matching loss was published in 2020 and developed at the University of Electronic Science and Technology of China [https://arxiv.org/abs/2002.10560].",
+      "url": "https://arxiv.org/abs/2002.10560",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The triplet online instance matching loss paper was authored by Ye Li, Guangqiang Yin, Chunhui Liu, Xiaoyu Yang, and Zhiguo Wang [https://arxiv.org/abs/2002.10560].",
+      "url": "https://arxiv.org/abs/2002.10560",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Most existing person re-identification methods are unsuitable for real-world deployment [https://pmc.ncbi.nlm.nih.gov/articles/PMC6411216/].",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6411216",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Existing re-identification methods are unsuitable due to unscalability to large population size [https://pmc.ncbi.nlm.nih.gov/articles/PMC6411216/].",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6411216",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Existing re-identification methods are also unsuitable due to inadaptability over time [https://pmc.ncbi.nlm.nih.gov/articles/PMC6411216/].",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6411216",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A unified solution has been presented to address unscalability to large population size and inadaptability over time in person re-identification [https://pmc.ncbi.nlm.nih.gov/articles/PMC6411216/].",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6411216",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The person re-identification in identity regression space work was published in 2018 and communicated by Edwin Hancock, Richard Wilson, Will Smith, Adrian Bors and Nick Pears [https://pmc.ncbi.nlm.nih.gov/articles/PMC6411216/].",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6411216",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    }
+  ],
+  "noncited_factual_accuracy": null,
+  "noncited_count": 0,
+  "noncited_correct": 0,
+  "noncited_details": []
+}

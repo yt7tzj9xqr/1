@@ -1,0 +1,244 @@
+{
+  "arxiv_id": "2204.10325",
+  "model": "MiniMax-M3",
+  "system": "citation-rag-v25",
+  "reference_precision": 0.0,
+  "reference_recall": 0.0,
+  "reference_count": 6,
+  "reference_matches": 0,
+  "ground_truth_count": 36,
+  "predicted_titles": [
+    "Speech and language therapy for aphasia following stroke",
+    "Prospective Validation of Motor-Based Intervention with Automated Mispronunciation Detection of Rhotics in Residual Speech Sound Disorders",
+    "Stuttering Speech Disfluency Prediction using Explainable Attribution Vectors of Facial Muscle Movements",
+    "Home-Based Activities for Children with Speech Sound Disorders: Requirements for a Tangible User Interface for Internet of Things Artefacts",
+    "Automatic Pronunciation Scoring And Mispronunciation ...",
+    "Automated analysis of free speech predicts psychosis onset in high-risk youths"
+  ],
+  "cited_match_rate": 0.8333333333333334,
+  "cited_count": 12,
+  "cited_supported": 10,
+  "cited_details": [
+    {
+      "statement": "Aphasia is an acquired language impairment following brain damage that affects some or all language modalities: expression and understanding of speech, reading, and writing, with approximately one third of people who have a stroke experiencing aphasia (https://doi.org/10.1002/14651858.cd000425.pub4).",
+      "url": "https://doi.org/10.1002/14651858.cd000425.pub4",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A 2022 study presented the state of the art regarding the use of tangible user interfaces for internet of artefacts targeting health applications, with a focus on speech and language therapy and related areas, targeting home-based interventions for children with Speech Sound Disorders, including data security and privacy issues (https://www.semanticscholar.org/paper/0949276b131c3d4b2ed993c167fdf13d2fa886d2).",
+      "url": "https://semanticscholar.org/paper/0949276b131c3d4b2ed993c167fdf13d2fa886d2",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The aim of the study was to understand the usual practice of clinicians and to contribute to a better intervention or post-intervention approach for children with Speech Sound Disorders, using results from a systematic literature review, a focus group, and a nationwide questionnaire to determine system requirements for a prototype (https://www.semanticscholar.org/paper/0949276b131c3d4b2ed993c167fdf13d2fa886d2).",
+      "url": "https://semanticscholar.org/paper/0949276b131c3d4b2ed993c167fdf13d2fa886d2",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The literature review revealed that some studies proposed technological solutions while others used a social approach and/or gamified activities (https://www.semanticscholar.org/paper/0949276b131c3d4b2ed993c167fdf13d2fa886d2).",
+      "url": "https://semanticscholar.org/paper/0949276b131c3d4b2ed993c167fdf13d2fa886d2",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A 2023 prospective validation study evaluated the PERCEPT-R Classifier for rhotics in residual speech sound disorders, which uses GMM-HMM features to predict clinician perceptual judgment of the /ɹ/ and to drive ChainingAI practice adaptations in motor-based intervention (https://arxiv.org/abs/2305.19090).",
+      "url": "https://arxiv.org/abs/2305.19090",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "A 2012 study addressed automatic pronunciation evaluation and mispronunciation detection, noting that feedback on pronunciation is vital for spoken language teaching (https://aclanthology.org/W12-5808.pdf).",
+      "url": "https://aclanthology.org/W12-5808.pdf",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The system relied on automatic speech recognition performed using Sphinx trained on a database of native exemplar pronunciation and non-native examples of frequent mistakes (https://aclanthology.org/W12-5808.pdf).",
+      "url": "https://aclanthology.org/W12-5808.pdf",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The study noted that automatic pronunciation evaluation and feedback can help non-native speakers to identify their errors, learn sounds and vocabulary, and improve their pronunciation performance (https://aclanthology.org/W12-5808.pdf).",
+      "url": "https://aclanthology.org/W12-5808.pdf",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A 2020 study focused on stuttering speech disfluency prediction using explainable attribution vectors of facial muscle movements (https://arxiv.org/abs/2010.01231).",
+      "url": "https://arxiv.org/abs/2010.01231",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The study reported prevalence of 1% in adults (https://arxiv.org/abs/2010.01231).",
+      "url": "https://arxiv.org/abs/2010.01231",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A 2015 study tested automated speech analyses combined with machine learning to predict later psychosis onset, noting that psychiatry lacks the objective clinical tests routinely used in other specializations and that novel computerized methods to characterize complex behaviors such as speech could be used to identify and predict psychiatric illness (https://doi.org/10.1038/npjschz.2015.30).",
+      "url": "https://doi.org/10.1038/npjschz.2015.30",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Thirty-four CHR youths (11 females) had baseline interviews and were assessed quarterly for up to 2.5 years; five transitioned to psychosis, with transcripts evaluated for semantic and syntactic features predicting later psychosis onset using a convex hull classification algorithm with leave-one-subject-out cross-validation (https://doi.org/10.1038/npjschz.2015.30).",
+      "url": "https://doi.org/10.1038/npjschz.2015.30",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    }
+  ],
+  "noncited_factual_accuracy": 1.0,
+  "noncited_count": 4,
+  "noncited_correct": 4,
+  "noncited_details": [
+    {
+      "claim": "Aphasia is an acquired language impairment resulting from brain damage that can affect some or all language modalities including expression and understanding of speech, reading, and writing.",
+      "evidence": [
+        {
+          "title": "Speech and language therapy for aphasia following stroke",
+          "abstract": "BACKGROUND: Aphasia is an acquired language impairment following brain damage that affects some or all language modalities: expression and understanding of speech, reading, and writing. Approximately one third of people who have a stroke experience aphasia. OBJECTIVES: To assess the effects of speech and language therapy (SLT) for aphasia following stroke. SEARCH METHODS: We searched the Cochrane Stroke Group Trials Register (last searched 9 September 2015), CENTRAL (2015, Issue 5) and other Cochrane Library Databases (CDSR, DARE, HTA, to 22 September 2015), MEDLINE (1946 to September 2015), EMBASE (1980 to September 2015), CINAHL (1982 to September 2015), AMED (1985 to September 2015), LLBA (1973 to September 2015), and SpeechBITE (2008 to September 2015). We also searched major trials registers for ongoing trials including ClinicalTrials.gov (to 21 September 2015), the Stroke Trials Registry (to 21 September 2015), Current Controlled Trials (to 22 September 2015), and WHO ICTRP (to 22 September 2015). In an effort to identify further published, unpublished, and ongoing trials we also handsearched the International Journal of Language and Communication Disorders (1969 to 2005) and reference lists of relevant articles, and we contacted academic institutions and other researchers. There were no language restrictions. SELECTION CRITERIA: Randomised controlled trials (RCTs) comparing SLT (a formal intervention that aims to improve language and communication abilities, activity and participation) versus no SLT; social support or stimulation (an intervention that provides social support and communication stimulation but does not include targeted therapeutic interventions); or another SLT intervention (differing in duration, intensity, frequency, intervention methodology or theoretical approach). DATA COLLECTION AND ANALYSIS: We independently extracted the data and assessed the quality of included trials. We sought missing data from investigators. MAIN RESULTS: We included 57 RCTs (74 randomised comparisons) involving 3002 participants in this review (some appearing in more than one comparison). Twenty-seven randomised comparisons (1620 participants) assessed SLT versus no SLT; SLT resulted in clinically and statistically significant benefits to patients' functional communication (standardised mean difference (SMD) 0.28, 95% confidence interval (CI) 0.06 to 0.49, P = 0.01), reading, writing, and expressive language, but (based on smaller numbers) benefits were not evident at follow-up. Nine randomised comparisons (447 participants) assessed SLT with social support and stimulation; meta-analyses found no evidence of a difference in functional communication, but more participants withdrew from social support interventions than SLT. Thirty-eight randomised comparisons (1242 participants) assessed two approaches to SLT. Functional communication was significantly better in people with aphasia that received therapy at a high intensity, high dose, or over a long duration compared to those that received therapy at a lower intensity, lower dose, or over a shorter period of time. The benefits of a high intensity or a high dose of SLT were confounded by a significantly higher dropout rate in these intervention groups. Generally, trials randomised small numbers of participants across a range of characteristics (age, time since stroke, and severity profiles), interventions, and outcomes. AUTHORS' CONCLUSIONS: Our review provides evidence of the effectiveness of SLT for people with aphasia following stroke in terms of improved functional communication, reading, writing, and expressive language compared with no therapy. There is some indication that therapy at high intensity, high dose or over a longer period may be beneficial. HIgh-intensity and high dose interventions may not be acceptable to all.",
+          "url": "https://doi.org/10.1002/14651858.cd000425.pub4"
+        },
+        {
+          "title": "Schizophrenic Speech",
+          "abstract": "This book reviews our knowledge of the incoherent speech which can present as a symptom of schizophrenia. This is one of the most researched symptoms in the disorder. The content covers clinical presentation, differential diagnosis and the theories proposed to account for the symptom in these 'thought disordered' patients, ranging from the psychoanalytic to there being a form of aphasia involved. The book is unique in its ability to apply linguistic and neuropsychological approaches to the understanding of this condition, and is the first book to cover comprehensively the range of clinical studies that followed the introduction of Andreasen's rating scale for what was then called thought, language and communication disorder. This book is essential reading for all those working in the field of schizophrenia and also for those interested in language and disorders of speech.",
+          "url": "https://doi.org/10.1017/cbo9780511544057"
+        },
+        {
+          "title": "Voice disorder detection using machine learning algorithms: An application in speech and language pathology",
+          "abstract": "The healthcare industry is currently seeing a significant rise in the use of mobile devices. These devices not only provide ways for communication and sharing of multimedia information, such as clinical notes and medical records, but also offer new possibilities for people to detect, monitor, and manage their health from anywhere at any time. Digital health technologies have the potential to improve patient care by making it more efficient, effective, and cost-effective. Utilizing digital devices and technologies can have a positive impact on many health conditions. This research focuses on dysphonia, a change in the sound of the voice that affects around one-third of individuals at some point in their lives. Voice disorders are becoming more common, despite being often overlooked. Mobile healthcare systems can provide quick and efficient assistance for detecting voice disorders. To make these systems reliable and accurate, it is important to develop an algorithm that can classify intelligently healthy and pathological voices. To achieve this task, we utilized a combination of several datasets such as Saarbruecken voice dataset (SVD), the Massachusetts Eye and Ear Infirmary database (MEEI), and a few private datasets of various voices (healthy and pathological) Additionally, we applied multiple machine learning algorithms, including decision tree, random forest, and support vector machine, to evaluate and determine the most effective algorithm among them for the detection of voice disorders. The experimental analyses are performed in terms of sensitivity, accuracy, receiver operating characteristic area, specificity, F-score and recall. The results demonstrated that the support vector machine algorithm, depending on the features selected by using appropriate feature selection methods, proved to be the most accurate in detecting voice diseases.",
+          "url": "https://doi.org/10.1016/j.engappai.2024.108047"
+        },
+        {
+          "title": "43. Language impairments in acquired aphasia: Features ...",
+          "abstract": "43. Language impairments in acquired aphasia: Features and frameworks was published in Handbook of Communication Disorders on page 881.",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/9781614514909-044/html?srsltid=AfmBOoorHkFaGHYFezzrR1TfezXOkX3rRgZVVvHuHXlxD2I9iRkUs9i8"
+        },
+        {
+          "title": "Aphasia",
+          "abstract": "Aphasia is an acquired neurogenic language disorder resulting from brain injury. Aphasia may affect receptive and expressive language.",
+          "url": "https://www.asha.org/practice-portal/clinical-topics/aphasia/?srsltid=AfmBOorstojcREx67dPZheA5cmEOWlu0ncAVWGoYHkJIrpfIAPqOV2Iv"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "Approximately one third of individuals who have a stroke develop aphasia.",
+      "evidence": [
+        {
+          "title": "Speech and language therapy for aphasia following stroke",
+          "abstract": "BACKGROUND: Aphasia is an acquired language impairment following brain damage that affects some or all language modalities: expression and understanding of speech, reading, and writing. Approximately one third of people who have a stroke experience aphasia. OBJECTIVES: To assess the effects of speech and language therapy (SLT) for aphasia following stroke. SEARCH METHODS: We searched the Cochrane Stroke Group Trials Register (last searched 9 September 2015), CENTRAL (2015, Issue 5) and other Cochrane Library Databases (CDSR, DARE, HTA, to 22 September 2015), MEDLINE (1946 to September 2015), EMBASE (1980 to September 2015), CINAHL (1982 to September 2015), AMED (1985 to September 2015), LLBA (1973 to September 2015), and SpeechBITE (2008 to September 2015). We also searched major trials registers for ongoing trials including ClinicalTrials.gov (to 21 September 2015), the Stroke Trials Registry (to 21 September 2015), Current Controlled Trials (to 22 September 2015), and WHO ICTRP (to 22 September 2015). In an effort to identify further published, unpublished, and ongoing trials we also handsearched the International Journal of Language and Communication Disorders (1969 to 2005) and reference lists of relevant articles, and we contacted academic institutions and other researchers. There were no language restrictions. SELECTION CRITERIA: Randomised controlled trials (RCTs) comparing SLT (a formal intervention that aims to improve language and communication abilities, activity and participation) versus no SLT; social support or stimulation (an intervention that provides social support and communication stimulation but does not include targeted therapeutic interventions); or another SLT intervention (differing in duration, intensity, frequency, intervention methodology or theoretical approach). DATA COLLECTION AND ANALYSIS: We independently extracted the data and assessed the quality of included trials. We sought missing data from investigators. MAIN RESULTS: We included 57 RCTs (74 randomised comparisons) involving 3002 participants in this review (some appearing in more than one comparison). Twenty-seven randomised comparisons (1620 participants) assessed SLT versus no SLT; SLT resulted in clinically and statistically significant benefits to patients' functional communication (standardised mean difference (SMD) 0.28, 95% confidence interval (CI) 0.06 to 0.49, P = 0.01), reading, writing, and expressive language, but (based on smaller numbers) benefits were not evident at follow-up. Nine randomised comparisons (447 participants) assessed SLT with social support and stimulation; meta-analyses found no evidence of a difference in functional communication, but more participants withdrew from social support interventions than SLT. Thirty-eight randomised comparisons (1242 participants) assessed two approaches to SLT. Functional communication was significantly better in people with aphasia that received therapy at a high intensity, high dose, or over a long duration compared to those that received therapy at a lower intensity, lower dose, or over a shorter period of time. The benefits of a high intensity or a high dose of SLT were confounded by a significantly higher dropout rate in these intervention groups. Generally, trials randomised small numbers of participants across a range of characteristics (age, time since stroke, and severity profiles), interventions, and outcomes. AUTHORS' CONCLUSIONS: Our review provides evidence of the effectiveness of SLT for people with aphasia following stroke in terms of improved functional communication, reading, writing, and expressive language compared with no therapy. There is some indication that therapy at high intensity, high dose or over a longer period may be beneficial. HIgh-intensity and high dose interventions may not be acceptable to all.",
+          "url": "https://doi.org/10.1002/14651858.cd000425.pub4"
+        },
+        {
+          "title": "Automated assessment of psychiatric disorders using speech: A systematic review",
+          "abstract": "OBJECTIVE: There are many barriers to accessing mental health assessments including cost and stigma. Even when individuals receive professional care, assessments are intermittent and may be limited partly due to the episodic nature of psychiatric symptoms. Therefore, machine-learning technology using speech samples obtained in the clinic or remotely could one day be a biomarker to improve diagnosis and treatment. To date, reviews have only focused on using acoustic features from speech to detect depression and schizophrenia. Here, we present the first systematic review of studies using speech for automated assessments across a broader range of psychiatric disorders. METHODS: We followed the Preferred Reporting Items for Systematic Reviews and Meta-Analysis (PRISMA) guidelines. We included studies from the last 10 years using speech to identify the presence or severity of disorders within the Diagnostic and Statistical Manual of Mental Disorders (DSM-5). For each study, we describe sample size, clinical evaluation method, speech-eliciting tasks, machine learning methodology, performance, and other relevant findings. RESULTS: 1395 studies were screened of which 127 studies met the inclusion criteria. The majority of studies were on depression, schizophrenia, and bipolar disorder, and the remaining on post-traumatic stress disorder, anxiety disorders, and eating disorders. 63% of studies built machine learning predictive models, and the remaining 37% performed null-hypothesis testing only. We provide an online database with our search results and synthesize how acoustic features appear in each disorder. CONCLUSION: Speech processing technology could aid mental health assessments, but there are many obstacles to overcome, especially the need for comprehensive transdiagnostic and longitudinal studies. Given the diverse types of data sets, feature extraction, computational methodologies, and evaluation criteria, we provide guidelines for both acquiring data and building machine learning models with a focus on testing hypotheses, open science, reproducibility, and generalizability. LEVEL OF EVIDENCE: 3a.",
+          "url": "https://doi.org/10.1002/lio2.354"
+        },
+        {
+          "title": "Voice disorder detection using machine learning algorithms: An application in speech and language pathology",
+          "abstract": "The healthcare industry is currently seeing a significant rise in the use of mobile devices. These devices not only provide ways for communication and sharing of multimedia information, such as clinical notes and medical records, but also offer new possibilities for people to detect, monitor, and manage their health from anywhere at any time. Digital health technologies have the potential to improve patient care by making it more efficient, effective, and cost-effective. Utilizing digital devices and technologies can have a positive impact on many health conditions. This research focuses on dysphonia, a change in the sound of the voice that affects around one-third of individuals at some point in their lives. Voice disorders are becoming more common, despite being often overlooked. Mobile healthcare systems can provide quick and efficient assistance for detecting voice disorders. To make these systems reliable and accurate, it is important to develop an algorithm that can classify intelligently healthy and pathological voices. To achieve this task, we utilized a combination of several datasets such as Saarbruecken voice dataset (SVD), the Massachusetts Eye and Ear Infirmary database (MEEI), and a few private datasets of various voices (healthy and pathological) Additionally, we applied multiple machine learning algorithms, including decision tree, random forest, and support vector machine, to evaluate and determine the most effective algorithm among them for the detection of voice disorders. The experimental analyses are performed in terms of sensitivity, accuracy, receiver operating characteristic area, specificity, F-score and recall. The results demonstrated that the support vector machine algorithm, depending on the features selected by using appropriate feature selection methods, proved to be the most accurate in detecting voice diseases.",
+          "url": "https://doi.org/10.1016/j.engappai.2024.108047"
+        },
+        {
+          "title": "Regaining communication skills with speech-language therapy",
+          "abstract": "After a stroke, depending on the area of the brain affected, various communication problems may occur, including creating sentences, ...",
+          "url": "https://www.mcmasteroptimalaging.org/blog/detail/videos/2022/04/13/aphasia-after-stroke-regaining-communication-skills-with-speech-language-therapy"
+        },
+        {
+          "title": "Inclusion of People With Aphasia in Stroke Trials",
+          "abstract": "by C Shiggins · 2024 · Cited by 49 — Affecting approximately one-third of stroke survivors, aphasia can negatively impact an individual's functioning, activities, relationships, rights, wellbeing, ...",
+          "url": "https://www.sciencedirect.com/science/article/pii/S0003999323003684"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "Speech and language therapy is a clinical intervention applied to aphasia following stroke.",
+      "evidence": [
+        {
+          "title": "Speech and language therapy for aphasia following stroke",
+          "abstract": "BACKGROUND: Aphasia is an acquired language impairment following brain damage that affects some or all language modalities: expression and understanding of speech, reading, and writing. Approximately one third of people who have a stroke experience aphasia. OBJECTIVES: To assess the effects of speech and language therapy (SLT) for aphasia following stroke. SEARCH METHODS: We searched the Cochrane Stroke Group Trials Register (last searched 9 September 2015), CENTRAL (2015, Issue 5) and other Cochrane Library Databases (CDSR, DARE, HTA, to 22 September 2015), MEDLINE (1946 to September 2015), EMBASE (1980 to September 2015), CINAHL (1982 to September 2015), AMED (1985 to September 2015), LLBA (1973 to September 2015), and SpeechBITE (2008 to September 2015). We also searched major trials registers for ongoing trials including ClinicalTrials.gov (to 21 September 2015), the Stroke Trials Registry (to 21 September 2015), Current Controlled Trials (to 22 September 2015), and WHO ICTRP (to 22 September 2015). In an effort to identify further published, unpublished, and ongoing trials we also handsearched the International Journal of Language and Communication Disorders (1969 to 2005) and reference lists of relevant articles, and we contacted academic institutions and other researchers. There were no language restrictions. SELECTION CRITERIA: Randomised controlled trials (RCTs) comparing SLT (a formal intervention that aims to improve language and communication abilities, activity and participation) versus no SLT; social support or stimulation (an intervention that provides social support and communication stimulation but does not include targeted therapeutic interventions); or another SLT intervention (differing in duration, intensity, frequency, intervention methodology or theoretical approach). DATA COLLECTION AND ANALYSIS: We independently extracted the data and assessed the quality of included trials. We sought missing data from investigators. MAIN RESULTS: We included 57 RCTs (74 randomised comparisons) involving 3002 participants in this review (some appearing in more than one comparison). Twenty-seven randomised comparisons (1620 participants) assessed SLT versus no SLT; SLT resulted in clinically and statistically significant benefits to patients' functional communication (standardised mean difference (SMD) 0.28, 95% confidence interval (CI) 0.06 to 0.49, P = 0.01), reading, writing, and expressive language, but (based on smaller numbers) benefits were not evident at follow-up. Nine randomised comparisons (447 participants) assessed SLT with social support and stimulation; meta-analyses found no evidence of a difference in functional communication, but more participants withdrew from social support interventions than SLT. Thirty-eight randomised comparisons (1242 participants) assessed two approaches to SLT. Functional communication was significantly better in people with aphasia that received therapy at a high intensity, high dose, or over a long duration compared to those that received therapy at a lower intensity, lower dose, or over a shorter period of time. The benefits of a high intensity or a high dose of SLT were confounded by a significantly higher dropout rate in these intervention groups. Generally, trials randomised small numbers of participants across a range of characteristics (age, time since stroke, and severity profiles), interventions, and outcomes. AUTHORS' CONCLUSIONS: Our review provides evidence of the effectiveness of SLT for people with aphasia following stroke in terms of improved functional communication, reading, writing, and expressive language compared with no therapy. There is some indication that therapy at high intensity, high dose or over a longer period may be beneficial. HIgh-intensity and high dose interventions may not be acceptable to all.",
+          "url": "https://doi.org/10.1002/14651858.cd000425.pub4"
+        },
+        {
+          "title": "Melodic intonation in the rehabilitation of Romanian aphasics with bucco-lingual apraxia.",
+          "abstract": "The main objective of the present study was to assess the efficiency of the melodic intonation therapy (MIT) in the rehabilitation of Romanian aphasics. Eighty predominantly Broca aphasics used the melodic intonation therapy when no other therapy methods were very efficient. The speech therapist intonated the respective word, then together with the patient and finally let him continue alone. The control group counted 80 aphasics and it applied other therapy methods. Each patient, regardless of the group, was tested twice, before and after therapy. Since most of the patients displayed severe language disorders, and other therapy methods failed in rehabilitating them, MIT was considered an efficient method in the early stages of Broca aphasia with bucco-lingual apraxia.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/1520605"
+        },
+        {
+          "title": "Prospective Validation of Motor-Based Intervention with Automated Mispronunciation Detection of Rhotics in Residual Speech Sound Disorders",
+          "abstract": "Because lab accuracy of clinical speech technology systems may be overoptimistic, clinical validation is vital to demonstrate system reproducibility - in this case, the ability of the PERCEPT-R Classifier to predict clinician judgment of American English /r/ during ChainingAI motor-based speech sound disorder intervention. All five participants experienced statistically-significant improvement in untreated words following 10 sessions of combined human-ChainingAI treatment. These gains, despite a wide range of PERCEPT-human and human-human (F1-score) agreement, raise questions about best measuring classification performance for clinical speech that may be perceptually ambiguous.",
+          "url": "https://arxiv.org/abs/2305.19090"
+        },
+        {
+          "title": "Speech and language therapy for aphasia following stroke - Brady, MC",
+          "abstract": "Our review provides evidence of the effectiveness of SLT for people with aphasia following stroke in terms of improved functional communication, ...",
+          "url": "https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD000425.pub4/full"
+        },
+        {
+          "title": "Speech and language therapy for aphasia following stroke",
+          "abstract": "Our review provides evidence of the effectiveness of SLT for people with aphasia following stroke in terms of improved functional communication, reading, ...",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8078645/"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "Machine-learning techniques applied to speech samples have been proposed as potential biomarkers for psychiatric diagnosis and treatment.",
+      "evidence": [
+        {
+          "title": "Automated assessment of psychiatric disorders using speech: A systematic review",
+          "abstract": "OBJECTIVE: There are many barriers to accessing mental health assessments including cost and stigma. Even when individuals receive professional care, assessments are intermittent and may be limited partly due to the episodic nature of psychiatric symptoms. Therefore, machine-learning technology using speech samples obtained in the clinic or remotely could one day be a biomarker to improve diagnosis and treatment. To date, reviews have only focused on using acoustic features from speech to detect depression and schizophrenia. Here, we present the first systematic review of studies using speech for automated assessments across a broader range of psychiatric disorders. METHODS: We followed the Preferred Reporting Items for Systematic Reviews and Meta-Analysis (PRISMA) guidelines. We included studies from the last 10 years using speech to identify the presence or severity of disorders within the Diagnostic and Statistical Manual of Mental Disorders (DSM-5). For each study, we describe sample size, clinical evaluation method, speech-eliciting tasks, machine learning methodology, performance, and other relevant findings. RESULTS: 1395 studies were screened of which 127 studies met the inclusion criteria. The majority of studies were on depression, schizophrenia, and bipolar disorder, and the remaining on post-traumatic stress disorder, anxiety disorders, and eating disorders. 63% of studies built machine learning predictive models, and the remaining 37% performed null-hypothesis testing only. We provide an online database with our search results and synthesize how acoustic features appear in each disorder. CONCLUSION: Speech processing technology could aid mental health assessments, but there are many obstacles to overcome, especially the need for comprehensive transdiagnostic and longitudinal studies. Given the diverse types of data sets, feature extraction, computational methodologies, and evaluation criteria, we provide guidelines for both acquiring data and building machine learning models with a focus on testing hypotheses, open science, reproducibility, and generalizability. LEVEL OF EVIDENCE: 3a.",
+          "url": "https://doi.org/10.1002/lio2.354"
+        },
+        {
+          "title": "Home-Based Activities for Children with Speech Sound Disorders: Requirements for a Tangible User Interface for Internet of Things Artefacts",
+          "abstract": "This paper presents the state of the art regarding the use of tangible user interfaces for internet of artefacts (IoA) targeting health applications, with a focus on speech and language therapy and related areas, targeting home-based interventions, including data security and privacy issues. Results from a systematic literature review, focus group, and a nationwide questionnaire have been used to determine the system requirements for an artefact prototype to be developed. The aim of this study was to understand what is the usual practice of clinicians and to contribute to a better intervention or post-intervention approach for children with Speech Sound Disorders (SSD). The literature review revealed that some studies proposed technological solutions while others used a social approach and/or gamified activities. We could conclude that more research is needed and that a unified method or framework to address SSD intervention or post-intervention tools is lacking. Clinicians need more and better tools to be able to quantify and qualitatively assess the activities developed at home.",
+          "url": "https://www.semanticscholar.org/paper/0949276b131c3d4b2ed993c167fdf13d2fa886d2"
+        },
+        {
+          "title": "Voice disorder detection using machine learning algorithms: An application in speech and language pathology",
+          "abstract": "The healthcare industry is currently seeing a significant rise in the use of mobile devices. These devices not only provide ways for communication and sharing of multimedia information, such as clinical notes and medical records, but also offer new possibilities for people to detect, monitor, and manage their health from anywhere at any time. Digital health technologies have the potential to improve patient care by making it more efficient, effective, and cost-effective. Utilizing digital devices and technologies can have a positive impact on many health conditions. This research focuses on dysphonia, a change in the sound of the voice that affects around one-third of individuals at some point in their lives. Voice disorders are becoming more common, despite being often overlooked. Mobile healthcare systems can provide quick and efficient assistance for detecting voice disorders. To make these systems reliable and accurate, it is important to develop an algorithm that can classify intelligently healthy and pathological voices. To achieve this task, we utilized a combination of several datasets such as Saarbruecken voice dataset (SVD), the Massachusetts Eye and Ear Infirmary database (MEEI), and a few private datasets of various voices (healthy and pathological) Additionally, we applied multiple machine learning algorithms, including decision tree, random forest, and support vector machine, to evaluate and determine the most effective algorithm among them for the detection of voice disorders. The experimental analyses are performed in terms of sensitivity, accuracy, receiver operating characteristic area, specificity, F-score and recall. The results demonstrated that the support vector machine algorithm, depending on the features selected by using appropriate feature selection methods, proved to be the most accurate in detecting voice diseases.",
+          "url": "https://doi.org/10.1016/j.engappai.2024.108047"
+        },
+        {
+          "title": "A Review of Studies Using Machine Learning to ...",
+          "abstract": "Voice biomarkers developed using machine learning are a promising potential biomarker for mental disorders, including depression.",
+          "url": "https://www.researchgate.net/publication/386900504_A_Review_of_Studies_Using_Machine_Learning_to_Detect_Voice_Biomarkers_for_Depression"
+        },
+        {
+          "title": "Modern views of machine learning for precision psychiatry",
+          "abstract": "by ZS Chen · 2022 · Cited by 230 — ML offers a new paradigm to achieve automated and more objective assessments for various psychiatric conditions. For disease diagnosis, ...",
+          "url": "https://www.sciencedirect.com/science/article/pii/S2666389922002276"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    }
+  ]
+}

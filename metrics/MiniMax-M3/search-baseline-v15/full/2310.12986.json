@@ -1,0 +1,223 @@
+{
+  "arxiv_id": "2310.12986",
+  "model": "MiniMax-M3",
+  "system": "search-baseline-v12",
+  "reference_precision": 0.0,
+  "reference_recall": 0.0,
+  "reference_count": 9,
+  "reference_matches": 0,
+  "ground_truth_count": 61,
+  "predicted_titles": [
+    "Face manifold: manifold learning for synthetic face generation",
+    "Nonlinear dimensionality reduction by locally linear ...",
+    "Think Globally, Fit Locally: Unsupervised Learning of Low Dimensional Manifolds",
+    "Tenenbaum Reduction A Global Geometric ...",
+    "Laplacian Eigenmaps for Dimensionality Reduction and ...",
+    "Face recognition with image sets using manifold density divergence",
+    "Human Age Estimation With Regression on Discriminative Aging Manifold",
+    "Image-Based Human Age Estimation by Manifold Learning and Locally Adjusted Robust Regression",
+    "Gait-based human age estimation using age group-dependent manifold learning and regression"
+  ],
+  "cited_match_rate": 0.9444444444444444,
+  "cited_count": 18,
+  "cited_supported": 17,
+  "cited_details": [
+    {
+      "statement": "Roweis and Saul introduced Locally Linear Embedding (LLE), an unsupervised learning algorithm that computes low-dimensional, neighborhood-preserving embeddings of high-dimensional data https://www.semanticscholar.org/paper/Nonlinear-dimensionality-reduction-by-locally-Roweis-Saul/f0a3e1752e1146da927adc24ae07144ab2e744ec.",
+      "url": "https://semanticscholar.org/paper/Nonlinear-dimensionality-reduction-by-locally-Roweis-Saul/f0a3e1752e1146da927adc24ae07144ab2e744ec",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Tenenbaum and colleagues published \"A Global Geometric Framework for Nonlinear Dimensionality Reduction\" in Science 290, 2319 (2000) https://pdodds.w3.uvm.edu/files/papers/others/2000/tenenbaum2000a.pdf.",
+      "url": "https://pdodds.w3.uvm.edu/files/papers/others/2000/tenenbaum2000a.pdf",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Saul and Roweis published \"Think Globally, Fit Locally: Unsupervised Learning of Low Dimensional Manifolds\" in the Journal of Machine Learning Research, volume 4, June 2003, pages 119-155 https://www.jmlr.org/papers/v4/saul03a.html.",
+      "url": "https://jmlr.org/papers/v4/saul03a.html",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Belkin and Niyogi presented Laplacian Eigenmaps for Dimensionality Reduction and Data Representation in Neural Computation, volume 15, issue 6, pages 1373-1396, June 2003, with a presentation outline listing an Introduction covering motivation and the algorithm, an explanation section covering the optimization and continuous manifolds with the heat kernel, and results on the Swiss roll and the syntactic structure of words https://www.aoml.noaa.gov/ftp/pub/phod/thacker/SSAmanifoldPapers/BelkinNiyogi2007Presentation.pdf.",
+      "url": "https://aoml.noaa.gov/ftp/pub/phod/thacker/SSAmanifoldPapers/BelkinNiyogi2007Presentation.pdf",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Niyogi with the University of Chicago Departments of Computer Science and Statistics https://www.aoml.noaa.gov/ftp/pub/phod/thacker/SSAmanifoldPapers/BelkinNiyogi2007Presentation.pdf.",
+      "url": "https://aoml.noaa.gov/ftp/pub/phod/thacker/SSAmanifoldPapers/BelkinNiyogi2007Presentation.pdf",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Dinashi, Toosi, and Akhaee proposed \"Face Manifold: Manifold Learning for Synthetic Face Generation,\" framing face as fundamental to communication, identity, and expressions, and treating estimating face structure as a fundamental task https://arxiv.org/abs/1910.01403.",
+      "url": "https://arxiv.org/abs/1910.01403",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The work notes that the training dataset has a great influence on the resulting model, and identifies a drawback of direct representation that produces unsatisfactory outputs https://arxiv.org/abs/1910.01403.",
+      "url": "https://arxiv.org/abs/1910.01403",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A face recognition method using image sets was proposed for applications where a set of a person's face images is available rather than a single image, using a semiparametric model for learning probability densities confined to highly non-linear but intrinsically low-dimensional manifolds https://research-portal.st-andrews.ac.uk/en/publications/face-recognition-with-image-sets-using-manifold-density-divergenc/.",
+      "url": "https://research-portal.st-andrews.ac.uk/en/publications/face-recognition-with-image-sets-using-manifold-density-divergenc",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The method formulates recognition as minimizing the divergence between densities estimated on these manifolds and was evaluated on a large data set acquired in realistic imaging conditions with severe illumination variation, achieving a 94% recognition rate on average https://research-portal.st-andrews.ac.uk/en/publications/face-recognition-with-image-sets-using-manifold-density-divergenc/.",
+      "url": "https://research-portal.st-andrews.ac.uk/en/publications/face-recognition-with-image-sets-using-manifold-density-divergenc",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A 2008 study in IEEE Transactions on Multimedia notes that, due to the temporal property of age progression, face images with aging features may display sequential patterns with low-dimensional distributions https://doi.org/10.1109/tmm.2008.921847.",
+      "url": "https://doi.org/10.1109/tmm.2008.921847",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The study reports that such aging patterns can be effectively extracted from a discriminant subspace learning algorithm and visualized as distinct manifold structures, and that a multiple linear regression procedure with a quadratic model function can be facilitated by the low-dimensional manifold https://doi.org/10.1109/tmm.2008.921847.",
+      "url": "https://doi.org/10.1109/tmm.2008.921847",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The study identifies potential applications for human-centered multimedia communication tools https://doi.org/10.1109/tmm.2008.921847.",
+      "url": "https://doi.org/10.1109/tmm.2008.921847",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A 2008 study in IEEE Transactions on Image Processing frames age estimation as challenging for existing computer vision systems, noting that the aging process is determined by the person's gene as well as external factors such as health, living style, living location, and weather conditions, and that males and females may age differently https://doi.org/10.1109/tip.2008.924280.",
+      "url": "https://doi.org/10.1109/tip.2008.924280",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The study introduced an age manifold learning scheme for extracting face aging features combined with a locally adjusted robust regressor for learning and prediction, improving age estimation accuracy over previous methods https://doi.org/10.1109/tip.2008.924280.",
+      "url": "https://doi.org/10.1109/tip.2008.924280",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The work identifies potential real-world applications in human-computer interaction and multimedia communication https://doi.org/10.1109/tip.2008.924280.",
+      "url": "https://doi.org/10.1109/tip.2008.924280",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A 2018 study notes that the aging process of gait significantly differs among age groups such as children, adults, and the elderly, and that previous gait-based age estimation methods employ a single age group-independent estimation model that suffers from large estimation errors when age variation increases https://www.semanticscholar.org/paper/b55438c64dcb2f52404152a90acecce2f7ded2d5.",
+      "url": "https://semanticscholar.org/paper/b55438c64dcb2f52404152a90acecce2f7ded2d5",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The study proposed an age-group-dependent gait-based age estimation method for applications such as automatic customer counting for marketing research and age-based access control, where gait is observable at a distance from a camera, by composing age groups through clustering gait features with their age labels and learning a directed acyclic graph support vector machine classifier for multiple age groups https://www.semanticscholar.org/paper/b55438c64dcb2f52404152a90acecce2f7ded2d5.",
+      "url": "https://semanticscholar.org/paper/b55438c64dcb2f52404152a90acecce2f7ded2d5",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Modeling a sequence of video frames as a linear subspace on the Grassmann manifold has become increasingly attractive in multiple computer vision applications, with the success of such algorithms depending on a good distance measure https://www.semanticscholar.org/paper/fd3bf3a9cef5500aa3b97588498e534.",
+      "url": "https://semanticscholar.org/paper/fd3bf3a9cef5500aa3b97588498e534",
+      "support_votes": 0,
+      "total_votes": 0,
+      "match": false
+    }
+  ],
+  "noncited_factual_accuracy": 0.5,
+  "noncited_count": 2,
+  "noncited_correct": 1,
+  "noncited_details": [
+    {
+      "claim": "The Belkin and Niyogi presentation was given for CSE291 sp07, with M.",
+      "evidence": [
+        {
+          "title": "Gait-based human age estimation using age group-dependent manifold learning and regression",
+          "abstract": "Human age estimation from gait is expected to be an important technology for a variety of applications such as automatic customer counting for marketing research or automatic age-based access control restriction for a specific area because the gait can be observable at a distance from a camera (e.g., CCTV). Although the aging process of gait significantly differs among age groups (e.g., children, adults, and the elderly), previous studies on gait-based human age estimation employ a single age group-independent estimation model that suffers from large estimation errors when the age variation increases. We therefore propose an age group-dependent gait-based human age estimation method for better accuracy. Specifically, in the training phase, we first compose age groups that are well-separated from each other by clustering gait features along with their age labels. We then learn a classifier that classifies the gait features for multiple age groups using a directed acyclic graph support vector machine. Next, we learn an age regression model for each age group using support vector regression with a Gaussian kernel in conjunction with a manifold learning technique, i.e., orthogonal locality preserving projection, to better characterize the gait feature. In the test phase, given a gait feature, it is first classified into an age group and then its age is estimated with the age regression model of the classified age group. Experimental results on a gait database that has the world’s largest population of participants ranging from 2 to 90 years old demonstrate the state-of-the-art performance of the proposed method.",
+          "url": "https://www.semanticscholar.org/paper/b55438c64dcb2f52404152a90acecce2f7ded2d5"
+        },
+        {
+          "title": "Face manifold: manifold learning for synthetic face generation",
+          "abstract": "The face is a crucial aspect of human communication and identity. Accurately estimating face structure is a fundamental task in computer vision, with significant applications in various fields, including facial recognition and medical surgeries. Deep learning techniques have made notable progress in 3D face reconstruction from 2D images. However, this approach demands large 3D face datasets, often tackled by synthetic face generation. Unfortunately, synthetic datasets can contain non-possible faces, which pose significant challenges. This paper presents a novel approach to synthetic diverse face dataset generation by leveraging face manifold learning. We divide the face structure into shape and expression groups and use a fully convolutional autoencoder network to handle non-possible faces while preserving dataset diversity. The proposed method is used to train deep 3D reconstruction networks and results indicate that our proposed method demonstrates its effectiveness in denoising highly corrupted faces. Additionally, we assess the diversity of the generated dataset qualitatively and quantitatively, comparing it to existing methods, and find that our manifold learning method outperforms state-of-the-art methods significantly. The reliability results show that more than 99% of the generated faces are acceptable as real faces.",
+          "url": "https://arxiv.org/abs/1910.01403"
+        },
+        {
+          "title": "Visual Understanding via Multi-Feature Shared Learning with Global Consistency",
+          "abstract": "Image/video data is usually represented with multiple visual features. Fusion of multi-source information for establishing the attributes has been widely recognized. Multi-feature visual recognition has recently received much attention in multimedia applications. This paper studies visual understanding via a newly proposed l_2-norm based multi-feature shared learning framework, which can simultaneously learn a global label matrix and multiple sub-classifiers with the labeled multi-feature data. Additionally, a group graph manifold regularizer composed of the Laplacian and Hessian graph is proposed for better preserving the manifold structure of each feature, such that the label prediction power is much improved through the semi-supervised learning with global label consistency. For convenience, we call the proposed approach Global-Label-Consistent Classifier (GLCC). The merits of the proposed method include: 1) the manifold structure information of each feature is exploited in learning, resulting in a more faithful classification owing to the global label consistency; 2) a group graph manifold regularizer based on the Laplacian and Hessian regularization is constructed; 3) an efficient alternative optimization method is introduced as a fast solver owing to the convex sub-problems. Experiments on several benchmark visual datasets for multimedia understanding, such as the 17-category Oxford Flower dataset, the challenging 101-category Caltech dataset, the YouTube & Consumer Videos dataset and the large-scale NUS-WIDE dataset, demonstrate that the proposed approach compares favorably with the state-of-the-art algorithms. An extensive experiment on the deep convolutional activation features also show the effectiveness of the proposed approach. The code is available on http://www.escience.cn/people/lei/index.html",
+          "url": "https://arxiv.org/abs/1505.05233"
+        },
+        {
+          "title": "TR-2002-01 - Department of Computer Science",
+          "abstract": "Mikhail Belkin; Partha Niyogi. 4 January, 2002. Communicated by Partha Niyogi. Abstract. One of the central problems in machine learning and ...",
+          "url": "https://newtraell.cs.uchicago.edu/research/publications/techreports/TR-2002-01"
+        },
+        {
+          "title": "Convergence of Laplacian Eigenmaps",
+          "abstract": "by M Belkin · 2006 · Cited by 447 — (NIPS 2006) Authors Mikhail Belkin, Partha Niyogi Abstract. In this paper we show convergence of eigenvectors of the point cloud Laplacian to the eigen- ...",
+          "url": "https://proceedings.neurips.cc/paper_files/paper/2006/hash/5848ad959570f87753a60ce8be1567f3-Abstract.html"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "Belkin affiliated with the University of Chicago Department of Mathematics and P.",
+      "evidence": [
+        {
+          "title": "Face manifold: manifold learning for synthetic face generation",
+          "abstract": "The face is a crucial aspect of human communication and identity. Accurately estimating face structure is a fundamental task in computer vision, with significant applications in various fields, including facial recognition and medical surgeries. Deep learning techniques have made notable progress in 3D face reconstruction from 2D images. However, this approach demands large 3D face datasets, often tackled by synthetic face generation. Unfortunately, synthetic datasets can contain non-possible faces, which pose significant challenges. This paper presents a novel approach to synthetic diverse face dataset generation by leveraging face manifold learning. We divide the face structure into shape and expression groups and use a fully convolutional autoencoder network to handle non-possible faces while preserving dataset diversity. The proposed method is used to train deep 3D reconstruction networks and results indicate that our proposed method demonstrates its effectiveness in denoising highly corrupted faces. Additionally, we assess the diversity of the generated dataset qualitatively and quantitatively, comparing it to existing methods, and find that our manifold learning method outperforms state-of-the-art methods significantly. The reliability results show that more than 99% of the generated faces are acceptable as real faces.",
+          "url": "https://arxiv.org/abs/1910.01403"
+        },
+        {
+          "title": "Visual Understanding via Multi-Feature Shared Learning with Global Consistency",
+          "abstract": "Image/video data is usually represented with multiple visual features. Fusion of multi-source information for establishing the attributes has been widely recognized. Multi-feature visual recognition has recently received much attention in multimedia applications. This paper studies visual understanding via a newly proposed l_2-norm based multi-feature shared learning framework, which can simultaneously learn a global label matrix and multiple sub-classifiers with the labeled multi-feature data. Additionally, a group graph manifold regularizer composed of the Laplacian and Hessian graph is proposed for better preserving the manifold structure of each feature, such that the label prediction power is much improved through the semi-supervised learning with global label consistency. For convenience, we call the proposed approach Global-Label-Consistent Classifier (GLCC). The merits of the proposed method include: 1) the manifold structure information of each feature is exploited in learning, resulting in a more faithful classification owing to the global label consistency; 2) a group graph manifold regularizer based on the Laplacian and Hessian regularization is constructed; 3) an efficient alternative optimization method is introduced as a fast solver owing to the convex sub-problems. Experiments on several benchmark visual datasets for multimedia understanding, such as the 17-category Oxford Flower dataset, the challenging 101-category Caltech dataset, the YouTube & Consumer Videos dataset and the large-scale NUS-WIDE dataset, demonstrate that the proposed approach compares favorably with the state-of-the-art algorithms. An extensive experiment on the deep convolutional activation features also show the effectiveness of the proposed approach. The code is available on http://www.escience.cn/people/lei/index.html",
+          "url": "https://arxiv.org/abs/1505.05233"
+        },
+        {
+          "title": "Laplacian Eigenmaps for Dimensionality Reduction and ...",
+          "abstract": "by M Belkin · 2003 · Cited by 11059 — IsoMAP, LLE and Laplacian eigenmaps partially solve this problem. The heart of these approaches is some kind of non-linear method. IsoMAP ...",
+          "url": "https://www.aoml.noaa.gov/ftp/pub/phod/thacker/SSAmanifoldPapers/BelkinNiyogi2007Presentation.pdf"
+        },
+        {
+          "title": "Mikhail Belkin",
+          "abstract": "Mikhail Belkin received his Ph.D. in 2003 from the Department of Mathematics at the University of Chicago. His research interests are in theory and ...",
+          "url": "https://datascience.ucsd.edu/people/mikhail-belkin/"
+        },
+        {
+          "title": "Mikhail (Misha) Belkin",
+          "abstract": "Co-authors. View all ; Two models of double descent for weak features. M Belkin, D Hsu, J Xu. SIAM Journal on Mathematics of Data Science 2 (4), 1167-1180, 2020.",
+          "url": "https://scholar.google.com/citations?user=Iwd9DdkAAAAJ&hl=en"
+        }
+      ],
+      "true_votes": 2,
+      "total_votes": 3,
+      "decision": true
+    }
+  ]
+}

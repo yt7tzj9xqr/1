@@ -14,7 +14,9 @@ from reportbench_mm.pipelines.rag import (
 from reportbench_mm.config import Settings
 from reportbench_mm.providers.composite import CompositeScholarProvider
 from reportbench_mm.evaluation.reference import maximum_matches, normalize_url, title_match
-from reportbench_mm.evaluation.statements import cited_statements, extract_noncited
+from reportbench_mm.evaluation.statements import (
+    cited_statements, evaluate_noncited, extract_noncited, merge_claim_evidence,
+)
 from reportbench_mm.evaluation.aggregate import aggregate
 from reportbench_mm.models.minimax import MiniMaxClient
 from reportbench_mm.retrieval import (
@@ -24,7 +26,7 @@ from reportbench_mm.retrieval import (
 from reportbench_mm.web_reader import arxiv_pdf_url, extract_pdf_text, parse_academic_html
 from reportbench_mm.providers.minimax_search import MiniMaxSearchProvider
 from reportbench_mm.prompts import (
-    _repair_output_is_usable, generated_report_is_usable,
+    _repair_output_is_usable, add_verified_noncited_facts, generated_report_is_usable,
     recover_sanitized_report, repair_grounded_report,
 )
 
@@ -302,6 +304,57 @@ class CoreTests(unittest.TestCase):
         with self.assertRaises(RuntimeError):
             client.generate_json([])
 
+    def test_verified_background_only_adds_majority_supported_facts(self):
+        class Model:
+            settings = type("S", (), {"model": "writer", "judge_model": "judge"})()
+
+            def __init__(self):
+                self.calls = 0
+
+            def generate_json(self, messages, **kwargs):
+                self.calls += 1
+                if self.calls == 1:
+                    return {"statements": [
+                        "Knowledge distillation transfers predictive behavior from a teacher model into a smaller student model",
+                        "Feature based distillation aligns intermediate representations between teacher and student networks",
+                        "Distillation always guarantees perfect accuracy for every student architecture in all settings",
+                        "Online distillation trains participating models together rather than relying on a fixed pretrained teacher",
+                        "Self distillation uses supervision derived from the same model family or training process",
+                        "A 2022 paper titled Example Work was authored by Example Researcher and collaborators",
+                    ]}
+                return {"decisions": [
+                    {"supported": True}, {"supported": True}, {"supported": False},
+                    {"supported": True}, {"supported": True},
+                ]}
+
+        papers = [Paper("1", "Distillation", 2020, "https://example.org/p", "Evidence " * 100)]
+        report = (
+            "A cited claim https://example.org/p. "
+            "A 2022 paper titled Example Work was authored by Example Researcher."
+        )
+        augmented = add_verified_noncited_facts(report, papers, Model(), "test", target=3, votes=3)
+        self.assertIn("## Verified technical background", augmented)
+        self.assertEqual(augmented.count("https://example.org/p"), 1)
+        self.assertIn("Knowledge distillation transfers", augmented)
+        self.assertNotIn("always guarantees perfect accuracy", augmented)
+        self.assertNotIn("2022 paper titled", augmented)
+
+    def test_empty_noncited_evaluation_is_null_not_zero(self):
+        metrics = evaluate_noncited([], None, None, None)
+        self.assertIsNone(metrics["noncited_factual_accuracy"])
+        self.assertEqual(metrics["noncited_count"], 0)
+
+    def test_noncited_evidence_reserves_local_scholarly_sources(self):
+        local = [
+            {"title": f"Local {index}", "url": f"local:{index}"} for index in range(4)
+        ]
+        web = [
+            {"title": f"Web {index}", "url": f"web:{index}"} for index in range(5)
+        ]
+        merged = merge_claim_evidence(local, web, limit=5, local_reserve=3)
+        self.assertEqual([row["title"] for row in merged[:3]], ["Local 0", "Local 1", "Local 2"])
+        self.assertEqual([row["title"] for row in merged[3:]], ["Web 0", "Web 1"])
+
     def test_minimax_stream_text_accepts_cumulative_and_delta_chunks(self):
         self.assertEqual(MiniMaxClient._merge_stream_text("abc", "abcdef"), "abcdef")
         self.assertEqual(MiniMaxClient._merge_stream_text("abc", "def"), "abcdef")
@@ -559,7 +612,7 @@ class CoreTests(unittest.TestCase):
             rows = [
                 {"reference_matches": 1, "reference_count": 2, "ground_truth_count": 10,
                  "cited_supported": 3, "cited_count": 4, "noncited_correct": 0,
-                 "noncited_count": 0, "noncited_factual_accuracy": 0},
+                 "noncited_count": 0, "noncited_factual_accuracy": None},
                 {"reference_matches": 2, "reference_count": 3, "ground_truth_count": 5,
                  "cited_supported": 1, "cited_count": 2, "noncited_correct": 2,
                  "noncited_count": 2, "noncited_factual_accuracy": 1},
@@ -573,6 +626,8 @@ class CoreTests(unittest.TestCase):
             self.assertEqual(summary["reference_micro_precision"], 3 / 5)
             self.assertEqual(summary["reference_micro_recall"], 3 / 15)
             self.assertEqual(summary["noncited_micro_accuracy"], 1.0)
+            self.assertEqual(summary["noncited_factual_accuracy"], 1.0)
+            self.assertEqual(summary["noncited_macro_accuracy"], 1.0)
             self.assertEqual(summary["noncited_nonempty_task_count"], 1)
 
 
