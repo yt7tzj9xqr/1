@@ -168,9 +168,9 @@ def adaptive_search(
         {
             "query": initial_queries[min(paper.search_query_index, len(initial_queries) - 1)],
             "title": paper.title,
-            "evidence": " ".join(paper.abstract.split())[:280],
+            "evidence": " ".join(paper.abstract.split())[:160],
         }
-        for paper in initial[:24]
+        for paper in initial[:12]
     ]
     prompt = (
         "You control the final two searches of a five-call academic research agent. Read the first-round results and "
@@ -184,8 +184,8 @@ def adaptive_search(
     )
     try:
         value = model.generate_json(
-            [{"role": "user", "content": prompt}], temperature=0, max_tokens=8192,
-            cache_namespace=f"search-feedback-v1:{model.settings.model}",
+            [{"role": "user", "content": prompt}], temperature=0, max_tokens=2048,
+            cache_namespace=f"search-feedback-v2:{model.settings.model}",
         )
         proposed = value.get("queries", []) if isinstance(value, dict) else value
     except Exception as exc:
