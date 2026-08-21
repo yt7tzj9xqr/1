@@ -2,13 +2,12 @@ from __future__ import annotations
 
 from ..config import Settings
 from ..models import MiniMaxClient
-from ..prompts import BASELINE_SYSTEM, evidence_block
+from ..prompts import BASELINE_SYSTEM, evidence_block, repair_grounded_report
 from ..providers.openalex import extract_cutoff, filter_papers
 from ..retrieval import (
-    diverse_top_papers, is_scholarly_candidate, model_rerank_papers, parallel_search,
-    plan_search_queries,
+    adaptive_search, diverse_top_papers, is_scholarly_candidate, model_rerank_papers,
 )
-from .rag import anchor_coverage, keywords, matches_anchor_phrase, score_paper
+from .rag import anchor_coverage, keywords, matches_anchor_phrase, sanitize_report, score_paper
 from ..schemas import Paper, Task
 from ..web_reader import WebPageReader
 
@@ -22,12 +21,8 @@ class BaselinePipeline:
 
     def retrieve(self, task: Task) -> list[Paper]:
         cutoff = extract_cutoff(task.prompt)
-        queries = plan_search_queries(task, self.model, self.settings.baseline_search_budget)
+        queries, found = adaptive_search(task, self.model, self.scholar, self.settings, cutoff)
         print(f"{task.arxiv_id} search queries: {queries}", flush=True)
-        found = parallel_search(
-            self.scholar, queries, cutoff=cutoff,
-            per_query=self.settings.search_results_per_query, workers=self.settings.search_workers,
-        )
         found = filter_papers(found, forbidden_title=task.title, cutoff=cutoff)
         query_terms = keywords(task.prompt)
         anchor_terms = keywords(queries[0]) if queries else query_terms
@@ -69,9 +64,15 @@ class BaselinePipeline:
             f"TASK:\n{task.prompt}\n\nFORBIDDEN SURVEY:\n{task.title}\n\n"
             f"DOMAIN:\n{task.application_domain}\n\nSOURCES:\n"
             + evidence_block(papers, self.settings.evidence_char_limit)
+            + "\n\nLENGTH: Write 700-850 English words. This is a hard range. Delete any factual sentence without one directly supporting URL."
         )
         report = self.model.generate(
             [{"role": "system", "content": BASELINE_SYSTEM}, {"role": "user", "content": user}],
-            cache_namespace=f"baseline-report-v3:{self.settings.model}",
+            cache_namespace=f"baseline-report-v4:{self.settings.model}",
         )
+        report = repair_grounded_report(
+            report, papers, self.model,
+            f"baseline-evidence-repair-v1:{self.settings.model}", "650-800",
+        )
+        report = sanitize_report(report)
         return report, papers

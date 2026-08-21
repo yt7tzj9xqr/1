@@ -18,14 +18,58 @@ from reportbench_mm.evaluation.statements import cited_statements, extract_nonci
 from reportbench_mm.evaluation.aggregate import aggregate
 from reportbench_mm.models.minimax import MiniMaxClient
 from reportbench_mm.retrieval import (
-    canonical_search_title, diverse_top_papers, is_scholarly_candidate, parallel_search,
+    adaptive_search, canonical_search_title, diverse_top_papers, is_scholarly_candidate, parallel_search,
     model_rerank_papers, plan_search_queries,
 )
 from reportbench_mm.web_reader import arxiv_pdf_url, extract_pdf_text, parse_academic_html
 from reportbench_mm.providers.minimax_search import MiniMaxSearchProvider
+from reportbench_mm.prompts import repair_grounded_report
 
 
 class CoreTests(unittest.TestCase):
+    def test_grounding_repair_requires_atomic_cited_sentences(self):
+        class Model:
+            def generate(self, messages, **kwargs):
+                self.prompt = messages[0]["content"]
+                return "Supported claim (https://example.org/p)."
+
+        model = Model()
+        paper = Paper("p", "Paper Title", 2020, "https://example.org/p", "Direct evidence for claim.")
+        report = repair_grounded_report("Unsupported draft.", [paper], model, "test", "600-800")
+        self.assertIn("exactly one URL", model.prompt)
+        self.assertIn("600-800", model.prompt)
+        self.assertIn("https://example.org/p", report)
+
+    def test_adaptive_search_uses_three_initial_and_two_feedback_queries(self):
+        class PlannerSettings:
+            model = "planner"
+
+        class Planner:
+            settings = PlannerSettings()
+
+            def generate_json(self, messages, **kwargs):
+                if "final two searches" in messages[0]["content"]:
+                    return {"queries": ["Exact Feedback Paper One", "Exact Feedback Paper Two"]}
+                return {"queries": [
+                    "initial topic one", "initial topic two", "initial topic three",
+                    "unused topic four", "unused topic five",
+                ]}
+
+        class Scholar:
+            def search(self, query, **kwargs):
+                return [Paper(query, f"Paper for {query}", 2020, f"https://example.org/{query}", "useful evidence")]
+
+        class SearchSettings:
+            baseline_search_budget = 5
+            search_results_per_query = 5
+            search_workers = 5
+
+        task = load_tasks(Path("data/subsets/reportbench_30.jsonl"))[0]
+        queries, papers = adaptive_search(task, Planner(), Scholar(), SearchSettings(), None)
+        self.assertEqual(len(queries), 5)
+        self.assertEqual(len(papers), 5)
+        self.assertEqual({paper.search_query_index for paper in papers}, set(range(5)))
+
     def test_search_result_cleanup_rejects_wrappers_and_nonscholarly_pages(self):
         self.assertEqual(
             canonical_search_title("[1503.02531] Distilling the Knowledge in a Neural Network"),

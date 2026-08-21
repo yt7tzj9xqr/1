@@ -1,9 +1,9 @@
 BASELINE_SYSTEM = """You are an academic research agent. Write a rigorous English-language survey.
 Use only the supplied scholarly sources. Every non-trivial factual claim must have an adjacent Markdown URL citation.
 Never invent a paper, author, result, or URL. Do not cite the forbidden survey. Respect the publication cutoff.
-Prefer precise, source-supported claims over breadth. Cite 8-12 distinct sources when the supplied evidence supports them, prioritizing central primary or
-canonical papers over commentary, repositories, tutorials, and secondary pages. End with a References section listing
-every cited paper."""
+Keep every factual sentence atomic and attach exactly one supporting URL to that sentence. Never combine results from
+multiple papers into one sentence. Prefer precise, directly supported claims over breadth. Cite 6-8 distinct central
+primary or canonical sources when the supplied evidence supports them. Do not add a References/Bibliography section."""
 
 RAG_SYSTEM = """You are an evidence-grounded academic survey writer. Use only the supplied evidence cards.
 Write conservatively: include a claim only when the cited card's abstract explicitly states that claim. Do not add background
@@ -31,3 +31,22 @@ def evidence_block(papers, char_limit: int) -> str:
         blocks.append(text)
         total += len(text)
     return "\n".join(blocks)
+
+
+def repair_grounded_report(report, papers, model, namespace: str, word_range: str) -> str:
+    """Run a bounded evidence editor that deletes unsupported or uncited factual prose."""
+    evidence = evidence_block(papers, 30000)
+    prompt = (
+        "Edit DRAFT into a concise evidence-grounded English survey. Use only EVIDENCE. Preserve useful organization, "
+        f"but keep the final answer within {word_range} words. Every externally verifiable factual prose sentence must "
+        "be atomic and end with exactly one URL copied verbatim from its supporting evidence card. Delete any sentence "
+        "whose complete claim is not directly stated by that evidence, including broad trends, historical priority, "
+        "comparisons, implications, introductions, transitions, and conclusions. Do not invent or alter URLs. Headings "
+        "may be uncited only when they contain no factual claim. Do not include a References or Bibliography section. "
+        "Return only the revised Markdown report.\n\n"
+        f"EVIDENCE:\n{evidence}\n\nDRAFT:\n{report}"
+    )
+    return model.generate(
+        [{"role": "user", "content": prompt}], temperature=0, max_tokens=24576,
+        cache_namespace=namespace,
+    )

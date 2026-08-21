@@ -5,11 +5,10 @@ import re
 
 from ..config import Settings
 from ..models import MiniMaxClient
-from ..prompts import RAG_SYSTEM, evidence_block
+from ..prompts import RAG_SYSTEM, evidence_block, repair_grounded_report
 from ..providers.openalex import extract_cutoff, filter_papers, search_queries
 from ..retrieval import (
-    diverse_top_papers, is_scholarly_candidate, model_rerank_papers, parallel_search,
-    plan_search_queries,
+    adaptive_search, diverse_top_papers, is_scholarly_candidate, model_rerank_papers,
 )
 from ..schemas import Paper, Task
 from ..web_reader import WebPageReader
@@ -183,14 +182,10 @@ class CitationRagPipeline:
     def retrieve(self, task: Task) -> list[Paper]:
         cutoff = extract_cutoff(task.prompt)
         terms = keywords(f"{task.application_domain} {task.prompt}")
-        queries = plan_search_queries(task, self.model, self.settings.baseline_search_budget)
+        queries, seeds = adaptive_search(task, self.model, self.scholar, self.settings, cutoff)
         anchor_query = queries[0] if queries else ""
         anchor_terms = keywords(anchor_query) if anchor_query else terms
         print(f"{task.arxiv_id} search queries: {queries}", flush=True)
-        seeds = parallel_search(
-            self.scholar, queries, cutoff=cutoff,
-            per_query=self.settings.search_results_per_query, workers=self.settings.search_workers,
-        )
         seeds = filter_papers(seeds, forbidden_title=task.title, cutoff=cutoff)
         seeds = [paper for paper in seeds if paper.abstract and paper.url and is_scholarly_candidate(paper)]
         for paper in seeds:
@@ -319,9 +314,9 @@ class CitationRagPipeline:
             f"APPLICATION DOMAIN:\n{task.application_domain}\n\n"
             "EVIDENCE CARDS (each card is an allowed source; ignore citation-count metadata as factual evidence):\n"
             f"{cards}\n\n"
-            "REFERENCE BUDGET: Cite 10-14 distinct sources when they have explicit usable evidence. Select the most central primary or canonical works; do not cite a source merely "
+            "REFERENCE BUDGET: Cite 8-10 distinct sources when they have explicit usable evidence. Select the most central primary or canonical works; do not cite a source merely "
             "because it is highly cited, and avoid secondary-survey claims when a supplied primary source supports the same point.\n\n"
-            "LENGTH: Write a focused survey of 800-1,050 English words. This is a hard maximum. Prioritize the task's central taxonomy and "
+            "LENGTH: Write a focused survey of 650-850 English words. This is a hard maximum. Prioritize the task's central taxonomy and "
             "strongest evidence; omit tangential material.\n\n"
             "MANDATORY FINAL CHECK: Before returning the report, inspect every prose sentence. Delete any factual sentence "
             "that lacks an adjacent URL or whose exact claim is not explicit in the cited evidence card. This applies to "
@@ -341,6 +336,10 @@ class CitationRagPipeline:
                 messages, max_tokens=self.settings.max_output_tokens,
                 cache_namespace=f"citation-rag-report-v8-length-retry:{self.settings.model}",
             )
+        report = repair_grounded_report(
+            report, writing_papers, self.model,
+            f"citation-rag-evidence-repair-v1:{self.settings.model}", "600-800",
+        )
         report = sanitize_report(report)
         report = normalize_source_citations(report, writing_papers)
         return report, papers

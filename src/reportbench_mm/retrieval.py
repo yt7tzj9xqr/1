@@ -92,17 +92,21 @@ def plan_search_queries(task: Task, model: MiniMaxClient, limit: int = 5) -> lis
 
 def parallel_search(
     scholar, queries: list[str], *, cutoff: date | None, per_query: int = 20, workers: int = 5,
+    index_offset: int = 0,
 ) -> list[Paper]:
     """Execute the paper's five-search budget concurrently and merge by DOI/title."""
     search_many = getattr(scholar, "search_many", None)
     if callable(search_many):
-        return search_many(
+        papers = search_many(
             queries, cutoff=cutoff, limit=per_query, workers=workers,
         )
+        for paper in papers:
+            paper.search_query_index += index_offset
+        return papers
     rows: list[tuple[int, int, Paper]] = []
     with ThreadPoolExecutor(max_workers=max(1, min(workers, len(queries)))) as executor:
         futures = {
-            executor.submit(scholar.search, query, cutoff=cutoff, limit=per_query): index
+            executor.submit(scholar.search, query, cutoff=cutoff, limit=per_query): index + index_offset
             for index, query in enumerate(queries)
         }
         for future in as_completed(futures):
@@ -131,6 +135,78 @@ def parallel_search(
         paper.query_hits = len(query_hits)
         papers.append(paper)
     return papers
+
+
+def merge_search_results(papers: list[Paper]) -> list[Paper]:
+    """Merge multiple search rounds without losing query-coverage metadata."""
+    merged: dict[str, Paper] = {}
+    query_sets: dict[str, set[int]] = {}
+    for paper in papers:
+        key = paper.doi.lower() if paper.doi else canonical_search_title(paper.title)
+        if not key:
+            continue
+        query_sets.setdefault(key, set()).add(paper.search_query_index)
+        current = merged.get(key)
+        if current is None or paper.search_rank < current.search_rank:
+            merged[key] = paper
+    for key, paper in merged.items():
+        paper.query_hits = len(query_sets[key])
+    return sorted(merged.values(), key=lambda paper: (paper.search_query_index, paper.search_rank))
+
+
+def adaptive_search(
+    task: Task, model: MiniMaxClient, scholar, settings, cutoff: date | None,
+) -> tuple[list[str], list[Paper]]:
+    """Spend the five-search budget as three initial and two result-aware calls."""
+    planned = plan_search_queries(task, model, settings.baseline_search_budget)
+    initial_queries = planned[:3]
+    initial = parallel_search(
+        scholar, initial_queries, cutoff=cutoff,
+        per_query=settings.search_results_per_query, workers=min(settings.search_workers, 3),
+    )
+    rows = [
+        {
+            "query": initial_queries[min(paper.search_query_index, len(initial_queries) - 1)],
+            "title": paper.title,
+            "evidence": " ".join(paper.abstract.split())[:280],
+        }
+        for paper in initial[:24]
+    ]
+    prompt = (
+        "You control the final two searches of a five-call academic research agent. Read the first-round results and "
+        "find important branches of the TASK that are missing or weakly covered. Return JSON only as "
+        "{\"queries\":[string,string]}. Each query must be either the exact title of a real primary/landmark paper "
+        "you know with high confidence, or a precise combination of method, dataset, application, and author terms. "
+        "Do not repeat an existing query, search for the forbidden survey, emit a broad topic, or include dates. "
+        "Favor sources that can directly support concrete factual claims.\n\n"
+        f"TASK:\n{task.prompt}\n\nFORBIDDEN SURVEY:\n{task.title}\n\n"
+        f"FIRST-ROUND QUERIES:\n{initial_queries}\n\nRESULTS:\n{rows}"
+    )
+    try:
+        value = model.generate_json(
+            [{"role": "user", "content": prompt}], temperature=0, max_tokens=8192,
+            cache_namespace=f"search-feedback-v1:{model.settings.model}",
+        )
+        proposed = value.get("queries", []) if isinstance(value, dict) else value
+    except Exception as exc:
+        print(f"search feedback fallback: {exc}", flush=True)
+        proposed = []
+    followups: list[str] = []
+    seen = {query.lower() for query in initial_queries}
+    for item in list(proposed or []) + planned[3:]:
+        query = _clean_query(str(item))
+        if len(query.split()) < 2 or query.lower() in seen:
+            continue
+        seen.add(query.lower())
+        followups.append(query)
+        if len(followups) == 2:
+            break
+    second = parallel_search(
+        scholar, followups, cutoff=cutoff,
+        per_query=settings.search_results_per_query, workers=min(settings.search_workers, 2),
+        index_offset=len(initial_queries),
+    ) if followups else []
+    return initial_queries + followups, merge_search_results(initial + second)
 
 
 def diverse_top_papers(papers: list[Paper], query_count: int, limit: int) -> list[Paper]:
