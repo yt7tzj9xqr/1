@@ -443,6 +443,15 @@ class CoreTests(unittest.TestCase):
         self.assertIn("First supported claim [https://example.org/a].", cleaned)
         self.assertIn("Second supported claim [https://example.org/b]", cleaned)
 
+    def test_report_sanitizer_attaches_post_sentence_bare_urls(self):
+        report = (
+            "First supported claim. https://example.org/a "
+            "Second supported claim. https://example.org/b"
+        )
+        cleaned = sanitize_report(report)
+        self.assertIn("First supported claim https://example.org/a.", cleaned)
+        self.assertIn("Second supported claim https://example.org/b", cleaned)
+
     def test_scholar_provider_falls_back_after_failure(self):
         class Failed:
             def search(self, *args, **kwargs):

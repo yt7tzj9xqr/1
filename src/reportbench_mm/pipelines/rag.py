@@ -172,6 +172,12 @@ def sanitize_report(report: str) -> str:
             line,
             flags=re.I,
         )
+        line = re.sub(
+            r"([.!?])\s+(https?://[^\s)\]>]+)",
+            r" \2\1",
+            line,
+            flags=re.I,
+        )
         sentences = re.split(r"(?<=[.!?])\s+(?=(?:[A-Z]|\*\*|#{1,6}\s))", line)
         atomic: list[str] = []
         for sentence in sentences:
