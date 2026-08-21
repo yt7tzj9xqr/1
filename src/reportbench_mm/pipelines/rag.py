@@ -162,6 +162,16 @@ def sanitize_report(report: str) -> str:
     )[0]
     kept: list[str] = []
     for line in report.splitlines():
+        # M3 sometimes emits `claim. [URL] Next claim.`. The citation belongs
+        # to the preceding claim, but the old splitter saw `[` after the full
+        # stop and merged the whole paragraph into a multi-source sentence.
+        # Move the bracketed URL before the punctuation before atomizing.
+        line = re.sub(
+            r"([.!?])\s+(\[https?://[^\]\s]+\])",
+            r" \2\1",
+            line,
+            flags=re.I,
+        )
         sentences = re.split(r"(?<=[.!?])\s+(?=(?:[A-Z]|\*\*|#{1,6}\s))", line)
         atomic: list[str] = []
         for sentence in sentences:
