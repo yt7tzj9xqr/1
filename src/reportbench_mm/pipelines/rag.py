@@ -5,7 +5,9 @@ import re
 
 from ..config import Settings
 from ..models import MiniMaxClient
-from ..prompts import RAG_SYSTEM, evidence_block, repair_grounded_report
+from ..prompts import (
+    RAG_SYSTEM, evidence_block, generated_report_is_usable, repair_grounded_report,
+)
 from ..providers.openalex import extract_cutoff, filter_papers, search_queries
 from ..retrieval import (
     diverse_top_papers, is_scholarly_candidate, model_rerank_papers,
@@ -333,8 +335,10 @@ class CitationRagPipeline:
                 messages, max_tokens=self.settings.rag_output_tokens,
                 cache_namespace=f"citation-rag-report-v8:{self.settings.model}",
             )
+            if not generated_report_is_usable(report):
+                raise RuntimeError("RAG writer failed the report quality gate")
         except RuntimeError as exc:
-            if "finish_reason=length" not in str(exc):
+            if "finish_reason=length" not in str(exc) and "quality gate" not in str(exc):
                 raise
             print("RAG writer exhausted its reasoning budget; retrying once with the full completion budget", flush=True)
             try:
@@ -342,8 +346,10 @@ class CitationRagPipeline:
                     messages, max_tokens=self.settings.max_output_tokens,
                     cache_namespace=f"citation-rag-report-v8-length-retry:{self.settings.model}",
                 )
+                if not generated_report_is_usable(report):
+                    raise RuntimeError("RAG writer failed the report quality gate")
             except RuntimeError as retry_exc:
-                if "finish_reason=length" not in str(retry_exc):
+                if "finish_reason=length" not in str(retry_exc) and "quality gate" not in str(retry_exc):
                     raise
                 # A small minority of M3 calls spend the entire 32k allowance
                 # in hidden reasoning. Preserve the same source ordering but
@@ -361,6 +367,8 @@ class CitationRagPipeline:
                     temperature=0, max_tokens=self.settings.max_output_tokens,
                     cache_namespace=f"citation-rag-report-v8-compact-recovery:{self.settings.model}",
                 )
+                if not generated_report_is_usable(report, minimum_words=300):
+                    raise RuntimeError("RAG writer returned an unusable report after recovery")
         report = repair_grounded_report(
             report, writing_papers, self.model,
             f"citation-rag-evidence-repair-v2:{self.settings.model}", "600-800", "10-12",

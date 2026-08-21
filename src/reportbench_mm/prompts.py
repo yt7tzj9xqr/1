@@ -39,6 +39,16 @@ def evidence_block(papers, char_limit: int) -> str:
     return "\n".join(blocks)
 
 
+def generated_report_is_usable(report: str, minimum_words: int = 350, minimum_sources: int = 4) -> bool:
+    """Reject writer responses that contain only a fragment or uncited conclusion."""
+    words = len(report.split())
+    urls = {
+        match.rstrip(".,;:'\"")
+        for match in re.findall(r"https?://[^\s)\]>]+", report, flags=re.I)
+    }
+    return words >= minimum_words and len(urls) >= minimum_sources
+
+
 def _repair_output_is_usable(candidate: str, draft: str, word_range: str, source_range: str) -> bool:
     """Reject nominally successful edits that collapse the report or its references."""
     candidate_words = len(candidate.split())

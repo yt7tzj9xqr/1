@@ -23,10 +23,18 @@ from reportbench_mm.retrieval import (
 )
 from reportbench_mm.web_reader import arxiv_pdf_url, extract_pdf_text, parse_academic_html
 from reportbench_mm.providers.minimax_search import MiniMaxSearchProvider
-from reportbench_mm.prompts import _repair_output_is_usable, repair_grounded_report
+from reportbench_mm.prompts import (
+    _repair_output_is_usable, generated_report_is_usable, repair_grounded_report,
+)
 
 
 class CoreTests(unittest.TestCase):
+    def test_report_quality_gate_requires_length_and_sources(self):
+        sources = " ".join(f"https://example.org/{index}" for index in range(4))
+        self.assertTrue(generated_report_is_usable(("evidence " * 350) + sources))
+        self.assertFalse(generated_report_is_usable("conclusion only"))
+        self.assertFalse(generated_report_is_usable("uncited " * 400))
+
     def test_grounding_repair_requires_atomic_cited_sentences(self):
         class Model:
             def generate(self, messages, **kwargs):

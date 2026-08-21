@@ -2,7 +2,9 @@ from __future__ import annotations
 
 from ..config import Settings
 from ..models import MiniMaxClient
-from ..prompts import BASELINE_SYSTEM, evidence_block, repair_grounded_report
+from ..prompts import (
+    BASELINE_SYSTEM, evidence_block, generated_report_is_usable, repair_grounded_report,
+)
 from ..providers.openalex import extract_cutoff, filter_papers
 from ..retrieval import (
     diverse_top_papers, is_scholarly_candidate, model_rerank_papers,
@@ -77,17 +79,30 @@ class BaselinePipeline:
             report = self.model.generate(
                 messages, cache_namespace=f"baseline-report-v4:{self.settings.model}",
             )
+            if not generated_report_is_usable(report):
+                raise RuntimeError("Baseline writer failed the report quality gate")
         except RuntimeError as exc:
-            if "finish_reason=length" not in str(exc):
+            if "finish_reason=length" not in str(exc) and "quality gate" not in str(exc):
                 raise
             compact_cards = evidence_block(papers[:12], 12000)
             compact_user = user.replace(cards, compact_cards).replace("700-850", "600-750")
-            print("Baseline writer exhausted its reasoning budget; using compact evidence recovery", flush=True)
+            print("Baseline writer was incomplete; using compact evidence recovery", flush=True)
             report = self.model.generate(
                 [{"role": "system", "content": BASELINE_SYSTEM}, {"role": "user", "content": compact_user}],
                 temperature=0, max_tokens=self.settings.max_output_tokens,
                 cache_namespace=f"baseline-report-v4-compact-recovery:{self.settings.model}",
             )
+            if not generated_report_is_usable(report):
+                focused_cards = evidence_block(papers[:8], 8000)
+                focused_user = user.replace(cards, focused_cards).replace("700-850", "500-650")
+                print("Compact baseline recovery was incomplete; using focused final recovery", flush=True)
+                report = self.model.generate(
+                    [{"role": "system", "content": BASELINE_SYSTEM}, {"role": "user", "content": focused_user}],
+                    temperature=0, max_tokens=self.settings.max_output_tokens,
+                    cache_namespace=f"baseline-report-v5-focused-recovery:{self.settings.model}",
+                )
+                if not generated_report_is_usable(report, minimum_words=300):
+                    raise RuntimeError("Baseline writer returned an unusable report after recovery")
         report = repair_grounded_report(
             report, papers, self.model,
             f"baseline-evidence-repair-v2:{self.settings.model}", "650-800", "8-10",
