@@ -25,10 +25,10 @@ from .web_reader import WebPageReader
 def scholar_provider(cache: JsonCache, settings: Settings) -> CompositeScholarProvider:
     return CompositeScholarProvider([
         MiniMaxSearchProvider(cache, settings.api_key, settings.base_url),
-        OpenAlexProvider(cache, settings.openalex_mailto),
-        SemanticScholarProvider(cache),
-        ArxivProvider(cache),
-        CrossrefProvider(cache, settings.openalex_mailto),
+        OpenAlexProvider(cache, settings.openalex_mailto, timeout=8),
+        SemanticScholarProvider(cache, timeout=8),
+        ArxivProvider(cache, timeout=8),
+        CrossrefProvider(cache, settings.openalex_mailto, timeout=8),
     ])
 
 

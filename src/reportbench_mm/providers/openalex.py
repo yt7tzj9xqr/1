@@ -160,17 +160,18 @@ class OpenAlexProvider:
                     time.sleep(throttle)
                 last_error: Exception | None = None
                 try:
-                    for attempt in range(3):
+                    attempts = 3 if self.mailto else 1
+                    for attempt in range(attempts):
                         try:
                             with urlopen(req, timeout=self.timeout) as response:
                                 return json.loads(response.read().decode("utf-8"))
                         except HTTPError as exc:
                             last_error = exc
-                            if exc.code not in {429, 500, 502, 503, 504} or attempt == 2:
+                            if exc.code not in {429, 500, 502, 503, 504} or attempt == attempts - 1:
                                 raise
                         except (URLError, TimeoutError) as exc:
                             last_error = exc
-                            if attempt == 2:
+                            if attempt == attempts - 1:
                                 raise
                         retry_header = last_error.headers.get("Retry-After", "") if isinstance(last_error, HTTPError) else ""
                         retry_after = int(retry_header) if retry_header.isdigit() else 0

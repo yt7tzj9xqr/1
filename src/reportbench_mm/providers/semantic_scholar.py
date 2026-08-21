@@ -40,7 +40,9 @@ class SemanticScholarProvider:
                 if delay > 0:
                     time.sleep(delay)
                 try:
-                    for attempt in range(2):
+                    # Anonymous S2 frequently returns 429. One bounded attempt
+                    # is enough because the other free sources run in parallel.
+                    for attempt in range(1):
                         try:
                             with urlopen(req, timeout=self.timeout) as response:
                                 return json.loads(response.read().decode("utf-8"))
@@ -48,10 +50,10 @@ class SemanticScholarProvider:
                             if exc.code == 429:
                                 self._disabled_until = time.monotonic() + 900
                                 raise
-                            if exc.code not in {500, 502, 503, 504} or attempt == 1:
+                            if exc.code not in {500, 502, 503, 504} or attempt == 0:
                                 raise
                         except (URLError, TimeoutError):
-                            if attempt == 1:
+                            if attempt == 0:
                                 raise
                         time.sleep(min(16, 2 ** attempt))
                 finally:

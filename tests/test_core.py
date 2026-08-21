@@ -70,21 +70,25 @@ class CoreTests(unittest.TestCase):
         self.assertEqual(len(papers), 5)
         self.assertEqual({paper.search_query_index for paper in papers}, set(range(5)))
 
-    def test_anonymous_known_providers_do_not_block_search_many(self):
+    def test_anonymous_free_provider_supplements_central_query(self):
         class Web:
             def search(self, query, **kwargs):
                 return [Paper(query, f"Paper {query}", 2020, f"https://example.org/{query}", "evidence")]
 
         class OpenAlexProvider:
             mailto = ""
+            calls = []
 
             def search(self, query, **kwargs):
-                raise AssertionError("anonymous OpenAlex should be skipped")
+                self.calls.append(query)
+                return [Paper("W1", "Structured Central Paper", 2020, "https://openalex.org/W1", "evidence")]
 
-        papers = CompositeScholarProvider([Web(), OpenAlexProvider()]).search_many(
+        supplement = OpenAlexProvider()
+        papers = CompositeScholarProvider([Web(), supplement]).search_many(
             ["one query", "two query"], cutoff=None, limit=5, workers=2,
         )
-        self.assertEqual(len(papers), 2)
+        self.assertEqual(supplement.calls, ["one query"])
+        self.assertEqual(len(papers), 3)
 
     def test_search_result_cleanup_rejects_wrappers_and_nonscholarly_pages(self):
         self.assertEqual(
