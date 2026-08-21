@@ -6,13 +6,12 @@ import re
 from ..config import Settings
 from ..models import MiniMaxClient
 from ..prompts import (
-    RAG_SYSTEM, evidence_block, generated_report_is_usable,
+    RAG_SYSTEM, add_verified_noncited_facts, evidence_block, generated_report_is_usable,
     prefer_cleaned_recovery, recover_sanitized_report, repair_grounded_report,
 )
 from ..providers.openalex import extract_cutoff, filter_papers, search_queries
 from ..retrieval import (
-    diverse_top_papers, is_scholarly_candidate, model_rerank_papers,
-    parallel_search, plan_search_queries,
+    adaptive_search, diverse_top_papers, is_scholarly_candidate, model_rerank_papers,
 )
 from ..schemas import Paper, Task
 from ..web_reader import WebPageReader
@@ -208,11 +207,7 @@ class CitationRagPipeline:
     def retrieve(self, task: Task) -> list[Paper]:
         cutoff = extract_cutoff(task.prompt)
         terms = keywords(f"{task.application_domain} {task.prompt}")
-        queries = plan_search_queries(task, self.model, self.settings.baseline_search_budget)
-        seeds = parallel_search(
-            self.scholar, queries, cutoff=cutoff,
-            per_query=self.settings.search_results_per_query, workers=self.settings.search_workers,
-        )
+        queries, seeds = adaptive_search(task, self.model, self.scholar, self.settings, cutoff)
         anchor_query = queries[0] if queries else ""
         anchor_terms = keywords(anchor_query) if anchor_query else terms
         print(f"{task.arxiv_id} search queries: {queries}", flush=True)
@@ -403,4 +398,9 @@ class CitationRagPipeline:
         )
         report = prefer_cleaned_recovery(recovered, sanitize_report(recovered))
         report = normalize_source_citations(report, writing_papers)
+        report = add_verified_noncited_facts(
+            report, writing_papers, self.model,
+            f"citation-rag-verified-background-v1:{self.settings.model}",
+            target=4, votes=3,
+        )
         return report, papers

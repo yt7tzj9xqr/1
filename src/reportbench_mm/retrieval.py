@@ -174,18 +174,20 @@ def adaptive_search(
     ]
     prompt = (
         "You control the final two searches of a five-call academic research agent. Read the first-round results and "
-        "find important branches of the TASK that are missing or weakly covered. Return JSON only as "
+        "find important branches of the TASK that are missing or weakly covered. Use titles and terminology "
+        "visible in RESULTS to resolve canonical names instead of guessing from memory. Return JSON only as "
         "{\"queries\":[string,string]}. Each query must be either the exact title of a real primary/landmark paper "
         "you know with high confidence, or a precise combination of method, dataset, application, and author terms. "
         "Do not repeat an existing query, search for the forbidden survey, emit a broad topic, or include dates. "
-        "Favor sources that can directly support concrete factual claims.\n\n"
+        "Favor one missing landmark/primary-paper query and one missing benchmark, dataset, or named-method query. "
+        "Sources found by both rounds are especially valuable because repeated discovery is a relevance signal.\n\n"
         f"TASK:\n{task.prompt}\n\nFORBIDDEN SURVEY:\n{task.title}\n\n"
         f"FIRST-ROUND QUERIES:\n{initial_queries}\n\nRESULTS:\n{rows}"
     )
     try:
         value = model.generate_json(
             [{"role": "user", "content": prompt}], temperature=0, max_tokens=2048,
-            cache_namespace=f"search-feedback-v2:{model.settings.model}",
+            cache_namespace=f"search-feedback-v3:{model.settings.model}",
         )
         proposed = value.get("queries", []) if isinstance(value, dict) else value
     except Exception as exc:
