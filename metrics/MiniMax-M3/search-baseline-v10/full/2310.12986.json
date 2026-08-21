@@ -1,0 +1,817 @@
+{
+  "arxiv_id": "2310.12986",
+  "model": "MiniMax-M3",
+  "system": "search-baseline-v10",
+  "reference_precision": 0.0,
+  "reference_recall": 0.0,
+  "reference_count": 9,
+  "reference_matches": 0,
+  "ground_truth_count": 61,
+  "predicted_titles": [
+    "Face manifold: manifold learning for synthetic face generation",
+    "Nonlinear dimensionality reduction by locally linear ...",
+    "Think Globally, Fit Locally: Unsupervised Learning of Low Dimensional Manifolds",
+    "Tenenbaum Reduction A Global Geometric ...",
+    "Laplacian Eigenmaps for Dimensionality Reduction and ...",
+    "Face recognition with image sets using manifold density divergence",
+    "Human Age Estimation With Regression on Discriminative Aging Manifold",
+    "Image-Based Human Age Estimation by Manifold Learning and Locally Adjusted Robust Regression",
+    "Gait-based human age estimation using age group-dependent manifold learning and regression"
+  ],
+  "cited_match_rate": 0.8888888888888888,
+  "cited_count": 18,
+  "cited_supported": 16,
+  "cited_details": [
+    {
+      "statement": "https://www.semanticscholar.org/paper/Nonlinear-dimensionality-reduction-by-locally-Roweis-Saul/f0a3e1752e1146da927adc24ae07144ab2e744ec",
+      "url": "https://semanticscholar.org/paper/Nonlinear-dimensionality-reduction-by-locally-Roweis-Saul/f0a3e1752e1146da927adc24ae07144ab2e744ec",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://pdodds.w3.uvm.edu/files/papers/others/2000/tenenbaum2000a.pdf",
+      "url": "https://pdodds.w3.uvm.edu/files/papers/others/2000/tenenbaum2000a.pdf",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://www.jmlr.org/papers/v4/saul03a.html",
+      "url": "https://jmlr.org/papers/v4/saul03a.html",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://www.aoml.noaa.gov/ftp/pub/phod/thacker/SSAmanifoldPapers/BelkinNiyogi2007Presentation.pdf",
+      "url": "https://aoml.noaa.gov/ftp/pub/phod/thacker/SSAmanifoldPapers/BelkinNiyogi2007Presentation.pdf",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://www.aoml.noaa.gov/ftp/pub/phod/thacker/SSAmanifoldPapers/BelkinNiyogi2007Presentation.pdf",
+      "url": "https://aoml.noaa.gov/ftp/pub/phod/thacker/SSAmanifoldPapers/BelkinNiyogi2007Presentation.pdf",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://arxiv.org/abs/1910.01403",
+      "url": "https://arxiv.org/abs/1910.01403",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://arxiv.org/abs/1910.01403",
+      "url": "https://arxiv.org/abs/1910.01403",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://research-portal.st-andrews.ac.uk/en/publications/face-recognition-with-image-sets-using-manifold-density-divergenc/",
+      "url": "https://research-portal.st-andrews.ac.uk/en/publications/face-recognition-with-image-sets-using-manifold-density-divergenc",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://research-portal.st-andrews.ac.uk/en/publications/face-recognition-with-image-sets-using-manifold-density-divergenc/",
+      "url": "https://research-portal.st-andrews.ac.uk/en/publications/face-recognition-with-image-sets-using-manifold-density-divergenc",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://doi.org/10.1109/tmm.2008.921847",
+      "url": "https://doi.org/10.1109/tmm.2008.921847",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://doi.org/10.1109/tmm.2008.921847",
+      "url": "https://doi.org/10.1109/tmm.2008.921847",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://doi.org/10.1109/tmm.2008.921847",
+      "url": "https://doi.org/10.1109/tmm.2008.921847",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://doi.org/10.1109/tip.2008.924280",
+      "url": "https://doi.org/10.1109/tip.2008.924280",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://doi.org/10.1109/tip.2008.924280",
+      "url": "https://doi.org/10.1109/tip.2008.924280",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://doi.org/10.1109/tip.2008.924280",
+      "url": "https://doi.org/10.1109/tip.2008.924280",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://www.semanticscholar.org/paper/b55438c64dcb2f52404152a90acecce2f7ded2d5",
+      "url": "https://semanticscholar.org/paper/b55438c64dcb2f52404152a90acecce2f7ded2d5",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://www.semanticscholar.org/paper/b55438c64dcb2f52404152a90acecce2f7ded2d5",
+      "url": "https://semanticscholar.org/paper/b55438c64dcb2f52404152a90acecce2f7ded2d5",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "https://www.semanticscholar.org/paper/fd3bf3a9cef5500aa3b97588498e534",
+      "url": "https://semanticscholar.org/paper/fd3bf3a9cef5500aa3b97588498e534",
+      "support_votes": 0,
+      "total_votes": 0,
+      "match": false
+    }
+  ],
+  "noncited_factual_accuracy": 0.55,
+  "noncited_count": 20,
+  "noncited_correct": 11,
+  "noncited_details": [
+    {
+      "claim": "Roweis and Saul introduced Locally Linear Embedding (LLE), an unsupervised learning algorithm that computes low-dimensional, neighborhood-preserving embeddings of high-dimensional data.",
+      "evidence": [
+        {
+          "title": "An Introduction to Locally Linear Embedding",
+          "abstract": "Locally linear embedding (LLE) is introduced, an unsupervised learning algorithm that computes low-dimensional, neighborhood-preserving embeddings of high- ...",
+          "url": "https://www.semanticscholar.org/paper/An-Introduction-to-Locally-Linear-Embedding-Saul-Roweis/da6495102377f8332b21cef50c35d27fbff627df"
+        },
+        {
+          "title": "Locally Linear Embedding (LLE) Homepage",
+          "abstract": "Nonlinear dimensionality reduction by locally linear embedding. Sam Roweis & Lawrence Saul. An Introduction to Locally Linear Embedding. Lawrence Saul & Sam ...",
+          "url": "https://cs.nyu.edu/home/people/in_memoriam/roweis/lle/publications.html"
+        },
+        {
+          "title": "Sam T. Roweis, Linear Embedding Nonlinear ...",
+          "abstract": "Here, we introduce locally linear embedding (LLE), an unsupervised learning algorithm that computes low-dimensional, neighbor- hood-preserving ...",
+          "url": "https://users.eecs.northwestern.edu/~yingwu/teaching/EECS433/Reading/Roweis_LLE00.pdf"
+        },
+        {
+          "title": "Guided Locally Linear Embedding",
+          "abstract": "by B Alipanahi · 2011 · Cited by 29 — Locally Linear Embedding (LLE) computes a low-dimensional neighborhood-preserving embedding of a high-dimensional dataset (Roweis and Saul, 2000). A dataset ...",
+          "url": "https://www.sciencedirect.com/science/article/abs/pii/S0167865511000390"
+        },
+        {
+          "title": "Think Globally, Fit Locally: Unsupervised Learning of Low ...",
+          "abstract": "by LK Saul · 2003 · Cited by 2289 — Here we describe locally linear embedding (LLE), an unsupervised learning algorithm that computes low dimensional, neighborhood preserving embeddings of high ...",
+          "url": "https://www.jmlr.org/papers/v4/saul03a.html"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "Tenenbaum and colleagues published \"A Global Geometric Framework for Nonlinear Dimensionality Reduction\" in Science 290, 2319 (2000).",
+      "evidence": [
+        {
+          "title": "A global geometric framework for nonlinear dimensionality reduction",
+          "abstract": "Here we describe an approach to solving dimensionality reduction problems that uses easily measured local metric information to learn the underlying global ...",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/11125149/"
+        },
+        {
+          "title": "A Global Geometric Framework for Nonlinear Dimensionality Reduction",
+          "abstract": "Describes an approach to solving dimensionality reduction problems that uses easily measured local metric information to learn the underlying global geometry ...",
+          "url": "https://www.bibsonomy.org/bibtex/1d98b45c2f0c37140697cdd69cb0d9c89/quesada"
+        },
+        {
+          "title": "A global geometric framework for nonlinear dimensionality reduction.",
+          "abstract": "Here we describe an approach to solving dimensionality reduction problems that uses easily measured local metric information to learn the underlying global ...",
+          "url": "https://scispace.com/papers/a-global-geometric-framework-for-nonlinear-dimensionality-5brl02iqtj"
+        },
+        {
+          "title": "Discussion of “Spectral Dimensionality Reduction via Maximum Entropy”",
+          "abstract": "Tenenbaum, V. de Silva, and J.C. Langford. A global geometric framework for nonlinear dimen- sionality reduction. Science, 290(5500):2319–2323,",
+          "url": "https://proceedings.mlr.press/v15/maaten11a/maaten11a.pdf"
+        },
+        {
+          "title": "Reduction A Global Geometric Framework for Nonlinear ...",
+          "abstract": "Tenenbaum Reduction A Global Geometric Framework for Nonlinear Dimensionality. This article develops spherical principal components analysis (SPCA), and ...",
+          "url": "https://www.semanticscholar.org/paper/Reduction-A-Global-Geometric-Framework-for-Tenenbaum-Silva/2878f950f0ad19ccec6bab04873895e89f5bece0"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "Saul and Roweis published \"Think Globally, Fit Locally: Unsupervised Learning of Low Dimensional Manifolds\" in the Journal of Machine Learning Research, volume 4, June 2003, pages 119-155.",
+      "evidence": [
+        {
+          "title": "Unsupervised Learning of Low Dimensional Manifold",
+          "abstract": "Think Globally, Fit Locally: Unsupervised Learning of Low Dimensional Manifold. Saul and Sam T. Roweis}, journal={J. A global geometric framework for nonlinear ...",
+          "url": "https://www.semanticscholar.org/paper/Think-Globally%2C-Fit-Locally%3A-Unsupervised-Learning-Saul-Roweis/8db95dbd08e4ee64fb258e5380e78cfa507ed94d"
+        },
+        {
+          "title": "Think Globally, Fit Locally: Unsupervised Learning of ...",
+          "abstract": "Think Globally, Fit Locally: Unsupervised Learning of Low Dimensional Manifold. June 2003 · Applied Physics Letters. Lawrence K. Saul · Sam T. Roweis. The ...",
+          "url": "https://www.researchgate.net/publication/2527213_Think_Globally_Fit_Locally_Unsupervised_Learning_of_Nonlinear_Manifolds"
+        },
+        {
+          "title": "Saul, L.K. and Roweis, S.T. (2003) Think Globally, Fit ...",
+          "abstract": "Saul, L.K. and Roweis, S.T. (2003) Think Globally, Fit Locally Unsupervised Learning of Low Dimensional Manifolds. J. Mach. Learn. Res., 4, 119-155.",
+          "url": "https://www.scirp.org/reference/referencespapers?referenceid=1611258"
+        },
+        {
+          "title": "Think globally, fit locally: unsupervised learning of low ...",
+          "abstract": "by LK Saul · 2003 · Cited by 2289 — In this paper, we describe the implementation of the algorithm in detail and discuss several extensions that enhance its performance.",
+          "url": "https://dl.acm.org/doi/10.1162/153244304322972667"
+        },
+        {
+          "title": "Unsupervised Learning of Nonlinear Manifolds",
+          "abstract": "by LK Saul · Cited by 2289 — Think Globally, Fit Locally: Unsupervised Learning of Nonlinear Manifolds. Lawrence K. Saul lsaul@cis.upenn.edu. Department of Computer and Information ...",
+          "url": "https://www.cse.iitk.ac.in/users/cs676/2011/Readings/saul-roweis-03jmlr_think-globally-fit-locally-manifold-learning.pdf"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "Belkin and Niyogi presented \"Laplacian Eigenmaps for Dimensionality Reduction and Data Representation\" in Neural Computation, volume 15, issue 6, pages 1373-1396, June 2003.",
+      "evidence": [
+        {
+          "title": "http://refhub.elsevier.com/S1063-5203(15)00101-3/b...",
+          "abstract": "No information is available for this page.",
+          "url": "http://refhub.elsevier.com/S1063-5203(15)00101-3/bib62656C6B696E3A4C61706C616369616E456967656E6D617073s1"
+        },
+        {
+          "title": "Laplacian Eigenmaps for Dimensionality Reduction and ...",
+          "abstract": "Laplacian eigenmaps use eigenspaces of a dataset-level matrix to summarize, embed, or partition observations. Belkin & Niyogi, 2003) computationally efficient ...",
+          "url": "https://www.researchgate.net/publication/200038880_Laplacian_Eigenmaps_for_Dimensionality_Reduction_and_Data_Representation"
+        },
+        {
+          "title": "Volume 15 Issue 6 | Neural Computation",
+          "abstract": "Laplacian Eigenmaps for Dimensionality Reduction and Data Representation Available. Mikhail Belkin, Partha Niyogi. Neural Computation (2003) 15 (6): 1373–1396.",
+          "url": "https://direct.mit.edu/neco/issue/15/6"
+        },
+        {
+          "title": "Laplacian Eigenmaps for Dimensionality Reduction and ...",
+          "abstract": "by M Belkin · 2003 · Cited by 11061 — Laplacian Eigenmaps for Dimensionality Reduction and Data Representation - Neural Computation, June 2003; Belkin1 P. Niyogi2 1University of ...",
+          "url": "https://www.aoml.noaa.gov/ftp/pub/phod/thacker/SSAmanifoldPapers/BelkinNiyogi2007Presentation.pdf"
+        },
+        {
+          "title": "Laplacian Eigenmaps for Dimensionality Reduction and ...",
+          "abstract": "by M Belkin · 2003 · Cited by 11064 — Laplacian Eigenmaps for Dimensionality Reduction and Data Representation. Published in: Neural Computation ( Volume: 15 , Issue: 6 , 01 June 2003 )",
+          "url": "https://ieeexplore.ieee.org/document/6789755"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "Niyogi was affiliated with the University of Chicago Departments of Computer Science and Statistics.",
+      "evidence": [
+        {
+          "title": "Department of Computer Science",
+          "abstract": "We have a broad view of Computer Science, that includes the whole spectrum of computing, from relevant mathematics and statistics to building hardware devices, ...",
+          "url": "http://graduateannouncements.uchicago.edu/graduate/departmentofcomputerscience/"
+        },
+        {
+          "title": "Partha Niyogi – Department of Computer Science",
+          "abstract": "Partha Niyogi was the Louis Block Professor in Computer Science and Statistics at the University of Chicago. He wrote more than 90 academic publications and ...",
+          "url": "http://www.computerscience.uchicago.edu/people/partha-niyogi/"
+        },
+        {
+          "title": "Partha Niyogi has died",
+          "abstract": "Partha Niyogi, Louis Block Professor in Computer Science and Statistics at the University of Chicago passed away on October 1, 2010, aged 43.",
+          "url": "https://hunch.net/?p=1547"
+        },
+        {
+          "title": "Partha Niyogi (1967 - 2010) | Richard Hahn",
+          "abstract": "Niyogi, who passed at age 43 in 2010, one year before I would have joined him as a colleague at University of Chicago.",
+          "url": "https://www.linkedin.com/posts/richard-hahn-a1096050_partha-niyogi-1967-2010-have-you-ever-activity-7315058805317214211-zujP"
+        },
+        {
+          "title": "Partha Niyogi Research | Department of Statistics",
+          "abstract": "RESEARCH TOPICS: QUESTIONS AND DIRECTIONS. Machine Learning and Information Extraction. My research in this area is motivated by the following basic ...",
+          "url": "https://stat.uchicago.edu/people/in-memoriam/partha-niyogi-research/"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "Dinashi, Toosi, and Akhaee proposed \"Face Manifold: Manifold Learning for Synthetic Face Generation.\"",
+      "evidence": [
+        {
+          "title": "Kimia DINASHI | University of Tehran",
+          "abstract": "manifold learning for synthetic face generation. Face Manifold: Manifold Learning for Synthetic Face Generation Preprint Full-text available Oct 2019",
+          "url": "https://www.researchgate.net/profile/Kimia-Dinashi"
+        },
+        {
+          "title": "Manifold Learning for Synthetic Face Generation",
+          "abstract": "by K Dinashi · 2019 · Cited by 1 — Authors:Kimia Dinashi, Ramin Toosi, Mohammad Ali Akhaee. View a PDF of the paper titled Face Manifold: Manifold Learning for Synthetic Face ...",
+          "url": "https://arxiv.org/abs/1910.01403"
+        },
+        {
+          "title": "Some samples of the prepared shape dataset. Top row: ...",
+          "abstract": "Face Manifold: Manifold Learning for Synthetic Face Generation. Preprint. Full-text available. Oct 2019. Kimia Dinashi · Ramin Toosi.",
+          "url": "https://www.researchgate.net/figure/Some-samples-of-the-prepared-shape-dataset-Top-row-faces-with-ground-truth-shape_fig4_336251624"
+        },
+        {
+          "title": "Analyzing Technosolutionism in Synthetic Face Data ...",
+          "abstract": "This paper presents a novel approach to synthetic diverse face dataset generation by leveraging face manifold learning. We divide the face structure into shape ...",
+          "url": "https://www.researchgate.net/publication/394291001_Analyzing_Technosolutionism_in_Synthetic_Face_Data_Companies"
+        },
+        {
+          "title": "Ramin Toosi's Post - Face manifold",
+          "abstract": "Manifold Learning for Synthetic Face Generation,\" This paper presents a novel approach to synthetic diverse face dataset generation by ...",
+          "url": "https://www.linkedin.com/posts/ramin-toosi_face-manifold-manifold-learning-for-synthetic-activity-7095272147534626816--TYX?trk=public_profile_like_view"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "The Dinashi et al. work notes that the training dataset has a great influence on the resulting model.",
+      "evidence": [
+        {
+          "title": "Self-Influence Guided Data Reweighting for Language ...",
+          "abstract": "Influence Score can guide data re-weighting, eliminates the need for reference models. self-influence -computed solely within the training set -has been shown ...",
+          "url": "https://www.researchgate.net/publication/376394103_Self-Influence_Guided_Data_Reweighting_for_Language_Model_Pre-training"
+        },
+        {
+          "title": "SJTU-DMTai/awesome-ml-data-quality-papers",
+          "abstract": "This is a list of papers about training data quality management for ML models. covers topics such as data attribution, data valuation, data debugging,",
+          "url": "https://github.com/SJTU-DMTai/awesome-ml-data-quality-papers"
+        },
+        {
+          "title": "Data and its (dis)contents: A survey of dataset development ...",
+          "abstract": "by A Paullada · 2021 · Cited by 967 — Datasets form the basis for training, evaluating, and benchmarking machine learning models and have played a foundational role in the advancement of the field.",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8600147/"
+        },
+        {
+          "title": "Data Cascades in High-Stakes AI",
+          "abstract": "In this paper, we report on data practices in high-stakes AI, from interviews with 53 AI practitioners in India, East and West African countries, and USA. We ...",
+          "url": "https://research.google/pubs/everyone-wants-to-do-the-model-work-not-the-data-work-data-cascades-in-high-stakes-ai/"
+        },
+        {
+          "title": "A STUDY OF VARIOUS DATA SIZES USING MACHINE ...",
+          "abstract": "About 80% of the data was trained and 20% of the data was tested. The results showed a linear relationship for the training accuracy (Figure 4).",
+          "url": "https://scholarworks.lib.csusb.edu/cgi/viewcontent.cgi?article=2909&context=etd"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "The Dinashi et al. work identifies a drawback of direct representation that produces unsatisfactory outputs.",
+      "evidence": [
+        {
+          "title": "Negativity towards negative results: a discussion of the ...",
+          "abstract": "by N Matosin · 2014 · Cited by 265 — In this Editorial, we discuss the issues surrounding publication bias and the difficulty in communicating negative results. Negative findings are a valuable ...",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3917235/"
+        },
+        {
+          "title": "Dealing with undesirable outputs in DEA: a Slacks-Based ...",
+          "abstract": "In this paper, we propose a new non-parametric DEA scheme for measuring efficiency in the presence of undesirable outputs, based on a slack-based measure ...",
+          "url": "https://www.researchgate.net/publication/284047010_Dealing_with_undesirable_outputs_in_DEA_a_Slacks-Based_Measure_SBM_approach"
+        },
+        {
+          "title": "Estimating Visual Information From Audio Through Manifold Learning",
+          "abstract": "We propose a new framework for extracting visual information about a scene only using audio signals. Audio-based methods can overcome some of the limitations of vision-based methods i.e., they do not require \"line-of-sight\", are robust to occlusions and changes in illumination, and can function as a backup in case vision/lidar sensors fail. Therefore, audio-based methods can be useful even for applications in which only visual information is of interest Our framework is based on Manifold Learning and consists of two steps. First, we train a Vector-Quantized Variational Auto-Encoder to learn the data manifold of the particular visual modality we are interested in. Second, we train an Audio Transformation network to map multi-channel audio signals to the latent representation of the corresponding visual sample. We show that our method is able to produce meaningful images from audio using a publicly available audio/visual dataset. In particular, we consider the prediction of the following visual modalities from audio: depth and semantic segmentation. We hope the findings of our work can facilitate further research in visual information extraction from audio. Code is available at: https://github.com/ubc-vision/audio_manifold.",
+          "url": "https://arxiv.org/abs/2208.02337"
+        },
+        {
+          "title": "Sparse Representation Classifier Guided Grassmann Reconstruction Metric Learning With Applications to Image Set Analysis",
+          "abstract": "Modeling a sequence of video frames as a linear subspace on Grassmann manifold has recently become increasingly attractive in multiple computer vision applications. The success of such algorithms largely depends on a good distance measure, and learning an appropriate metric on Grassmann manifold remains a key challenge. Existing works address this by learning a discriminative mapping from the original Grassmann manifold to Hilbert space or a lower-dimensional, more discriminative Grassmann manifold. However, these approaches always highly rely on nearest neighbor matching of samples on the projected space, which is sensitive to noises and errors. Different from them, this paper proposes a Grassmann Reconstruction Metric Learning (GRML) algorithm guided by sparse representation-based classifier (SRC) for image set classification. SRC selects the coefficients associated with each class to reconstruct training samples, and then we employ it as a criterion to direct the design of a discriminant metric on Grassmann manifold. Specifically, GRML attempts to jointly maximize the inter-class reconstruction residual and minimize the intra-class reconstruction residual in the lower but more discriminative Grassmann manifold. To further explore the intrinsic geometry distance, we present a Grassmann Reconstruction Multiple Kernel Metric Learning (GRMKML) algorithm, which aims to jointly learn a metric and the corresponding kernel from a family of kernels for Grassmann manifold. Extensive experiments on eight benchmark datasets demonstrate that the proposed algorithms perform favorably against the state-of-the-art methods.",
+          "url": "https://www.semanticscholar.org/paper/fd3bf3a9cef5500aa3b97588498e534c96006567"
+        },
+        {
+          "title": "Learning a perceptual manifold with deep features for animation video resequencing",
+          "abstract": "We propose a novel deep learning framework for animation video resequencing. Our system produces new video sequences by minimizing a perceptual distance of images from an existing animation video clip. To measure perceptual distance, we utilize the activations of convolutional neural networks and learn a perceptual distance by training these features on a small network with data comprised of human perceptual judgments. We show that with this perceptual metric and graph-based manifold learning techniques, our framework can produce new smooth and visually appealing animation video results for a variety of animation video styles. In contrast to previous work on animation video resequencing, the proposed framework applies to wide range of image styles and does not require hand-crafted feature extraction, background subtraction, or feature correspondence. In addition, we also show that our framework has applications to appealingly arrange unordered collections of images.",
+          "url": "https://arxiv.org/abs/2111.01455"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "A face recognition method using image sets was proposed for applications where a set of a person's face images is available rather than a single image.",
+      "evidence": [
+        {
+          "title": "Build a Deep Facial Recognition App from Paper to Code ...",
+          "abstract": "In this series you'll learn how to build a deep facial recognition application to authenticate into an application. for One-shot Image ...",
+          "url": "https://www.youtube.com/watch?v=bK_k7eebGgc"
+        },
+        {
+          "title": "Few-Shot learning for face recognition in the presence of ...",
+          "abstract": "by A Holkar · 2022 · Cited by 38 — Implementation of the Few-Shot Learning approach to develop face recognition system for very few images for a specific class (person). · Proposed method to ...",
+          "url": "https://www.sciencedirect.com/science/article/abs/pii/S026288562200049X"
+        },
+        {
+          "title": "Face Recognition from a Single Image Per Person",
+          "abstract": "This situation is called “one sample per person” problem: given a stored database of faces, the goal is to identify a person from the database later in time in ...",
+          "url": "https://www.researchgate.net/publication/222672070_Face_Recognition_from_a_Single_Image_Per_Person_A_Survey"
+        },
+        {
+          "title": "Face detection based on deep learning approaches: A ...",
+          "abstract": "In this video, we dive into our paper that was accepted at the ISCAC23 conference. The paper, titled \"Face Detection Based on Deep Learning ...",
+          "url": "https://www.youtube.com/watch?v=stkfdgH79TU"
+        },
+        {
+          "title": "Face Recognition with One-Shot Learning",
+          "abstract": "Using only one image per person (one-shot learning), we managed to create a highly accurate model for recognizing company employees in real-time ...",
+          "url": "https://medium.com/@Borijan.Georgievski/face-recognition-using-one-shot-learning-a7cf2b91e96c"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "The face recognition method uses a semiparametric model for learning probability densities confined to highly non-linear but intrinsically low-dimensional manifolds.",
+      "evidence": [
+        {
+          "title": "Face recognition based on regularized nearest points between ...",
+          "abstract": "We propose a flexible, semi-parametric model for learning probability densities confined to highly non-linear but intrinsically low-dimensional manifolds.",
+          "url": "https://www.researchgate.net/publication/261115598_Face_recognition_based_on_regularized_nearest_points_between_image_sets"
+        },
+        {
+          "title": "Face Recognition using Nearest Neighbour and ... - IOP Science",
+          "abstract": "Face identification system detects efficiently segments and recognizes face in a cluttered sequence under varying pose, lighting and age variations. From this ...",
+          "url": "https://iopscience.iop.org/article/10.1088/1742-6596/2251/1/012010/pdf"
+        },
+        {
+          "title": "3D Morphable Face Models—Past, Present, and Future",
+          "abstract": "In this article, we provide a detailed survey of 3D Morphable Face Models over the 20 years since they were first proposed. The challenges in building and ...",
+          "url": "https://dl.acm.org/doi/fullHtml/10.1145/3395208"
+        },
+        {
+          "title": "Face Recognition with Image Sets Using Manifold Density Divergence",
+          "abstract": "We propose a flexible, semi- parametric model for learning probability densities con- fined to highly non-linear but intrinsically low-dimensional manifolds.",
+          "url": "https://home.ttic.edu/~gregory/papers/cvpr05.pdf"
+        },
+        {
+          "title": "Face recognition with image sets using manifold density divergence",
+          "abstract": "We propose a flexible, semi-parametric model for learning probability densities confined to highly non-linear but intrinsically low-dimensional manifolds.",
+          "url": "https://ieeexplore.ieee.org/document/1467320/"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "The face recognition method was evaluated on a large data set acquired in realistic imaging conditions with severe illumination variation, achieving a 94% recognition rate on average.",
+      "evidence": [
+        {
+          "title": "DigiFace-1M: 1 Million Digital Face Images ...",
+          "abstract": "To avoid the problems associated with real face datasets, we introduce a large-scale synthetic dataset for face recognition, obtained by photo-realistic ...",
+          "url": "https://microsoft.github.io/DigiFace1M/"
+        },
+        {
+          "title": "Study of image sensors for enhanced face recognition at a ...",
+          "abstract": "by JM Llauradó · 2023 · Cited by 24 — This paper presents a method based on deep learning for face recognition. The system achieves an average accuracy above 99% for several sensors ...",
+          "url": "https://www.nature.com/articles/s41598-023-40110-y"
+        },
+        {
+          "title": "Face manifold: manifold learning for synthetic face generation",
+          "abstract": "The face is a crucial aspect of human communication and identity. Accurately estimating face structure is a fundamental task in computer vision, with significant applications in various fields, including facial recognition and medical surgeries. Deep learning techniques have made notable progress in 3D face reconstruction from 2D images. However, this approach demands large 3D face datasets, often tackled by synthetic face generation. Unfortunately, synthetic datasets can contain non-possible faces, which pose significant challenges. This paper presents a novel approach to synthetic diverse face dataset generation by leveraging face manifold learning. We divide the face structure into shape and expression groups and use a fully convolutional autoencoder network to handle non-possible faces while preserving dataset diversity. The proposed method is used to train deep 3D reconstruction networks and results indicate that our proposed method demonstrates its effectiveness in denoising highly corrupted faces. Additionally, we assess the diversity of the generated dataset qualitatively and quantitatively, comparing it to existing methods, and find that our manifold learning method outperforms state-of-the-art methods significantly. The reliability results show that more than 99% of the generated faces are acceptable as real faces.",
+          "url": "https://arxiv.org/abs/1910.01403"
+        },
+        {
+          "title": "Human Age Estimation With Regression on Discriminative Aging Manifold",
+          "abstract": "Recently, extensive studies on human faces in the human-computer interaction (HCI) field reveal significant potentials for designing automatic age estimation systems via face image analysis. The success of such research may bring in many innovative HCI tools used for the applications of human-centered multimedia communication. Due to the temporal property of age progression, face images with aging features may display some sequential patterns with low-dimensional distributions. In this paper, we demonstrate that such aging patterns can be effectively extracted from a discriminant subspace learning algorithm and visualized as distinct manifold structures. Through the manifold method of analysis on face images, the dimensionality redundancy of the original image space can be significantly reduced with subspace learning. A multiple linear regression procedure, especially with a quadratic model function, can be facilitated by the low dimensionality to represent the manifold space embodying the discriminative property. Such a processing has been evaluated by extensive simulations and compared with the state-of-the-art methods. Experimental results on a large size aging database demonstrate the effectiveness and robustness of our proposed framework.",
+          "url": "https://doi.org/10.1109/tmm.2008.921847"
+        },
+        {
+          "title": "Visual Understanding via Multi-Feature Shared Learning with Global Consistency",
+          "abstract": "Image/video data is usually represented with multiple visual features. Fusion of multi-source information for establishing the attributes has been widely recognized. Multi-feature visual recognition has recently received much attention in multimedia applications. This paper studies visual understanding via a newly proposed l_2-norm based multi-feature shared learning framework, which can simultaneously learn a global label matrix and multiple sub-classifiers with the labeled multi-feature data. Additionally, a group graph manifold regularizer composed of the Laplacian and Hessian graph is proposed for better preserving the manifold structure of each feature, such that the label prediction power is much improved through the semi-supervised learning with global label consistency. For convenience, we call the proposed approach Global-Label-Consistent Classifier (GLCC). The merits of the proposed method include: 1) the manifold structure information of each feature is exploited in learning, resulting in a more faithful classification owing to the global label consistency; 2) a group graph manifold regularizer based on the Laplacian and Hessian regularization is constructed; 3) an efficient alternative optimization method is introduced as a fast solver owing to the convex sub-problems. Experiments on several benchmark visual datasets for multimedia understanding, such as the 17-category Oxford Flower dataset, the challenging 101-category Caltech dataset, the YouTube & Consumer Videos dataset and the large-scale NUS-WIDE dataset, demonstrate that the proposed approach compares favorably with the state-of-the-art algorithms. An extensive experiment on the deep convolutional activation features also show the effectiveness of the proposed approach. The code is available on http://www.escience.cn/people/lei/index.html",
+          "url": "https://arxiv.org/abs/1505.05233"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "A 2008 study in IEEE Transactions on Multimedia notes that, due to the temporal property of age progression, face images with aging features may display sequential patterns with low-dimensional distributions.",
+      "evidence": [
+        {
+          "title": "Deep Face Age Progression: A Survey",
+          "abstract": "Face Age Progression (FAP) refers to synthesizing face images while simulating ageing effects, thus enabling predicting the future appearance ...",
+          "url": "https://www.researchgate.net/publication/352113886_Deep_Face_Age_Progression_A_Survey"
+        },
+        {
+          "title": "Temporal Non-volume Preserving Approach to Facial Age ... - CoLab",
+          "abstract": "Our model shows its advantages not only in capturing the non-linear age related variance in each stage but also producing a smooth synthesis in age progression ...",
+          "url": "https://colab.ws/articles/10.1109%2FICCV.2017.403"
+        },
+        {
+          "title": "US10318796B2 - Age progression of subject facial image",
+          "abstract": "Age progression of a test facial image is facilitated by compiling training data, including a training set(s) having selected initial images of subjects. IEEE ...",
+          "url": "https://patents.google.com/patent/US10318796B2/en"
+        },
+        {
+          "title": "Learning Continuous Face Age Progression: A Pyramid of ...",
+          "abstract": "The computer-aided age progression1/regression technique is to aesthetically render a given face image with natural aging/rejuvenating effects.",
+          "url": "https://www.computer.org/csdl/journal/tp/2021/02/08772083/1bXaG3qL96w"
+        },
+        {
+          "title": "Face Verification across Age Progression using Discriminative ...",
+          "abstract": "by H Ling · 2008 · Cited by 252 — we empirically study how age gaps and related issues (including image quality, spectacles, and facial hair) affect recognition algorithms.",
+          "url": "https://www.cs.umd.edu/~djacobs/pubs_files/face-aging-tifs.pdf"
+        }
+      ],
+      "true_votes": 1,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "A 2008 study in IEEE Transactions on Image Processing frames age estimation as challenging for existing computer vision systems.",
+      "evidence": [
+        {
+          "title": "Age Estimation Based on Complexity-Aware Features",
+          "abstract": "Abstract. The research related to age estimation using face images has become increasingly important. We propose an age estimator using two.",
+          "url": "https://www.cs.sfu.ca/~li/papers-on-line/Haoyu-ACCV-2014.pdf"
+        },
+        {
+          "title": "Deep Expectation of Real and Apparent Age from a Single Image ...",
+          "abstract": "In this paper we propose a deep learning solution to age estimation from a single face image without the use of facial landmarks and introduce ...",
+          "url": "https://www.research-collection.ethz.ch/bitstreams/9f2593b4-79d1-4a39-b6ba-b81437f1f4ae/download"
+        },
+        {
+          "title": "A Structure-Based Human Facial Age Estimation Framework Under a ...",
+          "abstract": "Abstract. Developing an automatic age estimation method toward human faces continues to possess an important role in computer vision and pattern recognition.",
+          "url": "https://dl.acm.org/doi/10.1109/TIP.2019.2916768"
+        },
+        {
+          "title": "IEEE Transactions on Image Processing",
+          "abstract": "Applications of interest include image and video communications, electronic imaging, biomedical imaging, image and video systems, and remote sensing.",
+          "url": "https://signalprocessingsociety.org/publications-resources/ieee-transactions-image-processing"
+        },
+        {
+          "title": "Facial Age Estimation Models for Embedded Systems - IEEE Xplore",
+          "abstract": "ABSTRACT Automated age estimation from face images is the process of assigning either an exact age or a specific age range to a facial image.",
+          "url": "https://ieeexplore.ieee.org/iel7/6287639/6514899/10041926.pdf"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "The 2008 IEEE Transactions on Image Processing study notes that the aging process is determined by the person's gene as well as external factors such as health, living style, living location, and weather conditions.",
+      "evidence": [
+        {
+          "title": "Recognizing Age-Separated Face Images: Humans and ...",
+          "abstract": "by D Yadav · 2014 · Cited by 46 — In this research, we investigate which facial cues are utilized by humans for estimating the age of people belonging. This research attempts to ...",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4256302/"
+        },
+        {
+          "title": "Age Estimation from Face Images: Human vs. Machine ...",
+          "abstract": "We propose a hierarchical approach for automatic age estimation, and provide an analysis of how aging influences individual facial components. Experimental ...",
+          "url": "https://www.researchgate.net/publication/235701854_Age_Estimation_from_Face_Images_Human_vs_Machine_Performance"
+        },
+        {
+          "title": "A novel genetic-artificial neural network based age ...",
+          "abstract": "by O Oladipo · 2022 · Cited by 11 — This study developed a novel age estimation system from the combination of a genetic algorithm and a back propagation (BP)-trained artificial ...",
+          "url": "https://www.nature.com/articles/s41598-022-23242-5"
+        },
+        {
+          "title": "Learning from Facial Aging Patterns for Automatic ...",
+          "abstract": "by X Geng · 2006 · Cited by 369 — The aging pattern of each person is determined by his/her gene as well as many external factors, such as health, living style and weather condi- tions, etc.",
+          "url": "https://palm.seu.edu.cn/xgeng/files/mm06.pdf"
+        },
+        {
+          "title": "Learning from Facial Aging Patterns for Automatic ...",
+          "abstract": "by X Geng · 2006 · Cited by 368 — The basic idea is to model the aging pattern, which is defined as a sequence of personal aging face images, by learning a representative subspace. The proper ...",
+          "url": "https://yuzhanghk.github.io/papers/Geng_Zhou_Zhang_Li_Dai_MM06.pdf"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "The 2008 IEEE Transactions on Image Processing study introduced an age manifold learning scheme for extracting face aging features combined with a locally adjusted robust regressor for learning and prediction.",
+      "evidence": [
+        {
+          "title": "Image-Based Human Age Estimation by Manifold Learning ...",
+          "abstract": "The age manifold learning scheme for extracting face aging features is introduced and a locally adjusted robust regressor for learning and prediction of human ...",
+          "url": "https://www.semanticscholar.org/paper/Image-Based-Human-Age-Estimation-by-Manifold-and-Guo-Fu/281e1000e0f9873f217a1d5895036ee72a54bf7a"
+        },
+        {
+          "title": "AGE ESTIMATION FROM FACE IMAGES:A REVIEW",
+          "abstract": "Guodong Guo et al. [5] introduced the age manifold learning scheme for extracting face aging features and design a locally adjusted robust regressor for ...",
+          "url": "https://journals.mriindia.com/index.php/oaijse/article/download/2546/2442"
+        },
+        {
+          "title": "AGE ESTIMATION FROM FACIAL IMAGES USING ...",
+          "abstract": "A convolution network can learn to extract high-level features from the data and perform tasks such as image classification, object detection, ...",
+          "url": "https://www.theseus.fi/bitstream/10024/804002/2/Nguyen_Dang.pdf"
+        },
+        {
+          "title": "Unconstrained Age Estimation with Deep Convolutional ...",
+          "abstract": "by R Ranjan · Cited by 73 — Our method consists of four steps: face detection, face alignment, DCNN-based feature extraction and neural network regression for age estimation. The pro-.",
+          "url": "https://engineering.jhu.edu/vpatel36/wp-content/uploads/2018/08/Age_iccv2015.pdf"
+        },
+        {
+          "title": "Image-Based Human Age Estimation by Manifold Learning ...",
+          "abstract": "by G Guo · 2008 · Cited by 867 — In this paper, we introduce the age manifold learning scheme for extracting face aging features and design a locally adjusted robust regressor for learning and ...",
+          "url": "https://dl.acm.org/doi/abs/10.1109/TIP.2008.924280"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "A 2018 study notes that the aging process of gait significantly differs among age groups such as children, adults, and the elderly.",
+      "evidence": [
+        {
+          "title": "Comparative study of young-old and old-old people using ...",
+          "abstract": "by E Chung · 2023 · Cited by 56 — This study demonstrated that participants 75–84 years of age had less functional gaits than their young-old counterparts (65–74 years old).",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10311791/"
+        },
+        {
+          "title": "Changes in the gait pattern across the lifespan",
+          "abstract": "Most children walk independently between 11 and 15 months of age. Mature gait pattern appears by age three, increases from 32% at one year to ...",
+          "url": "https://ouhsc.edu/bserdac/dthompso/web/gait/matgait/matgait.htm"
+        },
+        {
+          "title": "Geriatric Gait and Balance Disorders | PM&R KnowledgeNow",
+          "abstract": "It is estimated that the prevalence of gait disorders is only 10% in individuals 60-69 years old but that number increases to more than 60% with age greater ...",
+          "url": "https://now.aapmr.org/geriatric-gait-and-balance-disorders/"
+        },
+        {
+          "title": "Gait Disorders in Older Adults - Geriatrics",
+          "abstract": "Walking posture changes only slightly with aging. Older adults walk upright, with no forward lean. However, older adults walk with greater anterior (downward) ...",
+          "url": "https://www.merckmanuals.com/professional/geriatrics/gait-disorders-in-older-adults/gait-disorders-in-older-adults"
+        },
+        {
+          "title": "Gait-based human age estimation using age group-dependent manifold learning and regression",
+          "abstract": "Human age estimation from gait is expected to be an important technology for a variety of applications such as automatic customer counting for marketing research or automatic age-based access control restriction for a specific area because the gait can be observable at a distance from a camera (e.g., CCTV). Although the aging process of gait significantly differs among age groups (e.g., children, adults, and the elderly), previous studies on gait-based human age estimation employ a single age group-independent estimation model that suffers from large estimation errors when the age variation increases. We therefore propose an age group-dependent gait-based human age estimation method for better accuracy. Specifically, in the training phase, we first compose age groups that are well-separated from each other by clustering gait features along with their age labels. We then learn a classifier that classifies the gait features for multiple age groups using a directed acyclic graph support vector machine. Next, we learn an age regression model for each age group using support vector regression with a Gaussian kernel in conjunction with a manifold learning technique, i.e., orthogonal locality preserving projection, to better characterize the gait feature. In the test phase, given a gait feature, it is first classified into an age group and then its age is estimated with the age regression model of the classified age group. Experimental results on a gait database that has the world’s largest population of participants ranging from 2 to 90 years old demonstrate the state-of-the-art performance of the proposed method.",
+          "url": "https://www.semanticscholar.org/paper/b55438c64dcb2f52404152a90acecce2f7ded2d5"
+        }
+      ],
+      "true_votes": 2,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "The 2018 gait study notes that previous gait-based age estimation methods employ a single age group-independent estimation model that suffers from large estimation errors when age variation increases.",
+      "evidence": [
+        {
+          "title": "Gait-based human age estimation using age group-dependent ...",
+          "abstract": "previous studies on gait-based human age estimation employ a single age group-independent esti- mation model that suffers from large estimation ...",
+          "url": "https://d-nb.info/1162126388/34"
+        },
+        {
+          "title": "Wearable Sensor-Based Gait Analysis for Age and Gender Estimation",
+          "abstract": "The goal of this challenge was to find some smart approaches to deal with age and gender estimation from sensor-based gait data. For this purpose, we employed a ...",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7219505/"
+        },
+        {
+          "title": "A Three-Dimensional Real-Time Gait-Based Age Detection System ...",
+          "abstract": "These Studies all used a single-group independent estimating model, which increased estimation errors as the age variation increases.",
+          "url": "https://www.sciopen.com/article/10.32604/cmc.2023.034605"
+        },
+        {
+          "title": "Automatic age-group estimation from gait energy images - ScienceDirect",
+          "abstract": "This paper proposed a method which combines age and gender to study the problem of gait-based human age estimation.",
+          "url": "https://www.sciencedirect.com/science/article/abs/pii/S2214785320361708"
+        },
+        {
+          "title": "Age Estimation in Human Gait Extraction using A Combination of ...",
+          "abstract": "Human gait may be used as a biometric identifier and indicator of age, among other things. This study aims to develop methods for estimating a ...",
+          "url": "https://www.preprints.org/manuscript/202306.0186"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "The 2018 gait study proposed an age-group-dependent gait-based age estimation method.",
+      "evidence": [
+        {
+          "title": "Wearable Sensor-Based Gait Analysis for Age and Gender ...",
+          "abstract": "by MAR Ahad · 2020 · Cited by 73 — Gait-based human age estimation using age group-dependent manifold learning and regression. Multimed. Tools Appl. 2018, 77, 28333–28354. [Google Scholar] ...",
+          "url": "https://www.mdpi.com/1424-8220/20/8/2424"
+        },
+        {
+          "title": "Ordinal Distribution Regression for Gait-based Age ...",
+          "abstract": "This paper proposes an ordinal distribution regression with a global and local convolutional neural network for gait-based age estimation.",
+          "url": "https://arxiv.org/html/1905.11005v4"
+        },
+        {
+          "title": "Real-Time Gait-Based Age Estimation and Gender ...",
+          "abstract": "by C Xu · 2021 · Cited by 61 — In this paper, we propose a unified real-time framework for gait-based age estimation and gender classification that uses just a single image, which reduces ...",
+          "url": "https://openaccess.thecvf.com/content/WACV2021/papers/Xu_Real-Time_Gait-Based_Age_Estimation_and_Gender_Classification_From_a_Single_WACV_2021_paper.pdf"
+        },
+        {
+          "title": "Gait-based human age estimation using age group ...",
+          "abstract": "by X Li · 2018 · Cited by 67 — We therefore propose an age group-dependent gait-based human age estimation method for better accuracy. Specifically, in the training phase, we ...",
+          "url": "https://link.springer.com/article/10.1007/s11042-018-6049-7"
+        },
+        {
+          "title": "A Three-Dimensional Real-Time Gait-Based Age Detection ...",
+          "abstract": "by M Azhar · 2023 · Cited by 5 — The proposed testing phase correctly predicts the age of a walking person using the results obtained from the training phase. The proposed ...",
+          "url": "https://www.sciopen.com/article/10.32604/cmc.2023.034605"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "The 2018 gait study composes age groups through clustering gait features with their age labels and learning a directed acyclic graph support vector machine classifier for multiple age groups.",
+      "evidence": [
+        {
+          "title": "Age-related gait patterns classification using deep learning based on time ...",
+          "abstract": "This study could contribute to the development of more accurate gait pattern classification and assist in detecting age-related gait patterns in clinical ...",
+          "url": "https://research.rug.nl/en/publications/age-related-gait-patterns-classification-using-deep-learning-base/"
+        },
+        {
+          "title": "Three decades of gait index development: A comparative review ...",
+          "abstract": "The analysis will explore historical and modern gait indices, focusing on the clinical efficacy with respect to their proposed pathology, age range, and ...",
+          "url": "https://www.sciencedirect.com/science/article/abs/pii/S0268003322001127"
+        },
+        {
+          "title": "A Three-Dimensional Real-Time Gait-Based Age Detection System ...",
+          "abstract": "A multi-label guided (MLG) technique was developed using gait energy images (GEIs) to combine the age information for age estimation. In order ...",
+          "url": "https://www.sciopen.com/article/10.32604/cmc.2023.034605"
+        },
+        {
+          "title": "Wearable Sensor-Based Gait Analysis for Age and Gender Estimation",
+          "abstract": "For this purpose, we employed a large wearable sensor-based gait dataset, which has 745 subjects (357 females and 388 males), from 2 to 78 years old in the ...",
+          "url": "https://www.mdpi.com/1424-8220/20/8/2424"
+        },
+        {
+          "title": "Age-related Gait Patterns Classification Using Deep Learning ...",
+          "abstract": "These gait features represent the pace (walking speed, stride length, stride time, stride frequency, and acceleration root mean square), regularity (stride ...",
+          "url": "https://www.techrxiv.org/doi/pdf/10.36227/techrxiv.22643314"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "The 2018 gait study identifies applications including automatic customer counting for marketing research and age-based access control.",
+      "evidence": [
+        {
+          "title": "Automatic age-group estimation from gait energy images",
+          "abstract": "by B Abirami · 2020 · Cited by 15 — Gait-based human age group estimation has numerous applications including automatic age-based access to restricted areas, monitoring in public places",
+          "url": "https://www.sciencedirect.com/science/article/abs/pii/S2214785320361708"
+        },
+        {
+          "title": "Uncertainty-Aware Gait-Based Age Estimation and its ...",
+          "abstract": "by C Xu · 2021 · Cited by 19 — Two typical applications of gait-based age estimation are person search and people counting in surveillance scenarios, for example, searching for a lost child ...",
+          "url": "https://ieeexplore.ieee.org/iel7/8423754/9631116/09431097.pdf"
+        },
+        {
+          "title": "Automatic age-group estimation from gait energy images",
+          "abstract": "Gait-based human age group estimation has numerous applications including automatic age-based access to restricted areas, monitoring in public places",
+          "url": "https://www.researchgate.net/publication/345480970_Automatic_age-group_estimation_from_gait_energy_images"
+        },
+        {
+          "title": "Gait Biometrics Market Size, Share | CAGR of 10.9%",
+          "abstract": "Gait biometrics is a method of identifying individuals based on their unique walking patterns. gait analysis gains traction in law enforcement and border ...",
+          "url": "https://market.us/report/global-gait-biometrics-market/"
+        },
+        {
+          "title": "A Three-Dimensional Real-Time Gait-Based Age Detection ...",
+          "abstract": "by M Azhar · 2023 · Cited by 5 — In this paper, we propose a three-dimensional real-time gait-based age detection system using a machine learning approach. The proposed system ...",
+          "url": "https://www.sciopen.com/article/10.32604/cmc.2023.034605"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    }
+  ]
+}

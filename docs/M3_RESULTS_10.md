@@ -79,7 +79,11 @@ RAG 的高 cited match 不是通过增加大量引用得到的：其 cited state
 
 RAG 相对本轮 baseline 的 reference precision 提高 10.3%，reference recall 提高 36.6%，gold reference 总命中从 16 提高到 25，cited match 从 0.7318 提高到 0.8051。RAG 的 non-cited raw macro 不能直接解释成“事实准确率只有 18%”：聚合器把 7 个没有抽取到 non-cited statement 的任务记为 0；实际评判的 45 条语句 micro accuracy 为 0.6000，3 个非空任务的宏平均同为 0.6000。
 
-这次运行也定位了最后一个主要问题：证据编辑有时删除过多内容，造成空或近空报告，进而把 cited/non-cited 宏平均记为 0。运行期间代码加入了三道质量门：拒绝低于最低词数的修复结果、拒绝来源覆盖坍缩的结果、对引用清洗后坍缩的报告执行恢复生成；当前 HEAD 为 34/34 测试通过。因此 v5/v16 是问题定位和优化验证，不能冒充严格冻结主实验；最终主表必须在当前单一 commit 上使用新系统名重跑同一 10 题，再扩到 30 题。
+这次运行也定位了最后一个主要问题：证据编辑有时删除过多内容，造成空或近空报告，进而把 cited/non-cited 宏平均记为 0。运行期间代码加入了三道质量门：拒绝低于最低词数的修复结果、拒绝来源覆盖坍缩的结果、对引用清洗后坍缩的报告执行恢复生成；随后又修复了句号后方括号引用被错误合并的问题，当前 HEAD 为 35/35 测试通过。因此 v5/v16 是问题定位和优化验证，不能冒充严格冻结主实验；最终主表必须在当前单一 commit 上使用新系统名重跑同一 10 题，再扩到 30 题。
+
+## 当前冻结 baseline 候选（search-baseline-v10）
+
+`search-baseline-v10` 在统一质量门与方括号引用归位修复后完成 10/10 题，所有报告均超过 600 词且至少包含 8 个独立来源。其 reference precision 为 0.2350、recall 为 0.01298、平均引用 10.8 篇、总命中 25 篇；cited 宏平均为 0.7149、micro accuracy 为 0.7378、平均 28.6 条；non-cited raw macro 为 0.2792、micro accuracy 为 0.6825（43/63），5 个非空任务的宏平均为 0.5583。相对 v4，cited 宏平均从 0.5177 提升到 0.7149，non-cited micro 从 0.4146 提升到 0.6825；reference precision 从 0.2221 提升到 0.2350，但宏 recall 从 0.01704 降到 0.01298。该结果没有短报告或零引用报告造成的有利偏差，可作为当前公平 baseline；仍需用当前同一 commit 重跑 RAG 后才能形成最终配对主表。
 
 ## 可复现文件
 
@@ -87,8 +91,9 @@ RAG 相对本轮 baseline 的 reference precision 提高 10.3%，reference recal
 - RAG v15 pilot：`metrics/MiniMax-M3/citation-rag-v15/reference/` 与 `metrics/MiniMax-M3/citation-rag-v15/full/`
 - 反馈搜索消融：`metrics/MiniMax-M3/search-baseline-v5/reference/` 与 `metrics/MiniMax-M3/search-baseline-v5/full/`
 - 混合免费检索 RAG 验证：`metrics/MiniMax-M3/citation-rag-v16/reference/` 与 `metrics/MiniMax-M3/citation-rag-v16/full/`
+- 当前冻结 baseline 候选：`metrics/MiniMax-M3/search-baseline-v10/reference/` 与 `metrics/MiniMax-M3/search-baseline-v10/full/`
 - 旧版对照：`metrics/MiniMax-M3/search-baseline-v3/` 与 `metrics/MiniMax-M3/citation-rag-v13/`
 - 生成结果和来源池：`runs/MiniMax-M3/<system>/<arxiv_id>/result.json`（默认不提交 Git）
 - 检索审计：`scripts/audit_live_retrieval.py`
 
-所有代码修改必须先通过 `PYTHONPATH=src python -m unittest discover -s tests -v`；当前 HEAD 为 34/34 通过。
+所有代码修改必须先通过 `PYTHONPATH=src python -m unittest discover -s tests -v`；当前 HEAD 为 35/35 通过。

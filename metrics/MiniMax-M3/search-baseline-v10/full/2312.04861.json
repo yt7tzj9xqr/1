@@ -1,0 +1,259 @@
+{
+  "arxiv_id": "2312.04861",
+  "model": "MiniMax-M3",
+  "system": "search-baseline-v10",
+  "reference_precision": 0.26666666666666666,
+  "reference_recall": 0.01444043321299639,
+  "reference_count": 15,
+  "reference_matches": 4,
+  "ground_truth_count": 277,
+  "predicted_titles": [
+    "Radars for Autonomous Driving: A Review of Deep Learning Methods and Challenges",
+    "Camera–Radar Fusion with Modality Interaction and Radar Gaussian ...",
+    "RODNet: Radar Object Detection using Cross-Modal ...",
+    "RODNet: A Real-Time Radar Object Detection Network ...",
+    "Range-Doppler Detection in Automotive Radar with Deep ...",
+    "Deep Radar Detector",
+    "Towards Deep Radar Perception for Autonomous Driving",
+    "K-Radar: 4D Radar Object Detection for Autonomous Driving in Various Weather Conditions",
+    "Radar Camera Fusion via Representation Learning in Autonomous Driving",
+    "PolarNet: Accelerated Deep Open Space Segmentation Using Automotive Radar in Polar Domain",
+    "CenterRadarNet: Joint 3D Object Detection and Tracking Framework using 4D FMCW Radar",
+    "ERASE-Net: Efficient Segmentation Networks for Automotive Radar Signals",
+    "MMW Radar-Based Technologies in Autonomous Driving: A Review",
+    "GET-UP: GEomeTric-aware Depth Estimation with Radar Points UPsampling",
+    "Bootstrapping Autonomous Driving Radars with Self-Supervised Learning"
+  ],
+  "cited_match_rate": 0.4074074074074074,
+  "cited_count": 27,
+  "cited_supported": 11,
+  "cited_details": [
+    {
+      "statement": "Automotive millimeter-wave radar has become a foundational sensor for autonomous driving because of its weather robustness, low cost, and ability to directly measure target velocity through the Doppler effect [https://doi.org/10.3390/s20247283].",
+      "url": "https://doi.org/10.3390/s20247283",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "With the maturation of deep learning, radar signal processing has progressively shifted from classical detection pipelines toward learned representations that are explicitly designed for neural networks [https://arxiv.org/abs/2306.09304].",
+      "url": "https://arxiv.org/abs/2306.09304",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "This transformation has produced a diverse taxonomy of radar data representations, each encoding trade-offs between information density, computational cost, and compatibility with downstream perception tasks [https://arxiv.org/abs/2306.09304].",
+      "url": "https://arxiv.org/abs/2306.09304",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Conventional automotive radar typically produces a 3D Radar Tensor (3DRT) that stores power values along the Doppler, range, and azimuth axes [https://proceedings.neurips.cc/paper_files/paper/2022/hash/185fdf627eaae2abab36205dcd19b817-Abstract-Datasets_and_Benchmarks.html].",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2022/hash/185fdf627eaae2abab36205dcd19b817-Abstract-Datasets_and_Benchmarks.html",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Because 3DRT lacks an elevation component, reliably estimating 3D bounding boxes for objects is difficult [https://proceedings.neurips.cc/paper_files/paper/2022/hash/185fdf627eaae2abab36205dcd19b817-Abstract-Datasets_and_Benchmarks.html].",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2022/hash/185fdf627eaae2abab36205dcd19b817-Abstract-Datasets_and_Benchmarks.html",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Next-generation 4D imaging radars address this limitation by emitting a 4D Radar Tensor (4DRT) that adds an elevation dimension and produces substantially denser, spatially richer measurements [https://proceedings.neurips.cc/paper_files/paper/2022/hash/185fdf627eaae2abab36205dcd19b817-Abstract-Datasets_and_Benchmarks.html].",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2022/hash/185fdf627eaae2abab36205dcd19b817-Abstract-Datasets_and_Benchmarks.html",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The KAIST-Radar (K-Radar) dataset was introduced to support deep learning research on 4DRT, providing 35K frames captured under diverse weather conditions [https://proceedings.neurips.cc/paper_files/paper/2022/hash/185fdf627eaae2abab36205dcd19b817-Abstract-Datasets_and_Benchmarks.html].",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2022/hash/185fdf627eaae2abab36205dcd19b817-Abstract-Datasets_and_Benchmarks.html",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Beyond the static power tensor, raw radio-frequency radar tensors retain spatiotemporal semantics that are typically discarded by constant-false-alarm-rate detectors but can be exploited for joint detection and tracking [https://arxiv.org/abs/2311.01423].",
+      "url": "https://arxiv.org/abs/2311.01423",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A parallel research direction operates directly on the complex-valued baseband samples emitted by the radar front end, avoiding the information loss caused by intermediate envelope detection [https://arxiv.org/pdf/1906.12187].",
+      "url": "https://arxiv.org/pdf/1906.12187",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The Deep Radar Detector demonstrated that a convolutional network trained on calibration data can perform 4D detection while consuming the complex radar data, removing dependence on hand-engineered features [https://arxiv.org/pdf/1906.12187].",
+      "url": "https://arxiv.org/pdf/1906.12187",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "In the Range-Doppler domain specifically, deep networks have been shown to improve target detection over classical two-dimensional FFT plus thresholding pipelines [http://vigir.ee.missouri.edu/~gdesouza/Research/Conference_CDs/IEEE_WCCI_2020/IJCNN/Papers/N-21054.pdf].",
+      "url": "http://vigir.ee.missouri.edu/~gdesouza/Research/Conference_CDs/IEEE_WCCI_2020/IJCNN/Papers/N-21054.pdf",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Because radar natively acquires measurements in a polar coordinate system, learning directly in the polar domain has emerged as a natural design choice [https://arxiv.org/abs/2103.03387].",
+      "url": "https://arxiv.org/abs/2103.03387",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "PolarNet reformulates the radar tensor as a polar bird's-eye-view grid, exploiting the radial geometry of the sensor to accelerate free-space segmentation without sacrificing angular resolution [https://arxiv.org/abs/2103.03387].",
+      "url": "https://arxiv.org/abs/2103.03387",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Production automotive radar stacks traditionally output sparse point clouds in Cartesian coordinates, and these points have long served as the dominant interface to downstream perception modules [https://pmc.ncbi.nlm.nih.gov/articles/PMC9185239/].",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9185239",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "However, projecting sparse radar points onto the image plane yields very sparse depth maps that are difficult to consume directly in camera-based pipelines [https://arxiv.org/abs/2409.02720].",
+      "url": "https://arxiv.org/abs/2409.02720",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "To address this, learning-based upsampling has been proposed to densify radar point clouds prior to fusion, producing more useful geometric features for downstream depth estimation [https://arxiv.org/abs/2409.02720].",
+      "url": "https://arxiv.org/abs/2409.02720",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Because radar returns are inherently noisy and difficult to label at scale, cross-modal supervision from cameras has become a leading representation-learning paradigm [https://ui.adsabs.harvard.edu/abs/2021ISTSP..15..954W/abstract].",
+      "url": "https://ui.adsabs.harvard.edu/abs/2021ISTSP..15..954W/abstract",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "RODNet introduced a real-time radar object detection network whose training signal is derived from a camera-radar fusion algorithm, allowing it to operate on range-angle-Doppler radar tensors without manually annotated radar labels [https://ui.adsabs.harvard.edu/abs/2021ISTSP..15..954W/abstract].",
+      "url": "https://ui.adsabs.harvard.edu/abs/2021ISTSP..15..954W/abstract",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "This line of work was subsequently extended with a 3D variant and the CRUW3D dataset containing 66K synchronized camera, radar, and LiDAR frames for diverse driving scenarios [https://www.semanticscholar.org/paper/RODNet%3A-Radar-Object-Detection-using-Cross-Modal-Wang-Jiang/3b858058c04da3871848b81e8d8304e24c1282d5].",
+      "url": "https://semanticscholar.org/paper/RODNet%3A-Radar-Object-Detection-using-Cross-Modal-Wang-Jiang/3b858058c04da3871848b81e8d8304e24c1282d5",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "In parallel, self-supervised learning has been investigated to bootstrap rich radar feature representations without any manual labels, directly tackling the chronic shortage of annotated radar data [https://arxiv.org/abs/2312.04519].",
+      "url": "https://arxiv.org/abs/2312.04519",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A growing body of work fuses radar with cameras in the feature space rather than at the output level, leading to a new class of joint representations [https://arxiv.org/abs/2103.07825].",
+      "url": "https://arxiv.org/abs/2103.07825",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Representation learning for radar-camera fusion has been demonstrated to exploit the complementary physical properties of the two sensors while remaining compatible with mass-production automotive hardware [https://arxiv.org/abs/2103.07825].",
+      "url": "https://arxiv.org/abs/2103.07825",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "More recently, a modality-interaction architecture incorporating radar Gaussian splatting has been proposed to further sharpen 3D object detection by aligning the two sensor streams [https://spj.science.org/doi/pdf/10.34133/cbsystems.0079].",
+      "url": "https://spj.science.org/doi/pdf/10.34133/cbsystems.0079",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A complementary direction compresses the high-dimensional 3D radar signal into compact 2D planes to enable efficient segmentation under tight latency constraints [https://arxiv.org/abs/2209.12940].",
+      "url": "https://arxiv.org/abs/2209.12940",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The ERASE-Net family replaces the 3D input with carefully chosen 2D projections while attempting to retain the information required for accurate free-space segmentation [https://arxiv.org/abs/2209.12940].",
+      "url": "https://arxiv.org/abs/2209.12940",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The field has progressed from hand-crafted radar signal processing toward a rich palette of learned representations spanning complex data, 3D and 4D tensors, polar grids, point clouds, cross-modal embeddings, and self-supervised features [https://arxiv.org/abs/2306.09304].",
+      "url": "https://arxiv.org/abs/2306.09304",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Continued advances in 4D imaging radar hardware, large-scale annotated datasets, and self-supervised pre-training are expected to further close the performance gap between radar and camera- or LiDAR-based perception in safety-critical driving scenarios [https://pmc.ncbi.nlm.nih.gov/articles/PMC9185239/].",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9185239",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    }
+  ],
+  "noncited_factual_accuracy": 0.0,
+  "noncited_count": 1,
+  "noncited_correct": 0,
+  "noncited_details": [
+    {
+      "claim": "The most widely used representations preserve the radar's native measurement dimensions.",
+      "evidence": [
+        {
+          "title": "Off the Radar: Comparative Evaluation of Radial Visualization ...",
+          "abstract": "Radar charts are undoubtedly the most commonly used. Reuters use Radar charts to visualize and enable comparing academic institutions on sev- ...",
+          "url": "https://www.researchgate.net/publication/282832017_Off_the_Radar_Comparative_Evaluation_of_Radial_Visualization_Solutions_for_Composite_Indicators"
+        },
+        {
+          "title": "Doppler Radar Research Papers - Academia.edu",
+          "abstract": "This paper studies the use of a device based on a Doppler sensor in estimating the gait velocity in a noncontrolled environment.",
+          "url": "https://www.academia.edu/Documents/in/Doppler_Radar"
+        },
+        {
+          "title": "Exploring Radar Data Representations in Autonomous ...",
+          "abstract": "This review focuses on exploring different radar data representations utilized in autonomous driving systems.",
+          "url": "https://arxiv.org/html/2312.04861v2"
+        },
+        {
+          "title": "Bibliometric Analysis of Weather Radar Research from 1945 to 2024",
+          "abstract": "This research delves into the landscape of weather radar research from 1945 to 2024, employing scientometric methods to investigate 13,981 publications",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11175257/"
+        },
+        {
+          "title": "Effects of lidar and radar resolution on DNN-based vehicle detection",
+          "abstract": "In this examination we did not try to mimic a low-resolution sensor but to investigate the possible benefits of using constant Cartesian representation instead ...",
+          "url": "https://opg.optica.org/abstract.cfm?uri=josaa-38-10-b29"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    }
+  ]
+}

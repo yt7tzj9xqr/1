@@ -1,0 +1,426 @@
+{
+  "arxiv_id": "2306.05817",
+  "model": "MiniMax-M3",
+  "system": "search-baseline-v10",
+  "reference_precision": 0.5,
+  "reference_recall": 0.016611295681063124,
+  "reference_count": 10,
+  "reference_matches": 5,
+  "ground_truth_count": 301,
+  "predicted_titles": [
+    "Retrieval-augmented Recommender System: Enhancing Recommender Systems with Large Language Models",
+    "RecSys 2023 Tutorial: Large Language Models for Recommendation",
+    "TALLRec: An Effective and Efficient Tuning Framework to Align Large ...",
+    "Leveraging Large Language Models for Sequential Recommendation",
+    "LLM-ESR: Large Language Models Enhancement for Long-tailed ...",
+    "Collaborative Large Language Model for Recommender Systems",
+    "Recommender Systems in the Era of Large Language Models (LLMs)",
+    "Large language models as recommender systems: A study of popularity bias",
+    "Large Language Models for Next-Generation Recommendation Systems",
+    "Prompting Large Language Models for Recommender Systems: A Comprehensive Framework and Empirical Analysis"
+  ],
+  "cited_match_rate": 0.2857142857142857,
+  "cited_count": 28,
+  "cited_supported": 8,
+  "cited_details": [
+    {
+      "statement": "https://doi.org/10.1145/3604915.3608889",
+      "url": "https://doi.org/10.1145/3604915.3608889",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "https://doi.org/10.1145/3604915.3608889",
+      "url": "https://doi.org/10.1145/3604915.3608889",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "https://doi.org/10.1145/3604915.3608889",
+      "url": "https://doi.org/10.1145/3604915.3608889",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "https://doi.org/10.1145/3604915.3608889",
+      "url": "https://doi.org/10.1145/3604915.3608889",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "https://doi.org/10.1145/3604915.3608889",
+      "url": "https://doi.org/10.1145/3604915.3608889",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "https://doi.org/10.1145/3604915.3608889",
+      "url": "https://doi.org/10.1145/3604915.3608889",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "https://llmrecsys.github.io/",
+      "url": "https://llmrecsys.github.io",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "https://llmrecsys.github.io/",
+      "url": "https://llmrecsys.github.io",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "https://llmrecsys.github.io/",
+      "url": "https://llmrecsys.github.io",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "https://llmrecsys.github.io/",
+      "url": "https://llmrecsys.github.io",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "https://arxiv.org/html/2401.04997v1",
+      "url": "https://arxiv.org/html/2401.04997v1",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "https://arxiv.org/html/2401.04997v1",
+      "url": "https://arxiv.org/html/2401.04997v1",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "https://arxiv.org/abs/2305.00447",
+      "url": "https://arxiv.org/abs/2305.00447",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://arxiv.org/abs/2309.09261",
+      "url": "https://arxiv.org/abs/2309.09261",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://neurips.cc/virtual/2024/poster/93061",
+      "url": "https://neurips.cc/virtual/2024/poster/93061",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "https://neurips.cc/virtual/2024/poster/93061",
+      "url": "https://neurips.cc/virtual/2024/poster/93061",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "https://neurips.cc/virtual/2024/poster/93061",
+      "url": "https://neurips.cc/virtual/2024/poster/93061",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "https://doi.org/10.1145/3589334.3645347",
+      "url": "https://doi.org/10.1145/3589334.3645347",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "https://doi.org/10.1145/3589334.3645347",
+      "url": "https://doi.org/10.1145/3589334.3645347",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "https://doi.org/10.1145/3589334.3645347",
+      "url": "https://doi.org/10.1145/3589334.3645347",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "https://doi.org/10.1145/3589334.3645347",
+      "url": "https://doi.org/10.1145/3589334.3645347",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "https://www.amazon.science/publications/large-language-models-as-recommender-systems-a-study-of-popularity-bias",
+      "url": "https://amazon.science/publications/large-language-models-as-recommender-systems-a-study-of-popularity-bias",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://www.amazon.science/publications/large-language-models-as-recommender-systems-a-study-of-popularity-bias",
+      "url": "https://amazon.science/publications/large-language-models-as-recommender-systems-a-study-of-popularity-bias",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://doi.org/10.1109/tkde.2024.3392335",
+      "url": "https://doi.org/10.1109/tkde.2024.3392335",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "https://doi.org/10.1109/tkde.2024.3392335",
+      "url": "https://doi.org/10.1109/tkde.2024.3392335",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://doi.org/10.1109/tkde.2024.3392335",
+      "url": "https://doi.org/10.1109/tkde.2024.3392335",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://www.premai.io/blog/large-language-models-for-next-generation-recommendation-systems/",
+      "url": "https://premai.io/blog/large-language-models-for-next-generation-recommendation-systems",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://www.premai.io/blog/large-language-models-for-next-generation-recommendation-systems/",
+      "url": "https://premai.io/blog/large-language-models-for-next-generation-recommendation-systems",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    }
+  ],
+  "noncited_factual_accuracy": 0.6666666666666666,
+  "noncited_count": 6,
+  "noncited_correct": 4,
+  "noncited_details": [
+    {
+      "claim": "TALLRec is an effective and efficient tuning framework designed to align large language models with recommendation.",
+      "evidence": [
+        {
+          "title": "GitHub - SAI990323/TALLRec",
+          "abstract": "We introduce a novel framework (TALLRec) that enables the efficient and effective adaptation of LLMs to recommendation tasks.",
+          "url": "https://github.com/SAI990323/TALLRec"
+        },
+        {
+          "title": "Tuning Large Language Models for Recommendation Tasks",
+          "abstract": "TALLRec Bao et al. 4 proposed a Tuning framework for Aligning LLMs with Recommendations (TALLRec) for tuning LLMs with recommendation data.",
+          "url": "https://blog.reachsumit.com/posts/2023/05/tuning-llm-for-recsys/"
+        },
+        {
+          "title": "TALLRec: An Effective and Efficient Tuning Framework to Align Large ...",
+          "abstract": "We introduce TALLRec, an effective and efficient tuning framework that aligns LLMs with recommendation tasks, enabling the construction of Large ...",
+          "url": "https://liner.com/review/tallrec-effective-and-efficient-tuning-framework-to-align-large-language"
+        },
+        {
+          "title": "TALLRec: An Effective and Efficient Tuning Framework to Align Large ...",
+          "abstract": "We have demonstrated that the proposed TALLRec framework can significantly enhance the recommendation capabilities of LLMs in the movie and book domains,",
+          "url": "https://dl.acm.org/doi/10.1145/3604915.3608857"
+        },
+        {
+          "title": "TALLRec: An Effective and Efficient Tuning Framework to Align Large ...",
+          "abstract": "We have demonstrated that the proposed TALLRec framework can significantly enhance the recommendation capabilities of LLMs in the movie and book ...",
+          "url": "https://arxiv.org/abs/2305.00447"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "CLLM4Rec is the first generative RS that tightly integrates the LLM paradigm and ID paradigm of RSs to address the semantic gap between natural language and recommendation tasks.",
+      "evidence": [
+        {
+          "title": "Collaborative Large Language Model for Recommender Systems - GitHub",
+          "abstract": "The proposed CLLM4Rec is the first recommender system that tightly combines the ID-based paradigm and LLM-based paradigm and leverages the advantages of ...",
+          "url": "https://github.com/yaochenzhu/llm4rec"
+        },
+        {
+          "title": "Collaborative Large Language Model for Recommender Systems - alphaXiv",
+          "abstract": "In this paper, we propose CLLM4Rec, the first generative RS that tightly integrates the LLM paradigm and ID paradigm of RSs, aiming to address the above ...",
+          "url": "https://alphaxiv.org/abs/2311.01343"
+        },
+        {
+          "title": "LLM4Rec: A Comprehensive Survey on the Integration of Large ...",
+          "abstract": "Generative LLM4Rec systems focus on producing outputs, such as generating person- no verified evidence that this dataset addresses LLM scalability for ...",
+          "url": "https://www.researchgate.net/publication/392425400_LLM4Rec_A_Comprehensive_Survey_on_the_Integration_of_Large_Language_Models_in_Recommender_Systems-Approaches_Applications_and_Challenges"
+        },
+        {
+          "title": "LLM4Rec: A Comprehensive Survey on the Integration of Large ... - MDPI",
+          "abstract": "LLM4Rec represents a paradigm shift in recommendation systems, enabling more sophisticated, context-aware, and flexible recommendations.",
+          "url": "https://www.mdpi.com/1999-5903/17/6/252"
+        },
+        {
+          "title": "CLLM4Rec: LLM-Enhanced Recommenders - Emergent Mind",
+          "abstract": "The paper proposes CLLM4Rec to bridge semantic gaps between language and recommendation tasks, significantly improving recall and NDCG metrics. It introduces a ...",
+          "url": "https://www.emergentmind.com/papers/2311.01343"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "LLM-ESR proposes large language models enhancement for long-tail sequential recommendation as a promising solution from a semantic perspective.",
+      "evidence": [
+        {
+          "title": "LLM-ESR: Large Language Models Enhancement for Long-tailed ...",
+          "abstract": "LLM-ESR: Large Language Models Enhancement for Long-tailed Sequential Recommendation. Department of Data Science Research output: Chapters, Conference Papers, ...",
+          "url": "https://scholars.cityu.edu.hk/en/publications/llm-esr-large-language-models-enhancement-for-long-tailed-sequent/fingerprints/"
+        },
+        {
+          "title": "LLM-ESR: large language models enhancement for long-tailed ...",
+          "abstract": "This framework utilizes semantic embeddings derived from LLMs to enhance SRS without adding extra inference load from LLMs.",
+          "url": "https://dl.acm.org/doi/10.5555/3737916.3738755"
+        },
+        {
+          "title": "LLM-ESR: Large Language Models Enhancement for Long-tailed ...",
+          "abstract": "This research aims to effectively integrate large language models into sequential recommender systems to enhance semantic understanding and ...",
+          "url": "https://liner.com/review/llmesr-large-language-models-enhancement-for-longtailed-sequential-recommendation"
+        },
+        {
+          "title": "LLM-ESR: Large Language Models Enhancement for Long-tailed ...",
+          "abstract": "This framework utilizes semantic embeddings derived from LLMs to enhance SRS without adding extra inference load from LLMs.",
+          "url": "https://arxiv.org/abs/2405.20646"
+        },
+        {
+          "title": "LLM-ESR: Large Language Models Enhancement for Long-tailed ...",
+          "abstract": "LLM-ESR: Large Language Models Enhancement for Long-tailed Sequential Recommendation ; Format: PDF Paper Download ; Conference: Advances in Neural Information ...",
+          "url": "https://www.proceedings.com/079017-0839.html"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "In real-world systems, most users interact with only a handful of items, while the majority of items are seldom consumed, posing long-tail user and long-tail item challenges for existing SRS.",
+      "evidence": [
+        {
+          "title": "A Survey of AI Reliance - ACM Digital Library",
+          "abstract": "However, only a handful of articles allow users to interact with real AI systems (n = 21) ., deliver actual AI recommendations as part of the decision process.",
+          "url": "https://dl.acm.org/doi/10.1145/3776528"
+        },
+        {
+          "title": "Machine Learning: Algorithms, Real-World Applications and ...",
+          "abstract": "The purpose of this paper is, therefore, to provide a basic guide for those academia and industry people who want to study, research, and develop data-driven ...",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7983091/"
+        },
+        {
+          "title": "Match Between the System and the Real World (Usability Heuristic #2)",
+          "abstract": "Systems should speak users' language, follow real-world conventions, and make information appear in a natural and logical order.",
+          "url": "https://www.nngroup.com/articles/match-system-real-world/"
+        },
+        {
+          "title": "Match Between System and Real World - Pencil & Paper",
+          "abstract": "Matching between system and real world using an enterprise software lens and plenty of visual examples.",
+          "url": "https://www.pencilandpaper.io/articles/match-between-system-and-the-real-world"
+        },
+        {
+          "title": "Understanding Social Media Recommendation Algorithms",
+          "abstract": "Research on real-world social networks supports the hypothesis that reach is unpredictable. A 2016 study attempted to predict the number of ...",
+          "url": "https://knightcolumbia.org/content/understanding-social-media-recommendation-algorithms"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "The development of large language models such as ChatGPT and GPT-4 has brought remarkable abilities in fundamental responsibilities of language understanding and generation, as well as emergent reasoning.",
+      "evidence": [
+        {
+          "title": "GPT-4",
+          "abstract": "GPT‑4 considerably outperforms existing large language models ... Despite its capabilities, GPT‑4 has similar limitations as earlier GPT models.",
+          "url": "https://openai.com/index/gpt-4-research/"
+        },
+        {
+          "title": "Sparks of AGI? - Analyzing GPT-4 and the latest GPT/LLM Models",
+          "abstract": "An in-depth look into the current state of the art of Generative Pre-trained Transformer (GPT) language models, with a specific focus on the ...",
+          "url": "https://www.youtube.com/watch?v=lJNblY3Madg"
+        },
+        {
+          "title": "The general intelligence of GPT–4, its knowledge diffusive ...",
+          "abstract": "by MMJ Yekta · 2024 · Cited by 26 — The latest GPT developed by OpenAI, GPT–4, has shown remarkable intelligence Interpretability and explainability Societal influences",
+          "url": "https://www.sciencedirect.com/science/article/pii/S2950162824000316"
+        },
+        {
+          "title": "Large language models (LLMs): A brief History, applications ...",
+          "abstract": "Large language models achieve their remarkable capabilities through the combination of a deep neural network architecture, extensive training ...",
+          "url": "https://blog.gopenai.com/large-language-models-llms-a-brief-history-applications-challenges-c2fab10fa2e7"
+        },
+        {
+          "title": "A Comprehensive Survey of ChatGPT: Advancements ...",
+          "abstract": "by A Nazir · 2023 · Cited by 378 — ChatGPT, a state-of-the-art conversational language model with a user-friendly interface, has garnered substantial attention owing to its remarkable capability ...",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10611551/"
+        }
+      ],
+      "true_votes": 2,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "Sequential recommender systems (SRS) aim to predict users' subsequent choices based on their historical interactions and have found applications in diverse fields such as e-commerce and social media.",
+      "evidence": [
+        {
+          "title": "21.7. Sequence-Aware Recommender Systems",
+          "abstract": "In this section, we will introduce a recommendation model that takes the sequentially-ordered user interaction logs into account. It is a sequence-aware ...",
+          "url": "https://d2l.ai/chapter_recommender-systems/seqrec.html"
+        },
+        {
+          "title": "The Role of Fake Users in Sequential Recommender ...",
+          "abstract": "In this paper, we conduct an empirical study to assess how the presence of fake users —who engage in random interactions, follow popular or unpopular items,",
+          "url": "https://ceur-ws.org/Vol-3924/short1.pdf"
+        },
+        {
+          "title": "Building Sequential Recommender Systems: A Deep Dive",
+          "abstract": "We transitioned to an autoregressive training paradigm, where the objective is to predict the next item in a sequence given the user's prior ...",
+          "url": "https://abhinavsharmav29.medium.com/building-sequential-recommender-systems-a-deep-dive-59392e2fe331"
+        },
+        {
+          "title": "Sequential Recommender Systems: Challenges, Progress ...",
+          "abstract": "Sequential recommendation aims to predict users' next interaction item by modeling temporal patterns and behavioral transitions from historical sequences in ...",
+          "url": "https://www.researchgate.net/publication/337183009_Sequential_Recommender_Systems_Challenges_Progress_and_Prospects"
+        },
+        {
+          "title": "Sequential Recommendations in IoT Scenarios with a ...",
+          "abstract": "Their common feature is to recommend items predicted by the user learnt behaviour, i.e., they suggest the user's predicted next choice. Moreover, while the ...",
+          "url": "https://www.academia.edu/94188878/Sequential_Recommendations_in_IoT_Scenarios_with_a_Generalized_User_Behaviour_Model"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    }
+  ]
+}

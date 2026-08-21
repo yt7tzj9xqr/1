@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2306.05817",
+  "model": "MiniMax-M3",
+  "system": "search-baseline-v10",
+  "reference_precision": 0.5,
+  "reference_recall": 0.016611295681063124,
+  "reference_count": 10,
+  "reference_matches": 5,
+  "ground_truth_count": 301,
+  "predicted_titles": [
+    "Retrieval-augmented Recommender System: Enhancing Recommender Systems with Large Language Models",
+    "RecSys 2023 Tutorial: Large Language Models for Recommendation",
+    "TALLRec: An Effective and Efficient Tuning Framework to Align Large ...",
+    "Leveraging Large Language Models for Sequential Recommendation",
+    "LLM-ESR: Large Language Models Enhancement for Long-tailed ...",
+    "Collaborative Large Language Model for Recommender Systems",
+    "Recommender Systems in the Era of Large Language Models (LLMs)",
+    "Large language models as recommender systems: A study of popularity bias",
+    "Large Language Models for Next-Generation Recommendation Systems",
+    "Prompting Large Language Models for Recommender Systems: A Comprehensive Framework and Empirical Analysis"
+  ]
+}

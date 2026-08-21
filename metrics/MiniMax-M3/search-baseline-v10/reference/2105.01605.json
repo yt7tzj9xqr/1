@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2105.01605",
+  "model": "MiniMax-M3",
+  "system": "search-baseline-v10",
+  "reference_precision": 0.08333333333333333,
+  "reference_recall": 0.02040816326530612,
+  "reference_count": 12,
+  "reference_matches": 1,
+  "ground_truth_count": 49,
+  "predicted_titles": [
+    "Natural Language Person Search Using Deep Reinforcement Learning",
+    "Learning Semantic-Aligned Feature Representation for Text-Based Person Search",
+    "Joint Detection and Identification Feature Learning for Person Search",
+    "Multi-Level Joint Feature Learning for Person Re-Identification - MDPI",
+    "Asymmetric Cross-Scale Alignment for Text-Based Person Search - Cronfa",
+    "Text-based Person Search without Parallel Image-Text Data",
+    "Text-Based Person Search with Limited Data - BMVA Archive",
+    "End-to-End Deep Learning for Person Search",
+    "CUHK-SYSU Person Search Dataset",
+    "End-to-end person search sequentially trained on ...",
+    "Person Re-identification in Identity Regression Space",
+    "Triplet Online Instance Matching Loss for Person Re ..."
+  ]
+}

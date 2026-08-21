@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2308.04603",
+  "model": "MiniMax-M3",
+  "system": "search-baseline-v10",
+  "reference_precision": 0.2,
+  "reference_recall": 0.029850746268656716,
+  "reference_count": 10,
+  "reference_matches": 2,
+  "ground_truth_count": 67,
+  "predicted_titles": [
+    "Watermark Faker: Towards Forgery of Digital Image Watermarking",
+    "A Robust Image Watermarking System Based on Deep Neural Networks",
+    "HiDDeN: Hiding Data With Deep Networks",
+    "StegaStamp: Invisible Hyperlinks in Physical Photographs",
+    "A robust watermarking algorithm against JPEG compression ...",
+    "Enhancing Robustness of DNN-based Watermarking by Mini",
+    "Transform domain watermarking",
+    "Deep Boosting Robustness of DNN-based Image Watermarking via DBMark",
+    "End-to-End Image Steganography Using Deep Convolutional Autoencoders",
+    "An Automated and Robust Image Watermarking Scheme Based on Deep Neural Networks"
+  ]
+}

@@ -1,0 +1,707 @@
+{
+  "arxiv_id": "2004.05937",
+  "model": "MiniMax-M3",
+  "system": "search-baseline-v10",
+  "reference_precision": 0.4,
+  "reference_recall": 0.013114754098360656,
+  "reference_count": 10,
+  "reference_matches": 4,
+  "ground_truth_count": 305,
+  "predicted_titles": [
+    "Distilling the Knowledge in a Neural Network",
+    "FitNets: Hints for Thin Deep Nets",
+    "Improve the Performance of Convolutional Neural ...",
+    "Ensemble Learning of Lightweight Deep Learning Models Using Knowledge Distillation for Image Classification",
+    "Show, Attend and Distill: Knowledge Distillation via Attention-based Feature Matching",
+    "Data-Distortion Guided Self-Distillation for Deep Neural Networks",
+    "Search for Better Students to Learn Distilled Knowledge",
+    "Cross-Layer Distillation with Semantic Calibration",
+    "Knowledge Distillation by On-the-Fly Native Ensemble",
+    "Improved Knowledge Distillation via Teacher Assistant"
+  ],
+  "cited_match_rate": 0.19047619047619047,
+  "cited_count": 21,
+  "cited_supported": 4,
+  "cited_details": [
+    {
+      "statement": "https://doi.org/10.1609/aaai.v34i04.5963",
+      "url": "https://doi.org/10.1609/aaai.v34i04.5963",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "https://doi.org/10.3390/math8101652",
+      "url": "https://doi.org/10.3390/math8101652",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "https://arxiv.org/abs/1503.02531",
+      "url": "https://arxiv.org/abs/1503.02531",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://doi.org/10.1609/aaai.v34i04.5963",
+      "url": "https://doi.org/10.1609/aaai.v34i04.5963",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "https://doi.org/10.3390/math8101652",
+      "url": "https://doi.org/10.3390/math8101652",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "https://doi.org/10.3390/math8101652",
+      "url": "https://doi.org/10.3390/math8101652",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "https://doi.org/10.1609/aaai.v35i8.16865",
+      "url": "https://doi.org/10.1609/aaai.v35i8.16865",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "FitNets, by Romero, Ballas, Ebrahimi Kahou, Chassang, Gatta, and Bengio, was published as a conference paper at ICLR 2015 and is titled \"FitNets: Hints for Thin Deep Nets.\" https://arxiv.org/abs/1412.6550",
+      "url": "https://arxiv.org/abs/1412.6550",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://doi.org/10.1609/aaai.v35i9.16969",
+      "url": "https://doi.org/10.1609/aaai.v35i9.16969",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "https://doi.org/10.1609/aaai.v35i9.16969",
+      "url": "https://doi.org/10.1609/aaai.v35i9.16969",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "https://doi.org/10.1609/aaai.v35i8.16865",
+      "url": "https://doi.org/10.1609/aaai.v35i8.16865",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "https://doi.org/10.1609/aaai.v35i8.16865",
+      "url": "https://doi.org/10.1609/aaai.v35i8.16865",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "https://qmro.qmul.ac.uk/xmlui/handle/123456789/58358",
+      "url": "https://qmro.qmul.ac.uk/xmlui/handle/123456789/58358",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "https://doi.org/10.1609/aaai.v34i04.5963",
+      "url": "https://doi.org/10.1609/aaai.v34i04.5963",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "https://doi.org/10.1609/aaai.v34i04.5963",
+      "url": "https://doi.org/10.1609/aaai.v34i04.5963",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "https://qmro.qmul.ac.uk/xmlui/handle/123456789/58358",
+      "url": "https://qmro.qmul.ac.uk/xmlui/handle/123456789/58358",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "https://qmro.qmul.ac.uk/xmlui/handle/123456789/58358",
+      "url": "https://qmro.qmul.ac.uk/xmlui/handle/123456789/58358",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "https://doi.org/10.1609/aaai.v33i01.33015565",
+      "url": "https://doi.org/10.1609/aaai.v33i01.33015565",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The Be Your Own Teacher paper by Linfeng Zhang, Jiebo Song, Anni Gao, Jingwei Chen, Chenglong Bao, and Kaisheng Ma at Tsinghua University is titled \"Be Your Own Teacher: Improve the Performance of Convolutional Neural Networks via Self Distillation.\" http://group.iiis.tsinghua.edu.cn/~maks/publications/pdf/Self-distillation.pdf",
+      "url": "http://group.iiis.tsinghua.edu.cn/~maks/publications/pdf/Self-distillation.pdf",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://doi.org/10.1609/aaai.v33i01.33015565",
+      "url": "https://doi.org/10.1609/aaai.v33i01.33015565",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "https://arxiv.org/abs/2001.11612",
+      "url": "https://arxiv.org/abs/2001.11612",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    }
+  ],
+  "noncited_factual_accuracy": 0.875,
+  "noncited_count": 16,
+  "noncited_correct": 14,
+  "noncited_details": [
+    {
+      "claim": "Hinton, Vinyals, and Dean at Google Inc. presented distillation as a very simple way to improve the performance of almost any machine learning algorithm.",
+      "evidence": [
+        {
+          "title": "Distilling the Knowledge in a Neural Network",
+          "abstract": "by G Hinton · 2015 · Cited by 34605 — A very simple way to improve the performance of almost any machine learning algorithm is to train many different models on the same data and ...",
+          "url": "https://arxiv.org/abs/1503.02531"
+        },
+        {
+          "title": "Distilling the Knowledge in a Neural Network - Geoffrey Hinton",
+          "abstract": "A simple way to improve classification performance is to average the predictions of a large ensemble of different classifiers. This is great ...",
+          "url": "https://www.youtube.com/watch?v=kfR6Jq-51x0"
+        },
+        {
+          "title": "Distilling the Knowledge in a Neural Network | Request PDF",
+          "abstract": "A very simple way to improve the performance of almost any machine learning algorithm is to train many different models on the same data and then to average ...",
+          "url": "https://www.researchgate.net/publication/319769909_Distilling_the_Knowledge_in_a_Neural_Network"
+        },
+        {
+          "title": "A Gentle Introduction to Hint Learning & Knowledge ...",
+          "abstract": "The combination of hint learning and knowledge distillation is a very powerful scheme to improve the performance of neural networks.",
+          "url": "https://pub.towardsai.net/a-gentle-introduction-to-knowledge-distillation-6240bf8eb8ea"
+        },
+        {
+          "title": "Distilling the Knowledge in a Neural Network",
+          "abstract": "Abstract. A very simple way to improve the performance of almost any machine learning algorithm is to train many different ...",
+          "url": "https://www.chapterpal.com/s/yny6n2jo/distilling-the-knowledge-in-a-neural-network"
+        }
+      ],
+      "true_votes": 2,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "Modern deep learning models are huge in size, with millions to billions of parameters, and cannot be deployed on systems and devices with limited resources such as embedded systems and mobile phones.",
+      "evidence": [
+        {
+          "title": "What Are Large Language Models (LLMs)? - IBM",
+          "abstract": "Large language models (LLMs) are a category of deep learning models trained on immense amounts of data, making them capable of understanding and generating ...",
+          "url": "https://www.ibm.com/think/topics/large-language-models"
+        },
+        {
+          "title": "Sometimes Bigger Machine Learning Models and Larger Datasets Can ...",
+          "abstract": "Contrasting with the bias-variance tradeoff, deep neural networks with millions of parameters have proven to outperform smaller models.",
+          "url": "https://pub.towardsai.net/sometimes-bigger-machine-learning-models-and-larger-datasets-can-hurt-performance-ae26ab530e67"
+        },
+        {
+          "title": "Artificial intelligence: A powerful paradigm for scientific research",
+          "abstract": "This paper undertakes a comprehensive survey on the development and application of AI in different aspects of fundamental sciences, including ...",
+          "url": "https://www.sciencedirect.com/science/article/pii/S2666675821001041"
+        },
+        {
+          "title": "Deep Learning: A Comprehensive Overview on Techniques ...",
+          "abstract": "While deep learning takes a long time to train a model due to a large number of parameters, it takes a short amount of time to run during testing",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8372231/"
+        },
+        {
+          "title": "Ensemble Learning of Lightweight Deep Learning Models Using Knowledge Distillation for Image Classification",
+          "abstract": "In recent years, deep learning models have been used successfully in almost every field including both industry and academia, especially for computer vision tasks. However, these models are huge in size, with millions (and billions) of parameters, and thus cannot be deployed on the systems and devices with limited resources (e.g., embedded systems and mobile phones). To tackle this, several techniques on model compression and acceleration have been proposed. As a representative type of them, knowledge distillation suggests a way to effectively learn a small student model from large teacher model(s). It has attracted increasing attention since it showed its promising performance. In the work, we propose an ensemble model that combines feature-based, response-based, and relation-based lightweight knowledge distillation models for simple image classification tasks. In our knowledge distillation framework, we use ResNet−20 as a student network and ResNet−110 as a teacher network. Experimental results demonstrate that our proposed ensemble model outperforms other knowledge distillation models as well as the large teacher model for image classification tasks, with less computational power than the teacher model.",
+          "url": "https://doi.org/10.3390/math8101652"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "Knowledge distillation (KD) is a model-compression technique in which a large pre-trained teacher network is used to train a smaller student network, supporting deployment on resource-constrained devices such as embedded systems and mobile phones.",
+      "evidence": [
+        {
+          "title": "A survey on knowledge distillation: Recent advancements",
+          "abstract": "Knowledge distillation (KD) has emerged as a key technique for model compression and efficient knowledge transfer, enabling the deployment of deep learning ...",
+          "url": "https://www.sciencedirect.com/science/article/pii/S2666827024000811"
+        },
+        {
+          "title": "Explanation Guided Knowledge Distillation for Pre-trained ...",
+          "abstract": "Knowledge distillation is widely used in pre-trained language model compression, which can transfer knowledge from a cumbersome model to a lightweight one.",
+          "url": "https://dl.acm.org/doi/full/10.1145/3639364"
+        },
+        {
+          "title": "Knowledge Distillation: Compressing Large Models into Efficient Learners",
+          "abstract": "Knowledge distillation compresses large models into smaller ones by training a student to match a teacher's outputs. It enables fast, lightweight deployment ...",
+          "url": "https://www.lightly.ai/blog/knowledge-distillation"
+        },
+        {
+          "title": "Knowledge distillation in deep learning and its applications",
+          "abstract": "In offline distillation, the knowledge distillation process is performed using a pre-trained teacher model. While online distillation is for ...",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8053015/"
+        },
+        {
+          "title": "Improved Knowledge Distillation via Teacher Assistant",
+          "abstract": "Despite the fact that deep neural networks are powerful models and achieve appealing results on many tasks, they are too large to be deployed on edge devices like smartphones or embedded sensor nodes. There have been efforts to compress these networks, and a popular method is knowledge distillation, where a large (teacher) pre-trained network is used to train a smaller (student) network. However, in this paper, we show that the student network performance degrades when the gap between student and teacher is large. Given a fixed student network, one cannot employ an arbitrarily large teacher, or in other words, a teacher can effectively transfer its knowledge to students up to a certain size, not smaller. To alleviate this shortcoming, we introduce multi-step knowledge distillation, which employs an intermediate-sized network (teacher assistant) to bridge the gap between the student and the teacher. Moreover, we study the effect of teacher assistant size and extend the framework to multi-step distillation. Theoretical analysis and extensive experiments on CIFAR-10,100 and ImageNet datasets and on CNN and ResNet architectures substantiate the effectiveness of our proposed approach.",
+          "url": "https://doi.org/10.1609/aaai.v34i04.5963"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "The Teacher Assistant study describes knowledge distillation as a popular method to compress large networks by training small students under the guidance of a stronger teacher.",
+      "evidence": [
+        {
+          "title": "What is knowledge distillation in AI model learning?",
+          "abstract": "Knowledge distillation involves compressing a large instructor model into a smaller student model by aligning their predictions.",
+          "url": "https://www.facebook.com/groups/fisheyebox/posts/9220503231398594/"
+        },
+        {
+          "title": "Improved Knowledge Distillation via Teacher Assistant",
+          "abstract": "a popular method is knowledge distillation, where a large (teacher) pre-trained network is used to train a smaller (student) network.",
+          "url": "https://www.alphaxiv.org/paper/1902.03393"
+        },
+        {
+          "title": "Improved Knowledge Distillation via Teacher Assistant",
+          "abstract": "by SI Mirzadeh · 2020 · Cited by 1798 — There have been efforts to compress these networks, and a popular method is knowledge distil- lation, where a large (teacher) pre-trained network is used to ...",
+          "url": "https://ojs.aaai.org/index.php/AAAI/article/view/5963/5819"
+        },
+        {
+          "title": "Improved Knowledge Distillation via Teacher Assistant",
+          "abstract": "a popular method is knowledge distillation, where a large (teacher) pre-trained network is used to train a smaller ( student) network.",
+          "url": "https://imirzadeh.me/publication/takd/"
+        },
+        {
+          "title": "Knowledge Distillation: Compressing Large Models into ...",
+          "abstract": "Knowledge distillation compresses large models into smaller ones by training a student to match a teacher's outputs. It enables fast, lightweight deployment ...",
+          "url": "https://www.lightly.ai/blog/knowledge-distillation"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "For simple image classification tasks, an ensemble model can combine feature-based, response-based, and relation-based lightweight knowledge distillation models, with ResNet-20 used as a student network and ResNet-110 as a teacher network.",
+      "evidence": [
+        {
+          "title": "Remote sensing image classification using an ensemble framework ...",
+          "abstract": "Recently, ensemble multiple deep learning (DL) classifiers has been reported to be an effective method for improving remote sensing classification accuracy.",
+          "url": "https://www.sciencedirect.com/science/article/abs/pii/S0924271624000145"
+        },
+        {
+          "title": "Lightweight Image Classification Network Based on Feature...",
+          "abstract": "This paper proposes a feature extraction network called SimpleResUNet based on ResNet and U-Net, and adopts the Attention mechanism as the feature classifier ...",
+          "url": "https://openreview.net/forum?id=tItq3cwzYc&referrer=%5Bthe%20profile%20of%20Yuhao%20Jin%5D(%2Fprofile%3Fid%3D~Yuhao_Jin1)"
+        },
+        {
+          "title": "image classification using ensemble modeling and deep learning",
+          "abstract": "In this project, we focus on the classification of images into different categories by running various ensemble machine-learning models like Decision Tree model ...",
+          "url": "https://scholarworks.sjsu.edu/etd_projects/1243/"
+        },
+        {
+          "title": "Which Image Classification Model? | Transformers, CNNs, and Hybrid",
+          "abstract": "CNNs are still the most popular Image Classification algorithm due to their lightweight, easy-to-deploy, and less data-dependent nature.",
+          "url": "https://www.sabrepc.com/blog/deep-learning-and-ai/image-classification-models-transformers-cnns-and-hybrid?srsltid=AfmBOorxgzhQjZ6IqzIRjnebIdI3i2eh42gFdSH0aEAjK5InEo52ctad"
+        },
+        {
+          "title": "Ensemble Learning of Lightweight Deep Learning Models Using ...",
+          "abstract": "In the work, we propose an ensemble model that combines feature-based, response-based, and relation-based lightweight knowledge distillation models for simple ...",
+          "url": "https://www.mdpi.com/2227-7390/8/10/1652"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "The Show, Attend and Distill method introduces an attention-based meta-network that learns relative similarities between features and applies identified similarities to control distillation intensities of all possible pairs, determining competent links more efficiently than the previous approach.",
+      "evidence": [
+        {
+          "title": "BERT Learns to Teach: Knowledge Distillation with Meta Learning",
+          "abstract": "We present Knowledge Distillation with Meta Learning (MetaDistil), a simple yet effective alternative to traditional knowledge distillation (KD) methods where ...",
+          "url": "https://aclanthology.org/2022.acl-long.485/"
+        },
+        {
+          "title": "Categories of Response-Based, Feature-Based, and Relation ... - arXiv",
+          "abstract": "AFD [58] proposes an attention-based meta-network to model relative similarities between teacher and student features.",
+          "url": "https://arxiv.org/pdf/2306.10687"
+        },
+        {
+          "title": "Knowledge Distillation via Attention-based Feature Matching ...",
+          "abstract": "In this paper, an attention-based meta network is proposed to learn relative similarities between features, and applies identified similarities to control ...",
+          "url": "https://scispace.com/papers/show-attend-and-distill-knowledge-distillation-via-attention-46gkkb5lqu"
+        },
+        {
+          "title": "Frequency Attention for Knowledge Distillation - Semantic Scholar",
+          "abstract": "This paper introduces an effective and efficient feature distillation method … attention based meta network that learns relative similarities between features,",
+          "url": "https://www.semanticscholar.org/paper/Frequency-Attention-for-Knowledge-Distillation-Pham-Nguyen/d72b9032a04c85650e96cd097b9ec360c5542594"
+        },
+        {
+          "title": "Knowledge Distillation via Attention-based Feature Matching",
+          "abstract": "Specifically, our method utilizes an attention based meta network that learns relative similarities between features, and applies identified ...",
+          "url": "https://ojs.aaai.org/index.php/AAAI/article/view/16969"
+        }
+      ],
+      "true_votes": 2,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "In SemCKD, the authors note that semantics of intermediate layers may vary in different networks and that manual association of layers might lead to negative regularization caused by semantic mismatch between certain teacher-student layer pairs.",
+      "evidence": [
+        {
+          "title": "DefangChen/SemCKD: [AAAI-2021, TKDE-2023] Official ...",
+          "abstract": "SemCKD belongs to feature-map distillation and is compatible with SOTA feature-embedding distillation (e.g., CRD) to further boost the performance of Student ...",
+          "url": "https://github.com/DefangChen/SemCKD"
+        },
+        {
+          "title": "Cross-Layer Distillation with Semantic Calibration",
+          "abstract": "by D Chen · 2020 · Cited by 511 — However, layer semantics may vary in different neural networks and semantic mismatch in manual layer associations will lead to performance ...",
+          "url": "https://arxiv.org/abs/2012.03236"
+        },
+        {
+          "title": "Semantic Calibration in Knowledge Distillation | PDF",
+          "abstract": "SemCKD automatically associates student layers with semantically relevant teacher layers, allowing for improved generalization and performance.",
+          "url": "https://www.scribd.com/document/941125936/16865-Article-Text-20359-1-2-20210518"
+        },
+        {
+          "title": "Semantic Calibration for Cross-Layer Knowledge Distillation",
+          "abstract": "Semantic Calibration for Cross-layer Knowledge Distillation (SemCKD), which automatically assigns proper target layers of the teacher model for each student ...",
+          "url": "https://www.semanticscholar.org/paper/SemCKD%3A-Semantic-Calibration-for-Cross-Layer-Wang-Chen/4800a47715ea174db4835cc650291e2b14f9b9c5"
+        },
+        {
+          "title": "Semantic Calibration for Cross-Layer Knowledge Distillation",
+          "abstract": "semantics of intermediate layers may vary in different networks and manual association of layers might lead to negative regularization caused by semantic ...",
+          "url": "https://www.researchgate.net/publication/360362912_SemCKD_Semantic_Calibration_for_Cross-Layer_Knowledge_Distillation"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "SemCKD automatically assigns proper target layers of the teacher model for each student layer with an attention mechanism, and with a learned attention distribution, each student layer distills knowledge contained in multiple layers rather than a single fixed intermediate layer from the teacher.",
+      "evidence": [
+        {
+          "title": "Semantic Calibration in Knowledge Distillation | PDF",
+          "abstract": "By employing an attention mechanism, SemCKD automatically associates student layers with semantically relevant teacher layers, allowing for improved ...",
+          "url": "https://www.scribd.com/document/941125936/16865-Article-Text-20359-1-2-20210518"
+        },
+        {
+          "title": "Semantic Calibration for Cross-Layer Knowledge Distillation",
+          "abstract": "Knowledge distillation is a technique to enhance the generalization ability of a student model by exploiting outputs from a teacher model.",
+          "url": "https://www.semanticscholar.org/paper/SemCKD%3A-Semantic-Calibration-for-Cross-Layer-Wang-Chen/4800a47715ea174db4835cc650291e2b14f9b9c5"
+        },
+        {
+          "title": "Cross-Layer Distillation with Semantic Calibration",
+          "abstract": "Semantic Calibration for Cross-layer Knowledge Distillation (SemCKD), which automatically assigns proper target layers of the teacher model for each student ...",
+          "url": "https://www.semanticscholar.org/paper/Cross-Layer-Distillation-with-Semantic-Calibration-Chen-Mei/e3dbe8d2e8d045ae5a8cfa52a520f3aa31a35a21"
+        },
+        {
+          "title": "Cross-Layer Distillation with Semantic Calibration",
+          "abstract": "by D Chen · 2020 · Cited by 511 — Semantic Calibration for cross-layer Knowledge Distillation (SemCKD), which automatically assigns proper target layers of the teacher model for ...",
+          "url": "https://arxiv.org/abs/2012.03236"
+        },
+        {
+          "title": "Cross-Layer Distillation with Semantic Calibration",
+          "abstract": "by D Chen · 2021 · Cited by 511 — ... (SemCKD), which automatically assigns proper target layers of the teacher model for each student layer with an attention mechanism. With a ...",
+          "url": "https://ojs.aaai.org/index.php/AAAI/article/view/16865"
+        }
+      ],
+      "true_votes": 2,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "Existing offline distillation methods rely on a strong pre-trained teacher, which enables favorable knowledge discovery and transfer but requires a complex two-phase training procedure.",
+      "evidence": [
+        {
+          "title": "Shadow Knowledge Distillation: Bridging Offline and Online ...",
+          "abstract": "Offline distillation can achieve competitive performance gain by fine-tuning pre-trained teacher to adapt student with such reversed distillation.",
+          "url": "https://papers.neurips.cc/paper_files/paper/2022/file/040d3b6af368bf71f952c18da5713b48-Paper-Conference.pdf"
+        },
+        {
+          "title": "Simplified Knowledge Distillation for Deep Neural Networks Bridging the ...",
+          "abstract": "This paper introduces a novel knowledge distillation method that simplifies the distillation process and narrows the performance gap between teacher and student ...",
+          "url": "https://www.mdpi.com/2079-9292/13/22/4530"
+        },
+        {
+          "title": "What is Knowledge distillation? | IBM",
+          "abstract": "Knowledge distillation is a machine learning technique used to transfer the learning of a large pre-trained “teacher model” to a smaller “student model.”",
+          "url": "https://www.ibm.com/think/topics/knowledge-distillation"
+        },
+        {
+          "title": "A survey on knowledge distillation: Recent advancements",
+          "abstract": "Offline distillation involves training the teacher model first and then transferring its knowledge to the student in a separate process. It is commonly used ...",
+          "url": "https://www.sciencedirect.com/science/article/pii/S2666827024000811"
+        },
+        {
+          "title": "Knowledge Distillation by On-the-Fly Native Ensemble - NIPS",
+          "abstract": "Existing offline distillation methods rely on a strong pre-trained teacher, which enables favourable knowledge discovery and transfer but requires a complex ...",
+          "url": "https://papers.nips.cc/paper/7980-knowledge-distillation-by-on-the-fly-native-ensemble"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "The Teacher Assistant study shows that the student network performance degrades when the gap between student and teacher is large, and introduces multi-step knowledge distillation, which employs an intermediate-sized network, called a teacher assistant, to bridge the gap between the student and the teacher.",
+      "evidence": [
+        {
+          "title": "Do TAs improve pupils outcomes in mainstream schools?",
+          "abstract": "the pupils who received most support from TAs made the least progress in science, maths and English compared with pupils who received little mathematics ...",
+          "url": "https://my.chartered.college/research-hub/do-teaching-assistants-improve-pupil-outcomes-in-mainstream-schools/"
+        },
+        {
+          "title": "Improved Knowledge Distillation via Teacher Assistant",
+          "abstract": "by SI Mirzadeh · 2019 · Cited by 1798 — However, in this paper, we show that the student network performance degrades when the gap between student and teacher is large. Given a ...",
+          "url": "https://arxiv.org/abs/1902.03393"
+        },
+        {
+          "title": "Improved Knowledge Distillation via Teacher Assistant",
+          "abstract": "by SI Mirzadeh · 2020 · Cited by 1798 — However, in this pa- per, we show that the student network performance degrades when the gap between student and teacher is large. Given a fixed student ...",
+          "url": "https://ojs.aaai.org/index.php/AAAI/article/view/5963/5819"
+        },
+        {
+          "title": "Kids are not “getting dumber” the achievement gap is ...",
+          "abstract": "New international study in 25 countries shows that students who had to repeat a grade are more likely to be bullied at school. The authors ...",
+          "url": "https://www.reddit.com/r/Teachers/comments/xoq6cu/kids_are_not_getting_dumber_the_achievement_gap/"
+        },
+        {
+          "title": "“Addressing the international data gap on teaching ...",
+          "abstract": "The international data tell us about almost nothing about education paraprofessionals, known as teaching assistants or teacher aides (TAs).",
+          "url": "https://www.ei-ie.org/en/item/24927:addressing-the-international-data-gap-on-teaching-assistants-by-rob-webster"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "The same work also studies the effect of teacher assistant size and extends the framework to multi-step distillation.",
+      "evidence": [
+        {
+          "title": "AMD: Automatic Multi-step Distillation of Large-scale Vision Models - ECVA",
+          "abstract": "In this paper, we present a novel approach named Automatic Multi-step Distillation (AMD) for large-scale vision model compression.",
+          "url": "https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/08272.pdf"
+        },
+        {
+          "title": "Improved Knowledge Distillation via Teacher Assistant",
+          "abstract": "Moreover, we study the effect of teacher assistant size and extend the framework to multi-step distillation. Theoretical analysis and extensive ...",
+          "url": "https://arxiv.org/abs/1902.03393"
+        },
+        {
+          "title": "Improved Knowledge Distillation via Teacher Assistant",
+          "abstract": "multi-step knowledge distillation, Moreover, we study the effect of teacher assistant size and extend the framework to multi-step distillation.",
+          "url": "https://ojs.aaai.org/index.php/AAAI/article/view/5963/5819"
+        },
+        {
+          "title": "Multi-Student Distillation - Research at NVIDIA",
+          "abstract": "In this work, we introduce Multi-Student Distillation (MSD), a framework to distill a conditional teacher diffusion model into multiple single- step generators.",
+          "url": "https://research.nvidia.com/labs/toronto-ai/MSD/index_hidden.html"
+        },
+        {
+          "title": "A Multi-Teacher Knowledge Distillation Framework with ... - MDPI",
+          "abstract": "In this work, we propose a Multi-Round Parallel Multi-Teacher Distillation (MPMTD) that systematically explores and combines multiple aggregation techniques.",
+          "url": "https://www.mdpi.com/2571-5577/8/5/146"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "Online counterparts address the limitation of two-phase offline training at the price of lacking a high-capacity teacher.",
+      "evidence": [
+        {
+          "title": "Online Course Taking and High School Student Performance",
+          "abstract": "by CMD Hart · 2019 · Cited by 280 — This article uses fixed effects models to estimate differences in contemporaneous and downstream academic outcomes for students who take ...",
+          "url": "https://journals.sagepub.com/doi/10.1177/2332858419832852"
+        },
+        {
+          "title": "Factors Driving Learner Success in Online Professional ...",
+          "abstract": "by P Vu · 2014 · Cited by 171 — Findings showed that participants who failed the training program had significantly higher scores on teacher beliefs towards training students for jobs",
+          "url": "https://www.irrodl.org/index.php/irrodl/article/view/1714/2907"
+        },
+        {
+          "title": "Knowledge Distillation by On-the-Fly Native Ensemble",
+          "abstract": "Knowledge distillation is effective to train small and generalisable network models for meeting the low-memory and fast running requirements.Existing offline distillation methods rely on a strong pre-trained teacher, which enables favourable knowledge discovery and transfer but requires a complex two-phase training procedure.Online counterparts address this limitation at the price of lacking a highcapacity teacher.In this work, we present an On-the-fly Native Ensemble (ONE) strategy for one-stage online distillation.Specifically, ONE trains only a single multi-branch network while simultaneously establishing a strong teacher on-thefly to enhance the learning of target network.Extensive evaluations show that ONE improves the generalisation performance a variety of deep neural networks more significantly than alternative methods on four image classification dataset: CIFAR10, CIFAR100, SVHN, and ImageNet, whilst having the computational efficiency advantages.",
+          "url": "https://qmro.qmul.ac.uk/xmlui/handle/123456789/58358"
+        },
+        {
+          "title": "Cross-Layer Distillation with Semantic Calibration",
+          "abstract": "Recently proposed knowledge distillation approaches based on feature-map transfer validate that intermediate layers of a teacher model can serve as effective targets for training a student model to obtain better generalization ability. Existing studies mainly focus on particular representation forms for knowledge transfer between manually specified pairs of teacher-student intermediate layers. However, semantics of intermediate layers may vary in different networks and manual association of layers might lead to negative regularization caused by semantic mismatch between certain teacher-student layer pairs. To address this problem, we propose Semantic Calibration for Cross-layer Knowledge Distillation (SemCKD), which automatically assigns proper target layers of the teacher model for each student layer with an attention mechanism. With a learned attention distribution, each student layer distills knowledge contained in multiple layers rather than a single fixed intermediate layer from the teacher model for appropriate cross-layer supervision in training. Consistent improvements over state-of-the-art approaches are observed in extensive experiments with various network architectures for teacher and student models, demonstrating the effectiveness and flexibility of the proposed attention based soft layer association mechanism for cross-layer distillation.",
+          "url": "https://doi.org/10.1609/aaai.v35i8.16865"
+        },
+        {
+          "title": "Distilling Visual Priors from Self-Supervised Learning",
+          "abstract": "Convolutional Neural Networks (CNNs) are prone to overfit small training datasets. We present a novel two-phase pipeline that leverages self-supervised learning and knowledge distillation to improve the generalization ability of CNN models for image classification under the data-deficient setting. The first phase is to learn a teacher model which possesses rich and generalizable visual representations via self-supervised learning, and the second phase is to distill the representations into a student model in a self-distillation manner, and meanwhile fine-tune the student model for the image classification task. We also propose a novel margin loss for the self-supervised contrastive learning proxy task to better learn the representation under the data-deficient scenario. Together with other tricks, we achieve competitive performance in the VIPriors image classification challenge.",
+          "url": "https://arxiv.org/abs/2008.00261"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "The On-the-fly Native Ensemble (ONE) strategy trains only a single multi-branch network while simultaneously establishing a strong teacher on-the-fly to enhance the learning of the target network, with extensive evaluations showing improved generalization performance on CIFAR-10, CIFAR-100, SVHN, and ImageNet alongside computational efficiency advantages.",
+      "evidence": [
+        {
+          "title": "Feature-Level Ensemble Knowledge Distillation for ...",
+          "abstract": "This work presents an On-the-fly Native Ensemble strategy for one ... This paper presents a method to train a thin deep network by incorporating multiple ...",
+          "url": "https://www.semanticscholar.org/paper/Feature-Level-Ensemble-Knowledge-Distillation-for-Park-Kwak/322630e0c91b6050169faf6688514aff902e1c4d"
+        },
+        {
+          "title": "Knowledge Distillation by On-the-Fly Native Ensemble",
+          "abstract": "ONE trains only a single multi-branch network while simultaneously establishing a strong teacher on-the- fly to enhance the learning of target ...",
+          "url": "https://www.researchgate.net/publication/325733969_Knowledge_Distillation_by_On-the-Fly_Native_Ensemble"
+        },
+        {
+          "title": "Knowledge Distillation by On-the-Fly Native Ensemble",
+          "abstract": "This paper proposed an online approach to train deep models. The approach trained the deep networks with multiply branches (including the target network) ...",
+          "url": "https://proceedings.neurips.cc/paper_files/paper/2018/file/94ef7214c4a90790186e255304f8fd1f-Reviews.html"
+        },
+        {
+          "title": "Knowledge Distillation by On-the-Fly Native Ensemble",
+          "abstract": "by X Lan · 2018 · Cited by 735 — ONE trains only a single multi-branch network while simultaneously establishing a strong teacher on-the- fly to enhance the learning of target ...",
+          "url": "https://arxiv.org/abs/1806.04606"
+        },
+        {
+          "title": "Knowledge Distillation by On-the-Fly Native Ensemble",
+          "abstract": "In this work, The authors employ a network model with branch like Resnet(a category of two branch network where one branch is the identity ...",
+          "url": "https://vitalab.github.io/article/2018/06/14/one_ensemble.html"
+        }
+      ],
+      "true_votes": 2,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "Knowledge distillation depends on accompanying assistive models, which complicates the training process of a single network because of large memory and time cost.",
+      "evidence": [
+        {
+          "title": "Knowledge distillation in deep learning and its applications",
+          "abstract": "Knowledge distillation is one approach to derive compact models from bigger ones. However, it has been observed that a converged heavy teacher model is strongly ...",
+          "url": "https://www.researchgate.net/publication/350873369_Knowledge_distillation_in_deep_learning_and_its_applications"
+        },
+        {
+          "title": "Knowledge distillation in deep learning and its applications",
+          "abstract": "The goal of knowledge distillation is to provide smaller models that solve the same task as larger models (Hinton, Vinyals & Dean, 2015) ( a ...",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8053015/"
+        },
+        {
+          "title": "What is Knowledge distillation? | IBM",
+          "abstract": "Knowledge distillation is a machine learning technique used to transfer the learning of a large pre-trained “teacher model” to a smaller “student model.”",
+          "url": "https://www.ibm.com/think/topics/knowledge-distillation"
+        },
+        {
+          "title": "What is Knowledge Distillation? | SKY ENGINE AI",
+          "abstract": "Knowledge distillation is a technique for compressing a complicated and huge neural network into a smaller and simpler one while keeping the accuracy and ...",
+          "url": "https://www.skyengine.ai/blog/what-is-knowledge-distillation"
+        },
+        {
+          "title": "Improved Knowledge Distillation via Teacher Assistant",
+          "abstract": "knowledge distillation improves neural network training. The so-called dark knowledge transferred in the process helps the student learn the finer structure ...",
+          "url": "https://ojs.aaai.org/index.php/AAAI/article/view/5963/5819"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "The Data-Distortion Guided Self-Distillation method transfers knowledge between different distorted versions of the same training data without reliance on accompanying models, with extensive experiments on CIFAR-10, CIFAR-100, and ImageNet demonstrating effective improvement of generalization performance for architectures including AlexNet, ResNet, Wide ResNet, and DenseNet.",
+      "evidence": [
+        {
+          "title": "Data-Distortion Guided Self-Distillation for Deep Neural ...",
+          "abstract": "In this paper, we design a more elegant self-distillation mechanism to transfer knowledge between different distorted versions of same training data without the ...",
+          "url": "https://www.researchgate.net/publication/335476911_Data-Distortion_Guided_Self-Distillation_for_Deep_Neural_Networks"
+        },
+        {
+          "title": "Knowledge distillation in deep learning and its applications",
+          "abstract": "by A Alkhulaifi · 2021 · Cited by 167 — The main goal of knowledge distillation is to produce smaller models (student models) to solve the same task as larger models (teacher models) ...",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8053015/"
+        },
+        {
+          "title": "Data-Distortion Guided Self-Distillation for Deep Neural ...",
+          "abstract": "by TB Xu · 2019 · Cited by 251 — In this paper, we design a more elegant self-distillation mechanism to transfer knowledge between different distorted versions of same training ...",
+          "url": "https://ojs.aaai.org/index.php/AAAI/article/view/4498"
+        },
+        {
+          "title": "Data-distortion guided self-distillation for deep neural ...",
+          "abstract": "In this paper, we design a more elegant self-distillation mechanism to transfer knowledge between different distorted versions of same training data without the ...",
+          "url": "https://dl.acm.org/doi/10.1609/aaai.v33i01.33015565"
+        },
+        {
+          "title": "Data-Distortion Guided Self-Distillation for Deep Neural ...",
+          "abstract": "by TB Xu · 2019 · Cited by 251 — In this paper, we design a more elegant self-distillation mechanism to trans- fer knowledge between different distorted versions of same training data",
+          "url": "https://ojs.aaai.org/index.php/AAAI/article/view/4498/4376"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "The 'Search for Better Students to Learn Distilled Knowledge' paper, by Jindong Gu and Volker Tresp, focuses on the receiver of the dark knowledge, namely the architecture of the small student, rather than the dark knowledge itself.",
+      "evidence": [
+        {
+          "title": "Search for Better Students to Learn Distilled Knowledge",
+          "abstract": "This work proposes to search for the optimal student automatically based on L1-norm optimization, a subgraph from the teacher network ...",
+          "url": "https://www.semanticscholar.org/paper/Search-for-Better-Students-to-Learn-Distilled-Gu-Tresp/5d13dd08292c3df308a6dffaa49ef2e574de2c15"
+        },
+        {
+          "title": "Search for Better Students to Learn Distilled Knowledge",
+          "abstract": "by J Gu · 2020 · Cited by 31 — Search for Better Students to Learn Distilled Knowledge, by Jindong Gu . The knowledge of a well-performed a student with a small architecture. ...",
+          "url": "https://arxiv.org/abs/2001.11612"
+        },
+        {
+          "title": "FLHonker/Awesome-Knowledge-Distillation",
+          "abstract": "Search for Better Students to Learn Distilled Knowledge. Gu, Jindong & Tresp, Volker arXiv:2001.11612; Circumventing Outliers of AutoAugment with Knowledge ...",
+          "url": "https://github.com/FLHonker/Awesome-Knowledge-Distillation"
+        },
+        {
+          "title": "Search for Better Students to Learn Distilled Knowledge",
+          "abstract": "by J Gu · 2020 · Cited by 31 — In this work, we focus on the receiver of the dark knowledge (i.e., the ar- chitecture of the student) instead of the dark knowledge itself.",
+          "url": "https://arxiv.org/pdf/2001.11612"
+        },
+        {
+          "title": "Search for Better Students to Learn Distilled Knowledge.",
+          "abstract": "Search for Better Students to Learn Distilled Knowledge. Jindong Gu, Volker Tresp (2020) access: open type: Conference or Workshop Paper ...",
+          "url": "https://dblp.org/rec/conf/ecai/GuT20"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    }
+  ]
+}
