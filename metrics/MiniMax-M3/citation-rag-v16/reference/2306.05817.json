@@ -1,0 +1,18 @@
+{
+  "arxiv_id": "2306.05817",
+  "model": "MiniMax-M3",
+  "system": "citation-rag-v16",
+  "reference_precision": 0.5,
+  "reference_recall": 0.009966777408637873,
+  "reference_count": 6,
+  "reference_matches": 3,
+  "ground_truth_count": 301,
+  "predicted_titles": [
+    "Collaborative Large Language Model for Recommender Systems",
+    "RecSys 2023 Tutorial: Large Language Models for Recommendation",
+    "Recommender Systems in the Era of Large Language Models (LLMs)",
+    "Leveraging Large Language Models for Sequential Recommendation",
+    "LLM-RS: A Large Language Model-Based Sequential ... - MDPI",
+    "LLM-ESR: Large Language Models Enhancement for Long-tailed ..."
+  ]
+}

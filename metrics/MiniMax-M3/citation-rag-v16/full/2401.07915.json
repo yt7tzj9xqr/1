@@ -1,0 +1,131 @@
+{
+  "arxiv_id": "2401.07915",
+  "model": "MiniMax-M3",
+  "system": "citation-rag-v16",
+  "reference_precision": 0.5,
+  "reference_recall": 0.023076923076923078,
+  "reference_count": 12,
+  "reference_matches": 6,
+  "ground_truth_count": 260,
+  "predicted_titles": [
+    "Learning Dexterous In-Hand Manipulation",
+    "Continual Policy Distillation of Reinforcement Learning-based Controllers for Soft Robotic In-Hand Manipulation",
+    "Hybrid Imitation Learning Framework for Robotic Manipulation Tasks",
+    "TacGNN:Learning Tactile-based In-hand Manipulation with a Blind Robot",
+    "Reinforcement and Imitation Learning for Diverse Visuomotor Skills",
+    "On Policy Learning Robust to Irreversible Events: An Application to Robotic In-Hand Manipulation",
+    "Object Manipulation with an Anthropomorphic Robotic Hand via Deep Reinforcement Learning with a Synergy Space of Natural Hand Poses",
+    "Learning Dexterous Manipulation for a Soft Robotic Hand from Human Demonstration",
+    "Learning a State Estimator for Tactile In-Hand Manipulation",
+    "On dexterity and dexterous manipulation",
+    "Soft Robotic Grippers",
+    "Dextrous manipulation with rolling contacts"
+  ],
+  "cited_match_rate": 0.6428571428571429,
+  "cited_count": 14,
+  "cited_supported": 9,
+  "cited_details": [
+    {
+      "statement": "A 2011 paper presented a high-level discussion of dexterity in robotic systems, overviewing various definitions of dexterity, specific metrics and quantitative analysis, and classes of in-hand manipulation, while arguing that hand dexterity is desirable or necessary in contrast to the capabilities of a kinematically redundant arm with a simple grasper (https://doi.org/10.1109/icar.2011.6088576).",
+      "url": "https://doi.org/10.1109/icar.2011.6088576",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A 2018 review reported that advances in soft robotics, materials science, and stretchable electronics have enabled rapid progress in soft grippers, and that end-effectors fabricated from flexible and soft components can often grasp or manipulate a larger variety of objects compared to rigid grippers (https://doi.org/10.1002/adma.201707035).",
+      "url": "https://doi.org/10.1002/adma.201707035",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A 2002 study described dextrous manipulation as a problem of paramount importance in the study of multifingered robotic hands (https://doi.org/10.1109/robot.1997.614264).",
+      "url": "https://doi.org/10.1109/robot.1997.614264",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The 2002 study stated that the main objectives are to generate finger joint trajectories transferring the object to a goal grasp configuration through contact constraints, and to derive control algorithms to realize planned trajectories (https://doi.org/10.1109/robot.1997.614264).",
+      "url": "https://doi.org/10.1109/robot.1997.614264",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The 2002 study integrated the theories of contact kinematics, nonholonomic motion planning, and grasp stability to develop a general technique for dextrous manipulation planning with multifingered hands, with experimental results discussed (https://doi.org/10.1109/robot.1997.614264).",
+      "url": "https://doi.org/10.1109/robot.1997.614264",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "A 2022 study addressed the problem of estimating the pose of an object being manipulated by a multi-fingered robotic hand using only proprioceptive feedback (https://elib.dlr.de/190608/1/IROS22_LearningTactileEstimator.pdf).",
+      "url": "https://elib.dlr.de/190608/1/IROS22_LearningTactileEstimator.pdf",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A 2023 framework proposed tactile-based dexterous manipulation learning with a blind anthropomorphic robotic hand without visual sensing, beginning with object-related states (https://arxiv.org/abs/2304.00736).",
+      "url": "https://arxiv.org/abs/2304.00736",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A 2018 paper described a five-fingered humanoid hand trained with reinforcement learning to manipulate a block from an initial configuration to a goal configuration using vision for sensing (https://arxiv.org/abs/1808.00177).",
+      "url": "https://arxiv.org/abs/1808.00177",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A 2019 approach combined reinforcement learning based on visual perception with low-level reactive control based on tactile perception for in-hand manipulation skills with a low-cost, underactuated prosthetic hand in the presence of irreversible events, with the RL objective including minimizing the intervention of the tactile reactive control (https://arxiv.org/abs/1911.08927).",
+      "url": "https://arxiv.org/abs/1911.08927",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "A 2021 study noted that achieving human-like object manipulation remains a challenge especially due to the control complexity of the anthropomorphic robotic hand with a high degree of freedom, and proposed a deep reinforcement learning policy trained using a synergy space created by a continuous normalizing flow network over point clouds of haptic areas representing natural hand poses obtained from human grasping demonstrations, with the proposed synergy-based DRL achieving an average success rate of 88.38% for object manipulation tasks using an anthropomorphic robotic hand (https://doi.org/10.3390/s21165301).",
+      "url": "https://doi.org/10.3390/s21165301",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A 2024 study noted that dexterous manipulation with multi-fingered robotic hands holds solid impact for real-world applications, and that soft robotic hands offer flexibility and adaptability during object grasping and manipulation but face challenges in control development for finger coordination (https://arxiv.org/abs/2404.04219).",
+      "url": "https://arxiv.org/abs/2404.04219",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A 2016 work addressed learning dexterous manipulation for a soft robotic hand from human demonstrations, noting that dexterous multi-fingered hands can accomplish fine manipulation behaviors that are infeasible with simple robotic grippers, and that low-cost soft hands are an appealing alternative to sophisticated multi-fingered hands but present considerable challenges in sensing and control (https://arxiv.org/abs/1603.06348).",
+      "url": "https://arxiv.org/abs/1603.06348",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "A 2018 model-free deep reinforcement learning method leveraged a small amount of demonstration data to assist a reinforcement learning agent, applied to robotic manipulation tasks (https://doi.org/10.15607/rss.2018.xiv.009).",
+      "url": "https://doi.org/10.15607/rss.2018.xiv.009",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A 2021 hybrid imitation learning framework combined behavior cloning and state cloning in a mutually complementary manner to enhance the efficiency of robotic manipulation task learning, efficiently combined BC and SC losses using an adaptive loss mixing method, used pretrained dynamics networks to enhance SC efficiency, performed stochastic state recovery to ensure stable learning of policy networks by transforming the learner's task state into a demo state on the demo task trajectory during SC, and demonstrated training efficiency and policy flexibility in experiments on pick-up, pick-and-place, and stack tasks in which the framework showed about a 2.6 times higher performance improvement than pure BC and about a four times faster training time than pure SC (https://doi.org/10.3390/s21103409).",
+      "url": "https://doi.org/10.3390/s21103409",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    }
+  ],
+  "noncited_factual_accuracy": 0.0,
+  "noncited_count": 0,
+  "noncited_correct": 0,
+  "noncited_details": []
+}

@@ -1,0 +1,11 @@
+{
+  "arxiv_id": "2004.05937",
+  "model": "MiniMax-M3",
+  "system": "citation-rag-v16",
+  "reference_precision": 0.0,
+  "reference_recall": 0.0,
+  "reference_count": 0,
+  "reference_matches": 0,
+  "ground_truth_count": 305,
+  "predicted_titles": []
+}

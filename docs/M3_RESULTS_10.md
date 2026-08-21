@@ -68,13 +68,27 @@ RAG 的高 cited match 不是通过增加大量引用得到的：其 cited state
 
 只有冻结版本在 10 题上至少保持 reference precision ≥ 0.237、reference recall ≥ 0.012、cited match ≥ 0.75，并且 non-cited 有足够非空样本，才扩展到 30 题和 MiniMax 2.7。Reference recall 不应通过引用无关论文换取，cited match 也不应通过生成极少语句虚增。
 
+## 2026-08-21 混合免费检索与证据修复验证
+
+本轮恢复了 OpenAlex、arXiv、Crossref 和 Semantic Scholar 对中心查询的免费结构化补充，并将匿名请求限制为 8 秒、失败快速降级；MiniMax Search 仍承担五个规划查询。10 题候选池审计从纯 MiniMax 网页搜索的 15--17 个 gold 命中提高到 31 个，且恢复了引用图所需的结构化 work ID。该实现不要求 OpenAlex API Key，也不使用 Firecrawl 或 SerpAPI。
+
+| 系统 | Ref. P | Ref. R | Ref. count | Cited match | Cited count | Non-cited raw macro | Non-cited micro | 非空任务 |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| M3 search-baseline-v5 | 0.2197 | 0.01421 | 9.3 | 0.7318 | 18.3 | 0.4021 | 0.5085 (30/59) | 7/10 |
+| M3 citation-rag-v16 | 0.2423 | 0.01941 | 9.7 | 0.8051 | 19.5 | 0.1800 | 0.6000 (27/45) | 3/10 |
+
+RAG 相对本轮 baseline 的 reference precision 提高 10.3%，reference recall 提高 36.6%，gold reference 总命中从 16 提高到 25，cited match 从 0.7318 提高到 0.8051。RAG 的 non-cited raw macro 不能直接解释成“事实准确率只有 18%”：聚合器把 7 个没有抽取到 non-cited statement 的任务记为 0；实际评判的 45 条语句 micro accuracy 为 0.6000，3 个非空任务的宏平均同为 0.6000。
+
+这次运行也定位了最后一个主要问题：证据编辑有时删除过多内容，造成空或近空报告，进而把 cited/non-cited 宏平均记为 0。运行期间代码加入了三道质量门：拒绝低于最低词数的修复结果、拒绝来源覆盖坍缩的结果、对引用清洗后坍缩的报告执行恢复生成；当前 HEAD 为 34/34 测试通过。因此 v5/v16 是问题定位和优化验证，不能冒充严格冻结主实验；最终主表必须在当前单一 commit 上使用新系统名重跑同一 10 题，再扩到 30 题。
+
 ## 可复现文件
 
 - Baseline v4：`metrics/MiniMax-M3/search-baseline-v4/reference/` 与 `metrics/MiniMax-M3/search-baseline-v4/full/`
 - RAG v15 pilot：`metrics/MiniMax-M3/citation-rag-v15/reference/` 与 `metrics/MiniMax-M3/citation-rag-v15/full/`
 - 反馈搜索消融：`metrics/MiniMax-M3/search-baseline-v5/reference/` 与 `metrics/MiniMax-M3/search-baseline-v5/full/`
+- 混合免费检索 RAG 验证：`metrics/MiniMax-M3/citation-rag-v16/reference/` 与 `metrics/MiniMax-M3/citation-rag-v16/full/`
 - 旧版对照：`metrics/MiniMax-M3/search-baseline-v3/` 与 `metrics/MiniMax-M3/citation-rag-v13/`
 - 生成结果和来源池：`runs/MiniMax-M3/<system>/<arxiv_id>/result.json`（默认不提交 Git）
 - 检索审计：`scripts/audit_live_retrieval.py`
 
-所有代码修改必须先通过 `PYTHONPATH=src python -m unittest discover -s tests -v`；当前 HEAD 为 31/31 通过。
+所有代码修改必须先通过 `PYTHONPATH=src python -m unittest discover -s tests -v`；当前 HEAD 为 34/34 通过。

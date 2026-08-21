@@ -1,0 +1,727 @@
+{
+  "arxiv_id": "2206.13188",
+  "model": "MiniMax-M3",
+  "system": "citation-rag-v16",
+  "reference_precision": 0.5,
+  "reference_recall": 0.023809523809523808,
+  "reference_count": 12,
+  "reference_matches": 6,
+  "ground_truth_count": 252,
+  "predicted_titles": [
+    "Global and Local Contrastive Self-Supervised Learning for Semantic Segmentation of HR Remote Sensing Images",
+    "Self-Supervised Representation Learning for Remote Sensing Image Change Detection Based on Temporal Prediction",
+    "A General Self-Supervised Framework for Remote Sensing Image Classification",
+    "Self-Supervised Learning of Remote Sensing Scene Representations Using Contrastive Multiview Coding",
+    "Contrastive Self-Supervised Learning With Smoothed Representation for Remote Sensing",
+    "SCL-MLNet: Boosting Few-Shot Remote Sensing Scene Classification via Self-Supervised Contrastive Learning",
+    "Task-Related Self-Supervised Learning for Remote Sensing Image Change Detection",
+    "When Self-Supervised Learning Meets Scene Classification: Remote Sensing Scene Classification Based on a Multitask Learning Framework",
+    "X-ModalNet: A Semi-Supervised Deep Cross-Modal Network for Classification of Remote Sensing Data",
+    "Exploring PolSAR Images Representation via Self-Supervised Learning and Its Application on Few-Shot Classification",
+    "Remote Sensing Image Scene Classification: Benchmark and State of the Art",
+    "Deep Learning Classification of Land Cover and Crop Types Using Remote Sensing Data"
+  ],
+  "cited_match_rate": 0.5862068965517241,
+  "cited_count": 29,
+  "cited_supported": 17,
+  "cited_details": [
+    {
+      "statement": "(https://doi.org/10.1109/lgrs.2021.3069799)",
+      "url": "https://doi.org/10.1109/lgrs.2021.3069799",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "(https://arxiv.org/abs/2106.10605)",
+      "url": "https://arxiv.org/abs/2106.10605",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "(https://doi.org/10.1109/lgrs.2021.3069799)",
+      "url": "https://doi.org/10.1109/lgrs.2021.3069799",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "(https://doi.org/10.1109/lgrs.2021.3069799)",
+      "url": "https://doi.org/10.1109/lgrs.2021.3069799",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "(https://arxiv.org/abs/2106.10605)",
+      "url": "https://arxiv.org/abs/2106.10605",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "(https://doi.org/10.1109/tgrs.2021.3109268)",
+      "url": "https://doi.org/10.1109/tgrs.2021.3109268",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "(https://doi.org/10.1109/tgrs.2021.3109268)",
+      "url": "https://doi.org/10.1109/tgrs.2021.3109268",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "(https://arxiv.org/abs/2104.07070)",
+      "url": "https://arxiv.org/abs/2104.07070",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "(https://doi.org/10.3390/rs12111868)",
+      "url": "https://doi.org/10.3390/rs12111868",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "(https://arxiv.org/abs/2105.04951)",
+      "url": "https://arxiv.org/abs/2105.04951",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "(https://www.semanticscholar.org/paper/52be2330207ab72e04b617893954a368c8a351fc)",
+      "url": "https://semanticscholar.org/paper/52be2330207ab72e04b617893954a368c8a351fc",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "(https://www.semanticscholar.org/paper/52be2330207ab72e04b617893954a368c8a351fc)",
+      "url": "https://semanticscholar.org/paper/52be2330207ab72e04b617893954a368c8a351fc",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "(https://www.semanticscholar.org/paper/52be2330207ab72e04b617893954a368c8a351fc)",
+      "url": "https://semanticscholar.org/paper/52be2330207ab72e04b617893954a368c8a351fc",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "(https://doi.org/10.3390/rs12203276)",
+      "url": "https://doi.org/10.3390/rs12203276",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "(https://doi.org/10.3390/rs12203276)",
+      "url": "https://doi.org/10.3390/rs12203276",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "(https://doi.org/10.3390/rs12203276)",
+      "url": "https://doi.org/10.3390/rs12203276",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "(https://arxiv.org/abs/2006.13806)",
+      "url": "https://arxiv.org/abs/2006.13806",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "(https://doi.org/10.1109/lgrs.2022.3198135)",
+      "url": "https://doi.org/10.1109/lgrs.2022.3198135",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "(https://doi.org/10.1109/lgrs.2022.3198135)",
+      "url": "https://doi.org/10.1109/lgrs.2022.3198135",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "(https://arxiv.org/abs/2105.04951)",
+      "url": "https://arxiv.org/abs/2105.04951",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "(http://arxiv.org/abs/1703.00121)",
+      "url": "http://arxiv.org/abs/1703.00121",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "(https://doi.org/10.1109/lgrs.2017.2681128)",
+      "url": "https://doi.org/10.1109/lgrs.2017.2681128",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "(https://doi.org/10.1109/lgrs.2017.2681128)",
+      "url": "https://doi.org/10.1109/lgrs.2017.2681128",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "(https://doi.org/10.3390/rs12203276)",
+      "url": "https://doi.org/10.3390/rs12203276",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "(https://doi.org/10.3390/rs12203276)",
+      "url": "https://doi.org/10.3390/rs12203276",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "(https://doi.org/10.1109/lgrs.2021.3069799)",
+      "url": "https://doi.org/10.1109/lgrs.2021.3069799",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "(https://doi.org/10.3390/rs12111868)",
+      "url": "https://doi.org/10.3390/rs12111868",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "(https://doi.org/10.1109/lgrs.2022.3198135)",
+      "url": "https://doi.org/10.1109/lgrs.2022.3198135",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "(https://arxiv.org/abs/2105.04951)",
+      "url": "https://arxiv.org/abs/2105.04951",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    }
+  ],
+  "noncited_factual_accuracy": 0.8,
+  "noncited_count": 15,
+  "noncited_correct": 12,
+  "noncited_details": [
+    {
+      "claim": "A SimCLR-based framework for remote sensing simultaneously utilizes several neighboring images as a positive pair of an anchor image, unlike Tile2Vec, and uses multiple-input images averaging their representations.",
+      "evidence": [
+        {
+          "title": "SimCLR: A Simple Framework for Contrastive Learning of ... - YouTube",
+          "abstract": "Full paper: https://arxiv.org/abs/2002.05709?ref=hackernoon.com Presenter: Dan Fu Stanford University, USA Abstract: This paper presents ...",
+          "url": "https://www.youtube.com/watch?v=wySLC4nszv8"
+        },
+        {
+          "title": "Research on Semantic Segmentation Method of Remote Sensing Image ...",
+          "abstract": "The contrastive learning part of the network employs a novel data augmentation method to simulate positive pairs of the same remote sensing images",
+          "url": "https://thesai.org/Publications/ViewPaper?Volume=14&Issue=8&Code=IJACSA&SerialNo=55"
+        },
+        {
+          "title": "The Illustrated SimCLR Framework - Amit Chaudhary",
+          "abstract": "The paper proposes a framework called “SimCLR” for modeling the above problem in a self-supervised manner. It blends the concept of Contrastive ...",
+          "url": "https://amitness.com/posts/simclr"
+        },
+        {
+          "title": "SimCLR Explained: The ELI5 Guide for Engineers - Lightly AI",
+          "abstract": "SimCLR uses contrastive learning, training models to recognize different augmented views of the same image as similar, and distinguish them from views of other ...",
+          "url": "https://www.lightly.ai/blog/simclr"
+        },
+        {
+          "title": "Self-supervised Learning in Remote Sensing: A Review - arXiv",
+          "abstract": "SimCLR, utilizing smoothed representation of three neighbor tiles as a positive sample.",
+          "url": "https://arxiv.org/html/2206.13188v2"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "MoCo and SimCLR use only two augmented views of the single-input image.",
+      "evidence": [
+        {
+          "title": "arXiv:2002.05709v3 [cs.LG] 1 Jul 2020",
+          "abstract": "by T Chen · Cited by 34507 — This paper presents SimCLR: a simple framework for contrastive learning of visual representations. We simplify recently proposed contrastive self-.",
+          "url": "https://ailab-ua.github.io/courses/resources/SimCLR_Chen_2020.pdf"
+        },
+        {
+          "title": "SimCLR Explained: The ELI5 Guide for Engineers",
+          "abstract": "Each image is randomly augmented twice (e.g. through random cropping, color jitter, and Gaussian blur) to create two correlated views .",
+          "url": "https://www.lightly.ai/blog/simclr"
+        },
+        {
+          "title": "The Illustrated SimCLR Framework - Amit Chaudhary",
+          "abstract": "An image is taken and random transformations are applied to it to get a pair of two augmented images x i and x j . Each image in that pair ...",
+          "url": "https://amitness.com/posts/simclr"
+        },
+        {
+          "title": "6. Learning Visual Representations with SimCLR",
+          "abstract": "First, two distinct views of the input image are generated through random augmentations. Then, their representations are extracted using the ...",
+          "url": "https://mlhonk.substack.com/p/6-learning-visual-representations"
+        },
+        {
+          "title": "Understanding Contrastive Learning and MoCo",
+          "abstract": "Unlike SimCLR in which only one encoder is used, MoCo uses two encoders, an encoder and a momentum encoder. both encoder and momentum encoder ...",
+          "url": "https://medium.com/geekculture/understanding-contrastive-learning-and-moco-efe491e4eed9"
+        }
+      ],
+      "true_votes": 1,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "A global-and-local contrastive SSL approach was proposed for semantic segmentation of high-resolution remote sensing images.",
+      "evidence": [
+        {
+          "title": "Learning to semantically segment high-resolution remote sensing ...",
+          "abstract": "In this paper, we propose a supervised method to perform semantic segmentation on remote sensing images based on deep learning.",
+          "url": "https://www.academia.edu/137317665/Learning_to_semantically_segment_high_resolution_remote_sensing_images"
+        },
+        {
+          "title": "Self-Supervised Learning With Local Contrastive Loss for Detection and ...",
+          "abstract": "We present a self-supervised learning (SSL) method suit- able for semi-global tasks such as object detection and se- mantic segmentation. We enforce local ...",
+          "url": "https://openaccess.thecvf.com/content/WACV2023/papers/Islam_Self-Supervised_Learning_With_Local_Contrastive_Loss_for_Detection_and_Semantic_WACV_2023_paper.pdf"
+        },
+        {
+          "title": "Semantically-Aware Contrastive Learning for multispectral remote ...",
+          "abstract": "This work introduces Semantically-Aware Contrastive Learning (SACo+), a novel method for training a model using SSL for MSRSI.",
+          "url": "https://www.sciencedirect.com/science/article/abs/pii/S0924271625000826"
+        },
+        {
+          "title": "A Generic Self-Supervised Learning (SSL) Framework for ... - MDPI",
+          "abstract": "We demonstrate that the proposed SSL framework is a novel way to learn representations from unlabeled large-scale remote sensing data. This proposed SSL method ...",
+          "url": "https://www.mdpi.com/2072-4292/15/21/5238"
+        },
+        {
+          "title": "Global and Local Contrastive Self-Supervised Learning for ... - arXiv",
+          "abstract": "Therefore, we propose a global style and local matching contrastive learning network (GLCNet) for remote sensing image semantic segmentation.",
+          "url": "https://arxiv.org/abs/2106.10605"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "A self-supervised contrastive learning-based metric learning network (SCL-MLNet) was proposed for few-shot remote sensing scene classification, weaving self-supervised contrastive learning into few-shot classification through multi-task learning, with a new loss function to train the model end-to-end.",
+      "evidence": [
+        {
+          "title": "SCL-MLNet: Boosting Few-Shot Remote Sensing Scene ...",
+          "abstract": "This study introduces an end-to-end framework called self-supervised contrastive learning-based metric learning network (SCL-MLNet) for few-shot remote sensing",
+          "url": "https://www.semanticscholar.org/paper/SCL-MLNet%3A-Boosting-Few-Shot-Remote-Sensing-Scene-Li-Shi/9aff2be4a559ebc4c003490b82d08ca397091c45"
+        },
+        {
+          "title": "Self-supervised Contrastive Zero to Few-shot Learning ...",
+          "abstract": "by N Rethmeier · Cited by 2 — The paper presents a self-supervised model based on a contrastive autoencoder that can make use of a small training set for upstream multi-label/class tasks.",
+          "url": "https://openreview.net/forum?id=_cadenVdKzF"
+        },
+        {
+          "title": "Self-supervised contrastive learning based on global attention ...",
+          "abstract": "SCL-MLNet: boosting few-shot remote sensing scene classification via self-supervised contrastive learning［J］. IEEE Transactions on Geoscience and Remote ...",
+          "url": "https://m.researching.cn/articles/OJde7c37b24ded8a21/referenceandcitations"
+        },
+        {
+          "title": "Task-specific contrastive learning for few-shot remote ...",
+          "abstract": "by Q Zeng · 2022 · Cited by 103 — In order to address the issue, we propose a task-specific contrastive learning (TSC) model for few-shot scene classification of remote sensing images, which ...",
+          "url": "https://www.sciencedirect.com/science/article/abs/pii/S0924271622001812"
+        },
+        {
+          "title": "SCL-MLNet: Boosting Few-Shot Remote Sensing Scene ...",
+          "abstract": "by X Li · 2021 · Cited by 142 — The results demonstrate that SCL-MLNet achieves state-of-the-art performance for few-shot remote sensing scene classification.",
+          "url": "https://ieeexplore.ieee.org/abstract/document/9535146/"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "Contrastive multiview coding was explored for self-supervised learning of remote sensing scene representations.",
+      "evidence": [
+        {
+          "title": "Self-Supervised Learning of Remote Sensing Scene ...",
+          "abstract": "Contrastive Multiview Coding - Paper … we conduct an extensive analysis of the applicability of self-supervisedlearning in remote sensing image classification. ...",
+          "url": "https://deeplearn.org/arxiv/211338/self-supervised-learning-of-remote-sensing-scene-representations-using-contrastive-multiview-coding"
+        },
+        {
+          "title": "sadimanna/self-supervised-learning-and-contrastive- ...",
+          "abstract": "Self-Supervised Learning of Remote Sensing Scene Representations Using Contrastive Multiview Coding, https://arxiv.org/pdf/2104.07070. Towards Solving ...",
+          "url": "https://github.com/sadimanna/self-supervised-learning-and-contrastive-learning-papers"
+        },
+        {
+          "title": "Self-Supervised Learning for Scene Classification in ...",
+          "abstract": "by P Berg · 2022 · Cited by 89 — Self-Supervised Learning of Remote Sensing Scene Representations Using Contrastive Multiview Coding. In Proceedings of the 2021 IEEE/CVF",
+          "url": "https://www.mdpi.com/2072-4292/14/16/3995"
+        },
+        {
+          "title": "Self-Supervised Learning of Remote Sensing Scene ...",
+          "abstract": "This article reviews the underlying principles developed by various self-supervised methods with a focus on scene classification task, and investigates the ...",
+          "url": "https://www.semanticscholar.org/paper/Self-Supervised-Learning-of-Remote-Sensing-Scene-Stojnic-Risojevi%C4%87/8af459df7b775ee53a69c69dea6643e644bcba70"
+        },
+        {
+          "title": "Publications of University of Banja Luka",
+          "abstract": "V. Stojnić, V. Risojević, Self-Supervised Learning of Remote Sensing Scene Representations Using Contrastive Multiview Coding, pp. 1182 - 1191, Jun, 2021 ...",
+          "url": "https://www.pub.unibl.org/s/eng/item/23430"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "A task-related self-supervised learning change detection network (TSLCD) introduces a task-related SSL module to extract spatial features, a hard-sample-mining loss function to focus on hard-to-classify samples, and a smooth mechanism to remove pseudo-changes and noise.",
+      "evidence": [
+        {
+          "title": "TD-SSCD",
+          "abstract": "Therefore, in this article, we propose a novel network by fusing temporal and differential information for self-supervised contrastive learning change detection ...",
+          "url": "https://irsip.whu.edu.cn/people/paper_l/p58.pdf"
+        },
+        {
+          "title": "Task-Related Self-Supervised Learning For Remote ...",
+          "abstract": "The main contributions include: (1) the task-related self- supervised learning module is introduced to extract spa- tial features more ...",
+          "url": "https://www.researchgate.net/publication/352170969_Task-Related_Self-Supervised_Learning_For_Remote_Sensing_Image_Change_Detection"
+        },
+        {
+          "title": "Task-Related Self-Supervised Learning for Remote ...",
+          "abstract": "by Z Cai · 2021 · Cited by 28 — The main contributions include: (1) the task-related self-supervised learning module is introduced to extract spatial features more effectively.",
+          "url": "https://arxiv.org/abs/2105.04951"
+        },
+        {
+          "title": "Task-Related Self-Supervised Learning For Remote ...",
+          "abstract": "TSLCD is proposed to eliminate the problem of inadequate pseudo-changes suppression and insufficient feature representation.",
+          "url": "https://www.semanticscholar.org/paper/Task-Related-Self-Supervised-Learning-For-Remote-Cai-Jiang/909944579f42db3b2d01c2778605ddf8255e2e3f"
+        },
+        {
+          "title": "SCL-MLNet: Boosting Few-Shot Remote Sensing Scene Classification via Self-Supervised Contrastive Learning",
+          "abstract": "Few-shot classification aims at recognizing novel categories from low data regimes based on prior knowledge. However, the existing methods for few-shot scene classification have limitations on using few annotated data and do not fully consider the intra-class samples with classification targets in different sizes, which lead to poor feature representation. To address these problems, this study introduces an end-to-end framework called self-supervised contrastive learning-based metric learning network (SCL-MLNet) for few-shot remote sensing (RS) scene classification. On one hand, we weave self-supervised contrastive learning into few-shot classification algorithms through multi-task learning, enabling feature extractors to learn representative image features from few annotated samples. Moreover, we devise a new loss function to train the proposed model end-to-end and speed up the convergence of the model. On the other hand, considering the differences between intra-class samples, we introduce a novel attention module embedded in the feature extractor to fuse multi-scale spatial features from the classification targets in different sizes. In our experiments, SCL-MLNet is evaluated on three public benchmark datasets. The results demonstrate that SCL-MLNet achieves state-of-the-art performance for few-shot remote sensing scene classification.",
+          "url": "https://doi.org/10.1109/tgrs.2021.3109268"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "A self-supervised pre-training framework applied masked image modeling (MIM) to remote sensing image classification, using a completion proxy task that encourages the model to reconstruct masked patches and correlate unseen parts with seen parts in semantics.",
+      "evidence": [
+        {
+          "title": "Remote Sensing Scene Classification with Masked Image ...",
+          "abstract": "This paper provides insights into the interpretation beyond simply combining self-supervised learning (SSL) with remote sensing (RS).",
+          "url": "https://www.researchgate.net/publication/368877585_Remote_Sensing_Scene_Classification_with_Masked_Image_Modeling_MIM"
+        },
+        {
+          "title": "A Brief History of Masked Image Modeling Family | by Vyhao",
+          "abstract": "With self-supervised pre-training, our smaller ViT-B/16 model achieves 79.9% accuracy on ImageNet, a significant improvement of 2% to training ...",
+          "url": "https://medium.com/@vyhao02/a-brief-history-of-masked-image-modeling-family-15ca1f21cc15"
+        },
+        {
+          "title": "A General Self-Supervised Framework for Remote Sensing ...",
+          "abstract": "by Y Gao · 2022 · Cited by 30 — In this paper, we use the MIM model, using it to perform unlabeled self-supervised learning training results on the imagenet-1k dataset. To further combine self ...",
+          "url": "https://www.mdpi.com/2072-4292/14/19/4824"
+        },
+        {
+          "title": "Masked Image Modeling: A Survey",
+          "abstract": "We surveyed recent studies on masked image modeling (MIM), an approach that emerged as a powerful self-supervised learning technique in computer vision.",
+          "url": "https://github.com/vladhondru25/MIM-Survey"
+        },
+        {
+          "title": "A General Self-Supervised Framework for Remote Sensing Image Classification",
+          "abstract": "This paper provides insights into the interpretation beyond simply combining self-supervised learning (SSL) with remote sensing (RS). Inspired by the improved representation ability brought by SSL in natural image understanding, we aim to explore and analyze the compatibility of SSL with remote sensing. In particular, we propose a self-supervised pre-training framework for the first time by applying the masked image modeling (MIM) method to RS image research in order to enhance its efficacy. The completion proxy task used by MIM encourages the model to reconstruct the masked patches, and thus correlate the unseen parts with the seen parts in semantics. Second, in order to figure out how pretext tasks affect downstream performance, we find the attribution consensus of the pre-trained model and downstream tasks toward the proxy and classification targets, which is quite different from that in natural image understanding. Moreover, this transferable consensus is persistent in cross-dataset full or partial fine-tuning, which means that SSL could boost general model-free representation beyond domain bias and task bias (e.g., classification, segmentation, and detection). Finally, on three publicly accessible RS scene classification datasets, our method outperforms the majority of fully supervised state-of-the-art (SOTA) methods with higher accuracy scores on unlabeled datasets.",
+          "url": "https://www.semanticscholar.org/paper/52be2330207ab72e04b617893954a368c8a351fc"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "This represents the first application of masked image modeling to remote sensing image research.",
+      "evidence": [
+        {
+          "title": "A Brief History of Masked Image Modeling Family | by Vyhao",
+          "abstract": "The very first attempt of this approach has started in 2016. in the 2016 IEEE Conference on Computer Vision and Pattern Recognition in a paper ...",
+          "url": "https://medium.com/@vyhao02/a-brief-history-of-masked-image-modeling-family-15ca1f21cc15"
+        },
+        {
+          "title": "Masked Image Modeling: A Survey",
+          "abstract": "We surveyed recent studies on masked image modeling (MIM), an approach that emerged as a powerful self-supervised learning technique in computer vision.",
+          "url": "https://github.com/vladhondru25/MIM-Survey"
+        },
+        {
+          "title": "A General Self-Supervised Framework for Remote Sensing Image Classification",
+          "abstract": "This paper provides insights into the interpretation beyond simply combining self-supervised learning (SSL) with remote sensing (RS). Inspired by the improved representation ability brought by SSL in natural image understanding, we aim to explore and analyze the compatibility of SSL with remote sensing. In particular, we propose a self-supervised pre-training framework for the first time by applying the masked image modeling (MIM) method to RS image research in order to enhance its efficacy. The completion proxy task used by MIM encourages the model to reconstruct the masked patches, and thus correlate the unseen parts with the seen parts in semantics. Second, in order to figure out how pretext tasks affect downstream performance, we find the attribution consensus of the pre-trained model and downstream tasks toward the proxy and classification targets, which is quite different from that in natural image understanding. Moreover, this transferable consensus is persistent in cross-dataset full or partial fine-tuning, which means that SSL could boost general model-free representation beyond domain bias and task bias (e.g., classification, segmentation, and detection). Finally, on three publicly accessible RS scene classification datasets, our method outperforms the majority of fully supervised state-of-the-art (SOTA) methods with higher accuracy scores on unlabeled datasets.",
+          "url": "https://www.semanticscholar.org/paper/52be2330207ab72e04b617893954a368c8a351fc"
+        },
+        {
+          "title": "Remote Sensing Image Scene Classification: Benchmark and State of the Art",
+          "abstract": "Remote sensing image scene classification plays an important role in a wide range of applications and hence has been receiving remarkable attention. During the past years, significant efforts have been made to develop various data sets or present a variety of approaches for scene classification from remote sensing images. However, a systematic review of the literature concerning data sets and methods for scene classification is still lacking. In addition, almost all existing data sets have a number of limitations, including the small scale of scene classes and the image numbers, the lack of image variations and diversity, and the saturation of accuracy. These limitations severely limit the development of new approaches especially deep learning-based methods. This paper first provides a comprehensive review of the recent progress. Then, we propose a large-scale data set, termed “NWPU-RESISC45,” which is a publicly available benchmark for REmote Sensing Image Scene Classification (RESISC), created by Northwestern Polytechnical University (NWPU). This data set contains 31 500 images, covering 45 scene classes with 700 images in each class. The proposed NWPU-RESISC45 1) is large-scale on the scene classes and the total image number; 2) holds big variations in translation, spatial resolution, viewpoint, object pose, illumination, background, and occlusion; and 3) has high within-class diversity and between-class similarity. The creation of this data set will enable the community to develop and evaluate various data-driven algorithms. Finally, several representative methods are evaluated using the proposed data set, and the results are reported as a useful baseline for future research.",
+          "url": "http://arxiv.org/abs/1703.00121"
+        },
+        {
+          "title": "Global and Local Contrastive Self-Supervised Learning for Semantic Segmentation of HR Remote Sensing Images",
+          "abstract": "Recently, supervised deep learning has achieved a great success in remote sensing image (RSI) semantic segmentation. However, supervised learning for semantic segmentation requires a large number of labeled samples, which is difficult to obtain in the field of remote sensing. A new learning paradigm, self-supervised learning (SSL), can be used to solve such problems by pretraining a general model with a large number of unlabeled images and then fine-tuning it on a downstream task with very few labeled samples. Contrastive learning is a typical method of SSL that can learn general invariant features. However, most existing contrastive learning methods are designed for classification tasks to obtain an image-level representation, which may be suboptimal for semantic segmentation tasks requiring pixel-level discrimination. Therefore, we propose a global style and local matching contrastive learning network (GLCNet) for RSI semantic segmentation. Specifically, first, the global style contrastive learning module is used to better learn an image-level representation, as we consider that style features can better represent the overall image features. Next, the local features matching the contrastive learning module is designed to learn the representations of local regions, which is beneficial for semantic segmentation. We evaluate four RSI semantic segmentation datasets, and the experimental results show that our method mostly outperforms the state-of-the-art self-supervised methods and the ImageNet pretraining method. Specifically, with 1% annotation from the original dataset, our approach improves Kappa by 6% on the International Society for Photogrammetry and Remote Sensing (ISPRS) Potsdam dataset relative to the existing baseline. Moreover, our method outperforms supervised learning methods when there are some differences between the datasets of upstream tasks and downstream tasks. Our study promotes the development of SSL in the field of RSI semantic segmentation. Since SSL could directly learn the essential characteristics of data from unlabeled data, which is easy to obtain in the remote sensing field, this may be of great significance for tasks such as global mapping. The source code is available athttps://github.com/GeoX-Lab/G-RSIM.",
+          "url": "https://arxiv.org/abs/2106.10605"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "A multitask learning framework combines self-supervised learning and scene classification tasks, adopting a new mixup loss strategy to combine the two tasks with dynamic weight.",
+      "evidence": [
+        {
+          "title": "How to Do Multi-Task Learning Intelligently - The Gradient",
+          "abstract": "The authors introduce a new learning framework for multi-task learning which maximizes the performance on the tasks within a given ...",
+          "url": "https://thegradient.pub/how-to-do-multi-task-learning-intelligently/"
+        },
+        {
+          "title": "CLIP: Connecting text and images - OpenAI",
+          "abstract": "We're introducing a neural network called CLIP which efficiently learns visual concepts from natural language supervision.",
+          "url": "https://openai.com/index/clip/"
+        },
+        {
+          "title": "Architecture of the proposed multitask learning (MTL) framework ...",
+          "abstract": "Their approach combines self-supervised learning with scene classification, employing a mixup loss strategy with dynamic weights. ... Hierarchical Transfer ...",
+          "url": "https://www.researchgate.net/figure/Architecture-of-the-proposed-multitask-learning-MTL-framework-Multiple-input-images_fig6_346179038"
+        },
+        {
+          "title": "Semi-Supervised Multitask Learning for Scene Recognition",
+          "abstract": "This paper proposes a novel semi supervised framework built upon feature selection for automatic image annotation that is able to simultaneously learn a robust ...",
+          "url": "https://www.semanticscholar.org/paper/4e71c82c6cd86511edc8fb3cba9fe53421bb1f60"
+        },
+        {
+          "title": "Research Portal - Multi-Task Learning for Visual Scene Understanding",
+          "abstract": "The key idea of multi-task learning is to learn multiple tasks in parallel while sharing the learned representations.",
+          "url": "https://research.kuleuven.be/portal/en/project/3E181048"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "A semi-supervised deep cross-modal network (X-ModalNet) was proposed for classification of remote sensing data.",
+      "evidence": [
+        {
+          "title": "X-ModalNet: A Semi-Supervised Deep Cross ...",
+          "abstract": "by D Hong · 2020 · Cited by 287 — Abstract:This paper addresses the problem of semi-supervised transfer learning with limited cross-modality data in remote sensing.",
+          "url": "https://arxiv.org/abs/2006.13806"
+        },
+        {
+          "title": "X-ModalNet: A Semi-Supervised Deep Cross-Modal ...",
+          "abstract": "This paper addresses the problem of semi-supervised transfer learning with limited cross-modality data in remote sensing.",
+          "url": "https://www.researchgate.net/publication/342871666_X-ModalNet_A_Semi-Supervised_Deep_Cross-Modal_Network_for_Classification_of_Remote_Sensing_Data"
+        },
+        {
+          "title": "Multimodal remote sensing benchmark datasets for land ...",
+          "abstract": "Multimodal remote sensing benchmark datasets for land cover classification with a shared and specific feature learning model.",
+          "url": "https://www.semanticscholar.org/paper/07fa32eb364f966fb4b44dcf9435adf165295c96"
+        },
+        {
+          "title": "X-ModalNet: A semi-supervised deep cross-modal network ...",
+          "abstract": "by D Hong · 2020 · Cited by 287 — This paper addresses the problem of semi-supervised transfer learning with limited cross-modality data in remote sensing.",
+          "url": "https://www.sciencedirect.com/science/article/pii/S0924271620301726"
+        },
+        {
+          "title": "Multimodal Deep Learning Meets Remote-Sensing ...",
+          "abstract": "by D Hong · 2021 · Cited by 1519 — Zhu, “X-. ModalNet: A semi-supervised deep cross-modal network for classifi- cation of remote sensing data,” ISPRS J. Photogramm. Remote Sens.,.",
+          "url": "https://hal.science/hal-03429642/document"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "For polarimetric SAR (PolSAR) image classification, a self-supervised PolSAR representation learning (SSPRL) method uses a positive sample generation (PSG) approach and a novel encoder architecture designed for PolSAR images.",
+      "evidence": [
+        {
+          "title": "Supervised Polarimetric SAR Image Classification Using ...",
+          "abstract": "by X Huang · Cited by 39 — The proposed method combines the spatial and polarimetric information of each pixel by characterizing the pixel with the patch centered at this pixel. the ...",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29993868/"
+        },
+        {
+          "title": "Exploring PolSAR Images Representation via Self-Supervised Learning and Its Application on Few-Shot Classification",
+          "abstract": "Deep learning methods have attracted much attention in the field of polarimetric synthetic aperture radar (PolSAR) image classification over the past few years. However, for supervised learning (SL)-based methods, it is quite difficult to get large amounts of high-quality and labeled PolSAR data in real applications. In addition, there is a problem of poor generalization for the method of specific supervision labels. To solve the abovementioned issue, we explore how to learn representations from unlabeled data from a new perspective. In this letter, a self-supervised PolSAR representation learning (SSPRL) method is proposed. Different from the SL-based methods, SSPRL aims to learn PolSAR image representations via an unsupervised learning approach. Specifically, a self-SL (SSL) method without negative samples is explored, and a positive sample generation (PSG) approach and a novel encoder architecture designed for PolSAR images are proposed. Moreover, mix-up is implemented as a regularization strategy. Furthermore, the convolutional encoder is utilized to transfer the feature representation from the unlabeled PolSAR data to the downstream task, that is, to achieve the few-shot PolSAR classification. Comparative experimental results on two widely used PolSAR benchmark datasets verify the effectiveness of the proposed method and demonstrate that the SSPRL produces impressive performance on few-shot classification task compared with state-of-the-art algorithms.",
+          "url": "https://doi.org/10.1109/lgrs.2022.3198135"
+        },
+        {
+          "title": "Global and Local Contrastive Self-Supervised Learning for Semantic Segmentation of HR Remote Sensing Images",
+          "abstract": "Recently, supervised deep learning has achieved a great success in remote sensing image (RSI) semantic segmentation. However, supervised learning for semantic segmentation requires a large number of labeled samples, which is difficult to obtain in the field of remote sensing. A new learning paradigm, self-supervised learning (SSL), can be used to solve such problems by pretraining a general model with a large number of unlabeled images and then fine-tuning it on a downstream task with very few labeled samples. Contrastive learning is a typical method of SSL that can learn general invariant features. However, most existing contrastive learning methods are designed for classification tasks to obtain an image-level representation, which may be suboptimal for semantic segmentation tasks requiring pixel-level discrimination. Therefore, we propose a global style and local matching contrastive learning network (GLCNet) for RSI semantic segmentation. Specifically, first, the global style contrastive learning module is used to better learn an image-level representation, as we consider that style features can better represent the overall image features. Next, the local features matching the contrastive learning module is designed to learn the representations of local regions, which is beneficial for semantic segmentation. We evaluate four RSI semantic segmentation datasets, and the experimental results show that our method mostly outperforms the state-of-the-art self-supervised methods and the ImageNet pretraining method. Specifically, with 1% annotation from the original dataset, our approach improves Kappa by 6% on the International Society for Photogrammetry and Remote Sensing (ISPRS) Potsdam dataset relative to the existing baseline. Moreover, our method outperforms supervised learning methods when there are some differences between the datasets of upstream tasks and downstream tasks. Our study promotes the development of SSL in the field of RSI semantic segmentation. Since SSL could directly learn the essential characteristics of data from unlabeled data, which is easy to obtain in the remote sensing field, this may be of great significance for tasks such as global mapping. The source code is available athttps://github.com/GeoX-Lab/G-RSIM.",
+          "url": "https://arxiv.org/abs/2106.10605"
+        },
+        {
+          "title": "Contrastive Self-Supervised Learning With Smoothed Representation for Remote Sensing",
+          "abstract": "In remote sensing, numerous unlabeled images are continuously accumulated over time, and it is difficult to annotate all the data. Therefore, a self-supervised learning technique that can improve the recognition rate using unlabeled data will be useful for remote sensing. This letter presents contrastive self-supervised learning with smoothed representation for remote sensing based on the SimCLR framework. In self-supervised learning for remote sensing, the well-known characteristic that images within a short distance might be semantically similar is usually used. Our algorithm is based on this knowledge, and it simultaneously utilizes several neighboring images as a positive pair of the anchor image, unlike existing methods such as Tile2Vec. Furthermore, MoCo and SimCLR, which are among the state-of-the-art self-supervised learning approaches, only use two augmented views of the single-input image, but our proposed approach uses multiple-input images and averages their representations (e.g., smoothed representation). Consequently, the proposed approach outperforms state-of-the-art self-supervised learning methods, such as Tile2Vec, MoCo, and SimCLR, in the cropland data layer (CDL), RESISC-45, UCMerced, and EuroSAT data sets. The proposed approach is comparable to the pretrained ImageNet model in the CDL classification task.",
+          "url": "https://doi.org/10.1109/lgrs.2021.3069799"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "SSPRL learns PolSAR image representations via an unsupervised learning approach using a self-SL method without negative samples.",
+      "evidence": [
+        {
+          "title": "Self-supervised learning for semantic segmentation of polarimetric SAR ...",
+          "abstract": "This study investigates self-supervised learning (SSL) to mitigate this limitation using the Pol-InSAR-Island benchmark dataset [15].",
+          "url": "https://elib.dlr.de/216063/1/PFE_report_Theo_Thuillier%20%289%29.pdf"
+        },
+        {
+          "title": "Overview of deep learning algorithms for PolSAR image classification",
+          "abstract": "This paper highlights the potential benefits of integrating deep learning methodologies with polarimetric principles to augment the effectiveness of PolSAR ...",
+          "url": "https://scholar.xjtu.edu.cn/en/publications/%E6%9E%81%E5%8C%96sar%E5%9B%BE%E5%83%8F%E5%88%86%E7%B1%BB%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AE%97%E6%B3%95%E7%BB%BC%E8%BF%B0/"
+        },
+        {
+          "title": "A Survey on Deep Learning for Few-Shot PolSAR Image ... - MDPI",
+          "abstract": "This survey provides a comprehensive review of these strategies, Exploring PolSAR images representation via self-supervised learning and its application on few ...",
+          "url": "https://www.mdpi.com/2072-4292/16/24/4632"
+        },
+        {
+          "title": "Semi-Supervised Classification of PolSAR Images Based on Co ...",
+          "abstract": "we propose a novel semi-supervised classification method for PolSAR images in this paper, using the co-training of CNN and a support vector machine (SVM).",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9958805/"
+        },
+        {
+          "title": "A Library of Self-supervised Methods for Visual Representation Learning",
+          "abstract": "Abstract. This paper presents solo-learn, a library of self-supervised methods for visual rep- resentation learning. Implemented in Python, using Pytorch ...",
+          "url": "https://www.jmlr.org/papers/volume23/21-1155/21-1155.pdf"
+        }
+      ],
+      "true_votes": 2,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "A large-scale benchmark dataset was proposed for remote sensing image scene classification, evaluating a number of state-of-the-art methods.",
+      "evidence": [
+        {
+          "title": "Datasets for deep learning with satellite & aerial imagery",
+          "abstract": "a large-scale, multimodal remote sensing dataset for irrigation classification, soil-water mapping, and agricultural monitoring.",
+          "url": "https://github.com/satellite-image-deep-learning/datasets"
+        },
+        {
+          "title": "PatternNet: A benchmark dataset for performance ...",
+          "abstract": "by W Zhou · 2018 · Cited by 721 — We therefore present a new large-scale remote sensing dataset termed “PatternNet” that was collected specifically for RSIR. PatternNet was collected from high- ...",
+          "url": "https://www.sciencedirect.com/science/article/abs/pii/S0924271618300042"
+        },
+        {
+          "title": "AID: A Benchmark Dataset for Performance Evaluation of ...",
+          "abstract": "by GS Xia · Cited by 2909 — This paper describes the Aerial Image Dataset (AID): a large-scale dataset for aerial scene classification. The goal of AID is to advance the state-of-the-arts ...",
+          "url": "https://captain-whu.github.io/AID/"
+        },
+        {
+          "title": "Remote Sensing Image Scene Classification: Benchmark ...",
+          "abstract": "This dataset contains 31,500 images, covering 45 scene classes with 700 images in each class. This paper reviews the recent progress of remote ...",
+          "url": "https://www.alphaxiv.org/abs/1703.00121"
+        },
+        {
+          "title": "MRSSC: A BENCHMARK DATASET FOR MULTIMODAL ...",
+          "abstract": "by K Liu · 2021 · Cited by 3 — In this paper, we proposed a multi-modal remote sensing scene classification dataset (MRSSC) The dataset contains 12167 images (optical 6155 and 6012 for ...",
+          "url": "https://isprs-archives.copernicus.org/articles/XLIII-B2-2021/785/2021/isprs-archives-XLIII-B2-2021-785-2021.pdf"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "A multilevel DL architecture targets land cover and crop type classification from multitemporal multisource satellite imagery.",
+      "evidence": [
+        {
+          "title": "Deep Learning Classification of Land Cover and Crop ...",
+          "abstract": "by N Kussul · 2017 · Cited by 2345 — This letter describes a multilevel DL architecture that targets land cover and crop type classification from multitemporal multisource satellite imagery.",
+          "url": "http://ui.adsabs.harvard.edu/abs/2017IGRSL..14..778K/abstract"
+        },
+        {
+          "title": "Deep Learning for Land Cover Classification | PDF",
+          "abstract": "This document describes a deep learning approach for classifying land cover and crop types using multitemporal multisource satellite imagery.",
+          "url": "https://www.scribd.com/document/654474884/Kussul-et-al-2017-GRSL-DeepLearning"
+        },
+        {
+          "title": "Crop Classification with Multi-Temporal Satellite Imagery",
+          "abstract": "by RM Rustowicz · Cited by 12 — In this report, I explore the use of time series satellite imagery and machine learning for crop classification. Crop classification is important for ...",
+          "url": "https://cs229.stanford.edu/proj2017/final-reports/5243811.pdf"
+        },
+        {
+          "title": "Bayesian models for climate-resilient crop classification and ...",
+          "abstract": "The results demonstrate that Bayesian models provide higher classification accuracy, reliable uncertainty estimation, and improved forecasting, supporting more ...",
+          "url": "https://www.facebook.com/groups/4072450076208721/posts/27711428471884216/"
+        },
+        {
+          "title": "Crop type classification with satellite imagery",
+          "abstract": "The main goal of the crop type classification is to create a map/image where each point on it will have a class of what is growing there, as shown in the images ...",
+          "url": "https://quantumobile.com/rd-blog/crop-type-classification-with-satellite-imagery/"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "An unsupervised neural network is used for optical imagery segmentation and missing data restoration due to clouds and shadows.",
+      "evidence": [
+        {
+          "title": "UCloudNet: A Residual U-Net with Deep Supervision for ...",
+          "abstract": "In this paper, we introduce a residual U-Net with deep supervision for cloud segmentation which provides better accuracy than previous approaches, and with less ...",
+          "url": "https://arxiv.org/html/2501.06440v1"
+        },
+        {
+          "title": "Cloud removal in Sentinel-2 imagery using a deep residual ...",
+          "abstract": "by A Meraner · 2020 · Cited by 587 — In this paper, a deep residual neural network architecture is designed to remove clouds from multispectral Sentinel-2 imagery.",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7386944/"
+        },
+        {
+          "title": "Optical Cloud Pixel Recovery via Machine Learning",
+          "abstract": "by S Tahsin · 2017 · Cited by 46 — A case study in Apalachicola Bay is presented to evaluate the performance of OCPR to repair cloudy NDVI reflectance. The RF-based OCPR method achieves a root ...",
+          "url": "https://repository.library.noaa.gov/view/noaa/25270"
+        },
+        {
+          "title": "satellite-image-deep-learning/techniques",
+          "abstract": "A brief introduction to satellite image segmentation with neural networks. Unsupervised Remote. Neural Network for Optical Remote Sensing Image Restoration. a ...",
+          "url": "https://github.com/satellite-image-deep-learning/techniques"
+        },
+        {
+          "title": "Thin cloud removal in optical remote sensing images ...",
+          "abstract": "by J Li · 2020 · Cited by 185 — In this paper, we propose a semi-supervised method based on generative adversarial networks (GANs) and a physical model of cloud distortion (CR-GAN-PM) for ...",
+          "url": "https://www.sciencedirect.com/science/article/abs/pii/S0924271620301787"
+        }
+      ],
+      "true_votes": 1,
+      "total_votes": 3,
+      "decision": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2312.04861",
+  "model": "MiniMax-M3",
+  "system": "citation-rag-v16",
+  "reference_precision": 0.2727272727272727,
+  "reference_recall": 0.010830324909747292,
+  "reference_count": 11,
+  "reference_matches": 3,
+  "ground_truth_count": 277,
+  "predicted_titles": [
+    "Radars for Autonomous Driving: A Review of Deep Learning Methods and Challenges",
+    "Radar Camera Fusion via Representation Learning in Autonomous Driving",
+    "A Survey of Autonomous Driving: Common Practices and Emerging Technologies",
+    "Towards Deep Radar Perception for Autonomous Driving",
+    "Object 3D Perception via Camera-Radar Cross-Modality Learning for Autonomous Driving",
+    "K-Radar: 4D Radar Object Detection for Autonomous Driving in Various Weather Conditions",
+    "Deep Radar Detector",
+    "4D Radar Object Detection Dataset and Benchmark for ...",
+    "Camera–Radar Fusion with Modality Interaction and Radar Gaussian ...",
+    "Range-Doppler Detection in Automotive Radar with Deep ...",
+    "RODNet: Radar Object Detection using Cross-Modal ..."
+  ]
+}

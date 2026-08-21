@@ -1,0 +1,157 @@
+{
+  "arxiv_id": "2105.01605",
+  "model": "MiniMax-M3",
+  "system": "citation-rag-v16",
+  "reference_precision": 0.4,
+  "reference_recall": 0.08163265306122448,
+  "reference_count": 10,
+  "reference_matches": 4,
+  "ground_truth_count": 49,
+  "predicted_titles": [
+    "Deep Adversarial Graph Attention Convolution Network for Text-Based Person Search",
+    "Natural Language Person Search Using Deep Reinforcement Learning",
+    "Adversarial Representation Learning for Text-to-Image Matching",
+    "Person search: New paradigm of person re-identification: A survey and outlook of recent works",
+    "Attention-based Natural Language Person Retrieval",
+    "Joint Detection and Identification Feature Learning for Person Search",
+    "End-to-End Deep Learning for Person Search",
+    "Multi-Level Joint Feature Learning for Person Re-Identification - MDPI",
+    "End-to-end person search sequentially trained on ...",
+    "Triplet Online Instance Matching Loss for Person Re ..."
+  ],
+  "cited_match_rate": 0.9444444444444444,
+  "cited_count": 18,
+  "cited_supported": 17,
+  "cited_details": [
+    {
+      "statement": "Person search aims to find a probe person from a gallery of whole scene images, with significance for video surveillance applications including tracking lost people, re-identification, and person verification (https://doi.org/10.1016/j.imavis.2020.103970).",
+      "url": "https://doi.org/10.1016/j.imavis.2020.103970",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "One subfield, image-based person search, evolved from person re-identification by addressing the case in which pedestrian bounding-box annotations are unavailable in the gallery images (https://arxiv.org/abs/1604.01850).",
+      "url": "https://arxiv.org/abs/1604.01850",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A second subfield, text-based person search, retrieves target pedestrian images from a natural-language query, and is more applicable in reality because no image or video probe is required (https://www.semanticscholar.org/paper/56e3758cd9acc97f41ed3dbefd66fd76f238e4fb).",
+      "url": "https://semanticscholar.org/paper/56e3758cd9acc97f41ed3dbefd66fd76f238e4fb",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Traditional re-identification benchmarks focus on matching cropped pedestrian images, but in real-world scenarios pedestrian bounding-box annotations are unavailable and the target person must be searched from a gallery of whole scene images (https://arxiv.org/abs/1604.01850).",
+      "url": "https://arxiv.org/abs/1604.01850",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "proposed a deep learning framework that jointly handles pedestrian detection and re-identification in a single convolutional neural network, introducing the Online Instance Matching (OIM) loss for training under unconstrained scene images (https://arxiv.org/abs/1604.01850).",
+      "url": "https://arxiv.org/abs/1604.01850",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The accompanying CUHK-SYSU benchmark contains 18,184 images, 8,432 persons, and 99,809 annotated bounding boxes drawn from hundreds of street and movie scenes (http://www.ee.cuhk.edu.hk/~xgwang/PS/dataset.html).",
+      "url": "http://ee.cuhk.edu.hk/~xgwang/PS/dataset.html",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Subsequent work has explored end-to-end person search with sequential training of detection and re-identification components on the CUHK-SYSU and PRW datasets (https://cea.hal.science/cea-03251768/document).",
+      "url": "https://cea.hal.science/cea-03251768/document",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Text-based person search retrieves target pedestrian images from a textual query, eliminating the requirement of an image or video probe (https://www.semanticscholar.org/paper/56e3758cd9acc97f41ed3dbefd66fd76f238e4fb).",
+      "url": "https://semanticscholar.org/paper/56e3758cd9acc97f41ed3dbefd66fd76f238e4fb",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "constructed an attention-based retrieval benchmark and proposed a model that localizes a described person in a scene image, which remains difficult under low resolution, deformation, occlusion, and where language semantics are latent and hard to quantify (https://arxiv.org/abs/1705.08923).",
+      "url": "https://arxiv.org/abs/1705.08923",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Shah and Vuong explored deep reinforcement learning, where an agent decides how to localize the candidate pedestrian from a textual description, leveraging end-to-end object detection with deep reinforcement learning (https://arxiv.org/abs/1809.00365).",
+      "url": "https://arxiv.org/abs/1809.00365",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "introduced adversarial representation learning that matches the distributions of image and text features belonging to the same identity, and addresses the complexity of the textual input that prior loss-based methods fail to capture (https://arxiv.org/abs/1908.10534).",
+      "url": "https://arxiv.org/abs/1908.10534",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "proposed a deep adversarial graph attention convolution network that exploits textual and visual scene graphs, with a feature transformer and modality discriminator learning a joint textual–visual feature space (https://www.semanticscholar.org/paper/56e3758cd9acc97f41ed3dbefd66fd76f238e4fb).",
+      "url": "https://semanticscholar.org/paper/56e3758cd9acc97f41ed3dbefd66fd76f238e4fb",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "For image-based search, joint detection and identification feature learning produces representations that simultaneously localize the pedestrian and distinguish identity (https://arxiv.org/abs/1604.01850).",
+      "url": "https://arxiv.org/abs/1604.01850",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Multi-level feature fusion models that combine global and local image features through deep learning have been proposed in the re-identification setting (https://www.mdpi.com/1999-4893/13/5/111).",
+      "url": "https://mdpi.com/1999-4893/13/5/111",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "For text-based search, attention mechanisms have been applied in this setting, with challenges arising from low resolution, deformation, and occlusion in images and from latent, hard-to-quantify language semantics (https://arxiv.org/abs/1705.08923).",
+      "url": "https://arxiv.org/abs/1705.08923",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Graph attention convolution layers exploit scene-graph structure, consisting of object properties and relationships, for fine-grained cross-modal matching (https://www.semanticscholar.org/paper/56e3758cd9acc97f41ed3dbefd66fd76f238e4fb).",
+      "url": "https://semanticscholar.org/paper/56e3758cd9acc97f41ed3dbefd66fd76f238e4fb",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Deep metric learning with novel loss functions is a primary tool for closing the cross-camera or cross-modality gap in person search (https://doi.org/10.1016/j.imavis.2020.103970).",
+      "url": "https://doi.org/10.1016/j.imavis.2020.103970",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "For image-based re-identification, the OIM loss and triplet loss are the principal methods, but OIM treats all samples equally without emphasizing hard samples, and triplet loss has complex batch construction with slow convergence (https://arxiv.org/abs/2002.10560).",
+      "url": "https://arxiv.org/abs/2002.10560",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    }
+  ],
+  "noncited_factual_accuracy": 0.0,
+  "noncited_count": 0,
+  "noncited_correct": 0,
+  "noncited_details": []
+}

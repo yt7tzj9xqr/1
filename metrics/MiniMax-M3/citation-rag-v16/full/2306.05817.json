@@ -1,0 +1,104 @@
+{
+  "arxiv_id": "2306.05817",
+  "model": "MiniMax-M3",
+  "system": "citation-rag-v16",
+  "reference_precision": 0.5,
+  "reference_recall": 0.009966777408637873,
+  "reference_count": 6,
+  "reference_matches": 3,
+  "ground_truth_count": 301,
+  "predicted_titles": [
+    "Collaborative Large Language Model for Recommender Systems",
+    "RecSys 2023 Tutorial: Large Language Models for Recommendation",
+    "Recommender Systems in the Era of Large Language Models (LLMs)",
+    "Leveraging Large Language Models for Sequential Recommendation",
+    "LLM-RS: A Large Language Model-Based Sequential ... - MDPI",
+    "LLM-ESR: Large Language Models Enhancement for Long-tailed ..."
+  ],
+  "cited_match_rate": 1.0,
+  "cited_count": 11,
+  "cited_supported": 11,
+  "cited_details": [
+    {
+      "statement": "Recommender systems have become an indispensable component in daily life, providing personalized suggestions that cater to user preferences (https://doi.org/10.1109/tkde.2024.3392335).",
+      "url": "https://doi.org/10.1109/tkde.2024.3392335",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "DNN-based recommender methods still exhibit limitations, including difficulties in effectively understanding user interests and capturing textual side information, inabilities in generalizing to various seen and unseen recommendation scenarios, and difficulties in reasoning on their predictions (https://doi.org/10.1109/tkde.2024.3392335).",
+      "url": "https://doi.org/10.1109/tkde.2024.3392335",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The development of Large Language Models such as ChatGPT and GPT-4 has revolutionized the fields of Natural Language Processing and Artificial Intelligence due to their remarkable abilities in language understanding and generation (https://doi.org/10.1109/tkde.2024.3392335).",
+      "url": "https://doi.org/10.1109/tkde.2024.3392335",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A 2023 RecSys tutorial reports that formulating recommendation tasks such as rating prediction, sequential recommendation, straightforward recommendation, and explanation generation into language instructions makes it possible to build universal recommendation engines that handle different recommendation tasks (https://llmrecsys.github.io/).",
+      "url": "https://llmrecsys.github.io",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "LLMs have a remarkable capacity for understanding natural language, enabling them to comprehend user preferences, item descriptions, and contextual information to generate more accurate and relevant recommendations (https://llmrecsys.github.io/).",
+      "url": "https://llmrecsys.github.io",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Sequential recommendation has received increasing attention in research, leading to the inception of a large body of work (https://arxiv.org/abs/2309.09261).",
+      "url": "https://arxiv.org/abs/2309.09261",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Sequential recommender systems aim to predict users' subsequent choices based on their historical interactions and have found applications in e-commerce and social media (https://neurips.cc/virtual/2024/poster/93061).",
+      "url": "https://neurips.cc/virtual/2024/poster/93061",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Most users interact with only a handful of items while the majority of items are seldom consumed, creating long-tail user and long-tail item challenges that pose difficulties for existing sequential recommender systems (https://neurips.cc/virtual/2024/poster/93061).",
+      "url": "https://neurips.cc/virtual/2024/poster/93061",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "LLM-ESR presents a promising solution to long-tail user and long-tail item challenges in sequential recommendation from a semantic perspective (https://neurips.cc/virtual/2024/poster/93061).",
+      "url": "https://neurips.cc/virtual/2024/poster/93061",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "LLM-RS is a framework that leverages Large Language Models to enable explicit reasoning chains in sequential recommendation (https://www.mdpi.com/2227-7390/14/14/2631).",
+      "url": "https://mdpi.com/2227-7390/14/14/2631",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A 2024 paper proposes CLLM4Rec, described as the first generative recommender that tightly integrates the LLM paradigm and the ID paradigm of recommenders (https://doi.org/10.1145/3589334.3645347).",
+      "url": "https://doi.org/10.1145/3589334.3645347",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    }
+  ],
+  "noncited_factual_accuracy": 0.0,
+  "noncited_count": 0,
+  "noncited_correct": 0,
+  "noncited_details": []
+}

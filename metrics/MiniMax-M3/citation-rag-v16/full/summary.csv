@@ -1,0 +1,11 @@
+﻿arxiv_id,cited_count,cited_match_rate,cited_supported,ground_truth_count,model,noncited_correct,noncited_count,noncited_factual_accuracy,reference_count,reference_matches,reference_precision,reference_recall,system
+2004.05937,0,0.0,0,305,MiniMax-M3,0,0,0.0,0,0,0.0,0.0,citation-rag-v16
+2105.01605,18,0.9444444444444444,17,49,MiniMax-M3,0,0,0.0,10,4,0.4,0.08163265306122448,citation-rag-v16
+2205.08977,20,1.0,20,317,MiniMax-M3,0,0,0.0,11,0,0.0,0.0,citation-rag-v16
+2204.10325,32,0.96875,31,36,MiniMax-M3,10,20,0.5,12,0,0.0,0.0,citation-rag-v16
+2306.05817,11,1.0,11,301,MiniMax-M3,0,0,0.0,6,3,0.5,0.009966777408637873,citation-rag-v16
+2308.04603,28,1.0,28,67,MiniMax-M3,5,10,0.5,12,3,0.25,0.04477611940298507,citation-rag-v16
+2206.13188,29,0.5862068965517241,17,252,MiniMax-M3,12,15,0.8,12,6,0.5,0.023809523809523808,citation-rag-v16
+2310.12986,22,0.9090909090909091,20,61,MiniMax-M3,0,0,0.0,11,0,0.0,0.0,citation-rag-v16
+2312.04861,21,1.0,21,277,MiniMax-M3,0,0,0.0,11,3,0.2727272727272727,0.010830324909747292,citation-rag-v16
+2401.07915,14,0.6428571428571429,9,260,MiniMax-M3,0,0,0.0,12,6,0.5,0.023076923076923078,citation-rag-v16
