@@ -6,7 +6,8 @@ import re
 from ..config import Settings
 from ..models import MiniMaxClient
 from ..prompts import (
-    RAG_SYSTEM, evidence_block, generated_report_is_usable, repair_grounded_report,
+    RAG_SYSTEM, evidence_block, generated_report_is_usable,
+    recover_sanitized_report, repair_grounded_report,
 )
 from ..providers.openalex import extract_cutoff, filter_papers, search_queries
 from ..retrieval import (
@@ -374,5 +375,12 @@ class CitationRagPipeline:
             f"citation-rag-evidence-repair-v2:{self.settings.model}", "600-800", "10-12",
         )
         report = sanitize_report(report)
+        report = recover_sanitized_report(
+            report, writing_papers, self.model,
+            f"citation-rag-post-sanitize-recovery-v1:{self.settings.model}", "500-650",
+        )
+        report = sanitize_report(report)
+        if not generated_report_is_usable(report, minimum_words=300):
+            raise RuntimeError("RAG report collapsed after atomic-citation cleanup")
         report = normalize_source_citations(report, writing_papers)
         return report, papers

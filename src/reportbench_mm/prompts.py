@@ -49,6 +49,29 @@ def generated_report_is_usable(report: str, minimum_words: int = 350, minimum_so
     return words >= minimum_words and len(urls) >= minimum_sources
 
 
+def recover_sanitized_report(
+    report: str, papers, model, namespace: str, word_range: str,
+) -> str:
+    """Regenerate only when atomic-citation cleanup collapses an otherwise valid draft."""
+    if generated_report_is_usable(report, minimum_words=300):
+        return report
+    evidence = evidence_block(papers[:10], 12000)
+    prompt = (
+        "Rebuild the incomplete DRAFT as a focused evidence-grounded English survey using only EVIDENCE. "
+        f"Write {word_range} words. Every factual sentence must be atomic and contain exactly one verbatim URL "
+        "from its supporting evidence card; never place two source URLs in the same sentence. Omit unsupported "
+        "claims, cross-paper synthesis, a References section, and empty headings. Return only Markdown.\n\n"
+        f"EVIDENCE:\n{evidence}\n\nINCOMPLETE DRAFT:\n{report}"
+    )
+    candidate = model.generate(
+        [{"role": "user", "content": prompt}], temperature=0, max_tokens=32768,
+        cache_namespace=namespace,
+    )
+    if not generated_report_is_usable(candidate, minimum_words=300):
+        raise RuntimeError("Post-sanitize recovery returned an unusable report")
+    return candidate
+
+
 def _repair_output_is_usable(candidate: str, draft: str, word_range: str, source_range: str) -> bool:
     """Reject nominally successful edits that collapse the report or its references."""
     candidate_words = len(candidate.split())
