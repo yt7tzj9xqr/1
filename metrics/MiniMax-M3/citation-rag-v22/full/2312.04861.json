@@ -1,0 +1,260 @@
+{
+  "arxiv_id": "2312.04861",
+  "model": "MiniMax-M3",
+  "system": "citation-rag-v22",
+  "reference_precision": 0.25,
+  "reference_recall": 0.007220216606498195,
+  "reference_count": 8,
+  "reference_matches": 2,
+  "ground_truth_count": 277,
+  "predicted_titles": [
+    "Radar Camera Fusion via Representation Learning in Autonomous Driving",
+    "CARRADA Dataset: Camera and Automotive Radar with Range- Angle- Doppler Annotations",
+    "PolarNet: Accelerated Deep Open Space Segmentation Using Automotive Radar in Polar Domain",
+    "CenterRadarNet: Joint 3D Object Detection and Tracking Framework using 4D FMCW Radar",
+    "ERASE-Net: Efficient Segmentation Networks for Automotive Radar Signals",
+    "F-ROADNET: Late Fusion-Based Automotive Radar Object Detection",
+    "Bootstrapping Autonomous Driving Radars with Self-Supervised Learning",
+    "GET-UP: GEomeTric-aware Depth Estimation with Radar Points UPsampling"
+  ],
+  "cited_match_rate": 1.0,
+  "cited_count": 14,
+  "cited_supported": 14,
+  "cited_details": [
+    {
+      "statement": "Progress on radar representation learning has been constrained by the limited availability of automotive datasets that pair real raw radar signals with annotations, as noted by the CARRADA work, which states that \"this situation is due to the relative lack of automotive datasets with real radar signals that are both raw and annotated.\" [http://arxiv.org/abs/2005.01456] To address this, CARRADA contributes synchronized camera and radar recordings with range-angle-Doppler annotations, together with a semi-automatic annotation pipeline, and provides a radar semantic segmentation baseline [http://arxiv.org/abs/2005.01456].",
+      "url": "http://arxiv.org/abs/2005.01456",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Progress on radar representation learning has been constrained by the limited availability of automotive datasets that pair real raw radar signals with annotations, as noted by the CARRADA work, which states that \"this situation is due to the relative lack of automotive datasets with real radar signals that are both raw and annotated.\" [http://arxiv.org/abs/2005.01456] To address this, CARRADA contributes synchronized camera and radar recordings with range-angle-Doppler annotations, together with a semi-automatic annotation pipeline, and provides a radar semantic segmentation baseline [http://arxiv.org/abs/2005.01456].",
+      "url": "http://arxiv.org/abs/2005.01456",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "PolarNet proposes \"a deep neural model to process radar information in polar domain for open space segmentation\" and explicitly \"explores various input-output representations.\" [https://arxiv.org/abs/2103.03387] The paper reports that PolarNet \"achieves state-of-the-art performance and processing speeds while maintaining a compact size\" for drivable and occupied space identification from automotive radar [https://arxiv.org/abs/2103.03387].",
+      "url": "https://arxiv.org/abs/2103.03387",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "PolarNet proposes \"a deep neural model to process radar information in polar domain for open space segmentation\" and explicitly \"explores various input-output representations.\" [https://arxiv.org/abs/2103.03387] The paper reports that PolarNet \"achieves state-of-the-art performance and processing speeds while maintaining a compact size\" for drivable and occupied space identification from automotive radar [https://arxiv.org/abs/2103.03387].",
+      "url": "https://arxiv.org/abs/2103.03387",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "ERASE-Net observes that \"existing methods are either computationally expensive or discard significant amounts of valuable information from raw 3D radar signals by reducing them to 2D planes via averaging, which leads to the downgrade of its segmentation performance.\" [https://arxiv.org/abs/2209.12940] To counter this, ERASE-Net introduces \"a novel detect-then-segment method for raw radar signals\" that \"first detects the center point of each object, then extracts a compact radar signal\" representation for downstream semantic segmentation [https://arxiv.org/abs/2209.12940].",
+      "url": "https://arxiv.org/abs/2209.12940",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "ERASE-Net observes that \"existing methods are either computationally expensive or discard significant amounts of valuable information from raw 3D radar signals by reducing them to 2D planes via averaging, which leads to the downgrade of its segmentation performance.\" [https://arxiv.org/abs/2209.12940] To counter this, ERASE-Net introduces \"a novel detect-then-segment method for raw radar signals\" that \"first detects the center point of each object, then extracts a compact radar signal\" representation for downstream semantic segmentation [https://arxiv.org/abs/2209.12940].",
+      "url": "https://arxiv.org/abs/2209.12940",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "CenterRadarNet notes that \"the majority of previous methods take in 3D (Doppler-range-azimuth) RF radar tensors,\" but states that \"they lack the ability to at the same time infer objects' size, orientation, and identity in the 3D space.\" [https://arxiv.org/abs/2311.01423] The framework therefore learns from \"4D (Doppler-range-azimuth-elevation) radar data\" to perform joint 3D object detection and re-identification, predicting \"BEV object distribution confidence maps, corresponding 3D bounding box attributes, and appearance embedding.\" [https://arxiv.org/abs/2311.01423]",
+      "url": "https://arxiv.org/abs/2311.01423",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "CenterRadarNet notes that \"the majority of previous methods take in 3D (Doppler-range-azimuth) RF radar tensors,\" but states that \"they lack the ability to at the same time infer objects' size, orientation, and identity in the 3D space.\" [https://arxiv.org/abs/2311.01423] The framework therefore learns from \"4D (Doppler-range-azimuth-elevation) radar data\" to perform joint 3D object detection and re-identification, predicting \"BEV object distribution confidence maps, corresponding 3D bounding box attributes, and appearance embedding.\" [https://arxiv.org/abs/2311.01423]",
+      "url": "https://arxiv.org/abs/2311.01423",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "F-ROADNET proposes \"a multi-object classification method for vulnerable road users based on raw Radar data\" and trains \"on Range Angle and Range Doppler maps based on a late fusion architecture,\" reporting that \"F-ROADNET outperforms established methods in terms of average precision\" on the CARRADA and RADDet datasets [https://doi.org/10.1109/access.2023.3343383].",
+      "url": "https://doi.org/10.1109/access.2023.3343383",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "GET-UP observes that \"existing algorithms process the inherently noisy and sparse radar data by projecting 3D points onto the image plane for pixel-level feature extraction, overlooking the valuable geometric information contained within the radar point cloud,\" and proposes an attention-based upsampling method for radar-camera depth estimation [https://arxiv.org/abs/2409.02720].",
+      "url": "https://arxiv.org/abs/2409.02720",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The \"Radar Camera Fusion via Representation Learning\" study observes that \"radar-camera association\" is challenged by \"the noisy and sparse nature of radar measurements, and the depth ambiguity from 2D bounding boxes,\" and \"address[es] radar-camera association via deep representation learning\" to \"explore feature-level interaction and global reasoning.\" [https://arxiv.org/abs/2103.07825] The method is trained with \"noisy labels generated by a rule-based algorithm\" yet still achieves strong association performance [https://arxiv.org/abs/2103.07825].",
+      "url": "https://arxiv.org/abs/2103.07825",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The \"Radar Camera Fusion via Representation Learning\" study observes that \"radar-camera association\" is challenged by \"the noisy and sparse nature of radar measurements, and the depth ambiguity from 2D bounding boxes,\" and \"address[es] radar-camera association via deep representation learning\" to \"explore feature-level interaction and global reasoning.\" [https://arxiv.org/abs/2103.07825] The method is trained with \"noisy labels generated by a rule-based algorithm\" yet still achieves strong association performance [https://arxiv.org/abs/2103.07825].",
+      "url": "https://arxiv.org/abs/2103.07825",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The bootstrapping study states that \"training radar models is hindered by the cost and difficulty of annotating large-scale radar data,\" and notes that \"radar images are especially challenging for humans to interpret and thus annotate.\" [https://arxiv.org/abs/2312.04519] To mitigate this, it \"propose[s] a self-supervised learning framework to leverage the large amount of unlabeled radar data to pre-train radar-only embeddings\" using \"radar-to-radar and radar-to-vision contrastive losses\" applied to BEV radar heatmaps [https://arxiv.org/abs/2312.04519].",
+      "url": "https://arxiv.org/abs/2312.04519",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The bootstrapping study states that \"training radar models is hindered by the cost and difficulty of annotating large-scale radar data,\" and notes that \"radar images are especially challenging for humans to interpret and thus annotate.\" [https://arxiv.org/abs/2312.04519] To mitigate this, it \"propose[s] a self-supervised learning framework to leverage the large amount of unlabeled radar data to pre-train radar-only embeddings\" using \"radar-to-radar and radar-to-vision contrastive losses\" applied to BEV radar heatmaps [https://arxiv.org/abs/2312.04519].",
+      "url": "https://arxiv.org/abs/2312.04519",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    }
+  ],
+  "noncited_factual_accuracy": 0.75,
+  "noncited_count": 4,
+  "noncited_correct": 3,
+  "noncited_details": [
+    {
+      "claim": "Newer automotive radars provide an additional elevation dimension.",
+      "evidence": [
+        {
+          "title": "Radar Camera Fusion via Representation Learning in Autonomous Driving",
+          "abstract": "Radars and cameras are mature, cost-effective, and robust sensors and have been widely used in the perception stack of mass-produced autonomous driving systems. Due to their complementary properties, outputs from radar detection (radar pins) and camera perception (2D bounding boxes) are usually fused to generate the best perception results. The key to successful radar-camera fusion is the accurate data association. The challenges in the radar-camera association can be attributed to the complexity of driving scenes, the noisy and sparse nature of radar measurements, and the depth ambiguity from 2D bounding boxes. Traditional rule-based association methods are susceptible to performance degradation in challenging scenarios and failure in corner cases. In this study, we propose to address radar-camera association via deep representation learning, to explore feature-level interaction and global reasoning. Additionally, we design a loss sampling mechanism and an innovative ordinal loss to overcome the difficulty of imperfect labeling and to enforce critical human-like reasoning. Despite being trained with noisy labels generated by a rule-based algorithm, our proposed method achieves a performance of 92.2% F1 score, which is 11.6% higher than the rule-based teacher. Moreover, this data-driven method also lends itself to continuous improvement via corner case mining.",
+          "url": "https://arxiv.org/abs/2103.07825"
+        },
+        {
+          "title": "CARRADA Dataset: Camera and Automotive Radar with Range- Angle- Doppler Annotations",
+          "abstract": "High quality perception is essential for autonomous driving (AD) systems. To reach the accuracy and robustness that are required by such systems, several types of sensors must be combined. Currently, mostly cameras and laser scanners (lidar) are deployed to build a representation of the world around the vehicle. While radar sensors have been used for a long time in the automotive industry, they are still under-used for AD despite their appealing characteristics (notably, their ability to measure the relative speed of obstacles and to operate even in adverse weather conditions). To a large extent, this situation is due to the relative lack of automotive datasets with real radar signals that are both raw and annotated. In this work, we introduce CARRADA, a dataset of synchronized camera and radar recordings with range-angle-Doppler annotations. We also present a semi-automatic annotation approach, which was used to annotate the dataset, and a radar semantic segmentation baseline, which we evaluate on several metrics. Both our code and dataset are available online.",
+          "url": "http://arxiv.org/abs/2005.01456"
+        },
+        {
+          "title": "PolarNet: Accelerated Deep Open Space Segmentation Using Automotive Radar in Polar Domain",
+          "abstract": "Camera and Lidar processing have been revolutionized with the rapid development of deep learning model architectures. Automotive radar is one of the crucial elements of automated driver assistance and autonomous driving systems. Radar still relies on traditional signal processing techniques, unlike camera and Lidar based methods. We believe this is the missing link to achieve the most robust perception system. Identifying drivable space and occupied space is the first step in any autonomous decision making task. Occupancy grid map representation of the environment is often used for this purpose. In this paper, we propose PolarNet, a deep neural model to process radar information in polar domain for open space segmentation. We explore various input-output representations. Our experiments show that PolarNet is a effective way to process radar data that achieves state-of-the-art performance and processing speeds while maintaining a compact size.",
+          "url": "https://arxiv.org/abs/2103.03387"
+        },
+        {
+          "title": "Advanced automotive radar front-end based on gapwaveguide technology",
+          "abstract": "The pursuit of higher levels of autonomous driving necessitates the utiliza- tion of advanced radar sensors that possess improved environmental percep-.",
+          "url": "https://research.chalmers.se/publication/537862/file/537862_AdditionalFile_536439c9.pdf"
+        },
+        {
+          "title": "Advancements in Automotive Radars - FutureBridge",
+          "abstract": "They are capable of capturing objects both in the elevation as well as in azimuth, This radar could classify objects in elevation and azimuth ...",
+          "url": "https://www.futurebridge.com/blog/advancements-in-automotive-radars/"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "Automotive radar sensors operate in the 77 to 81 GHz frequency range.",
+      "evidence": [
+        {
+          "title": "F-ROADNET: Late Fusion-Based Automotive Radar Object Detection",
+          "abstract": "Road user categorization is essential for autonomous driving perception. In challenging traffic situations including unfavorable weather (such as fog, snow, and rain) and dim lighting. There are several kinds of sensors that need to be researched in order to achieve the precision and resilience that autonomous systems demand. Currently, to create a depiction of the environment surrounding the vehicle, principally cameras and laser scanners (LiDAR) are commissioned. Despite their enticing qualities, Radar sensors are currently underutilized for autonomous driving, even though, they have been employed in the automobile industry for a long time. Radar’s ability to measure the relative speed of obstacles and to operate even in adverse weather conditions makes it a front line contender for road user detection. This study proposes F-ROADNET, a multi-object classification method for vulnerable road users based on raw Radar data. The model is trained on Range Angle and Range Doppler maps based on a late fusion architecture. F-ROADNET has a detection accuracy of 99.01%, precision of 99.3% and recall of 99% on the CARRADA dataset and detection accuracy of 91.62%, precision of 87.2% and recall of 90.2% on the RADDet dataset. The findings exhibit that F-ROADNET outperforms established methods in terms of average precision.",
+          "url": "https://doi.org/10.1109/access.2023.3343383"
+        },
+        {
+          "title": "CARRADA Dataset: Camera and Automotive Radar with Range- Angle- Doppler Annotations",
+          "abstract": "High quality perception is essential for autonomous driving (AD) systems. To reach the accuracy and robustness that are required by such systems, several types of sensors must be combined. Currently, mostly cameras and laser scanners (lidar) are deployed to build a representation of the world around the vehicle. While radar sensors have been used for a long time in the automotive industry, they are still under-used for AD despite their appealing characteristics (notably, their ability to measure the relative speed of obstacles and to operate even in adverse weather conditions). To a large extent, this situation is due to the relative lack of automotive datasets with real radar signals that are both raw and annotated. In this work, we introduce CARRADA, a dataset of synchronized camera and radar recordings with range-angle-Doppler annotations. We also present a semi-automatic annotation approach, which was used to annotate the dataset, and a radar semantic segmentation baseline, which we evaluate on several metrics. Both our code and dataset are available online.",
+          "url": "http://arxiv.org/abs/2005.01456"
+        },
+        {
+          "title": "CenterRadarNet: Joint 3D Object Detection and Tracking Framework using 4D FMCW Radar",
+          "abstract": "Robust perception is a vital component for ensuring safe autonomous and assisted driving. Automotive radar (77 to 81 GHz), which offers weather-resilient sensing, provides a complementary capability to the vision- or LiDAR-based autonomous driving systems. Raw radio-frequency (RF) radar tensors contain rich spatiotemporal semantics besides 3D location information. The majority of previous methods take in 3D (Doppler-range-azimuth) RF radar tensors, allowing prediction of an object's location, heading angle, and size in bird's-eye-view (BEV). However, they lack the ability to at the same time infer objects' size, orientation, and identity in the 3D space. To overcome this limitation, we propose an efficient joint architecture called CenterRadarNet, designed to facilitate high-resolution representation learning from 4D (Doppler-range-azimuth-elevation) radar data for 3D object detection and re-identification (re-ID) tasks. As a single-stage 3D object detector, CenterRadarNet directly infers the BEV object distribution confidence maps, corresponding 3D bounding box attributes, and appearance embedding for each pixel. Moreover, we build an online tracker utilizing the learned appearance embedding for re-ID. CenterRadarNet achieves the state-of-the-art result on the K-Radar 3D object detection benchmark. In addition, we present the first 3D object-tracking result using radar on the K-Radar dataset V2. In diverse driving scenarios, CenterRadarNet shows consistent, robust performance, emphasizing its wide applicability.",
+          "url": "https://arxiv.org/abs/2311.01423"
+        },
+        {
+          "title": "Comprehensive Survey of 77, 79 GHz Automotive Radar Companies",
+          "abstract": "TI's AWR1642 device is an integrated single-chip FMCW radar sensor capable of operation in the 76 to 81 GHz band. The device is built with ...",
+          "url": "https://www.microwavejournal.com/articles/33705-comprehensive-survey-of-77-79-ghz-automotive-radar-companies-sensors-and-ics"
+        },
+        {
+          "title": "79 GHz automotive radar and its opportunities for frequency and ...",
+          "abstract": "This paper discusses an approach towards a frequency and bandwidth agile automotive radar sensor that allows to trade maximum range versus resolution.",
+          "url": "https://ieeexplore.ieee.org/document/8008117/"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "Automotive radar can measure the relative speed of obstacles and remain operational under adverse weather conditions such as fog, snow, and rain.",
+      "evidence": [
+        {
+          "title": "F-ROADNET: Late Fusion-Based Automotive Radar Object Detection",
+          "abstract": "Road user categorization is essential for autonomous driving perception. In challenging traffic situations including unfavorable weather (such as fog, snow, and rain) and dim lighting. There are several kinds of sensors that need to be researched in order to achieve the precision and resilience that autonomous systems demand. Currently, to create a depiction of the environment surrounding the vehicle, principally cameras and laser scanners (LiDAR) are commissioned. Despite their enticing qualities, Radar sensors are currently underutilized for autonomous driving, even though, they have been employed in the automobile industry for a long time. Radar’s ability to measure the relative speed of obstacles and to operate even in adverse weather conditions makes it a front line contender for road user detection. This study proposes F-ROADNET, a multi-object classification method for vulnerable road users based on raw Radar data. The model is trained on Range Angle and Range Doppler maps based on a late fusion architecture. F-ROADNET has a detection accuracy of 99.01%, precision of 99.3% and recall of 99% on the CARRADA dataset and detection accuracy of 91.62%, precision of 87.2% and recall of 90.2% on the RADDet dataset. The findings exhibit that F-ROADNET outperforms established methods in terms of average precision.",
+          "url": "https://doi.org/10.1109/access.2023.3343383"
+        },
+        {
+          "title": "CARRADA Dataset: Camera and Automotive Radar with Range- Angle- Doppler Annotations",
+          "abstract": "High quality perception is essential for autonomous driving (AD) systems. To reach the accuracy and robustness that are required by such systems, several types of sensors must be combined. Currently, mostly cameras and laser scanners (lidar) are deployed to build a representation of the world around the vehicle. While radar sensors have been used for a long time in the automotive industry, they are still under-used for AD despite their appealing characteristics (notably, their ability to measure the relative speed of obstacles and to operate even in adverse weather conditions). To a large extent, this situation is due to the relative lack of automotive datasets with real radar signals that are both raw and annotated. In this work, we introduce CARRADA, a dataset of synchronized camera and radar recordings with range-angle-Doppler annotations. We also present a semi-automatic annotation approach, which was used to annotate the dataset, and a radar semantic segmentation baseline, which we evaluate on several metrics. Both our code and dataset are available online.",
+          "url": "http://arxiv.org/abs/2005.01456"
+        },
+        {
+          "title": "ERASE-Net: Efficient Segmentation Networks for Automotive Radar Signals",
+          "abstract": "Among various sensors for assisted and autonomous driving systems, automotive radar has been considered as a robust and low-cost solution even in adverse weather or lighting conditions. With the recent development of radar technologies and open-sourced annotated data sets, semantic segmentation with radar signals has become very promising. However, existing methods are either computationally expensive or discard significant amounts of valuable information from raw 3D radar signals by reducing them to 2D planes via averaging. In this work, we introduce ERASE-Net, an Efficient RAdar SEgmentation Network to segment the raw radar signals semantically. The core of our approach is the novel detect-then-segment method for raw radar signals. It first detects the center point of each object, then extracts a compact radar signal representation, and finally performs semantic segmentation. We show that our method can achieve superior performance on radar semantic segmentation task compared to the state-of-the-art (SOTA) technique. Furthermore, our approach requires up to 20x less computational resources. Finally, we show that the proposed ERASE-Net can be compressed by 40% without significant loss in performance, significantly more than the SOTA network, which makes it a more promising candidate for practical automotive applications.",
+          "url": "https://arxiv.org/abs/2209.12940"
+        },
+        {
+          "title": "Automotive Radar Signal Processing: Research Directions ...",
+          "abstract": "An overview of state-of-the-art signal processing in automotive radar is presented along with current research directions and practical ...",
+          "url": "https://www.researchgate.net/publication/349761472_Automotive_Radar_Signal_Processing_Research_Directions_and_Practical_Challenges"
+        },
+        {
+          "title": "Automotive Sensor Performance in Adverse Weather",
+          "abstract": "Adverse weather noise is complex, it can have multiple appearances and disturbs each sensor technology differently. Adverse weather causes about 21% of annual ...",
+          "url": "https://www.academia.edu/67679350/Automotive_Sensor_Performance_in_Adverse_Weather"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "Radar data can be organized into Range-Angle and Range-Doppler representations.",
+      "evidence": [
+        {
+          "title": "Streetscenes: towards scene understanding in still images",
+          "abstract": "This thesis describes an effort to construct a scene understanding system that is able to analyze the content of real images. While constructing the system we had to provide solutions to many of the fundamental questions that every student of object recognition deals with daily. These include the choice of data set, the choice of success measurement, the representation of the image content, the selection of inference engine, and the representation of the relations between objects. \r\nThe main test-bed for our system is the CBCL StreetScenes data base. It is a carefully labeled set of images, much larger than any similar data set available at the time it was collected. Each image in this data set was labeled for 9 common classes such as cars, pedestrians, roads and trees. Our system represents each image using a set of features that are based on a model of the human visual system constructed in our lab. We demonstrate that this biologically motivated image representation, along with its extensions, constitutes an effective representation for object detection, facilitating unprecedented levels of detection accuracy. Similarly to biological vision systems, our system uses hierarchical representations. We therefore explore the possible ways of combining information across the hierarchy into the final perception. \r\nOur system is trained using standard machine learning machinery, which was first applied to computer vision in earlier work of Prof. Poggio and others. We demonstrate how the same standard methods can be used to model relations between objects in images as well, capturing context information. The resulting system detects and localizes, using a unified set of tools and image representations, compact objects such as cars, amorphous objects such as trees and roads, and the relations between objects within the scene. The same representation also excels in identifying objects in clutter without scanning the image. \r\nMuch of the work presented in the thesis was devoted to a rigorous comparison of our system to alternative object recognition systems. The results of these experiments support the effectiveness of simple feed-forward systems for the basic tasks involved in scene understanding. We make our results fully available to the public by publishing our code and data sets in hope that others may improve and extend our results. (Copies available exclusively from MIT Libraries, Rm. 14-0551, Cambridge, MA 02139-4307. Ph. 617-253-5668; Fax 617-253-1690.)",
+          "url": "https://apps.dtic.mil/dtic/tr/fulltext/u2/a454810.pdf"
+        },
+        {
+          "title": "Radar Camera Fusion via Representation Learning in Autonomous Driving",
+          "abstract": "Radars and cameras are mature, cost-effective, and robust sensors and have been widely used in the perception stack of mass-produced autonomous driving systems. Due to their complementary properties, outputs from radar detection (radar pins) and camera perception (2D bounding boxes) are usually fused to generate the best perception results. The key to successful radar-camera fusion is the accurate data association. The challenges in the radar-camera association can be attributed to the complexity of driving scenes, the noisy and sparse nature of radar measurements, and the depth ambiguity from 2D bounding boxes. Traditional rule-based association methods are susceptible to performance degradation in challenging scenarios and failure in corner cases. In this study, we propose to address radar-camera association via deep representation learning, to explore feature-level interaction and global reasoning. Additionally, we design a loss sampling mechanism and an innovative ordinal loss to overcome the difficulty of imperfect labeling and to enforce critical human-like reasoning. Despite being trained with noisy labels generated by a rule-based algorithm, our proposed method achieves a performance of 92.2% F1 score, which is 11.6% higher than the rule-based teacher. Moreover, this data-driven method also lends itself to continuous improvement via corner case mining.",
+          "url": "https://arxiv.org/abs/2103.07825"
+        },
+        {
+          "title": "PolarNet: Accelerated Deep Open Space Segmentation Using Automotive Radar in Polar Domain",
+          "abstract": "Camera and Lidar processing have been revolutionized with the rapid development of deep learning model architectures. Automotive radar is one of the crucial elements of automated driver assistance and autonomous driving systems. Radar still relies on traditional signal processing techniques, unlike camera and Lidar based methods. We believe this is the missing link to achieve the most robust perception system. Identifying drivable space and occupied space is the first step in any autonomous decision making task. Occupancy grid map representation of the environment is often used for this purpose. In this paper, we propose PolarNet, a deep neural model to process radar information in polar domain for open space segmentation. We explore various input-output representations. Our experiments show that PolarNet is a effective way to process radar data that achieves state-of-the-art performance and processing speeds while maintaining a compact size.",
+          "url": "https://arxiv.org/abs/2103.03387"
+        },
+        {
+          "title": "A Review on Radar-Based Human Detection Techniques",
+          "abstract": "by MT Buyukakkaslar · 2024 · Cited by 37 — This study evaluated the general state of micro-Doppler radar-based human recognition technology, the related literature, and state-of-the-art ...",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11398015/"
+        },
+        {
+          "title": "Introduction to Radar: Part 2",
+          "abstract": "Range-Doppler matrix. The Radar estimates three parameters of distant objects: Range, Velocity, and Angle;",
+          "url": "https://medium.com/@itberrios6/introduction-to-radar-part-2-8a332066917e"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    }
+  ]
+}

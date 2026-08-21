@@ -1,0 +1,11 @@
+﻿arxiv_id,cited_count,cited_match_rate,cited_supported,ground_truth_count,model,noncited_correct,noncited_count,noncited_factual_accuracy,reference_count,reference_matches,reference_precision,reference_recall,system
+2105.01605,21,0.9523809523809523,20,49,MiniMax-M3,4,5,0.8,9,2,0.2222222222222222,0.04081632653061224,citation-rag-v22
+2004.05937,24,1.0,24,305,MiniMax-M3,4,4,1.0,10,5,0.5,0.01639344262295082,citation-rag-v22
+2204.10325,11,0.9090909090909091,10,36,MiniMax-M3,4,4,1.0,10,0,0.0,0.0,citation-rag-v22
+2205.08977,25,0.96,24,317,MiniMax-M3,4,4,1.0,9,0,0.0,0.0,citation-rag-v22
+2206.13188,19,0.9473684210526315,18,252,MiniMax-M3,2,2,1.0,8,5,0.625,0.01984126984126984,citation-rag-v22
+2306.05817,13,1.0,13,301,MiniMax-M3,15,15,1.0,10,7,0.7,0.023255813953488372,citation-rag-v22
+2308.04603,31,0.967741935483871,30,67,MiniMax-M3,4,4,1.0,8,3,0.375,0.04477611940298507,citation-rag-v22
+2310.12986,34,0.9705882352941176,33,61,MiniMax-M3,4,4,1.0,9,0,0.0,0.0,citation-rag-v22
+2401.07915,32,0.96875,31,260,MiniMax-M3,3,3,1.0,10,4,0.4,0.015384615384615385,citation-rag-v22
+2312.04861,14,1.0,14,277,MiniMax-M3,3,4,0.75,8,2,0.25,0.007220216606498195,citation-rag-v22

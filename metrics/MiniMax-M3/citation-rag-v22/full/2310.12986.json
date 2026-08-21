@@ -1,0 +1,401 @@
+{
+  "arxiv_id": "2310.12986",
+  "model": "MiniMax-M3",
+  "system": "citation-rag-v22",
+  "reference_precision": 0.0,
+  "reference_recall": 0.0,
+  "reference_count": 9,
+  "reference_matches": 0,
+  "ground_truth_count": 61,
+  "predicted_titles": [
+    "Image-Based Human Age Estimation by Manifold Learning and Locally Adjusted Robust Regression",
+    "Human Age Estimation With Regression on Discriminative Aging Manifold",
+    "Face manifold: manifold learning for synthetic face generation",
+    "Rank Flow Embedding for Unsupervised and Semi-Supervised Manifold Learning",
+    "Gait-based human age estimation using age group-dependent manifold learning and regression",
+    "Laplacian Eigenmaps for Dimensionality Reduction and Data Representation",
+    "Sparse Representation Classifier Guided Grassmann Reconstruction Metric Learning With Applications to Image Set Analysis",
+    "Locally Adjusted Robust Regression for Human Age Estimation",
+    "Image Classification Using Correlation Tensor Analysis"
+  ],
+  "cited_match_rate": 0.9705882352941176,
+  "cited_count": 34,
+  "cited_supported": 33,
+  "cited_details": [
+    {
+      "statement": "The Laplacian Eigenmaps algorithm was proposed as a geometrically motivated approach for constructing representations of high-dimensional data lying on a low-dimensional manifold embedded in a high-dimensional space https://doi.org/10.1162/089976603321780317.",
+      "url": "https://doi.org/10.1162/089976603321780317",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The algorithm provides a computationally efficient approach to nonlinear dimensionality reduction that has locality-preserving properties and a natural connection to clustering https://doi.org/10.1162/089976603321780317.",
+      "url": "https://doi.org/10.1162/089976603321780317",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Estimating human age automatically via facial image analysis has potential real-world applications such as human computer interaction and multimedia communication https://doi.org/10.1109/tip.2008.924280.",
+      "url": "https://doi.org/10.1109/tip.2008.924280",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A 2008 study introduced an age manifold learning scheme for extracting face aging features and designed a locally adjusted robust regressor for learning and prediction of human ages https://doi.org/10.1109/tip.2008.924280.",
+      "url": "https://doi.org/10.1109/tip.2008.924280",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The combined approach improves age estimation accuracy significantly over all previous methods https://doi.org/10.1109/tip.2008.924280.",
+      "url": "https://doi.org/10.1109/tip.2008.924280",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The merit of the proposed approaches is shown by extensive experiments on a large internal age database and the public available FG-NET database https://doi.org/10.1109/tip.2008.924280.",
+      "url": "https://doi.org/10.1109/tip.2008.924280",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Extensive studies on human faces in the human-computer interaction field reveal significant potentials for designing automatic age estimation systems via face image analysis https://doi.org/10.1109/tmm.2008.921847.",
+      "url": "https://doi.org/10.1109/tmm.2008.921847",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Face images with aging features may display sequential patterns with low-dimensional distributions https://doi.org/10.1109/tmm.2008.921847.",
+      "url": "https://doi.org/10.1109/tmm.2008.921847",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Such aging patterns can be effectively extracted from a discriminant subspace learning algorithm and visualized as distinct manifold structures https://doi.org/10.1109/tmm.2008.921847.",
+      "url": "https://doi.org/10.1109/tmm.2008.921847",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A multiple linear regression procedure with a quadratic model function can be facilitated by the low dimensionality to represent the manifold space embodying the discriminative property https://doi.org/10.1109/tmm.2008.921847.",
+      "url": "https://doi.org/10.1109/tmm.2008.921847",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A locally adjusted robust regressor (LARR) was designed for learning and prediction of human ages https://doi.org/10.1109/wacv.2008.4544009.",
+      "url": "https://doi.org/10.1109/wacv.2008.4544009",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The LARR method reduces the age estimation errors significantly over all previous methods https://doi.org/10.1109/wacv.2008.4544009.",
+      "url": "https://doi.org/10.1109/wacv.2008.4544009",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Experiments on two aging databases show the success of the proposed LARR method for human aging estimation https://doi.org/10.1109/wacv.2008.4544009.",
+      "url": "https://doi.org/10.1109/wacv.2008.4544009",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A 2018 study notes that previous studies on gait-based human age estimation employed a single age group-independent estimation model that suffered from large estimation errors when the age variation increased https://www.semanticscholar.org/paper/b55438c64dcb2f52404152a90acecce2f7ded2d5.",
+      "url": "https://semanticscholar.org/paper/b55438c64dcb2f52404152a90acecce2f7ded2d5",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The study proposes an age group-dependent gait-based human age estimation method for better accuracy https://www.semanticscholar.org/paper/b55438c64dcb2f52404152a90acecce2f7ded2d5.",
+      "url": "https://semanticscholar.org/paper/b55438c64dcb2f52404152a90acecce2f7ded2d5",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "In the training phase, age groups are composed that are well-separated from each other by clustering gait features along with their age labels https://www.semanticscholar.org/paper/b55438c64dcb2f52404152a90acecce2f7ded2d5.",
+      "url": "https://semanticscholar.org/paper/b55438c64dcb2f52404152a90acecce2f7ded2d5",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A classifier classifies the gait features for multiple age groups using a directed acyclic graph support vector machine https://www.semanticscholar.org/paper/b55438c64dcb2f52404152a90acecce2f7ded2d5.",
+      "url": "https://semanticscholar.org/paper/b55438c64dcb2f52404152a90acecce2f7ded2d5",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "An age regression model is learned for each age group using support vector regression with a Gaussian kernel in conjunction with orthogonal locality preserving projection, to better characterize the gait feature https://www.semanticscholar.org/paper/b55438c64dcb2f52404152a90acecce2f7ded2d5.",
+      "url": "https://semanticscholar.org/paper/b55438c64dcb2f52404152a90acecce2f7ded2d5",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A face manifold learning method was proposed for synthetic face generation https://arxiv.org/abs/1910.01403.",
+      "url": "https://arxiv.org/abs/1910.01403",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The main drawback of this representation is that it produces unsatisfactory outputs when the input face deviates largely from the example faces in the dataset https://arxiv.org/abs/1910.01403.",
+      "url": "https://arxiv.org/abs/1910.01403",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The choice of dataset has a great influence on the resulting model https://arxiv.org/abs/1910.01403.",
+      "url": "https://arxiv.org/abs/1910.01403",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Modeling a sequence of video frames as a linear subspace on Grassmann manifold has recently become increasingly attractive in multiple computer vision applications https://www.semanticscholar.org/paper/fd3bf3a9cef5500aa3b97588498e534c96006567.",
+      "url": "https://semanticscholar.org/paper/fd3bf3a9cef5500aa3b97588498e534c96006567",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A Grassmann Reconstruction Metric Learning (GRML) algorithm guided by a sparse representation-based classifier (SRC) was proposed for image set classification https://www.semanticscholar.org/paper/fd3bf3a9cef5500aa3b97588498e534c96006567.",
+      "url": "https://semanticscholar.org/paper/fd3bf3a9cef5500aa3b97588498e534c96006567",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "GRML attempts to jointly maximize the inter-class reconstruction residual and minimize the intra-class reconstruction residual in the lower but more discriminative Grassmann manifold https://www.semanticscholar.org/paper/fd3bf3a9cef5500aa3b97588498e534c96006567.",
+      "url": "https://semanticscholar.org/paper/fd3bf3a9cef5500aa3b97588498e534c96006567",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A novel discriminant subspace learning algorithm, correlation tensor analysis (CTA), was designed to incorporate both graph-embedded correlational mapping and discriminant analysis in a Fisher type of learning manner https://doi.org/10.1109/tip.2007.914203.",
+      "url": "https://doi.org/10.1109/tip.2007.914203",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The correlation metric can estimate intrinsic angles and distances for the locally isometric embedding, which can deal with the case when Euclidean metric is incapable of capturing the intrinsic similarities between data points https://doi.org/10.1109/tip.2007.914203.",
+      "url": "https://doi.org/10.1109/tip.2007.914203",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "CTA learns multiple interrelated subspaces to obtain a low-dimensional data representation reflecting both class label information and intrinsic geometric structure of the data distribution https://doi.org/10.1109/tip.2007.914203.",
+      "url": "https://doi.org/10.1109/tip.2007.914203",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Impressive advances in acquisition and sharing technologies have made the growth of multimedia collections and their applications almost unlimited https://arxiv.org/abs/2304.12448.",
+      "url": "https://arxiv.org/abs/2304.12448",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The opposite is true for the availability of labeled data https://arxiv.org/abs/2304.12448.",
+      "url": "https://arxiv.org/abs/2304.12448",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Rank Flow Embedding (RFE) was proposed as a manifold learning algorithm for unsupervised and semi-supervised scenarios https://arxiv.org/abs/2304.12448.",
+      "url": "https://arxiv.org/abs/2304.12448",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The image representation is concerned with mapping an image to a point in a high-dimensional feature space https://arxiv.org/abs/2304.12448.",
+      "url": "https://arxiv.org/abs/2304.12448",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Age estimation remains a challenging problem for existing computer vision systems to automatically and effectively estimate human ages https://doi.org/10.1109/tip.2008.924280.",
+      "url": "https://doi.org/10.1109/tip.2008.924280",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The aging process is determined by not only the person's gene but also many external factors such as health, living style, living location, and weather conditions https://doi.org/10.1109/tip.2008.924280.",
+      "url": "https://doi.org/10.1109/tip.2008.924280",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Males and females may also age differently https://doi.org/10.1109/tip.2008.924280.",
+      "url": "https://doi.org/10.1109/tip.2008.924280",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    }
+  ],
+  "noncited_factual_accuracy": 1.0,
+  "noncited_count": 4,
+  "noncited_correct": 4,
+  "noncited_details": [
+    {
+      "claim": "The human aging process is influenced by both genetic factors and external factors including health, living style, living location, and weather conditions.",
+      "evidence": [
+        {
+          "title": "Image-Based Human Age Estimation by Manifold Learning and Locally Adjusted Robust Regression",
+          "abstract": "Estimating human age automatically via facial image analysis has lots of potential real-world applications, such as human computer interaction and multimedia communication. However, it is still a challenging problem for the existing computer vision systems to automatically and effectively estimate human ages. The aging process is determined by not only the person's gene, but also many external factors, such as health, living style, living location, and weather conditions. Males and females may also age differently. The current age estimation performance is still not good enough for practical use and more effort has to be put into this research direction. In this paper, we introduce the age manifold learning scheme for extracting face aging features and design a locally adjusted robust regressor for learning and prediction of human ages. The novel approach improves the age estimation accuracy significantly over all previous methods. The merit of the proposed approaches for image-based age estimation is shown by extensive experiments on a large internal age database and the public available FG-NET database.",
+          "url": "https://doi.org/10.1109/tip.2008.924280"
+        },
+        {
+          "title": "Gait-based human age estimation using age group-dependent manifold learning and regression",
+          "abstract": "Human age estimation from gait is expected to be an important technology for a variety of applications such as automatic customer counting for marketing research or automatic age-based access control restriction for a specific area because the gait can be observable at a distance from a camera (e.g., CCTV). Although the aging process of gait significantly differs among age groups (e.g., children, adults, and the elderly), previous studies on gait-based human age estimation employ a single age group-independent estimation model that suffers from large estimation errors when the age variation increases. We therefore propose an age group-dependent gait-based human age estimation method for better accuracy. Specifically, in the training phase, we first compose age groups that are well-separated from each other by clustering gait features along with their age labels. We then learn a classifier that classifies the gait features for multiple age groups using a directed acyclic graph support vector machine. Next, we learn an age regression model for each age group using support vector regression with a Gaussian kernel in conjunction with a manifold learning technique, i.e., orthogonal locality preserving projection, to better characterize the gait feature. In the test phase, given a gait feature, it is first classified into an age group and then its age is estimated with the age regression model of the classified age group. Experimental results on a gait database that has the world’s largest population of participants ranging from 2 to 90 years old demonstrate the state-of-the-art performance of the proposed method.",
+          "url": "https://www.semanticscholar.org/paper/b55438c64dcb2f52404152a90acecce2f7ded2d5"
+        },
+        {
+          "title": "Face Verification Across Age Progression",
+          "abstract": "Human faces undergo considerable amounts of varialions with aging. While face recognition systems have been proven to be sensitive to factors such as illumination and pose, their sensitivity to facial aging effects is yet to be studied. How does age progression affect the similarity between a pair of face images of an individual? What is the confidence associated with establishing the identity between a pair of age separated face images? In this paper, we develop a Bayesian age difference classifier that classifies face images of individuals based on age differences and performs face verification across age progression. Further, we study the similarity of faces across age progression. Since age separated face images invariably differ in illumination and pose, we propose preprocessing methods for minimizing such variations. Experimental results using a database comprising of pairs of face images that were retrieved from the passports of 465 individuals are presented. The verification system for faces separated by as many as nine years, attains an equal error rate of 8.5%.",
+          "url": "https://doi.org/10.1109/tip.2006.881993"
+        },
+        {
+          "title": "Aging Genetics and Aging - PMC - NIH",
+          "abstract": "by S Rodríguez-Rodero · 2011 · Cited by 252 — Several genetic factors are implicated in aging. Human senescence is a complex process involving genetic and environmental factors that affect most ...",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3295054/"
+        },
+        {
+          "title": "Is longevity determined by genetics?",
+          "abstract": "How long a person can live is affected by genetics, the environment, and lifestyle. Not much is known about how genes impact longevity.",
+          "url": "https://medlineplus.gov/genetics/understanding/traits/longevity/"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "Face images exhibiting aging features can display sequential patterns with low-dimensional distributions that can be extracted through discriminant subspace learning algorithms.",
+      "evidence": [
+        {
+          "title": "Human Age Estimation With Regression on Discriminative Aging Manifold",
+          "abstract": "Recently, extensive studies on human faces in the human-computer interaction (HCI) field reveal significant potentials for designing automatic age estimation systems via face image analysis. The success of such research may bring in many innovative HCI tools used for the applications of human-centered multimedia communication. Due to the temporal property of age progression, face images with aging features may display some sequential patterns with low-dimensional distributions. In this paper, we demonstrate that such aging patterns can be effectively extracted from a discriminant subspace learning algorithm and visualized as distinct manifold structures. Through the manifold method of analysis on face images, the dimensionality redundancy of the original image space can be significantly reduced with subspace learning. A multiple linear regression procedure, especially with a quadratic model function, can be facilitated by the low dimensionality to represent the manifold space embodying the discriminative property. Such a processing has been evaluated by extensive simulations and compared with the state-of-the-art methods. Experimental results on a large size aging database demonstrate the effectiveness and robustness of our proposed framework.",
+          "url": "https://doi.org/10.1109/tmm.2008.921847"
+        },
+        {
+          "title": "Image Classification Using Correlation Tensor Analysis",
+          "abstract": "Images, as high-dimensional data, usually embody large variabilities. To classify images for versatile applications, an effective algorithm is necessarily designed by systematically considering the data structure, similarity metric, discriminant subspace, and classifier. In this paper, we provide evidence that, besides the Fisher criterion, graph embedding, and tensorization used in many existing methods, the correlation-based similarity metric embodied in supervised multilinear discriminant subspace learning can additionally improve the classification performance. In particular, a novel discriminant subspace learning algorithm, called correlation tensor analysis (CTA), is designed to incorporate both graph-embedded correlational mapping and discriminant analysis in a Fisher type of learning manner. The correlation metric can estimate intrinsic angles and distances for the locally isometric embedding, which can deal with the case when Euclidean metric is incapable of capturing the intrinsic similarities between data points. CTA learns multiple interrelated subspaces to obtain a low-dimensional data representation reflecting both class label information and intrinsic geometric structure of the data distribution. Extensive comparisons with most popular subspace learning methods on face recognition evaluation demonstrate the effectiveness and superiority of CTA. Parameter analysis also reveals its robustness.",
+          "url": "https://doi.org/10.1109/tip.2007.914203"
+        },
+        {
+          "title": "A Global Geometric Framework for Nonlinear Dimensionality Reduction",
+          "abstract": "Scientists working with large volumes of high-dimensional data, such as global climate patterns, stellar spectra, or human gene distributions, regularly confront the problem of dimensionality reduction: finding meaningful low-dimensional structures hidden in their high-dimensional observations. The human brain confronts the same problem in everyday perception, extracting from its high-dimensional sensory inputs-30,000 auditory nerve fibers or 10(6) optic nerve fibers-a manageably small number of perceptually relevant features. Here we describe an approach to solving dimensionality reduction problems that uses easily measured local metric information to learn the underlying global geometry of a data set. Unlike classical techniques such as principal component analysis (PCA) and multidimensional scaling (MDS), our approach is capable of discovering the nonlinear degrees of freedom that underlie complex natural observations, such as human handwriting or images of a face under different viewing conditions. In contrast to previous algorithms for nonlinear dimensionality reduction, ours efficiently computes a globally optimal solution, and, for an important class of data manifolds, is guaranteed to converge asymptotically to the true structure.",
+          "url": "https://doi.org/10.1126/science.290.5500.2319"
+        },
+        {
+          "title": "Identity-Preserving Aging of Face Images via Latent Diffusion ...",
+          "abstract": "In this work, we propose, train, and validate the use of latent text-to-image diffusion models for synthetically aging and de-aging face images.",
+          "url": "https://ar5iv.labs.arxiv.org/html/2307.08585"
+        },
+        {
+          "title": "A Compositional and Dynamic Model for Face Aging",
+          "abstract": "It is demonstrated that face images with aging features can be effectively extracted from a discriminant subspace learning algorithm and visualized as ...",
+          "url": "https://www.semanticscholar.org/paper/A-Compositional-and-Dynamic-Model-for-Face-Aging-Suo-Zhu/4b8f4b3333ac4f588aef07406a2fe55c632d9d5a"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "Manifold learning algorithms construct representations for data lying on a low-dimensional manifold embedded within a high-dimensional space through nonlinear dimensionality reduction.",
+      "evidence": [
+        {
+          "title": "Laplacian Eigenmaps for Dimensionality Reduction and Data Representation",
+          "abstract": "One of the central problems in machine learning and pattern recognition is to develop appropriate representations for complex data. We consider the problem of constructing a representation for data lying on a low-dimensional manifold embedded in a high-dimensional space. Drawing on the correspondence between the graph Laplacian, the Laplace Beltrami operator on the manifold, and the connections to the heat equation, we propose a geometrically motivated algorithm for representing the high-dimensional data. The algorithm provides a computationally efficient approach to nonlinear dimensionality reduction that has locality-preserving properties and a natural connection to clustering. Some potential applications and illustrative examples are discussed.",
+          "url": "https://doi.org/10.1162/089976603321780317"
+        },
+        {
+          "title": "Nonlinear Dimensionality Reduction by Locally Linear Embedding",
+          "abstract": "Many areas of science depend on exploratory data analysis and visualization. The need to analyze large amounts of multivariate data raises the fundamental problem of dimensionality reduction: how to discover compact representations of high-dimensional data. Here, we introduce locally linear embedding (LLE), an unsupervised learning algorithm that computes low-dimensional, neighborhood-preserving embeddings of high-dimensional inputs. Unlike clustering methods for local dimensionality reduction, LLE maps its inputs into a single global coordinate system of lower dimensionality, and its optimizations do not involve local minima. By exploiting the local symmetries of linear reconstructions, LLE is able to learn the global structure of nonlinear manifolds, such as those generated by images of faces or documents of text.",
+          "url": "https://doi.org/10.1126/science.290.5500.2323"
+        },
+        {
+          "title": "A Global Geometric Framework for Nonlinear Dimensionality Reduction",
+          "abstract": "Scientists working with large volumes of high-dimensional data, such as global climate patterns, stellar spectra, or human gene distributions, regularly confront the problem of dimensionality reduction: finding meaningful low-dimensional structures hidden in their high-dimensional observations. The human brain confronts the same problem in everyday perception, extracting from its high-dimensional sensory inputs-30,000 auditory nerve fibers or 10(6) optic nerve fibers-a manageably small number of perceptually relevant features. Here we describe an approach to solving dimensionality reduction problems that uses easily measured local metric information to learn the underlying global geometry of a data set. Unlike classical techniques such as principal component analysis (PCA) and multidimensional scaling (MDS), our approach is capable of discovering the nonlinear degrees of freedom that underlie complex natural observations, such as human handwriting or images of a face under different viewing conditions. In contrast to previous algorithms for nonlinear dimensionality reduction, ours efficiently computes a globally optimal solution, and, for an important class of data manifolds, is guaranteed to converge asymptotically to the true structure.",
+          "url": "https://doi.org/10.1126/science.290.5500.2319"
+        },
+        {
+          "title": "Learning High Dimensional Correspondences from Low ...",
+          "abstract": "The basic LLE algorithm is to model the data nonparamet- rically as consisting of locally linear patches lying on a low dimensional manifold embedded in the ...",
+          "url": "https://repository.upenn.edu/bitstreams/541db105-c3e0-4b8d-8992-2c5dda90d949/download"
+        },
+        {
+          "title": "2.2. Manifold learning",
+          "abstract": "Scikit-learn implements Laplacian Eigenmaps, which finds a low dimensional representation of the data using a spectral decomposition of the graph Laplacian.",
+          "url": "https://scikit-learn.org/stable/modules/manifold.html"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "Laplacian eigenmaps leverage the mathematical correspondence between the graph Laplacian and the Laplace-Beltrami operator on a manifold to provide a geometrically motivated approach to nonlinear dimensionality reduction.",
+      "evidence": [
+        {
+          "title": "Laplacian Eigenmaps for Dimensionality Reduction and Data Representation",
+          "abstract": "One of the central problems in machine learning and pattern recognition is to develop appropriate representations for complex data. We consider the problem of constructing a representation for data lying on a low-dimensional manifold embedded in a high-dimensional space. Drawing on the correspondence between the graph Laplacian, the Laplace Beltrami operator on the manifold, and the connections to the heat equation, we propose a geometrically motivated algorithm for representing the high-dimensional data. The algorithm provides a computationally efficient approach to nonlinear dimensionality reduction that has locality-preserving properties and a natural connection to clustering. Some potential applications and illustrative examples are discussed.",
+          "url": "https://doi.org/10.1162/089976603321780317"
+        },
+        {
+          "title": "A Global Geometric Framework for Nonlinear Dimensionality Reduction",
+          "abstract": "Scientists working with large volumes of high-dimensional data, such as global climate patterns, stellar spectra, or human gene distributions, regularly confront the problem of dimensionality reduction: finding meaningful low-dimensional structures hidden in their high-dimensional observations. The human brain confronts the same problem in everyday perception, extracting from its high-dimensional sensory inputs-30,000 auditory nerve fibers or 10(6) optic nerve fibers-a manageably small number of perceptually relevant features. Here we describe an approach to solving dimensionality reduction problems that uses easily measured local metric information to learn the underlying global geometry of a data set. Unlike classical techniques such as principal component analysis (PCA) and multidimensional scaling (MDS), our approach is capable of discovering the nonlinear degrees of freedom that underlie complex natural observations, such as human handwriting or images of a face under different viewing conditions. In contrast to previous algorithms for nonlinear dimensionality reduction, ours efficiently computes a globally optimal solution, and, for an important class of data manifolds, is guaranteed to converge asymptotically to the true structure.",
+          "url": "https://doi.org/10.1126/science.290.5500.2319"
+        },
+        {
+          "title": "Image Classification Using Correlation Tensor Analysis",
+          "abstract": "Images, as high-dimensional data, usually embody large variabilities. To classify images for versatile applications, an effective algorithm is necessarily designed by systematically considering the data structure, similarity metric, discriminant subspace, and classifier. In this paper, we provide evidence that, besides the Fisher criterion, graph embedding, and tensorization used in many existing methods, the correlation-based similarity metric embodied in supervised multilinear discriminant subspace learning can additionally improve the classification performance. In particular, a novel discriminant subspace learning algorithm, called correlation tensor analysis (CTA), is designed to incorporate both graph-embedded correlational mapping and discriminant analysis in a Fisher type of learning manner. The correlation metric can estimate intrinsic angles and distances for the locally isometric embedding, which can deal with the case when Euclidean metric is incapable of capturing the intrinsic similarities between data points. CTA learns multiple interrelated subspaces to obtain a low-dimensional data representation reflecting both class label information and intrinsic geometric structure of the data distribution. Extensive comparisons with most popular subspace learning methods on face recognition evaluation demonstrate the effectiveness and superiority of CTA. Parameter analysis also reveals its robustness.",
+          "url": "https://doi.org/10.1109/tip.2007.914203"
+        },
+        {
+          "title": "Laplacian eigenmaps 2023",
+          "abstract": "Eigenmaps are important in analysis, geometry and machine learning, especially in nonlinear dimension reduction. Laplace-Beltrami operator of M ...",
+          "url": "https://mathreu.uconn.edu/2023/05/18/laplacian-eigenmaps-2023/"
+        },
+        {
+          "title": "Convergence of Laplacian Eigenmaps",
+          "abstract": "In this paper we show convergence of eigenvectors of the point cloud Laplacian to the eigen- functions of the Laplace-Beltrami operator on the underlying ...",
+          "url": "https://proceedings.neurips.cc/paper/2006/file/5848ad959570f87753a60ce8be1567f3-Paper.pdf"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    }
+  ]
+}

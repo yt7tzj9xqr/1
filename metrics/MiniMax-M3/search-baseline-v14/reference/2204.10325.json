@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2204.10325",
+  "model": "MiniMax-M3",
+  "system": "search-baseline-v14",
+  "reference_precision": 0.0,
+  "reference_recall": 0.0,
+  "reference_count": 10,
+  "reference_matches": 0,
+  "ground_truth_count": 36,
+  "predicted_titles": [
+    "Stuttering Speech Disfluency Prediction using Explainable Attribution Vectors of Facial Muscle Movements",
+    "Deep-Learning-Based Automated Classification of Chinese Speech Sound Disorders",
+    "Automatic Pronunciation Scoring And Mispronunciation ...",
+    "Automatic Analysis of Pronunciations for Children with Speech Sound Disorders",
+    "Evaluating Automatic Speech Recognition for Child ...",
+    "The effectiveness of computer assisted pronunciation training for foreign language learning by children",
+    "The TORGO database - Computer Science",
+    "Prospective Validation of Motor-Based Intervention with Automated Mispronunciation Detection of Rhotics in Residual Speech Sound Disorders",
+    "Home-Based Activities for Children with Speech Sound Disorders: Requirements for a Tangible User Interface for Internet of Things Artefacts",
+    "Speech Processing for Language Learning: A Practical Approach to Computer-Assisted Pronunciation Teaching"
+  ]
+}

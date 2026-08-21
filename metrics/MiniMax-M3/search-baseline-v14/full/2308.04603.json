@@ -1,0 +1,108 @@
+{
+  "arxiv_id": "2308.04603",
+  "model": "MiniMax-M3",
+  "system": "search-baseline-v14",
+  "reference_precision": 0.3,
+  "reference_recall": 0.04477611940298507,
+  "reference_count": 10,
+  "reference_matches": 3,
+  "ground_truth_count": 67,
+  "predicted_titles": [
+    "A Robust Image Watermarking System Based on Deep Neural Networks",
+    "HiDDeN: Hiding Data With Deep Networks",
+    "StegaStamp: Invisible Hyperlinks in Physical Photographs",
+    "ReDMark: Framework for residual diffusion watermarking based on ...",
+    "Deep Boosting Robustness of DNN-based Image Watermarking via DBMark",
+    "End-to-End Image Steganography Using Deep Convolutional Autoencoders",
+    "A Compact Neural Network-based Algorithm for Robust Image Watermarking",
+    "Robust Zero Watermarking Algorithm for Medical Images Based on Improved NasNet-Mobile and DCT",
+    "Flow-Based Robust Watermarking with Invertible Noise Layer for Black-Box Distortions",
+    "Deep Image Watermarking to JPEG Compression Based on Mixed-Frequency Channel Attention"
+  ],
+  "cited_match_rate": 1.0,
+  "cited_count": 11,
+  "cited_supported": 11,
+  "cited_details": [
+    {
+      "statement": "HiDDeN, by Stanford researchers, explores whether the sensitivity of deep neural networks to tiny perturbations of input images—usually considered a weakness of learned models—can be repurposed to hide data with deep networks (https://arxiv.org/abs/1807.09937).",
+      "url": "https://arxiv.org/abs/1807.09937",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Zhong and Shih defined digital image watermarking as the process of embedding and extracting a watermark covertly on a carrier image, and proposed a robust image watermarking system based on deep neural networks that keeps the watermark intact under a designated class of distortions without the assistance of other techniques (https://arxiv.org/abs/1908.11331).",
+      "url": "https://arxiv.org/abs/1908.11331",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Xu and colleagues presented a compact neural-network-based algorithm for robust image watermarking, in which the message is embedded into the digital image and extracted from it even when noise or distortions are applied under various data-processing operations, protecting digital media information from unauthorized access (https://arxiv.org/abs/2112.13491).",
+      "url": "https://arxiv.org/abs/2112.13491",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "DBMark addresses the fact that digital watermarking requires high robustness and high invisibility and that least significant bits was the earliest watermarking approach, by introducing a deep boosting module into the end-to-end pipeline to harden DNN-based image watermarking against common image perturbations (https://arxiv.org/abs/2210.13801).",
+      "url": "https://arxiv.org/abs/2210.13801",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A light-weight and simple deep convolutional autoencoder architecture embeds a secret image inside a cover image and extracts the embedded secret image from the stego image, with performance measured by peak signal-to-noise ratio, hiding capacity, and imperceptibility on the COCO, CelebA, and ImageNet test sets, and compared against other traditional image steganography methods using images including Lena, airplane, baboon, and peppers (https://doi.org/10.1109/access.2021.3113953).",
+      "url": "https://doi.org/10.1109/access.2021.3113953",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "ReDMark is a deep end-to-end residual diffusion watermarking framework that can learn a new watermarking algorithm in any desired transform domain (https://www.semanticscholar.org/paper/ReDMark%3A-Framework-for-residual-diffusion-based-on-Ahmadi-Norouzi/7898ae238b81b2547f6769e6c74052c727046627).",
+      "url": "https://semanticscholar.org/paper/ReDMark%3A-Framework-for-residual-diffusion-based-on-Ahmadi-Norouzi/7898ae238b81b2547f6769e6c74052c727046627",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A mixed-frequency channel attention method, proposed in 2022, builds on deep blind watermarking based on an end-to-end encoder-decoder architecture and introduces a mixed-frequency channel attention method in the encoder that utilizes different frequency components of the 2D-DCT domain as weight coefficients during channel squeezing and excitation, suppressing useless feature maps and enhancing feature maps suitable for watermarking; the experimental results indicate that the PSNR reaches over 38 and the BER is less than 0.01% under JPEG compression (https://doi.org/10.1155/2022/9880038).",
+      "url": "https://doi.org/10.1155/2022/9880038",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A 2023 robustness zero watermarking strategy for medical pictures combines an improved NasNet-Mobile convolutional neural network with the discrete cosine transform, adjusting the pre-trained NasNet-Mobile by replacing the original Softmax layer and classification layer with a fully connected layer with 128 outputs and a regression layer, thus generating a regression network with 128 outputs, whereby the 128 features are extracted from the medical images through migration learning, and migration learning is then performed on the modified NasNet-Mobile network (https://doi.org/10.3390/electronics12163444).",
+      "url": "https://doi.org/10.3390/electronics12163444",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A flow-based robust watermarking framework, proposed in 2023 in a context where deep learning-based digital watermarking frameworks have been widely studied, observes that the conventional encoder-noise layer-decoder architecture, where embedding and extraction are accomplished separately by the encoder and the decoder, has the drawback that the encoder and decoder may not be well coupled, resulting in the encoder potentially embedding redundant features into the host image, thus influencing the invisibility and robustness of the whole algorithm; the framework replaces this with an invertible up-down-sampling neural block that realizes embedding and extraction simultaneously, keeping the encoded feature highly consistent with the feature that the decoder needs and avoiding the embedding of redundant features (https://doi.org/10.1609/aaai.v37i4.25633).",
+      "url": "https://doi.org/10.1609/aaai.v37i4.25633",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "StegaStamp addresses the vision that printed and digitally displayed photos can hide imperceptible digital data accessible through internet-connected imaging systems, where physical photographs can have unique QR codes invisibly embedded within them, and the paper presents an architecture, algorithms, and a prototype implementation for this vision (https://arxiv.org/abs/1904.05343).",
+      "url": "https://arxiv.org/abs/1904.05343",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "StegaStamp is a learned steganographic algorithm that enables robust encoding and decoding of arbitrary hyperlink bitstrings into photos in a manner that approaches perceptual invisibility; the deep neural network learns an encoding/decoding algorithm robust to image perturbations approximating the space of distortions resulting from real printing and photography, and the prototype system demonstrates real-time decoding of hyperlinks in photos from in-the-wild videos that contain variation in lighting, shadows, perspective, occlusion, and viewing distance (https://arxiv.org/abs/1904.05343).",
+      "url": "https://arxiv.org/abs/1904.05343",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    }
+  ],
+  "noncited_factual_accuracy": null,
+  "noncited_count": 0,
+  "noncited_correct": 0,
+  "noncited_details": []
+}

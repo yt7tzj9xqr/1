@@ -1,0 +1,262 @@
+{
+  "arxiv_id": "2306.05817",
+  "model": "MiniMax-M3",
+  "system": "search-baseline-v14",
+  "reference_precision": 0.9,
+  "reference_recall": 0.029900332225913623,
+  "reference_count": 10,
+  "reference_matches": 9,
+  "ground_truth_count": 301,
+  "predicted_titles": [
+    "Retrieval-augmented Recommender System: Enhancing Recommender Systems with Large Language Models",
+    "Recommendation as Language Processing (RLP): A Unified Pretrain, Personalized Prompt &amp; Predict Paradigm (P5)",
+    "LLM-Rec: Personalized Recommendation via Prompting Large Language Models",
+    "Language models as recommender systems: Evaluations and limitations",
+    "Collaborative Large Language Model for Recommender Systems",
+    "VIP5: Towards Multimodal Foundation Models for Recommendation",
+    "TALLRec: An Effective and Efficient Tuning Framework to Align Large Language Model with Recommendation",
+    "Heterogeneous Knowledge Fusion: A Novel Approach for Personalized Recommendation via LLM",
+    "Text Matching Improves Sequential Recommendation by Reducing Popularity Biases",
+    "PLATE: A Prompt-Enhanced Paradigm for Multi-Scenario Recommendations"
+  ],
+  "cited_match_rate": 0.9090909090909091,
+  "cited_count": 33,
+  "cited_supported": 30,
+  "cited_details": [
+    {
+      "statement": "Recommender systems play a pivotal role in delivering personalized recommendations across various domains, from e-commerce to content streaming platforms [https://doi.org/10.1145/3604915.3608889].",
+      "url": "https://doi.org/10.1145/3604915.3608889",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Pre-trained language models such as BERT and GPT learn general text representations and encode extensive world knowledge, enabling them to efficiently and accurately adapt to various downstream tasks [https://www.amazon.science/publications/language-models-as-recommender-systems-evaluations-and-limitations].",
+      "url": "https://amazon.science/publications/language-models-as-recommender-systems-evaluations-and-limitations",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Large language models have demonstrated remarkable performance across diverse domains, prompting researchers to explore their potential for use in recommendation systems [https://doi.org/10.1145/3604915.3608857].",
+      "url": "https://doi.org/10.1145/3604915.3608857",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Recommender systems are renowned for their effectiveness and proficiency within clearly defined domains but are limited in adaptability and incapable of providing recommendations for unexplored data [https://doi.org/10.1145/3604915.3608889].",
+      "url": "https://doi.org/10.1145/3604915.3608889",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Large language models exhibit contextual awareness and strong adaptability to unseen data [https://doi.org/10.1145/3604915.3608889].",
+      "url": "https://doi.org/10.1145/3604915.3608889",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Combining recommender systems and large language models creates a powerful tool for delivering contextual and relevant recommendations, even in cold scenarios characterized by high data sparsity [https://doi.org/10.1145/3604915.3608889].",
+      "url": "https://doi.org/10.1145/3604915.3608889",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The Retrieval-augmented Recommender System (RA-RS) approach combines the strengths of retrieval-based and generation-based models to enhance the ability of recommender systems to provide relevant suggestions [https://doi.org/10.1145/3604915.3608889].",
+      "url": "https://doi.org/10.1145/3604915.3608889",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Recommender systems have witnessed significant advancements and played an essential role in people's daily applications [http://arxiv.org/abs/2203.13366].",
+      "url": "http://arxiv.org/abs/2203.13366",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The Pretrain, Personalized Prompt, and Predict (P5) paradigm unifies multiple recommendation tasks that typically require task-specific architectures and training objectives [http://arxiv.org/abs/2203.13366].",
+      "url": "http://arxiv.org/abs/2203.13366",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "P5 is referred to as Recommendation as Language Processing (RLP) [http://arxiv.org/abs/2203.13366].",
+      "url": "http://arxiv.org/abs/2203.13366",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "VIP5 extends the recommendation-as-language-processing paradigm toward multimodal foundation models for recommendation [https://doi.org/10.18653/v1/2023.findings-emnlp.644].",
+      "url": "https://doi.org/10.18653/v1/2023.findings-emnlp.644",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Initial attempts to use LLMs for recommendation have leveraged rich knowledge and strong generalization through in-context learning by phrasing the recommendation task as prompts [https://doi.org/10.1145/3604915.3608857].",
+      "url": "https://doi.org/10.1145/3604915.3608857",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The performance of LLMs in recommendation tasks remains suboptimal due to a substantial disparity between the training tasks for LLMs and recommendation tasks, as well as inadequate recommendation data during pre-training [https://doi.org/10.1145/3604915.3608857].",
+      "url": "https://doi.org/10.1145/3604915.3608857",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "TALLRec is an efficient and effective tuning framework for aligning large language models with recommendation data [https://doi.org/10.1145/3604915.3608857].",
+      "url": "https://doi.org/10.1145/3604915.3608857",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "TALLRec can significantly enhance the recommendation capabilities of LLMs in the movie and book domains, even with a limited dataset of fewer than 100 samples [https://doi.org/10.1145/3604915.3608857].",
+      "url": "https://doi.org/10.1145/3604915.3608857",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The TALLRec framework is highly efficient and can be executed on a single RTX 3090 with LLaMA-7B [https://doi.org/10.1145/3604915.3608857].",
+      "url": "https://doi.org/10.1145/3604915.3608857",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The fine-tuned LLM in TALLRec exhibits robust cross-domain generalization [https://doi.org/10.1145/3604915.3608857].",
+      "url": "https://doi.org/10.1145/3604915.3608857",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "LLM-Rec performs personalized recommendation via prompting large language models, leveraging keywords in original item descriptions [http://arxiv.org/abs/2307.15780].",
+      "url": "http://arxiv.org/abs/2307.15780",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "With the explosive growth of commercial applications of recommender systems, multi-scenario recommendation has attracted considerable attention [https://doi.org/10.1145/3539618.3591750].",
+      "url": "https://doi.org/10.1145/3539618.3591750",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Multi-scenario recommendation utilizes data from multiple domains to improve their recommendation performance simultaneously [https://doi.org/10.1145/3539618.3591750].",
+      "url": "https://doi.org/10.1145/3539618.3591750",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "PLATE is a prompt-enhanced paradigm for multi-scenario recommendation that first pre-trains a unified deep recommender backbone using data from all domains to capture the commonality across domains [https://doi.org/10.1145/3539618.3591750].",
+      "url": "https://doi.org/10.1145/3539618.3591750",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "PLATE then conducts prompt tuning with two prompt modules that capture the distinctions among various domains and users [https://doi.org/10.1145/3539618.3591750].",
+      "url": "https://doi.org/10.1145/3539618.3591750",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "PLATE demonstrates great compatibility with various deep recommender system backbone models and high computational efficiency [https://doi.org/10.1145/3539618.3591750].",
+      "url": "https://doi.org/10.1145/3539618.3591750",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Heterogeneous Knowledge Fusion extracts and fuses heterogeneous knowledge from user heterogeneous behavior information to address feature sparsity and knowledge fragmentation issues [https://doi.org/10.1145/3604915.3608874].",
+      "url": "https://doi.org/10.1145/3604915.3608874",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Heterogeneous Knowledge Fusion performs instruction tuning on the LLM by combining heterogeneous knowledge and recommendation tasks, and its method effectively integrates user heterogeneous behavior and significantly improves recommendation performance [https://doi.org/10.1145/3604915.3608874].",
+      "url": "https://doi.org/10.1145/3604915.3608874",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "CLLM4Rec is the first generative recommender system that tightly integrates the LLM paradigm and ID paradigm of recommender systems [https://doi.org/10.1145/3589334.3645347].",
+      "url": "https://doi.org/10.1145/3589334.3645347",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "CLLM4Rec extends the vocabulary of pretrained LLMs with user and item ID tokens to faithfully model user and item collaborative and content semantics [https://doi.org/10.1145/3589334.3645347].",
+      "url": "https://doi.org/10.1145/3589334.3645347",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "CLLM4Rec introduces a soft-plus-hard prompting strategy that uses a prompt consisting of heterogeneous soft user and item tokens and hard vocab tokens, together with a main text consisting of homogeneous item tokens or vocab tokens [https://doi.org/10.1145/3589334.3645347].",
+      "url": "https://doi.org/10.1145/3589334.3645347",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "CLLM4Rec introduces a mutual regularization strategy to address issues such as spuriously correlated user and item descriptors, ineffective language modeling on user and item data, and inefficient auto-regressive recommendations [https://doi.org/10.1145/3589334.3645347].",
+      "url": "https://doi.org/10.1145/3589334.3645347",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "TASTE verbalizes items and user-item interactions using identifiers and attributes of items and recommends items by matching their text representations [https://doi.org/10.1145/3583780.3615077].",
+      "url": "https://doi.org/10.1145/3583780.3615077",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "TASTE additionally proposes an attention sparsity method that enables it to model longer user-item interactions by reducing the self-attention computations during encoding [https://doi.org/10.1145/3583780.3615077].",
+      "url": "https://doi.org/10.1145/3583780.3615077",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "TASTE significantly improves recommendation accuracy by reducing the popularity bias of previous item-ID-based recommendation models [https://doi.org/10.1145/3583780.3615077].",
+      "url": "https://doi.org/10.1145/3583780.3615077",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "TASTE alleviates the cold start problem by representing long-tail items using full-text modeling and bringing the benefits of pretrained language models to recommendation systems [https://doi.org/10.1145/3583780.3615077].",
+      "url": "https://doi.org/10.1145/3583780.3615077",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    }
+  ],
+  "noncited_factual_accuracy": null,
+  "noncited_count": 0,
+  "noncited_correct": 0,
+  "noncited_details": []
+}

@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2105.01605",
+  "model": "MiniMax-M3",
+  "system": "citation-rag-v22",
+  "reference_precision": 0.2222222222222222,
+  "reference_recall": 0.04081632653061224,
+  "reference_count": 9,
+  "reference_matches": 2,
+  "ground_truth_count": 49,
+  "predicted_titles": [
+    "Natural Language Person Search Using Deep Reinforcement Learning",
+    "Learning Semantic-Aligned Feature Representation for Text-Based Person Search",
+    "Deep Learning for Person Re-identification: A Survey and Outlook",
+    "Re-ID Driven Localization Refinement for Person Search",
+    "Unsupervised Tracklet Person Re-Identification",
+    "Joint Detection and Identification Feature Learning for Person Search",
+    "Asymmetric Cross-Scale Alignment for Text-Based Person Search - Cronfa",
+    "Person re-identification by Local Maximal Occurrence representation and metric learning",
+    "Large scale metric learning from equivalence constraints"
+  ]
+}

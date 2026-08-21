@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2205.08977",
+  "model": "MiniMax-M3",
+  "system": "citation-rag-v22",
+  "reference_precision": 0.0,
+  "reference_recall": 0.0,
+  "reference_count": 9,
+  "reference_matches": 0,
+  "ground_truth_count": 317,
+  "predicted_titles": [
+    "Edge Intelligence: Paving the Last Mile of Artificial Intelligence With Edge Computing",
+    "Towards 6G wireless communication networks: vision, enabling technologies, and new paradigm shifts",
+    "Survey on Digital Twin Edge Networks (DITEN) Toward 6G",
+    "Industrial digital twins at the nexus of NextG wireless networks and computational intelligence: A survey",
+    "Edge Artificial Intelligence for 6G: Vision, Enabling Technologies, and Applications",
+    "Toward Intelligent Cyber-Physical Systems: Digital Twin Meets Artificial Intelligence",
+    "6G White Paper on Edge Intelligence",
+    "Massive Internet of Things for Industrial Applications: Addressing Wireless IIoT Connectivity Challenges and Ecosystem Fragmentation",
+    "Designing CPS/IoT applications for smart buildings and cities"
+  ]
+}

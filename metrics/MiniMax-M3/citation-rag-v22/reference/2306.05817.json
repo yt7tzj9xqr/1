@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2306.05817",
+  "model": "MiniMax-M3",
+  "system": "citation-rag-v22",
+  "reference_precision": 0.7,
+  "reference_recall": 0.023255813953488372,
+  "reference_count": 10,
+  "reference_matches": 7,
+  "ground_truth_count": 301,
+  "predicted_titles": [
+    "Retrieval-augmented Recommender System: Enhancing Recommender Systems with Large Language Models",
+    "Recommendation as Language Processing (RLP): A Unified Pretrain, Personalized Prompt & Predict Paradigm (P5)",
+    "Collaborative Large Language Model for Recommender Systems",
+    "Personalized Prompt Learning for Explainable Recommendation",
+    "Prompt Distillation for Efficient LLM-based Recommendation",
+    "TALLRec: An Effective and Efficient Tuning Framework to Align Large Language Model with Recommendation",
+    "LLM-Rec: Personalized Recommendation via Prompting Large Language Models",
+    "Large Language Models as Zero-Shot Conversational Recommenders",
+    "Item-based collaborative filtering recommendation algorithms",
+    "Wide &amp; Deep Learning for Recommender Systems"
+  ]
+}

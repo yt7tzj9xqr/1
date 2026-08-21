@@ -1,0 +1,229 @@
+{
+  "arxiv_id": "2206.13188",
+  "model": "MiniMax-M3",
+  "system": "citation-rag-v22",
+  "reference_precision": 0.625,
+  "reference_recall": 0.01984126984126984,
+  "reference_count": 8,
+  "reference_matches": 5,
+  "ground_truth_count": 252,
+  "predicted_titles": [
+    "Global and Local Contrastive Self-Supervised Learning for Semantic Segmentation of HR Remote Sensing Images",
+    "Self-Supervised Representation Learning for Remote Sensing Image Change Detection Based on Temporal Prediction",
+    "A General Self-Supervised Framework for Remote Sensing Image Classification",
+    "Self-Supervised Learning of Remote Sensing Scene Representations Using Contrastive Multiview Coding",
+    "Contrastive Self-Supervised Learning With Smoothed Representation for Remote Sensing",
+    "Masked Autoencoders Are Scalable Vision Learners",
+    "SCL-MLNet: Boosting Few-Shot Remote Sensing Scene Classification via Self-Supervised Contrastive Learning",
+    "Task-Related Self-Supervised Learning for Remote Sensing Image Change Detection"
+  ],
+  "cited_match_rate": 0.9473684210526315,
+  "cited_count": 19,
+  "cited_supported": 18,
+  "cited_details": [
+    {
+      "statement": "In remote sensing, numerous unlabeled images are continuously accumulated over time, and it is difficult to annotate all the data, motivating self-supervised learning (SSL) techniques that improve recognition using unlabeled data https://doi.org/10.1109/lgrs.2021.3069799.",
+      "url": "https://doi.org/10.1109/lgrs.2021.3069799",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Recently, supervised deep learning has achieved great success in remote sensing image (RSI) semantic segmentation, but supervised learning for semantic segmentation still faces challenges https://arxiv.org/abs/2106.10605.",
+      "url": "https://arxiv.org/abs/2106.10605",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "introduced global-and-local contrastive self-supervised learning for semantic segmentation of high-resolution remote sensing images https://arxiv.org/abs/2106.10605.",
+      "url": "https://arxiv.org/abs/2106.10605",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Few-shot classification aims at recognizing novel categories from low data regimes based on prior knowledge, and the existing methods for few-shot scene classification have limitations on using few annotated data and do not fully consider the intra-class samples with classification targets in different sizes https://doi.org/10.1109/tgrs.2021.3109268.",
+      "url": "https://doi.org/10.1109/tgrs.2021.3109268",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "SCL-MLNet integrates self-supervised contrastive learning into few-shot RS scene classification through multi-task learning and adds an attention module embedded in the feature extractor to fuse multi-scale spatial features from the classification targets in different sizes, and the method is evaluated on three public benchmark datasets https://doi.org/10.1109/tgrs.2021.3109268.",
+      "url": "https://doi.org/10.1109/tgrs.2021.3109268",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "In self-supervised learning for remote sensing, images within a short distance might be semantically similar, and a SimCLR-based method simultaneously utilizes several neighboring images as a positive pair of the anchor image and averages their representations as a smoothed representation, outperforming Tile2Vec, MoCo, and SimCLR in the CDL, RESISC-45, UCMerced, and EuroSAT datasets https://doi.org/10.1109/lgrs.2021.3069799.",
+      "url": "https://doi.org/10.1109/lgrs.2021.3069799",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Stojnić and Risojević analyzed self-supervised learning of remote sensing scene representations using contrastive multiview coding, noting that in recent years self-supervised learning has emerged as a promising candidate for unsupervised representation learning https://arxiv.org/abs/2104.07070.",
+      "url": "https://arxiv.org/abs/2104.07070",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "introduced masked autoencoders (MAE) as scalable self-supervised learners for computer vision, masking random patches of the input image and reconstructing the missing pixels using an encoder and decoder architecture http://arxiv.org/abs/2111.06377.",
+      "url": "http://arxiv.org/abs/2111.06377",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Inspired by the improved representation ability brought by SSL in natural image understanding, a 2022 study aimed to explore and analyze the compatibility of SSL with remote sensing and proposed a self-supervised pre-training framework by applying masked image modeling (MIM) to RS image research for the first time https://www.semanticscholar.org/paper/52be2330207ab72e04b617893954a368c8a351fc.",
+      "url": "https://semanticscholar.org/paper/52be2330207ab72e04b617893954a368c8a351fc",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The completion proxy task used by MIM encourages the model to reconstruct the masked patches and correlate the unseen parts with the seen parts in semantics https://www.semanticscholar.org/paper/52be2330207ab72e04b617893954a368c8a351fc.",
+      "url": "https://semanticscholar.org/paper/52be2330207ab72e04b617893954a368c8a351fc",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The same MIM-based RS framework finds that the attribution consensus of the pre-trained model and downstream tasks toward the proxy and classification targets is quite different from that in natural image understanding, and that this transferable consensus is persistent in cross-dataset full or partial fine-tuning https://www.semanticscholar.org/paper/52be2330207ab72e04b617893954a368c8a351fc.",
+      "url": "https://semanticscholar.org/paper/52be2330207ab72e04b617893954a368c8a351fc",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The MIM-based RS framework reports that the method is evaluated on three publicly accessible RS scene classification datasets https://www.semanticscholar.org/paper/52be2330207ab72e04b617893954a368c8a351fc.",
+      "url": "https://semanticscholar.org/paper/52be2330207ab72e04b617893954a368c8a351fc",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Change detection for remote sensing images is widely applied for urban change detection, disaster assessment and other fields, and most existing CNN-based change detection methods still suffer from the problem of inadequate pseudo-changes suppression and insufficient feature representation https://arxiv.org/abs/2105.04951.",
+      "url": "https://arxiv.org/abs/2105.04951",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Traditional change detection methods operate in the simple image domain or on hand-crafted features, which has less robustness to inconsistencies such as brightness and noise distribution between bitemporal satellite images https://doi.org/10.3390/rs12111868.",
+      "url": "https://doi.org/10.3390/rs12111868",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Generating accurate semantic supervision that reveals real change information in satellite images still remains challenging, especially for manual annotation https://doi.org/10.3390/rs12111868.",
+      "url": "https://doi.org/10.3390/rs12111868",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A self-supervised representation learning method based on temporal prediction transforms two satellite images into more consistent feature representations through a self-supervised mechanism without semantic supervision, and based on the transformed feature representations, a better difference image (DI) can be obtained https://doi.org/10.3390/rs12111868.",
+      "url": "https://doi.org/10.3390/rs12111868",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The same temporal-prediction method designs the network for the temporal prediction task to imitate the discriminator of a generative adversarial network, asking the model to identify different sample patches between two temporal images https://doi.org/10.3390/rs12111868.",
+      "url": "https://doi.org/10.3390/rs12111868",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The TSLCD method for change detection introduces a task-related self-supervised learning module to extract spatial features more effectively, applies a hard-sample-mining loss function to pay more attention to the hard-to-classify samples, and uses a smooth mechanism to remove some pseudo-changes and noise https://arxiv.org/abs/2105.04951.",
+      "url": "https://arxiv.org/abs/2105.04951",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Experiments on four remote sensing change detection datasets reveal that the proposed TSLCD method achieves the state-of-the-art for the change detection task https://arxiv.org/abs/2105.04951.",
+      "url": "https://arxiv.org/abs/2105.04951",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    }
+  ],
+  "noncited_factual_accuracy": 1.0,
+  "noncited_count": 2,
+  "noncited_correct": 2,
+  "noncited_details": [
+    {
+      "claim": "The completion proxy task in masked image modeling encourages the model to reconstruct the masked patches.",
+      "evidence": [
+        {
+          "title": "A General Self-Supervised Framework for Remote Sensing Image Classification",
+          "abstract": "This paper provides insights into the interpretation beyond simply combining self-supervised learning (SSL) with remote sensing (RS). Inspired by the improved representation ability brought by SSL in natural image understanding, we aim to explore and analyze the compatibility of SSL with remote sensing. In particular, we propose a self-supervised pre-training framework for the first time by applying the masked image modeling (MIM) method to RS image research in order to enhance its efficacy. The completion proxy task used by MIM encourages the model to reconstruct the masked patches, and thus correlate the unseen parts with the seen parts in semantics. Second, in order to figure out how pretext tasks affect downstream performance, we find the attribution consensus of the pre-trained model and downstream tasks toward the proxy and classification targets, which is quite different from that in natural image understanding. Moreover, this transferable consensus is persistent in cross-dataset full or partial fine-tuning, which means that SSL could boost general model-free representation beyond domain bias and task bias (e.g., classification, segmentation, and detection). Finally, on three publicly accessible RS scene classification datasets, our method outperforms the majority of fully supervised state-of-the-art (SOTA) methods with higher accuracy scores on unlabeled datasets.",
+          "url": "https://www.semanticscholar.org/paper/52be2330207ab72e04b617893954a368c8a351fc"
+        },
+        {
+          "title": "Masked Autoencoders Are Scalable Vision Learners",
+          "abstract": "This paper shows that masked autoencoders (MAE) are scalable self-supervised learners for computer vision. Our MAE approach is simple: we mask random patches of the input image and reconstruct the missing pixels. It is based on two core designs. First, we develop an asymmetric encoder-decoder architecture, with an encoder that operates only on the visible subset of patches (without mask tokens), along with a lightweight decoder that reconstructs the original image from the latent representation and mask tokens. Second, we find that masking a high proportion of the input image, e.g., 75%, yields a nontrivial and meaningful self-supervisory task. Coupling these two designs enables us to train large models efficiently and effectively: we accelerate training (by 3x or more) and improve accuracy. Our scalable approach allows for learning high-capacity models that generalize well: e.g., a vanilla ViT-Huge model achieves the best accuracy (87.8%) among methods that use only ImageNet-1K data. Transfer performance in downstream tasks outperforms supervised pre-training and shows promising scaling behavior.",
+          "url": "http://arxiv.org/abs/2111.06377"
+        },
+        {
+          "title": "Unsupervised Visual Representation Learning by Context Prediction",
+          "abstract": "This work explores the use of spatial context as a source of free and plentiful supervisory signal for training a rich visual representation. Given only a large, unlabeled image collection, we extract random pairs of patches from each image and train a convolutional neural net to predict the position of the second patch relative to the first. We argue that doing well on this task requires the model to learn to recognize objects and their parts. We demonstrate that the feature representation learned using this within-image context indeed captures visual similarity across images. For example, this representation allows us to perform unsupervised visual discovery of objects like cats, people, and even birds from the Pascal VOC 2011 detection dataset. Furthermore, we show that the learned ConvNet can be used in the R-CNN framework [19] and provides a significant boost over a randomly-initialized ConvNet, resulting in state-of-the-art performance among algorithms which use only Pascal-provided training set annotations.",
+          "url": "https://doi.org/10.1109/iccv.2015.167"
+        },
+        {
+          "title": "Fine-grained locality learning matters in consistency regularization",
+          "abstract": ", we design a masked modeling proxy task that encourages the student model to predict the segmentation given the unmasked image patches (even with 30 % only)",
+          "url": "https://www.sciencedirect.com/science/article/abs/pii/S003132032501249X"
+        },
+        {
+          "title": "Masked Image Modeling: A Survey - arXiv",
+          "abstract": "The MIM task involves masking some information, e.g. pixels, patches, or even latent. Their approach reconstructs masked patches, while training the student ...",
+          "url": "https://arxiv.org/html/2408.06687v3"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "Masked autoencoders are scalable self-supervised learners for computer vision.",
+      "evidence": [
+        {
+          "title": "Masked Autoencoders Are Scalable Vision Learners",
+          "abstract": "This paper shows that masked autoencoders (MAE) are scalable self-supervised learners for computer vision. Our MAE approach is simple: we mask random patches of the input image and reconstruct the missing pixels. It is based on two core designs. First, we develop an asymmetric encoder-decoder architecture, with an encoder that operates only on the visible subset of patches (without mask tokens), along with a lightweight decoder that reconstructs the original image from the latent representation and mask tokens. Second, we find that masking a high proportion of the input image, e.g., 75%, yields a nontrivial and meaningful self-supervisory task. Coupling these two designs enables us to train large models efficiently and effectively: we accelerate training (by 3x or more) and improve accuracy. Our scalable approach allows for learning high-capacity models that generalize well: e.g., a vanilla ViT-Huge model achieves the best accuracy (87.8%) among methods that use only ImageNet-1K data. Transfer performance in downstream tasks outperforms supervised pre-training and shows promising scaling behavior.",
+          "url": "http://arxiv.org/abs/2111.06377"
+        },
+        {
+          "title": "Rethinking the Inception Architecture for Computer Vision",
+          "abstract": "Convolutional networks are at the core of most state of-the-art computer vision solutions for a wide variety of tasks. Since 2014 very deep convolutional networks started to become mainstream, yielding substantial gains in various benchmarks. Although increased model size and computational cost tend to translate to immediate quality gains for most tasks (as long as enough labeled data is provided for training), computational efficiency and low parameter count are still enabling factors for various use cases such as mobile vision and big-data scenarios. Here we are exploring ways to scale up networks in ways that aim at utilizing the added computation as efficiently as possible by suitably factorized convolutions and aggressive regularization. We benchmark our methods on the ILSVRC 2012 classification challenge validation set demonstrate substantial gains over the state of the art: 21:2% top-1 and 5:6% top-5 error for single frame evaluation using a network with a computational cost of 5 billion multiply-adds per inference and with using less than 25 million parameters. With an ensemble of 4 models and multi-crop evaluation, we report 3:5% top-5 error and 17:3% top-1 error on the validation set and 3:6% top-5 error on the official test set.",
+          "url": "https://doi.org/10.1109/cvpr.2016.308"
+        },
+        {
+          "title": "Global and Local Contrastive Self-Supervised Learning for Semantic Segmentation of HR Remote Sensing Images",
+          "abstract": "Recently, supervised deep learning has achieved a great success in remote sensing image (RSI) semantic segmentation. However, supervised learning for semantic segmentation requires a large number of labeled samples, which is difficult to obtain in the field of remote sensing. A new learning paradigm, self-supervised learning (SSL), can be used to solve such problems by pretraining a general model with a large number of unlabeled images and then fine-tuning it on a downstream task with very few labeled samples. Contrastive learning is a typical method of SSL that can learn general invariant features. However, most existing contrastive learning methods are designed for classification tasks to obtain an image-level representation, which may be suboptimal for semantic segmentation tasks requiring pixel-level discrimination. Therefore, we propose a global style and local matching contrastive learning network (GLCNet) for RSI semantic segmentation. Specifically, first, the global style contrastive learning module is used to better learn an image-level representation, as we consider that style features can better represent the overall image features. Next, the local features matching the contrastive learning module is designed to learn the representations of local regions, which is beneficial for semantic segmentation. We evaluate four RSI semantic segmentation datasets, and the experimental results show that our method mostly outperforms the state-of-the-art self-supervised methods and the ImageNet pretraining method. Specifically, with 1% annotation from the original dataset, our approach improves Kappa by 6% on the International Society for Photogrammetry and Remote Sensing (ISPRS) Potsdam dataset relative to the existing baseline. Moreover, our method outperforms supervised learning methods when there are some differences between the datasets of upstream tasks and downstream tasks. Our study promotes the development of SSL in the field of RSI semantic segmentation. Since SSL could directly learn the essential characteristics of data from unlabeled data, which is easy to obtain in the remote sensing field, this may be of great significance for tasks such as global mapping. The source code is available athttps://github.com/GeoX-Lab/G-RSIM.",
+          "url": "https://arxiv.org/abs/2106.10605"
+        },
+        {
+          "title": "Masked Autoencoders Are Scalable Vision Learners",
+          "abstract": "by K He · 2021 · Cited by 16828 — Abstract:This paper shows that masked autoencoders (MAE) are scalable self-supervised learners for computer vision.",
+          "url": "https://arxiv.org/abs/2111.06377"
+        },
+        {
+          "title": "Masked Autoencoders Are Scalable Vision Learners",
+          "abstract": "This paper shows that masked autoencoders (MAE) are scalable self-supervised learners for computer vision. Our MAE approach is simple: we mask random patches ...",
+          "url": "https://www.alphaxiv.org/abs/2111.06377"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    }
+  ]
+}

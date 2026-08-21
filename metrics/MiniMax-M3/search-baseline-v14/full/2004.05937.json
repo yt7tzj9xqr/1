@@ -1,0 +1,275 @@
+{
+  "arxiv_id": "2004.05937",
+  "model": "MiniMax-M3",
+  "system": "search-baseline-v14",
+  "reference_precision": 0.6,
+  "reference_recall": 0.019672131147540985,
+  "reference_count": 10,
+  "reference_matches": 6,
+  "ground_truth_count": 305,
+  "predicted_titles": [
+    "Distilling the Knowledge in a Neural Network",
+    "FitNets: Hints for Thin Deep Nets",
+    "Born Again Neural Networks",
+    "Deep Mutual Learning",
+    "Student Network Learning via Evolutionary Knowledge Distillation",
+    "Show, Attend and Distill: Knowledge Distillation via Attention-based Feature Matching",
+    "Data-Distortion Guided Self-Distillation for Deep Neural Networks",
+    "Cross-Layer Distillation with Semantic Calibration",
+    "Knowledge Distillation by On-the-Fly Native Ensemble",
+    "Improved Knowledge Distillation via Teacher Assistant"
+  ],
+  "cited_match_rate": 0.5666666666666667,
+  "cited_count": 30,
+  "cited_supported": 17,
+  "cited_details": [
+    {
+      "statement": "Knowledge distillation (KD) is a model compression and knowledge-transfer paradigm in which a compact \"student\" network is trained to reproduce the behavior of a larger \"teacher\" network (https://arxiv.org/abs/1503.02531).",
+      "url": "https://arxiv.org/abs/1503.02531",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "(2015) formalized the core idea by training the student to match a temperature-softened softmax distribution produced by the teacher, and demonstrated that mimicking the teacher's class probabilities consistently improves the accuracy of a small image model over training on hard labels alone (https://arxiv.org/abs/1503.02531).",
+      "url": "https://arxiv.org/abs/1503.02531",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The same work reported that distilling an ensemble of 10 networks into a single neural net yielded a model nearly matching the ensemble on MNIST while clearly outperforming a model trained only on hard labels (https://arxiv.org/abs/1503.02531).",
+      "url": "https://arxiv.org/abs/1503.02531",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "A primary motivation for KD is to deploy high-performing but resource-intensive visual models on edge devices with limited memory and computation (https://doi.org/10.1609/aaai.v34i04.5963).",
+      "url": "https://doi.org/10.1609/aaai.v34i04.5963",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "(2020) explicitly framed distillation as a means to compress deep networks so that they can run on smartphones or embedded sensors while preserving much of the accuracy of the original large model (https://doi.org/10.1609/aaai.v34i04.5963).",
+      "url": "https://doi.org/10.1609/aaai.v34i04.5963",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Beyond compression, KD also functions as a knowledge-transfer regularizer that can improve generalization across architectures (https://arxiv.org/abs/1805.04770).",
+      "url": "https://arxiv.org/abs/1805.04770",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "(2018) showed that retraining a network of the same capacity as a strong ensemble, using the ensemble's soft predictions, can match the ensemble's performance (https://arxiv.org/abs/1805.04770).",
+      "url": "https://arxiv.org/abs/1805.04770",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "KD methods are typically categorized by the form of \"knowledge\" transferred from teacher to student (https://arxiv.org/abs/1503.02531).",
+      "url": "https://arxiv.org/abs/1503.02531",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "(2015) popularized logits-based distillation, which uses the teacher's output class probabilities as the supervisory signal (https://arxiv.org/abs/1503.02531).",
+      "url": "https://arxiv.org/abs/1503.02531",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Feature-based distillation instead transfers intermediate representations and is the dominant alternative for visual backbones (https://arxiv.org/abs/1412.6550).",
+      "url": "https://arxiv.org/abs/1412.6550",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "(2014, FitNets) pioneered \"hint\" training by regressing a thin student's intermediate feature map onto a teacher's intermediate feature map, providing a richer supervisory signal than the output layer alone (https://arxiv.org/abs/1412.6550).",
+      "url": "https://arxiv.org/abs/1412.6550",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The same work empirically showed that hint-based training enables thinner and deeper students to match or exceed the accuracy of the teacher on CIFAR-10 and SVHN benchmarks (https://arxiv.org/abs/1412.6550).",
+      "url": "https://arxiv.org/abs/1412.6550",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Subsequent work refined how feature correspondences are selected (https://doi.org/10.1609/aaai.v35i9.16969).",
+      "url": "https://doi.org/10.1609/aaai.v35i9.16969",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "(2021, Show, Attend and Distill) introduced an attention-based meta network that learns relative similarities across all teacher feature levels and automatically controls the distillation intensity between every teacher-student feature pair, eliminating manual link selection (https://doi.org/10.1609/aaai.v35i9.16969).",
+      "url": "https://doi.org/10.1609/aaai.v35i9.16969",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "(2021, SemCKD) proposed semantic calibration for cross-layer distillation, using an attention mechanism to assign each student layer a learned distribution over teacher layers, mitigating the negative regularization caused by semantic mismatch between manually paired layers (https://doi.org/10.1609/aaai.v35i8.16865).",
+      "url": "https://doi.org/10.1609/aaai.v35i8.16865",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The same work reported consistent improvements over state-of-the-art distillation baselines across multiple teacher-student architecture pairs on CIFAR-100 and ImageNet (https://doi.org/10.1609/aaai.v35i8.16865).",
+      "url": "https://doi.org/10.1609/aaai.v35i8.16865",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "KD frameworks also differ in how teachers and students are organized during training (https://arxiv.org/abs/1503.02531).",
+      "url": "https://arxiv.org/abs/1503.02531",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "(2015), trains a powerful teacher first and then distills its knowledge into a separate, smaller student (https://arxiv.org/abs/1503.02531).",
+      "url": "https://arxiv.org/abs/1503.02531",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Online distillation removes the need for a pre-trained teacher by letting peers teach each other during training (https://arxiv.org/abs/1706.00384).",
+      "url": "https://arxiv.org/abs/1706.00384",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "(2017, Deep Mutual Learning) showed that an ensemble of student networks trained simultaneously can mutually distill one another and collectively outperform individually trained models, demonstrating that distillation is beneficial even when no large teacher is available (https://arxiv.org/abs/1706.00384).",
+      "url": "https://arxiv.org/abs/1706.00384",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The same work demonstrated that, with no pre-trained large teacher, mutual distillation among peers trained from scratch yields higher test accuracy than independently trained networks on CIFAR-100 and ImageNet (https://arxiv.org/abs/1706.00384).",
+      "url": "https://arxiv.org/abs/1706.00384",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "(2018, ONE) introduced an on-the-fly native ensemble that trains a single multi-branch network and simultaneously builds a strong teacher from its branches, improving generalization on CIFAR-10, CIFAR-100, SVHN, and ImageNet with a one-stage procedure (https://qmro.qmul.ac.uk/xmlui/handle/123456789/58358).",
+      "url": "https://qmro.qmul.ac.uk/xmlui/handle/123456789/58358",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Self-distillation goes further by distilling knowledge from a network into itself across training stages or data perturbations (https://arxiv.org/abs/1805.04770).",
+      "url": "https://arxiv.org/abs/1805.04770",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "(2018, Born-Again Networks) showed that re-training a student of identical capacity using the teacher's soft labels can match or exceed the teacher's accuracy, establishing self-distillation as a viable training-time regularizer (https://arxiv.org/abs/1805.04770).",
+      "url": "https://arxiv.org/abs/1805.04770",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "(2019, Data-Distortion Guided Self-Distillation) eliminated the need for a separate teacher entirely by distilling consistent global feature and posterior distributions across distorted versions of the same training data within a single network, improving AlexNet, ResNet, Wide ResNet, and DenseNet on CIFAR-10/100 and ImageNet (https://doi.org/10.1609/aaai.v33i01.33015565).",
+      "url": "https://doi.org/10.1609/aaai.v33i01.33015565",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Multi-teacher and intermediate-teacher frameworks address the capacity gap between teacher and student (https://doi.org/10.1609/aaai.v34i04.5963).",
+      "url": "https://doi.org/10.1609/aaai.v34i04.5963",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "(2020, Teacher Assistant) demonstrated that student performance degrades when the teacher-student size gap is too large, and introduced an intermediate-sized \"teacher assistant\" network trained in multiple steps to bridge this gap (https://doi.org/10.1609/aaai.v34i04.5963).",
+      "url": "https://doi.org/10.1609/aaai.v34i04.5963",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "(2021, Evolutionary Knowledge Distillation) similarly identified the capability gap as a key limitation of fixed-teacher distillation and proposed co-evolving the student alongside a dynamically selected teacher to reduce this gap during training (https://arxiv.org/abs/2103.13811).",
+      "url": "https://arxiv.org/abs/2103.13811",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Across these developments, the field has evolved from simple logit matching toward richer intermediate-feature transfers, attention-based linkage, and flexible teacher topologies (https://doi.org/10.1609/aaai.v35i9.16969).",
+      "url": "https://doi.org/10.1609/aaai.v35i9.16969",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Progress in handling the teacher-student capacity gap through teacher assistants, evolutionary training, and self-distillation indicates that the choice of teacher, the form of knowledge, and the training protocol are jointly decisive for the success of visual KD (https://arxiv.org/abs/2103.13811).",
+      "url": "https://arxiv.org/abs/2103.13811",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    }
+  ],
+  "noncited_factual_accuracy": 1.0,
+  "noncited_count": 1,
+  "noncited_correct": 1,
+  "noncited_details": [
+    {
+      "claim": "The classical offline paradigm, formalized by Hinton et al.",
+      "evidence": [
+        {
+          "title": "Distilling the Knowledge in a Neural Network",
+          "abstract": "by G Hinton · 2015 · Cited by 34559 — Access Paper: View a PDF of the paper titled Distilling the Knowledge in a Neural Network, by Geoffrey Hinton and 2 other authors. View PDF ...",
+          "url": "https://arxiv.org/abs/1503.02531"
+        },
+        {
+          "title": "Knowledge Distillation by On-the-Fly Native Ensemble",
+          "abstract": "Knowledge distillation is effective to train small and generalisable network models for meeting the low-memory and fast running requirements.Existing offline distillation methods rely on a strong pre-trained teacher, which enables favourable knowledge discovery and transfer but requires a complex two-phase training procedure.Online counterparts address this limitation at the price of lacking a highcapacity teacher.In this work, we present an On-the-fly Native Ensemble (ONE) strategy for one-stage online distillation.Specifically, ONE trains only a single multi-branch network while simultaneously establishing a strong teacher on-thefly to enhance the learning of target network.Extensive evaluations show that ONE improves the generalisation performance a variety of deep neural networks more significantly than alternative methods on four image classification dataset: CIFAR10, CIFAR100, SVHN, and ImageNet, whilst having the computational efficiency advantages.",
+          "url": "https://qmro.qmul.ac.uk/xmlui/handle/123456789/58358"
+        },
+        {
+          "title": "FitNets: Hints for Thin Deep Nets",
+          "abstract": "by A Romero · 2014 · Cited by 7003 — In this paper, we aim to address the network compression problem by taking advantage of depth. We propose a novel approach to train thin and ...",
+          "url": "https://arxiv.org/abs/1412.6550"
+        },
+        {
+          "title": "'The Deep Learning Revolution' - Geoffrey Hinton - RSE ...",
+          "abstract": "\"There have been two very different paradigms for Artificial Intelligence: the logic-inspired paradigm focused on reasoning and language, ...",
+          "url": "https://www.youtube.com/watch?v=re-SRA5UZQw"
+        },
+        {
+          "title": "Geoffrey Hinton's Landmark Contributions to Deep Learning",
+          "abstract": "This essay explores Hinton's key contributions, as outlined in the provided timeline, their impact, and his broader legacy. formalized in a 2014",
+          "url": "https://medium.com/@frankmorales_91352/geoffrey-hintons-landmark-contributions-to-deep-learning-670e2f0020ff"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    }
+  ]
+}

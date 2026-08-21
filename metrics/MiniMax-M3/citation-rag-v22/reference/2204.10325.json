@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2204.10325",
+  "model": "MiniMax-M3",
+  "system": "citation-rag-v22",
+  "reference_precision": 0.0,
+  "reference_recall": 0.0,
+  "reference_count": 10,
+  "reference_matches": 0,
+  "ground_truth_count": 36,
+  "predicted_titles": [
+    "Prospective Validation of Motor-Based Intervention with Automated Mispronunciation Detection of Rhotics in Residual Speech Sound Disorders",
+    "Stuttering Speech Disfluency Prediction using Explainable Attribution Vectors of Facial Muscle Movements",
+    "Home-Based Activities for Children with Speech Sound Disorders: Requirements for a Tangible User Interface for Internet of Things Artefacts",
+    "Voice disorder detection using machine learning algorithms: An application in speech and language pathology",
+    "Deep-Learning-Based Automated Classification of Chinese Speech Sound Disorders",
+    "Detection of Speech Impairments Using Cepstrum, Auditory Spectrogram and Wavelet Time Scattering Domain Features",
+    "Alternative Speech Communication System for Persons with Severe Speech Disorders",
+    "Detection and classification of voice pathology using feature selection",
+    "Automatic Pronunciation Scoring And Mispronunciation ...",
+    "Effective Dysphonia Detection Using Feature Dimension Reduction and Kernel Density Estimation for Patients with Parkinson’s Disease"
+  ]
+}

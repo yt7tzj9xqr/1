@@ -1,0 +1,618 @@
+{
+  "arxiv_id": "2306.05817",
+  "model": "MiniMax-M3",
+  "system": "citation-rag-v22",
+  "reference_precision": 0.7,
+  "reference_recall": 0.023255813953488372,
+  "reference_count": 10,
+  "reference_matches": 7,
+  "ground_truth_count": 301,
+  "predicted_titles": [
+    "Retrieval-augmented Recommender System: Enhancing Recommender Systems with Large Language Models",
+    "Recommendation as Language Processing (RLP): A Unified Pretrain, Personalized Prompt & Predict Paradigm (P5)",
+    "Collaborative Large Language Model for Recommender Systems",
+    "Personalized Prompt Learning for Explainable Recommendation",
+    "Prompt Distillation for Efficient LLM-based Recommendation",
+    "TALLRec: An Effective and Efficient Tuning Framework to Align Large Language Model with Recommendation",
+    "LLM-Rec: Personalized Recommendation via Prompting Large Language Models",
+    "Large Language Models as Zero-Shot Conversational Recommenders",
+    "Item-based collaborative filtering recommendation algorithms",
+    "Wide &amp; Deep Learning for Recommender Systems"
+  ],
+  "cited_match_rate": 1.0,
+  "cited_count": 13,
+  "cited_supported": 13,
+  "cited_details": [
+    {
+      "statement": "P5 introduces a \"Pretrain, Personalized Prompt & Predict\" paradigm that unifies multiple recommendation tasks under a single framework, motivated by the observation that different recommendation tasks typically require designing task-specific architectures and training objectives https://arxiv.org/abs/2203.13366.",
+      "url": "https://arxiv.org/abs/2203.13366",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The fine-tuned LLM exhibits robust cross-domain generalization https://doi.org/10.1145/3604915.3608857.",
+      "url": "https://doi.org/10.1145/3604915.3608857",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The work introduces two training strategies, sequential tuning and recommendation as regularization, to bridge different learning stages https://doi.org/10.1145/3580488.",
+      "url": "https://doi.org/10.1145/3580488",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The work also designs a training strategy to improve the efficiency of training these models https://doi.org/10.1145/3583780.3615017.",
+      "url": "https://doi.org/10.1145/3583780.3615017",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "LLM-Rec explores personalized recommendation via prompting large language models https://doi.org/10.18653/v1/2024.findings-naacl.39.",
+      "url": "https://doi.org/10.18653/v1/2024.findings-naacl.39",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "On the new dataset and two existing conversational recommendation datasets, representative LLMs outperform existing fine-tuned conversational recommendation models without fine-tuning, and the study proposes probing tasks to investigate the mechanisms behind LLM performance https://doi.org/10.1145/3583780.3614949.",
+      "url": "https://doi.org/10.1145/3583780.3614949",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "CLLM4Rec extends the vocabulary of pretrained LLMs with user/item ID tokens, introduces a novel soft+hard prompting strategy that uses language modeling on recommendation-system corpora where each document is split into heterogeneous soft (user/item) tokens and hard (vocab) tokens, and introduces a mutual regularization strategy https://doi.org/10.1145/3589334.3645347.",
+      "url": "https://doi.org/10.1145/3589334.3645347",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A retrieval-augmented recommender system combines retrieval-based and generation-based models, leveraging LLM contextual awareness and strong adaptability to unseen data to provide relevant recommendations in cold scenarios characterized by high data sparsity across application areas such as e-commerce and content streaming platforms https://doi.org/10.1145/3604915.3608889.",
+      "url": "https://doi.org/10.1145/3604915.3608889",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Item-based collaborative filtering techniques analyze the user-item matrix to identify relationships between different items, addressing scalability challenges where the amount of work in traditional collaborative filtering systems increases with the number of participants and the need to achieve high coverage in the face of data sparsity https://doi.org/10.1145/371920.372071.",
+      "url": "https://doi.org/10.1145/371920.372071",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Online experiment results show that Wide & Deep significantly increased app acquisitions compared with wide-only and deep-only models https://doi.org/10.1145/2988450.2988454.",
+      "url": "https://doi.org/10.1145/2988450.2988454",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "POD reports that although training efficiency can be significantly improved, the improvement of inference efficiency is limited https://doi.org/10.1145/3583780.3615017.",
+      "url": "https://doi.org/10.1145/3583780.3615017",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The zero-shot conversational recommendation study notes that analyzing both LLM behaviors and dataset characteristics provides a holistic understanding of model effectiveness and limitations, and explicitly suggests directions for the design of future conversational recommenders https://doi.org/10.1145/3583780.3614949.",
+      "url": "https://doi.org/10.1145/3583780.3614949",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "TALLRec emphasizes that a substantial disparity between LLM training tasks and recommendation tasks, combined with inadequate recommendation data during pre-training, makes LLM performance in recommendation tasks suboptimal https://doi.org/10.1145/3604915.3608857.",
+      "url": "https://doi.org/10.1145/3604915.3608857",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    }
+  ],
+  "noncited_factual_accuracy": 1.0,
+  "noncited_count": 15,
+  "noncited_correct": 15,
+  "noncited_details": [
+    {
+      "claim": "TALLRec fine-tunes an LLM (LLaMA-7B) on recommendation data to enhance recommendation capabilities.",
+      "evidence": [
+        {
+          "title": "TALLRec: An Effective and Efficient Tuning Framework to Align Large Language Model with Recommendation",
+          "abstract": "Large Language Models (LLMs) have demonstrated remarkable performance across diverse domains, thereby prompting researchers to explore their potential for use in recommendation systems. Initial attempts have leveraged the exceptional capabilities of LLMs, such as rich knowledge and strong generalization through In-context Learning, which involves phrasing the recommendation task as prompts. Nevertheless, the performance of LLMs in recommendation tasks remains suboptimal due to a substantial disparity between the training tasks for LLMs and recommendation tasks, as well as inadequate recommendation data during pre-training. To bridge the gap, we consider building a Large Recommendation Language Model by tunning LLMs with recommendation data. To this end, we propose an efficient and effective Tuning framework for Aligning LLMs with Recommendations, namely TALLRec. We have demonstrated that the proposed TALLRec framework can significantly enhance the recommendation capabilities of LLMs in the movie and book domains, even with a limited dataset of fewer than 100 samples. Additionally, the proposed framework is highly efficient and can be executed on a single RTX 3090 with LLaMA-7B. Furthermore, the fine-tuned LLM exhibits robust cross-domain generalization. Our code and data are available at https://github.com/SAI990323/TALLRec.",
+          "url": "https://doi.org/10.1145/3604915.3608857"
+        },
+        {
+          "title": "Retrieval-augmented Recommender System: Enhancing Recommender Systems with Large Language Models",
+          "abstract": "Recommender Systems (RSs) play a pivotal role in delivering personalized recommendations across various domains, from e-commerce to content streaming platforms. Recent advancements in natural language processing have introduced Large Language Models (LLMs) that exhibit remarkable capabilities in understanding and generating human-like text. RS are renowned for their effectiveness and proficiency within clearly defined domains; nevertheless, they are limited in adaptability and incapable of providing recommendations for unexplored data. Conversely, LLMs exhibit contextual awareness and strong adaptability to unseen data. Combining these technologies creates a powerful tool for delivering contextual and relevant recommendations, even in cold scenarios characterized by high data sparsity. The proposal aims to explore the possibilities of integrating LLMs into RS, introducing a novel approach called Retrieval-augmented Recommender Systems, which combines the strengths of retrieval-based and generation-based models to enhance the ability of RSs to provide relevant suggestions.",
+          "url": "https://doi.org/10.1145/3604915.3608889"
+        },
+        {
+          "title": "Collaborative Large Language Model for Recommender Systems",
+          "abstract": "Recently, there has been growing interest in developing the next-generation recommender systems (RSs) based on pretrained large language models (LLMs). However, the semantic gap between natural language and recommendation tasks is still not well addressed, leading to multiple issues such as spuriously correlated user/item descriptors, ineffective language modeling on user/item data, inefficient recommendations via auto-regression, etc. In this paper, we propose CLLM4Rec, the first generative RS that tightly integrates the LLM paradigm and ID paradigm of RSs, aiming to address the above challenges simultaneously. We first extend the vocabulary of pretrained LLMs with user/item ID tokens to faithfully model user/item collaborative and content semantics. Accordingly, a novel soft+hard prompting strategy is proposed to effectively learn user/item collaborative/content token embeddings via language modeling on RS-specific corpora, where each document is split into a prompt consisting of heterogeneous soft (user/item) tokens and hard (vocab) tokens and a main text consisting of homogeneous item tokens or vocab tokens to facilitate stable and effective language modeling. In addition, a novel mutual regularization strategy is introduced to encourage CLLM4Rec to capture recommendation-related information from noisy user/item content. Finally, we propose a novel recommendation-oriented finetuning strategy for CLLM4Rec, where an item prediction head with multinomial likelihood is added to the pretrained CLLM4Rec backbone to predict hold-out items based on soft+hard prompts established from masked user-item interaction history, where recommendations of multiple items can be generated efficiently without hallucination.",
+          "url": "https://doi.org/10.1145/3589334.3645347"
+        },
+        {
+          "title": "Tuning Large Language Models for Recommendation Tasks",
+          "abstract": "The state-of-the-art performance of Large Language Models (LLMs) has encouraged researchers to also adapt LLMs for recommendation tasks.",
+          "url": "https://blog.reachsumit.com/posts/2023/05/tuning-llm-for-recsys/"
+        },
+        {
+          "title": "TALLRec: An Effective and Efficient Tuning Framework to Align Large ...",
+          "abstract": "The research demonstrates that TALLRec substantially enhances LLMs' recommendation abilities in movie and book domains, even when trained ...",
+          "url": "https://www.swiftscholar.net/paper/697845a7fe4cc3affbb67983"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "TALLRec achieves enhanced recommendation in the movie and book domains with a limited dataset of fewer than 100 samples.",
+      "evidence": [
+        {
+          "title": "TALLRec: An Effective and Efficient Tuning Framework to Align Large Language Model with Recommendation",
+          "abstract": "Large Language Models (LLMs) have demonstrated remarkable performance across diverse domains, thereby prompting researchers to explore their potential for use in recommendation systems. Initial attempts have leveraged the exceptional capabilities of LLMs, such as rich knowledge and strong generalization through In-context Learning, which involves phrasing the recommendation task as prompts. Nevertheless, the performance of LLMs in recommendation tasks remains suboptimal due to a substantial disparity between the training tasks for LLMs and recommendation tasks, as well as inadequate recommendation data during pre-training. To bridge the gap, we consider building a Large Recommendation Language Model by tunning LLMs with recommendation data. To this end, we propose an efficient and effective Tuning framework for Aligning LLMs with Recommendations, namely TALLRec. We have demonstrated that the proposed TALLRec framework can significantly enhance the recommendation capabilities of LLMs in the movie and book domains, even with a limited dataset of fewer than 100 samples. Additionally, the proposed framework is highly efficient and can be executed on a single RTX 3090 with LLaMA-7B. Furthermore, the fine-tuned LLM exhibits robust cross-domain generalization. Our code and data are available at https://github.com/SAI990323/TALLRec.",
+          "url": "https://doi.org/10.1145/3604915.3608857"
+        },
+        {
+          "title": "Machine learning a probabilistic perspective",
+          "abstract": "Today's Web-enabled deluge of electronic data calls for automated methods of data analysis. Machine learning provides these, developing methods that can automatically detect patterns in data and then use the uncovered patterns to predict future data. This textbook offers a comprehensive and self-contained introduction to the field of machine learning, based on a unified, probabilistic approach. The coverage combines breadth and depth, offering necessary background material on such topics as probability, optimization, and linear algebra as well as discussion of recent developments in the field, including conditional random fields, L1 regularization, and deep learning. The book is written in an informal, accessible style, complete with pseudo-code for the most important algorithms. All topics are copiously illustrated with color images and worked examples drawn from such application domains as biology, text processing, computer vision, and robotics. Rather than providing a cookbook of different heuristic methods, the book stresses a principled model-based approach, often using the language of graphical models to specify models in a concise and intuitive way. Almost all the models described have been implemented in a MATLAB software package--PMTK (probabilistic modeling toolkit)--that is freely available online. The book is suitable for upper-level undergraduates with an introductory-level college math background and beginning graduate students.",
+          "url": "http://bvbr.bib-bvb.de:8991/F?func=service&doc_library=BVB01&local_base=BVB01&doc_number=028615309&sequence=000002&line_number=0001&func_code=DB_RECORDS&service_type=MEDIA"
+        },
+        {
+          "title": "Factorization meets the neighborhood",
+          "abstract": "Recommender systems provide users with personalized suggestions for products or services. These systems often rely on Collaborating Filtering (CF), where past transactions are analyzed in order to establish connections between users and products. The two more successful approaches to CF are latent factor models, which directly profile both users and products, and neighborhood models, which analyze similarities between products or users. In this work we introduce some innovations to both approaches. The factor and neighborhood models can now be smoothly merged, thereby building a more accurate combined model. Further accuracy improvements are achieved by extending the models to exploit both explicit and implicit feedback by the users. The methods are tested on the Netflix data. Results are better than those previously published on that dataset. In addition, we suggest a new evaluation metric, which highlights the differences among methods, based on their performance at a top-K recommendation task.",
+          "url": "https://doi.org/10.1145/1401890.1401944"
+        },
+        {
+          "title": "SAI990323/TALLRec",
+          "abstract": "We introduce a novel framework (TALLRec) that enables the efficient and effective adaptation of LLMs to recommendation tasks. ... json\" for movie dataset.",
+          "url": "https://github.com/SAI990323/TALLRec"
+        },
+        {
+          "title": "TALLRec: An Effective and Efficient Tuning Framework to ...",
+          "abstract": "TALLRec framework can significantly enhance the recommendation capabilities of LLMs in the movie and book domains, even with a limited dataset of fewer than ...",
+          "url": "https://alphaxiv.org/audio/2305.00447"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "TALLRec is efficient enough to run on a single RTX 3090 GPU.",
+      "evidence": [
+        {
+          "title": "TALLRec: An Effective and Efficient Tuning Framework to Align Large Language Model with Recommendation",
+          "abstract": "Large Language Models (LLMs) have demonstrated remarkable performance across diverse domains, thereby prompting researchers to explore their potential for use in recommendation systems. Initial attempts have leveraged the exceptional capabilities of LLMs, such as rich knowledge and strong generalization through In-context Learning, which involves phrasing the recommendation task as prompts. Nevertheless, the performance of LLMs in recommendation tasks remains suboptimal due to a substantial disparity between the training tasks for LLMs and recommendation tasks, as well as inadequate recommendation data during pre-training. To bridge the gap, we consider building a Large Recommendation Language Model by tunning LLMs with recommendation data. To this end, we propose an efficient and effective Tuning framework for Aligning LLMs with Recommendations, namely TALLRec. We have demonstrated that the proposed TALLRec framework can significantly enhance the recommendation capabilities of LLMs in the movie and book domains, even with a limited dataset of fewer than 100 samples. Additionally, the proposed framework is highly efficient and can be executed on a single RTX 3090 with LLaMA-7B. Furthermore, the fine-tuned LLM exhibits robust cross-domain generalization. Our code and data are available at https://github.com/SAI990323/TALLRec.",
+          "url": "https://doi.org/10.1145/3604915.3608857"
+        },
+        {
+          "title": "Prompt Distillation for Efficient LLM-based Recommendation",
+          "abstract": "Large language models (LLM) have manifested unparalleled modeling capability on various tasks, e.g., multi-step reasoning, but the input to these models is mostly limited to plain text, which could be very long and contain noisy information. Long text could take long time to process, and thus may not be efficient enough for recommender systems that require immediate response. In LLM-based recommendation models, user and item IDs are usually filled in a template (i.e., discrete prompt) to allow the models to understand a given task, but the models usually need extensive fine-tuning to bridge the user/item IDs and the template words and to unleash the power of LLM for recommendation. To address the problems, we propose to distill the discrete prompt for a specific task to a set of continuous prompt vectors so as to bridge IDs and words and to reduce the inference time. We also design a training strategy with an attempt to improve the efficiency of training these models. Experimental results on three real-world datasets demonstrate the effectiveness of our PrOmpt Distillation (POD) approach on both sequential recommendation and top-N recommendation tasks. Although the training efficiency can be significantly improved, the improvement of inference efficiency is limited. This finding may inspire researchers in the community to further improve the inference efficiency of LLM-based recommendation models.",
+          "url": "https://doi.org/10.1145/3583780.3615017"
+        },
+        {
+          "title": "Multi-object tracking with representations of the symmetric group.",
+          "abstract": "Abstract We present an efficient algorithm for approx-imately maintaining and updating a distribution over permutations matching tracks toreal world objects. The algorithm hinges on two insights from the theory of harmonicanalysis on noncommutative groups. The first is that most of the information in thedistribution over permutations is captured by certain &amp;amp;quot;low frequency &amp;amp;quot; Fourier components.The second is that Bayesian updates of these components can be efficiently realized by ex-tensions of Clausen&amp;apos;s FFT for the symmetric group. 1 Introduction Multi-object trackers associate tracks r1, r2,..., rnwith real world objects o1, o2,..., on called targets.When the targets are well separated and good quality observations are available, following which trackcorresponds to which target is relatively easy. However, when two objects come very close, are occluded,or observations are not available, the association between tracks and objects becomes uncertain. This iswhat is referred to as the data association problem in multi-object tracking. Most tracking systems in practical use today are prob-abilistic, in the sense that at time",
+          "url": "http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.71.1292"
+        },
+        {
+          "title": "GitHub - SAI990323/TALLRec",
+          "abstract": "TALLRec: An Effective and Efficient Tuning Framework to Align Large Language Model with Recommendation is available at https://arxiv.org/abs/2305.00447.",
+          "url": "https://github.com/SAI990323/TALLRec"
+        },
+        {
+          "title": "TALLRec: An Effective and Efficient Tuning Framework to Align Large ...",
+          "abstract": "The paper highlights LoRA as the key to making the tuning process efficient and executable on a single consumer-grade GPU.",
+          "url": "https://alphaxiv.org/audio/2305.00447"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "A study on personalized prompt learning observes that user and item IDs occupy a different semantic space than the words on which pre-trained models were trained.",
+      "evidence": [
+        {
+          "title": "Personalized Prompt Learning for Explainable Recommendation",
+          "abstract": "Providing user-understandable explanations to justify recommendations could help users better understand the recommended items, increase the system’s ease of use, and gain users’ trust. A typical approach to realize it is natural language generation. However, previous works mostly adopt recurrent neural networks to meet the ends, leaving the potentially more effective pre-trained Transformer models under-explored. In fact, user and item IDs, as important identifiers in recommender systems, are inherently in different semantic space as words that pre-trained models were already trained on. Thus, how to effectively fuse IDs into such models becomes a critical issue. Inspired by recent advancement in prompt learning, we come up with two solutions: find alternative words to represent IDs (called discrete prompt learning) and directly input ID vectors to a pre-trained model (termed continuous prompt learning). In the latter case, ID vectors are randomly initialized but the model is trained in advance on large corpora, so they are actually in different learning stages. To bridge the gap, we further propose two training strategies: sequential tuning and recommendation as regularization. Extensive experiments show that our continuous prompt learning approach equipped with the training strategies consistently outperforms strong baselines on three datasets of explainable recommendation.",
+          "url": "https://doi.org/10.1145/3580488"
+        },
+        {
+          "title": "Recommendation as Language Processing (RLP): A Unified Pretrain, Personalized Prompt & Predict Paradigm (P5)",
+          "abstract": "For a long time, different recommendation tasks require designing task-specific architectures and training objectives. As a result, it is hard to transfer the knowledge and representations from one task to another, thus restricting the generalization ability of existing recommendation approaches. To deal with such issues, considering that language can describe almost anything and language grounding is a powerful medium to represent various problems or tasks, we present a flexible and unified text-to-text paradigm called “Pretrain, Personalized Prompt, and Predict Paradigm” (P5) for recommendation, which unifies various recommendation tasks in a shared framework. In P5, all data such as user-item interactions, user descriptions, item metadata, and user reviews are converted to a common format — natural language sequences. The rich information from natural language assists P5 to capture deeper semantics for personalization and recommendation. Specifically, P5 learns different tasks with the same language modeling objective during pretraining. Thus, it serves as the foundation model for various downstream recommendation tasks, allows easy integration with other modalities, and enables instruction-based recommendation. P5 advances recommender systems from shallow model to deep model to big model, and will revolutionize the technical form of recommender systems towards universal recommendation engine. With adaptive personalized prompt for different users, P5 is able to make predictions in a zero-shot or few-shot manner and largely reduces the necessity for extensive fine-tuning. On several benchmarks, we conduct experiments to show the effectiveness of P5. To help advance future research on Recommendation as Language Processing (RLP), Personalized Foundation Models (PFM), and Universal Recommendation Engine (URE), we release the source code, dataset, prompts, and pretrained P5 model at https://github.com/jeykigung/P5.",
+          "url": "https://arxiv.org/abs/2203.13366"
+        },
+        {
+          "title": "Prompt Distillation for Efficient LLM-based Recommendation",
+          "abstract": "Large language models (LLM) have manifested unparalleled modeling capability on various tasks, e.g., multi-step reasoning, but the input to these models is mostly limited to plain text, which could be very long and contain noisy information. Long text could take long time to process, and thus may not be efficient enough for recommender systems that require immediate response. In LLM-based recommendation models, user and item IDs are usually filled in a template (i.e., discrete prompt) to allow the models to understand a given task, but the models usually need extensive fine-tuning to bridge the user/item IDs and the template words and to unleash the power of LLM for recommendation. To address the problems, we propose to distill the discrete prompt for a specific task to a set of continuous prompt vectors so as to bridge IDs and words and to reduce the inference time. We also design a training strategy with an attempt to improve the efficiency of training these models. Experimental results on three real-world datasets demonstrate the effectiveness of our PrOmpt Distillation (POD) approach on both sequential recommendation and top-N recommendation tasks. Although the training efficiency can be significantly improved, the improvement of inference efficiency is limited. This finding may inspire researchers in the community to further improve the inference efficiency of LLM-based recommendation models.",
+          "url": "https://doi.org/10.1145/3583780.3615017"
+        },
+        {
+          "title": "Prompt Learning with Structured Semantic Knowledge Makes Pre ...",
+          "abstract": "Prompt learning is an effective approach to tuning language models for specific tasks, introducing structured semantic information can ...",
+          "url": "https://www.mdpi.com/2079-9292/12/15/3281"
+        },
+        {
+          "title": "Awesome Item Identification and Item Tokenization in Gen-RecSys - GitHub",
+          "abstract": "Updating curated list of research advancements on item identification and item tokenization in generative recommender systems.",
+          "url": "https://github.com/HKBU-LAGAS/Awesome-Item-ID-Gen-RecSys"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "POD distills discrete prompts for specific tasks into a set of continuous prompt vectors, bridging IDs and words and reducing inference time.",
+      "evidence": [
+        {
+          "title": "Prompt Distillation for Efficient LLM-based Recommendation",
+          "abstract": "Large language models (LLM) have manifested unparalleled modeling capability on various tasks, e.g., multi-step reasoning, but the input to these models is mostly limited to plain text, which could be very long and contain noisy information. Long text could take long time to process, and thus may not be efficient enough for recommender systems that require immediate response. In LLM-based recommendation models, user and item IDs are usually filled in a template (i.e., discrete prompt) to allow the models to understand a given task, but the models usually need extensive fine-tuning to bridge the user/item IDs and the template words and to unleash the power of LLM for recommendation. To address the problems, we propose to distill the discrete prompt for a specific task to a set of continuous prompt vectors so as to bridge IDs and words and to reduce the inference time. We also design a training strategy with an attempt to improve the efficiency of training these models. Experimental results on three real-world datasets demonstrate the effectiveness of our PrOmpt Distillation (POD) approach on both sequential recommendation and top-N recommendation tasks. Although the training efficiency can be significantly improved, the improvement of inference efficiency is limited. This finding may inspire researchers in the community to further improve the inference efficiency of LLM-based recommendation models.",
+          "url": "https://doi.org/10.1145/3583780.3615017"
+        },
+        {
+          "title": "Personalized Prompt Learning for Explainable Recommendation",
+          "abstract": "Providing user-understandable explanations to justify recommendations could help users better understand the recommended items, increase the system’s ease of use, and gain users’ trust. A typical approach to realize it is natural language generation. However, previous works mostly adopt recurrent neural networks to meet the ends, leaving the potentially more effective pre-trained Transformer models under-explored. In fact, user and item IDs, as important identifiers in recommender systems, are inherently in different semantic space as words that pre-trained models were already trained on. Thus, how to effectively fuse IDs into such models becomes a critical issue. Inspired by recent advancement in prompt learning, we come up with two solutions: find alternative words to represent IDs (called discrete prompt learning) and directly input ID vectors to a pre-trained model (termed continuous prompt learning). In the latter case, ID vectors are randomly initialized but the model is trained in advance on large corpora, so they are actually in different learning stages. To bridge the gap, we further propose two training strategies: sequential tuning and recommendation as regularization. Extensive experiments show that our continuous prompt learning approach equipped with the training strategies consistently outperforms strong baselines on three datasets of explainable recommendation.",
+          "url": "https://doi.org/10.1145/3580488"
+        },
+        {
+          "title": "Recommendation as Language Processing (RLP): A Unified Pretrain, Personalized Prompt & Predict Paradigm (P5)",
+          "abstract": "For a long time, different recommendation tasks require designing task-specific architectures and training objectives. As a result, it is hard to transfer the knowledge and representations from one task to another, thus restricting the generalization ability of existing recommendation approaches. To deal with such issues, considering that language can describe almost anything and language grounding is a powerful medium to represent various problems or tasks, we present a flexible and unified text-to-text paradigm called “Pretrain, Personalized Prompt, and Predict Paradigm” (P5) for recommendation, which unifies various recommendation tasks in a shared framework. In P5, all data such as user-item interactions, user descriptions, item metadata, and user reviews are converted to a common format — natural language sequences. The rich information from natural language assists P5 to capture deeper semantics for personalization and recommendation. Specifically, P5 learns different tasks with the same language modeling objective during pretraining. Thus, it serves as the foundation model for various downstream recommendation tasks, allows easy integration with other modalities, and enables instruction-based recommendation. P5 advances recommender systems from shallow model to deep model to big model, and will revolutionize the technical form of recommender systems towards universal recommendation engine. With adaptive personalized prompt for different users, P5 is able to make predictions in a zero-shot or few-shot manner and largely reduces the necessity for extensive fine-tuning. On several benchmarks, we conduct experiments to show the effectiveness of P5. To help advance future research on Recommendation as Language Processing (RLP), Personalized Foundation Models (PFM), and Universal Recommendation Engine (URE), we release the source code, dataset, prompts, and pretrained P5 model at https://github.com/jeykigung/P5.",
+          "url": "https://arxiv.org/abs/2203.13366"
+        },
+        {
+          "title": "Automatic Prompt Optimization with Prompt Distillation",
+          "abstract": "The PrOmpt Distillation (POD) approach is proposed to distill the discrete prompt ... vectors so as to bridge IDs and words and to reduce the inference time.",
+          "url": "https://www.semanticscholar.org/paper/5262d3edb37f5a99b665275ea6434e8aecc29fde"
+        },
+        {
+          "title": "Is Continuous Prompt a Combination of Discrete ...",
+          "abstract": "by T Ju · 2023 · Cited by 13 — Our experiments show that: (1) one can always find a combination of discrete prompts as the re- placement of continuous prompts that performs.",
+          "url": "https://aclanthology.org/2023.findings-acl.494.pdf"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "POD validates its approach on three real-world datasets for both sequential and top-N recommendation.",
+      "evidence": [
+        {
+          "title": "Prompt Distillation for Efficient LLM-based Recommendation",
+          "abstract": "Large language models (LLM) have manifested unparalleled modeling capability on various tasks, e.g., multi-step reasoning, but the input to these models is mostly limited to plain text, which could be very long and contain noisy information. Long text could take long time to process, and thus may not be efficient enough for recommender systems that require immediate response. In LLM-based recommendation models, user and item IDs are usually filled in a template (i.e., discrete prompt) to allow the models to understand a given task, but the models usually need extensive fine-tuning to bridge the user/item IDs and the template words and to unleash the power of LLM for recommendation. To address the problems, we propose to distill the discrete prompt for a specific task to a set of continuous prompt vectors so as to bridge IDs and words and to reduce the inference time. We also design a training strategy with an attempt to improve the efficiency of training these models. Experimental results on three real-world datasets demonstrate the effectiveness of our PrOmpt Distillation (POD) approach on both sequential recommendation and top-N recommendation tasks. Although the training efficiency can be significantly improved, the improvement of inference efficiency is limited. This finding may inspire researchers in the community to further improve the inference efficiency of LLM-based recommendation models.",
+          "url": "https://doi.org/10.1145/3583780.3615017"
+        },
+        {
+          "title": "Personalized Prompt Learning for Explainable Recommendation",
+          "abstract": "Providing user-understandable explanations to justify recommendations could help users better understand the recommended items, increase the system’s ease of use, and gain users’ trust. A typical approach to realize it is natural language generation. However, previous works mostly adopt recurrent neural networks to meet the ends, leaving the potentially more effective pre-trained Transformer models under-explored. In fact, user and item IDs, as important identifiers in recommender systems, are inherently in different semantic space as words that pre-trained models were already trained on. Thus, how to effectively fuse IDs into such models becomes a critical issue. Inspired by recent advancement in prompt learning, we come up with two solutions: find alternative words to represent IDs (called discrete prompt learning) and directly input ID vectors to a pre-trained model (termed continuous prompt learning). In the latter case, ID vectors are randomly initialized but the model is trained in advance on large corpora, so they are actually in different learning stages. To bridge the gap, we further propose two training strategies: sequential tuning and recommendation as regularization. Extensive experiments show that our continuous prompt learning approach equipped with the training strategies consistently outperforms strong baselines on three datasets of explainable recommendation.",
+          "url": "https://doi.org/10.1145/3580488"
+        },
+        {
+          "title": "Large Language Models as Zero-Shot Conversational Recommenders",
+          "abstract": "In this paper, we present empirical studies on conversational recommendation tasks using representative large language models in a zero-shot setting with three primary contributions. (1) Data: To gain insights into model behavior in \"in-the-wild\" conversational recommendation scenarios, we construct a new dataset of recommendation-related conversations by scraping a popular discussion website. This is the largest public real-world conversational recommendation dataset to date. (2) Evaluation: On the new dataset and two existing conversational recommendation datasets, we observe that even without fine-tuning, large language models can outperform existing fine-tuned conversational recommendation models. (3) Analysis: We propose various probing tasks to investigate the mechanisms behind the remarkable performance of large language models in conversational recommendation. We analyze both the large language models' behaviors and the characteristics of the datasets, providing a holistic understanding of the models' effectiveness, limitations and suggesting directions for the design of future conversational recommenders.",
+          "url": "https://doi.org/10.1145/3583780.3614949"
+        },
+        {
+          "title": "Sequential Recommendation with Collaborative Explanation",
+          "abstract": "Examples of explanations and their frequencies in the three real-world datasets used in the experiments, showing both the top 10 most frequent and 10 least ...",
+          "url": "https://dl.acm.org/doi/full/10.1145/3731458"
+        },
+        {
+          "title": "A hybrid recommendation technique using topic embedding for rating ...",
+          "abstract": "RecTE is empirically evaluated over three real-world datasets – YelpNYC, YelpZip and TripAdvisor. This technique performs significantly better in comparison to ...",
+          "url": "https://www.sciencedirect.com/science/article/abs/pii/S0957417422014385"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "An empirical study in a zero-shot conversational recommendation setting constructs a new dataset by scraping a popular discussion website.",
+      "evidence": [
+        {
+          "title": "Large Language Models as Zero-Shot Conversational Recommenders",
+          "abstract": "In this paper, we present empirical studies on conversational recommendation tasks using representative large language models in a zero-shot setting with three primary contributions. (1) Data: To gain insights into model behavior in \"in-the-wild\" conversational recommendation scenarios, we construct a new dataset of recommendation-related conversations by scraping a popular discussion website. This is the largest public real-world conversational recommendation dataset to date. (2) Evaluation: On the new dataset and two existing conversational recommendation datasets, we observe that even without fine-tuning, large language models can outperform existing fine-tuned conversational recommendation models. (3) Analysis: We propose various probing tasks to investigate the mechanisms behind the remarkable performance of large language models in conversational recommendation. We analyze both the large language models' behaviors and the characteristics of the datasets, providing a holistic understanding of the models' effectiveness, limitations and suggesting directions for the design of future conversational recommenders.",
+          "url": "https://doi.org/10.1145/3583780.3614949"
+        },
+        {
+          "title": "Recommendation as Language Processing (RLP): A Unified Pretrain, Personalized Prompt & Predict Paradigm (P5)",
+          "abstract": "For a long time, different recommendation tasks require designing task-specific architectures and training objectives. As a result, it is hard to transfer the knowledge and representations from one task to another, thus restricting the generalization ability of existing recommendation approaches. To deal with such issues, considering that language can describe almost anything and language grounding is a powerful medium to represent various problems or tasks, we present a flexible and unified text-to-text paradigm called “Pretrain, Personalized Prompt, and Predict Paradigm” (P5) for recommendation, which unifies various recommendation tasks in a shared framework. In P5, all data such as user-item interactions, user descriptions, item metadata, and user reviews are converted to a common format — natural language sequences. The rich information from natural language assists P5 to capture deeper semantics for personalization and recommendation. Specifically, P5 learns different tasks with the same language modeling objective during pretraining. Thus, it serves as the foundation model for various downstream recommendation tasks, allows easy integration with other modalities, and enables instruction-based recommendation. P5 advances recommender systems from shallow model to deep model to big model, and will revolutionize the technical form of recommender systems towards universal recommendation engine. With adaptive personalized prompt for different users, P5 is able to make predictions in a zero-shot or few-shot manner and largely reduces the necessity for extensive fine-tuning. On several benchmarks, we conduct experiments to show the effectiveness of P5. To help advance future research on Recommendation as Language Processing (RLP), Personalized Foundation Models (PFM), and Universal Recommendation Engine (URE), we release the source code, dataset, prompts, and pretrained P5 model at https://github.com/jeykigung/P5.",
+          "url": "https://arxiv.org/abs/2203.13366"
+        },
+        {
+          "title": "LLM-Rec: Personalized Recommendation via Prompting Large Language Models",
+          "abstract": "Text-based recommendation holds a wide range of practical applications due to its versatility, as textual descriptions can represent nearly any type of item.However, directly employing the original item descriptions may not yield optimal recommendation performance due to the lack of comprehensive information to align with user preferences.Recent advances in large language models (LLMs) have showcased their remarkable ability to harness commonsense knowledge and reasoning.In this study, we introduce a novel approach, coined LLM-REC, which incorporates four distinct prompting strategies of text enrichment for improving personalized text-based recommendations.Our empirical experiments reveal that using LLM-augmented text significantly enhances recommendation quality.Even basic MLP (Multi-Layer Perceptron) models achieve comparable or even better results than complex content-based methods.Notably, the success of LLM-REC lies in its prompting strategies, which effectively tap into the language model's comprehension of both general and specific item characteristics.This highlights the importance of employing diverse prompts and input augmentation techniques to boost the recommendation effectiveness of LLMs.Basic Prompting Recommendation-driven Prompting Engagement-guided Prompting Recommendation + Engagement … this is for recommendation …The description of an item is as follows: '{description}', paraphrase it. Model InputThe description of an item is as follows: '{description}', what else should I say if I want to recommend it to others?Summarize the commonalities among the following descriptions: '{description}'; '{descriptions of other important neighbors}'The description of an item is as follows: '{description}'.What else should I say if I want to recommend it to others?This content is considered to hold some similar attractive characteristics as the following descriptions: '{descriptions of other important neighbors}' … this is for recommendation … Original Item Description: A group of toys embark on a journey of self-discovery as they learn the true meaning of friendship. Model Input Model Input Model InputA collection of toys go on an adventure to understand the power of companionship. Model OutputThis is a heartwarming story about friendship and self-discovery.It follows a group of toys on an exciting journey as they learn the importance of being there for each other.With its charming characters and captivating plot, this is a mustread for anyone looking for a fun and inspiring adventure. Model OutputThe commonalities among the descriptions are that they all involve journeys, discovery, and comedic elements.This item is a great choice for those looking for an entertaining and heartwarming story about friendship.It follows a group of toys on a journey of self-discovery as they learn the true meaning of friendship.It has a similar feel to classic films such as 'Being John Malkovich', 'Airplane!' and 'Monty Python and the Holy Grail', combining elements of comedy, adventure and fantasy.It's sure to be a hit with viewers of all ages!",
+          "url": "https://doi.org/10.18653/v1/2024.findings-naacl.39"
+        },
+        {
+          "title": "Large Language Models as Zero-Shot Conversational ...",
+          "abstract": "In this paper, we present empirical studies on conversational recommendation tasks using representative large language models in a zero-shot ...",
+          "url": "https://www.researchgate.net/publication/373262926_Large_Language_Models_as_Zero-Shot_Conversational_Recommenders"
+        },
+        {
+          "title": "Large Language Models as Zero-Shot Conversational ...",
+          "abstract": "The research introduces Reddit-Movie, a new large-scale conversational recommendation dataset constructed from real movie discussions on Reddit.",
+          "url": "https://www.alphaxiv.org/abs/2308.10053"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "The scraped dataset is described as the largest public real-world conversational recommendation dataset.",
+      "evidence": [
+        {
+          "title": "Large Language Models as Zero-Shot Conversational Recommenders",
+          "abstract": "In this paper, we present empirical studies on conversational recommendation tasks using representative large language models in a zero-shot setting with three primary contributions. (1) Data: To gain insights into model behavior in \"in-the-wild\" conversational recommendation scenarios, we construct a new dataset of recommendation-related conversations by scraping a popular discussion website. This is the largest public real-world conversational recommendation dataset to date. (2) Evaluation: On the new dataset and two existing conversational recommendation datasets, we observe that even without fine-tuning, large language models can outperform existing fine-tuned conversational recommendation models. (3) Analysis: We propose various probing tasks to investigate the mechanisms behind the remarkable performance of large language models in conversational recommendation. We analyze both the large language models' behaviors and the characteristics of the datasets, providing a holistic understanding of the models' effectiveness, limitations and suggesting directions for the design of future conversational recommenders.",
+          "url": "https://doi.org/10.1145/3583780.3614949"
+        },
+        {
+          "title": "Recommendation as Language Processing (RLP): A Unified Pretrain, Personalized Prompt & Predict Paradigm (P5)",
+          "abstract": "For a long time, different recommendation tasks require designing task-specific architectures and training objectives. As a result, it is hard to transfer the knowledge and representations from one task to another, thus restricting the generalization ability of existing recommendation approaches. To deal with such issues, considering that language can describe almost anything and language grounding is a powerful medium to represent various problems or tasks, we present a flexible and unified text-to-text paradigm called “Pretrain, Personalized Prompt, and Predict Paradigm” (P5) for recommendation, which unifies various recommendation tasks in a shared framework. In P5, all data such as user-item interactions, user descriptions, item metadata, and user reviews are converted to a common format — natural language sequences. The rich information from natural language assists P5 to capture deeper semantics for personalization and recommendation. Specifically, P5 learns different tasks with the same language modeling objective during pretraining. Thus, it serves as the foundation model for various downstream recommendation tasks, allows easy integration with other modalities, and enables instruction-based recommendation. P5 advances recommender systems from shallow model to deep model to big model, and will revolutionize the technical form of recommender systems towards universal recommendation engine. With adaptive personalized prompt for different users, P5 is able to make predictions in a zero-shot or few-shot manner and largely reduces the necessity for extensive fine-tuning. On several benchmarks, we conduct experiments to show the effectiveness of P5. To help advance future research on Recommendation as Language Processing (RLP), Personalized Foundation Models (PFM), and Universal Recommendation Engine (URE), we release the source code, dataset, prompts, and pretrained P5 model at https://github.com/jeykigung/P5.",
+          "url": "https://arxiv.org/abs/2203.13366"
+        },
+        {
+          "title": "Prompt Distillation for Efficient LLM-based Recommendation",
+          "abstract": "Large language models (LLM) have manifested unparalleled modeling capability on various tasks, e.g., multi-step reasoning, but the input to these models is mostly limited to plain text, which could be very long and contain noisy information. Long text could take long time to process, and thus may not be efficient enough for recommender systems that require immediate response. In LLM-based recommendation models, user and item IDs are usually filled in a template (i.e., discrete prompt) to allow the models to understand a given task, but the models usually need extensive fine-tuning to bridge the user/item IDs and the template words and to unleash the power of LLM for recommendation. To address the problems, we propose to distill the discrete prompt for a specific task to a set of continuous prompt vectors so as to bridge IDs and words and to reduce the inference time. We also design a training strategy with an attempt to improve the efficiency of training these models. Experimental results on three real-world datasets demonstrate the effectiveness of our PrOmpt Distillation (POD) approach on both sequential recommendation and top-N recommendation tasks. Although the training efficiency can be significantly improved, the improvement of inference efficiency is limited. This finding may inspire researchers in the community to further improve the inference efficiency of LLM-based recommendation models.",
+          "url": "https://doi.org/10.1145/3583780.3615017"
+        },
+        {
+          "title": "Large Language Models as Zero-Shot Conversational ...",
+          "abstract": "This is the largest public real-world conversational recommendation dataset to date. (2) Evaluation: On the new dataset and two existing conversational ...",
+          "url": "https://www.alphaxiv.org/abs/2308.10053"
+        },
+        {
+          "title": "Large Language Models as Zero-Shot Conversational Recommenders",
+          "abstract": "This is the largest public real-world conversational recommendation dataset to date. (2) Evaluation: On the new dataset and two existing conversational ...",
+          "url": "https://tldr.takara.ai/p/2308.10053"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "Wide & Deep learning jointly trains wide linear models and deep neural networks to combine memorization and generalization for recommender systems.",
+      "evidence": [
+        {
+          "title": "Wide &amp; Deep Learning for Recommender Systems",
+          "abstract": "Generalized linear models with nonlinear feature transformations are widely used for large-scale regression and classification problems with sparse inputs. Memorization of feature interactions through a wide set of cross-product feature transformations are effective and interpretable, while generalization requires more feature engineering effort. With less feature engineering, deep neural networks can generalize better to unseen feature combinations through low-dimensional dense embeddings learned for the sparse features. However, deep neural networks with embeddings can over-generalize and recommend less relevant items when the user-item interactions are sparse and high-rank. In this paper, we present Wide & Deep learning---jointly trained wide linear models and deep neural networks---to combine the benefits of memorization and generalization for recommender systems. We productionized and evaluated the system on Google Play, a commercial mobile app store with over one billion active users and over one million apps. Online experiment results show that Wide & Deep significantly increased app acquisitions compared with wide-only and deep-only models. We have also open-sourced our implementation in TensorFlow.",
+          "url": "https://doi.org/10.1145/2988450.2988454"
+        },
+        {
+          "title": "Personalized Prompt Learning for Explainable Recommendation",
+          "abstract": "Providing user-understandable explanations to justify recommendations could help users better understand the recommended items, increase the system’s ease of use, and gain users’ trust. A typical approach to realize it is natural language generation. However, previous works mostly adopt recurrent neural networks to meet the ends, leaving the potentially more effective pre-trained Transformer models under-explored. In fact, user and item IDs, as important identifiers in recommender systems, are inherently in different semantic space as words that pre-trained models were already trained on. Thus, how to effectively fuse IDs into such models becomes a critical issue. Inspired by recent advancement in prompt learning, we come up with two solutions: find alternative words to represent IDs (called discrete prompt learning) and directly input ID vectors to a pre-trained model (termed continuous prompt learning). In the latter case, ID vectors are randomly initialized but the model is trained in advance on large corpora, so they are actually in different learning stages. To bridge the gap, we further propose two training strategies: sequential tuning and recommendation as regularization. Extensive experiments show that our continuous prompt learning approach equipped with the training strategies consistently outperforms strong baselines on three datasets of explainable recommendation.",
+          "url": "https://doi.org/10.1145/3580488"
+        },
+        {
+          "title": "Recommendation as Language Processing (RLP): A Unified Pretrain, Personalized Prompt & Predict Paradigm (P5)",
+          "abstract": "For a long time, different recommendation tasks require designing task-specific architectures and training objectives. As a result, it is hard to transfer the knowledge and representations from one task to another, thus restricting the generalization ability of existing recommendation approaches. To deal with such issues, considering that language can describe almost anything and language grounding is a powerful medium to represent various problems or tasks, we present a flexible and unified text-to-text paradigm called “Pretrain, Personalized Prompt, and Predict Paradigm” (P5) for recommendation, which unifies various recommendation tasks in a shared framework. In P5, all data such as user-item interactions, user descriptions, item metadata, and user reviews are converted to a common format — natural language sequences. The rich information from natural language assists P5 to capture deeper semantics for personalization and recommendation. Specifically, P5 learns different tasks with the same language modeling objective during pretraining. Thus, it serves as the foundation model for various downstream recommendation tasks, allows easy integration with other modalities, and enables instruction-based recommendation. P5 advances recommender systems from shallow model to deep model to big model, and will revolutionize the technical form of recommender systems towards universal recommendation engine. With adaptive personalized prompt for different users, P5 is able to make predictions in a zero-shot or few-shot manner and largely reduces the necessity for extensive fine-tuning. On several benchmarks, we conduct experiments to show the effectiveness of P5. To help advance future research on Recommendation as Language Processing (RLP), Personalized Foundation Models (PFM), and Universal Recommendation Engine (URE), we release the source code, dataset, prompts, and pretrained P5 model at https://github.com/jeykigung/P5.",
+          "url": "https://arxiv.org/abs/2203.13366"
+        },
+        {
+          "title": "Wide & Deep Learning for Recommender Systems",
+          "abstract": "In this paper, we present Wide & Deep learning---jointly trained wide linear models and deep neural networks---to combine the benefits of memorization and ...",
+          "url": "https://dl.acm.org/doi/10.1145/2988450.2988454"
+        },
+        {
+          "title": "Wide & Deep Learning for Recommender Systems",
+          "abstract": "In this paper, we present Wide & Deep learning---jointly trained wide linear models and deep neural networks---to combine the benefits of memorization and ...",
+          "url": "https://www.researchgate.net/publication/316894922_Wide_Deep_Learning_for_Recommender_Systems"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "Wide & Deep learning was productionized on Google Play, a commercial app store with over one billion active users.",
+      "evidence": [
+        {
+          "title": "Wide &amp; Deep Learning for Recommender Systems",
+          "abstract": "Generalized linear models with nonlinear feature transformations are widely used for large-scale regression and classification problems with sparse inputs. Memorization of feature interactions through a wide set of cross-product feature transformations are effective and interpretable, while generalization requires more feature engineering effort. With less feature engineering, deep neural networks can generalize better to unseen feature combinations through low-dimensional dense embeddings learned for the sparse features. However, deep neural networks with embeddings can over-generalize and recommend less relevant items when the user-item interactions are sparse and high-rank. In this paper, we present Wide & Deep learning---jointly trained wide linear models and deep neural networks---to combine the benefits of memorization and generalization for recommender systems. We productionized and evaluated the system on Google Play, a commercial mobile app store with over one billion active users and over one million apps. Online experiment results show that Wide & Deep significantly increased app acquisitions compared with wide-only and deep-only models. We have also open-sourced our implementation in TensorFlow.",
+          "url": "https://doi.org/10.1145/2988450.2988454"
+        },
+        {
+          "title": "Recommendation as Language Processing (RLP): A Unified Pretrain, Personalized Prompt & Predict Paradigm (P5)",
+          "abstract": "For a long time, different recommendation tasks require designing task-specific architectures and training objectives. As a result, it is hard to transfer the knowledge and representations from one task to another, thus restricting the generalization ability of existing recommendation approaches. To deal with such issues, considering that language can describe almost anything and language grounding is a powerful medium to represent various problems or tasks, we present a flexible and unified text-to-text paradigm called “Pretrain, Personalized Prompt, and Predict Paradigm” (P5) for recommendation, which unifies various recommendation tasks in a shared framework. In P5, all data such as user-item interactions, user descriptions, item metadata, and user reviews are converted to a common format — natural language sequences. The rich information from natural language assists P5 to capture deeper semantics for personalization and recommendation. Specifically, P5 learns different tasks with the same language modeling objective during pretraining. Thus, it serves as the foundation model for various downstream recommendation tasks, allows easy integration with other modalities, and enables instruction-based recommendation. P5 advances recommender systems from shallow model to deep model to big model, and will revolutionize the technical form of recommender systems towards universal recommendation engine. With adaptive personalized prompt for different users, P5 is able to make predictions in a zero-shot or few-shot manner and largely reduces the necessity for extensive fine-tuning. On several benchmarks, we conduct experiments to show the effectiveness of P5. To help advance future research on Recommendation as Language Processing (RLP), Personalized Foundation Models (PFM), and Universal Recommendation Engine (URE), we release the source code, dataset, prompts, and pretrained P5 model at https://github.com/jeykigung/P5.",
+          "url": "https://arxiv.org/abs/2203.13366"
+        },
+        {
+          "title": "Learning Hierarchical Representation Model for NextBasket Recommendation",
+          "abstract": "Next basket recommendation is a crucial task in market basket analysis. Given a user's purchase history, usually a sequence of transaction data, one attempts to build a recommender that can predict the next few items that the user most probably would like. Ideally, a good recommender should be able to explore the sequential behavior (i.e., buying one item leads to buying another next), as well as account for users' general taste (i.e., what items a user is typically interested in) for recommendation. Moreover, these two factors may interact with each other to influence users' next purchase. To tackle the above problems, in this paper, we introduce a novel recommendation approach, namely hierarchical representation model (HRM). HRM can well capture both sequential behavior and users' general taste by involving transaction and user representations in prediction. Meanwhile, the flexibility of applying different aggregation operations, especially nonlinear operations, on representations allows us to model complicated interactions among different factors. Theoretically, we show that our model subsumes several existing methods when choosing proper aggregation operations. Empirically, we demonstrate that our model can consistently outperform the state-of-the-art baselines under different evaluation metrics on real-world transaction data.",
+          "url": "https://doi.org/10.1145/2766462.2767694"
+        },
+        {
+          "title": "Wide & Deep Learning for Recommender Systems",
+          "abstract": "by HT Cheng · 2016 · Cited by 5467 — We productionized and evaluated the system on Google Play, a commercial mobile app store with over one billion active users and over one ...",
+          "url": "https://arxiv.org/abs/1606.07792"
+        },
+        {
+          "title": "Wide & Deep Learning for Recommender Systems",
+          "abstract": "by HT Cheng · 2016 · Cited by 5464 — We productionized and evaluated the system on Google Play, a commercial mobile app store with over one billion active users and over one million apps.",
+          "url": "https://dl.acm.org/doi/pdf/10.1145/2988450.2988454"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "User and item identifiers in recommender systems occupy a different semantic space than the words on which pre-trained language models were originally trained.",
+      "evidence": [
+        {
+          "title": "Personalized Prompt Learning for Explainable Recommendation",
+          "abstract": "Providing user-understandable explanations to justify recommendations could help users better understand the recommended items, increase the system’s ease of use, and gain users’ trust. A typical approach to realize it is natural language generation. However, previous works mostly adopt recurrent neural networks to meet the ends, leaving the potentially more effective pre-trained Transformer models under-explored. In fact, user and item IDs, as important identifiers in recommender systems, are inherently in different semantic space as words that pre-trained models were already trained on. Thus, how to effectively fuse IDs into such models becomes a critical issue. Inspired by recent advancement in prompt learning, we come up with two solutions: find alternative words to represent IDs (called discrete prompt learning) and directly input ID vectors to a pre-trained model (termed continuous prompt learning). In the latter case, ID vectors are randomly initialized but the model is trained in advance on large corpora, so they are actually in different learning stages. To bridge the gap, we further propose two training strategies: sequential tuning and recommendation as regularization. Extensive experiments show that our continuous prompt learning approach equipped with the training strategies consistently outperforms strong baselines on three datasets of explainable recommendation.",
+          "url": "https://doi.org/10.1145/3580488"
+        },
+        {
+          "title": "Recommendation as Language Processing (RLP): A Unified Pretrain, Personalized Prompt & Predict Paradigm (P5)",
+          "abstract": "For a long time, different recommendation tasks require designing task-specific architectures and training objectives. As a result, it is hard to transfer the knowledge and representations from one task to another, thus restricting the generalization ability of existing recommendation approaches. To deal with such issues, considering that language can describe almost anything and language grounding is a powerful medium to represent various problems or tasks, we present a flexible and unified text-to-text paradigm called “Pretrain, Personalized Prompt, and Predict Paradigm” (P5) for recommendation, which unifies various recommendation tasks in a shared framework. In P5, all data such as user-item interactions, user descriptions, item metadata, and user reviews are converted to a common format — natural language sequences. The rich information from natural language assists P5 to capture deeper semantics for personalization and recommendation. Specifically, P5 learns different tasks with the same language modeling objective during pretraining. Thus, it serves as the foundation model for various downstream recommendation tasks, allows easy integration with other modalities, and enables instruction-based recommendation. P5 advances recommender systems from shallow model to deep model to big model, and will revolutionize the technical form of recommender systems towards universal recommendation engine. With adaptive personalized prompt for different users, P5 is able to make predictions in a zero-shot or few-shot manner and largely reduces the necessity for extensive fine-tuning. On several benchmarks, we conduct experiments to show the effectiveness of P5. To help advance future research on Recommendation as Language Processing (RLP), Personalized Foundation Models (PFM), and Universal Recommendation Engine (URE), we release the source code, dataset, prompts, and pretrained P5 model at https://github.com/jeykigung/P5.",
+          "url": "https://arxiv.org/abs/2203.13366"
+        },
+        {
+          "title": "Prompt Distillation for Efficient LLM-based Recommendation",
+          "abstract": "Large language models (LLM) have manifested unparalleled modeling capability on various tasks, e.g., multi-step reasoning, but the input to these models is mostly limited to plain text, which could be very long and contain noisy information. Long text could take long time to process, and thus may not be efficient enough for recommender systems that require immediate response. In LLM-based recommendation models, user and item IDs are usually filled in a template (i.e., discrete prompt) to allow the models to understand a given task, but the models usually need extensive fine-tuning to bridge the user/item IDs and the template words and to unleash the power of LLM for recommendation. To address the problems, we propose to distill the discrete prompt for a specific task to a set of continuous prompt vectors so as to bridge IDs and words and to reduce the inference time. We also design a training strategy with an attempt to improve the efficiency of training these models. Experimental results on three real-world datasets demonstrate the effectiveness of our PrOmpt Distillation (POD) approach on both sequential recommendation and top-N recommendation tasks. Although the training efficiency can be significantly improved, the improvement of inference efficiency is limited. This finding may inspire researchers in the community to further improve the inference efficiency of LLM-based recommendation models.",
+          "url": "https://doi.org/10.1145/3583780.3615017"
+        },
+        {
+          "title": "Novel and Diverse Recommendations by Leveraging Linear Models with ...",
+          "abstract": "In this paper, we present EER, a linear model for the top-N recommendation task, which takes advantage of user and item embeddings for improving novelty and ...",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7148017/"
+        },
+        {
+          "title": "Training an LLM-RecSys Hybrid for Steerable Recs with Semantic IDs",
+          "abstract": "An LLM that can converse in English & item IDs, and make recommendations w/o retrieval or tools.",
+          "url": "https://eugeneyan.com/writing/semantic-ids/"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "Discrete prompt learning for explainable recommendation finds alternative words to represent user and item identifiers.",
+      "evidence": [
+        {
+          "title": "Personalized Prompt Learning for Explainable Recommendation",
+          "abstract": "Providing user-understandable explanations to justify recommendations could help users better understand the recommended items, increase the system’s ease of use, and gain users’ trust. A typical approach to realize it is natural language generation. However, previous works mostly adopt recurrent neural networks to meet the ends, leaving the potentially more effective pre-trained Transformer models under-explored. In fact, user and item IDs, as important identifiers in recommender systems, are inherently in different semantic space as words that pre-trained models were already trained on. Thus, how to effectively fuse IDs into such models becomes a critical issue. Inspired by recent advancement in prompt learning, we come up with two solutions: find alternative words to represent IDs (called discrete prompt learning) and directly input ID vectors to a pre-trained model (termed continuous prompt learning). In the latter case, ID vectors are randomly initialized but the model is trained in advance on large corpora, so they are actually in different learning stages. To bridge the gap, we further propose two training strategies: sequential tuning and recommendation as regularization. Extensive experiments show that our continuous prompt learning approach equipped with the training strategies consistently outperforms strong baselines on three datasets of explainable recommendation.",
+          "url": "https://doi.org/10.1145/3580488"
+        },
+        {
+          "title": "Prompt Distillation for Efficient LLM-based Recommendation",
+          "abstract": "Large language models (LLM) have manifested unparalleled modeling capability on various tasks, e.g., multi-step reasoning, but the input to these models is mostly limited to plain text, which could be very long and contain noisy information. Long text could take long time to process, and thus may not be efficient enough for recommender systems that require immediate response. In LLM-based recommendation models, user and item IDs are usually filled in a template (i.e., discrete prompt) to allow the models to understand a given task, but the models usually need extensive fine-tuning to bridge the user/item IDs and the template words and to unleash the power of LLM for recommendation. To address the problems, we propose to distill the discrete prompt for a specific task to a set of continuous prompt vectors so as to bridge IDs and words and to reduce the inference time. We also design a training strategy with an attempt to improve the efficiency of training these models. Experimental results on three real-world datasets demonstrate the effectiveness of our PrOmpt Distillation (POD) approach on both sequential recommendation and top-N recommendation tasks. Although the training efficiency can be significantly improved, the improvement of inference efficiency is limited. This finding may inspire researchers in the community to further improve the inference efficiency of LLM-based recommendation models.",
+          "url": "https://doi.org/10.1145/3583780.3615017"
+        },
+        {
+          "title": "Recommendation as Language Processing (RLP): A Unified Pretrain, Personalized Prompt & Predict Paradigm (P5)",
+          "abstract": "For a long time, different recommendation tasks require designing task-specific architectures and training objectives. As a result, it is hard to transfer the knowledge and representations from one task to another, thus restricting the generalization ability of existing recommendation approaches. To deal with such issues, considering that language can describe almost anything and language grounding is a powerful medium to represent various problems or tasks, we present a flexible and unified text-to-text paradigm called “Pretrain, Personalized Prompt, and Predict Paradigm” (P5) for recommendation, which unifies various recommendation tasks in a shared framework. In P5, all data such as user-item interactions, user descriptions, item metadata, and user reviews are converted to a common format — natural language sequences. The rich information from natural language assists P5 to capture deeper semantics for personalization and recommendation. Specifically, P5 learns different tasks with the same language modeling objective during pretraining. Thus, it serves as the foundation model for various downstream recommendation tasks, allows easy integration with other modalities, and enables instruction-based recommendation. P5 advances recommender systems from shallow model to deep model to big model, and will revolutionize the technical form of recommender systems towards universal recommendation engine. With adaptive personalized prompt for different users, P5 is able to make predictions in a zero-shot or few-shot manner and largely reduces the necessity for extensive fine-tuning. On several benchmarks, we conduct experiments to show the effectiveness of P5. To help advance future research on Recommendation as Language Processing (RLP), Personalized Foundation Models (PFM), and Universal Recommendation Engine (URE), we release the source code, dataset, prompts, and pretrained P5 model at https://github.com/jeykigung/P5.",
+          "url": "https://arxiv.org/abs/2203.13366"
+        },
+        {
+          "title": "Large Language Models for Explainable Recommendation",
+          "abstract": "by Q Ma · 2024 · Cited by 125 — We introduce a model-agnostic framework called XRec, which enables LLMs to provide comprehensive ex- planations for user behaviors in ...",
+          "url": "https://aclanthology.org/2024.findings-emnlp.22.pdf"
+        },
+        {
+          "title": "Personalized Prompt Learning for Explainable ...",
+          "abstract": "Inspired by recent advancement in prompt learning, we come up with two solutions: find alternative words to represent IDs (called discrete prompt learning), and ...",
+          "url": "https://www.researchgate.net/publication/358631927_Personalized_Prompt_Learning_for_Explainable_Recommendation"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "Continuous prompt learning directly inputs identifier vectors to a pre-trained model.",
+      "evidence": [
+        {
+          "title": "Personalized Prompt Learning for Explainable Recommendation",
+          "abstract": "Providing user-understandable explanations to justify recommendations could help users better understand the recommended items, increase the system’s ease of use, and gain users’ trust. A typical approach to realize it is natural language generation. However, previous works mostly adopt recurrent neural networks to meet the ends, leaving the potentially more effective pre-trained Transformer models under-explored. In fact, user and item IDs, as important identifiers in recommender systems, are inherently in different semantic space as words that pre-trained models were already trained on. Thus, how to effectively fuse IDs into such models becomes a critical issue. Inspired by recent advancement in prompt learning, we come up with two solutions: find alternative words to represent IDs (called discrete prompt learning) and directly input ID vectors to a pre-trained model (termed continuous prompt learning). In the latter case, ID vectors are randomly initialized but the model is trained in advance on large corpora, so they are actually in different learning stages. To bridge the gap, we further propose two training strategies: sequential tuning and recommendation as regularization. Extensive experiments show that our continuous prompt learning approach equipped with the training strategies consistently outperforms strong baselines on three datasets of explainable recommendation.",
+          "url": "https://doi.org/10.1145/3580488"
+        },
+        {
+          "title": "Prompt Distillation for Efficient LLM-based Recommendation",
+          "abstract": "Large language models (LLM) have manifested unparalleled modeling capability on various tasks, e.g., multi-step reasoning, but the input to these models is mostly limited to plain text, which could be very long and contain noisy information. Long text could take long time to process, and thus may not be efficient enough for recommender systems that require immediate response. In LLM-based recommendation models, user and item IDs are usually filled in a template (i.e., discrete prompt) to allow the models to understand a given task, but the models usually need extensive fine-tuning to bridge the user/item IDs and the template words and to unleash the power of LLM for recommendation. To address the problems, we propose to distill the discrete prompt for a specific task to a set of continuous prompt vectors so as to bridge IDs and words and to reduce the inference time. We also design a training strategy with an attempt to improve the efficiency of training these models. Experimental results on three real-world datasets demonstrate the effectiveness of our PrOmpt Distillation (POD) approach on both sequential recommendation and top-N recommendation tasks. Although the training efficiency can be significantly improved, the improvement of inference efficiency is limited. This finding may inspire researchers in the community to further improve the inference efficiency of LLM-based recommendation models.",
+          "url": "https://doi.org/10.1145/3583780.3615017"
+        },
+        {
+          "title": "Skip-Thought Vectors",
+          "abstract": "We describe an approach for unsupervised learning of a generic, distributed sentence encoder. Using the continuity of text from books, we train an encoder-decoder model that tries to reconstruct the surrounding sentences of an encoded passage. Sentences that share semantic and syntactic properties are thus mapped to similar vector representations. We next introduce a simple vocabulary expansion method to encode words that were not seen as part of training, allowing us to expand our vocabulary to a million words. After training our model, we extract and evaluate our vectors with linear models on 8 tasks: semantic relatedness, paraphrase detection, image-sentence ranking, question-type classification and 4 benchmark sentiment and subjectivity datasets. The end result is an off-the-shelf encoder that can produce highly generic sentence representations that are robust and perform well in practice. We will make our encoder publicly available.",
+          "url": "http://arxiv.org/abs/1506.06726"
+        },
+        {
+          "title": "Learning to Prompt for Continual Learning",
+          "abstract": "Given a pre-trained Transformer model, “prompt-based learning” modifies the original input using a fixed template. Imagine a sentiment ...",
+          "url": "https://research.google/blog/learning-to-prompt-for-continual-learning/"
+        },
+        {
+          "title": "Vector Research Blog: Large Language Models, Prompting ...",
+          "abstract": "by D Emerson · Cited by 1 — Continuous prompt optimization approaches focus on modifying or augmenting model parameters in a way that coincides with or mimics the ...",
+          "url": "https://vectorinstitute.ai/large-language-models-prompting-and-peft/"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "Item-based collaborative filtering techniques address the challenges of producing high-quality recommendations, performing recommendations at scale, and achieving high coverage under data sparsity conditions.",
+      "evidence": [
+        {
+          "title": "Item-based collaborative filtering recommendation algorithms",
+          "abstract": "Recommender systems apply knowledge discovery techniques to the problem of making personalized recommendations for information, products or services during a liveinteraction. These systems, especially the k-nearest neighbor collaborative ltering based ones, are achieving widespread success on the Web. The tremendous growth in the amountofavailable information and the number of visitors to Web sites in recentyears poses some key challenges for recommender systems. These are: producing high quality recommendations, performing many recommendations per second for millions of users and items and achieving high coverage in the face of data sparsity. In traditional collaborative ltering systems the amountofwork increases with the number of participants in the system. New recommender system technologies are needed that can quickly produce high quality recommendations, even for very large-scale problems. To address these issues we have explored item-based collaborative ltering techniques. Item-based techniques rst analyze the user-item matrix to identify relationships between dierent items, and then use these relationships to indirectly compute recommendations for users. In this paper we analyze dierent item-based recommendation generation algorithms. Welookinto dierenttechniques for computing item-item similarities (e.g., item-item correlation vs. cosine similarities between item vectors) and dierenttechniques for obtaining recommendations from them (e.g., weighted sum vs. regression model). Finally, weexperimentally evaluate our results and compare them to the basic k-nearest neighbor approach. Our experiments suggest that item-based algorithms provide dramatically better performance than user-based algorithms, while at the same time providing better quality than th...",
+          "url": "https://doi.org/10.1145/371920.372071"
+        },
+        {
+          "title": "Collaborative Large Language Model for Recommender Systems",
+          "abstract": "Recently, there has been growing interest in developing the next-generation recommender systems (RSs) based on pretrained large language models (LLMs). However, the semantic gap between natural language and recommendation tasks is still not well addressed, leading to multiple issues such as spuriously correlated user/item descriptors, ineffective language modeling on user/item data, inefficient recommendations via auto-regression, etc. In this paper, we propose CLLM4Rec, the first generative RS that tightly integrates the LLM paradigm and ID paradigm of RSs, aiming to address the above challenges simultaneously. We first extend the vocabulary of pretrained LLMs with user/item ID tokens to faithfully model user/item collaborative and content semantics. Accordingly, a novel soft+hard prompting strategy is proposed to effectively learn user/item collaborative/content token embeddings via language modeling on RS-specific corpora, where each document is split into a prompt consisting of heterogeneous soft (user/item) tokens and hard (vocab) tokens and a main text consisting of homogeneous item tokens or vocab tokens to facilitate stable and effective language modeling. In addition, a novel mutual regularization strategy is introduced to encourage CLLM4Rec to capture recommendation-related information from noisy user/item content. Finally, we propose a novel recommendation-oriented finetuning strategy for CLLM4Rec, where an item prediction head with multinomial likelihood is added to the pretrained CLLM4Rec backbone to predict hold-out items based on soft+hard prompts established from masked user-item interaction history, where recommendations of multiple items can be generated efficiently without hallucination.",
+          "url": "https://doi.org/10.1145/3589334.3645347"
+        },
+        {
+          "title": "Improving recommendation lists through topic diversification",
+          "abstract": "In this work we present topic diversification, a novel method designed to balance and diversify personalized recommendation lists in order to reflect the user's complete spectrum of interests. Though being detrimental to average accuracy, we show that our method improves user satisfaction with recommendation lists, in particular for lists generated using the common item-based collaborative filtering algorithm.Our work builds upon prior research on recommender systems, looking at properties of recommendation lists as entities in their own right rather than specifically focusing on the accuracy of individual recommendations. We introduce the intra-list similarity metric to assess the topical diversity of recommendation lists and the topic diversification approach for decreasing the intra-list similarity. We evaluate our method using book recommendation data, including offline analysis on 361, !, 349 ratings and an online study involving more than 2, !, 100 subjects.",
+          "url": "https://doi.org/10.1145/1060745.1060754"
+        },
+        {
+          "title": "Amazon.com recommendations item-to-item collaborative ...",
+          "abstract": "Item-to-item collaborative filtering provides scalable, high-quality recommendations in real-time for large datasets. The algorithm efficiently builds a similar ...",
+          "url": "https://www.academia.edu/36522870/Amazon_com_recommendations_item_to_item_collaborative_filtering_Intern_et_Computing_IEEE"
+        },
+        {
+          "title": "A collaborative filtering recommendation framework ...",
+          "abstract": "by A Fareed · 2023 · Cited by 73 — Collaborative filtering is a popular method recommendation systems use to provide personalized recommendations to users (Shahbazi et al., 2020).",
+          "url": "https://www.sciencedirect.com/science/article/pii/S2666827023000488"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "In LLM-based recommendation models, user and item identifiers are typically inserted into a discrete prompt template to enable the model to interpret the task.",
+      "evidence": [
+        {
+          "title": "Personalized Prompt Learning for Explainable Recommendation",
+          "abstract": "Providing user-understandable explanations to justify recommendations could help users better understand the recommended items, increase the system’s ease of use, and gain users’ trust. A typical approach to realize it is natural language generation. However, previous works mostly adopt recurrent neural networks to meet the ends, leaving the potentially more effective pre-trained Transformer models under-explored. In fact, user and item IDs, as important identifiers in recommender systems, are inherently in different semantic space as words that pre-trained models were already trained on. Thus, how to effectively fuse IDs into such models becomes a critical issue. Inspired by recent advancement in prompt learning, we come up with two solutions: find alternative words to represent IDs (called discrete prompt learning) and directly input ID vectors to a pre-trained model (termed continuous prompt learning). In the latter case, ID vectors are randomly initialized but the model is trained in advance on large corpora, so they are actually in different learning stages. To bridge the gap, we further propose two training strategies: sequential tuning and recommendation as regularization. Extensive experiments show that our continuous prompt learning approach equipped with the training strategies consistently outperforms strong baselines on three datasets of explainable recommendation.",
+          "url": "https://doi.org/10.1145/3580488"
+        },
+        {
+          "title": "Prompt Distillation for Efficient LLM-based Recommendation",
+          "abstract": "Large language models (LLM) have manifested unparalleled modeling capability on various tasks, e.g., multi-step reasoning, but the input to these models is mostly limited to plain text, which could be very long and contain noisy information. Long text could take long time to process, and thus may not be efficient enough for recommender systems that require immediate response. In LLM-based recommendation models, user and item IDs are usually filled in a template (i.e., discrete prompt) to allow the models to understand a given task, but the models usually need extensive fine-tuning to bridge the user/item IDs and the template words and to unleash the power of LLM for recommendation. To address the problems, we propose to distill the discrete prompt for a specific task to a set of continuous prompt vectors so as to bridge IDs and words and to reduce the inference time. We also design a training strategy with an attempt to improve the efficiency of training these models. Experimental results on three real-world datasets demonstrate the effectiveness of our PrOmpt Distillation (POD) approach on both sequential recommendation and top-N recommendation tasks. Although the training efficiency can be significantly improved, the improvement of inference efficiency is limited. This finding may inspire researchers in the community to further improve the inference efficiency of LLM-based recommendation models.",
+          "url": "https://doi.org/10.1145/3583780.3615017"
+        },
+        {
+          "title": "Recommendation as Language Processing (RLP): A Unified Pretrain, Personalized Prompt & Predict Paradigm (P5)",
+          "abstract": "For a long time, different recommendation tasks require designing task-specific architectures and training objectives. As a result, it is hard to transfer the knowledge and representations from one task to another, thus restricting the generalization ability of existing recommendation approaches. To deal with such issues, considering that language can describe almost anything and language grounding is a powerful medium to represent various problems or tasks, we present a flexible and unified text-to-text paradigm called “Pretrain, Personalized Prompt, and Predict Paradigm” (P5) for recommendation, which unifies various recommendation tasks in a shared framework. In P5, all data such as user-item interactions, user descriptions, item metadata, and user reviews are converted to a common format — natural language sequences. The rich information from natural language assists P5 to capture deeper semantics for personalization and recommendation. Specifically, P5 learns different tasks with the same language modeling objective during pretraining. Thus, it serves as the foundation model for various downstream recommendation tasks, allows easy integration with other modalities, and enables instruction-based recommendation. P5 advances recommender systems from shallow model to deep model to big model, and will revolutionize the technical form of recommender systems towards universal recommendation engine. With adaptive personalized prompt for different users, P5 is able to make predictions in a zero-shot or few-shot manner and largely reduces the necessity for extensive fine-tuning. On several benchmarks, we conduct experiments to show the effectiveness of P5. To help advance future research on Recommendation as Language Processing (RLP), Personalized Foundation Models (PFM), and Universal Recommendation Engine (URE), we release the source code, dataset, prompts, and pretrained P5 model at https://github.com/jeykigung/P5.",
+          "url": "https://arxiv.org/abs/2203.13366"
+        },
+        {
+          "title": "Large Language Models (LLMs) for Recommendations (Paper ...",
+          "abstract": "This video discusses methods for how we can use LLMs for Recommendation Systems (LLM4Rec) between items and users.",
+          "url": "https://www.youtube.com/watch?v=g0EJgVAO7QM"
+        },
+        {
+          "title": "Prompt Distillation for Efficient LLM-based Recommendation",
+          "abstract": "by L Li · 2023 · Cited by 295 — In LLM-based recommendation models, user and item IDs are usually filled in a template (i.e., discrete prompt) to allow the models to understand.",
+          "url": "https://yongfeng.me/attach/li-cikm2023.pdf"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    }
+  ]
+}

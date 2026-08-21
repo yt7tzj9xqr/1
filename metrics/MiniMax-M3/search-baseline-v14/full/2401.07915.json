@@ -1,0 +1,206 @@
+{
+  "arxiv_id": "2401.07915",
+  "model": "MiniMax-M3",
+  "system": "search-baseline-v14",
+  "reference_precision": 0.3,
+  "reference_recall": 0.011538461538461539,
+  "reference_count": 10,
+  "reference_matches": 3,
+  "ground_truth_count": 260,
+  "predicted_titles": [
+    "Learning Dexterous In-Hand Manipulation",
+    "DexMV: Imitation Learning for Dexterous Manipulation from ...",
+    "Deep visual foresight for planning robot motion",
+    "Robot Motion Planning in Learned Latent Spaces",
+    "DexYCB: A Benchmark for Capturing Hand Grasping of Objects",
+    "Hybrid Imitation Learning Framework for Robotic Manipulation Tasks",
+    "Reinforcement and Imitation Learning for Diverse Visuomotor Skills",
+    "Hierarchical reinforcement learning for in-hand robotic manipulation using Davenport chained rotations",
+    "On Policy Learning Robust to Irreversible Events: An Application to Robotic In-Hand Manipulation",
+    "Object Manipulation with an Anthropomorphic Robotic Hand via Deep Reinforcement Learning with a Synergy Space of Natural Hand Poses"
+  ],
+  "cited_match_rate": 1.0,
+  "cited_count": 25,
+  "cited_supported": 25,
+  "cited_details": [
+    {
+      "statement": "Deep Visual Foresight proposed a model-based reinforcement learning method that trains visual foresight models on unlabeled video experience to address the challenge of scaling up robot learning to many skills and environments without human supervision [http://arxiv.org/abs/1610.00696].",
+      "url": "http://arxiv.org/abs/1610.00696",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Latent Sampling-Based Motion Planning (L-SBMP) constructed a plannable latent representation through an autoencoding network, a dynamics network, and a collision checking network that mirror the three main algorithmic primitives of sampling-based motion planning, namely state sampling, local steering, and collision checking [https://doi.org/10.1109/lra.2019.2901898].",
+      "url": "https://doi.org/10.1109/lra.2019.2901898",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "L-SBMP used an RRT-based algorithm called Learned Latent RRT to plan motions directly in the latent space for high-dimensional robotic systems beyond the reach of traditional approaches, including humanoids and systems where planning occurs in visual space [https://doi.org/10.1109/lra.2019.2901898].",
+      "url": "https://doi.org/10.1109/lra.2019.2901898",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Learned Latent RRT globally explored the latent space [https://doi.org/10.1109/lra.2019.2901898].",
+      "url": "https://doi.org/10.1109/lra.2019.2901898",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "These networks were trainable from raw data of system states and actions together with a supervising collision checker [https://doi.org/10.1109/lra.2019.2901898].",
+      "url": "https://doi.org/10.1109/lra.2019.2901898",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The DexYCB benchmark introduced a new dataset for capturing hand grasping of objects [https://dex-ycb.github.io/].",
+      "url": "https://dex-ycb.github.io",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "DexYCB was compared with a related dataset through cross-dataset evaluation [https://dex-ycb.github.io/].",
+      "url": "https://dex-ycb.github.io",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The benchmark evaluated state-of-the-art approaches on 2D object and keypoint detection, 6D object pose estimation, and 3D hand pose estimation [https://dex-ycb.github.io/].",
+      "url": "https://dex-ycb.github.io",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The benchmark also evaluated the new robotics-relevant task of generating safe robot grasps in human-to-robot object handover [https://dex-ycb.github.io/].",
+      "url": "https://dex-ycb.github.io",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "OpenAI used reinforcement learning to learn dexterous in-hand manipulation policies that perform vision-based object reorientation on a physical Shadow Hand, demonstrated by a five-fingered humanoid hand manipulating a block from an initial configuration to a goal configuration using vision for sensing [https://arxiv.org/abs/1808.00177].",
+      "url": "https://arxiv.org/abs/1808.00177",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Hierarchical reinforcement learning for in-hand robotic manipulation was formulated using Davenport chained rotations [https://arxiv.org/abs/2210.00795].",
+      "url": "https://arxiv.org/abs/2210.00795",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "For a low-cost, underactuated prosthetic hand, an approach combined reinforcement learning based on visual perception with low-level reactive control based on tactile perception aimed at avoiding slipping, and treated irreversible events such as slipping as learning failure so that the learning process resets [https://arxiv.org/abs/1911.08927].",
+      "url": "https://arxiv.org/abs/1911.08927",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The reinforcement learning objective included minimizing the intervention of the tactile reactive control, which significantly reduced the occurrence of object slipping [https://arxiv.org/abs/1911.08927].",
+      "url": "https://arxiv.org/abs/1911.08927",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The framework was evaluated on two tasks of reorienting a cup and a bottle using only the fingers [https://arxiv.org/abs/1911.08927].",
+      "url": "https://arxiv.org/abs/1911.08927",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A synergy-based deep reinforcement learning approach created a synergy space using a continuous normalizing flow network with point clouds of haptic areas representing natural hand poses from human grasping demonstrations [https://doi.org/10.3390/s21165301].",
+      "url": "https://doi.org/10.3390/s21165301",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The synergy-based DRL achieved an average success rate of 88.38% on object manipulation tasks with an anthropomorphic robotic hand, while a standard DRL without synergy space achieved 50.66% [https://doi.org/10.3390/s21165301].",
+      "url": "https://doi.org/10.3390/s21165301",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The DRL policy accessed the synergistic representation and derived natural hand poses through a deep regressor for object grasping and relocation tasks [https://doi.org/10.3390/s21165301].",
+      "url": "https://doi.org/10.3390/s21165301",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "DexMV recorded human videos on manipulation tasks and performed 3D hand-object pose estimations from the videos to construct demonstrations for imitation learning of dexterous manipulation [https://arxiv.org/abs/2108.05877].",
+      "url": "https://arxiv.org/abs/2108.05877",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A hybrid imitation learning (HIL) framework combined behavior cloning (BC) and state cloning (SC) methods in a mutually complementary manner using an adaptive loss mixing method, with pretrained dynamics networks enhancing SC efficiency and stochastic state recovery transforming the learner's task state into a demo state on the demo task trajectory [https://doi.org/10.3390/s21103409].",
+      "url": "https://doi.org/10.3390/s21103409",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "HIL was demonstrated on pick-up, pick-and-place, and stack tasks [https://doi.org/10.3390/s21103409].",
+      "url": "https://doi.org/10.3390/s21103409",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "HIL showed about 2.6 times higher performance improvement than pure BC and about four times faster training time than pure SC [https://doi.org/10.3390/s21103409].",
+      "url": "https://doi.org/10.3390/s21103409",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "HIL showed about 1.6 times higher performance improvement and about 2.2 times faster training time than a hybrid method combining BC and reinforcement learning (BC + RL) [https://doi.org/10.3390/s21103409].",
+      "url": "https://doi.org/10.3390/s21103409",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The DexYCB dataset provides hand grasping captures benchmarked for 2D object and keypoint detection, 6D object pose estimation, 3D hand pose estimation, and safe robot grasp generation in human-to-robot object handover [https://dex-ycb.github.io/].",
+      "url": "https://dex-ycb.github.io",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A model-free deep reinforcement learning method leveraged a small amount of demonstration data to assist a reinforcement learning agent, training end-to-end visuomotor policies that map directly from RGB camera inputs to joint velocities for robotic manipulation tasks [https://doi.org/10.15607/rss.2018.xiv.009].",
+      "url": "https://doi.org/10.15607/rss.2018.xiv.009",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The approach solved a wide variety of visuomotor tasks for which engineering a scripted controller would be laborious [https://doi.org/10.15607/rss.2018.xiv.009].",
+      "url": "https://doi.org/10.15607/rss.2018.xiv.009",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    }
+  ],
+  "noncited_factual_accuracy": null,
+  "noncited_count": 0,
+  "noncited_correct": 0,
+  "noncited_details": []
+}

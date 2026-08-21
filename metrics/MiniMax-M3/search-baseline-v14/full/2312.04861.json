@@ -1,0 +1,180 @@
+{
+  "arxiv_id": "2312.04861",
+  "model": "MiniMax-M3",
+  "system": "search-baseline-v14",
+  "reference_precision": 0.16666666666666666,
+  "reference_recall": 0.007220216606498195,
+  "reference_count": 12,
+  "reference_matches": 2,
+  "ground_truth_count": 277,
+  "predicted_titles": [
+    "Camera–Radar Fusion with Modality Interaction and Radar Gaussian ...",
+    "RODNet: A Real-Time Radar Object Detection Network ...",
+    "RadarNet: Exploiting Radar for Robust Perception of Dynamic Objects",
+    "Object detection for automotive radar point clouds – a comparison",
+    "RadarScenes: A Real-World Radar Point Cloud Data Set for Automotive ...",
+    "Radar Camera Fusion via Representation Learning in Autonomous Driving",
+    "PolarNet: Accelerated Deep Open Space Segmentation Using Automotive Radar in Polar Domain",
+    "CenterRadarNet: Joint 3D Object Detection and Tracking Framework using 4D FMCW Radar",
+    "ERASE-Net: Efficient Segmentation Networks for Automotive Radar Signals",
+    "GET-UP: GEomeTric-aware Depth Estimation with Radar Points UPsampling",
+    "Bootstrapping Autonomous Driving Radars with Self-Supervised Learning",
+    "Cross-Domain Spatial Matching for Camera and Radar Sensor Data Fusion in Autonomous Vehicle Perception System"
+  ],
+  "cited_match_rate": 0.2857142857142857,
+  "cited_count": 21,
+  "cited_supported": 6,
+  "cited_details": [
+    {
+      "statement": "Automotive millimeter-wave radar has become a cornerstone sensor in autonomous driving stacks owing to its robustness in adverse weather and lighting conditions [https://arxiv.org/abs/2007.14366].",
+      "url": "https://arxiv.org/abs/2007.14366",
+      "support_votes": 0,
+      "total_votes": 0,
+      "match": false
+    },
+    {
+      "statement": "The radar signal is inherently noisy, ambiguous, and sparse, which has motivated a progression from hand-engineered point clouds toward learned, dense, and geometry-aware tensor formats [https://arxiv.org/abs/2103.03387].",
+      "url": "https://arxiv.org/abs/2103.03387",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The most commonly adopted representation is the radar point cloud, in which each detection is encoded with spatial coordinates and a Doppler velocity reading [http://arxiv.org/abs/2007.14366].",
+      "url": "http://arxiv.org/abs/2007.14366",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "RadarNet demonstrated that exploiting Doppler information within point clouds enables robust perception of dynamic objects, treating radar as complementary to LiDAR and cameras [http://arxiv.org/abs/2007.14366].",
+      "url": "http://arxiv.org/abs/2007.14366",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A representative comparison study of point-cloud-based object detectors highlighted the centrality of preprocessing decisions, since the sparsity, noise, and limited height information in radar point clouds force architectures to differ substantially from LiDAR designs [https://doi.org/10.1186/s42467-021-00012-z].",
+      "url": "https://doi.org/10.1186/s42467-021-00012-z",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The RadarScenes dataset formalized this representation by providing more than four hours of driving with point-wise annotations, enabling reproducible benchmarking of point-cloud-based radar perception [https://scispace.com/papers/radarscenes-a-real-world-radar-point-cloud-data-set-for-4r6eslwt6i].",
+      "url": "https://scispace.com/papers/radarscenes-a-real-world-radar-point-cloud-data-set-for-4r6eslwt6i",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Beyond point clouds, raw radio-frequency tensors preserve substantially richer spatiotemporal semantics [https://arxiv.org/abs/2311.01423].",
+      "url": "https://arxiv.org/abs/2311.01423",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "CenterRadarNet showed that 4D FMCW radar tensors encode not only 3D location but also micro-Doppler and elevation, allowing networks to regress object location, heading, and size directly from the RF tensor [https://arxiv.org/abs/2311.01423].",
+      "url": "https://arxiv.org/abs/2311.01423",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "PolarNet argued that operating directly in the polar domain — the native acquisition geometry of FMCW radar — yields accelerated open-space segmentation for parking scenarios, because the polar grid aligns with the sensor's sampling pattern and avoids Cartesian interpolation artifacts [https://arxiv.org/abs/2103.03387].",
+      "url": "https://arxiv.org/abs/2103.03387",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "ERASE-Net further demonstrated that efficient segmentation networks can be designed around 2D reductions of 3D radar tensors, while noting that naive averaging across the third dimension degrades performance and motivates learned tensor representations [https://arxiv.org/abs/2209.12940].",
+      "url": "https://arxiv.org/abs/2209.12940",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "RODNet additionally introduced a cross-supervised scheme in which range–Doppler maps are produced from camera-radar fusion and used to train radar object detection networks in a self-supervised manner [https://ui.adsabs.harvard.edu/abs/2021ISTSP..15..954W/abstract].",
+      "url": "https://ui.adsabs.harvard.edu/abs/2021ISTSP..15..954W/abstract",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The Camera–Radar Fusion with Modality Interaction and Radar Gaussian approach models radar returns as 2D Gaussian splats in the image plane, which provides a soft, spatially distributed signal that interacts with image features rather than relying on sparse point projections [https://spj.science.org/doi/pdf/10.34133/cbsystems.0079].",
+      "url": "https://spj.science.org/doi/pdf/10.34133/cbsystems.0079",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "This Gaussian formulation improves the accuracy and completeness of 3D object detection by aligning radar uncertainty with the dense, structured representation of the camera modality [https://spj.science.org/doi/pdf/10.34133/cbsystems.0079].",
+      "url": "https://spj.science.org/doi/pdf/10.34133/cbsystems.0079",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "For tasks such as monocular depth estimation, radar has been used to inject sparse geometric cues into the image plane [https://arxiv.org/abs/2409.02720].",
+      "url": "https://arxiv.org/abs/2409.02720",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "GET-UP introduced a geometric-aware depth estimation framework that upsamples radar points into a denser depth map, addressing the inherent sparsity of raw radar returns projected onto the image [https://arxiv.org/abs/2409.02720].",
+      "url": "https://arxiv.org/abs/2409.02720",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The method leverages surface-normal priors so that upsampling respects scene geometry rather than uniformly spreading points across pixels [https://arxiv.org/abs/2409.02720].",
+      "url": "https://arxiv.org/abs/2409.02720",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Several works have reframed radar representation as a learned alignment problem between modalities [https://arxiv.org/abs/2103.07825].",
+      "url": "https://arxiv.org/abs/2103.07825",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Radar Camera Fusion via Representation Learning proposed learning joint embeddings of radar pins and 2D bounding boxes, arguing that effective fusion requires the camera and radar branches to share a structured latent space rather than merely concatenating late-stage features [https://arxiv.org/abs/2103.07825].",
+      "url": "https://arxiv.org/abs/2103.07825",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Cross-Domain Spatial Matching introduced a projection-less fusion strategy that aligns camera and radar tensors through orientation matching, yielding a lightweight low-level fusion pipeline that remains competitive with state-of-the-art approaches on the NuScenes benchmark [https://arxiv.org/abs/2404.16548].",
+      "url": "https://arxiv.org/abs/2404.16548",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Bootstrapping Autonomous Driving Radars with Self-Supervised Learning addressed the annotation bottleneck by pretraining radar encoders on unlabeled radar data, demonstrating that self-supervised representation learning can recover useful features despite the absence of large-scale labeled radar datasets [https://arxiv.org/abs/2312.04519].",
+      "url": "https://arxiv.org/abs/2312.04519",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Remaining challenges include the lack of standardized benchmarks that uniformly cover 2D and 4D radar, and the limited transferability of self-supervised pretraining across sensor generations and mounting configurations [https://arxiv.org/abs/2312.04519].",
+      "url": "https://arxiv.org/abs/2312.04519",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    }
+  ],
+  "noncited_factual_accuracy": null,
+  "noncited_count": 0,
+  "noncited_correct": 0,
+  "noncited_details": []
+}

@@ -1,0 +1,241 @@
+{
+  "arxiv_id": "2204.10325",
+  "model": "MiniMax-M3",
+  "system": "citation-rag-v22",
+  "reference_precision": 0.0,
+  "reference_recall": 0.0,
+  "reference_count": 10,
+  "reference_matches": 0,
+  "ground_truth_count": 36,
+  "predicted_titles": [
+    "Prospective Validation of Motor-Based Intervention with Automated Mispronunciation Detection of Rhotics in Residual Speech Sound Disorders",
+    "Stuttering Speech Disfluency Prediction using Explainable Attribution Vectors of Facial Muscle Movements",
+    "Home-Based Activities for Children with Speech Sound Disorders: Requirements for a Tangible User Interface for Internet of Things Artefacts",
+    "Voice disorder detection using machine learning algorithms: An application in speech and language pathology",
+    "Deep-Learning-Based Automated Classification of Chinese Speech Sound Disorders",
+    "Detection of Speech Impairments Using Cepstrum, Auditory Spectrogram and Wavelet Time Scattering Domain Features",
+    "Alternative Speech Communication System for Persons with Severe Speech Disorders",
+    "Detection and classification of voice pathology using feature selection",
+    "Automatic Pronunciation Scoring And Mispronunciation ...",
+    "Effective Dysphonia Detection Using Feature Dimension Reduction and Kernel Density Estimation for Patients with Parkinson’s Disease"
+  ],
+  "cited_match_rate": 0.9090909090909091,
+  "cited_count": 11,
+  "cited_supported": 10,
+  "cited_details": [
+    {
+      "statement": "A statistical pattern analysis of vocal measurements from sustained phonations of Parkinson's disease patients used KPCA to project four selected vocal measures onto a bivariate feature space, then applied MAP, FLDA, and SVM classifiers; the MAP classifier reached 91.8% discrimination with sensitivity 0.986, specificity 0.708, and ROC area 0.94 (https://doi.org/10.1371/journal.pone.0088825).",
+      "url": "https://doi.org/10.1371/journal.pone.0088825",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A mobile-health study on dysphonia noted that the healthcare industry is seeing a significant rise in the use of mobile devices, that digital health technologies can improve patient care by making it more efficient, effective, and cost-effective, and that mobile healthcare systems can provide quick and efficient assistance for detecting voice disorders; the study combined the Saarbruecken voice dataset, the Massachusetts Eye and Ear Infirmary database (MEEI), and private voice corpora to classify healthy and pathological voices (https://doi.org/10.1016/j.engappai.2024.108047).",
+      "url": "https://doi.org/10.1016/j.engappai.2024.108047",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A feature-selection study applied MFCC, LPCC, and RASTA-PLP extraction with t-test, Kruskal-Wallis, or genetic-algorithm feature selection, then classified with SVM or GMM, reaching 99.9875% detection accuracy and 99.8578% multi-class pathology-classification accuracy on a MEEI subset (https://doi.org/10.1109/aiccsa.2014.7073250).",
+      "url": "https://doi.org/10.1109/aiccsa.2014.7073250",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A study adopted BiLSTM and a WST-SVM classifier to detect speech impairments in early-stage central nervous system disorders; 339 voice samples were collected from 15 subjects (7 patients: 3 Huntington, 1 Parkinson, 1 cerebral palsy, 1 post-stroke, 1 early dementia; 8 healthy) using the NITS mobile app, with features extracted from pitch contours, MFCC, GTCC, Gabor wavelets, and auditory spectrograms, achieving 94.50% (BiLSTM) and 96.3% (WST-SVM) accuracy; the method is proposed for automated CNSD patient health state monitoring, clinical decision support, and Internet of Medical Things applications (https://doi.org/10.1109/access.2020.2995737).",
+      "url": "https://doi.org/10.1109/access.2020.2995737",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A Chinese-language system built a corpus containing 2,540 stopping, backing, and final-consonant-deletion samples to assist classification of children's speech sound disorders (https://pmc.ncbi.nlm.nih.gov/articles/PMC9324778/).",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9324778",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The PERCEPT-R Classifier uses GMM-HMM-derived acoustic-phonetic features to predict clinician perceptual judgment of American English /ɹ/ and to drive Chaining practice adaptations; with the PERCEPT Engine, ChainingAI might help narrow the intervention intensity gap; clinical validation is described as vital because lab accuracy of clinical speech technology systems may be overoptimistic (https://arxiv.org/abs/2305.19090).",
+      "url": "https://arxiv.org/abs/2305.19090",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A requirements study on tangible user interfaces for home-based SSD intervention combined a systematic literature review, a focus group, and a nationwide questionnaire, concluding that more research is needed and that no unified method or framework for SSD intervention or post-intervention tools exists, and that clinicians need more and better tools to quantify and qualitatively assess home practice (https://www.semanticscholar.org/paper/0949276b131c3d4b2ed993c167fdf13d2fa886d2).",
+      "url": "https://semanticscholar.org/paper/0949276b131c3d4b2ed993c167fdf13d2fa886d2",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A study on stuttering speech disfluency prediction used explainable attribution vectors of facial muscle movements, defining stuttering as disruption of normal fluency by involuntary repetitions, prolongations, and blocking of sounds and syllables, and noting a prevalence of 1% in adults with approximately 80% of children recovering within 15 months from onset (https://arxiv.org/abs/2010.01231).",
+      "url": "https://arxiv.org/abs/2010.01231",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "An assistive system combined ASR with a concatenative speech-synthesis module to enhance the quality of communication for French and English speaking persons with various speech disorders, using new basic units, a new concatenating algorithm, and a grafting technique to correct poorly pronounced phonemes, and aiming to improve intelligibility of pathologic speech so that it is as natural as possible and close to the original voice; experiments with four American speakers with severe dysarthria and two Acadian French speakers with sound substitution disorders achieved PESQ improvements of 5% and more than 20% for SSD and dysarthria, respectively (https://doi.org/10.1155/2009/540409).",
+      "url": "https://doi.org/10.1155/2009/540409",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A mispronunciation-detection system relied on automatic speech recognition performed using Sphinx, noting that feedback on pronunciation is vital for spoken language teaching and that pronunciation evaluation and feedback can help non-native speakers identify errors, learn sounds and vocabulary, and improve pronunciation performance, with pronunciation scores calculated for each phoneme, word, and phrase by means of Hidden Markov Model alignment (https://aclanthology.org/W12-5808.pdf).",
+      "url": "https://aclanthology.org/W12-5808.pdf",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The home-based SSD requirements study reported that more research is needed and that a unified method or framework for SSD intervention or post-intervention tools is lacking (https://www.semanticscholar.org/paper/0949276b131c3d4b2ed993c167fdf13d2fa886d2).",
+      "url": "https://semanticscholar.org/paper/0949276b131c3d4b2ed993c167fdf13d2fa886d2",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    }
+  ],
+  "noncited_factual_accuracy": 1.0,
+  "noncited_count": 4,
+  "noncited_correct": 4,
+  "noncited_details": [
+    {
+      "claim": "Mel-frequency cepstral coefficients (MFCC) are a type of acoustic feature used in speech signal analysis.",
+      "evidence": [
+        {
+          "title": "Detection and classification of voice pathology using feature selection",
+          "abstract": "The aim of this study is to apply automatic speech recognition (ASR) mechanism to improve the amount of information extracted from the voice and to increase the accuracy of the system by using selective highly discriminative features among different types of acoustic features. For feature extraction, we applied three techniques which are Mel Frequency Cepstral Coefficient (MFCC), Linear Prediction Cepstral Coefficients (LPCC), and RelAtive SpecTrA - Perceptual Linear Predictive (RASTA-PLP) with a number of selected coefficients from each technique by using t-test, Kruskal-Wallis test, or genetic algorithm (GA). Then for classification, either support vector machine (SVM) or Gaussian Mixture Model (GMM) is used. The experimental results on a selected MEEI subset database show that the proposed method gives high accuracies compared with some recent related methods both in detection and classification tasks. The highest accuracy of 99.9875 % with a standard deviation of 0.0263 is achieved in case of detection, and 99.8578 % with a standard deviation of 0.1657 in case of multi-class pathology classification.",
+          "url": "https://doi.org/10.1109/aiccsa.2014.7073250"
+        },
+        {
+          "title": "Towards developing a voice pathologies detection system",
+          "abstract": "Most voice features used in predicting the voice when a person has voted with instability in the vocal fold vibration cause problems in estimating such period; as a result of this challenge, scientists have focused on the development of powerful features independent of pitch estimation. The major goal of this paper is to study and investigate the Acoustic Voice Analysis methods ( AVA ) based on adaptive features. This investigation will lead to the development of a system of detection. The essential parts of this topic is related to database (described later), sampling the sounds (and satisfying) from the German database with many diseases, degenerative neurological disease (such as chronic inflammation of the larynx and vocal fold nodules). Under the supervision of the used algorithm to accomplish the above task, the Mel-Frequency Cepstral Coefficients (MFCCs with different Jitter and Shimmer), as by likely flux model mixture (GMM) are used in the AVA. MATLAB was used to simulate such a study for the extraction of features as well as making the training and testing process. The achieved results showed that with some kind of analysis, it is possible to find different sound patterns of diseases, e.g. excessive twang, where additional spectral components exist due to the increase in air flow in nasal cavities. Another focal point is some mathematical transformations both in the temporal domain or frequency. These changes can improve the capacity of some voice features voice; however, there is a need to multivariate analysis of parameters which measure the various problems in the process of phonation; after that, it is necessary to analyse the importance of finding and sorting those features that provide more information. Finally, automatic classification of pathological voices was made using any of the known techniques for this purpose. Our achieved results prove that a good classification rate needs efficient features to characterize each class, in this work, on one hand the accuracy of system increases with the number of parameters (best accuracy with 39 coefficients including Jitter & Shimmer) which means that the difference between normal and abnormal become noticeable with second derivate of MFCC and energy more than the others.",
+          "url": "https://doi.org/10.1134/s1064226914110059"
+        },
+        {
+          "title": "Detection of Speech Impairments Using Cepstrum, Auditory Spectrogram and Wavelet Time Scattering Domain Features",
+          "abstract": "We adopt Bidirectional Long Short-Term Memory (BiLSTM) neural network and Wavelet Scattering Transform with Support Vector Machine (WST-SVM) classifier for detecting speech impairments of patients at the early stage of central nervous system disorders (CNSD). The study includes 339 voice samples collected from 15 subjects: 7 patients with early stage CNSD (3 Huntington, 1 Parkinson, 1 cerebral palsy, 1 post stroke, 1 early dementia), other 8 subjects were healthy. Speech data is collected using voice recorder from Neural Impairment Test Suite (NITS) mobile app. Features are extracted from pitch contours, Mel-frequency cepstral coefficients (MFCC), Gammatone cepstral coefficients (GTCC), Gabor (analytic Morlet) wavelet and auditory spectrograms. 94.50% (BiLSTM) and 96.3% (WST-SVM) accuracy is achieved for solving healthy vs. impaired classification problem. The developed method can be applied for automated CNSD patient health state monitoring and clinical decision support systems as well as a part of Internet of Medical Things (IoMT).",
+          "url": "https://doi.org/10.1109/access.2020.2995737"
+        },
+        {
+          "title": "Mel Frequency Cepstral Coefficient - an overview",
+          "abstract": "Mel frequency cepstral coefficients (MFCCs) are often used to characterize speech signals because they contain acoustic information perceived by human auditory ...",
+          "url": "https://www.sciencedirect.com/topics/computer-science/mel-frequency-cepstral-coefficient"
+        },
+        {
+          "title": "Voice Disorder Classification Based on Multitaper Mel ...",
+          "abstract": "by Ö Eskidere · 2015 · Cited by 50 — The Mel Frequency Cepstral Coefficients (MFCCs) are widely used in order to extract essential information from a voice signal and became a popular feature ...",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4670637/"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "Gammatone cepstral coefficients (GTCC) are a type of acoustic feature used in speech signal analysis.",
+      "evidence": [
+        {
+          "title": "Detection and classification of voice pathology using feature selection",
+          "abstract": "The aim of this study is to apply automatic speech recognition (ASR) mechanism to improve the amount of information extracted from the voice and to increase the accuracy of the system by using selective highly discriminative features among different types of acoustic features. For feature extraction, we applied three techniques which are Mel Frequency Cepstral Coefficient (MFCC), Linear Prediction Cepstral Coefficients (LPCC), and RelAtive SpecTrA - Perceptual Linear Predictive (RASTA-PLP) with a number of selected coefficients from each technique by using t-test, Kruskal-Wallis test, or genetic algorithm (GA). Then for classification, either support vector machine (SVM) or Gaussian Mixture Model (GMM) is used. The experimental results on a selected MEEI subset database show that the proposed method gives high accuracies compared with some recent related methods both in detection and classification tasks. The highest accuracy of 99.9875 % with a standard deviation of 0.0263 is achieved in case of detection, and 99.8578 % with a standard deviation of 0.1657 in case of multi-class pathology classification.",
+          "url": "https://doi.org/10.1109/aiccsa.2014.7073250"
+        },
+        {
+          "title": "Detection of Speech Impairments Using Cepstrum, Auditory Spectrogram and Wavelet Time Scattering Domain Features",
+          "abstract": "We adopt Bidirectional Long Short-Term Memory (BiLSTM) neural network and Wavelet Scattering Transform with Support Vector Machine (WST-SVM) classifier for detecting speech impairments of patients at the early stage of central nervous system disorders (CNSD). The study includes 339 voice samples collected from 15 subjects: 7 patients with early stage CNSD (3 Huntington, 1 Parkinson, 1 cerebral palsy, 1 post stroke, 1 early dementia), other 8 subjects were healthy. Speech data is collected using voice recorder from Neural Impairment Test Suite (NITS) mobile app. Features are extracted from pitch contours, Mel-frequency cepstral coefficients (MFCC), Gammatone cepstral coefficients (GTCC), Gabor (analytic Morlet) wavelet and auditory spectrograms. 94.50% (BiLSTM) and 96.3% (WST-SVM) accuracy is achieved for solving healthy vs. impaired classification problem. The developed method can be applied for automated CNSD patient health state monitoring and clinical decision support systems as well as a part of Internet of Medical Things (IoMT).",
+          "url": "https://doi.org/10.1109/access.2020.2995737"
+        },
+        {
+          "title": "Towards developing a voice pathologies detection system",
+          "abstract": "Most voice features used in predicting the voice when a person has voted with instability in the vocal fold vibration cause problems in estimating such period; as a result of this challenge, scientists have focused on the development of powerful features independent of pitch estimation. The major goal of this paper is to study and investigate the Acoustic Voice Analysis methods ( AVA ) based on adaptive features. This investigation will lead to the development of a system of detection. The essential parts of this topic is related to database (described later), sampling the sounds (and satisfying) from the German database with many diseases, degenerative neurological disease (such as chronic inflammation of the larynx and vocal fold nodules). Under the supervision of the used algorithm to accomplish the above task, the Mel-Frequency Cepstral Coefficients (MFCCs with different Jitter and Shimmer), as by likely flux model mixture (GMM) are used in the AVA. MATLAB was used to simulate such a study for the extraction of features as well as making the training and testing process. The achieved results showed that with some kind of analysis, it is possible to find different sound patterns of diseases, e.g. excessive twang, where additional spectral components exist due to the increase in air flow in nasal cavities. Another focal point is some mathematical transformations both in the temporal domain or frequency. These changes can improve the capacity of some voice features voice; however, there is a need to multivariate analysis of parameters which measure the various problems in the process of phonation; after that, it is necessary to analyse the importance of finding and sorting those features that provide more information. Finally, automatic classification of pathological voices was made using any of the known techniques for this purpose. Our achieved results prove that a good classification rate needs efficient features to characterize each class, in this work, on one hand the accuracy of system increases with the number of parameters (best accuracy with 39 coefficients including Jitter & Shimmer) which means that the difference between normal and abnormal become noticeable with second derivate of MFCC and energy more than the others.",
+          "url": "https://doi.org/10.1134/s1064226914110059"
+        },
+        {
+          "title": "cough signal recognition with gammatone cepstral ...",
+          "abstract": "In this paper, a novel feature extraction method, Gammatone Cepstral Coefficients (GTCC), is investigated for cough recognition.",
+          "url": "https://www.academia.edu/6231003/COUGH_SIGNAL_RECOGNITION_WITH_GAMMATONE_CEPSTRAL_COEFFICIENTS"
+        },
+        {
+          "title": "gtcc - Extract gammatone cepstral coefficients, log-energy, ...",
+          "abstract": "Gammatone cepstrum coefficients are popular features extracted from speech signals for use in recognition tasks. In the source-filter model of speech, cepstral ...",
+          "url": "https://www.mathworks.com/help/audio/ref/gtcc.html"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "Bidirectional Long Short-Term Memory (BiLSTM) is a type of neural network applied to speech analysis.",
+      "evidence": [
+        {
+          "title": "Detection of Speech Impairments Using Cepstrum, Auditory Spectrogram and Wavelet Time Scattering Domain Features",
+          "abstract": "We adopt Bidirectional Long Short-Term Memory (BiLSTM) neural network and Wavelet Scattering Transform with Support Vector Machine (WST-SVM) classifier for detecting speech impairments of patients at the early stage of central nervous system disorders (CNSD). The study includes 339 voice samples collected from 15 subjects: 7 patients with early stage CNSD (3 Huntington, 1 Parkinson, 1 cerebral palsy, 1 post stroke, 1 early dementia), other 8 subjects were healthy. Speech data is collected using voice recorder from Neural Impairment Test Suite (NITS) mobile app. Features are extracted from pitch contours, Mel-frequency cepstral coefficients (MFCC), Gammatone cepstral coefficients (GTCC), Gabor (analytic Morlet) wavelet and auditory spectrograms. 94.50% (BiLSTM) and 96.3% (WST-SVM) accuracy is achieved for solving healthy vs. impaired classification problem. The developed method can be applied for automated CNSD patient health state monitoring and clinical decision support systems as well as a part of Internet of Medical Things (IoMT).",
+          "url": "https://doi.org/10.1109/access.2020.2995737"
+        },
+        {
+          "title": "Pathological voice quality assessment using artificial neural networks",
+          "abstract": "This paper describes a prototype system for the objective assessment of voice quality in patients recovering from various stages of laryngeal cancer. A large database of male subjects steadily phonating the vowel /i/ was used in the study, and the quality of their voices was independently assessed by a speech and language therapist (SALT) according to their seven-point ranking of subjective voice quality. The system extracts salient short-term and long-term time-domain and frequency-domain parameters from impedance (EGG) signals and these are used to train and test an artificial neural network (ANN). Multi-layer perceptron (MLP) ANNs were investigated using various combinations of these parameters, and the best results were obtained using a combination of short-term and long-term parameters, for which an accuracy of 92% was achieved. It is envisaged that this system could be used as an assessment tool, providing a valuable aid to the SALT during clinical evaluation of voice quality.",
+          "url": "https://doi.org/10.1016/s1350-4533(02)00064-4"
+        },
+        {
+          "title": "Stuttering Speech Disfluency Prediction using Explainable Attribution Vectors of Facial Muscle Movements",
+          "abstract": "Speech disorders such as stuttering disrupt the normal fluency of speech by involuntary repetitions, prolongations and blocking of sounds and syllables. In addition to these disruptions to speech fluency, most adults who stutter (AWS) also experience numerous observable secondary behaviors before, during, and after a stuttering moment, often involving the facial muscles. Recent studies have explored automatic detection of stuttering using Artificial Intelligence (AI) based algorithm from respiratory rate, audio, etc. during speech utterance. However, most methods require controlled environments and/or invasive wearable sensors, and are unable explain why a decision (fluent vs stuttered) was made. We hypothesize that pre-speech facial activity in AWS, which can be captured non-invasively, contains enough information to accurately classify the upcoming utterance as either fluent or stuttered. Towards this end, this paper proposes a novel explainable AI (XAI) assisted convolutional neural network (CNN) classifier to predict near future stuttering by learning temporal facial muscle movement patterns of AWS and explains the important facial muscles and actions involved. Statistical analyses reveal significantly high prevalence of cheek muscles (p<0.005) and lip muscles (p<0.005) to predict stuttering and shows a behavior conducive of arousal and anticipation to speak. The temporal study of these upper and lower facial muscles may facilitate early detection of stuttering, promote automated assessment of stuttering and have application in behavioral therapies by providing automatic non-invasive feedback in realtime.",
+          "url": "https://arxiv.org/abs/2010.01231"
+        },
+        {
+          "title": "Emotion Detection Using a Bidirectional Long-Short Term ...",
+          "abstract": "This study presents a novel approach to enhancing chatbot capabilities by integrating emotion detection using Bidirectional Long Short-Term ...",
+          "url": "https://www.researchgate.net/publication/377359615_Emotion_Detection_Using_a_Bidirectional_Long-Short_Term_Memory_BiLSTM_Neural_Network"
+        },
+        {
+          "title": "Bidirectional Long Short-Term Memory Network - ScienceDirect.com",
+          "abstract": "A Bidirectional Long Short-Term Memory (BiLSTM) network is a type of recurrent neural network that addresses the limitations of traditional recurrent neural ...",
+          "url": "https://www.sciencedirect.com/topics/computer-science/bidirectional-long-short-term-memory-network"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "Wavelet Scattering Transform is a signal processing technique applied to speech signal analysis.",
+      "evidence": [
+        {
+          "title": "Detection of Speech Impairments Using Cepstrum, Auditory Spectrogram and Wavelet Time Scattering Domain Features",
+          "abstract": "We adopt Bidirectional Long Short-Term Memory (BiLSTM) neural network and Wavelet Scattering Transform with Support Vector Machine (WST-SVM) classifier for detecting speech impairments of patients at the early stage of central nervous system disorders (CNSD). The study includes 339 voice samples collected from 15 subjects: 7 patients with early stage CNSD (3 Huntington, 1 Parkinson, 1 cerebral palsy, 1 post stroke, 1 early dementia), other 8 subjects were healthy. Speech data is collected using voice recorder from Neural Impairment Test Suite (NITS) mobile app. Features are extracted from pitch contours, Mel-frequency cepstral coefficients (MFCC), Gammatone cepstral coefficients (GTCC), Gabor (analytic Morlet) wavelet and auditory spectrograms. 94.50% (BiLSTM) and 96.3% (WST-SVM) accuracy is achieved for solving healthy vs. impaired classification problem. The developed method can be applied for automated CNSD patient health state monitoring and clinical decision support systems as well as a part of Internet of Medical Things (IoMT).",
+          "url": "https://doi.org/10.1109/access.2020.2995737"
+        },
+        {
+          "title": "Fundamentals of speech recognition",
+          "abstract": "1. Fundamentals of Speech Recognition. 2. The Speech Signal: Production, Perception, and Acoustic-Phonetic Characterization. 3. Signal Processing and Analysis Methods for Speech Recognition. 4. Pattern Comparison Techniques. 5. Speech Recognition System Design and Implementation Issues. 6. Theory and Implementation of Hidden Markov Models. 7. Speech Recognition Based on Connected Word Models. 8. Large Vocabulary Continuous Speech Recognition. 9. Task-Oriented Applications of Automatic Speech Recognition.",
+          "url": "https://bvbr.bib-bvb.de:443/F?func=service&doc_library=BVB01&local_base=BVB01&doc_number=005709766&sequence=000002&line_number=0001&func_code=DB_RECORDS&service_type=MEDIA"
+        },
+        {
+          "title": "Detection and classification of voice pathology using feature selection",
+          "abstract": "The aim of this study is to apply automatic speech recognition (ASR) mechanism to improve the amount of information extracted from the voice and to increase the accuracy of the system by using selective highly discriminative features among different types of acoustic features. For feature extraction, we applied three techniques which are Mel Frequency Cepstral Coefficient (MFCC), Linear Prediction Cepstral Coefficients (LPCC), and RelAtive SpecTrA - Perceptual Linear Predictive (RASTA-PLP) with a number of selected coefficients from each technique by using t-test, Kruskal-Wallis test, or genetic algorithm (GA). Then for classification, either support vector machine (SVM) or Gaussian Mixture Model (GMM) is used. The experimental results on a selected MEEI subset database show that the proposed method gives high accuracies compared with some recent related methods both in detection and classification tasks. The highest accuracy of 99.9875 % with a standard deviation of 0.0263 is achieved in case of detection, and 99.8578 % with a standard deviation of 0.1657 in case of multi-class pathology classification.",
+          "url": "https://doi.org/10.1109/aiccsa.2014.7073250"
+        },
+        {
+          "title": "Stéphane Mallat: A Wavelet Zoom to Analyze a Multiscale World",
+          "abstract": "A wavelet transform operates as a zoom, which simplifies the analysis by separating local variations at different scales.",
+          "url": "https://www.youtube.com/watch?v=S6LcP7txu9E"
+        },
+        {
+          "title": "Adaptive Scattering Transforms for Playing Technique ...",
+          "abstract": "by C Wang · 2022 · Cited by 19 — our paper develops a general framework for playing technique recognition. on Audio, Speech, and Language Processing Volume. Scattering Wavelet transforms ...",
+          "url": "https://kclpure.kcl.ac.uk/portal/en/publications/adaptive-scattering-transforms-for-playing-technique-recognition/"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    }
+  ]
+}

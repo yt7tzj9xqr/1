@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2401.07915",
+  "model": "MiniMax-M3",
+  "system": "citation-rag-v22",
+  "reference_precision": 0.4,
+  "reference_recall": 0.015384615384615385,
+  "reference_count": 10,
+  "reference_matches": 4,
+  "ground_truth_count": 260,
+  "predicted_titles": [
+    "Learning Dexterous In-Hand Manipulation",
+    "Deep visual foresight for planning robot motion",
+    "Continual Policy Distillation of Reinforcement Learning-based Controllers for Soft Robotic In-Hand Manipulation",
+    "TacGNN:Learning Tactile-based In-hand Manipulation with a Blind Robot",
+    "Reinforcement and Imitation Learning for Diverse Visuomotor Skills",
+    "Hierarchical reinforcement learning for in-hand robotic manipulation using Davenport chained rotations",
+    "End-To-End Robotic Reinforcement Learning without Reward Engineering",
+    "A Mathematical Introduction to Robotic Manipulation",
+    "Trends and challenges in robot manipulation",
+    "Dextrous manipulation with rolling contacts"
+  ]
+}

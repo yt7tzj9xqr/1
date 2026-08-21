@@ -1,0 +1,220 @@
+{
+  "arxiv_id": "2204.10325",
+  "model": "MiniMax-M3",
+  "system": "search-baseline-v14",
+  "reference_precision": 0.0,
+  "reference_recall": 0.0,
+  "reference_count": 10,
+  "reference_matches": 0,
+  "ground_truth_count": 36,
+  "predicted_titles": [
+    "Stuttering Speech Disfluency Prediction using Explainable Attribution Vectors of Facial Muscle Movements",
+    "Deep-Learning-Based Automated Classification of Chinese Speech Sound Disorders",
+    "Automatic Pronunciation Scoring And Mispronunciation ...",
+    "Automatic Analysis of Pronunciations for Children with Speech Sound Disorders",
+    "Evaluating Automatic Speech Recognition for Child ...",
+    "The effectiveness of computer assisted pronunciation training for foreign language learning by children",
+    "The TORGO database - Computer Science",
+    "Prospective Validation of Motor-Based Intervention with Automated Mispronunciation Detection of Rhotics in Residual Speech Sound Disorders",
+    "Home-Based Activities for Children with Speech Sound Disorders: Requirements for a Tangible User Interface for Internet of Things Artefacts",
+    "Speech Processing for Language Learning: A Practical Approach to Computer-Assisted Pronunciation Teaching"
+  ],
+  "cited_match_rate": 0.8148148148148148,
+  "cited_count": 27,
+  "cited_supported": 22,
+  "cited_details": [
+    {
+      "statement": "investigated ASR performance on disordered speech from children using limited training data and mobile-device-friendly techniques, focusing on verifying that an utterance is close to the intended target (https://psi.engr.tamu.edu/wp-content/uploads/2019/08/hair2019evaluating.pdf).",
+      "url": "https://psi.engr.tamu.edu/wp-content/uploads/2019/08/hair2019evaluating.pdf",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The same study examined whether mobile ASR can reliably confirm that a child is making an appropriate effort to say a target word, rather than producing an unrelated utterance (https://psi.engr.tamu.edu/wp-content/uploads/2019/08/hair2019evaluating.pdf).",
+      "url": "https://psi.engr.tamu.edu/wp-content/uploads/2019/08/hair2019evaluating.pdf",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Ronanki, Bo, and Salsman showed that HMM-based phoneme alignment combined with edit-distance criteria enables phoneme-, word-, and phrase-level pronunciation scoring for non-native learners using CMUSphinx (https://aclanthology.org/W12-5808.pdf).",
+      "url": "https://aclanthology.org/W12-5808.pdf",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The same authors argued that adaptation techniques using target users' enrollment data would yield much better recognition of non-native speech (https://aclanthology.org/W12-5808.pdf).",
+      "url": "https://aclanthology.org/W12-5808.pdf",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A 2017 study proposed two new Goodness of Pronunciation techniques that incorporate explicit knowledge about error pronunciation patterns and reported more accurate classification of whether a phoneme was correctly produced in children with SSDs (https://pmc.ncbi.nlm.nih.gov/articles/PMC5884147/).",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5884147",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The same paper noted that no consensus exists among speech-language therapists about which CAPT systems work well for children (https://pmc.ncbi.nlm.nih.gov/articles/PMC5884147/).",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5884147",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A 2022 study described a system that classifies four types of Chinese SSDs—stopping, backing, final consonant deletion, and affrication—using acoustic data from 90 children aged 3–6 years (https://pmc.ncbi.nlm.nih.gov/articles/PMC9324778/).",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9324778",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The published corpus contained 2540 stopping, backing, final consonant deletion process, and affrication samples (https://pmc.ncbi.nlm.nih.gov/articles/PMC9324778/).",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9324778",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Benway and Preston prospectively validated the PERCEPT-R Classifier's ability to predict clinician perceptual judgment of American English /ɹ/ during the ChainingAI motor-based intervention for residual SSDs (https://arxiv.org/abs/2305.19090).",
+      "url": "https://arxiv.org/abs/2305.19090",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The PERCEPT Engine uses Gaussian mixture model and Hidden Markov model features identified at fixed intervals to predict clinician perceptual judgment of the /ɹ/ and to drive Chaining practice adaptations (https://arxiv.org/abs/2305.19090).",
+      "url": "https://arxiv.org/abs/2305.19090",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The same study noted that because lab accuracy of clinical speech technology systems may be overoptimistic, clinical validation is vital to demonstrate system reproducibility (https://arxiv.org/abs/2305.19090).",
+      "url": "https://arxiv.org/abs/2305.19090",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Stuttering has a prevalence of approximately 5% in children and 1% in adults, with about 80% of children recovering within 15 months of onset (https://arxiv.org/abs/2010.01231).",
+      "url": "https://arxiv.org/abs/2010.01231",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "introduced an explainable framework that predicts stuttering disfluencies from facial muscle movements using attribution vectors (https://arxiv.org/abs/2010.01231).",
+      "url": "https://arxiv.org/abs/2010.01231",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Stuttering disrupts the normal fluency of speech by involuntary repetitions, prolongations, and blocking of sounds and syllables (https://arxiv.org/abs/2010.01231).",
+      "url": "https://arxiv.org/abs/2010.01231",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Dysarthria is caused by disruptions in the neuro-motor interface in conditions such as cerebral palsy and amyotrophic lateral sclerosis, which distort motor commands to the vocal articulators and result in atypical and relatively unintelligible speech (https://www.cs.toronto.edu/~complingweb/data/TORGO/torgo.html).",
+      "url": "https://cs.toronto.edu/~complingweb/data/TORGO/torgo.html",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The unintelligibility of dysarthric speech can significantly diminish the use of traditional automatic speech recognition software (https://www.cs.toronto.edu/~complingweb/data/TORGO/torgo.html).",
+      "url": "https://cs.toronto.edu/~complingweb/data/TORGO/torgo.html",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The TORGO database of dysarthric articulation consists of aligned acoustics and measured 3D articulatory features from speakers with cerebral palsy or amyotrophic lateral sclerosis and matched controls (https://www.cs.toronto.edu/~complingweb/data/TORGO/torgo.html).",
+      "url": "https://cs.toronto.edu/~complingweb/data/TORGO/torgo.html",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The TORGO database is a resource for developing advanced models in ASR that are more suited to dysarthric speech (https://www.cs.toronto.edu/~complingweb/data/TORGO/torgo.html).",
+      "url": "https://cs.toronto.edu/~complingweb/data/TORGO/torgo.html",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The TORGO database is the result of a collaboration between the departments of Computer Science and Speech-Language Pathology at the University of Toronto and the Holland-Bloorview Kids Rehab hospital in Toronto (https://www.cs.toronto.edu/~complingweb/data/TORGO/torgo.html).",
+      "url": "https://cs.toronto.edu/~complingweb/data/TORGO/torgo.html",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A 2008 study compared pronunciation improvement of 11-year-old EFL learners receiving teacher-fronted instruction with those receiving computer-assisted pronunciation training through a system including an automatic speech recognition component (https://doi.org/10.1080/09588220802447651).",
+      "url": "https://doi.org/10.1080/09588220802447651",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Both teacher-led and computer-assisted groups significantly improved pronunciation quality of isolated words and of words considered particularly difficult to pronounce (https://doi.org/10.1080/09588220802447651).",
+      "url": "https://doi.org/10.1080/09588220802447651",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The same study demonstrated that computer-assisted pronunciation training with a simple ASR component led to short-term improvements in pronunciation comparable to those achieved by traditional teacher-led training (https://doi.org/10.1080/09588220802447651).",
+      "url": "https://doi.org/10.1080/09588220802447651",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The 2021 StudyIntonation CAPT system is a tool for mobile devices that offers a set of tasks based on a listen-and-repeat approach and provides audio-visual feedback in real time (https://doi.org/10.3390/electronics10030235).",
+      "url": "https://doi.org/10.3390/electronics10030235",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The system teaches phonological phenomena crucial for correct pronunciation, including phonemes, the energy and duration of syllables and pauses that construct phrasal rhythm, and tone movement within an utterance (https://doi.org/10.3390/electronics10030235).",
+      "url": "https://doi.org/10.3390/electronics10030235",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The present version of the StudyIntonation system incorporates phonetic transcription and rhythmic patterns of model and learner speech, designed on a base of a third-party automatic speech recognition library Kaldi (https://doi.org/10.3390/electronics10030235).",
+      "url": "https://doi.org/10.3390/electronics10030235",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A 2022 review concluded that more research is needed and that a unified method or framework to address SSD intervention or post-intervention tools is lacking (https://www.semanticscholar.org/paper/0949276b131c3d4b2ed993c167fdf13d2fa886d2).",
+      "url": "https://semanticscholar.org/paper/0949276b131c3d4b2ed993c167fdf13d2fa886d2",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The same review noted that clinicians need more and better tools to quantify and qualitatively assess activities developed at home for children with SSDs (https://www.semanticscholar.org/paper/0949276b131c3d4b2ed993c167fdf13d2fa886d2).",
+      "url": "https://semanticscholar.org/paper/0949276b131c3d4b2ed993c167fdf13d2fa886d2",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    }
+  ],
+  "noncited_factual_accuracy": null,
+  "noncited_count": 0,
+  "noncited_correct": 0,
+  "noncited_details": []
+}

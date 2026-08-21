@@ -1,0 +1,338 @@
+{
+  "arxiv_id": "2205.08977",
+  "model": "MiniMax-M3",
+  "system": "citation-rag-v22",
+  "reference_precision": 0.0,
+  "reference_recall": 0.0,
+  "reference_count": 9,
+  "reference_matches": 0,
+  "ground_truth_count": 317,
+  "predicted_titles": [
+    "Edge Intelligence: Paving the Last Mile of Artificial Intelligence With Edge Computing",
+    "Towards 6G wireless communication networks: vision, enabling technologies, and new paradigm shifts",
+    "Survey on Digital Twin Edge Networks (DITEN) Toward 6G",
+    "Industrial digital twins at the nexus of NextG wireless networks and computational intelligence: A survey",
+    "Edge Artificial Intelligence for 6G: Vision, Enabling Technologies, and Applications",
+    "Toward Intelligent Cyber-Physical Systems: Digital Twin Meets Artificial Intelligence",
+    "6G White Paper on Edge Intelligence",
+    "Massive Internet of Things for Industrial Applications: Addressing Wireless IIoT Connectivity Challenges and Ecosystem Fragmentation",
+    "Designing CPS/IoT applications for smart buildings and cities"
+  ],
+  "cited_match_rate": 0.96,
+  "cited_count": 25,
+  "cited_supported": 24,
+  "cited_details": [
+    {
+      "statement": "The 6G White Paper on Edge Intelligence envisions a transition from the Internet of Things to an Intelligent Internet of Intelligent Things and provides a roadmap for the development of 6G Intelligent Edge services (http://arxiv.org/abs/2004.14850).",
+      "url": "http://arxiv.org/abs/2004.14850",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Intelligent solutions utilizing data-driven machine learning and artificial intelligence become crucial for real-world applications including more efficient manufacturing, novel personal smart device environments and experiences, urban computing, and autonomous traffic settings (http://arxiv.org/abs/2004.14850).",
+      "url": "http://arxiv.org/abs/2004.14850",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Billions of mobile and IoT devices connected to the Internet generate zillions of bytes of data at the network edge, creating an urgent need to push AI frontiers to the network edge to fully unleash the potential of edge big data (https://doi.org/10.1109/jproc.2019.2918951).",
+      "url": "https://doi.org/10.1109/jproc.2019.2918951",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Sixth generation wireless communication networks are expected to provide global coverage, enhanced spectral, energy, and cost efficiency, better intelligence level, and security (https://doi.org/10.1007/s11432-020-2955-6).",
+      "url": "https://doi.org/10.1007/s11432-020-2955-6",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Edge AI, formed by embedding model training and inference capabilities into the network edge, stands out as a disruptive technology for 6G to seamlessly integrate sensing, communication, computation, and intelligence (https://doi.org/10.1109/jsac.2021.3126076).",
+      "url": "https://doi.org/10.1109/jsac.2021.3126076",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "6G is envisioned to be transformative, revolutionizing the evolution of wireless from \"connected things\" to \"connected intelligence.\" (https://doi.org/10.1109/jsac.2021.3126076)",
+      "url": "https://doi.org/10.1109/jsac.2021.3126076",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "State-of-the-art deep learning and big data analytics based AI systems require tremendous computation and communication resources, causing significant latency, energy consumption, network congestion, and privacy leakage in both training and inference processes (https://doi.org/10.1109/jsac.2021.3126076).",
+      "url": "https://doi.org/10.1109/jsac.2021.3126076",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Breakthroughs in deep learning have fueled a booming of artificial intelligence applications and services, spanning from personal assistant to recommendation systems to video/audio surveillance (https://doi.org/10.1109/jproc.2019.2918951).",
+      "url": "https://doi.org/10.1109/jproc.2019.2918951",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Edge computing is presented along with other 6G enablers as a key component to establish the future 2030 intelligent Internet technologies (http://arxiv.org/abs/2004.14850).",
+      "url": "http://arxiv.org/abs/2004.14850",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The 6G Edge Intelligence framework focuses on edge computing infrastructure and platforms, data and edge network management, software development for edge, and real-time and distributed training of ML/AI algorithms, along with security, privacy, pricing, and end-user aspects (http://arxiv.org/abs/2004.14850).",
+      "url": "http://arxiv.org/abs/2004.14850",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "6G networks will rely on new enabling technologies including waveform design, multiple access, channel coding schemes, multi-antenna technologies, network slicing, cell-free architecture, and cloud/fog/edge computing (https://doi.org/10.1007/s11432-020-2955-6).",
+      "url": "https://doi.org/10.1007/s11432-020-2955-6",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The edge intelligence survey reviews the background and motivation for AI running at the network edge (https://doi.org/10.1109/jproc.2019.2918951).",
+      "url": "https://doi.org/10.1109/jproc.2019.2918951",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The Digital Twin Edge Network (DITEN) is proposed to combine mobile/multi-access edge computing and digital twin, improving network performance such as throughput and security, and reducing the cost of communication, computation, and caching (https://doi.org/10.1109/ojcoms.2022.3197811).",
+      "url": "https://doi.org/10.1109/ojcoms.2022.3197811",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Next generation 6G wireless systems aim to cater to the Internet of Everything and revolutionize customer services and applications to a fully intelligent and autonomous system (https://doi.org/10.1109/ojcoms.2022.3197811).",
+      "url": "https://doi.org/10.1109/ojcoms.2022.3197811",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A comprehensive DITEN design includes DT modeling/updating, DT deployment, key issues, and enabling technologies, with networking schemes such as routing and resource management studied from a centralized perspective based on continuously monitored network states (https://doi.org/10.1109/ojcoms.2022.3197811).",
+      "url": "https://doi.org/10.1109/ojcoms.2022.3197811",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Industry 4.0 promotes integrating cyber–physical worlds through cyber–physical systems and digital twin for monitoring, optimization, and prognostics of industrial processes (https://doi.org/10.1016/j.jnca.2021.103309).",
+      "url": "https://doi.org/10.1016/j.jnca.2021.103309",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A digital twin enables interaction with the digital image of industrial physical objects and processes to simulate, analyze, and control their real-time operation, and is rapidly diffusing in numerous industries with advances in industrial IoT, edge and cloud computing, machine learning, and AI (https://doi.org/10.1016/j.jnca.2021.103309).",
+      "url": "https://doi.org/10.1016/j.jnca.2021.103309",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The digital twin is presented as a true embodiment of a cyber-physical system in Industry 4.0, showing the mission of AI in this concept, with key enabling technologies such as edge, fog, and 5G integrating physical processes with computing and network domains (https://doi.org/10.1109/mcom.001.2001237).",
+      "url": "https://doi.org/10.1109/mcom.001.2001237",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The role of AI in each technology domain is identified by analyzing a set of AI agents at the application and infrastructure levels (https://doi.org/10.1109/mcom.001.2001237).",
+      "url": "https://doi.org/10.1109/mcom.001.2001237",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The Industrial Internet of Things aims to drive the next industrial revolution through connectivity solutions, while addressing main challenges of attaining secure connectivity and managing a vastly fragmented ecosystem of connectivity solutions and platforms (https://doi.org/10.1109/mie.2016.2618724).",
+      "url": "https://doi.org/10.1109/mie.2016.2618724",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Healthcare is among the typical 6G application domains envisioned for DITEN, alongside the Internet of Things, vehicular network, space-air-ground integrated network, and wireless systems (https://doi.org/10.1109/ojcoms.2022.3197811).",
+      "url": "https://doi.org/10.1109/ojcoms.2022.3197811",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "IoT and cyber-physical systems technologies can be applied to many application domains including intelligent greenhouse, intelligent transportation system, power distribution grid, smart home, smart building, and smart city (https://doi.org/10.1049/iet-cps.2016.0025).",
+      "url": "https://doi.org/10.1049/iet-cps.2016.0025",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Well-designed IoT/CPS can reduce energy consumption, enhance safety in buildings and cities, or increase the comfortability in the building (https://doi.org/10.1049/iet-cps.2016.0025).",
+      "url": "https://doi.org/10.1049/iet-cps.2016.0025",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The 6G White Paper on Edge Intelligence discusses key enablers and challenges and identifies key research questions for the development of Intelligent Edge services (http://arxiv.org/abs/2004.14850).",
+      "url": "http://arxiv.org/abs/2004.14850",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The DITEN survey outlines design aspects and applications of DITEN for typical 6G domains including the Internet of Things, vehicular network, space-air-ground integrated network, healthcare, and wireless systems (https://doi.org/10.1109/ojcoms.2022.3197811).",
+      "url": "https://doi.org/10.1109/ojcoms.2022.3197811",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    }
+  ],
+  "noncited_factual_accuracy": 1.0,
+  "noncited_count": 4,
+  "noncited_correct": 4,
+  "noncited_details": [
+    {
+      "claim": "Edge computing is a paradigm that pushes computing tasks and services from the network core to the network edge.",
+      "evidence": [
+        {
+          "title": "Edge Intelligence: Paving the Last Mile of Artificial Intelligence With Edge Computing",
+          "abstract": "With the breakthroughs in deep learning, the recent years have witnessed a booming of artificial intelligence (AI) applications and services, spanning from personal assistant to recommendation systems to video/audio surveillance. More recently, with the proliferation of mobile computing and Internet of Things (IoT), billions of mobile and IoT devices are connected to the Internet, generating zillions bytes of data at the network edge. Driving by this trend, there is an urgent need to push the AI frontiers to the network edge so as to fully unleash the potential of the edge big data. To meet this demand, edge computing, an emerging paradigm that pushes computing tasks and services from the network core to the network edge, has been widely recognized as a promising solution. The resulted new interdiscipline, edge AI or edge intelligence (EI), is beginning to receive a tremendous amount of interest. However, research on EI is still in its infancy stage, and a dedicated venue for exchanging the recent advances of EI is highly desired by both the computer system and AI communities. To this end, we conduct a comprehensive survey of the recent research efforts on EI. Specifically, we first review the background and motivation for AI running at the network edge. We then provide an overview of the overarching architectures, frameworks, and emerging key technologies for deep learning model toward training/inference at the network edge. Finally, we discuss future research opportunities on EI. We believe that this survey will elicit escalating attentions, stimulate fruitful discussions, and inspire further research ideas on EI.",
+          "url": "https://doi.org/10.1109/jproc.2019.2918951"
+        },
+        {
+          "title": "Cognitive Internet of Vehicles: Motivation, Layered Architecture and Security Issues",
+          "abstract": "Over the past few years, we have experienced great technological advancements in the information and communication field, which has significantly contributed to reshaping the Intelligent Transportation System (ITS) concept. Evolving from the platform of a collection of sensors aiming to collect data, the data exchanged paradigm among vehicles is shifted from the local network to the cloud. With the introduction of cloud and edge computing along with ubiquitous 5G mobile network, it is expected to see the role of Artificial Intelligence (AI) in data processing and smart decision imminent. So as to fully understand the future automobile scenario in this verge of industrial revolution 4.0, it is necessary first of all to get a clear understanding of the cutting-edge technologies that going to take place in the automotive ecosystem so that the cyber-physical impact on transportation system can be measured. CIoV, which is abbreviated from Cognitive Internet of Vehicle, is one of the recently proposed architectures of the technological evolution in transportation, and it has amassed great attention. It introduces cloud-based artificial intelligence and machine learning into transportation system. What are the future expectations of CIoV. To fully contemplate this architectures future potentials, and milestones set to achieve, it is crucial to understand all the technologies that leaned into it. Also, the security issues to meet the security requirements of its practical implementation. Aiming to that, this paper presents the evolution of CIoV along with the layer abstractions to outline the distinctive functional parts of the proposed architecture. It also gives an investigation of the prime security and privacy issues associated with technological evolution to take measures.",
+          "url": "https://arxiv.org/abs/1912.03356"
+        },
+        {
+          "title": "Towards 6G wireless communication networks: vision, enabling technologies, and new paradigm shifts",
+          "abstract": "Abstract The fifth generation (5G) wireless communication networks are being deployed worldwide from 2020 and more capabilities are in the process of being standardized, such as mass connectivity, ultra-reliability, and guaranteed low latency. However, 5G will not meet all requirements of the future in 2030 and beyond, and sixth generation (6G) wireless communication networks are expected to provide global coverage, enhanced spectral/energy/cost efficiency, better intelligence level and security, etc. To meet these requirements, 6G networks will rely on new enabling technologies, i.e., air interface and transmission technologies and novel network architecture, such as waveform design, multiple access, channel coding schemes, multi-antenna technologies, network slicing, cell-free architecture, and cloud/fog/edge computing. Our vision on 6G is that it will have four new paradigm shifts. First, to satisfy the requirement of global coverage, 6G will not be limited to terrestrial communication networks, which will need to be complemented with non-terrestrial networks such as satellite and unmanned aerial vehicle (UAV) communication networks, thus achieving a space-air-ground-sea integrated communication network. Second, all spectra will be fully explored to further increase data rates and connection density, including the sub-6 GHz, millimeter wave (mmWave), terahertz (THz), and optical frequency bands. Third, facing the big datasets generated by the use of extremely heterogeneous networks, diverse communication scenarios, large numbers of antennas, wide bandwidths, and new service requirements, 6G networks will enable a new range of smart applications with the aid of artificial intelligence (AI) and big data technologies. Fourth, network security will have to be strengthened when developing 6G networks. This article provides a comprehensive survey of recent advances and future trends in these four aspects. Clearly, 6G with additional technical requirements beyond those of 5G will enable faster and further communications to the extent that the boundary between physical and cyber worlds disappears.",
+          "url": "https://doi.org/10.1007/s11432-020-2955-6"
+        },
+        {
+          "title": "Top Research Papers on Edge Computing",
+          "abstract": "Edge computing is an emerging paradigm for the increasing computing and networking demands from end devices to smart things.",
+          "url": "https://paperguide.ai/papers/top/research-papers-edge-computing/"
+        },
+        {
+          "title": "A Survey of State-of-the-art on Edge Computing",
+          "abstract": "by B Liu · 2022 · Cited by 51 — To meet this demand, edge computing, as a new model that pushes computing tasks and services from the network core to the network edge, has.",
+          "url": "https://ieeexplore.ieee.org/iel7/6287639/9668973/09777729.pdf"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "Edge AI integrates sensing, communication, computation, and intelligence by embedding model training and inference capabilities into the network edge.",
+      "evidence": [
+        {
+          "title": "Edge Artificial Intelligence for 6G: Vision, Enabling Technologies, and Applications",
+          "abstract": "The thriving of artificial intelligence (AI) applications is driving the further evolution of wireless networks. It has been envisioned that 6G will be transformative and will revolutionize the evolution of wireless from “connected things” to “connected intelligence”. However, state-of-the-art deep learning and big data analytics based AI systems require tremendous computation and communication resources, causing significant latency, energy consumption, network congestion, and privacy leakage in both of the training and inference processes. By embedding model training and inference capabilities into the network edge, edge AI stands out as a disruptive technology for 6G to seamlessly integrate sensing, communication, computation, and intelligence, thereby improving the efficiency, effectiveness, privacy, and security of 6G networks. In this paper, we shall provide our vision for scalable and trustworthy edge AI systems with integrated design of wireless communication strategies and decentralized machine learning models. New design principles of wireless networks, service-driven resource allocation optimization methods, as well as a holistic end-to-end system architecture to support edge AI will be described. Standardization, software and hardware platforms, and application scenarios are also discussed to facilitate the industrialization and commercialization of edge AI systems.",
+          "url": "https://doi.org/10.1109/jsac.2021.3126076"
+        },
+        {
+          "title": "Edge Intelligence: Paving the Last Mile of Artificial Intelligence With Edge Computing",
+          "abstract": "With the breakthroughs in deep learning, the recent years have witnessed a booming of artificial intelligence (AI) applications and services, spanning from personal assistant to recommendation systems to video/audio surveillance. More recently, with the proliferation of mobile computing and Internet of Things (IoT), billions of mobile and IoT devices are connected to the Internet, generating zillions bytes of data at the network edge. Driving by this trend, there is an urgent need to push the AI frontiers to the network edge so as to fully unleash the potential of the edge big data. To meet this demand, edge computing, an emerging paradigm that pushes computing tasks and services from the network core to the network edge, has been widely recognized as a promising solution. The resulted new interdiscipline, edge AI or edge intelligence (EI), is beginning to receive a tremendous amount of interest. However, research on EI is still in its infancy stage, and a dedicated venue for exchanging the recent advances of EI is highly desired by both the computer system and AI communities. To this end, we conduct a comprehensive survey of the recent research efforts on EI. Specifically, we first review the background and motivation for AI running at the network edge. We then provide an overview of the overarching architectures, frameworks, and emerging key technologies for deep learning model toward training/inference at the network edge. Finally, we discuss future research opportunities on EI. We believe that this survey will elicit escalating attentions, stimulate fruitful discussions, and inspire further research ideas on EI.",
+          "url": "https://doi.org/10.1109/jproc.2019.2918951"
+        },
+        {
+          "title": "Cognitive Internet of Vehicles: Motivation, Layered Architecture and Security Issues",
+          "abstract": "Over the past few years, we have experienced great technological advancements in the information and communication field, which has significantly contributed to reshaping the Intelligent Transportation System (ITS) concept. Evolving from the platform of a collection of sensors aiming to collect data, the data exchanged paradigm among vehicles is shifted from the local network to the cloud. With the introduction of cloud and edge computing along with ubiquitous 5G mobile network, it is expected to see the role of Artificial Intelligence (AI) in data processing and smart decision imminent. So as to fully understand the future automobile scenario in this verge of industrial revolution 4.0, it is necessary first of all to get a clear understanding of the cutting-edge technologies that going to take place in the automotive ecosystem so that the cyber-physical impact on transportation system can be measured. CIoV, which is abbreviated from Cognitive Internet of Vehicle, is one of the recently proposed architectures of the technological evolution in transportation, and it has amassed great attention. It introduces cloud-based artificial intelligence and machine learning into transportation system. What are the future expectations of CIoV. To fully contemplate this architectures future potentials, and milestones set to achieve, it is crucial to understand all the technologies that leaned into it. Also, the security issues to meet the security requirements of its practical implementation. Aiming to that, this paper presents the evolution of CIoV along with the layer abstractions to outline the distinctive functional parts of the proposed architecture. It also gives an investigation of the prime security and privacy issues associated with technological evolution to take measures.",
+          "url": "https://arxiv.org/abs/1912.03356"
+        },
+        {
+          "title": "Guangxu Zhu - Publications",
+          "abstract": "Zhu, K. Huang, and S. Cui, \"Energy-Efficient Edge Inference in Integrated Sensing, Communication, and Computation Networks\" accepted by IEEE ...",
+          "url": "https://sites.google.com/view/guangxuzhu/publications"
+        },
+        {
+          "title": "Integrated Sensing-Communication ... - arXiv",
+          "abstract": "this article presents various kinds of ISCC schemes for federated edge learning tasks and edge AI inference tasks in both application and physical layers. Edge ...",
+          "url": "https://arxiv.org/html/2306.01162v2"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "A digital twin enables interaction with the digital image of a physical object or process to simulate, analyze, and control its real-time operation.",
+      "evidence": [
+        {
+          "title": "Industrial digital twins at the nexus of NextG wireless networks and computational intelligence: A survey",
+          "abstract": "By amalgamating recent communication and control technologies, computing and data analytics techniques, and modular manufacturing, Industry 4.0 promotes integrating cyber–physical worlds through cyber–physical systems (CPS) and digital twin (DT) for monitoring, optimization, and prognostics of industrial processes. A DT enables interaction with the digital image of the industrial physical objects/processes to simulate, analyze, and control their real-time operation. DT is rapidly diffusing in numerous industries with the interdisciplinary advances in the industrial Internet of things (IIoT), edge and cloud computing, machine learning, artificial intelligence, and advanced data analytics. However, the existing literature lacks in identifying and discussing the role and requirements of these technologies in DT-enabled industries from the communication and computing perspective. In this article, we first present the functional aspects, appeal, and innovative use of DT in smart industries. Then, we elaborate on this perspective by systematically reviewing and reflecting on recent research trends in next-generation (NextG) wireless technologies (e.g., 5G-and-Beyond networks) and design tools, and current computational intelligence paradigms (e.g., edge and cloud computing-enabled data analytics, federated learning). Moreover, we discuss the DT deployment strategies at different communication layers to meet the monitoring and control requirements of industrial applications. We also outline several key reflections and future research challenges and directions to facilitate industrial DT’s adoption.",
+          "url": "https://doi.org/10.1016/j.jnca.2021.103309"
+        },
+        {
+          "title": "Toward Intelligent Cyber-Physical Systems: Digital Twin Meets Artificial Intelligence",
+          "abstract": "Industry 4.0 aims to support smarter and autonomous processes while improving agility, cost efficiency, and user experience. To fulfill its promises, properly processing the data of the industrial processes and infrastructures is required. Artificial intelligence (AI) appears as a strong candidate to handle all generated data, and to help in the automation and smartification process. This article overviews the digital twin as a true embodiment of a cyber-physical system (CPS) in Industry 4.0, showing the mission of AI in this concept. It presents the key enabling technologies of the digital twin such as edge, fog, and 5G, where the physical processes are integrated with the computing and network domains. The role of AI in each technology domain is identified by analyzing a set of AI agents at the application and infrastructure levels. Finally, movement prediction is selected and experimentally validated using real data generated by a digital twin for robotic arms with results showcasing its potential.",
+          "url": "https://doi.org/10.1109/mcom.001.2001237"
+        },
+        {
+          "title": "Unifying Visual-Semantic Embeddings with Multimodal Neural Language Models",
+          "abstract": "Inspired by recent advances in multimodal learning and machine translation, we introduce an encoder-decoder pipeline that learns (a): a multimodal joint embedding space with images and text and (b): a novel language model for decoding distributed representations from our space. Our pipeline effectively unifies joint image-text embedding models with multimodal neural language models. We introduce the structure-content neural language model that disentangles the structure of a sentence to its content, conditioned on representations produced by the encoder. The encoder allows one to rank images and sentences while the decoder can generate novel descriptions from scratch. Using LSTM to encode sentences, we match the state-of-the-art performance on Flickr8K and Flickr30K without using object detections. We also set new best results when using the 19-layer Oxford convolutional network. Furthermore we show that with linear encoders, the learned embedding space captures multimodal regularities in terms of vector space arithmetic e.g. *image of a blue car* - \"blue\" + \"red\" is near images of red cars. Sample captions generated for 800 images are made available for comparison.",
+          "url": "http://arxiv.org/abs/1411.2539"
+        },
+        {
+          "title": "Digital Twin AI: Opportunities and Challenges from Large Language ...",
+          "abstract": "Digital twinning enables the creation of virtual replicas of physical objects, allowing consumers to interact with products or services in a virtual space ...",
+          "url": "https://arxiv.org/html/2601.01321v1"
+        },
+        {
+          "title": "The Need for a Symbiotic Interface for a Digital Twin",
+          "abstract": "This paper considers the various types of human interaction with Digital Twins. There is very little research considering human cognitive interaction with a ...",
+          "url": "https://nottingham-repository.worktribe.com/OutputFile/31154817"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "The digital twin edge network (DITEN) combines mobile/multi-access edge computing (MEC) and digital twin (DT) technologies.",
+      "evidence": [
+        {
+          "title": "Survey on Digital Twin Edge Networks (DITEN) Toward 6G",
+          "abstract": "The next generation (6G) wireless systems aim to cater to the Internet of Everything (IoE) and revolutionize customer services and applications to a fully intelligent and autonomous system. To achieve this, the digital twin edge network (DITEN) is proposed to combine mobile/multi-access edge computing (MEC) and digital twin (DT), thereby improving the network performance such as throughput and security, and reducing the cost of communication, computation, and caching. In DITENs, the network status can be continuously monitored, and based on the obtained network states, the networking schemes, such as routing and resource management, can be studied in the established DITENs from a centralized perspective. In this survey, we present a comprehensive overview of DITEN for 6G. First, we present the fundamental aspects of DITEN, including concept, framework, and potential. Second, a comprehensive design of DITEN is devised, including the DT modeling/updating, DT deployment, key issues, and enabling technologies. Then, the typical applications of DITEN towards 6G are provided, including the Internet of Things (IoT), vehicular network, space-air-groud integrated network (SAGIN), healthcare, wireless systems, and other applications, along with the design of DITEN in each application, such as DT modeling, DT association, incentive mechanisms, and so on. Finally, challenges and open issues are discussed.",
+          "url": "https://doi.org/10.1109/ojcoms.2022.3197811"
+        },
+        {
+          "title": "On Multi-Access Edge Computing: A Survey of the Emerging 5G Network Edge Cloud Architecture and Orchestration",
+          "abstract": "Multi-access edge computing (MEC) is an emerging ecosystem, which aims at converging telecommunication and IT services, providing a cloud computing platform at the edge of the radio access network. MEC offers storage and computational resources at the edge, reducing latency for mobile end users and utilizing more efficiently the mobile backhaul and core networks. This paper introduces a survey on MEC and focuses on the fundamental key enabling technologies. It elaborates MEC orchestration considering both individual services and a network of MEC platforms supporting mobility, bringing light into the different orchestration deployment options. In addition, this paper analyzes the MEC reference architecture and main deployment scenarios, which offer multitenancy support for application developers, content providers, and third parties. Finally, this paper overviews the current standardization activities and elaborates further on open research challenges.",
+          "url": "https://zenodo.org/record/3494767"
+        },
+        {
+          "title": "Toward Intelligent Cyber-Physical Systems: Digital Twin Meets Artificial Intelligence",
+          "abstract": "Industry 4.0 aims to support smarter and autonomous processes while improving agility, cost efficiency, and user experience. To fulfill its promises, properly processing the data of the industrial processes and infrastructures is required. Artificial intelligence (AI) appears as a strong candidate to handle all generated data, and to help in the automation and smartification process. This article overviews the digital twin as a true embodiment of a cyber-physical system (CPS) in Industry 4.0, showing the mission of AI in this concept. It presents the key enabling technologies of the digital twin such as edge, fog, and 5G, where the physical processes are integrated with the computing and network domains. The role of AI in each technology domain is identified by analyzing a set of AI agents at the application and infrastructure levels. Finally, movement prediction is selected and experimentally validated using real data generated by a digital twin for robotic arms with results showcasing its potential.",
+          "url": "https://doi.org/10.1109/mcom.001.2001237"
+        },
+        {
+          "title": "MEC vs. Edge Computing: Unraveling 5G Network Power",
+          "abstract": "MEC - or multi-access Edge Computing - effectively utilizes 5G performance, a network computing technology. MEC is well suited for improving network latency ...",
+          "url": "https://www.penguinsolutions.com/en-us/resources/blog/what-is-the-difference-between-mec-multi-access-edge-computing-and-edge-computing-network-technology-that-maximizes-the-transmission-capacity-of-5g-communication"
+        },
+        {
+          "title": "Survey on Digital Twin Edge Networks (DITEN) Toward 6G - IEEE Xplore",
+          "abstract": "To achieve this, the digital twin edge network (DITEN) is proposed to combine mobile/multi-access edge computing (MEC) and digital twin (DT) ...",
+          "url": "https://ieeexplore.ieee.org/document/9854182/"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2306.05817",
+  "model": "MiniMax-M3",
+  "system": "search-baseline-v14",
+  "reference_precision": 0.9,
+  "reference_recall": 0.029900332225913623,
+  "reference_count": 10,
+  "reference_matches": 9,
+  "ground_truth_count": 301,
+  "predicted_titles": [
+    "Retrieval-augmented Recommender System: Enhancing Recommender Systems with Large Language Models",
+    "Recommendation as Language Processing (RLP): A Unified Pretrain, Personalized Prompt &amp; Predict Paradigm (P5)",
+    "LLM-Rec: Personalized Recommendation via Prompting Large Language Models",
+    "Language models as recommender systems: Evaluations and limitations",
+    "Collaborative Large Language Model for Recommender Systems",
+    "VIP5: Towards Multimodal Foundation Models for Recommendation",
+    "TALLRec: An Effective and Efficient Tuning Framework to Align Large Language Model with Recommendation",
+    "Heterogeneous Knowledge Fusion: A Novel Approach for Personalized Recommendation via LLM",
+    "Text Matching Improves Sequential Recommendation by Reducing Popularity Biases",
+    "PLATE: A Prompt-Enhanced Paradigm for Multi-Scenario Recommendations"
+  ]
+}

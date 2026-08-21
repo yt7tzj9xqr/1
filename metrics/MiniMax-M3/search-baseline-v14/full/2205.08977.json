@@ -1,0 +1,232 @@
+{
+  "arxiv_id": "2205.08977",
+  "model": "MiniMax-M3",
+  "system": "search-baseline-v14",
+  "reference_precision": 0.0,
+  "reference_recall": 0.0,
+  "reference_count": 8,
+  "reference_matches": 0,
+  "ground_truth_count": 317,
+  "predicted_titles": [
+    "Integrated Sensing and Communications: Toward Dual-Functional Wireless Networks for 6G and Beyond",
+    "Edge Intelligence: Paving the Last Mile of Artificial Intelligence With Edge Computing",
+    "Towards 6G wireless communication networks: vision, enabling technologies, and new paradigm shifts",
+    "Survey on Digital Twin Edge Networks (DITEN) Toward 6G",
+    "Industrial digital twins at the nexus of NextG wireless networks and computational intelligence: A survey",
+    "Edge Artificial Intelligence for 6G: Vision, Enabling Technologies, and Applications",
+    "Toward Intelligent Cyber-Physical Systems: Digital Twin Meets Artificial Intelligence",
+    "6G White Paper on Edge Intelligence"
+  ],
+  "cited_match_rate": 0.9310344827586207,
+  "cited_count": 29,
+  "cited_supported": 27,
+  "cited_details": [
+    {
+      "statement": "The 6G Edge Intelligence white paper envisions a transition from the Internet of Things to an Intelligent Internet of Intelligent Things [http://arxiv.org/abs/2004.14850].",
+      "url": "http://arxiv.org/abs/2004.14850",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "State-of-the-art deep learning and big-data-analytics-based AI systems require tremendous computation and communication resources, causing significant latency, energy consumption, network congestion, and privacy leakage [https://doi.org/10.1109/jsac.2021.3126076].",
+      "url": "https://doi.org/10.1109/jsac.2021.3126076",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "With the breakthroughs in deep learning, recent years have witnessed a booming of AI applications and services spanning from personal assistants to recommendation systems to video/audio surveillance [https://doi.org/10.1109/jproc.2019.2918951].",
+      "url": "https://doi.org/10.1109/jproc.2019.2918951",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Billions of mobile and IoT devices are connected to the Internet, generating zillions of bytes of data at the network edge, driving an urgent need to push the AI frontiers to the network edge [https://doi.org/10.1109/jproc.2019.2918951].",
+      "url": "https://doi.org/10.1109/jproc.2019.2918951",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A digital twin enables interaction with the digital image of industrial physical objects and processes to simulate, analyze, and control their real-time operation [https://doi.org/10.1016/j.jnca.2021.103309].",
+      "url": "https://doi.org/10.1016/j.jnca.2021.103309",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "6G wireless communication networks are expected to provide global coverage, enhanced spectral/energy/cost efficiency, and better intelligence level and security [https://doi.org/10.1007/s11432-020-2955-6].",
+      "url": "https://doi.org/10.1007/s11432-020-2955-6",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The integration of sensing functionality is emerging as a key feature of the 6G Radio Access Network, allowing the exploitation of dense cell infrastructures to construct a perceptive network [https://doi.org/10.1109/jsac.2022.3156632].",
+      "url": "https://doi.org/10.1109/jsac.2022.3156632",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "ISAC research analyzes performance tradeoffs between sensing and communications, spanning from information-theoretical limits to physical layer performance tradeoffs and cross-layer design tradeoffs [https://doi.org/10.1109/jsac.2022.3156632].",
+      "url": "https://doi.org/10.1109/jsac.2022.3156632",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The digital twin edge network (DITEN) combines mobile/multi-access edge computing (MEC) and digital twin (DT), improving network performance such as throughput and security, and reducing the cost of communication, computation, and caching [https://doi.org/10.1109/ojcoms.2022.3197811].",
+      "url": "https://doi.org/10.1109/ojcoms.2022.3197811",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Network status in DITEN can be continuously monitored, and networking schemes such as routing and resource management can be studied from a centralized perspective [https://doi.org/10.1109/ojcoms.2022.3197811].",
+      "url": "https://doi.org/10.1109/ojcoms.2022.3197811",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A holistic end-to-end system architecture is described to support edge AI with integrated design of wireless communication strategies and decentralized machine learning models [https://doi.org/10.1109/jsac.2021.3126076].",
+      "url": "https://doi.org/10.1109/jsac.2021.3126076",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "6G networks will rely on new enabling technologies such as waveform design, multiple access, channel coding schemes, multi-antenna technologies, network slicing, cell-free architecture, and cloud/fog/edge computing [https://doi.org/10.1007/s11432-020-2955-6].",
+      "url": "https://doi.org/10.1007/s11432-020-2955-6",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Edge AI embeds model training and inference capabilities into the network edge to seamlessly integrate sensing, communication, computation, and intelligence [https://doi.org/10.1109/jsac.2021.3126076].",
+      "url": "https://doi.org/10.1109/jsac.2021.3126076",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Edge AI improves the efficiency, effectiveness, privacy, and security of 6G networks [https://doi.org/10.1109/jsac.2021.3126076].",
+      "url": "https://doi.org/10.1109/jsac.2021.3126076",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Edge computing pushes computing tasks and services from the network core to the network edge so as to fully unleash the potential of edge big data [https://doi.org/10.1109/jproc.2019.2918951].",
+      "url": "https://doi.org/10.1109/jproc.2019.2918951",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Industry 4.0 promotes integrating cyber-physical worlds through cyber-physical systems and digital twin for monitoring, optimization, and prognostics of industrial processes [https://doi.org/10.1016/j.jnca.2021.103309].",
+      "url": "https://doi.org/10.1016/j.jnca.2021.103309",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Digital twin technology is rapidly diffusing in numerous industries with advances in the industrial Internet of things, edge and cloud computing, machine learning, AI, and advanced data analytics [https://doi.org/10.1016/j.jnca.2021.103309].",
+      "url": "https://doi.org/10.1016/j.jnca.2021.103309",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The digital twin is described as a true embodiment of a cyber-physical system in Industry 4.0, with the role of AI identified by analyzing AI agents at the application and infrastructure levels [https://doi.org/10.1109/mcom.001.2001237].",
+      "url": "https://doi.org/10.1109/mcom.001.2001237",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Integrated sensing and communications exploits dense cell infrastructures to construct a perceptive network [https://doi.org/10.1109/jsac.2022.3156632].",
+      "url": "https://doi.org/10.1109/jsac.2022.3156632",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "ISAC research discusses signal processing aspects, namely ISAC waveform design and receive signal processing [https://doi.org/10.1109/jsac.2022.3156632].",
+      "url": "https://doi.org/10.1109/jsac.2022.3156632",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The vision for scalable and trustworthy edge AI in 6G includes standardization, software and hardware platforms, and testbed deployments [https://doi.org/10.1109/jsac.2021.3126076].",
+      "url": "https://doi.org/10.1109/jsac.2021.3126076",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Intelligent solutions utilizing data-driven machine learning and AI become crucial for real-world applications including more efficient manufacturing, novel personal smart device environments, urban computing, and autonomous traffic settings [http://arxiv.org/abs/2004.14850].",
+      "url": "http://arxiv.org/abs/2004.14850",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Typical applications of DITEN toward 6G include the Internet of Things, vehicular networks, space-air-ground integrated networks, healthcare, and wireless systems [https://doi.org/10.1109/ojcoms.2022.3197811].",
+      "url": "https://doi.org/10.1109/ojcoms.2022.3197811",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Industrial digital twins support monitoring, optimization, and prognostics of manufacturing processes in the context of Industry 4.0 [https://doi.org/10.1016/j.jnca.2021.103309].",
+      "url": "https://doi.org/10.1016/j.jnca.2021.103309",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Scalable and trustworthy edge AI systems for 6G are envisioned with integrated design of wireless communication strategies and decentralized machine learning models [https://doi.org/10.1109/jsac.2021.3126076].",
+      "url": "https://doi.org/10.1109/jsac.2021.3126076",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A comprehensive design of DITEN includes DT modeling/updating, DT deployment, key issues, and enabling technologies [https://doi.org/10.1109/ojcoms.2022.3197811].",
+      "url": "https://doi.org/10.1109/ojcoms.2022.3197811",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The 6G Edge Intelligence research focuses on edge computing infrastructure and platforms, data and edge network management, software development for edge, real-time and distributed training of ML/AI algorithms, along with security, privacy, pricing, and end-user aspects [http://arxiv.org/abs/2004.14850].",
+      "url": "http://arxiv.org/abs/2004.14850",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "6G networks rely on new enabling technologies including air interface and transmission technologies combined with novel network architecture such as network slicing, cell-free architecture, and cloud/fog/edge computing [https://doi.org/10.1007/s11432-020-2955-6].",
+      "url": "https://doi.org/10.1007/s11432-020-2955-6",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The 6G vision identifies four new paradigm shifts, including space-air-ground-sea integrated communication networks and full exploration of all spectra [https://doi.org/10.1007/s11432-020-2955-6].",
+      "url": "https://doi.org/10.1007/s11432-020-2955-6",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    }
+  ],
+  "noncited_factual_accuracy": null,
+  "noncited_count": 0,
+  "noncited_correct": 0,
+  "noncited_details": []
+}

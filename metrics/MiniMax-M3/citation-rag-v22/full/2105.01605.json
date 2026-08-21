@@ -1,0 +1,343 @@
+{
+  "arxiv_id": "2105.01605",
+  "model": "MiniMax-M3",
+  "system": "citation-rag-v22",
+  "reference_precision": 0.2222222222222222,
+  "reference_recall": 0.04081632653061224,
+  "reference_count": 9,
+  "reference_matches": 2,
+  "ground_truth_count": 49,
+  "predicted_titles": [
+    "Natural Language Person Search Using Deep Reinforcement Learning",
+    "Learning Semantic-Aligned Feature Representation for Text-Based Person Search",
+    "Deep Learning for Person Re-identification: A Survey and Outlook",
+    "Re-ID Driven Localization Refinement for Person Search",
+    "Unsupervised Tracklet Person Re-Identification",
+    "Joint Detection and Identification Feature Learning for Person Search",
+    "Asymmetric Cross-Scale Alignment for Text-Based Person Search - Cronfa",
+    "Person re-identification by Local Maximal Occurrence representation and metric learning",
+    "Large scale metric learning from equivalence constraints"
+  ],
+  "cited_match_rate": 0.9523809523809523,
+  "cited_count": 21,
+  "cited_supported": 20,
+  "cited_details": [
+    {
+      "statement": "Person re-identification aims at retrieving a person of interest across multiple non-overlapping cameras, and it has gained significantly increased interest with the advancement of deep neural networks and the increasing demand of intelligent video surveillance http://arxiv.org/abs/2001.04193.",
+      "url": "http://arxiv.org/abs/2001.04193",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Hoi, has reviewed the field http://arxiv.org/abs/2001.04193.",
+      "url": "http://arxiv.org/abs/2001.04193",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Existing person re-identification benchmarks and methods mainly focus on matching cropped pedestrian images between queries and candidates https://arxiv.org/abs/1604.01850.",
+      "url": "https://arxiv.org/abs/1604.01850",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Person re-identification is an important technique towards automatic search of a person's presence in a surveillance video https://doi.org/10.1109/cvpr.2015.7298832.",
+      "url": "https://doi.org/10.1109/cvpr.2015.7298832",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Two fundamental problems are critical for person re-identification: feature representation and metric learning https://doi.org/10.1109/cvpr.2015.7298832.",
+      "url": "https://doi.org/10.1109/cvpr.2015.7298832",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "An effective feature representation should be robust to illumination and viewpoint changes, and a discriminant metric should be learned to match various person images https://doi.org/10.1109/cvpr.2015.7298832.",
+      "url": "https://doi.org/10.1109/cvpr.2015.7298832",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A CVPR 2015 approach proposed the Local Maximal Occurrence (LOMO) feature, which analyzes the horizontal occurrence of local features and maximizes the occurrence to make a stable representation against viewpoint changes, together with Cross-view Quadratic Discriminant Analysis (XQDA), a subspace and metric learning method that handles illumination variations through a Retinex transform and a scale-invariant texture operator https://doi.org/10.1109/cvpr.2015.7298832.",
+      "url": "https://doi.org/10.1109/cvpr.2015.7298832",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Joint detection and identification feature learning has been proposed for person search at The Chinese University of Hong Kong, Sun Yat-Sen University, and SenseTime Group Limited by Tong Xiao, Shuang Li, Bochao Wang, Liang Lin, and Xiaogang Wang https://arxiv.org/abs/1604.01850.",
+      "url": "https://arxiv.org/abs/1604.01850",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Text-based person search aims to retrieve images of a certain pedestrian from a textual description, but global-matching methods cannot effectively explore the distinctive local details of samples that are beneficial to improving performance https://arxiv.org/abs/2112.06714.",
+      "url": "https://arxiv.org/abs/2112.06714",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A semantic-aligned feature representation approach from Soochow University, by Shiping Li, Min Cao, and Min Zhang, has been proposed for text-based person search https://arxiv.org/abs/2112.06714.",
+      "url": "https://arxiv.org/abs/2112.06714",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "An Asymmetric Cross-Scale Alignment method has been proposed for text-based person search https://cronfa.swan.ac.uk/Record/cronfa62251/Download/62251__26475__9db5b190500e40af9bfe9f45e66bbb4f.pdf.",
+      "url": "https://cronfa.swan.ac.uk/Record/cronfa62251/Download/62251__26475__9db5b190500e40af9bfe9f45e66bbb4f.pdf",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Natural-language person search has been approached using deep reinforcement learning at Carnegie Mellon University by Ankit Shah and Tyler Vuong https://arxiv.org/abs/1809.00365.",
+      "url": "https://arxiv.org/abs/1809.00365",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "For metric learning, Cross-view Quadratic Discriminant Analysis (XQDA) learns a discriminant low-dimensional subspace by cross-view quadratic discriminant analysis for cross-view matching https://doi.org/10.1109/cvpr.2015.7298832.",
+      "url": "https://doi.org/10.1109/cvpr.2015.7298832",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A metric learning work raised scalability and supervision issues for existing Mahalanobis methods, which often rely on tedious optimization that becomes computationally intractable at a large scale https://doi.org/10.1109/cvpr.2012.6247939.",
+      "url": "https://doi.org/10.1109/cvpr.2012.6247939",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The work introduced a simple though effective strategy to learn a distance metric from equivalence constraints, based on a statistical inference perspective, and demonstrated orders-of-magnitude speedups over comparable methods on a variety of challenging benchmarks with diverse nature, including faces in unconstrained environments https://doi.org/10.1109/cvpr.2012.6247939.",
+      "url": "https://doi.org/10.1109/cvpr.2012.6247939",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "In the unsupervised regime, an Unsupervised Tracklet Association Learning (UTAL) framework is an unsupervised re-identification deep learning approach capable of incrementally discovering and exploiting the underlying re-identification discriminative information from automatically generated person tracklet data end-to-end https://qmro.qmul.ac.uk/xmlui/handle/123456789/61627.",
+      "url": "https://qmro.qmul.ac.uk/xmlui/handle/123456789/61627",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "It jointly learns within-camera tracklet discrimination and cross-camera tracklet association to maximize the discovery of tracklet identity matching both within and across camera views https://qmro.qmul.ac.uk/xmlui/handle/123456789/61627.",
+      "url": "https://qmro.qmul.ac.uk/xmlui/handle/123456789/61627",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Extensive experiments demonstrate the superiority of the proposed model over state-of-the-art unsupervised learning and domain adaptation person re-identification methods https://qmro.qmul.ac.uk/xmlui/handle/123456789/61627.",
+      "url": "https://qmro.qmul.ac.uk/xmlui/handle/123456789/61627",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A re-ID driven localization refinement approach has been proposed for person search at Huazhong University of Science and Technology, Peking University, Shanghai Jiao Tong University, and Megvii Technology by Chuchu Han, Jiacheng Ye, Yunshan Zhong, Xin Tan, Chi Zhang, Changxin Gao, and Nong Sang http://arxiv.org/abs/1909.08580.",
+      "url": "http://arxiv.org/abs/1909.08580",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Joint detection and identification feature learning has been proposed for person search, in contrast to existing person re-identification benchmarks and methods that mainly focus on matching cropped pedestrian images between queries and candidates https://arxiv.org/abs/1604.01850.",
+      "url": "https://arxiv.org/abs/1604.01850",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Most existing person re-identification methods rely on supervised model learning on per-camera-pair manually labelled pairwise training data, leading to poor scalability in practical deployment due to the lack of exhaustive identity labelling of positive and negative image pairs for every camera-pair https://qmro.qmul.ac.uk/xmlui/handle/123456789/61627.",
+      "url": "https://qmro.qmul.ac.uk/xmlui/handle/123456789/61627",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    }
+  ],
+  "noncited_factual_accuracy": 0.8,
+  "noncited_count": 5,
+  "noncited_correct": 4,
+  "noncited_details": [
+    {
+      "claim": "A survey titled Deep Learning for Person Re-identification: A Survey and Outlook was authored by Mang Ye, Jianbing Shen, Gaojie Lin, Tao Xiang, Ling Shao, and Steven C. H. Cheng.",
+      "evidence": [
+        {
+          "title": "Deep Learning for Person Re-identification: A Survey and Outlook",
+          "abstract": "Person re-identification (Re-ID) aims at retrieving a person of interest across multiple non-overlapping cameras. With the advancement of deep neural networks and increasing demand of intelligent video surveillance, it has gained significantly increased interest in the computer vision community. By dissecting the involved components in developing a person Re-ID system, we categorize it into the closed-world and open-world settings. The widely studied closed-world setting is usually applied under various research-oriented assumptions, and has achieved inspiring success using deep learning techniques on a number of datasets. We first conduct a comprehensive overview with in-depth analysis for closed-world person Re-ID from three different perspectives, including deep feature representation learning, deep metric learning and ranking optimization. With the performance saturation under closed-world setting, the research focus for person Re-ID has recently shifted to the open-world setting, facing more challenging issues. This setting is closer to practical applications under specific scenarios. We summarize the open-world Re-ID in terms of five different aspects. By analyzing the advantages of existing methods, we design a powerful AGW baseline, achieving state-of-the-art or at least comparable performance on twelve datasets for FOUR different Re-ID tasks. Meanwhile, we introduce a new evaluation metric (mINP) for person Re-ID, indicating the cost for finding all the correct matches, which provides an additional criteria to evaluate the Re-ID system for real applications. Finally, some important yet under-investigated open issues are discussed.",
+          "url": "http://arxiv.org/abs/2001.04193"
+        },
+        {
+          "title": "Unsupervised Tracklet Person Re-Identification",
+          "abstract": "Most existing person re-identification (re-id) methods rely on supervised model learning on per-camera-pair manually labelled pairwise training data. This leads to poor scalability in a practical re-id deployment, due to the lack of exhaustive identity labelling of positive and negative image pairs for every camera-pair. In this work, we present an unsupervised re-id deep learning approach. It is capable of incrementally discovering and exploiting the underlying re-id discriminative information from automatically generated person tracklet data end-to-end. We formulate an Unsupervised Tracklet Association Learning (UTAL) framework. This is by jointly learning within-camera tracklet discrimination and cross-camera tracklet association in order to maximise the discovery of tracklet identity matching both within and across camera views. Extensive experiments demonstrate the superiority of the proposed model over the state-of-the-art unsupervised learning and domain adaptation person re-id methods on eight benchmarking datasets.",
+          "url": "https://qmro.qmul.ac.uk/xmlui/handle/123456789/61627"
+        },
+        {
+          "title": "Multi-Level Joint Feature Learning for Person Re-Identification - MDPI",
+          "abstract": "In this paper, we propose a Multi-level Feature Fusion model that combines both global features and local features of images through deep ...",
+          "url": "https://www.mdpi.com/1999-4893/13/5/111"
+        },
+        {
+          "title": "Deep Learning for Person Re-identification: A Survey and ...",
+          "abstract": "Deep Learning for Person Re-identification: A Survey and Outlook January 2020. Authors: Mang Ye at Wuhan University. Figures - uploaded by ...",
+          "url": "https://www.researchgate.net/publication/338569727_Deep_Learning_for_Person_Re-identification_A_Survey_and_Outlook"
+        },
+        {
+          "title": "Person Re-Identification in Special Scenes Based on Deep Learning",
+          "abstract": "Person re-identification (ReID) refers to the task of retrieving target persons from image libraries captured by various distinct cameras.",
+          "url": "https://research.mpu.edu.mo/en/publications/person-re-identification-in-special-scenes-based-on-deep-learning/"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "Person re-identification aims at retrieving a person of interest across multiple non-overlapping cameras.",
+      "evidence": [
+        {
+          "title": "Deep Learning for Person Re-identification: A Survey and Outlook",
+          "abstract": "Person re-identification (Re-ID) aims at retrieving a person of interest across multiple non-overlapping cameras. With the advancement of deep neural networks and increasing demand of intelligent video surveillance, it has gained significantly increased interest in the computer vision community. By dissecting the involved components in developing a person Re-ID system, we categorize it into the closed-world and open-world settings. The widely studied closed-world setting is usually applied under various research-oriented assumptions, and has achieved inspiring success using deep learning techniques on a number of datasets. We first conduct a comprehensive overview with in-depth analysis for closed-world person Re-ID from three different perspectives, including deep feature representation learning, deep metric learning and ranking optimization. With the performance saturation under closed-world setting, the research focus for person Re-ID has recently shifted to the open-world setting, facing more challenging issues. This setting is closer to practical applications under specific scenarios. We summarize the open-world Re-ID in terms of five different aspects. By analyzing the advantages of existing methods, we design a powerful AGW baseline, achieving state-of-the-art or at least comparable performance on twelve datasets for FOUR different Re-ID tasks. Meanwhile, we introduce a new evaluation metric (mINP) for person Re-ID, indicating the cost for finding all the correct matches, which provides an additional criteria to evaluate the Re-ID system for real applications. Finally, some important yet under-investigated open issues are discussed.",
+          "url": "http://arxiv.org/abs/2001.04193"
+        },
+        {
+          "title": "Large scale metric learning from equivalence constraints",
+          "abstract": "In this paper, we raise important issues on scalability and the required degree of supervision of existing Mahalanobis metric learning methods. Often rather tedious optimization procedures are applied that become computationally intractable on a large scale. Further, if one considers the constantly growing amount of data it is often infeasible to specify fully supervised labels for all data points. Instead, it is easier to specify labels in form of equivalence constraints. We introduce a simple though effective strategy to learn a distance metric from equivalence constraints, based on a statistical inference perspective. In contrast to existing methods we do not rely on complex optimization problems requiring computationally expensive iterations. Hence, our method is orders of magnitudes faster than comparable methods. Results on a variety of challenging benchmarks with rather diverse nature demonstrate the power of our method. These include faces in unconstrained environments, matching before unseen object instances and person re-identification across spatially disjoint cameras. In the latter two benchmarks we clearly outperform the state-of-the-art.",
+          "url": "https://doi.org/10.1109/cvpr.2012.6247939"
+        },
+        {
+          "title": "Learning Semantic-Aligned Feature Representation for Text-Based Person Search",
+          "abstract": "Text-based person search aims to retrieve images of a certain pedestrian by a textual description. The key challenge of this task is to eliminate the inter-modality gap and achieve the feature alignment across modalities. In this paper, we propose a semantic-aligned embedding method for text-based person search, in which the feature alignment across modalities is achieved by automatically learning the semantic-aligned visual features and textual features. First, we introduce two Transformer-based backbones to encode robust feature representations of the images and texts. Second, we design a semantic-aligned feature aggregation network to adaptively select and aggregate features with the same semantics into part-aware features, which is achieved by a multi-head attention module constrained by a cross-modality part alignment loss and a diversity loss. Experimental results on the CUHK-PEDES and Flickr30K datasets show that our method achieves state-of-the-art performances.",
+          "url": "https://arxiv.org/abs/2112.06714"
+        },
+        {
+          "title": "Keynote_(Person Re-Identification and Tracking in Multiple ... - YouTube",
+          "abstract": "Keynote_(Person Re-Identification and Tracking in Multiple Non-Overlapping Cameras). @UCFCRCV98 likes7.8K views5 years ago",
+          "url": "https://www.youtube.com/watch?v=Y1EFfVNDbSw"
+        },
+        {
+          "title": "Person Re-Identification Under Non-Overlapping Cameras Based ...",
+          "abstract": "Person Re-identification (ReID), a critical technology in intelligent surveillance, aims to accurately match specific individuals across non-overlapping camera ...",
+          "url": "https://www.mdpi.com/1999-4893/18/11/714"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "The two fundamental problems in person re-identification are feature representation and metric learning.",
+      "evidence": [
+        {
+          "title": "Person re-identification by Local Maximal Occurrence representation and metric learning",
+          "abstract": "Person re-identification is an important technique towards automatic search of a person's presence in a surveillance video. Two fundamental problems are critical for person re-identification, feature representation and metric learning. An effective feature representation should be robust to illumination and viewpoint changes, and a discriminant metric should be learned to match various person images. In this paper, we propose an effective feature representation called Local Maximal Occurrence (LOMO), and a subspace and metric learning method called Cross-view Quadratic Discriminant Analysis (XQDA). The LOMO feature analyzes the horizontal occurrence of local features, and maximizes the occurrence to make a stable representation against viewpoint changes. Besides, to handle illumination variations, we apply the Retinex transform and a scale invariant texture operator. To learn a discriminant metric, we propose to learn a discriminant low dimensional subspace by cross-view quadratic discriminant analysis, and simultaneously, a QDA metric is learned on the derived subspace. We also present a practical computation method for XQDA, as well as its regularization. Experiments on four challenging person re-identification databases, VIPeR, QMUL GRID, CUHK Campus, and CUHK03, show that the proposed method improves the state-of-the-art rank-1 identification rates by 2.2%, 4.88%, 28.91%, and 31.55% on the four databases, respectively.",
+          "url": "https://doi.org/10.1109/cvpr.2015.7298832"
+        },
+        {
+          "title": "Deep Learning for Person Re-identification: A Survey and Outlook",
+          "abstract": "Person re-identification (Re-ID) aims at retrieving a person of interest across multiple non-overlapping cameras. With the advancement of deep neural networks and increasing demand of intelligent video surveillance, it has gained significantly increased interest in the computer vision community. By dissecting the involved components in developing a person Re-ID system, we categorize it into the closed-world and open-world settings. The widely studied closed-world setting is usually applied under various research-oriented assumptions, and has achieved inspiring success using deep learning techniques on a number of datasets. We first conduct a comprehensive overview with in-depth analysis for closed-world person Re-ID from three different perspectives, including deep feature representation learning, deep metric learning and ranking optimization. With the performance saturation under closed-world setting, the research focus for person Re-ID has recently shifted to the open-world setting, facing more challenging issues. This setting is closer to practical applications under specific scenarios. We summarize the open-world Re-ID in terms of five different aspects. By analyzing the advantages of existing methods, we design a powerful AGW baseline, achieving state-of-the-art or at least comparable performance on twelve datasets for FOUR different Re-ID tasks. Meanwhile, we introduce a new evaluation metric (mINP) for person Re-ID, indicating the cost for finding all the correct matches, which provides an additional criteria to evaluate the Re-ID system for real applications. Finally, some important yet under-investigated open issues are discussed.",
+          "url": "http://arxiv.org/abs/2001.04193"
+        },
+        {
+          "title": "Large scale metric learning from equivalence constraints",
+          "abstract": "In this paper, we raise important issues on scalability and the required degree of supervision of existing Mahalanobis metric learning methods. Often rather tedious optimization procedures are applied that become computationally intractable on a large scale. Further, if one considers the constantly growing amount of data it is often infeasible to specify fully supervised labels for all data points. Instead, it is easier to specify labels in form of equivalence constraints. We introduce a simple though effective strategy to learn a distance metric from equivalence constraints, based on a statistical inference perspective. In contrast to existing methods we do not rely on complex optimization problems requiring computationally expensive iterations. Hence, our method is orders of magnitudes faster than comparable methods. Results on a variety of challenging benchmarks with rather diverse nature demonstrate the power of our method. These include faces in unconstrained environments, matching before unseen object instances and person re-identification across spatially disjoint cameras. In the latter two benchmarks we clearly outperform the state-of-the-art.",
+          "url": "https://doi.org/10.1109/cvpr.2012.6247939"
+        },
+        {
+          "title": "Research of Metric Learning-Based Method for Person Re-Identification ...",
+          "abstract": "In this paper, the over-fitting problem of metric learning- based method were analyzed. And the semi-supervised learning approach was introduced to solve this.",
+          "url": "https://iopscience.iop.org/article/10.1088/1742-6596/2083/4/042013/pdf"
+        },
+        {
+          "title": "An Enhanced Deep Feature Representation for Person Re ...",
+          "abstract": "Feature representation and metric learning are two crit- ical components in person re-identification models. In this paper, we focus on the feature ...",
+          "url": "http://www.isee-ai.cn/~zhwshi/Research/PreprintVersion/DEEP-REID-FEATURE.pdf"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "An effective feature representation for person re-identification should be robust to illumination and viewpoint changes.",
+      "evidence": [
+        {
+          "title": "Person re-identification by Local Maximal Occurrence representation and metric learning",
+          "abstract": "Person re-identification is an important technique towards automatic search of a person's presence in a surveillance video. Two fundamental problems are critical for person re-identification, feature representation and metric learning. An effective feature representation should be robust to illumination and viewpoint changes, and a discriminant metric should be learned to match various person images. In this paper, we propose an effective feature representation called Local Maximal Occurrence (LOMO), and a subspace and metric learning method called Cross-view Quadratic Discriminant Analysis (XQDA). The LOMO feature analyzes the horizontal occurrence of local features, and maximizes the occurrence to make a stable representation against viewpoint changes. Besides, to handle illumination variations, we apply the Retinex transform and a scale invariant texture operator. To learn a discriminant metric, we propose to learn a discriminant low dimensional subspace by cross-view quadratic discriminant analysis, and simultaneously, a QDA metric is learned on the derived subspace. We also present a practical computation method for XQDA, as well as its regularization. Experiments on four challenging person re-identification databases, VIPeR, QMUL GRID, CUHK Campus, and CUHK03, show that the proposed method improves the state-of-the-art rank-1 identification rates by 2.2%, 4.88%, 28.91%, and 31.55% on the four databases, respectively.",
+          "url": "https://doi.org/10.1109/cvpr.2015.7298832"
+        },
+        {
+          "title": "Learning Semantic-Aligned Feature Representation for Text-Based Person Search",
+          "abstract": "Text-based person search aims to retrieve images of a certain pedestrian by a textual description. The key challenge of this task is to eliminate the inter-modality gap and achieve the feature alignment across modalities. In this paper, we propose a semantic-aligned embedding method for text-based person search, in which the feature alignment across modalities is achieved by automatically learning the semantic-aligned visual features and textual features. First, we introduce two Transformer-based backbones to encode robust feature representations of the images and texts. Second, we design a semantic-aligned feature aggregation network to adaptively select and aggregate features with the same semantics into part-aware features, which is achieved by a multi-head attention module constrained by a cross-modality part alignment loss and a diversity loss. Experimental results on the CUHK-PEDES and Flickr30K datasets show that our method achieves state-of-the-art performances.",
+          "url": "https://arxiv.org/abs/2112.06714"
+        },
+        {
+          "title": "Deep Learning for Person Re-identification: A Survey and Outlook",
+          "abstract": "Person re-identification (Re-ID) aims at retrieving a person of interest across multiple non-overlapping cameras. With the advancement of deep neural networks and increasing demand of intelligent video surveillance, it has gained significantly increased interest in the computer vision community. By dissecting the involved components in developing a person Re-ID system, we categorize it into the closed-world and open-world settings. The widely studied closed-world setting is usually applied under various research-oriented assumptions, and has achieved inspiring success using deep learning techniques on a number of datasets. We first conduct a comprehensive overview with in-depth analysis for closed-world person Re-ID from three different perspectives, including deep feature representation learning, deep metric learning and ranking optimization. With the performance saturation under closed-world setting, the research focus for person Re-ID has recently shifted to the open-world setting, facing more challenging issues. This setting is closer to practical applications under specific scenarios. We summarize the open-world Re-ID in terms of five different aspects. By analyzing the advantages of existing methods, we design a powerful AGW baseline, achieving state-of-the-art or at least comparable performance on twelve datasets for FOUR different Re-ID tasks. Meanwhile, we introduce a new evaluation metric (mINP) for person Re-ID, indicating the cost for finding all the correct matches, which provides an additional criteria to evaluate the Re-ID system for real applications. Finally, some important yet under-investigated open issues are discussed.",
+          "url": "http://arxiv.org/abs/2001.04193"
+        },
+        {
+          "title": "A Review of Recent Techniques for Person Re-Identification - arXiv",
+          "abstract": "The core task of person Re-ID consists in learning distinctive features that differentiate between images of the same person and those of different individuals.",
+          "url": "https://arxiv.org/html/2509.22690v1"
+        },
+        {
+          "title": "Learning Invariant Features Under Clothing Changes and Occlusions",
+          "abstract": "Person Re-Identification (Re-ID) involves matching the same person in a non-overlapping camera system. This is a crucial task in computer vision with ...",
+          "url": "https://uh-ir.tdl.org/items/51d6a8b4-fa00-4691-abce-24c3ac7c0323"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "Most person re-identification benchmarks and methods focus on matching cropped pedestrian images between queries and candidates.",
+      "evidence": [
+        {
+          "title": "Re-ID Driven Localization Refinement for Person Search",
+          "abstract": "Person search aims at localizing and identifying a query person from a gallery of uncropped scene images. Different from person re-identification (re-ID), its performance also depends on the localization accuracy of a pedestrian detector. The state-of-the-art methods train the detector individually, and the detected bounding boxes may be sub-optimal for the following re-ID task. To alleviate this issue, we propose a re-ID driven localization refinement framework for providing the refined detection boxes for person search. Specifically, we develop a differentiable ROI transform layer to effectively transform the bounding boxes from the original images. Thus, the box coordinates can be supervised by the re-ID training other than the original detection task. With this supervision, the detector can generate more reliable bounding boxes, and the downstream re-ID model can produce more discriminative embeddings based on the refined person localizations. Extensive experimental results on the widely used benchmarks demonstrate that our proposed method performs favorably against the state-of-the-art person search methods.",
+          "url": "http://arxiv.org/abs/1909.08580"
+        },
+        {
+          "title": "Unsupervised Tracklet Person Re-Identification",
+          "abstract": "Most existing person re-identification (re-id) methods rely on supervised model learning on per-camera-pair manually labelled pairwise training data. This leads to poor scalability in a practical re-id deployment, due to the lack of exhaustive identity labelling of positive and negative image pairs for every camera-pair. In this work, we present an unsupervised re-id deep learning approach. It is capable of incrementally discovering and exploiting the underlying re-id discriminative information from automatically generated person tracklet data end-to-end. We formulate an Unsupervised Tracklet Association Learning (UTAL) framework. This is by jointly learning within-camera tracklet discrimination and cross-camera tracklet association in order to maximise the discovery of tracklet identity matching both within and across camera views. Extensive experiments demonstrate the superiority of the proposed model over the state-of-the-art unsupervised learning and domain adaptation person re-id methods on eight benchmarking datasets.",
+          "url": "https://qmro.qmul.ac.uk/xmlui/handle/123456789/61627"
+        },
+        {
+          "title": "Large scale metric learning from equivalence constraints",
+          "abstract": "In this paper, we raise important issues on scalability and the required degree of supervision of existing Mahalanobis metric learning methods. Often rather tedious optimization procedures are applied that become computationally intractable on a large scale. Further, if one considers the constantly growing amount of data it is often infeasible to specify fully supervised labels for all data points. Instead, it is easier to specify labels in form of equivalence constraints. We introduce a simple though effective strategy to learn a distance metric from equivalence constraints, based on a statistical inference perspective. In contrast to existing methods we do not rely on complex optimization problems requiring computationally expensive iterations. Hence, our method is orders of magnitudes faster than comparable methods. Results on a variety of challenging benchmarks with rather diverse nature demonstrate the power of our method. These include faces in unconstrained environments, matching before unseen object instances and person re-identification across spatially disjoint cameras. In the latter two benchmarks we clearly outperform the state-of-the-art.",
+          "url": "https://doi.org/10.1109/cvpr.2012.6247939"
+        },
+        {
+          "title": "Person Re-identification: System Design and Evaluation Overview",
+          "abstract": "All the existing person re-identification papers have ignored this step and assume per- fect pedestrian detection by using manually cropped pedestrian images.",
+          "url": "https://www.ee.cuhk.edu.hk/~xgwang/papers/wangZreid.pdf"
+        },
+        {
+          "title": "Person search: New paradigm of person re-identification: A survey ...",
+          "abstract": "Simplified view of pedestrian detection and person (re-ID): in gallery, manually cropped images from detected pedestrians' images received from video cameras.",
+          "url": "https://www.sciencedirect.com/science/article/pii/S0262885620301025"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    }
+  ]
+}

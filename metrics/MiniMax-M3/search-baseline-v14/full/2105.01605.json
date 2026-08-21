@@ -1,0 +1,288 @@
+{
+  "arxiv_id": "2105.01605",
+  "model": "MiniMax-M3",
+  "system": "search-baseline-v14",
+  "reference_precision": 0.25,
+  "reference_recall": 0.02040816326530612,
+  "reference_count": 4,
+  "reference_matches": 1,
+  "ground_truth_count": 49,
+  "predicted_titles": [
+    "Natural Language Person Search Using Deep Reinforcement Learning",
+    "Joint Detection and Identification Feature Learning for Person Search",
+    "Multi-Level Joint Feature Learning for Person Re-Identification - MDPI",
+    "Person Re-identification in the Wild - IEEE Computer Society"
+  ],
+  "cited_match_rate": 0.08333333333333333,
+  "cited_count": 24,
+  "cited_supported": 2,
+  "cited_details": [
+    {
+      "statement": "Person search aims to localize and identify a target pedestrian in uncropped scene images, and it is foundational to public safety and intelligent surveillance (https://arxiv.org/abs/1604.01850).",
+      "url": "https://arxiv.org/abs/1604.01850",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The field is broadly divided into image-based person search, in which the query is a probe image, and text-based person search, in which the query is a free-form natural language description (https://arxiv.org/abs/1809.00365).",
+      "url": "https://arxiv.org/abs/1809.00365",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Early re-identification benchmarks and methods mainly focused on matching cropped pedestrian images between queries and candidates, which differs from real-world scenarios where the annotations of pedestrian bounding boxes are unavailable (https://arxiv.org/abs/1604.01850).",
+      "url": "https://arxiv.org/abs/1604.01850",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The image-based subfield was advanced by Xiao et al., who cast detection and re-identification into a single end-to-end convolutional neural network and established the CUHK-SYSU benchmark that has since become a standard evaluation suite (https://arxiv.org/abs/1604.01850).",
+      "url": "https://arxiv.org/abs/1604.01850",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "complemented this effort with the PRW benchmark, contributing a novel large-scale dataset and comprehensive baselines for end-to-end pedestrian detection and person recognition in raw video frames (https://www.computer.org/csdl/proceedings-article/cvpr/2017/0457d346/12OmNzBwGuZ).",
+      "url": "https://computer.org/csdl/proceedings-article/cvpr/2017/0457d346/12OmNzBwGuZ",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "These resources exposed two structural difficulties that have shaped subsequent research: noisy detection outputs that propagate into the identification stage, and appearance variations that degrade naive whole-image matching (https://www.computer.org/csdl/proceedings-article/cvpr/2017/0457d346/12OmNzBwGuZ).",
+      "url": "https://computer.org/csdl/proceedings-article/cvpr/2017/0457d346/12OmNzBwGuZ",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "further argued that the field had been overlooking the problem of misaligned detected boxes that cover only portions of the human body (https://arxiv.org/abs/2004.09329).",
+      "url": "https://arxiv.org/abs/2004.09329",
+      "support_votes": 0,
+      "total_votes": 0,
+      "match": false
+    },
+    {
+      "statement": "Multi-level feature fusion strategies that combine global and local features of images through deep architectures have been shown to enhance the discriminative power of the resulting embedding (https://www.mdpi.com/1999-4893/13/5/111).",
+      "url": "https://mdpi.com/1999-4893/13/5/111",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "addressed this issue inside the detection-plus-identification pipeline by proposing an Align-to-Part Network that refines detected bounding boxes to cover the estimated holistic body region, from which discriminative part features can be extracted and aligned (https://arxiv.org/abs/2004.09329).",
+      "url": "https://arxiv.org/abs/2004.09329",
+      "support_votes": 0,
+      "total_votes": 0,
+      "match": false
+    },
+    {
+      "statement": "The work shows that aligned part features naturally re-formulate re-identification as a partial feature matching procedure in which valid part features are selected for similarity computation while part features on occluded or noisy regions are discarded (https://arxiv.org/abs/2004.09329).",
+      "url": "https://arxiv.org/abs/2004.09329",
+      "support_votes": 0,
+      "total_votes": 0,
+      "match": false
+    },
+    {
+      "statement": "The resulting APNet achieves competitive performance on existing person search benchmarks such as CUHK-SYSU and PRW (https://arxiv.org/abs/2004.09329).",
+      "url": "https://arxiv.org/abs/2004.09329",
+      "support_votes": 0,
+      "total_votes": 0,
+      "match": false
+    },
+    {
+      "statement": "Deep reinforcement learning has likewise been applied to the text-based setting, where an agent learns a search policy over a candidate image so as to focus on discriminative body regions (https://arxiv.org/abs/1809.00365).",
+      "url": "https://arxiv.org/abs/1809.00365",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "End-to-end formulations drive the detector and re-identifier toward a shared embedding space in which the distance between same-identity pairs is minimized, and this objective is realized through identity-classification and ranking losses coupled with a shared convolutional backbone (https://arxiv.org/abs/1604.01850).",
+      "url": "https://arxiv.org/abs/1604.01850",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Robust partial matching generalizes this idea by computing similarity only over reliable local features, suppressing the influence of corrupted or missing regions rather than assuming the query and gallery images are well aligned (https://arxiv.org/abs/2004.09329).",
+      "url": "https://arxiv.org/abs/2004.09329",
+      "support_votes": 0,
+      "total_votes": 0,
+      "match": false
+    },
+    {
+      "statement": "In the text-based setting the gap is cross-modal rather than cross-view, and Shah and Vuong proposed a deep reinforcement learning agent that learns how to search for a target person across candidate images given a textual query (https://arxiv.org/abs/1809.00365).",
+      "url": "https://arxiv.org/abs/1809.00365",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The candidate set is constructed by cropping images to the same size as the candidate person, and the agent dynamically narrows the visual search space to the regions most consistent with the description (https://arxiv.org/abs/1809.00365).",
+      "url": "https://arxiv.org/abs/1809.00365",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Through this policy the model implicitly learns a similarity measure between language and image regions (https://arxiv.org/abs/1809.00365).",
+      "url": "https://arxiv.org/abs/1809.00365",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "A detector optimized solely for localization can produce boxes that suppress identity cues, while a re-identifier can overfit to artifacts introduced by the detector (https://arxiv.org/abs/1604.01850).",
+      "url": "https://arxiv.org/abs/1604.01850",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "addressed this through an identity-driven detection design in which identification and detection share a common feature backbone, forcing the convolutional representations to be useful for both tasks (https://arxiv.org/abs/1604.01850).",
+      "url": "https://arxiv.org/abs/1604.01850",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "further reduced this inconsistency by aligning the detection output to the estimated holistic body region before extracting part features, so that the identification stage sees a stable, body-centered input (https://arxiv.org/abs/2004.09329).",
+      "url": "https://arxiv.org/abs/2004.09329",
+      "support_votes": 0,
+      "total_votes": 0,
+      "match": false
+    },
+    {
+      "statement": "Across both subfields, the dominant trajectory is to treat person search as a single, coupled detection-and-matching problem rather than a cascade of independent stages, and to align features with the eventual identification objective (https://arxiv.org/abs/1604.01850).",
+      "url": "https://arxiv.org/abs/1604.01850",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Image-based methods emphasize robust, body-aware local features, while text-based methods introduce reinforcement-learned mechanisms to align language with image regions (https://arxiv.org/abs/1809.00365).",
+      "url": "https://arxiv.org/abs/1809.00365",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Continued progress therefore depends on benchmarks that faithfully reflect deployment conditions, since real-world imagery routinely violates the cropped, well-aligned assumptions of earlier re-identification work (https://www.computer.org/csdl/proceedings-article/cvpr/2017/0457d346/12OmNzBwGuZ).",
+      "url": "https://computer.org/csdl/proceedings-article/cvpr/2017/0457d346/12OmNzBwGuZ",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Aligning detection outputs with identification-friendly body regions, as in APNet, represents one of the most promising directions for closing the gap between laboratory benchmarks and operational surveillance (https://arxiv.org/abs/2004.09329).",
+      "url": "https://arxiv.org/abs/2004.09329",
+      "support_votes": 0,
+      "total_votes": 0,
+      "match": false
+    }
+  ],
+  "noncited_factual_accuracy": 0.3333333333333333,
+  "noncited_count": 3,
+  "noncited_correct": 1,
+  "noncited_details": [
+    {
+      "claim": "The first core challenge is learning discriminative deep feature representations.",
+      "evidence": [
+        {
+          "title": "Learning Semantic-Aligned Feature Representation for Text-Based Person Search",
+          "abstract": "Text-based person search aims to retrieve images of a certain pedestrian by a textual description. The key challenge of this task is to eliminate the inter-modality gap and achieve the feature alignment across modalities. In this paper, we propose a semantic-aligned embedding method for text-based person search, in which the feature alignment across modalities is achieved by automatically learning the semantic-aligned visual features and textual features. First, we introduce two Transformer-based backbones to encode robust feature representations of the images and texts. Second, we design a semantic-aligned feature aggregation network to adaptively select and aggregate features with the same semantics into part-aware features, which is achieved by a multi-head attention module constrained by a cross-modality part alignment loss and a diversity loss. Experimental results on the CUHK-PEDES and Flickr30K datasets show that our method achieves state-of-the-art performances.",
+          "url": "https://arxiv.org/abs/2112.06714"
+        },
+        {
+          "title": "Natural Language Person Search Using Deep Reinforcement Learning",
+          "abstract": "Recent success in deep reinforcement learning is having an agent learn how to play Go and beat the world champion without any prior knowledge of the game. In that task, the agent has to make a decision on what action to take based on the positions of the pieces. Person Search is recently explored using natural language based text description of images for video surveillance applications (S.Li et.al). We see (Fu.et al) provides an end to end approach for object-based retrieval using deep reinforcement learning without constraints placed on which objects are being detected. However, we believe for real-world applications such as person search defining specific constraints which identify a person as opposed to starting with a general object detection will have benefits in terms of performance and computational resources required. In our task, Deep reinforcement learning would localize the person in an image by reshaping the sizes of the bounding boxes. Deep Reinforcement learning with appropriate constraints would look only for the relevant person in the image as opposed to an unconstrained approach where each individual objects in the image are ranked. For person search, the agent is trying to form a tight bounding box around the person in the image who matches the description. The bounding box is initialized to the full image and at each time step, the agent makes a decision on how to change the current bounding box so that it has a tighter bound around the person based on the description of the person and the pixel values of the current bounding box. After the agent takes an action, it will be given a reward based on the Intersection over Union (IoU) of the current bounding box and the ground truth box. Once the agent believes that the bounding box is covering the person, it will indicate that the person is found.",
+          "url": "https://arxiv.org/abs/1809.00365"
+        },
+        {
+          "title": "A survey of transfer learning",
+          "abstract": "Machine learning and data mining techniques have been used in numerous real-world applications. An assumption of traditional machine learning methodologies is the training data and testing data are taken from the same domain, such that the input feature space and data distribution characteristics are the same. However, in some real-world machine learning scenarios, this assumption does not hold. There are cases where training data is expensive or difficult to collect. Therefore, there is a need to create high-performance learners trained with more easily obtained data from different domains. This methodology is referred to as transfer learning. This survey paper formally defines transfer learning, presents information on current solutions, and reviews applications applied to transfer learning. Lastly, there is information listed on software downloads for various transfer learning solutions and a discussion of possible future research work. The transfer learning solutions surveyed are independent of data size and can be applied to big data environments.",
+          "url": "https://doi.org/10.1186/s40537-016-0043-6"
+        },
+        {
+          "title": "Learning discriminative features via deep metric learning for video ...",
+          "abstract": "The representation learning methods focus on extracting more discriminative feature representations from person videos.",
+          "url": "https://www.sciencedirect.com/science/article/abs/pii/S0957417425017440"
+        },
+        {
+          "title": "Learning Discriminative Features with Multiple Granularities for Person Re ...",
+          "abstract": "In this paper, we propose an end-to-end feature learning strategy integrating discriminative information with various granularities.",
+          "url": "https://www.researchgate.net/publication/328372995_Learning_Discriminative_Features_with_Multiple_Granularities_for_Person_Re-Identification"
+        }
+      ],
+      "true_votes": 2,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "The second core challenge is bridging the gap between query and target using deep metric learning.",
+      "evidence": [
+        {
+          "title": "Learning Semantic-Aligned Feature Representation for Text-Based Person Search",
+          "abstract": "Text-based person search aims to retrieve images of a certain pedestrian by a textual description. The key challenge of this task is to eliminate the inter-modality gap and achieve the feature alignment across modalities. In this paper, we propose a semantic-aligned embedding method for text-based person search, in which the feature alignment across modalities is achieved by automatically learning the semantic-aligned visual features and textual features. First, we introduce two Transformer-based backbones to encode robust feature representations of the images and texts. Second, we design a semantic-aligned feature aggregation network to adaptively select and aggregate features with the same semantics into part-aware features, which is achieved by a multi-head attention module constrained by a cross-modality part alignment loss and a diversity loss. Experimental results on the CUHK-PEDES and Flickr30K datasets show that our method achieves state-of-the-art performances.",
+          "url": "https://arxiv.org/abs/2112.06714"
+        },
+        {
+          "title": "Natural Language Person Search Using Deep Reinforcement Learning",
+          "abstract": "Recent success in deep reinforcement learning is having an agent learn how to play Go and beat the world champion without any prior knowledge of the game. In that task, the agent has to make a decision on what action to take based on the positions of the pieces. Person Search is recently explored using natural language based text description of images for video surveillance applications (S.Li et.al). We see (Fu.et al) provides an end to end approach for object-based retrieval using deep reinforcement learning without constraints placed on which objects are being detected. However, we believe for real-world applications such as person search defining specific constraints which identify a person as opposed to starting with a general object detection will have benefits in terms of performance and computational resources required. In our task, Deep reinforcement learning would localize the person in an image by reshaping the sizes of the bounding boxes. Deep Reinforcement learning with appropriate constraints would look only for the relevant person in the image as opposed to an unconstrained approach where each individual objects in the image are ranked. For person search, the agent is trying to form a tight bounding box around the person in the image who matches the description. The bounding box is initialized to the full image and at each time step, the agent makes a decision on how to change the current bounding box so that it has a tighter bound around the person based on the description of the person and the pixel values of the current bounding box. After the agent takes an action, it will be given a reward based on the Intersection over Union (IoU) of the current bounding box and the ground truth box. Once the agent believes that the bounding box is covering the person, it will indicate that the person is found.",
+          "url": "https://arxiv.org/abs/1809.00365"
+        },
+        {
+          "title": "Robust feature matching in the wild",
+          "abstract": "Finding corresponding key points in images from security camera videos is challenging. Images are generally low quality and acquired in uncontrolled conditions with visual distortions caused by weather, crowded scenes, emergency lighting or the high angle of the camera mounting. We describe a methodology to match features between images that performs especially well with real-world images. We introduce a novel blur sensitive feature detection method, a combinatorial feature descriptor and a distance calculation that efficiently unites texture and colour attributes to discriminate feature correspondence in low quality images. Our methods are tested by performing key point matching on real-world security images such as outdoor CCTV videos, and we demonstrate an improvement in the ability to match features between images compared with the standard feature descriptors extracted from the same set of feature points. We use key point features from Harris Corners, SIFT, SURF, BRISK and FAST as well as MSER and MSCR region detectors to provide a comprehensive analysis of our generic method. We demonstrate feature matching using a 138-dimensional descriptor that improves the matching performance of a state-of-the-art 384-dimension colour descriptor with just 40% of the storage requirements.",
+          "url": "https://doi.org/10.1109/sai.2015.7237208"
+        },
+        {
+          "title": "Deep Metric Learning: a (Long) Survey | Chan Kha Vu",
+          "abstract": "A brief survey of common supervised approaches for Deep Metric Learning, as well as the new methods proposed in recent years.",
+          "url": "https://hav4ik.github.io/articles/deep-metric-learning-survey/"
+        },
+        {
+          "title": "Fine-Grained Categorization and Dataset Bootstrapping Using Deep ...",
+          "abstract": "Using deep metric learning with humans in the loop, we learn a low dimensional fea- ture embedding for each category that can be used for fine-grained visual ...",
+          "url": "https://openaccess.thecvf.com/content_cvpr_2016/papers/Cui_Fine-Grained_Categorization_and_CVPR_2016_paper.pdf"
+        }
+      ],
+      "true_votes": 1,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "The third core challenge is mitigating inconsistencies between the detection and identification tasks.",
+      "evidence": [
+        {
+          "title": "Robust feature matching in the wild",
+          "abstract": "Finding corresponding key points in images from security camera videos is challenging. Images are generally low quality and acquired in uncontrolled conditions with visual distortions caused by weather, crowded scenes, emergency lighting or the high angle of the camera mounting. We describe a methodology to match features between images that performs especially well with real-world images. We introduce a novel blur sensitive feature detection method, a combinatorial feature descriptor and a distance calculation that efficiently unites texture and colour attributes to discriminate feature correspondence in low quality images. Our methods are tested by performing key point matching on real-world security images such as outdoor CCTV videos, and we demonstrate an improvement in the ability to match features between images compared with the standard feature descriptors extracted from the same set of feature points. We use key point features from Harris Corners, SIFT, SURF, BRISK and FAST as well as MSER and MSCR region detectors to provide a comprehensive analysis of our generic method. We demonstrate feature matching using a 138-dimensional descriptor that improves the matching performance of a state-of-the-art 384-dimension colour descriptor with just 40% of the storage requirements.",
+          "url": "https://doi.org/10.1109/sai.2015.7237208"
+        },
+        {
+          "title": "Natural Language Person Search Using Deep Reinforcement Learning",
+          "abstract": "Recent success in deep reinforcement learning is having an agent learn how to play Go and beat the world champion without any prior knowledge of the game. In that task, the agent has to make a decision on what action to take based on the positions of the pieces. Person Search is recently explored using natural language based text description of images for video surveillance applications (S.Li et.al). We see (Fu.et al) provides an end to end approach for object-based retrieval using deep reinforcement learning without constraints placed on which objects are being detected. However, we believe for real-world applications such as person search defining specific constraints which identify a person as opposed to starting with a general object detection will have benefits in terms of performance and computational resources required. In our task, Deep reinforcement learning would localize the person in an image by reshaping the sizes of the bounding boxes. Deep Reinforcement learning with appropriate constraints would look only for the relevant person in the image as opposed to an unconstrained approach where each individual objects in the image are ranked. For person search, the agent is trying to form a tight bounding box around the person in the image who matches the description. The bounding box is initialized to the full image and at each time step, the agent makes a decision on how to change the current bounding box so that it has a tighter bound around the person based on the description of the person and the pixel values of the current bounding box. After the agent takes an action, it will be given a reward based on the Intersection over Union (IoU) of the current bounding box and the ground truth box. Once the agent believes that the bounding box is covering the person, it will indicate that the person is found.",
+          "url": "https://arxiv.org/abs/1809.00365"
+        },
+        {
+          "title": "Learning Semantic-Aligned Feature Representation for Text-Based Person Search",
+          "abstract": "Text-based person search aims to retrieve images of a certain pedestrian by a textual description. The key challenge of this task is to eliminate the inter-modality gap and achieve the feature alignment across modalities. In this paper, we propose a semantic-aligned embedding method for text-based person search, in which the feature alignment across modalities is achieved by automatically learning the semantic-aligned visual features and textual features. First, we introduce two Transformer-based backbones to encode robust feature representations of the images and texts. Second, we design a semantic-aligned feature aggregation network to adaptively select and aggregate features with the same semantics into part-aware features, which is achieved by a multi-head attention module constrained by a cross-modality part alignment loss and a diversity loss. Experimental results on the CUHK-PEDES and Flickr30K datasets show that our method achieves state-of-the-art performances.",
+          "url": "https://arxiv.org/abs/2112.06714"
+        },
+        {
+          "title": "Algorithmic bias detection and mitigation: Best practices ...",
+          "abstract": "Our research presents a framework for algorithmic hygiene, which identifies some specific causes of biases and employs best practices to ...",
+          "url": "https://www.brookings.edu/articles/algorithmic-bias-detection-and-mitigation-best-practices-and-policies-to-reduce-consumer-harms/"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    }
+  ]
+}

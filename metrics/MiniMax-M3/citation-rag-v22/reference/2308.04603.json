@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2308.04603",
+  "model": "MiniMax-M3",
+  "system": "citation-rag-v22",
+  "reference_precision": 0.375,
+  "reference_recall": 0.04477611940298507,
+  "reference_count": 8,
+  "reference_matches": 3,
+  "ground_truth_count": 67,
+  "predicted_titles": [
+    "Distortion Agnostic Deep Watermarking",
+    "Deep Boosting Robustness of DNN-based Image Watermarking via DBMark",
+    "End-to-End Image Steganography Using Deep Convolutional Autoencoders",
+    "A Robust Image Watermarking System Based on Deep Neural Networks",
+    "An Automated and Robust Image Watermarking Scheme Based on Deep Neural Networks",
+    "Shrinkage and Redundant Feature Elimination Network-Based Robust Image Zero-Watermarking",
+    "LECA: A Learned Approach for Efficient Cover-agnostic Watermarking",
+    "Robust Zero Watermarking Algorithm for Medical Images Based on Improved NasNet-Mobile and DCT"
+  ]
+}

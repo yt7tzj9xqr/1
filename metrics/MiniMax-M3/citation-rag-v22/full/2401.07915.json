@@ -1,0 +1,355 @@
+{
+  "arxiv_id": "2401.07915",
+  "model": "MiniMax-M3",
+  "system": "citation-rag-v22",
+  "reference_precision": 0.4,
+  "reference_recall": 0.015384615384615385,
+  "reference_count": 10,
+  "reference_matches": 4,
+  "ground_truth_count": 260,
+  "predicted_titles": [
+    "Learning Dexterous In-Hand Manipulation",
+    "Deep visual foresight for planning robot motion",
+    "Continual Policy Distillation of Reinforcement Learning-based Controllers for Soft Robotic In-Hand Manipulation",
+    "TacGNN:Learning Tactile-based In-hand Manipulation with a Blind Robot",
+    "Reinforcement and Imitation Learning for Diverse Visuomotor Skills",
+    "Hierarchical reinforcement learning for in-hand robotic manipulation using Davenport chained rotations",
+    "End-To-End Robotic Reinforcement Learning without Reward Engineering",
+    "A Mathematical Introduction to Robotic Manipulation",
+    "Trends and challenges in robot manipulation",
+    "Dextrous manipulation with rolling contacts"
+  ],
+  "cited_match_rate": 0.96875,
+  "cited_count": 32,
+  "cited_supported": 31,
+  "cited_details": [
+    {
+      "statement": "A Mathematical Introduction to Robotic Manipulation presents a mathematical formulation of the kinematics, dynamics, and control of robot manipulators (https://directory.doabooks.org/handle/20.500.12854/174269).",
+      "url": "https://directory.doabooks.org/handle/20.500.12854/174269",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The book uses an elegant set of mathematical tools that emphasizes the geometry of robot motion and allows a large class of robotic manipulation problems to be analyzed within a unified framework (https://directory.doabooks.org/handle/20.500.12854/174269).",
+      "url": "https://directory.doabooks.org/handle/20.500.12854/174269",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The foundation of the book is a derivation of robot kinematics using the product of the exponentials formula (https://directory.doabooks.org/handle/20.500.12854/174269).",
+      "url": "https://directory.doabooks.org/handle/20.500.12854/174269",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The authors explore the kinematics of open-chain manipulators and multifingered robot hands (https://directory.doabooks.org/handle/20.500.12854/174269).",
+      "url": "https://directory.doabooks.org/handle/20.500.12854/174269",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The authors present an analysis of the dynamics and control of robot systems (https://directory.doabooks.org/handle/20.500.12854/174269).",
+      "url": "https://directory.doabooks.org/handle/20.500.12854/174269",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The authors discuss the specification and control of internal forces and internal motions (https://directory.doabooks.org/handle/20.500.12854/174269).",
+      "url": "https://directory.doabooks.org/handle/20.500.12854/174269",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The authors address the implications of the nonholonomic nature of rolling contact (https://directory.doabooks.org/handle/20.500.12854/174269).",
+      "url": "https://directory.doabooks.org/handle/20.500.12854/174269",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Dextrous manipulation is a problem of paramount importance in the study of multifingered robotic hands (https://doi.org/10.1109/robot.1997.614264).",
+      "url": "https://doi.org/10.1109/robot.1997.614264",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The main objectives are to generate trajectories for the finger joints so that through the effects of contact constraints, the object can be transferred to a goal grasp configuration, and to derive control algorithms to realize planned trajectories (https://doi.org/10.1109/robot.1997.614264).",
+      "url": "https://doi.org/10.1109/robot.1997.614264",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Researchers integrate the relevant theories of contact kinematics, nonholonomic motion planning, and grasp stability to develop a general technique for dextrous manipulation planning with multifingered hands (https://doi.org/10.1109/robot.1997.614264).",
+      "url": "https://doi.org/10.1109/robot.1997.614264",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Experimental results are discussed in the paper (https://doi.org/10.1109/robot.1997.614264).",
+      "url": "https://doi.org/10.1109/robot.1997.614264",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A key challenge in scaling up robot learning to many skills and environments is removing the need for human supervision, so that robots can collect their own data and improve their own performance without being limited by the cost of requesting human feedback (http://arxiv.org/abs/1610.00696).",
+      "url": "http://arxiv.org/abs/1610.00696",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Model-based reinforcement learning holds the promise of enabling an agent to learn from unlabeled video experience (http://arxiv.org/abs/1610.00696).",
+      "url": "http://arxiv.org/abs/1610.00696",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "A five-fingered humanoid hand trained with reinforcement learning manipulates a block from an initial configuration to a goal configuration using vision for sensing (https://arxiv.org/abs/1808.00177).",
+      "url": "https://arxiv.org/abs/1808.00177",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Reinforcement learning is used to learn dexterous in-hand manipulation policies which can perform vision-based object reorientation on a physical five-fingered humanoid hand (https://arxiv.org/abs/1808.00177).",
+      "url": "https://arxiv.org/abs/1808.00177",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "TacGNN is a novel framework for tactile-based dexterous manipulation learning with a blind anthropomorphic robotic hand without visual sensing (https://arxiv.org/abs/2304.00736).",
+      "url": "https://arxiv.org/abs/2304.00736",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Object-related states are extracted from the raw tactile signals by a graph-based perception model, and the resulting tactile features are then utilized in the policy learning of an in-hand manipulation task (https://arxiv.org/abs/2304.00736).",
+      "url": "https://arxiv.org/abs/2304.00736",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Hierarchical reinforcement learning for in-hand robotic manipulation is proposed using Davenport chained rotations (https://arxiv.org/abs/2210.00795).",
+      "url": "https://arxiv.org/abs/2210.00795",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Dexterous manipulation, often facilitated by multi-fingered robotic hands, holds solid impact for real-world applications (https://arxiv.org/abs/2404.04219).",
+      "url": "https://arxiv.org/abs/2404.04219",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Soft robotic hands, due to their compliant nature, offer flexibility and adaptability during object grasping and manipulation (https://arxiv.org/abs/2404.04219).",
+      "url": "https://arxiv.org/abs/2404.04219",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Benefits come with challenges, particularly in the control development for finger coordination (https://arxiv.org/abs/2404.04219).",
+      "url": "https://arxiv.org/abs/2404.04219",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Reinforcement learning can be employed to train object-specific in-hand manipulation policies, but with limited adaptability (https://arxiv.org/abs/2404.04219).",
+      "url": "https://arxiv.org/abs/2404.04219",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A model-free deep reinforcement learning method that leverages a small amount of demonstration data to assist a reinforcement learning agent is proposed (https://doi.org/10.15607/rss.2018.xiv.009).",
+      "url": "https://doi.org/10.15607/rss.2018.xiv.009",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "This approach is applied to robotic manipulation tasks to train end-to-end visuomotor policies that map directly from RGB camera inputs to joint velocities (https://doi.org/10.15607/rss.2018.xiv.009).",
+      "url": "https://doi.org/10.15607/rss.2018.xiv.009",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The approach can solve a wide variety of visuomotor tasks, for which engineering a scripted controller would be laborious (https://doi.org/10.15607/rss.2018.xiv.009).",
+      "url": "https://doi.org/10.15607/rss.2018.xiv.009",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Real-world applications of reinforcement learning must specify the goal of the task by means of a manually programmed reward function (https://doi.org/10.15607/rss.2019.xv.073).",
+      "url": "https://doi.org/10.15607/rss.2019.xv.073",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "This practice requires either designing the very same perception pipeline that end-to-end reinforcement learning promises to avoid, or else instrumenting the environment with additional sensors to determine if the task has been performed successfully (https://doi.org/10.15607/rss.2019.xv.073).",
+      "url": "https://doi.org/10.15607/rss.2019.xv.073",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "An approach is proposed for removing the need for manual engineering of reward specifications by enabling a robot to learn from successful examples (https://doi.org/10.15607/rss.2019.xv.073).",
+      "url": "https://doi.org/10.15607/rss.2019.xv.073",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Our ability to grab, hold, and manipulate objects involves our dexterous hands, our sense of touch, and feedback from our eyes and muscles that allows us to maintain a controlled grip (https://doi.org/10.1126/science.aat8414).",
+      "url": "https://doi.org/10.1126/science.aat8414",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Billard and Kragic review the progress made in robotics to emulate these functions (https://doi.org/10.1126/science.aat8414).",
+      "url": "https://doi.org/10.1126/science.aat8414",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Systems have developed from simple, pinching grippers operating in a fully defined environment to robots that can identify, select, and manipulate objects from a random collection (https://doi.org/10.1126/science.aat8414).",
+      "url": "https://doi.org/10.1126/science.aat8414",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Further developments are emerging from advances in computer vision, computer processing capabilities, and tactile materials that give feedback to the robot (https://doi.org/10.1126/science.aat8414).",
+      "url": "https://doi.org/10.1126/science.aat8414",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    }
+  ],
+  "noncited_factual_accuracy": 1.0,
+  "noncited_count": 3,
+  "noncited_correct": 3,
+  "noncited_details": [
+    {
+      "claim": "Soft robotic hands provide compliance that offers flexibility and adaptability during object grasping and manipulation.",
+      "evidence": [
+        {
+          "title": "Continual Policy Distillation of Reinforcement Learning-based Controllers for Soft Robotic In-Hand Manipulation",
+          "abstract": "Dexterous manipulation, often facilitated by multi-fingered robotic hands, holds solid impact for real-world applications. Soft robotic hands, due to their compliant nature, offer flexibility and adaptability during object grasping and manipulation. Yet, benefits come with challenges, particularly in the control development for finger coordination. Reinforcement Learning (RL) can be employed to train object-specific in-hand manipulation policies, but limiting adaptability and generalizability. We introduce a Continual Policy Distillation (CPD) framework to acquire a versatile controller for in-hand manipulation, to rotate different objects in shape and size within a four-fingered soft gripper. The framework leverages Policy Distillation (PD) to transfer knowledge from expert policies to a continually evolving student policy network. Exemplar-based rehearsal methods are then integrated to mitigate catastrophic forgetting and enhance generalization. The performance of the CPD framework over various replay strategies demonstrates its effectiveness in consolidating knowledge from multiple experts and achieving versatile and adaptive behaviours for in-hand manipulation tasks.",
+          "url": "https://arxiv.org/abs/2404.04219"
+        },
+        {
+          "title": "Mechanical Properties for the Grasp of a Robotic Hand",
+          "abstract": "The subject of this paper forms part of a broader effort to model the mechanics of grasping and fine-manipulation for robots. Grasping is the act of acquiring and holding (gripping) an object. Fine-manipulation is an extension of grasping to include control of the object using an end-effector such as a gripper or a hand. A mechanical model of grasping and manipulation forms the basis for controlling grippers and paves the way for robots that can make independent judgments about how to pick up and handle the objects they encounter. In this paper a procedure is developed for computing physical properties with which a grasp may be described. Among these properties are grip strength, stability, compliance and mobility. The results depend strongly on the interaction between the gripping surfaces and the object. For example, a grasp may be unstable when the fingertips are pointed, but stable for rounded fingertips. The analysis suggests that particular kinds of sensory information are especially useful in controlling a grasp and supports the notion that general grasping rules of thumb can be identified for use by robots. Originator- supplied key words include: Mechanical properties, Three dimensional, Fingers, Kinematics.",
+          "url": "https://doi.org/10.21236/ada150062"
+        },
+        {
+          "title": "TacGNN:Learning Tactile-based In-hand Manipulation with a Blind Robot",
+          "abstract": "In this paper, we propose a novel framework for tactile-based dexterous manipulation learning with a blind anthropomorphic robotic hand, i.e. without visual sensing. First, object-related states were extracted from the raw tactile signals by a graph-based perception model - TacGNN. The resulting tactile features were then utilized in the policy learning of an in-hand manipulation task in the second stage. This method was examined by a Baoding ball task - simultaneously manipulating two spheres around each other by 180 degrees in hand. We conducted experiments on object states prediction and in-hand manipulation using a reinforcement learning algorithm (PPO). Results show that TacGNN is effective in predicting object-related states during manipulation by decreasing the RMSE of prediction to 0.096cm comparing to other methods, such as MLP, CNN, and GCN. Finally, the robot hand could finish an in-hand manipulation task solely relying on the robotic own perception - tactile sensing and proprioception. In addition, our methods are tested on three tasks with different difficulty levels and transferred to the real robot without further training.",
+          "url": "https://arxiv.org/abs/2304.00736"
+        },
+        {
+          "title": "Soft, Compliant Tactile Robotic Manipulators",
+          "abstract": "When we look to the future of soft robotics and manipulation, we begin to look towards sensory-rich and compliant grasping mechanisms.",
+          "url": "https://dspace.mit.edu/entities/publication/f937c71b-7844-45fb-aaea-640ebc3e61eb"
+        },
+        {
+          "title": "A Soft-Robotic Approach to Anthropomorphic ...",
+          "abstract": "by J Zhou · 2019 · Cited by 192 — this paper investigated the soft robotic approach, on the influence of passive compliance to functional dexterity, offering insights to their efficacy",
+          "url": "https://hub.hku.hk/bitstream/10722/275058/1/Content.pdf"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "Tactile sensing can enable dexterous manipulation with a robotic hand that does not use visual sensing.",
+      "evidence": [
+        {
+          "title": "TacGNN:Learning Tactile-based In-hand Manipulation with a Blind Robot",
+          "abstract": "In this paper, we propose a novel framework for tactile-based dexterous manipulation learning with a blind anthropomorphic robotic hand, i.e. without visual sensing. First, object-related states were extracted from the raw tactile signals by a graph-based perception model - TacGNN. The resulting tactile features were then utilized in the policy learning of an in-hand manipulation task in the second stage. This method was examined by a Baoding ball task - simultaneously manipulating two spheres around each other by 180 degrees in hand. We conducted experiments on object states prediction and in-hand manipulation using a reinforcement learning algorithm (PPO). Results show that TacGNN is effective in predicting object-related states during manipulation by decreasing the RMSE of prediction to 0.096cm comparing to other methods, such as MLP, CNN, and GCN. Finally, the robot hand could finish an in-hand manipulation task solely relying on the robotic own perception - tactile sensing and proprioception. In addition, our methods are tested on three tasks with different difficulty levels and transferred to the real robot without further training.",
+          "url": "https://arxiv.org/abs/2304.00736"
+        },
+        {
+          "title": "Learning Dexterous In-Hand Manipulation",
+          "abstract": "We use reinforcement learning (RL) to learn dexterous in-hand manipulation policies which can perform vision-based object reorientation on a physical Shadow Dexterous Hand. The training is performed in a simulated environment in which we randomize many of the physical properties of the system like friction coefficients and an object's appearance. Our policies transfer to the physical robot despite being trained entirely in simulation. Our method does not rely on any human demonstrations, but many behaviors found in human manipulation emerge naturally, including finger gaiting, multi-finger coordination, and the controlled use of gravity. Our results were obtained using the same distributed RL system that was used to train OpenAI Five. We also include a video of our results: https://youtu.be/jwSbzNHGflM",
+          "url": "https://arxiv.org/abs/1808.00177"
+        },
+        {
+          "title": "Deep visual foresight for planning robot motion",
+          "abstract": "A key challenge in scaling up robot learning to many skills and environments is removing the need for human supervision, so that robots can collect their own data and improve their own performance without being limited by the cost of requesting human feedback. Model-based reinforcement learning holds the promise of enabling an agent to learn to predict the effects of its actions, which could provide flexible predictive models for a wide range of tasks and environments, without detailed human supervision. We develop a method for combining deep action-conditioned video prediction models with model-predictive control that uses entirely unlabeled training data. Our approach does not require a calibrated camera, an instrumented training set-up, nor precise sensing and actuation. Our results show that our method enables a real robot to perform nonprehensile manipulation -- pushing objects -- and can handle novel objects not seen during training.",
+          "url": "http://arxiv.org/abs/1610.00696"
+        },
+        {
+          "title": "Finger-shaped sensor enables more dexterous robots",
+          "abstract": "Their device, which provides high-resolution tactile sensing over a large area, could enable a robotic hand to perform multiple types of grasps.",
+          "url": "https://computing.mit.edu/news/finger-shaped-sensor-enables-more-dexterous-robots/"
+        },
+        {
+          "title": "Rotating without Seeing: Towards In-hand Dexterity through ...",
+          "abstract": "In this paper, we present Touch Dexterity, a new system that can perform in-hand object rotation using only touching without seeing the object. Instead of ...",
+          "url": "https://touchdexterity.github.io/"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "In-hand robotic manipulation can be formulated using Davenport chained rotations.",
+      "evidence": [
+        {
+          "title": "Hierarchical reinforcement learning for in-hand robotic manipulation using Davenport chained rotations",
+          "abstract": "End-to-end reinforcement learning techniques are among the most successful methods for robotic manipulation tasks. However, the training time required to find a good policy capable of solving complex tasks is prohibitively large. Therefore, depending on the computing resources available, it might not be feasible to use such techniques. The use of domain knowledge to decompose manipulation tasks into primitive skills, to be performed in sequence, could reduce the overall complexity of the learning problem, and hence reduce the amount of training required to achieve dexterity. In this paper, we propose the use of Davenport chained rotations to decompose complex 3D rotation goals into a concatenation of a smaller set of more simple rotation skills. State-of-the-art reinforcement-learning-based methods can then be trained using less overall simulated experience. We compare its performance with the popular Hindsight Experience Replay method, trained in an end-to-end fashion using the same amount of experience in a simulated robotic hand environment. Despite a general decrease in performance of the primitive skills when being sequentially executed, we find that decomposing arbitrary 3D rotations into elementary rotations is beneficial when computing resources are limited, obtaining increases of success rates of approximately 10% on the most complex 3D rotations with respect to the success rates obtained by HER trained in an end-to-end fashion, and increases of success rates between 20% and 40% on the most simple rotations.",
+          "url": "https://arxiv.org/abs/2210.00795"
+        },
+        {
+          "title": "Learning Dexterous In-Hand Manipulation",
+          "abstract": "We use reinforcement learning (RL) to learn dexterous in-hand manipulation policies which can perform vision-based object reorientation on a physical Shadow Dexterous Hand. The training is performed in a simulated environment in which we randomize many of the physical properties of the system like friction coefficients and an object's appearance. Our policies transfer to the physical robot despite being trained entirely in simulation. Our method does not rely on any human demonstrations, but many behaviors found in human manipulation emerge naturally, including finger gaiting, multi-finger coordination, and the controlled use of gravity. Our results were obtained using the same distributed RL system that was used to train OpenAI Five. We also include a video of our results: https://youtu.be/jwSbzNHGflM",
+          "url": "https://arxiv.org/abs/1808.00177"
+        },
+        {
+          "title": "Continual Policy Distillation of Reinforcement Learning-based Controllers for Soft Robotic In-Hand Manipulation",
+          "abstract": "Dexterous manipulation, often facilitated by multi-fingered robotic hands, holds solid impact for real-world applications. Soft robotic hands, due to their compliant nature, offer flexibility and adaptability during object grasping and manipulation. Yet, benefits come with challenges, particularly in the control development for finger coordination. Reinforcement Learning (RL) can be employed to train object-specific in-hand manipulation policies, but limiting adaptability and generalizability. We introduce a Continual Policy Distillation (CPD) framework to acquire a versatile controller for in-hand manipulation, to rotate different objects in shape and size within a four-fingered soft gripper. The framework leverages Policy Distillation (PD) to transfer knowledge from expert policies to a continually evolving student policy network. Exemplar-based rehearsal methods are then integrated to mitigate catastrophic forgetting and enhance generalization. The performance of the CPD framework over various replay strategies demonstrates its effectiveness in consolidating knowledge from multiple experts and achieving versatile and adaptive behaviours for in-hand manipulation tasks.",
+          "url": "https://arxiv.org/abs/2404.04219"
+        },
+        {
+          "title": "Path Planning for 3-D In-Hand Manipulation of Micro-Objects ...",
+          "abstract": "In this paper, we propose an approach that allows to plan for 3-D dexterous in-hand manipulation with a moderate increase in complexity.",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8398635/"
+        },
+        {
+          "title": "In-Hand Object Rotation via Rapid Motor Adaptation | OpenReview",
+          "abstract": "This paper presents an algorithm to achieve in-hand object rotation through finger-gaiting using linkage-based robot hand.",
+          "url": "https://openreview.net/forum?id=Xux9gSS7WE0"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    }
+  ]
+}

@@ -1,0 +1,194 @@
+{
+  "arxiv_id": "2310.12986",
+  "model": "MiniMax-M3",
+  "system": "search-baseline-v14",
+  "reference_precision": 0.0,
+  "reference_recall": 0.0,
+  "reference_count": 12,
+  "reference_matches": 0,
+  "ground_truth_count": 61,
+  "predicted_titles": [
+    "Face manifold: manifold learning for synthetic face generation",
+    "Nonlinear dimensionality reduction by locally linear ...",
+    "Tenenbaum Reduction A Global Geometric ...",
+    "Laplacian Eigenmaps for Dimensionality Reduction and Data ...",
+    "Human Age Estimation With Regression on Discriminative Aging Manifold",
+    "Image-Based Human Age Estimation by Manifold Learning and Locally Adjusted Robust Regression",
+    "Rank Flow Embedding for Unsupervised and Semi-Supervised Manifold Learning",
+    "Gait-based human age estimation using age group-dependent manifold learning and regression",
+    "Visual Domain Adaptation with Manifold Embedded Distribution Alignment",
+    "Estimating Visual Information From Audio Through Manifold Learning",
+    "Sparse Representation Classifier Guided Grassmann Reconstruction Metric Learning With Applications to Image Set Analysis",
+    "Learning a perceptual manifold with deep features for animation video resequencing"
+  ],
+  "cited_match_rate": 1.0,
+  "cited_count": 23,
+  "cited_supported": 23,
+  "cited_details": [
+    {
+      "statement": "Roweis and Saul introduced locally linear embedding (LLE) in 2000 as an unsupervised learning algorithm that computes low-dimensional, neighborhood-preserving embeddings of high-dimensional inputs [https://www.semanticscholar.org/paper/Nonlinear-dimensionality-reduction-by-locally-Roweis-Saul/f0a3e1752e1146da927adc24ae07144ab2e744ec].",
+      "url": "https://semanticscholar.org/paper/Nonlinear-dimensionality-reduction-by-locally-Roweis-Saul/f0a3e1752e1146da927adc24ae07144ab2e744ec",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "published \"A Global Geometric Framework for Nonlinear Dimensionality Reduction\" in Science, volume 290, page 2319, in 2000 [https://pdodds.w3.uvm.edu/files/papers/others/2000/tenenbaum2000a.pdf].",
+      "url": "https://pdodds.w3.uvm.edu/files/papers/others/2000/tenenbaum2000a.pdf",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Laplacian Eigenmaps was proposed for Dimensionality Reduction and Data Representation, addressing one of the central problems in machine learning and pattern recognition: developing appropriate representations for complex data [https://www.mitpressjournals.org/doi/pdf/10.1162/089976603321780317].",
+      "url": "https://mitpressjournals.org/doi/pdf/10.1162/089976603321780317",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Due to the temporal property of age progression, face images with aging features may display some sequential patterns with low-dimensional distributions [https://doi.org/10.1109/tmm.2008.921847].",
+      "url": "https://doi.org/10.1109/tmm.2008.921847",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The study demonstrated that such aging patterns can be effectively extracted from a discriminant subspace learning algorithm and visualized as distinct manifold structures, with the dimensionality redundancy of the original image space significantly reduced by manifold analysis [https://doi.org/10.1109/tmm.2008.921847].",
+      "url": "https://doi.org/10.1109/tmm.2008.921847",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A multiple linear regression procedure, especially with a quadratic model function, can be facilitated by the low dimensionality to represent the manifold space embodying the discriminative property, with the framework evaluated by extensive simulations and compared with state-of-the-art methods on a large aging database [https://doi.org/10.1109/tmm.2008.921847].",
+      "url": "https://doi.org/10.1109/tmm.2008.921847",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A separate study introduced an age manifold learning scheme for extracting face aging features and designed a locally adjusted robust regressor for learning and prediction of human ages [https://doi.org/10.1109/tip.2008.924280].",
+      "url": "https://doi.org/10.1109/tip.2008.924280",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The approach improves age estimation accuracy significantly over all previous methods, with the merit shown by extensive experiments on a large internal age database and the public FG-NET database [https://doi.org/10.1109/tip.2008.924280].",
+      "url": "https://doi.org/10.1109/tip.2008.924280",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The aging process is determined by not only the person's gene, but also many external factors, such as health, living style, living location, and weather conditions, with males and females aging differently [https://doi.org/10.1109/tip.2008.924280].",
+      "url": "https://doi.org/10.1109/tip.2008.924280",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Gait-based human age estimation is expected to be important for applications such as automatic customer counting for marketing research or automatic age-based access control restriction for specific areas, since gait can be observable at a distance from a camera such as CCTV [https://www.semanticscholar.org/paper/b55438c64dcb2f52404152a90acecce2f7ded2d5].",
+      "url": "https://semanticscholar.org/paper/b55438c64dcb2f52404152a90acecce2f7ded2d5",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A proposed method composes age groups by clustering gait features with their age labels, classifies gait features for multiple age groups using a directed acyclic graph support vector machine, and learns an age regression model for each age group using support vector regression with a Gaussian kernel in conjunction with orthogonal locality preserving projection [https://www.semanticscholar.org/paper/b55438c64dcb2f52404152a90acecce2f7ded2d5].",
+      "url": "https://semanticscholar.org/paper/b55438c64dcb2f52404152a90acecce2f7ded2d5",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Estimating the face structure is a fundamental task in computer vision with applications in areas such as face recognition and medical surgeries [https://arxiv.org/abs/1910.01403].",
+      "url": "https://arxiv.org/abs/1910.01403",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Dinashi, Toosi, and Akhaee proposed a face manifold framework for synthetic face generation [https://arxiv.org/abs/1910.01403].",
+      "url": "https://arxiv.org/abs/1910.01403",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The framework addresses the main drawback of example-based face representations, which produces unsatisfactory outputs when the input face deviates largely from the example faces in the dataset [https://arxiv.org/abs/1910.01403].",
+      "url": "https://arxiv.org/abs/1910.01403",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Pedersoli, Wiebe, Banitalebi, Zhang, Tzanetakis, and Yi proposed a framework for extracting visual information about a scene using only audio signals, titled \"Estimating Visual Information From Audio Through Manifold Learning.\" [https://arxiv.org/abs/2208.02337]",
+      "url": "https://arxiv.org/abs/2208.02337",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Modeling a sequence of video frames as a linear subspace on a Grassmann manifold has become increasingly attractive in multiple computer vision applications, and learning an appropriate metric on the Grassmann manifold remains a key challenge [https://www.semanticscholar.org/paper/fd3bf3a9cef5500aa3b97588498e534c96006567].",
+      "url": "https://semanticscholar.org/paper/fd3bf3a9cef5500aa3b97588498e534c96006567",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A study proposed Grassmann Reconstruction Metric Learning (GRML) guided by a sparse representation-based classifier (SRC), which selects coefficients associated with each class to reconstruct training samples and is employed as a criterion to direct the design of a discriminant metric on the Grassmann manifold [https://www.semanticscholar.org/paper/fd3bf3a9cef5500aa3b97588498e534c96006567].",
+      "url": "https://semanticscholar.org/paper/fd3bf3a9cef5500aa3b97588498e534c96006567",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "GRML attempts to jointly maximize the inter-class reconstruction residual and minimize the intra-class reconstruction residual in a lower but more discriminative Grassmann manifold [https://www.semanticscholar.org/paper/fd3bf3a9cef5500aa3b97588498e534c96006567].",
+      "url": "https://semanticscholar.org/paper/fd3bf3a9cef5500aa3b97588498e534c96006567",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Wang, Feng, Chen, Yu, Huang, and Yu published \"Visual Domain Adaptation with Manifold Embedded Distribution Alignment.\" [https://arxiv.org/abs/1807.07258]",
+      "url": "https://arxiv.org/abs/1807.07258",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Valem, Pedronette, and Latecki proposed Rank Flow Embedding for Unsupervised and Semi-Supervised Manifold Learning, where image representation maps an image to a point in a high-dimensional feature space and similarity measurement relies on assessing relationships between these representations [https://arxiv.org/abs/2304.12448].",
+      "url": "https://arxiv.org/abs/2304.12448",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The paper notes that advances in acquisition and sharing technologies have made the growth of multimedia collections almost unlimited, while the availability of labeled data has not kept pace [https://arxiv.org/abs/2304.12448].",
+      "url": "https://arxiv.org/abs/2304.12448",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A 2021 study proposed a deep learning framework for animation video resequencing that produces new video sequences by minimizing a perceptual distance of images from an existing animation video clip, using activations of convolutional neural networks and a perceptual distance trained on human perceptual judgments [https://arxiv.org/abs/2111.01455].",
+      "url": "https://arxiv.org/abs/2111.01455",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The framework applies to a wide range of image styles and does not require hand-crafted feature extraction, background subtraction, or feature correspondence, and has applications to arranging unordered collections of images [https://arxiv.org/abs/2111.01455].",
+      "url": "https://arxiv.org/abs/2111.01455",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    }
+  ],
+  "noncited_factual_accuracy": null,
+  "noncited_count": 0,
+  "noncited_correct": 0,
+  "noncited_details": []
+}

@@ -1,0 +1,379 @@
+{
+  "arxiv_id": "2308.04603",
+  "model": "MiniMax-M3",
+  "system": "citation-rag-v22",
+  "reference_precision": 0.375,
+  "reference_recall": 0.04477611940298507,
+  "reference_count": 8,
+  "reference_matches": 3,
+  "ground_truth_count": 67,
+  "predicted_titles": [
+    "Distortion Agnostic Deep Watermarking",
+    "Deep Boosting Robustness of DNN-based Image Watermarking via DBMark",
+    "End-to-End Image Steganography Using Deep Convolutional Autoencoders",
+    "A Robust Image Watermarking System Based on Deep Neural Networks",
+    "An Automated and Robust Image Watermarking Scheme Based on Deep Neural Networks",
+    "Shrinkage and Redundant Feature Elimination Network-Based Robust Image Zero-Watermarking",
+    "LECA: A Learned Approach for Efficient Cover-agnostic Watermarking",
+    "Robust Zero Watermarking Algorithm for Medical Images Based on Improved NasNet-Mobile and DCT"
+  ],
+  "cited_match_rate": 0.967741935483871,
+  "cited_count": 31,
+  "cited_supported": 30,
+  "cited_details": [
+    {
+      "statement": "Image watermarking is the process of embedding information into an image that can survive under distortions, while requiring the encoded image to have little or no perceptual difference from the original image (https://arxiv.org/abs/2001.04580).",
+      "url": "https://arxiv.org/abs/2001.04580",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Deep learning-based methods have achieved impressive results in both visual quality and message payload under a wide variety of image distortions (https://arxiv.org/abs/2001.04580).",
+      "url": "https://arxiv.org/abs/2001.04580",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Least significant bits (LSB) was the earliest research on image information hiding, which encodes the secret message on the least significant bits of image pixels (https://arxiv.org/abs/2210.13801).",
+      "url": "https://arxiv.org/abs/2210.13801",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Digital watermarking requires high robustness and high invisibility (https://arxiv.org/abs/2210.13801).",
+      "url": "https://arxiv.org/abs/2210.13801",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A 2019 system presents a robust image watermarking system based on deep neural networks (https://arxiv.org/abs/1908.11331).",
+      "url": "https://arxiv.org/abs/1908.11331",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A 2020 system presents an automated and robust image watermarking scheme based on deep neural networks (https://arxiv.org/abs/2007.02460).",
+      "url": "https://arxiv.org/abs/2007.02460",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A 2021 method proposes a light-weight deep convolutional autoencoder architecture to embed a secret image inside a cover image and to extract the embedded secret image from the stego image (https://doi.org/10.1109/access.2021.3113953).",
+      "url": "https://doi.org/10.1109/access.2021.3113953",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The autoencoder method is evaluated using three datasets - COCO, CelebA and ImageNet (https://doi.org/10.1109/access.2021.3113953).",
+      "url": "https://doi.org/10.1109/access.2021.3113953",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Peak Signal-to-Noise Ratio, hiding capacity and imperceptibility results on the test set are used to measure the performance of the autoencoder method (https://doi.org/10.1109/access.2021.3113953).",
+      "url": "https://doi.org/10.1109/access.2021.3113953",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The autoencoder method has higher hiding capacity, security and robustness, and imperceptibility performances than other deep learning image steganography methods (https://doi.org/10.1109/access.2021.3113953).",
+      "url": "https://doi.org/10.1109/access.2021.3113953",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A 2022 system named LECA presents an efficient multi-bit deep image watermarking method that is cover-agnostic (https://arxiv.org/abs/2206.10813).",
+      "url": "https://arxiv.org/abs/2206.10813",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A 2022 framework called DBMark boosts the robustness of DNN-based image watermarking (https://arxiv.org/abs/2210.13801).",
+      "url": "https://arxiv.org/abs/2210.13801",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A 2020 framework proposes a distortion-agnostic watermarking scheme in which the image distortion is not explicitly modeled during training (https://arxiv.org/abs/2001.04580).",
+      "url": "https://arxiv.org/abs/2001.04580",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The distortion-agnostic framework achieves comparable or better results on training-time distortions and better performance on unknown distortions (https://arxiv.org/abs/2001.04580).",
+      "url": "https://arxiv.org/abs/2001.04580",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A 2023 paper offers a robustness zero watermarking strategy for medical pictures based on an Improved NasNet-Mobile convolutional neural network and the discrete cosine transform (DCT) (https://doi.org/10.3390/electronics12163444).",
+      "url": "https://doi.org/10.3390/electronics12163444",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The method adjusts the structure of the pre-trained NasNet-Mobile network by using a fully connected layer with 128 output and a regression layer instead of the original Softmax layer and classification layer (https://doi.org/10.3390/electronics12163444).",
+      "url": "https://doi.org/10.3390/electronics12163444",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The 128 features are extracted from the medical images using the NasNet-Mobile network with migration learning (https://doi.org/10.3390/electronics12163444).",
+      "url": "https://doi.org/10.3390/electronics12163444",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The extracted image features are subjected to DCT transform to extract low frequency data (https://doi.org/10.3390/electronics12163444).",
+      "url": "https://doi.org/10.3390/electronics12163444",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The perceptual hashing algorithm processes the extracted data to obtain a 32-bit binary feature vector (https://doi.org/10.3390/electronics12163444).",
+      "url": "https://doi.org/10.3390/electronics12163444",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "To address the contradiction between watermarking robustness and imperceptibility, a 2023 zero-watermarking method based on a Shrinkage and Redundant Feature Elimination Network (SRFENet) is proposed (https://doi.org/10.3390/sym15050964).",
+      "url": "https://doi.org/10.3390/sym15050964",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "SRFENet uses a dense connection to extract shallow and deep features from different convolutional layers (https://doi.org/10.3390/sym15050964).",
+      "url": "https://doi.org/10.3390/sym15050964",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "SRFENet applies a shrinkage module by automatically learning the threshold of each feature channel (https://doi.org/10.3390/sym15050964).",
+      "url": "https://doi.org/10.3390/sym15050964",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "An extracted feature map from SRFENet is used to construct a zero-watermark (https://doi.org/10.3390/sym15050964).",
+      "url": "https://doi.org/10.3390/sym15050964",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A redundant feature elimination module reduces redundant information for the remaining valid features by learning the weights of inter-feature and intra-feature (https://doi.org/10.3390/sym15050964).",
+      "url": "https://doi.org/10.3390/sym15050964",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A zero-watermark from the noised image is generated for copyright verification, which is symmetrical to the process of zero-watermark construction from the original image (https://doi.org/10.3390/sym15050964).",
+      "url": "https://doi.org/10.3390/sym15050964",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The medical-image system couples an improved NasNet-Mobile convolutional neural network with the discrete cosine transform and a perceptual hashing algorithm (https://doi.org/10.3390/electronics12163444).",
+      "url": "https://doi.org/10.3390/electronics12163444",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The SRFENet scheme trains the network with noised images to increase watermarking robustness (https://doi.org/10.3390/sym15050964).",
+      "url": "https://doi.org/10.3390/sym15050964",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The autoencoder method has been evaluated using various images including Lena, airplane, baboon and peppers and compared against other traditional image steganography methods (https://doi.org/10.1109/access.2021.3113953).",
+      "url": "https://doi.org/10.1109/access.2021.3113953",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The distortion-agnostic framework observes that prior deep learning-based watermarking methods require differentiable models for the image distortions at training time (https://arxiv.org/abs/2001.04580).",
+      "url": "https://arxiv.org/abs/2001.04580",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "These prior methods may generalize poorly to unknown distortions (https://arxiv.org/abs/2001.04580).",
+      "url": "https://arxiv.org/abs/2001.04580",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The medical-image paper frames its contribution as addressing the lack of robustness of existing medical image watermarking algorithms (https://doi.org/10.3390/electronics12163444).",
+      "url": "https://doi.org/10.3390/electronics12163444",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    }
+  ],
+  "noncited_factual_accuracy": 1.0,
+  "noncited_count": 4,
+  "noncited_correct": 4,
+  "noncited_details": [
+    {
+      "claim": "Watermarking is the process of embedding information into an image such that the embedded information can be recovered despite distortions applied to that image.",
+      "evidence": [
+        {
+          "title": "Distortion Agnostic Deep Watermarking",
+          "abstract": "Watermarking is the process of embedding information into an image that can survive under distortions, while requiring the encoded image to have little or no perceptual difference with the original image. Recently, deep learning-based methods achieved impressive results in both visual quality and message payload under a wide variety of image distortions. However, these methods all require differentiable models for the image distortions at training time, and may generalize poorly to unknown distortions. This is undesirable since the types of distortions applied to watermarked images are usually unknown and non-differentiable. In this paper, we propose a new framework for distortion-agnostic watermarking, where the image distortion is not explicitly modeled during training. Instead, the robustness of our system comes from two sources: adversarial training and channel coding. Compared to training on a fixed set of distortions and noise levels, our method achieves comparable or better results on distortions available during training, and better performance overall on unknown distortions.",
+          "url": "https://arxiv.org/abs/2001.04580"
+        },
+        {
+          "title": "Deep Boosting Robustness of DNN-based Image Watermarking via DBMark",
+          "abstract": "Image watermarking is a technique for hiding information into images that can withstand distortions while requiring the encoded image to be perceptually identical to the original image. Recent work based on deep neural networks (DNN) has achieved impressive progression in digital watermarking. Higher robustness under various distortions is the eternal pursuit of digital image watermarking approaches. In this paper, we propose DBMARK, a novel end-to-end digital image watermarking framework to deep boost the robustness of DNN-based image watermarking. The key novelty is the synergy of invertible neural networks (INN) and effective watermark features generation. The framework generates watermark features with redundancy and error correction ability through the effective neural network based message processor, synergized with the powerful information embedding and extraction abilities of INN to achieve higher robustness and invisibility. The powerful learning ability of neural networks enables the message processor to adapt to various distortions. In addition, we propose to embed the watermark information in the discrete wavelet transform (DWT) domain and design low-low (LL) sub-band loss to enhance invisibility. Extensive experiment results demonstrate the superiority of the proposed framework compared with the state-of-the-art ones under various distortions such as dropout, cropout, crop, Gaussian filter, and JPEG compression.",
+          "url": "https://arxiv.org/abs/2210.13801"
+        },
+        {
+          "title": "Integer DCT-based reversible watermarking for images using companding technique",
+          "abstract": "We present a high capacity reversible watermarking scheme using companding technique over integer DCT coefficients of image blocks. This scheme takes advantage of integer DCT coefficients' Laplacian-shape-like distribution, which permits low distortion between the watermarked image and the original one caused by the bit-shift operations of the companding technique in the embedding process. In our scheme, we choose AC coefficients in the integer DCT domain for the bit-shift operation, and therefore the capacity and the quality of the watermarked image can be adjusted by selecting different numbers of coefficients of different frequencies. To prevent overflows and underflows in the spatial domain caused by modification of the DCT coefficients, we design a block discrimination structure to find suitable blocks that can be used for embedding without overflow or underflow problems. We can also use this block discrimination structure to embed an overhead of location information of all blocks suitable for embedding. With this scheme, watermark bits can be embedded in the saved LSBs of coefficient blocks, and retrieved correctly during extraction, while the original image can be restored perfectly.",
+          "url": "https://doi.org/10.1117/12.527216"
+        },
+        {
+          "title": "SuperMark: Robust and Training-free Image Watermarking ...",
+          "abstract": "by R Hu · Cited by 9 — Under normal distortions, SuperMark achieves an average watermark extraction bit accuracy of 99.46%, and 89.29% under adaptive attacks.",
+          "url": "https://openreview.net/forum?id=T0ebbDO60R"
+        },
+        {
+          "title": "Fast fragile watermark embedding and iterative mechanism ...",
+          "abstract": "by S Bravo-Solorio · 2018 · Cited by 61 — The embedding strategy produce less embedding distortion and yet is capable of restoring images with manipulated regions of up to 45% of the image.",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1051200417302658"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "A watermarked image is required to have little or no perceptual difference from the original image.",
+      "evidence": [
+        {
+          "title": "Distortion Agnostic Deep Watermarking",
+          "abstract": "Watermarking is the process of embedding information into an image that can survive under distortions, while requiring the encoded image to have little or no perceptual difference with the original image. Recently, deep learning-based methods achieved impressive results in both visual quality and message payload under a wide variety of image distortions. However, these methods all require differentiable models for the image distortions at training time, and may generalize poorly to unknown distortions. This is undesirable since the types of distortions applied to watermarked images are usually unknown and non-differentiable. In this paper, we propose a new framework for distortion-agnostic watermarking, where the image distortion is not explicitly modeled during training. Instead, the robustness of our system comes from two sources: adversarial training and channel coding. Compared to training on a fixed set of distortions and noise levels, our method achieves comparable or better results on distortions available during training, and better performance overall on unknown distortions.",
+          "url": "https://arxiv.org/abs/2001.04580"
+        },
+        {
+          "title": "Shrinkage and Redundant Feature Elimination Network-Based Robust Image Zero-Watermarking",
+          "abstract": "To address the contradiction between watermarking robustness and imperceptibility, a zero-watermarking method based on shrinkage and a redundant feature elimination network (SRFENet) is proposed in this paper. First, in order to have the capability of resisting different image attacks, a dense connection was used to extract shallow and deep features from different convolutional layers. Secondly, to reduce unimportant information for robustness and uniqueness, in SRFENet, a shrinkage module was utilized by automatically learning the threshold of each feature channel. Then, to enhance watermarking uniqueness, a redundant feature elimination module was designed to reduce redundant information for the remaining valid features by learning the weights of inter-feature and intra-feature. In order to increase watermarking robustness further, noised images were generated for training. Finally, an extracted feature map from SRFENet was used to construct a zero-watermark. Furthermore, a zero-watermark from the noised image was generated for copyright verification, which is symmetrical to the process of zero-watermark construction from the original image. The experimental results showed that the proposed zero-watermarking method was robust to different single-image attacks (average BER is 0.0218) and hybrid image attacks (average NC is 0.9551), proving the significant generalization ability to resist different attacks. Compared with existing zero-watermarking methods, the proposed method is more robust since it extracts the main image features via learning a large number of different images for zero-watermark construction.",
+          "url": "https://doi.org/10.3390/sym15050964"
+        },
+        {
+          "title": "Robust Zero Watermarking Algorithm for Medical Images Based on Improved NasNet-Mobile and DCT",
+          "abstract": "In the continuous progress of mobile internet technology, medical image processing technology is also always being upgraded and improved. In this field, digital watermarking technology is significant and provides a strong guarantee for medical image information security. This paper offers a robustness zero watermarking strategy for medical pictures based on an Improved NasNet-Mobile convolutional neural network and the discrete cosine transform (DCT) to address the lack of robustness of existing medical image watermarking algorithms. First, the structure of the pre-training network NasNet-Mobile is adjusted by using a fully connected layer with 128 output and a regression layer instead of the original Softmax layer and classification layer, thus generating a regression network with 128 output, whereby the 128 features are extracted from the medical images using the NasNet-Mobile network with migration learning. Migration learning is then performed on the modified NasNet-Mobile network to obtain the trained network, which is then used to extract medical image features, and finally the extracted image features are subjected to DCT transform to extract low frequency data, and the perceptual hashing algorithm processes the extracted data to obtain a 32-bit binary feature vector. Before performing the watermark embedding, the watermark data is encrypted using the chaos mapping algorithm to increase data security. Next, the zero watermarking technique is used to allow the algorithm to embed and extract the watermark without changing the information contained in the medical image. The experimental findings demonstrate the algorithm’s strong resistance to both conventional and geometric assaults. The algorithm offers some practical application value in the realm of medicine when compared to other approaches.",
+          "url": "https://doi.org/10.3390/electronics12163444"
+        },
+        {
+          "title": "Watermarked Image - an overview",
+          "abstract": "The watermarked image must be perceptually identical to the original one under normal observation. An authentication watermarking system",
+          "url": "https://www.sciencedirect.com/topics/computer-science/watermarked-image"
+        },
+        {
+          "title": "its formal model, fundamental properties and possible attacks",
+          "abstract": "by H Nyeem · 2014 · Cited by 104 — the watermarked image is not perceptually similar to the original image. Perceptual similarity property is thus studied for the. Invisible ...",
+          "url": "https://link.springer.com/article/10.1186/1687-6180-2014-135"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "Digital image watermarking is the process of embedding and extracting a watermark covertly on a carrier image.",
+      "evidence": [
+        {
+          "title": "A Robust Image Watermarking System Based on Deep Neural Networks",
+          "abstract": "Digital image watermarking is the process of embedding and extracting watermark covertly on a carrier image. Incorporating deep learning networks with image watermarking has attracted increasing attention during recent years. However, existing deep learning-based watermarking systems cannot achieve robustness, blindness, and automated embedding and extraction simultaneously. In this paper, a fully automated image watermarking system based on deep neural networks is proposed to generalize the image watermarking processes. An unsupervised deep learning structure and a novel loss computation are proposed to achieve high capacity and high robustness without any prior knowledge of possible attacks. Furthermore, a challenging application of watermark extraction from camera-captured images is provided to validate the practicality as well as the robustness of the proposed system. Experimental results show the superiority performance of the proposed system as comparing against several currently available techniques.",
+          "url": "https://arxiv.org/abs/1908.11331"
+        },
+        {
+          "title": "An Automated and Robust Image Watermarking Scheme Based on Deep Neural Networks",
+          "abstract": "Digital image watermarking is the process of embedding and extracting a watermark covertly on a cover-image. To dynamically adapt image watermarking algorithms, deep learning-based image watermarking schemes have attracted increased attention during recent years. However, existing deep learning-based watermarking methods neither fully apply the fitting ability to learn and automate the embedding and extracting algorithms, nor achieve the properties of robustness and blindness simultaneously. In this paper, a robust and blind image watermarking scheme based on deep learning neural networks is proposed. To minimize the requirement of domain knowledge, the fitting ability of deep neural networks is exploited to learn and generalize an automated image watermarking algorithm. A deep learning architecture is specially designed for image watermarking tasks, which will be trained in an unsupervised manner to avoid human intervention and annotation. To facilitate flexible applications, the robustness of the proposed scheme is achieved without requiring any prior knowledge or adversarial examples of possible attacks. A challenging case of watermark extraction from phone camera-captured images demonstrates the robustness and practicality of the proposal. The experiments, evaluation, and application cases confirm the superiority of the proposed scheme.",
+          "url": "https://arxiv.org/abs/2007.02460"
+        },
+        {
+          "title": "An RST invariant image watermarking scheme using DWT-SVD",
+          "abstract": "Many digital image watermarking schemes are sensitive to geometric attacks. In this paper, we present an RST invariant watermarking scheme using DWT-SVD and logistic map in which the watermark is a visually meaningful grayscale logo. The embedding is done by modifying the singular values of the approximation subband of the host image with logistic map encrypted watermark, and then the watermarked image is reconstituted. The extraction is basically the inverse process of the embedding. Experiment results demonstrate the proposed scheme is able to withstand a variety of geometric attacks and some common signal processing such as additive noise.",
+          "url": "https://doi.org/10.1109/msna.2012.6324552"
+        },
+        {
+          "title": "CMC | Free Full-Text | Robust Deep Image Watermarking: A Survey",
+          "abstract": "Our review focuses on the innovative deep watermarking approaches that employ neural networks to identify robust embedding spaces, resilient to various attacks.",
+          "url": "https://www.techscience.com/cmc/v81n1/58332/html"
+        },
+        {
+          "title": "A Robust Image Watermarking System Based on Deep Neural Networks",
+          "abstract": "Digital image watermarking is the process of embedding and extracting watermark covertly on a carrier image. Incorporating deep learning networks with image ...",
+          "url": "https://www.researchgate.net/publication/335489328_A_Robust_Image_Watermarking_System_Based_on_Deep_Neural_Networks"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "Deep learning-based watermarking methods typically require differentiable models of image distortions at training time.",
+      "evidence": [
+        {
+          "title": "Distortion Agnostic Deep Watermarking",
+          "abstract": "Watermarking is the process of embedding information into an image that can survive under distortions, while requiring the encoded image to have little or no perceptual difference with the original image. Recently, deep learning-based methods achieved impressive results in both visual quality and message payload under a wide variety of image distortions. However, these methods all require differentiable models for the image distortions at training time, and may generalize poorly to unknown distortions. This is undesirable since the types of distortions applied to watermarked images are usually unknown and non-differentiable. In this paper, we propose a new framework for distortion-agnostic watermarking, where the image distortion is not explicitly modeled during training. Instead, the robustness of our system comes from two sources: adversarial training and channel coding. Compared to training on a fixed set of distortions and noise levels, our method achieves comparable or better results on distortions available during training, and better performance overall on unknown distortions.",
+          "url": "https://arxiv.org/abs/2001.04580"
+        },
+        {
+          "title": "An Automated and Robust Image Watermarking Scheme Based on Deep Neural Networks",
+          "abstract": "Digital image watermarking is the process of embedding and extracting a watermark covertly on a cover-image. To dynamically adapt image watermarking algorithms, deep learning-based image watermarking schemes have attracted increased attention during recent years. However, existing deep learning-based watermarking methods neither fully apply the fitting ability to learn and automate the embedding and extracting algorithms, nor achieve the properties of robustness and blindness simultaneously. In this paper, a robust and blind image watermarking scheme based on deep learning neural networks is proposed. To minimize the requirement of domain knowledge, the fitting ability of deep neural networks is exploited to learn and generalize an automated image watermarking algorithm. A deep learning architecture is specially designed for image watermarking tasks, which will be trained in an unsupervised manner to avoid human intervention and annotation. To facilitate flexible applications, the robustness of the proposed scheme is achieved without requiring any prior knowledge or adversarial examples of possible attacks. A challenging case of watermark extraction from phone camera-captured images demonstrates the robustness and practicality of the proposal. The experiments, evaluation, and application cases confirm the superiority of the proposed scheme.",
+          "url": "https://arxiv.org/abs/2007.02460"
+        },
+        {
+          "title": "Shrinkage and Redundant Feature Elimination Network-Based Robust Image Zero-Watermarking",
+          "abstract": "To address the contradiction between watermarking robustness and imperceptibility, a zero-watermarking method based on shrinkage and a redundant feature elimination network (SRFENet) is proposed in this paper. First, in order to have the capability of resisting different image attacks, a dense connection was used to extract shallow and deep features from different convolutional layers. Secondly, to reduce unimportant information for robustness and uniqueness, in SRFENet, a shrinkage module was utilized by automatically learning the threshold of each feature channel. Then, to enhance watermarking uniqueness, a redundant feature elimination module was designed to reduce redundant information for the remaining valid features by learning the weights of inter-feature and intra-feature. In order to increase watermarking robustness further, noised images were generated for training. Finally, an extracted feature map from SRFENet was used to construct a zero-watermark. Furthermore, a zero-watermark from the noised image was generated for copyright verification, which is symmetrical to the process of zero-watermark construction from the original image. The experimental results showed that the proposed zero-watermarking method was robust to different single-image attacks (average BER is 0.0218) and hybrid image attacks (average NC is 0.9551), proving the significant generalization ability to resist different attacks. Compared with existing zero-watermarking methods, the proposed method is more robust since it extracts the main image features via learning a large number of different images for zero-watermark construction.",
+          "url": "https://doi.org/10.3390/sym15050964"
+        },
+        {
+          "title": "Rethinking Deep Learning-Based Watermarking",
+          "abstract": "This paper enhances the efficiency of deep learning-based watermarking models. Towards robust deep hiding under non-differentiable distortions for practical ...",
+          "url": "https://icml.cc/virtual/2025/poster/44782"
+        },
+        {
+          "title": "Distortion Agnostic Deep Watermarking",
+          "abstract": "by X Luo · 2020 · Cited by 320 — However, these methods all require differentiable models for the image distortions at training time, and may generalize poorly to unknown distortions. This ...",
+          "url": "https://ieeexplore.ieee.org/document/9157561/"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    }
+  ]
+}
