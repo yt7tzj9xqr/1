@@ -275,6 +275,25 @@ class CoreTests(unittest.TestCase):
             writing_score(weak_direct, keywords(task.prompt), {"knowledge", "distillation"}),
         )
 
+    def test_writing_selection_reserves_direct_retrieval_evidence(self):
+        task = load_tasks(Path("data/subsets/reportbench_30.jsonl"))[0]
+        papers = []
+        for index in range(16):
+            paper = Paper(
+                f"d{index}", f"Knowledge Distillation Direct Paper {index}", 2020, f"u{index}",
+                "Knowledge distillation teacher student model compression", depth=0, relevance=0.25,
+            )
+            papers.append(paper)
+        for index in range(16):
+            paper = Paper(
+                f"g{index}", f"Knowledge Distillation Graph Paper {index}", 2015, f"g{index}",
+                "Knowledge distillation teacher student model compression", depth=1,
+                relevance=0.6, cited_by_count=10000,
+            )
+            papers.append(paper)
+        selected = select_writing_papers(papers, task, 16)
+        self.assertGreaterEqual(sum(paper.depth == 0 for paper in selected), 11)
+
     def test_source_labels_are_normalized_to_urls(self):
         papers = [Paper("1", "Paper One", 2020, "https://example.org/one")]
         report = "A supported claim (Source 1).\n\n- Source 1: https://example.org/one"

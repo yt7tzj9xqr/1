@@ -40,7 +40,7 @@ class Settings:
     rag_seed_count: int = 8
     rag_depth: int = 3
     rag_max_papers: int = 40
-    rag_evidence_papers: int = 12
+    rag_evidence_papers: int = 16
     baseline_papers: int = 16
     evidence_char_limit: int = 18000
 

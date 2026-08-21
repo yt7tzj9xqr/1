@@ -81,11 +81,26 @@ def select_writing_papers(papers: list[Paper], task: Task, limit: int) -> list[P
             or paper.relevance >= 0.20
         )
     ]
-    selected = sorted(
-        eligible,
-        key=lambda paper: writing_score(paper, query_terms, anchor_terms),
-        reverse=True,
-    )[:limit]
+    ranked_direct = sorted(
+        (paper for paper in eligible if paper.depth == 0),
+        key=lambda paper: writing_score(paper, query_terms, anchor_terms), reverse=True,
+    )
+    ranked_graph = sorted(
+        (paper for paper in eligible if paper.depth == 1),
+        key=lambda paper: writing_score(paper, query_terms, anchor_terms), reverse=True,
+    )
+    # The broad direct pool has already been selected by M3 from the full search
+    # page. Citation edges supplement that evidence; they must not displace it
+    # wholesale merely because citation-count metadata raises their score.
+    direct_budget = min(len(ranked_direct), max(8, math.ceil(limit * 0.65)))
+    selected = ranked_direct[:direct_budget] + ranked_graph[: max(0, limit - direct_budget)]
+    if len(selected) < limit:
+        selected_ids = {paper.paper_id for paper in selected}
+        remaining = sorted(
+            (paper for paper in eligible if paper.paper_id not in selected_ids),
+            key=lambda paper: writing_score(paper, query_terms, anchor_terms), reverse=True,
+        )
+        selected.extend(remaining[: limit - len(selected)])
     if selected:
         return selected
     # Sparse metadata must not make the whole task unrunnable. This fallback is
@@ -188,15 +203,16 @@ class CitationRagPipeline:
             )
         seeds.sort(key=lambda paper: paper.relevance, reverse=True)
         candidate_seeds = diverse_top_papers(
-            seeds, len(queries), max(self.settings.rag_seed_count, self.settings.retrieval_candidate_pool),
+            seeds, len(queries), max(self.settings.rag_evidence_papers, self.settings.retrieval_candidate_pool),
         )
-        frontier = model_rerank_papers(
-            task, candidate_seeds, self.model, self.settings.rag_seed_count,
+        direct_seeds = model_rerank_papers(
+            task, candidate_seeds, self.model, self.settings.rag_evidence_papers,
         )
+        frontier = direct_seeds[: self.settings.rag_seed_count]
         # Web-search-only seeds have no outbound edges. Guarantee that the
         # frontier contains up to three structured seeds when they are relevant,
         # otherwise a configured three-layer graph degenerates into reranking.
-        graph_ready = [paper for paper in seeds if paper.referenced_work_ids]
+        graph_ready = [paper for paper in direct_seeds if paper.referenced_work_ids]
         frontier_ids = {paper.paper_id for paper in frontier}
         for paper in graph_ready[:3]:
             if paper.paper_id in frontier_ids:
@@ -211,7 +227,7 @@ class CitationRagPipeline:
             frontier_ids.discard(frontier[replace_index].paper_id)
             frontier[replace_index] = paper
             frontier_ids.add(paper.paper_id)
-        graph: dict[str, Paper] = {paper.paper_id: paper for paper in frontier}
+        graph: dict[str, Paper] = {paper.paper_id: paper for paper in direct_seeds}
 
         # Inspect a broader set of references, then admit only the best global
         # candidates at each depth. Reference-list order is not a relevance rank.
@@ -303,7 +319,7 @@ class CitationRagPipeline:
             f"APPLICATION DOMAIN:\n{task.application_domain}\n\n"
             "EVIDENCE CARDS (each card is an allowed source; ignore citation-count metadata as factual evidence):\n"
             f"{cards}\n\n"
-            "REFERENCE BUDGET: Cite 8-12 distinct sources when they have explicit usable evidence. Select the most central primary or canonical works; do not cite a source merely "
+            "REFERENCE BUDGET: Cite 10-14 distinct sources when they have explicit usable evidence. Select the most central primary or canonical works; do not cite a source merely "
             "because it is highly cited, and avoid secondary-survey claims when a supplied primary source supports the same point.\n\n"
             "LENGTH: Write a focused survey of 800-1,050 English words. This is a hard maximum. Prioritize the task's central taxonomy and "
             "strongest evidence; omit tangential material.\n\n"
