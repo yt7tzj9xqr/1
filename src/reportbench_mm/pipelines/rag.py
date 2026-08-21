@@ -344,7 +344,7 @@ class CitationRagPipeline:
             f"APPLICATION DOMAIN:\n{task.application_domain}\n\n"
             "EVIDENCE CARDS (each card is an allowed source; ignore citation-count metadata as factual evidence):\n"
             f"{cards}\n\n"
-            "REFERENCE BUDGET: Cite 10-12 distinct sources when they have explicit usable evidence. Select the most central primary or canonical works; do not cite a source merely "
+            "REFERENCE BUDGET: Cite 8-10 distinct sources when they have explicit usable evidence. Select the most central primary or canonical works; do not cite a source merely "
             "because it is highly cited, and avoid secondary-survey claims when a supplied primary source supports the same point.\n\n"
             "LENGTH: Write a focused survey of 650-850 English words. This is a hard maximum. Prioritize the task's central taxonomy and "
             "strongest evidence; omit tangential material.\n\n"
@@ -394,7 +394,7 @@ class CitationRagPipeline:
                     raise RuntimeError("RAG writer returned an unusable report after recovery")
         report = repair_grounded_report(
             report, writing_papers, self.model,
-            f"citation-rag-evidence-repair-v2:{self.settings.model}", "600-800", "10-12",
+            f"citation-rag-evidence-repair-v3:{self.settings.model}", "600-800", "8-10",
         )
         report = sanitize_report(report)
         recovered = recover_sanitized_report(

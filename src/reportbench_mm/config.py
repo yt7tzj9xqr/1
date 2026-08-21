@@ -40,8 +40,11 @@ class Settings:
     rag_seed_count: int = 8
     rag_depth: int = 3
     rag_max_papers: int = 40
-    rag_evidence_papers: int = 16
-    baseline_papers: int = 16
+    # Keep the writer pool selective. The fixed-10 audit showed that expanding
+    # from twelve to sixteen cards mostly added peripheral references: it raised
+    # the bibliography size without a corresponding gold-reference gain.
+    rag_evidence_papers: int = 12
+    baseline_papers: int = 12
     evidence_char_limit: int = 18000
 
     @classmethod

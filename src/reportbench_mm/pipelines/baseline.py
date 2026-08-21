@@ -73,6 +73,7 @@ class BaselinePipeline:
             f"TASK:\n{task.prompt}\n\nFORBIDDEN SURVEY:\n{task.title}\n\n"
             f"DOMAIN:\n{task.application_domain}\n\nSOURCES:\n"
             + cards
+            + "\n\nREFERENCE BUDGET: Cite 8-10 of the strongest primary or canonical sources; omit peripheral sources even when they are topically related."
             + "\n\nLENGTH: Write 700-850 English words. This is a hard range. Delete any factual sentence without one directly supporting URL."
         )
         messages = [{"role": "system", "content": BASELINE_SYSTEM}, {"role": "user", "content": user}]
@@ -106,7 +107,7 @@ class BaselinePipeline:
                     raise RuntimeError("Baseline writer returned an unusable report after recovery")
         report = repair_grounded_report(
             report, papers, self.model,
-            f"baseline-evidence-repair-v2:{self.settings.model}", "650-800", "8-10",
+            f"baseline-evidence-repair-v3:{self.settings.model}", "650-800", "8-10",
         )
         report = sanitize_report(report)
         recovered = recover_sanitized_report(
