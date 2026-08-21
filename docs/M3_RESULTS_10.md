@@ -54,7 +54,7 @@ RAG 的高 cited match 不是通过增加大量引用得到的：其 cited state
 
 ## 优化阶段发现的失败配置
 
-`search-baseline-v5` 尝试把五次搜索改成“3 个初始查询 + 阅读结果后生成 2 个反馈查询”。其 10 题 reference 初步结果为 precision 0.2197、recall 0.01421、平均 9.3 篇、总命中 16 篇，明显低于 v4 的 30 篇命中。原因不是反馈搜索思想本身错误，而是反馈上下文压缩后，M3 倾向生成过窄或重复的题名查询；匿名学术源的补充结果又受速率限制。该配置应保留为消融，不作为最终 baseline。当前主路径已经恢复五查询完整召回。
+`search-baseline-v5` 尝试把五次搜索改成“3 个初始查询 + 阅读结果后生成 2 个反馈查询”。10 题全部完成后，reference precision 为 0.2197、recall 为 0.01421、平均引用 9.3 篇、总命中 16 篇，明显低于 v4 的 30 篇命中；cited 宏平均为 0.7318、micro accuracy 为 0.8798、平均 18.3 条；non-cited micro accuracy 为 0.5085，共评判 59 条、7 个非空任务。结果说明证据修复确实改善 cited consistency，但反馈搜索损害了 reference coverage。原因不是反馈搜索思想本身错误，而是反馈上下文压缩后，M3 倾向生成过窄或重复的题名查询；匿名学术源的补充结果又受速率限制。该配置保留为消融，不作为最终 baseline。当前主路径已经恢复五查询完整召回。
 
 ## 下一轮冻结实验标准
 
@@ -72,6 +72,7 @@ RAG 的高 cited match 不是通过增加大量引用得到的：其 cited state
 
 - Baseline v4：`metrics/MiniMax-M3/search-baseline-v4/reference/` 与 `metrics/MiniMax-M3/search-baseline-v4/full/`
 - RAG v15 pilot：`metrics/MiniMax-M3/citation-rag-v15/reference/` 与 `metrics/MiniMax-M3/citation-rag-v15/full/`
+- 反馈搜索消融：`metrics/MiniMax-M3/search-baseline-v5/reference/` 与 `metrics/MiniMax-M3/search-baseline-v5/full/`
 - 旧版对照：`metrics/MiniMax-M3/search-baseline-v3/` 与 `metrics/MiniMax-M3/citation-rag-v13/`
 - 生成结果和来源池：`runs/MiniMax-M3/<system>/<arxiv_id>/result.json`（默认不提交 Git）
 - 检索审计：`scripts/audit_live_retrieval.py`

@@ -1,0 +1,11 @@
+﻿arxiv_id,ground_truth_count,model,reference_count,reference_matches,reference_precision,reference_recall,system
+2004.05937,305,MiniMax-M3,2,1,0.5,0.003278688524590164,search-baseline-v5
+2105.01605,49,MiniMax-M3,10,3,0.3,0.061224489795918366,search-baseline-v5
+2204.10325,36,MiniMax-M3,12,0,0.0,0.0,search-baseline-v5
+2205.08977,317,MiniMax-M3,15,0,0.0,0.0,search-baseline-v5
+2206.13188,252,MiniMax-M3,0,0,0.0,0.0,search-baseline-v5
+2306.05817,301,MiniMax-M3,9,3,0.3333333333333333,0.009966777408637873,search-baseline-v5
+2308.04603,67,MiniMax-M3,13,3,0.23076923076923078,0.04477611940298507,search-baseline-v5
+2310.12986,61,MiniMax-M3,15,0,0.0,0.0,search-baseline-v5
+2312.04861,277,MiniMax-M3,2,1,0.5,0.0036101083032490976,search-baseline-v5
+2401.07915,260,MiniMax-M3,15,5,0.3333333333333333,0.019230769230769232,search-baseline-v5

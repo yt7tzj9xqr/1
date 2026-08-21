@@ -1,0 +1,158 @@
+{
+  "arxiv_id": "2004.05937",
+  "model": "MiniMax-M3",
+  "system": "search-baseline-v5",
+  "reference_precision": 0.5,
+  "reference_recall": 0.003278688524590164,
+  "reference_count": 2,
+  "reference_matches": 1,
+  "ground_truth_count": 305,
+  "predicted_titles": [
+    "Multi-Teacher Distillation: An Ensemble-Then- ...",
+    "Knowledge Distillation by On-the-Fly Native Ensemble"
+  ],
+  "cited_match_rate": 0.6,
+  "cited_count": 5,
+  "cited_supported": 3,
+  "cited_details": [
+    {
+      "statement": "[https://qmro.qmul.ac.uk/xmlui/handle/123456789/58358] The On-the-fly Native Ensemble (ONE) strategy trains only a single multi-branch network while simultaneously establishing a strong teacher on-the-fly to enhance the learning of the target network in one-stage online distillation.",
+      "url": "https://qmro.qmul.ac.uk/xmlui/handle/123456789/58358",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://qmro.qmul.ac.uk/xmlui/handle/123456789/58358] ONE improves the generalisation performance of a variety of deep neural networks on four image classification datasets: CIFAR10, CIFAR100, SVHN, and ImageNet, whilst having the computational efficiency advantages.",
+      "url": "https://qmro.qmul.ac.uk/xmlui/handle/123456789/58358",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://qmro.qmul.ac.uk/xmlui/handle/123456789/58358]",
+      "url": "https://qmro.qmul.ac.uk/xmlui/handle/123456789/58358",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "[https://neurips.cc/virtual/2024/106613] Traditional KD adopts the cross-entropy loss, which tends to yield a smooth distribution, and an ensemble-then-distill approach builds an ensemble of teacher models to train the student.",
+      "url": "https://neurips.cc/virtual/2024/106613",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://neurips.cc/virtual/2024/106613]",
+      "url": "https://neurips.cc/virtual/2024/106613",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    }
+  ],
+  "noncited_factual_accuracy": 1.0,
+  "noncited_count": 3,
+  "noncited_correct": 3,
+  "noncited_details": [
+    {
+      "claim": "Existing offline distillation methods rely on a strong pre-trained teacher.",
+      "evidence": [
+        {
+          "title": "One Teacher is Enough? Pre-trained Language Model ...",
+          "abstract": "In this paper, we propose a multi-teacher knowledge distillation framework named MT-BERT for pre-trained language model compression, which can ...",
+          "url": "https://www.microsoft.com/en-us/research/publication/one-teacher-is-enough-pre-trained-language-model-distillation-from-multiple-teachers/"
+        },
+        {
+          "title": "A Comprehensive Survey on Knowledge Distillation",
+          "abstract": "The teacher model in offline distillation is pre-trained and frozen, while in online distillation, the teacher and student are trained simultaneously. In ...",
+          "url": "https://arxiv.org/html/2503.12067v1"
+        },
+        {
+          "title": "[Discussion] Knowledge distillation is badly defined",
+          "abstract": "In the literature, it seems to me there are two types of knowledge distillation goals that are usually considered: having a student model learn ...",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/18681i4/discussion_knowledge_distillation_is_badly_defined/"
+        },
+        {
+          "title": "Knowledge Distillation: A Good Teacher is Patient and Consistent",
+          "abstract": "The optimal training recipe for knowledge distillation is consistency and patience. Consistency refers to showing the teacher and the ...",
+          "url": "https://www.youtube.com/watch?v=gZPUGje1PCI"
+        },
+        {
+          "title": "Knowledge Distillation by On-the-Fly Native Ensemble",
+          "abstract": "by X Zhu · 2018 · Cited by 723 — Existing offline distillation methods rely on a strong pre-trained teacher, which enables favourable knowledge discovery and transfer but requires a complex ...",
+          "url": "https://papers.nips.cc/paper/7980-knowledge-distillation-by-on-the-fly-native-ensemble"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "Offline distillation requires a complex two-phase training procedure.",
+      "evidence": [
+        {
+          "title": "[R] Distilling Step-by-Step! Outperforming Larger Language ...",
+          "abstract": "We introduce Distilling step-by-step, a new mechanism that (a) trains smaller models that outperform LLMs, and (b) achieves so by leveraging ...",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1381gd3/r_distilling_stepbystep_outperforming_larger/"
+        },
+        {
+          "title": "What is Knowledge distillation? | IBM",
+          "abstract": "Knowledge distillation is a machine learning technique used to transfer the learning of a large pre-trained “teacher model” to a smaller “student model.”",
+          "url": "https://www.ibm.com/think/topics/knowledge-distillation"
+        },
+        {
+          "title": "BOOT: Data-free Distillation of Denoising Diffusion Models ...",
+          "abstract": "In this work, we present a novel technique called BOOT that overcomes these limitations with an efficient data-free distillation algorithm. The core idea is to ...",
+          "url": "https://machinelearning.apple.com/research/boot"
+        },
+        {
+          "title": "Knowledge Distillation: Empowering Efficient AI Models",
+          "abstract": "The process of knowledge distillation involves several technical complexities. Training both a teacher and a student model requires more steps ...",
+          "url": "https://kargarisaac.medium.com/knowledge-distillation-empowering-efficient-ai-models-2505b7781045"
+        },
+        {
+          "title": "Distilling step-by-step: Outperforming larger language ...",
+          "abstract": "We introduce distilling step-by-step, a new simple mechanism that allows us to train smaller task-specific models with much less training data than required by ...",
+          "url": "https://research.google/blog/distilling-step-by-step-outperforming-larger-language-models-with-less-training-data-and-smaller-model-sizes/"
+        }
+      ],
+      "true_votes": 2,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "Online distillation counterparts address the limitations of offline distillation methods.",
+      "evidence": [
+        {
+          "title": "Shadow Knowledge Distillation: Bridging Offline and ...",
+          "abstract": "by L Li · Cited by 130 — Offline distillation can employ existing models yet always demonstrates inferior performance than online ones. In this paper, we first empirically show that the ...",
+          "url": "https://papers.neurips.cc/paper_files/paper/2022/file/040d3b6af368bf71f952c18da5713b48-Paper-Conference.pdf"
+        },
+        {
+          "title": "Online Knowledge Distillation with Diverse Peers",
+          "abstract": "by D Chen · 2020 · Cited by 444 — Abstract. Distillation is an effective knowledge-transfer technique that uses predicted distributions of a powerful teacher model as.",
+          "url": "https://ojs.aaai.org/index.php/AAAI/article/view/5746/5602"
+        },
+        {
+          "title": "Why Self-Distillation Is Taking Over LLM Post-Training (w",
+          "abstract": "In this video, we sit down with Jonas Hübotter (ETH Zurich) and Idan Shenfeld (MIT) to break down self-distillation a post-training paradigm ...",
+          "url": "https://www.youtube.com/watch?v=OgEGV7apEzI&vl=en"
+        },
+        {
+          "title": "Knowledge Distillation by On-the-Fly Native Ensemble",
+          "abstract": "Knowledge distillation is effective to train small and generalisable network models for meeting the low-memory and fast running requirements.Existing offline distillation methods rely on a strong pre-trained teacher, which enables favourable knowledge discovery and transfer but requires a complex two-phase training procedure.Online counterparts address this limitation at the price of lacking a highcapacity teacher.In this work, we present an On-the-fly Native Ensemble (ONE) strategy for one-stage online distillation.Specifically, ONE trains only a single multi-branch network while simultaneously establishing a strong teacher on-thefly to enhance the learning of target network.Extensive evaluations show that ONE improves the generalisation performance a variety of deep neural networks more significantly than alternative methods on four image classification dataset: CIFAR10, CIFAR100, SVHN, and ImageNet, whilst having the computational efficiency advantages.",
+          "url": "https://qmro.qmul.ac.uk/xmlui/handle/123456789/58358"
+        },
+        {
+          "title": "Student Network Learning via Evolutionary Knowledge Distillation",
+          "abstract": "Knowledge distillation provides an effective way to transfer knowledge via teacher-student learning, where most existing distillation approaches apply a fixed pre-trained model as teacher to supervise the learning of student network. This manner usually brings in a big capability gap between teacher and student networks during learning. Recent researches have observed that a small teacher-student capability gap can facilitate knowledge transfer. Inspired by that, we propose an evolutionary knowledge distillation approach to improve the transfer effectiveness of teacher knowledge. Instead of a fixed pre-trained teacher, an evolutionary teacher is learned online and consistently transfers intermediate knowledge to supervise student network learning on-the-fly. To enhance intermediate knowledge representation and mimicking, several simple guided modules are introduced between corresponding teacher-student blocks. In this way, the student can simultaneously obtain rich internal knowledge and capture its growth process, leading to effective student network learning. Extensive experiments clearly demonstrate the effectiveness of our approach as well as good adaptability in the low-resolution and few-sample visual recognition scenarios.",
+          "url": "https://arxiv.org/abs/2103.13811"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    }
+  ]
+}

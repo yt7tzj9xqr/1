@@ -1,0 +1,11 @@
+﻿arxiv_id,cited_count,cited_match_rate,cited_supported,ground_truth_count,model,noncited_correct,noncited_count,noncited_factual_accuracy,reference_count,reference_matches,reference_precision,reference_recall,system
+2004.05937,5,0.6,3,305,MiniMax-M3,3,3,1.0,2,1,0.5,0.003278688524590164,search-baseline-v5
+2105.01605,22,0.4090909090909091,9,49,MiniMax-M3,3,8,0.375,10,3,0.3,0.061224489795918366,search-baseline-v5
+2204.10325,25,0.96,24,36,MiniMax-M3,6,12,0.5,12,0,0.0,0.0,search-baseline-v5
+2206.13188,0,0.0,0,252,MiniMax-M3,0,0,0.0,0,0,0.0,0.0,search-baseline-v5
+2205.08977,25,0.96,24,317,MiniMax-M3,0,0,0.0,15,0,0.0,0.0,search-baseline-v5
+2306.05817,27,0.8888888888888888,24,301,MiniMax-M3,4,4,1.0,9,3,0.3333333333333333,0.009966777408637873,search-baseline-v5
+2308.04603,28,1.0,28,67,MiniMax-M3,0,0,0.0,13,3,0.23076923076923078,0.04477611940298507,search-baseline-v5
+2312.04861,4,0.5,2,277,MiniMax-M3,1,4,0.25,2,1,0.5,0.0036101083032490976,search-baseline-v5
+2310.12986,31,1.0,31,61,MiniMax-M3,9,16,0.5625,15,0,0.0,0.0,search-baseline-v5
+2401.07915,16,1.0,16,260,MiniMax-M3,4,12,0.3333333333333333,15,5,0.3333333333333333,0.019230769230769232,search-baseline-v5

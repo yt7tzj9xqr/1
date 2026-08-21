@@ -1,0 +1,230 @@
+{
+  "arxiv_id": "2308.04603",
+  "model": "MiniMax-M3",
+  "system": "search-baseline-v5",
+  "reference_precision": 0.23076923076923078,
+  "reference_recall": 0.04477611940298507,
+  "reference_count": 13,
+  "reference_matches": 3,
+  "ground_truth_count": 67,
+  "predicted_titles": [
+    "Watermark Faker: Towards Forgery of Digital Image Watermarking",
+    "A Robust Image Watermarking System Based on Deep Neural Networks",
+    "HiDDeN: Hiding Data With Deep Networks",
+    "StegaStamp: Invisible Hyperlinks in Physical Photographs",
+    "A robust watermarking algorithm against JPEG compression ...",
+    "Enhancing Robustness of DNN-based Watermarking by Mini",
+    "Transform domain watermarking",
+    "Deep Boosting Robustness of DNN-based Image Watermarking via DBMark",
+    "End-to-End Image Steganography Using Deep Convolutional Autoencoders",
+    "An Automated and Robust Image Watermarking Scheme Based on Deep Neural Networks",
+    "A Compact Neural Network-based Algorithm for Robust Image Watermarking",
+    "Robust Zero Watermarking Algorithm for Medical Images Based on Improved NasNet-Mobile and DCT",
+    "A General Approach for Using Deep Neural Network for Digital Watermarking"
+  ],
+  "cited_match_rate": 1.0,
+  "cited_count": 28,
+  "cited_supported": 28,
+  "cited_details": [
+    {
+      "statement": "Recent work has shown that deep neural networks are highly sensitive to tiny perturbations of input images, giving rise to adversarial examples (https://arxiv.org/abs/1807.09937).",
+      "url": "https://arxiv.org/abs/1807.09937",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Neural networks can learn to use invisible perturbations to encode a rich amount of useful information (https://arxiv.org/abs/1807.09937).",
+      "url": "https://arxiv.org/abs/1807.09937",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The HiDDeN system jointly trains encoder and decoder networks, where given an input message and cover image, the encoder produces a visually indistinguishable encoded image from which the decoder recovers the original message (https://arxiv.org/abs/1807.09937).",
+      "url": "https://arxiv.org/abs/1807.09937",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Digital image watermarking is the process of embedding and extracting watermark covertly on a carrier image (https://arxiv.org/abs/1908.11331).",
+      "url": "https://arxiv.org/abs/1908.11331",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Zhong and Shih propose a fully automated image watermarking system based on deep neural networks, noting that existing deep learning-based watermarking systems cannot achieve robustness, blindness, and automated embedding and extraction simultaneously (https://arxiv.org/abs/1908.11331).",
+      "url": "https://arxiv.org/abs/1908.11331",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Digital image watermarking is the process of embedding and extracting a watermark covertly on a cover-image (https://arxiv.org/abs/2007.02460).",
+      "url": "https://arxiv.org/abs/2007.02460",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Zhong, Huang, Mastorakis, and Shih propose an automated watermarking scheme in which the encoder and decoder are trained end-to-end to dynamically adapt to cover-image content, with modern image watermarking research primarily focused on multi-bit scenarios (https://arxiv.org/abs/2007.02460).",
+      "url": "https://arxiv.org/abs/2007.02460",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Digital watermarking requires high robustness and high invisibility (https://arxiv.org/abs/2210.13801).",
+      "url": "https://arxiv.org/abs/2210.13801",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The DBMark framework of Ye, Gao, Xie, Yin, and Wei is introduced in a paper titled \"Deep Boosting Robustness of DNN-based Image Watermarking via DBMark\" (https://arxiv.org/abs/2210.13801).",
+      "url": "https://arxiv.org/abs/2210.13801",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "identifies three components: real JPEG helps the decoder obtain robustness under the JPEG compression, simulated JPEG trains the encoder-decoder jointly, and a noise-free layer (https://dl.acm.org/doi/pdf/10.1145/3474085.3475324).",
+      "url": "https://dl.acm.org/doi/pdf/10.1145/3474085.3475324",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Digital image watermarking seeks to protect the digital media information from unauthorized access, where the message is embedded into the digital image and extracted from it, even when some noises or distortions are applied under various data processing including lossy image compression and interactive content editing (https://arxiv.org/abs/2112.13491).",
+      "url": "https://arxiv.org/abs/2112.13491",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The compact neural network of Xu, Wang, Wei, and Lu addresses digital image watermarking, noting that traditional solutions easily suffer from robustness issues when specified with some prior constraints (https://arxiv.org/abs/2112.13491).",
+      "url": "https://arxiv.org/abs/2112.13491",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Technologies of the Internet of Things (IoT) facilitate digital contents such as images being acquired in a massive way (https://arxiv.org/abs/2003.12428).",
+      "url": "https://arxiv.org/abs/2003.12428",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Ming, Ding, Cao, and Lin train on an image set and use the trained model to protect a distinct test image set in a bulk manner (https://arxiv.org/abs/2003.12428).",
+      "url": "https://arxiv.org/abs/2003.12428",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "They apply commonly used manipulations to the watermarked image to examine the extracted watermark, which retains sufficient recognizable traits (https://arxiv.org/abs/2003.12428).",
+      "url": "https://arxiv.org/abs/2003.12428",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Image steganography is used to hide a secret image inside a cover image in plain sight (https://doi.org/10.1109/access.2021.3113953).",
+      "url": "https://doi.org/10.1109/access.2021.3113953",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The 2021 IEEE Access study proposes a deep convolutional autoencoder architecture to embed a secret image inside a cover image and extract the embedded secret image from the stego image (https://doi.org/10.1109/access.2021.3113953).",
+      "url": "https://doi.org/10.1109/access.2021.3113953",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The method is evaluated using the COCO, CelebA, and ImageNet datasets (https://doi.org/10.1109/access.2021.3113953).",
+      "url": "https://doi.org/10.1109/access.2021.3113953",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The 2023 IET Research paper, titled \"A robust watermarking algorithm against JPEG compression\", presents a watermarking algorithm based on multi-scale auto-encoder that effectively extracts the image feature (https://ietresearch.onlinelibrary.wiley.com/doi/10.1049/ipr2.12961).",
+      "url": "https://ietresearch.onlinelibrary.wiley.com/doi/10.1049/ipr2.12961",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Digital watermarking technology is significant and provides a strong guarantee for medical image information security (https://doi.org/10.3390/electronics12163444).",
+      "url": "https://doi.org/10.3390/electronics12163444",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The 2023 Electronics study modifies the pre-trained NasNet-Mobile network by using a fully connected layer with 128 outputs and a regression layer instead of the original Softmax layer and classification layer, so that 128 features are extracted from the medical images (https://doi.org/10.3390/electronics12163444).",
+      "url": "https://doi.org/10.3390/electronics12163444",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The same 2023 Electronics study applies DCT transform to the features extracted by the modified NasNet-Mobile network to obtain low frequency data, processes the data with a perceptual hashing algorithm to obtain a 32-bit binary feature vector, encrypts the watermark using a chaos mapping algorithm, and uses the zero watermarking technique to embed and extract the watermark without changing the information contained in the medical image (https://doi.org/10.3390/electronics12163444).",
+      "url": "https://doi.org/10.3390/electronics12163444",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A study of transform-domain watermarking presents a comparative analysis of traditional domain-transformed watermarking methods and deep learning-based watermark detection models (https://papers.ssrn.com/sol3/Delivery.cfm/f8d0a745-298f-46cc-a18f-2f8d4ff89fe2-MECA.pdf?abstractid=6620161&mirid=1).",
+      "url": "https://papers.ssrn.com/sol3/Delivery.cfm/f8d0a745-298f-46cc-a18f-2f8d4ff89fe2-MECA.pdf?abstractid=6620161&mirid=1",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Wang, Lin, Zhao, and Zhu address forgery of digital image watermarking, in which a forgery network is used against a genuine watermarker for copyright claim and integrity checking (https://arxiv.org/abs/2103.12489).",
+      "url": "https://arxiv.org/abs/2103.12489",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Printed and digitally displayed photos have the ability to hide imperceptible digital data that can be accessed through internet-connected imaging systems (https://arxiv.org/abs/1904.05343).",
+      "url": "https://arxiv.org/abs/1904.05343",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Another way to think about this is physical photographs that have unique QR codes invisibly embedded within them (https://arxiv.org/abs/1904.05343).",
+      "url": "https://arxiv.org/abs/1904.05343",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The StegaStamp system comprises a deep neural network that learns an encoding/decoding algorithm robust to image perturbations approximating the space of distortions resulting from real printing and photography (https://arxiv.org/abs/1904.05343).",
+      "url": "https://arxiv.org/abs/1904.05343",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The prototype system robustly retrieves 56-bit hyperlinks after error correction from in-the-wild videos (https://arxiv.org/abs/1904.05343).",
+      "url": "https://arxiv.org/abs/1904.05343",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    }
+  ],
+  "noncited_factual_accuracy": 0.0,
+  "noncited_count": 0,
+  "noncited_correct": 0,
+  "noncited_details": []
+}

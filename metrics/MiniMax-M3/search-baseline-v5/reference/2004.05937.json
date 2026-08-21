@@ -1,0 +1,14 @@
+{
+  "arxiv_id": "2004.05937",
+  "model": "MiniMax-M3",
+  "system": "search-baseline-v5",
+  "reference_precision": 0.5,
+  "reference_recall": 0.003278688524590164,
+  "reference_count": 2,
+  "reference_matches": 1,
+  "ground_truth_count": 305,
+  "predicted_titles": [
+    "Multi-Teacher Distillation: An Ensemble-Then- ...",
+    "Knowledge Distillation by On-the-Fly Native Ensemble"
+  ]
+}

@@ -1,0 +1,782 @@
+{
+  "arxiv_id": "2310.12986",
+  "model": "MiniMax-M3",
+  "system": "search-baseline-v5",
+  "reference_precision": 0.0,
+  "reference_recall": 0.0,
+  "reference_count": 15,
+  "reference_matches": 0,
+  "ground_truth_count": 61,
+  "predicted_titles": [
+    "Face manifold: manifold learning for synthetic face generation",
+    "Visual Understanding via Multi-Feature Shared Learning with Global Consistency",
+    "Nonlinear dimensionality reduction by locally linear ...",
+    "Think Globally, Fit Locally: Unsupervised Learning of Low Dimensional Manifolds",
+    "Tenenbaum Reduction A Global Geometric ...",
+    "Laplacian Eigenmaps for Dimensionality Reduction and ...",
+    "Face recognition with image sets using manifold density divergence",
+    "Human Age Estimation With Regression on Discriminative Aging Manifold",
+    "Image-Based Human Age Estimation by Manifold Learning and Locally Adjusted Robust Regression",
+    "Rank Flow Embedding for Unsupervised and Semi-Supervised Manifold Learning",
+    "Gait-based human age estimation using age group-dependent manifold learning and regression",
+    "Visual Domain Adaptation with Manifold Embedded Distribution Alignment",
+    "Estimating Visual Information From Audio Through Manifold Learning",
+    "Sparse Representation Classifier Guided Grassmann Reconstruction Metric Learning With Applications to Image Set Analysis",
+    "Learning a perceptual manifold with deep features for animation video resequencing"
+  ],
+  "cited_match_rate": 1.0,
+  "cited_count": 31,
+  "cited_supported": 31,
+  "cited_details": [
+    {
+      "statement": "https://www.semanticscholar.org/paper/Nonlinear-dimensionality-reduction-by-locally-Roweis-Saul/f0a3e1752e1146da927adc24ae07144ab2e744ec",
+      "url": "https://semanticscholar.org/paper/Nonlinear-dimensionality-reduction-by-locally-Roweis-Saul/f0a3e1752e1146da927adc24ae07144ab2e744ec",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://pdodds.w3.uvm.edu/files/papers/others/2000/tenenbaum2000a.pdf",
+      "url": "https://pdodds.w3.uvm.edu/files/papers/others/2000/tenenbaum2000a.pdf",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://www.jmlr.org/papers/v4/saul03a.html",
+      "url": "https://jmlr.org/papers/v4/saul03a.html",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://www.aoml.noaa.gov/ftp/pub/phod/thacker/SSAmanifoldPapers/BelkinNiyogi2007Presentation.pdf",
+      "url": "https://aoml.noaa.gov/ftp/pub/phod/thacker/SSAmanifoldPapers/BelkinNiyogi2007Presentation.pdf",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://research-portal.st-andrews.ac.uk/en/publications/face-recognition-with-image-sets-using-manifold-density-divergenc/",
+      "url": "https://research-portal.st-andrews.ac.uk/en/publications/face-recognition-with-image-sets-using-manifold-density-divergenc",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://research-portal.st-andrews.ac.uk/en/publications/face-recognition-with-image-sets-using-manifold-density-divergenc/",
+      "url": "https://research-portal.st-andrews.ac.uk/en/publications/face-recognition-with-image-sets-using-manifold-density-divergenc",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://research-portal.st-andrews.ac.uk/en/publications/face-recognition-with-image-sets-using-manifold-density-divergenc/",
+      "url": "https://research-portal.st-andrews.ac.uk/en/publications/face-recognition-with-image-sets-using-manifold-density-divergenc",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Dinashi, Toosi, and Akhaee published \"Face Manifold: Manifold Learning for Synthetic Face Generation.\" https://arxiv.org/abs/1910.01403",
+      "url": "https://arxiv.org/abs/1910.01403",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://arxiv.org/abs/1910.01403",
+      "url": "https://arxiv.org/abs/1910.01403",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://doi.org/10.1109/tmm.2008.921847",
+      "url": "https://doi.org/10.1109/tmm.2008.921847",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://doi.org/10.1109/tmm.2008.921847",
+      "url": "https://doi.org/10.1109/tmm.2008.921847",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://doi.org/10.1109/tmm.2008.921847",
+      "url": "https://doi.org/10.1109/tmm.2008.921847",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://doi.org/10.1109/tip.2008.924280",
+      "url": "https://doi.org/10.1109/tip.2008.924280",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://doi.org/10.1109/tip.2008.924280",
+      "url": "https://doi.org/10.1109/tip.2008.924280",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://doi.org/10.1109/tip.2008.924280",
+      "url": "https://doi.org/10.1109/tip.2008.924280",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://www.semanticscholar.org/paper/b55438c64dcb2f52404152a90acecce2f7ded2d5",
+      "url": "https://semanticscholar.org/paper/b55438c64dcb2f52404152a90acecce2f7ded2d5",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://www.semanticscholar.org/paper/b55438c64dcb2f52404152a90acecce2f7ded2d5",
+      "url": "https://semanticscholar.org/paper/b55438c64dcb2f52404152a90acecce2f7ded2d5",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://www.semanticscholar.org/paper/b55438c64dcb2f52404152a90acecce2f7ded2d5",
+      "url": "https://semanticscholar.org/paper/b55438c64dcb2f52404152a90acecce2f7ded2d5",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://arxiv.org/abs/1505.05233",
+      "url": "https://arxiv.org/abs/1505.05233",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://arxiv.org/abs/1505.05233",
+      "url": "https://arxiv.org/abs/1505.05233",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://arxiv.org/abs/2304.12448",
+      "url": "https://arxiv.org/abs/2304.12448",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Wang, Feng, Chen, Yu, Huang, and Yu published \"Visual Domain Adaptation with Manifold Embedded Distribution Alignment.\" https://arxiv.org/abs/1807.07258",
+      "url": "https://arxiv.org/abs/1807.07258",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://arxiv.org/abs/2208.02337",
+      "url": "https://arxiv.org/abs/2208.02337",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://arxiv.org/abs/2208.02337",
+      "url": "https://arxiv.org/abs/2208.02337",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://arxiv.org/abs/2111.01455",
+      "url": "https://arxiv.org/abs/2111.01455",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://arxiv.org/abs/2111.01455",
+      "url": "https://arxiv.org/abs/2111.01455",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://arxiv.org/abs/2111.01455",
+      "url": "https://arxiv.org/abs/2111.01455",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://www.semanticscholar.org/paper/fd3bf3a9cef5500aa3b97588498e534c96006567",
+      "url": "https://semanticscholar.org/paper/fd3bf3a9cef5500aa3b97588498e534c96006567",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://www.semanticscholar.org/paper/fd3bf3a9cef5500aa3b97588498e534c96006567",
+      "url": "https://semanticscholar.org/paper/fd3bf3a9cef5500aa3b97588498e534c96006567",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://www.semanticscholar.org/paper/fd3bf3a9cef5500aa3b97588498e534c96006567",
+      "url": "https://semanticscholar.org/paper/fd3bf3a9cef5500aa3b97588498e534c96006567",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://www.semanticscholar.org/paper/fd3bf3a9cef5500aa3b97588498e534c96006567",
+      "url": "https://semanticscholar.org/paper/fd3bf3a9cef5500aa3b97588498e534c96006567",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    }
+  ],
+  "noncited_factual_accuracy": 0.5625,
+  "noncited_count": 16,
+  "noncited_correct": 9,
+  "noncited_details": [
+    {
+      "claim": "Roweis and Saul introduced locally linear embedding (LLE), an unsupervised learning algorithm that computes low-dimensional, neighborhood-preserving embeddings of high-dimensional data.",
+      "evidence": [
+        {
+          "title": "Guided Locally Linear Embedding - ScienceDirect.com",
+          "abstract": "Locally Linear Embedding (LLE) computes a low-dimensional neighborhood-preserving embedding of a high-dimensional dataset (Roweis and Saul, 2000). A dataset ...",
+          "url": "https://www.sciencedirect.com/science/article/abs/pii/S0167865511000390"
+        },
+        {
+          "title": "Sam T. Roweis, Linear Embedding Nonlinear Dimensionality ...",
+          "abstract": "Here, we introduce locally linear embedding (LLE), an unsupervised learning algorithm that computes low-dimensional, neighbor- hood-preserving ...",
+          "url": "https://users.eecs.northwestern.edu/~yingwu/teaching/EECS433/Reading/Roweis_LLE00.pdf"
+        },
+        {
+          "title": "LLE (Locally linear embedding) and its variants - GitHub",
+          "abstract": "Locally Linear Embedding is a method for non-linear dimensionality reduction. It was proposed by Roweis and Saul in 2000. At that time LLE was a novel ...",
+          "url": "https://github.com/JAVI897/LLE-and-its-variants"
+        },
+        {
+          "title": "An Introduction to Locally Linear Embedding - Semantic Scholar",
+          "abstract": "Locally linear embedding (LLE) is introduced, an unsupervised learning algorithm that computes low-dimensional, neighborhood-preserving embeddings of high- ...",
+          "url": "https://www.semanticscholar.org/paper/An-Introduction-to-Locally-Linear-Embedding-Saul-Roweis/da6495102377f8332b21cef50c35d27fbff627df"
+        },
+        {
+          "title": "Nonlinear Dimensionality Reduction by Locally Linear Embedding - ADS",
+          "abstract": "Here, we introduce locally linear embedding (LLE), an unsupervised learning algorithm that computes low-dimensional, neighborhood-preserving embeddings of high- ...",
+          "url": "https://ui.adsabs.harvard.edu/abs/2000Sci...290.2323R/abstract"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "Tenenbaum and colleagues published \"A Global Geometric Framework for Nonlinear Dimensionality Reduction\" in Science in 2000.",
+      "evidence": [
+        {
+          "title": "A global geometric framework for nonlinear dimensionality reduction",
+          "abstract": "Here we describe an approach to solving dimensionality reduction problems that uses easily measured local metric information to learn the underlying global ...",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/11125149/"
+        },
+        {
+          "title": "A Global Geometric Framework for Nonlinear Dimensionality Reduction",
+          "abstract": "Describes an approach to solving dimensionality reduction problems that uses easily measured local metric information to learn the underlying global geometry ...",
+          "url": "https://www.bibsonomy.org/bibtex/1d98b45c2f0c37140697cdd69cb0d9c89/quesada"
+        },
+        {
+          "title": "A global geometric framework for nonlinear dimensionality reduction.",
+          "abstract": "Here we describe an approach to solving dimensionality reduction problems that uses easily measured local metric information to learn the underlying global ...",
+          "url": "https://scispace.com/papers/a-global-geometric-framework-for-nonlinear-dimensionality-5brl02iqtj"
+        },
+        {
+          "title": "Discussion of “Spectral Dimensionality Reduction via Maximum Entropy”",
+          "abstract": "Tenenbaum, V. de Silva, and J.C. Langford. A global geometric framework for nonlinear dimen- sionality reduction. Science, 290(5500):2319–2323,",
+          "url": "https://proceedings.mlr.press/v15/maaten11a/maaten11a.pdf"
+        },
+        {
+          "title": "Reduction A Global Geometric Framework for Nonlinear ...",
+          "abstract": "Tenenbaum Reduction A Global Geometric Framework for Nonlinear Dimensionality. This article develops spherical principal components analysis (SPCA), and ...",
+          "url": "https://www.semanticscholar.org/paper/Reduction-A-Global-Geometric-Framework-for-Tenenbaum-Silva/2878f950f0ad19ccec6bab04873895e89f5bece0"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "Saul and Roweis published \"Think Globally, Fit Locally: Unsupervised Learning of Low Dimensional Manifolds\" in the Journal of Machine Learning Research in 2003.",
+      "evidence": [
+        {
+          "title": "Unsupervised Learning of Low Dimensional Manifold",
+          "abstract": "Think Globally, Fit Locally: Unsupervised Learning of Low Dimensional Manifold. Saul and Sam T. Roweis}, journal={J. A global geometric framework for nonlinear ...",
+          "url": "https://www.semanticscholar.org/paper/Think-Globally%2C-Fit-Locally%3A-Unsupervised-Learning-Saul-Roweis/8db95dbd08e4ee64fb258e5380e78cfa507ed94d"
+        },
+        {
+          "title": "Think Globally, Fit Locally: Unsupervised Learning of ...",
+          "abstract": "Think Globally, Fit Locally: Unsupervised Learning of Low Dimensional Manifold. June 2003 · Applied Physics Letters. Lawrence K. Saul · Sam T. Roweis. The ...",
+          "url": "https://www.researchgate.net/publication/2527213_Think_Globally_Fit_Locally_Unsupervised_Learning_of_Nonlinear_Manifolds"
+        },
+        {
+          "title": "Saul, L.K. and Roweis, S.T. (2003) Think Globally, Fit ...",
+          "abstract": "Saul, L.K. and Roweis, S.T. (2003) Think Globally, Fit Locally Unsupervised Learning of Low Dimensional Manifolds. J. Mach. Learn. Res., 4, 119-155.",
+          "url": "https://www.scirp.org/reference/referencespapers?referenceid=1611258"
+        },
+        {
+          "title": "Think globally, fit locally: unsupervised learning of low ...",
+          "abstract": "by LK Saul · 2003 · Cited by 2289 — In this paper, we describe the implementation of the algorithm in detail and discuss several extensions that enhance its performance.",
+          "url": "https://dl.acm.org/doi/10.1162/153244304322972667"
+        },
+        {
+          "title": "Unsupervised Learning of Nonlinear Manifolds",
+          "abstract": "by LK Saul · Cited by 2289 — Think Globally, Fit Locally: Unsupervised Learning of Nonlinear Manifolds. Lawrence K. Saul lsaul@cis.upenn.edu. Department of Computer and Information ...",
+          "url": "https://www.cse.iitk.ac.in/users/cs676/2011/Readings/saul-roweis-03jmlr_think-globally-fit-locally-manifold-learning.pdf"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "Belkin and Niyogi published \"Laplacian Eigenmaps for Dimensionality Reduction and Data Representation\" in Neural Computation in June 2003.",
+      "evidence": [
+        {
+          "title": "Laplacian Eigenmaps for Dimensionality Reduction and ...",
+          "abstract": "Laplacian Eigenmaps for Dimensionality Reduction and Data Representation. Author(s): Mikhail Belkin , Partha Niyogi. Publication date Created: June 2003.",
+          "url": "https://www.scienceopen.com/document?vid=3bc1f169-226f-4e80-9c2d-8d8377aecc3a"
+        },
+        {
+          "title": "Publications of Mikhail Belkin",
+          "abstract": "Laplacian Eigenmaps for Dimensionality Reduction and Data Representation [pdf, bib] M. Belkin, P. Niyogi Neural Computation, June 2003; 15 (6):1373-1396. + ...",
+          "url": "http://misha.belkin-wang.org/papers.html"
+        },
+        {
+          "title": "Laplacian Eigenmaps for Dimensionality Reduction and ...",
+          "abstract": "by M Belkin · 2003 · Cited by 11064 — Abstract: One of the central problems in machine learning and pattern recognition is to develop appropriate representations for complex data.",
+          "url": "https://ieeexplore.ieee.org/document/6789755"
+        },
+        {
+          "title": "Laplacian Eigenmaps for Dimensionality Reduction and ...",
+          "abstract": "This work proposes a geometrically motivated algorithm for representing the high-dimensional data that provides a computationally efficient approach to ...",
+          "url": "https://www.semanticscholar.org/paper/Laplacian-Eigenmaps-for-Dimensionality-Reduction-Belkin-Niyogi/88816ae492956f3004daa41357166f1181c0c1bf"
+        },
+        {
+          "title": "Laplacian Eigenmaps for dimensionality reduction and ...",
+          "abstract": "We consider the problem of constructing a representation for data lying on a low-dimensional manifold embedded in a high-dimensional space. Drawing on the ...",
+          "url": "https://dl.acm.org/doi/10.1162/089976603321780317"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "A face recognition method achieved 94% recognition rate on average on a dataset with severe illumination variation.",
+      "evidence": [
+        {
+          "title": "Low-Resolution Face Recognition",
+          "abstract": "The TinyFace dataset consists of 5,139 labelled facial identities given by 169,403 native LR face images (average. 20×16 pixels) designed for 1:N recognition ...",
+          "url": "https://xiatian-zhu.github.io/papers/ChengEtAl_ACCV2018.pdf"
+        },
+        {
+          "title": "Face Recognition in Low Quality Images: A Survey",
+          "abstract": "by P Li · 2018 · Cited by 88 — They reported a recognition rate on the Extended Yale-B face database of 89.7% that approaches the recognition rate of 90.2% obtained from the original HR ...",
+          "url": "https://arxiv.org/pdf/1805.11519"
+        },
+        {
+          "title": "Robust Face Recognition Technique under Varying ...",
+          "abstract": "by JH Shah · 2015 · Cited by 57 — In this paper, average recognition rates defined by different authors are compared and analyzed. The comparison is performed on multi-scale retinex (MSR) ...",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1665642315300080"
+        },
+        {
+          "title": "Face Recognition Systems: A Survey - PMC - NIH",
+          "abstract": "by Y Kortli · 2020 · Cited by 884 — The experimental results show a better recognition rate compared with the PCA and Gabor wavelet techniques under illumination variations.",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7013584/"
+        },
+        {
+          "title": "Face recognition under varying lighting conditions",
+          "abstract": "Illumination variation is among the several bottlenecks in a face recognition system because it can greatly affect the appearance of a face image, ...",
+          "url": "https://www.academia.edu/114363891/Face_recognition_under_varying_lighting_conditions_improving_the_recognition_accuracy_for_local_descriptors_based_on_weber_face_followed_by_difference_of_Gaussians"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "A 2008 study in IEEE Transactions on Multimedia demonstrated that aging patterns in facial images can be extracted as distinct manifold structures through discriminant subspace learning.",
+      "evidence": [
+        {
+          "title": "Temporally Consistent Transformation of Faces in Videos - IEEE Xplore",
+          "abstract": "This study aims to propose a face age transformation method that can generate naturalistic faces appearing to be of a specific target age in ...",
+          "url": "https://ieeexplore.ieee.org/iel7/6287639/10005208/10339323.pdf"
+        },
+        {
+          "title": "Recognizing Age-Separated Face Images: Humans and Machines",
+          "abstract": "Such a study has two components - facial age estimation and age-separated face recognition. Age estimation involves predicting the age of an ...",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4256302/"
+        },
+        {
+          "title": "Facial Age Estimation - Scholarpedia",
+          "abstract": "this article is focused on facial age estimation that relies on biometric features extracted from a person's face.",
+          "url": "http://www.scholarpedia.org/article/Facial_Age_Estimation"
+        },
+        {
+          "title": "Age identification of Facial Images using Neural Network",
+          "abstract": "In this research, we try to prove that computer can estimate/classify human age according to features extracted from human facial image using Artificial Neural ...",
+          "url": "https://www.academia.edu/79747369/Age_identification_of_Facial_Images_using_Neural_Network"
+        },
+        {
+          "title": "A Study on the Effect of Ageing in Facial Authentication ... - IEEE Xplore",
+          "abstract": "This work presents a study on the effects of aging on the performance and reliability of facial authentication methods.",
+          "url": "https://ieeexplore.ieee.org/iel7/6287639/6514899/10242105.pdf"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "A 2008 study in IEEE Transactions on Image Processing introduced the age manifold learning scheme for extracting face aging features.",
+      "evidence": [
+        {
+          "title": "Individual Aging Pattern Modeling for Enhanced Facial Age Recognition",
+          "abstract": "This paper introduces an age recognition model based on Individual Aging Patterns (IAP), which leverages for deep feature extraction, manifold learning maps ...",
+          "url": "https://www.mdpi.com/2079-9292/14/23/4583"
+        },
+        {
+          "title": "Image-Based Human Age Estimation by Manifold Learning and Locally ...",
+          "abstract": "In this paper, we introduce the age manifold learning scheme for extracting face aging features and design a locally adjusted robust regressor ...",
+          "url": "https://ieeexplore.ieee.org/document/4531189/"
+        },
+        {
+          "title": "AGE ESTIMATION FROM FACE IMAGES:A REVIEW",
+          "abstract": "[5] introduced the age manifold learning scheme for extracting face aging features and design a locally adjusted robust regressor for learning and ...",
+          "url": "https://journals.mriindia.com/index.php/oaijse/article/download/2546/2442"
+        },
+        {
+          "title": "AGE ESTIMATION FROM FACIAL IMAGES USING MACHINE ...",
+          "abstract": "A convolution network can learn to extract high-level features from the data and perform tasks such as image classification, object detection, ...",
+          "url": "https://www.theseus.fi/bitstream/10024/804002/2/Nguyen_Dang.pdf"
+        },
+        {
+          "title": "Image-Based Human Age Estimation by Manifold Learning and Locally ...",
+          "abstract": "In this paper, we introduce the age manifold learning scheme for extracting face aging features and design a locally adjusted robust regressor for learning and ...",
+          "url": "https://dl.acm.org/doi/abs/10.1109/TIP.2008.924280"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "The age manifold learning study was evaluated on a large internal age database and the publicly available FG-NET database.",
+      "evidence": [
+        {
+          "title": "FGNET Dataset - Kaggle",
+          "abstract": "The FG-NET Aging Database is a widely used image collection for age estimation and age progression research. It contains 1,002 images of 82 individuals, ...",
+          "url": "https://www.kaggle.com/datasets/aiolapo/fgnet-dataset"
+        },
+        {
+          "title": "Facial age estimation using a hybrid CNN–LSTM architecture on the ...",
+          "abstract": "Provided insights into facial aging datasets and benchmark evaluation protocols. Focused primarily on FG-NET and lacked coverage of larger modern datasets. 8 ...",
+          "url": "https://www.sciencedirect.com/science/article/pii/S2666720726001141"
+        },
+        {
+          "title": "An Overview of Research on Facial Aging using the FG-NET ...",
+          "abstract": "The FG-NET aging database was released in 2004 in an attempt to support research activities aimed at understanding the changes in facial ...",
+          "url": "https://www.researchgate.net/publication/276026141_An_Overview_of_Research_on_Facial_Aging_using_the_FG-NET_Aging_Database"
+        },
+        {
+          "title": "Overview of research on facial ageing using the FG‐NET ageing database",
+          "abstract": "The FG-NET-AD contains 1002 images from 82 different subjects with ages ranging between newborns to 69 years old subjects. However, ages up to ...",
+          "url": "https://ietresearch.onlinelibrary.wiley.com/doi/10.1049/iet-bmt.2014.0053"
+        },
+        {
+          "title": "Individual Aging Pattern Modeling for Enhanced Facial Age Recognition",
+          "abstract": "This study utilized publicly available, anonymized datasets (FG-NET and MORPH). As the research involved the analysis of pre-existing data without any ...",
+          "url": "https://www.mdpi.com/2079-9292/14/23/4583"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "A 2018 study proposed an age group-dependent gait-based human age estimation method.",
+      "evidence": [
+        {
+          "title": "Real-Time Gait-Based Age Estimation and Gender ...",
+          "abstract": "by C Xu · 2021 · Cited by 61 — In this paper, we propose a unified real-time framework for gait-based age estimation and gender classification that uses just a single image,",
+          "url": "https://openaccess.thecvf.com/content/WACV2021/papers/Xu_Real-Time_Gait-Based_Age_Estimation_and_Gender_Classification_From_a_Single_WACV_2021_paper.pdf"
+        },
+        {
+          "title": "Automatic age-group estimation from gait energy images",
+          "abstract": "by B Abirami · 2020 · Cited by 15 — This paper proposed a method which combines age and gender to study the problem of gait-based human age estimation.",
+          "url": "https://www.sciencedirect.com/science/article/abs/pii/S2214785320361708"
+        },
+        {
+          "title": "A Three-Dimensional Real-Time Gait-Based Age Detection ...",
+          "abstract": "by M Azhar · 2023 · Cited by 5 — The proposed testing phase correctly predicts the age of a walking person using the results obtained from the training phase. The proposed ...",
+          "url": "https://www.sciopen.com/article/10.32604/cmc.2023.034605"
+        },
+        {
+          "title": "Gait-based human age estimation | IEEE Transactions on ...",
+          "abstract": "by J Lu · 2010 · Cited by 151 — Our experimental results clearly demonstrate the feasibility of using gait signatures to estimate human age and the efficacy of our proposed method.",
+          "url": "https://dl.acm.org/doi/abs/10.1109/TIFS.2010.2069560"
+        },
+        {
+          "title": "Gait-based human age estimation using age group ...",
+          "abstract": "by X Li · 2018 · Cited by 67 — In this paper, we described an age group-dependent manifold learning and regression method for gait-based human age estimation.",
+          "url": "https://link.springer.com/article/10.1007/s11042-018-6049-7"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "A gait database used for age estimation contained participants ranging from 2 to 90 years old.",
+      "evidence": [
+        {
+          "title": "Age and environment-related differences in gait in healthy ...",
+          "abstract": "by MD Czech · 2020 · Cited by 77 — 32, age = 72.3 ± 5.8 years, Full data for a participant ranged from 6 to 15 days based on the detected gait cycles.",
+          "url": "https://www.nature.com/articles/s41746-020-00334-y"
+        },
+        {
+          "title": "Gait-based age estimation using a whole-generation ...",
+          "abstract": "This paper addresses gait-based age estimation using a large-scale whole-generation gait database. includes 1,728 subjects with ages ranging from 2 to 94 years ...",
+          "url": "https://www.researchgate.net/publication/262256567_Gait-based_age_estimation_using_a_whole-generation_gait_database"
+        },
+        {
+          "title": "A database with frailty, functional and inertial gait metrics for ...",
+          "abstract": "by S García-de-Villa · 2023 · Cited by 41 — The GSTRIDE database includes a large number of participants, that is 163 volunteers, with old age of average 82.6 ± 6.2 years. age ranges ...",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10457385/"
+        },
+        {
+          "title": "Gait-based human age estimation using age group ...",
+          "abstract": "by X Li · 2018 · Cited by 67 — The experimental results using a whole-generation gait database including 1728 subjects with a wide age range (from 2 to 94 years old) indicated ...",
+          "url": "https://link.springer.com/article/10.1007/s11042-018-6049-7"
+        },
+        {
+          "title": "A Three-Dimensional Real-Time Gait-Based Age Detection ...",
+          "abstract": "by M Azhar · 2023 · Cited by 5 — Sakata et al. [ 15 ] used a large gait dataset, which contained more than 60,000 people for the age estimation. this dataset has age ranges ...",
+          "url": "https://www.sciopen.com/article/10.32604/cmc.2023.034605"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "Zhang and Zhang presented a multi-feature shared learning framework for visual understanding, published in IEEE Transactions on Multimedia.",
+      "evidence": [
+        {
+          "title": "Jian Zhang | Research outputs | University of Technology ...",
+          "abstract": "Our model segregates image features into shared and specific attributes by employing feature constraints to boost mutual information across images and guide ...",
+          "url": "https://profiles.uts.edu.au/Jian.Zhang/publications"
+        },
+        {
+          "title": "Multi-Feature Fusion via Hierarchical Regression for ...",
+          "abstract": "by Y Yang · 2012 · Cited by 187 — In this paper, we propose a new algorithm, namely Multi- feature Learning via Hierarchical Regression for multimedia semantics understanding, where two issues ...",
+          "url": "http://www.cs.cmu.edu/~yiyang/draft.pdf"
+        },
+        {
+          "title": "Visual Understanding via Multi-Feature Shared Learning ...",
+          "abstract": "by L Zhang · 2015 · Cited by 62 — This paper studies visual understanding via a newly proposed -norm based multi-feature shared learning framework, which can simultaneously learn a global label ...",
+          "url": "https://arxiv.org/pdf/1505.05233"
+        },
+        {
+          "title": "Visual Understanding via Multi-Feature Jointly Sharing ...",
+          "abstract": "This paper studies visual understanding via a newly proposed l_2-norm based multi-feature jointly sharing learning framework, which can simultaneously learn the ...",
+          "url": "https://www.researchgate.net/publication/277023262_Visual_Understanding_via_Multi-Feature_Jointly_Sharing_Learning"
+        },
+        {
+          "title": "Visual Understanding via Multi-Feature Jointly Sharing ...",
+          "abstract": "The proposed semi-supervised feature analyzing framework is able to learn a classifier for different applications by selecting the discriminating features",
+          "url": "https://www.semanticscholar.org/paper/Visual-Understanding-via-Multi-Feature-Jointly-Zhang-Zhang/64a518cdba88f387389ebdc0c1a14f1983e947de"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "Valem, Pedronette, and Latecki published \"Rank Flow Embedding for Unsupervised and Semi-Supervised Manifold Learning\" in IEEE Transactions on Image Processing.",
+      "evidence": [
+        {
+          "title": "Rank Flow Embedding for Unsupervised and Semi ... - arXiv",
+          "abstract": "Our contribution is an unsupervised rank-based approach capable of refining similarity information and computing a context-sensitive rep-.",
+          "url": "https://arxiv.org/pdf/2304.12448"
+        },
+        {
+          "title": "‪Lucas Pascotti Valem‬ - ‪Google Scholar‬",
+          "abstract": "Rank flow embedding for unsupervised and semi-supervised manifold learning. LP Valem, DCG Pedronette, LJ Latecki. IEEE Transactions on Image Processing 32, 2811 ...",
+          "url": "https://scholar.google.com.br/citations?user=jnJ76JAAAAAJ&hl=ja"
+        },
+        {
+          "title": "‪Lucas Pascotti Valem‬ - ‪Google Scholar‬",
+          "abstract": "Rank flow embedding for unsupervised and semi-supervised manifold learning. LP Valem, DCG Pedronette, LJ Latecki. IEEE Transactions on Image Processing 32, 2811 ...",
+          "url": "https://scholar.google.cat/citations?user=jnJ76JAAAAAJ&hl=ja"
+        },
+        {
+          "title": "Rank Flow Embedding for Unsupervised and Semi ...",
+          "abstract": "In this work, we propose a novel manifold learning algorithm named Rank Flow Embedding (RFE) for unsupervised and semi-supervised scenarios.",
+          "url": "https://dl.acm.org/doi/10.1109/TIP.2023.3268868"
+        },
+        {
+          "title": "Rank Flow Embedding for Unsupervised and Semi ... - arXiv",
+          "abstract": "In this work, we propose a novel manifold learning algorithm named Rank Flow Embedding (RFE) for unsupervised and semi-supervised scenarios.",
+          "url": "https://arxiv.org/abs/2304.12448"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "Pedersoli, Wiebe, Banitalebi, Zhang, Tzanetakis, and Yi published \"Estimating Visual Information From Audio Through Manifold Learning.\"",
+      "evidence": [
+        {
+          "title": "George Tzanetakis",
+          "abstract": "Estimating Visual Information From Audio Through Manifold Learning We propose a new framework for extracting visual information about a scene only using audio ...",
+          "url": "https://www.alphaxiv.org/@george-tzanetakis"
+        },
+        {
+          "title": "Phoenix : Prioritize the Hierarchical Observation of Auditory ...",
+          "abstract": "Pedersoli, F., Wiebe, D., Banitalebi, A., Zhang, Y., Tzanetakis, G., Yi, K.M., 2022. Estimating visual information from audio through manifold learning.",
+          "url": "https://papers.ssrn.com/sol3/Delivery.cfm/0491a9d4-d956-4bcf-a886-01efc2fb8a34-MECA.pdf?abstractid=5343200&mirid=1"
+        },
+        {
+          "title": "SeeingSounds: Learning Audio-to-Visual Alignment via Text",
+          "abstract": "In this work, we introduced SeeingSounds, a lightweight and scalable framework for audio-conditioned image generation that unifies audio, language, and vision ...",
+          "url": "https://dl.acm.org/doi/10.1145/3743093.3770976"
+        },
+        {
+          "title": "Estimating Visual Information From Audio Through ...",
+          "abstract": "by F Pedersoli · Cited by 13 — We propose a new framework for extracting visual informa- tion about a scene only using audio signals. Opposed to the commonly- used end-to-end learning ...",
+          "url": "https://av4d.org/papers/eccv22/p7.pdf"
+        },
+        {
+          "title": "Estimating Visual Information From Audio Through ...",
+          "abstract": "Estimating Visual Information From Audio Through Manifold Learning. Fabrizio Pedersoli 1,. Dryden Wiebe 2,. Amin Banitalebi 3. et al. Help me understand this ...",
+          "url": "https://scite.ai/reports/estimating-visual-information-from-audio-2NwMO06J"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "The research on estimating visual information from audio was conducted by the University of British Columbia, Huawei Technologies Canada Co., Ltd, and the University of Victoria.",
+      "evidence": [
+        {
+          "title": "Auditory/visual distance estimation: accuracy and variability - Frontiers",
+          "abstract": "The present study investigates the degree to which auditory distance estimation is improved when matched with a congruent visual stimulus. Virtual sound sources ...",
+          "url": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2014.01097/full"
+        },
+        {
+          "title": "Estimating Visual Information From Audio Through Manifold Learning",
+          "abstract": "Abstract:We propose a new framework for extracting visual information about a scene only using audio signals. Audio-based methods can ...",
+          "url": "https://arxiv.org/abs/2208.02337"
+        },
+        {
+          "title": "Exploring Effective Relationships Between Visual-Audio Channels in ...",
+          "abstract": "This paper extends the line of research in audio–visual correspondence by exploring the effective rela- tionships between audio and visual ...",
+          "url": "https://yulingyun.com/wp-content/uploads/2023/08/Rubab_2023_EER.pdf"
+        },
+        {
+          "title": "Acoustic Metadata Design on Object-Based Audio Using ... - MDPI",
+          "abstract": "This paper aims to improve localization accuracy by changing the range of sound image. The sound image positions were determined by estimating the coordinates ...",
+          "url": "https://www.mdpi.com/2624-599X/8/1/3"
+        },
+        {
+          "title": "Huawei funds $56M in academic research in Canada. That has some ...",
+          "abstract": "The University of British Columbia provided details on a three-year, $3-million partnership researching \"advanced communications and 5G projects ...",
+          "url": "https://www.cbc.ca/news/business/huawei-academic-funding-in-canada-1.5372310"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "A 2021 study proposed a deep learning framework for animation video resequencing.",
+      "evidence": [
+        {
+          "title": "Learning a perceptual manifold with deep features for animation video ...",
+          "abstract": "We propose a novel deep learning framework for animation video resequencing. Our system produces new video sequences by minimizing a perceptual ...",
+          "url": "https://arxiv.org/abs/2111.01455"
+        },
+        {
+          "title": "Skeleton-Aware Networks for Deep Motion Retargeting",
+          "abstract": "Abstract & Method. We introduce a novel deep learning framework for data-driven motion retargeting between skeletons, which may have different structure, ...",
+          "url": "https://deepmotionediting.github.io/retargeting"
+        },
+        {
+          "title": "Learning a perceptual manifold with deep features for animation video ...",
+          "abstract": "We propose a novel deep learning framework for animation video resequencing. Our system produces new video sequences by minimizing a perceptual distance of ...",
+          "url": "https://search.proquest.com/openview/14350aae8580f13f1be740b6143b7deb/1?pq-origsite=gscholar&cbl=54626"
+        },
+        {
+          "title": "A Deep Learning Framework for Character Motion Synthesis and ...",
+          "abstract": "... sequences from parameters such as a curve over the terrain that ... Your browser can't play this video. Learn more. Meet the dance group ...",
+          "url": "https://www.youtube.com/watch?v=urf-AAIwNYk"
+        },
+        {
+          "title": "Disney Research Studios",
+          "abstract": "In this paper, we present a deep-learning-based method for deinterlacing animated and live-action content. Our proposed method supports bidirectional spatio- ...",
+          "url": "https://studios.disneyresearch.com/researchlab/disney-research/page/7/"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "A Grassmann Reconstruction Metric Learning algorithm was evaluated through extensive experiments on eight benchmark datasets.",
+      "evidence": [
+        {
+          "title": "Hybrid Riemannian Graph-Embedding Metric Learning ...",
+          "abstract": "The extensive experiments carried out on six benchmark datasets indicate that our method is feasible and effective, compared with some existing Riemannian ...",
+          "url": "https://www.computer.org/csdl/journal/bd/2023/01/09540380/1wWC8Ge07pS"
+        },
+        {
+          "title": "Deep Hybrid Manifold Network with joint metric learning for image set ...",
+          "abstract": "In this paper, we propose a deep Riemannian neural network by fusing Symmetric Positive Definite (SPD) and Grassmann manifolds to explore multiple intrinsic ...",
+          "url": "https://www.sciencedirect.com/science/article/abs/pii/S0262885625002355"
+        },
+        {
+          "title": "Projection Metric Learning on Grassmann Manifold with ...",
+          "abstract": "we present extensive experiments to evaluate our proposed PML method on two video based face recognition tasks: video based face identification",
+          "url": "http://vipl.ict.ac.cn/resources/codes/2015/202205/P020220601508175929868.pdf"
+        },
+        {
+          "title": "Robust Metric Learning on Grassmann Manifolds with ...",
+          "abstract": "Experiments on six benchmark datasets clearly show that the proposed method achieves consistent improvements in discrimination accuracy, in comparison to state ...",
+          "url": "https://ojs.aaai.org/index.php/AAAI/article/download/4361/4239"
+        },
+        {
+          "title": "Figure 1 from Projection Metric Learning on Grassmann Manifold ...",
+          "abstract": "This work proposes a novel method to learn the Projection Metric directly on Grassmann manifold rather than in Hilbert space, which can be regarded as ...",
+          "url": "https://www.semanticscholar.org/paper/Projection-Metric-Learning-on-Grassmann-Manifold-to-Huang-Wang/24cb375a998f4af278998f8dee1d33603057e525/figure/0"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    }
+  ]
+}

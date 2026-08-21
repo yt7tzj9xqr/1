@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2204.10325",
+  "model": "MiniMax-M3",
+  "system": "search-baseline-v5",
+  "reference_precision": 0.0,
+  "reference_recall": 0.0,
+  "reference_count": 12,
+  "reference_matches": 0,
+  "ground_truth_count": 36,
+  "predicted_titles": [
+    "Speech and language therapy for aphasia following stroke",
+    "Stuttering Speech Disfluency Prediction using Explainable Attribution Vectors of Facial Muscle Movements",
+    "Automated assessment of psychiatric disorders using speech: A systematic review",
+    "Deep-Learning-Based Automated Classification of Chinese Speech Sound Disorders",
+    "Role of ML in diagnosing and treating speech disorders",
+    "Automatic Pronunciation Scoring And Mispronunciation ...",
+    "Automatic Analysis of Pronunciations for Children with Speech Sound Disorders",
+    "Evaluating Automatic Speech Recognition for Child ...",
+    "A STUDY ON THE IMPACT OF SELF-SUPERVISED LEARNING ON AUTOMATIC DYSARTHRIC SPEECH ASSESSMENT",
+    "An automated tool for the assessment of childhood apraxia ...",
+    "Research Paper: Mobile Speech Therapy Application",
+    "The clinical practice of speech and language therapists with children with phonologically based speech sound disorders"
+  ]
+}

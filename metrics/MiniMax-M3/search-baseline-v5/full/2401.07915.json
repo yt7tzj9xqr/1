@@ -1,0 +1,545 @@
+{
+  "arxiv_id": "2401.07915",
+  "model": "MiniMax-M3",
+  "system": "search-baseline-v5",
+  "reference_precision": 0.3333333333333333,
+  "reference_recall": 0.019230769230769232,
+  "reference_count": 15,
+  "reference_matches": 5,
+  "ground_truth_count": 260,
+  "predicted_titles": [
+    "Learning Dexterous In-Hand Manipulation",
+    "DexMV: Imitation Learning for Dexterous Manipulation from ...",
+    "Tactile-Driven Non-Prehensile Object Manipulation via ...",
+    "Learning Robot In-Hand Manipulation with Tactile Features",
+    "Learning a State Estimator for Tactile In-Hand Manipulation",
+    "DexYCB: A Benchmark for Capturing Hand Grasping of Objects",
+    "DexArt: Benchmarking Generalizable Dexterous Manipulation ...",
+    "Continual Policy Distillation of Reinforcement Learning-based Controllers for Soft Robotic In-Hand Manipulation",
+    "TacGNN:Learning Tactile-based In-hand Manipulation with a Blind Robot",
+    "Reinforcement and Imitation Learning for Diverse Visuomotor Skills",
+    "Learning vision-based robotic manipulation tasks sequentially in offline reinforcement learning settings",
+    "On Policy Learning Robust to Irreversible Events: An Application to Robotic In-Hand Manipulation",
+    "Object Manipulation with an Anthropomorphic Robotic Hand via Deep Reinforcement Learning with a Synergy Space of Natural Hand Poses",
+    "H-InDex: Visual Reinforcement Learning with Hand-Informed Representations for Dexterous Manipulation",
+    "Learning Dexterous Manipulation for a Soft Robotic Hand from Human Demonstration"
+  ],
+  "cited_match_rate": 1.0,
+  "cited_count": 16,
+  "cited_supported": 16,
+  "cited_details": [
+    {
+      "statement": "https://arxiv.org/abs/1808.00177",
+      "url": "https://arxiv.org/abs/1808.00177",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://arxiv.org/abs/1808.00177",
+      "url": "https://arxiv.org/abs/1808.00177",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://users.cs.utah.edu/~thermans/papers/vanhoof-ichr2015-in-hand-learning.pdf",
+      "url": "https://users.cs.utah.edu/~thermans/papers/vanhoof-ichr2015-in-hand-learning.pdf",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://elib.dlr.de/190608/1/IROS22_LearningTactileEstimator.pdf",
+      "url": "https://elib.dlr.de/190608/1/IROS22_LearningTactileEstimator.pdf",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://arxiv.org/abs/2304.00736",
+      "url": "https://arxiv.org/abs/2304.00736",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://www.roboticsproceedings.org/rss20/p135.pdf",
+      "url": "https://roboticsproceedings.org/rss20/p135.pdf",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://arxiv.org/abs/2108.05877",
+      "url": "https://arxiv.org/abs/2108.05877",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://arxiv.org/abs/1603.06348",
+      "url": "https://arxiv.org/abs/1603.06348",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://doi.org/10.15607/rss.2018.xiv.009",
+      "url": "https://doi.org/10.15607/rss.2018.xiv.009",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://doi.org/10.3390/s21165301",
+      "url": "https://doi.org/10.3390/s21165301",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://arxiv.org/abs/1911.08927",
+      "url": "https://arxiv.org/abs/1911.08927",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://arxiv.org/abs/2404.04219",
+      "url": "https://arxiv.org/abs/2404.04219",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://dex-ycb.github.io/",
+      "url": "https://dex-ycb.github.io",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://cvpr.thecvf.com/virtual/2023/poster/22341",
+      "url": "https://cvpr.thecvf.com/virtual/2023/poster/22341",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://arxiv.org/abs/2310.01404",
+      "url": "https://arxiv.org/abs/2310.01404",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "https://doi.org/10.1017/s0263574724000389",
+      "url": "https://doi.org/10.1017/s0263574724000389",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    }
+  ],
+  "noncited_factual_accuracy": 0.3333333333333333,
+  "noncited_count": 12,
+  "noncited_correct": 4,
+  "noncited_details": [
+    {
+      "claim": "OpenAI used reinforcement learning to learn dexterous in-hand manipulation policies that perform vision-based object reorientation on a physical Shadow Dexterous Hand, training in a simulated environment in which friction coefficients and object appearance are randomized.",
+      "evidence": [
+        {
+          "title": "Survey of learning-based approaches for robotic in-hand ...",
+          "abstract": "by AI Weinberg · 2024 · Cited by 42 — Efforts for learning in-hand manipulation can be classified into three subfields: model-based methods, Reinforcement Learning (RL) and Imitation Learning (IL).",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11573780/"
+        },
+        {
+          "title": "Sim-to-Real RL for Vision-Based Dexterous Manipulation ...",
+          "abstract": "In this paper, we introduce a practical sim-to-real RL recipe that trains a humanoid robot to perform three challenging dexterous manipulation tasks: grasp-and ...",
+          "url": "https://toruowo.github.io/recipe/"
+        },
+        {
+          "title": "Learning dexterity",
+          "abstract": "We've trained a human-like robot hand to manipulate physical objects with unprecedented dexterity.",
+          "url": "https://openai.com/index/learning-dexterity/"
+        },
+        {
+          "title": "Learning Dexterous In-Hand Manipulation",
+          "abstract": "OpenAI's research demonstrates a significant advancement in this field by training a Shadow Dexterous Hand to perform vision-based in-hand manipulation entirely ...",
+          "url": "https://www.alphaxiv.org/abs/1808.00177"
+        },
+        {
+          "title": "Learning Dexterous In-Hand Manipulation",
+          "abstract": "by M Andrychowicz · 2018 · Cited by 2582 — Abstract:We use reinforcement learning (RL) to learn dexterous in-hand manipulation policies which can perform vision-based object ...",
+          "url": "https://arxiv.org/abs/1808.00177"
+        }
+      ],
+      "true_votes": 1,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "A five-fingered humanoid hand trained with reinforcement learning was shown manipulating a block from an initial configuration to a goal configuration using vision for sensing.",
+      "evidence": [
+        {
+          "title": "Learning dexterous in-hand manipulation - ResearchGate",
+          "abstract": "A five-fingered humanoid hand trained with reinforcement learning manipulating a block from an initial conf iguration to a goal configuration using vision for ...",
+          "url": "https://www.researchgate.net/publication/337345997_Learning_dexterous_in-hand_manipulation"
+        },
+        {
+          "title": "Human-like dexterous manipulation for anthropomorphic five-fingered ...",
+          "abstract": "In this paper, we present a focused review of human-like dexterous manipulation for anthropomorphic five-fingered hands. reinforcement learning and their ...",
+          "url": "https://www.sciencedirect.com/science/article/pii/S2667379725000038"
+        },
+        {
+          "title": "Review on human‐like robot manipulation using dexterous hands",
+          "abstract": "... five-fingered robotic hands have been developed to mimic human hand nature. However, human-like manipulation of dexterous hands to this date ...",
+          "url": "https://ietresearch.onlinelibrary.wiley.com/doi/10.1049/ccs2.12073"
+        },
+        {
+          "title": "Learning Dexterous In-Hand Manipulation - ar5iv - arXiv",
+          "abstract": "A five-fingered humanoid hand trained with reinforcement learning manipulating a block from an initial configuration to a goal configuration using vision for ...",
+          "url": "https://ar5iv.labs.arxiv.org/html/1808.00177"
+        },
+        {
+          "title": "Learning Complex Dexterous Manipulation with Deep ... - Robotics",
+          "abstract": "We demonstrate, in simulation, dexterous manipulation with high-dimensional human-like five-finger hands using model-free DRL.",
+          "url": "https://www.roboticsproceedings.org/rss14/p49.pdf"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "proposed a framework for tactile-based dexterous manipulation learning with a blind anthropomorphic robotic hand without visual sensing, extracting object-related states from raw tactile signals using a graph-based perception model called TacGNN, and examined the method on a Baoding ball task of simultaneously manipulating two spheres around each other by 180 degrees in hand.",
+      "evidence": [
+        {
+          "title": "linchangyi1/Awesome-Touch: Tactile Sensing • Data Collection - GitHub",
+          "abstract": "An Omnidirectional Camera-Based Tactile Sensor for Dexterous Robotic Manipulation, Learning Tactile-based In-hand Manipulation with a Blind Robot using ...",
+          "url": "https://github.com/linchangyi1/Awesome-Touch"
+        },
+        {
+          "title": "Designing A Learning-Enabled Non-Anthropomorphic Robotic ...",
+          "abstract": "This framework offers a versatile hand design space for dexterous manipulation. To address the challenge of controlling non-anthropomorphic hands, we explore ...",
+          "url": "https://publications.ri.cmu.edu/designing-a-learning-enabled-non-anthropomorphic-robotic-hand-framework-for-dexterous-manipulation"
+        },
+        {
+          "title": "TacGNN - Google Sites",
+          "abstract": "In this paper, we propose a novel framework for tactile-based dexterous manipulation learning with a blind anthropomorphic robotic hand, i.e. without visual ...",
+          "url": "https://sites.google.com/view/tacgnn"
+        },
+        {
+          "title": "TacGNN: Learning Tactile-Based In-Hand Manipulation With a Blind ...",
+          "abstract": "In this letter, we propose a novel framework for tactile-based dexterous manipulation learning with a blind anthropomorphic robotic hand, ...",
+          "url": "https://ieeexplore.ieee.org/document/10093019/"
+        },
+        {
+          "title": "Survey of learning-based approaches for robotic in-hand manipulation",
+          "abstract": "In this study, we survey various in-hand manipulation tasks of robotic hands and advanced learning approaches for achieving them.",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11573780/"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "Oller, Berenson, and Fazeli considered the problem of non-prehensile manipulation using grasped objects, a superset of common manipulation skills including tool-use such as a grasped spatula flipping a burger, modeling tactile sensors using passive compliance elements and considering frictional interaction between objects in the scene.",
+      "evidence": [
+        {
+          "title": "Nima Fazeli | MMint Lab",
+          "abstract": "Oller, D. Berenson, and N. Fazeli, “Tactile-driven non-prehensile object manipulation via extrinsic contact mode control,” Robotic Sciences and Systems (RSS),",
+          "url": "https://www.mmintlab.com/wp-content/uploads/2025/10/cv_nima_fazeli.pdf"
+        },
+        {
+          "title": "Publications | Mark Van der Merwe",
+          "abstract": "Prehensile autonomous manipulation, often an ill-posed problem, Oller, Dmitry Berenson, grasped by the robot should meet an observable surface.",
+          "url": "https://mvandermerwe.github.io/publication/"
+        },
+        {
+          "title": "Tactile-Driven Non-Prehensile Object Manipulation via Extrinsic Contact ...",
+          "abstract": "In this paper, we consider the problem of non-prehensile manipulation using grasped objects. This problem is a superset of many common manipulation skills",
+          "url": "https://roboticsconference.org/2024/program/papers/135/"
+        },
+        {
+          "title": "Tactile-Driven Non-Prehensile Object Manipulation via Extrinsic Contact ...",
+          "abstract": "Abstract—In this paper, we consider the problem of non- prehensile manipulation using grasped objects. This problem is a superset of many ...",
+          "url": "https://www.roboticsproceedings.org/rss20/p135.pdf"
+        },
+        {
+          "title": "Non-Prehensile Manipulation Actions and Visual 6D Pose Estimation for ...",
+          "abstract": "In detail, the experiments presented in the paper show how a non-prehensile manipulation can be used as pre-grasp operation to pick a fruit ...",
+          "url": "https://www.mdpi.com/2218-6581/12/4/92"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "recorded human videos on manipulation tasks, performed 3D hand-object pose estimations from the videos to construct demonstrations, and provided a paired simulation system with the same dexterous manipulation tasks for the multi-finger robot, including relocate, pour, and place inside.",
+      "evidence": [
+        {
+          "title": "xinghaochen/awesome-hand-pose-estimation",
+          "abstract": "Learning to Estimate 3D Hand Pose from Single RGB Images. · Real-time Hand Tracking under Occlusion from an Egocentric RGB-D Sensor. · Robust Hand Pose Estimation ...",
+          "url": "https://github.com/xinghaochen/awesome-hand-pose-estimation"
+        },
+        {
+          "title": "Virtual Reality via Object Pose Estimation and Active ...",
+          "abstract": "by J Lee · 2023 · Cited by 15 — This paper presents a novel telepresence system for advancing aerial manipulation in dynamic and unstructured environments.",
+          "url": "https://aerial-core.eu/wp-content/uploads/2023/10/Virtual-Reality-via-Object-Pose-Estimation-and-Active-Learning-Realizing-Telepresence-Robots-with-Aerial-Manipulation-Capabilities.pdf"
+        },
+        {
+          "title": "Interacting Hand-Object Pose Estimation via Dense Mutual ...",
+          "abstract": "3D hand-object pose estimation is the key to the success of many computer vision applications. The main focus of this task is to effectively ...",
+          "url": "https://www.youtube.com/watch?v=dQfK8nb-0i8"
+        },
+        {
+          "title": "A survey of deep learning methods and datasets for hand ...",
+          "abstract": "by T Woo · 2023 · Cited by 20 — This paper provides a comprehensive survey of the state-of-the-art deep learning-based approaches for estimating hand pose (joint and shape)",
+          "url": "https://www.sciencedirect.com/science/article/abs/pii/S0097849323002364"
+        },
+        {
+          "title": "A Survey on Hand Pose Estimation with Wearable Sensors ...",
+          "abstract": "by W Chen · 2020 · Cited by 198 — The purpose of the hand pose estimation based on model-based methods and the discriminative methods is to obtain a representation of the hand for tracking hand ...",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7071082/"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "proposed a model-free deep reinforcement learning method that leverages a small amount of demonstration data to assist a reinforcement learning agent, training end-to-end visuomotor policies that map directly from RGB camera inputs to joint velocities, and showed that the combined reinforcement and imitation agent achieves significantly better performances than agents trained with reinforcement learning or imitation learning alone.",
+      "evidence": [
+        {
+          "title": "Reinforcement-Learning-Papers - GitHub",
+          "abstract": "Deep Reinforcement Learning from. Spotlight propose to regularize the value function when applying data augmentation with model-free methods and reach … 22 ...",
+          "url": "https://github.com/yingchengyang/Reinforcement-Learning-Papers"
+        },
+        {
+          "title": "Deep Reinforcement Learning Doesn't Work Yet",
+          "abstract": "This paper incorporates human demonstrations into the training data of a DQN agent to accelerate learning. Regardless, this is some necessary ...",
+          "url": "https://www.alexirpan.com/2018/02/14/rl-hard.html"
+        },
+        {
+          "title": "Dexterous Manipulation with Reinforcement Learning",
+          "abstract": "We will first show that deep RL can in fact be used to learn complex manipulation behaviors by training directly in the real world, with modest ...",
+          "url": "https://bair.berkeley.edu/blog/2018/08/31/dexterous-manip/"
+        },
+        {
+          "title": "SADRL: Merging human experience with machine intelligence via ...",
+          "abstract": "This study proposes a novel Supervised Assisted Deep Reinforcement Learning (SADRL) framework integrating deep Q-learning from dynamic ...",
+          "url": "https://www.sciencedirect.com/science/article/abs/pii/S0925231221014429"
+        },
+        {
+          "title": "Model-based Reinforcement Learning Methods for Developing Intelligent ...",
+          "abstract": "We focus on model-based reinforcement learning methods that solve control prob- lems and combine the settings of online learning, function approximation, and ...",
+          "url": "http://incompleteideas.net/papers/Kudashkina_Ekaterina_202201_PhD.pdf"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "A synergy space created using a continuous normalizing flow network with point clouds of haptic areas representing natural hand poses from human grasping demonstrations enabled a DRL policy to achieve an average success rate of 88.38% for object manipulation tasks, while the standard DRL without synergy space only achieved 50.66%.",
+      "evidence": [
+        {
+          "title": "Normalizing Flows - Grishma Prasad - Medium",
+          "abstract": "In this blog, I will try to explain Normalizing Flows. of continuous variables) Normalizing flows aim to do exactly this. Normalizing flows do ...",
+          "url": "https://grishmaprs.medium.com/normalizing-flows-5b5a713e45e2"
+        },
+        {
+          "title": "Edwin Valarezo Añazco from Escuela Superior Politecnica del Litoral | Scilit",
+          "abstract": "A synergy space is created using a continuous normalizing flow network with point clouds of haptic areas, representing natural hand poses obtained from human",
+          "url": "https://www.scilit.com/scholars/019f27aff9e77327bc6b8fe4d062caab"
+        },
+        {
+          "title": "PointFlow: 3D Point Cloud Generation With Continuous Normalizing Flows",
+          "abstract": "Existing point cloud generation methods can be broadly categorized into continuous distribution models and discrete autoregressive frameworks.",
+          "url": "https://www.researchgate.net/publication/339554914_PointFlow_3D_Point_Cloud_Generation_With_Continuous_Normalizing_Flows"
+        },
+        {
+          "title": "Object Manipulation with an Anthropomorphic Robotic Hand via ...",
+          "abstract": "A synergy space is created using a continuous normalizing flow network with point clouds of haptic areas, representing natural hand poses ...",
+          "url": "https://www.mdpi.com/1424-8220/21/16/5301"
+        },
+        {
+          "title": "PointFlow : 3D Point Cloud Generation with Continuous ...",
+          "abstract": "This paper proposes a principled probabilistic framework to generate 3D point clouds by modeling them as a distribution of distributions.",
+          "url": "https://github.com/stevenygd/PointFlow"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "presented an approach for learning in-hand manipulation skills with a low-cost, underactuated prosthetic hand in the presence of irreversible events, combining reinforcement learning based on visual perception with low-level reactive control based on tactile perception aimed at avoiding slipping, and treating the occurrence of object slipping during learning as an irreversible event to be significantly reduced.",
+      "evidence": [
+        {
+          "title": "Dexterous manipulation with underactuated fingers - YouTube",
+          "abstract": "Video from ICRA 2012 of the Yale SDM hand performing an anthropomorphic flip-and-pinch task on thin objects Lael U. Odhner, Raymond R. Ma, ...",
+          "url": "https://www.youtube.com/watch?v=C340gbK3sZc"
+        },
+        {
+          "title": "On Policy Learning Robust to Irreversible Events - arXiv",
+          "abstract": "In this letter, we present an approach for learning in-hand manipulation skills with a low-cost, underactuated prosthetic hand in the presence ...",
+          "url": "https://arxiv.org/abs/1911.08927"
+        },
+        {
+          "title": "Revisions | OpenReview",
+          "abstract": "Abstract: In this letter, we present an approach for learning in-hand manipulation skills with a low-cost, underactuated prosthetic hand in the presence of ...",
+          "url": "https://openreview.net/revisions?id=Jm4CDtnPWO"
+        },
+        {
+          "title": "an Application to Robotic In-Hand Manipulation - mediaTUM",
+          "abstract": "Abstract—In this paper, we present an approach for learn- ing in-hand manipulation skills with a low-cost, underactuated prosthetic hand in ...",
+          "url": "https://mediatum.ub.tum.de/doc/1430288/document.pdf"
+        },
+        {
+          "title": "An Application to Robotic In-Hand Manipulation - ResearchGate",
+          "abstract": "PDF | In this paper, we present an approach for learning in-hand manipulation skills with a low-cost, underactuated prosthetic hand in presence",
+          "url": "https://www.researchgate.net/publication/322765921_On_Policy_Learning_Robust_to_Irreversible_Events_An_Application_to_Robotic_In-Hand_Manipulation"
+        }
+      ],
+      "true_votes": 2,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "introduced a Continual Policy Distillation framework to acquire a versatile controller for in-hand manipulation to rotate different objects in shape and size within a four-fingered soft gripper, noting that soft robotic hands offer flexibility and adaptability during grasping and manipulation but present challenges in control development for finger coordination.",
+      "evidence": [
+        {
+          "title": "Awesome On-Policy Distillation - GitHub",
+          "abstract": "On-policy distillation trains a student on samples from its own evolving policy, Covers concepts, intuition, and practical use cases.",
+          "url": "https://github.com/chrisliu298/awesome-on-policy-distillation"
+        },
+        {
+          "title": "Continual Policy Distillation of Reinforcement Learning-based ...",
+          "abstract": "Continual Policy Distillation of Reinforcement Learning-based Controllers for Soft Robotic In-Hand Manipulation. April 2024. DOI:10.1109/RoboSoft60065.",
+          "url": "https://www.researchgate.net/publication/380549128_Continual_Policy_Distillation_of_Reinforcement_Learning-based_Controllers_for_Soft_Robotic_In-Hand_Manipulation"
+        },
+        {
+          "title": "[Literature Review] Continual Policy Distillation of Reinforcement ...",
+          "abstract": "The paper \"Continual Policy Distillation of Reinforcement Learning-based Controllers for Soft Robotic In-Hand Manipulation\" presents a novel framework aimed ...",
+          "url": "https://www.themoonlight.io/en/review/continual-policy-distillation-of-reinforcement-learning-based-controllers-for-soft-robotic-in-hand-manipulation"
+        },
+        {
+          "title": "Human-like dexterous manipulation for anthropomorphic five-fingered ...",
+          "abstract": "a policy-based framework. The article presents a novel policy-based RL approach for human-assisting dexterous grasping, focusing primarily on the development ...",
+          "url": "https://www.sciencedirect.com/science/article/pii/S2667379725000038"
+        },
+        {
+          "title": "Self-Distillation Enables Continual Learning | alphaXiv",
+          "abstract": "We introduce Self-Distillation Fine-Tuning (SDFT), a simple method that enables on-policy learning directly from demonstrations. SDFT leverages in-context ...",
+          "url": "https://www.alphaxiv.org/abs/2601.19897"
+        }
+      ],
+      "true_votes": 2,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "DexYCB is a dataset for capturing hand grasping of objects, benchmarking state-of-the-art approaches on 2D object and keypoint detection, 6D object pose estimation, and 3D hand pose estimation, and evaluating the task of generating safe robot grasps in human-to-robot object handover.",
+      "evidence": [
+        {
+          "title": "DexYCB - OpenDataLab",
+          "abstract": "DexYCB, a new dataset for capturing hand grasping of objects. present a thorough benchmark of state-of-the-art approaches on three relevant tasks: 2D object ...",
+          "url": "https://opendatalab.com/OpenDataLab/DexYCB/download"
+        },
+        {
+          "title": "DexYCB: A Benchmark for Capturing Hand Grasping of Objects",
+          "abstract": "We introduce DexYCB, a new dataset for capturing hand grasping of objects. We first compare DexYCB with a related one through cross-dataset evaluation.",
+          "url": "https://ieeexplore.ieee.org/document/9578786/"
+        },
+        {
+          "title": "DexYCB: A Benchmark for Capturing Hand Grasping of Objects - arXiv",
+          "abstract": "We then present a thorough benchmark of state-of-the-art approaches on three relevant tasks: 2D object and keypoint detection, 6D object pose ...",
+          "url": "https://arxiv.org/abs/2104.04631"
+        },
+        {
+          "title": "GitHub - NVlabs/dex-ycb-toolkit: A Python package that provides ...",
+          "abstract": "DexYCB provides a benchmark to evaluate four tasks: (1) 2D object and keypoint detection (COCO), (2) 6D object pose estimation (BOP), (3) 3D hand pose ...",
+          "url": "https://github.com/NVlabs/dex-ycb-toolkit"
+        },
+        {
+          "title": "DexYCB: A Benchmark for Capturing Hand Grasping of Objects",
+          "abstract": "We then present a thorough benchmark of state-of-the-art approaches on three relevant tasks: 2D object and keypoint detection, 6D object pose ...",
+          "url": "https://papers.cool/arxiv/2104.04631"
+        }
+      ],
+      "true_votes": 1,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "DexArt is a benchmark for dexterous manipulation with articulated objects in a physical simulator, evaluating the generalizability of learned policies on unseen articulated objects using reinforcement learning with 3D representation learning on 3D point cloud inputs.",
+      "evidence": [
+        {
+          "title": "DexArt: Benchmarking Generalizable Dexterous Manipulation with ...",
+          "abstract": "DexArt is a novel benchmark and pipeline for learning multiple dexterous manipulation tasks. This repo contains the simulated environment and training code for ...",
+          "url": "https://github.com/Kami-code/dexart-release"
+        },
+        {
+          "title": "DexArt: Benchmarking Generalizable Dexterous Manipulation with ... - ar5iv",
+          "abstract": "In this paper, we propose a new benchmark on learning generalizable manipulation policy on articulated objects with point cloud observations. Articulated Object ...",
+          "url": "https://ar5iv.labs.arxiv.org/html/2305.05706"
+        },
+        {
+          "title": "DexArt: Benchmarking Generalizable Dexterous Manipulation with ...",
+          "abstract": "we propose a new benchmark called DexArt, which involves Dexterous manipulation with Articulated objects in a physical simulator.",
+          "url": "https://ieeexplore.ieee.org/document/10203399/"
+        },
+        {
+          "title": "DexArt: Benchmarking Generalizable Dexterous Manipulation with ... - Liner",
+          "abstract": "This research aims to address the bottleneck of generalizability in dexterous articulated object manipulation by integrating 3D visual ...",
+          "url": "https://liner.com/review/dexart-benchmarking-generalizable-dexterous-manipulation-with-articulated-objects"
+        },
+        {
+          "title": "DexArt: Benchmarking Generalizable Dexterous Manipulation with ...",
+          "abstract": "A new benchmark called DexArt is proposed, which involves Dexterous manipulation with Articulated objects in a physical simulator to evaluate the ...",
+          "url": "https://www.semanticscholar.org/paper/DexArt%3A-Benchmarking-Generalizable-Dexterous-with-Bao-Xu/9bdcf270bce9f680bad5385bc7920536d4fa0c53"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "The paper investigates the effectiveness of regularisation-based methods like synaptic intelligence for sequentially learning image-based robotic manipulation tasks in an offline-RL setup, evaluating the framework against catastrophic forgetting and forward knowledge transfer, and found that learning tasks sequentially helps in the retention of knowledge from previous tasks, reducing the time required to learn a new task.",
+      "evidence": [
+        {
+          "title": "Continual Learning Through Synaptic Intelligence",
+          "abstract": "by F Zenke · 2017 · Cited by 4621 — In this study, we introduce intelligent synapses. We evaluate our approach on continual learning of classification tasks, and show that it dramatically reduces ...",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31909397/"
+        },
+        {
+          "title": "Learning Vision-based Robotic Manipulation Tasks ...",
+          "abstract": "by SP Yadav · 2023 · Cited by 8 — In this paper, we investigate the effectiveness of regularisation-based methods like synaptic intelligence for sequentially learning image-based ...",
+          "url": "https://arxiv.org/pdf/2301.13450"
+        },
+        {
+          "title": "Learning Vision-based Robotic Manipulation Tasks ...",
+          "abstract": "by S Pratap Yadav · 2023 — In this paper, we investigate the effectiveness of regularisation-based methods like synaptic intelligence for sequentially learning image-based robotic ...",
+          "url": "https://ui.adsabs.harvard.edu/abs/2023arXiv230113450P/abstract"
+        },
+        {
+          "title": "Continual Learning Through Synaptic Intelligence",
+          "abstract": "In this study, we introduce intelligent synapses. We evaluate our approach on continual learning of classification tasks, and show that it dramatically reduces ...",
+          "url": "https://www.researchgate.net/publication/338488196_Continual_Learning_Through_Synaptic_Intelligence"
+        },
+        {
+          "title": "Learning vision-based robotic manipulation tasks ...",
+          "abstract": "by SP Yadav · 2024 · Cited by 8 — This paper investigates the effectiveness of regularisation-based methods like synaptic intelligence for sequentially learning image-based ...",
+          "url": "https://www.cambridge.org/core/journals/robotica/article/learning-visionbased-robotic-manipulation-tasks-sequentially-in-offline-reinforcement-learning-settings/C5D35A5D1D9E466ABF5B45E897A4B2C3"
+        }
+      ],
+      "true_votes": 1,
+      "total_votes": 3,
+      "decision": false
+    }
+  ]
+}

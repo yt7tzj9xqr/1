@@ -1,0 +1,14 @@
+{
+  "arxiv_id": "2312.04861",
+  "model": "MiniMax-M3",
+  "system": "search-baseline-v5",
+  "reference_precision": 0.5,
+  "reference_recall": 0.0036101083032490976,
+  "reference_count": 2,
+  "reference_matches": 1,
+  "ground_truth_count": 277,
+  "predicted_titles": [
+    "PolarNet: Accelerated Deep Open Space Segmentation Using Automotive Radar in Polar Domain",
+    "ERASE-Net: Efficient Segmentation Networks for Automotive Radar Signals"
+  ]
+}

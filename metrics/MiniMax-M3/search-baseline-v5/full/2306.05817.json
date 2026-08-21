@@ -1,0 +1,352 @@
+{
+  "arxiv_id": "2306.05817",
+  "model": "MiniMax-M3",
+  "system": "search-baseline-v5",
+  "reference_precision": 0.3333333333333333,
+  "reference_recall": 0.009966777408637873,
+  "reference_count": 9,
+  "reference_matches": 3,
+  "ground_truth_count": 301,
+  "predicted_titles": [
+    "Retrieval-augmented Recommender System: Enhancing Recommender Systems with Large Language Models",
+    "RecSys 2023 Tutorial: Large Language Models for Recommendation",
+    "TALLRec: An Effective and Efficient Tuning Framework to Align Large ...",
+    "Chat-REC: Towards Interactive and Explainable LLMs- ...",
+    "RALLRec+: Retrieval augmented large language model ...",
+    "Collaborative Large Language Model for Recommender Systems",
+    "Recommender Systems in the Era of Large Language Models (LLMs)",
+    "Large language models as recommender systems: A study of popularity bias",
+    "Large Language Models for Next-Generation Recommendation Systems"
+  ],
+  "cited_match_rate": 0.8888888888888888,
+  "cited_count": 27,
+  "cited_supported": 24,
+  "cited_details": [
+    {
+      "statement": "[https://doi.org/10.1145/3604915.3608889] Recent advancements in natural language processing have introduced large language models (LLMs) that exhibit remarkable capabilities in understanding and generating human-like text.",
+      "url": "https://doi.org/10.1145/3604915.3608889",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://doi.org/10.1145/3604915.3608889]",
+      "url": "https://doi.org/10.1145/3604915.3608889",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "[https://doi.org/10.1145/3604915.3608889] Conversely, LLMs exhibit contextual awareness and strong adaptability to unseen data.",
+      "url": "https://doi.org/10.1145/3604915.3608889",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://doi.org/10.1145/3604915.3608889] Combining these technologies creates a powerful tool for delivering contextual and relevant recommendations, even in cold scenarios characterized by high data sparsity.",
+      "url": "https://doi.org/10.1145/3604915.3608889",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://doi.org/10.1145/3604915.3608889] A novel approach called Retrieval-augmented Recommender Systems combines the strengths of retrieval-based and generation-based models.",
+      "url": "https://doi.org/10.1145/3604915.3608889",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://doi.org/10.1145/3604915.3608889]",
+      "url": "https://doi.org/10.1145/3604915.3608889",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "[https://llmrecsys.github.io/] LLMs offer significant advantages for recommender systems, making them valuable tools for personalized recommendations.",
+      "url": "https://llmrecsys.github.io",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://llmrecsys.github.io/] By formulating recommendation tasks such as rating prediction, sequential recommendation, straightforward recommendation, and explanation generation into language instructions, LLMs make it possible to build universal recommendation engines that can handle different recommendation tasks.",
+      "url": "https://llmrecsys.github.io",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://llmrecsys.github.io/] LLMs have a remarkable capacity for understanding natural language, enabling them to comprehend user preferences, item descriptions, and contextual information to generate more accurate and relevant recommendations, leading to improved user satisfaction and engagement.",
+      "url": "https://llmrecsys.github.io",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://llmrecsys.github.io/] The tutorial covers multiple perspectives of LLM-based recommendation, including data preparation, model design, model pre-training, fine-tuning and prompting, model evaluation, multi-modality and multi-task learning, as well as trustworthy perspectives of LLM-based recommender systems such as fairness and transparency.",
+      "url": "https://llmrecsys.github.io",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://llmrecsys.github.io/]",
+      "url": "https://llmrecsys.github.io",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://arxiv.org/abs/2305.00447]",
+      "url": "https://arxiv.org/abs/2305.00447",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://arxiv.org/abs/2303.14524]",
+      "url": "https://arxiv.org/abs/2303.14524",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://doi.org/10.1145/3589334.3645347] The framework extends the vocabulary of pretrained LLMs with user and item ID tokens to faithfully model user and item collaborative and content semantics.",
+      "url": "https://doi.org/10.1145/3589334.3645347",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://doi.org/10.1145/3589334.3645347] A soft-plus-hard prompting strategy is proposed to effectively learn user and item collaborative and content token embeddings via language modeling on RS-specific corpora.",
+      "url": "https://doi.org/10.1145/3589334.3645347",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://doi.org/10.1145/3589334.3645347] The framework addresses issues including spuriously correlated user and item descriptors, ineffective language modeling on user and item data, and inefficient recommendations via auto-regression.",
+      "url": "https://doi.org/10.1145/3589334.3645347",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://doi.org/10.1145/3589334.3645347] A mutual regularization strategy encourages CLLM4Rec to capture recommendation-related information from noisy user and item content.",
+      "url": "https://doi.org/10.1145/3589334.3645347",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://doi.org/10.1145/3589334.3645347]",
+      "url": "https://doi.org/10.1145/3589334.3645347",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://www.sciencedirect.com/science/article/abs/pii/S0957417425031239]",
+      "url": "https://sciencedirect.com/science/article/abs/pii/S0957417425031239",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://www.amazon.science/publications/large-language-models-as-recommender-systems-a-study-of-popularity-bias] Large language models have been studied as recommender systems in the context of popularity bias.",
+      "url": "https://amazon.science/publications/large-language-models-as-recommender-systems-a-study-of-popularity-bias",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://www.amazon.science/publications/large-language-models-as-recommender-systems-a-study-of-popularity-bias]",
+      "url": "https://amazon.science/publications/large-language-models-as-recommender-systems-a-study-of-popularity-bias",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://doi.org/10.1109/tkde.2024.3392335] LLMs such as ChatGPT and GPT-4 have revolutionized the fields of Natural Language Processing and Artificial Intelligence.",
+      "url": "https://doi.org/10.1109/tkde.2024.3392335",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://doi.org/10.1109/tkde.2024.3392335] LLMs exhibit remarkable abilities in fundamental responsibilities of language understanding and generation, as well as impressive generalization capabilities and reasoning skills.",
+      "url": "https://doi.org/10.1109/tkde.2024.3392335",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://doi.org/10.1109/tkde.2024.3392335] Recent studies have actively attempted to harness the power of LLMs to enhance recommender systems.",
+      "url": "https://doi.org/10.1109/tkde.2024.3392335",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://doi.org/10.1109/tkde.2024.3392335]",
+      "url": "https://doi.org/10.1109/tkde.2024.3392335",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "[https://www.premai.io/blog/large-language-models-for-next-generation-recommendation-systems/] Traditional models like collaborative filtering and content-based filtering face significant challenges, including a reliance on domain-specific data, limited generalization capabilities, and an inability to provide clear explanations for recommendations.",
+      "url": "https://premai.io/blog/large-language-models-for-next-generation-recommendation-systems",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://www.premai.io/blog/large-language-models-for-next-generation-recommendation-systems/]",
+      "url": "https://premai.io/blog/large-language-models-for-next-generation-recommendation-systems",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    }
+  ],
+  "noncited_factual_accuracy": 1.0,
+  "noncited_count": 4,
+  "noncited_correct": 4,
+  "noncited_details": [
+    {
+      "claim": "TALLRec is an effective and efficient tuning framework designed to align large language models with recommendation.",
+      "evidence": [
+        {
+          "title": "GitHub - SAI990323/TALLRec",
+          "abstract": "We introduce a novel framework (TALLRec) that enables the efficient and effective adaptation of LLMs to recommendation tasks.",
+          "url": "https://github.com/SAI990323/TALLRec"
+        },
+        {
+          "title": "Tuning Large Language Models for Recommendation Tasks",
+          "abstract": "TALLRec Bao et al. 4 proposed a Tuning framework for Aligning LLMs with Recommendations (TALLRec) for tuning LLMs with recommendation data.",
+          "url": "https://blog.reachsumit.com/posts/2023/05/tuning-llm-for-recsys/"
+        },
+        {
+          "title": "TALLRec: An Effective and Efficient Tuning Framework to Align Large ...",
+          "abstract": "We introduce TALLRec, an effective and efficient tuning framework that aligns LLMs with recommendation tasks, enabling the construction of Large ...",
+          "url": "https://liner.com/review/tallrec-effective-and-efficient-tuning-framework-to-align-large-language"
+        },
+        {
+          "title": "TALLRec: An Effective and Efficient Tuning Framework to Align Large ...",
+          "abstract": "We have demonstrated that the proposed TALLRec framework can significantly enhance the recommendation capabilities of LLMs in the movie and book domains,",
+          "url": "https://dl.acm.org/doi/10.1145/3604915.3608857"
+        },
+        {
+          "title": "TALLRec: An Effective and Efficient Tuning Framework to Align Large ...",
+          "abstract": "We have demonstrated that the proposed TALLRec framework can significantly enhance the recommendation capabilities of LLMs in the movie and book ...",
+          "url": "https://arxiv.org/abs/2305.00447"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "Chat-REC is an interactive and explainable LLMs-augmented recommender system.",
+      "evidence": [
+        {
+          "title": "GitHub - WLiK/LLM4Rec-Awesome-Papers ...",
+          "abstract": "A list of awesome papers and resources of recommender system on large language model (LLM). Chat-REC: Towards Interactive and Explainable LLMs-Augmented ...",
+          "url": "https://github.com/WLiK/LLM4Rec-Awesome-Papers"
+        },
+        {
+          "title": "Chat-REC: Towards Interactive and Explainable LLMs-Augmented ...",
+          "abstract": "In this paper, we present Chat-Rec which bridges recommender system and LLMs by converting user information and user-item interactions to ...",
+          "url": "https://www.researchgate.net/publication/369557235_Chat-REC_Towards_Interactive_and_Explainable_LLMs-Augmented_Recommender_System"
+        },
+        {
+          "title": "Chat-Rec: Interactive LLMs for Recommendations | PDF - Scribd",
+          "abstract": "Chat-Rec, a novel conversational recommender system that leverages Large Language Models (LLMs) to enhance interactivity and explainability in recommendations.",
+          "url": "https://www.scribd.com/document/947853614/2303-14524v2"
+        },
+        {
+          "title": "AI-Powered Paper Summarization about the arXiv paper 2303.14524v2",
+          "abstract": "The paper proposes a novel paradigm called Chat-Rec (ChatGPT Augmented Recommender System) to address limitations of traditional recommender ...",
+          "url": "https://www.summarizepaper.com/en/arxiv-id/2303.14524v2/"
+        },
+        {
+          "title": "Chat-REC: Towards Interactive and Explainable LLMs-Augmented ...",
+          "abstract": "Article \"Chat-REC: Towards Interactive and Explainable LLMs-Augmented Recommender System ... Research Project, Organization, Technical Term, Chemical ...",
+          "url": "https://jglobal.jst.go.jp/en/detail?JGLOBAL_ID=202302204093796086"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "CLLM4Rec is the first generative RS that tightly integrates the LLM paradigm and ID paradigm of RSs.",
+      "evidence": [
+        {
+          "title": "Collaborative Large Language Model for Recommender ...",
+          "abstract": "by Y Zhu · Cited by 235 — This paper proposes LLM4Rec, the first method that tightly couples the ID-paradigm and LLM-based paradigm of recommender system.",
+          "url": "https://openreview.net/forum?id=TU8e2wRY89"
+        },
+        {
+          "title": "WLiK/LLM4Rec-Awesome-Papers: A list of ...",
+          "abstract": "A list of awesome papers and resources of recommender system on large language model (LLM). Our LLM4Rec survey has been released. generative language models ...",
+          "url": "https://github.com/WLiK/LLM4Rec-Awesome-Papers"
+        },
+        {
+          "title": "Large Language Models for Recommendation",
+          "abstract": "We will examine how LLMs contribute to key recommendation tasks through both discriminative and generative modeling approaches. The tutorial will introduce ...",
+          "url": "https://zhengzhi-1997.github.io/LLM4Rec-Tutorial/"
+        },
+        {
+          "title": "Collaborative Large Language Model for Recommender ...",
+          "abstract": "In this paper, we propose CLLM4Rec, the first generative RS that tightly integrates the LLM paradigm and ID paradigm of RSs, aiming to address the above ...",
+          "url": "https://arxiv.org/html/2311.01343v4"
+        },
+        {
+          "title": "LLM4Rec: Large Language Models for Multimodal Generative ...",
+          "abstract": "Toward this end, we propose a new MMGRec model to introduce a generative paradigm into multimodal recommendation. Specifically, we first devise a ...",
+          "url": "https://tldr.takara.ai/p/2510.01622"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "RALLRec+ is a representation learning and reasoning empowered retrieval-augmented large language model recommendation approach.",
+      "evidence": [
+        {
+          "title": "RALLRec+: Retrieval Augmented Large Language Model ...",
+          "abstract": "Representation learning for retrieval-Augmented Large Language model Recommendation (RALLRec) is proposed, which enhances textual semantics by prompting LLMs ...",
+          "url": "https://www.semanticscholar.org/paper/RALLRec%2B%3A-Retrieval-Augmented-Large-Language-Model-Luo-Xu/bab7324ee3510785c8e7af844f4ee4e338343ea4"
+        },
+        {
+          "title": "RLMRec: Representation Learning with Large Language ...",
+          "abstract": "In this paper, we propose a model-agnostic framework RLMRec that enhances existing recommenders with LLM-empowered representation learning.",
+          "url": "https://github.com/hkuds/rlmrec"
+        },
+        {
+          "title": "[Literature Review] RALLRec: Improving Retrieval ...",
+          "abstract": "The paper addresses the integration of Large Language Models (LLMs) into recommendation systems, specifically enhancing processes through a framework called ...",
+          "url": "https://www.themoonlight.io/en/review/rallrec-improving-retrieval-augmented-large-language-model-recommendation-with-representation-learning"
+        },
+        {
+          "title": "RALLRec+: Retrieval augmented large language model ...",
+          "abstract": "In this paper, we propose Representation learning and Reasoning empowered retrieval-Augmented Large Language model Recommendation (RALLRec+).",
+          "url": "https://www.sciencedirect.com/science/article/abs/pii/S0957417425031239"
+        },
+        {
+          "title": "Recommender Systems in the Era of Large Language Models (LLMs)",
+          "abstract": "With the prosperity of e-commerce and web applications, Recommender Systems (RecSys) have become an indispensable and important component in our daily lives, providing personalized suggestions that cater to user preferences. While Deep Neural Networks (DNNs) have achieved significant advancements in enhancing recommender systems by modeling user-item interactions and incorporating their textual side information, these DNN-based methods still exhibit some limitations, such as difficulties in effectively understanding users' interests and capturing textual side information, inabilities in generalizing to various seen/unseen recommendation scenarios and reasoning on their predictions, etc. Meanwhile, the development of Large Language Models (LLMs), such as ChatGPT and GPT-4, has revolutionized the fields of Natural Language Processing (NLP) and Artificial Intelligence (AI), due to their remarkable abilities in fundamental responsibilities of language understanding and generation, as well as impressive generalization capabilities and reasoning skills. As a result, recent studies have actively attempted to harness the power of LLMs to enhance recommender systems. Given the rapid evolution of this research direction in recommender systems, there is a pressing need for a systematic overview that summarizes existing LLM-empowered recommender systems, so as to provide researchers and practitioners in relevant fields with an in-depth understanding. Therefore, in this survey, we conduct a comprehensive review of LLM-empowered recommender systems from various aspects including pre-training, fine-tuning, and prompting paradigms. More specifically, we first introduce the representative methods to harness the power of LLMs (as a feature encoder) for learning representations of users and items. Then, we systematically review the emerging advanced techniques of LLMs for enhancing recommender systems from three paradigms, namely pre-training, fine-tuning, and prompting. Finally, we comprehensively discuss the promising future directions in this emerging field.",
+          "url": "https://doi.org/10.1109/tkde.2024.3392335"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    }
+  ]
+}

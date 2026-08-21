@@ -1,0 +1,184 @@
+{
+  "arxiv_id": "2312.04861",
+  "model": "MiniMax-M3",
+  "system": "search-baseline-v5",
+  "reference_precision": 0.5,
+  "reference_recall": 0.0036101083032490976,
+  "reference_count": 2,
+  "reference_matches": 1,
+  "ground_truth_count": 277,
+  "predicted_titles": [
+    "PolarNet: Accelerated Deep Open Space Segmentation Using Automotive Radar in Polar Domain",
+    "ERASE-Net: Efficient Segmentation Networks for Automotive Radar Signals"
+  ],
+  "cited_match_rate": 0.5,
+  "cited_count": 4,
+  "cited_supported": 2,
+  "cited_details": [
+    {
+      "statement": "[https://arxiv.org/abs/2103.03387] PolarNet reformulates the radar tensor as a polar bird's-eye-view grid, exploiting the radial geometry of the sensor to accelerate free-space segmentation without sacrificing angular resolution.",
+      "url": "https://arxiv.org/abs/2103.03387",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "[https://arxiv.org/abs/2103.03387]",
+      "url": "https://arxiv.org/abs/2103.03387",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://arxiv.org/abs/2209.12940] The ERASE-Net family replaces the 3D input with carefully chosen 2D projections while attempting to retain the information required for accurate free-space segmentation.",
+      "url": "https://arxiv.org/abs/2209.12940",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "[https://arxiv.org/abs/2209.12940]",
+      "url": "https://arxiv.org/abs/2209.12940",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    }
+  ],
+  "noncited_factual_accuracy": 0.25,
+  "noncited_count": 4,
+  "noncited_correct": 1,
+  "noncited_details": [
+    {
+      "claim": "The most widely used representations preserve the radar's native measurement dimensions.",
+      "evidence": [
+        {
+          "title": "Off the Radar: Comparative Evaluation of Radial Visualization ...",
+          "abstract": "Radar charts are undoubtedly the most commonly used. Reuters use Radar charts to visualize and enable comparing academic institutions on sev- ...",
+          "url": "https://www.researchgate.net/publication/282832017_Off_the_Radar_Comparative_Evaluation_of_Radial_Visualization_Solutions_for_Composite_Indicators"
+        },
+        {
+          "title": "Doppler Radar Research Papers - Academia.edu",
+          "abstract": "This paper studies the use of a device based on a Doppler sensor in estimating the gait velocity in a noncontrolled environment.",
+          "url": "https://www.academia.edu/Documents/in/Doppler_Radar"
+        },
+        {
+          "title": "Exploring Radar Data Representations in Autonomous ...",
+          "abstract": "This review focuses on exploring different radar data representations utilized in autonomous driving systems.",
+          "url": "https://arxiv.org/html/2312.04861v2"
+        },
+        {
+          "title": "Bibliometric Analysis of Weather Radar Research from 1945 to 2024",
+          "abstract": "This research delves into the landscape of weather radar research from 1945 to 2024, employing scientometric methods to investigate 13,981 publications",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11175257/"
+        },
+        {
+          "title": "Effects of lidar and radar resolution on DNN-based vehicle detection",
+          "abstract": "In this examination we did not try to mimic a low-resolution sensor but to investigate the possible benefits of using constant Cartesian representation instead ...",
+          "url": "https://opg.optica.org/abstract.cfm?uri=josaa-38-10-b29"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "Radar natively acquires measurements in a polar coordinate system.",
+      "evidence": [
+        {
+          "title": "Dual-Polarization radar rainfall prediction and rain gauge data",
+          "abstract": "Reported rainfall data from multiple rain gauges and its corresponding estimate from Dual-Polarization (Dual-Pol) radar is presented here.",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8379762/"
+        },
+        {
+          "title": "Hydrometeor classification of quasi-vertical profiles of ... - AMT",
+          "abstract": "This study presents a novel technique for identifying different types of hydrometeors from quasi-vertical profiles (QVPs).",
+          "url": "https://amt.copernicus.org/articles/14/1075/2021/"
+        },
+        {
+          "title": "7.4: A Polar-Coordinate Real-Time Three-Dimensional Rapidly ...",
+          "abstract": "In this paper, we describe a method of creating such a coherent view. In po- lar coordinates, this involves creating a rapidly updated ”virtual volume scan”.",
+          "url": "https://ams.confex.com/ams/pdfpapers/123199.pdf"
+        },
+        {
+          "title": "Coordinate Systems - radartutorial.eu",
+          "abstract": "But just for antenna diagrams the representation is better in a coordinate system with polar coordinates. A point in the diagram is defined with giving of an ...",
+          "url": "https://www.radartutorial.eu/18.explanations/ex27.en.html"
+        },
+        {
+          "title": "Fast Coordinate Conversion Method for Real-time Weather Radar Data ...",
+          "abstract": "In this paper, we propose a real-time coordinate conversion method of radar data to increase the usability of the weather radar. This paper proposes a method ...",
+          "url": "https://www.jmis.org/archive/view_article?pid=jmis-5-1-1"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "Learning directly in the polar domain has emerged as a natural design choice for radar data representation.",
+      "evidence": [
+        {
+          "title": "The Emergence of Open-Source Software for the Weather ...",
+          "abstract": "by M Heistermann · 2015 · Cited by 74 — In Py-ART, polar volumes and Cartesian grids are read into standard data objects (the radar and grid objects), which are fully self-describing. high-level ...",
+          "url": "https://journals.ametsoc.org/view/journals/bams/96/1/bams-d-13-00240.1.xml"
+        },
+        {
+          "title": "Effective Visualization of Radar Data for Users Impacted by ...",
+          "abstract": "by Z Sherman · 2024 · Cited by 5 — We show how these colormaps can improve interpretability for four cases: a mesoscale convective system, a pyrocumulonimbus storm, a wintertime midlatitude.",
+          "url": "https://repository.library.noaa.gov/view/noaa/69256/noaa_69256_DS1.pdf"
+        },
+        {
+          "title": "Deep Learning Based Perception on Radar Data for ... - MACAU",
+          "abstract": "This thesis investigates perception tasks using automotive radar sensors for autonomous driving. polar radar tensors can be efficiently processed in ...",
+          "url": "https://macau.uni-kiel.de/receive/macau_mods_00006179?lang=de"
+        },
+        {
+          "title": "Exploring Radar Data Representations in Autonomous ...",
+          "abstract": "In this section, we review the radar signal processing for radar parameters, including range, Doppler velocity, azimuth angle and elevation ...",
+          "url": "https://arxiv.org/html/2312.04861"
+        },
+        {
+          "title": "Radar Perception in Autonomous Driving",
+          "abstract": "For each radar representation, we examine the related datasets, methods, advantages and limitations. Furthermore, we discuss the challenges ...",
+          "url": "https://arxiv.org/html/2312.04861v1"
+        }
+      ],
+      "true_votes": 1,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "A research direction compresses the high-dimensional 3D radar signal into compact 2D planes to enable efficient segmentation under tight latency constraints.",
+      "evidence": [
+        {
+          "title": "Modern Radar",
+          "abstract": "In this paper,a Ku-band high-power and high-efficiency monopulse transceiver module is designed and implemented.The receiving chain consists of sum and ...",
+          "url": "http://xdld.xml-journal.net/indexen.htm"
+        },
+        {
+          "title": "A 3D U-Net Based on a Vision Transformer for Radar Semantic ...",
+          "abstract": "This paper proposes a semantic segmentation network to process high-dimensional data and enable automatic radar target recognition.",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10747350/"
+        },
+        {
+          "title": "Efficient millimeter-wave compressed sensing 3D imaging for object ...",
+          "abstract": "this paper presents a comprehensive theoretical analysis of three-dimensional imaging under millimeter wave planar scanning systems.",
+          "url": "https://www.sciencedirect.com/science/article/abs/pii/S0263224125002416"
+        },
+        {
+          "title": "Moving Targets Tracking Using Radar Based on Compressed Sensing",
+          "abstract": "A Compressed Sensing (CS) based method under the unknown sparse degree to track ground moving targets using Pulse-Doppler (PD) radar.",
+          "url": "https://www.scitechnol.com/peer-review/moving-targets-tracking-usingradar-based-on-compressedsensing-9Bs8.php?article_id=20258"
+        },
+        {
+          "title": "Chaotic Mapping-Based Anti-Sorting Radio Frequency Stealth Signals ...",
+          "abstract": "we used compressed sensing (CS) technology to process the echoes of the signals to solve the velocity and distance of the detection targets.",
+          "url": "https://www.mdpi.com/1099-4300/24/11/1559"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    }
+  ]
+}

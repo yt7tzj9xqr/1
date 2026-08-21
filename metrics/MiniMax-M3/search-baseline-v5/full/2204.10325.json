@@ -1,0 +1,605 @@
+{
+  "arxiv_id": "2204.10325",
+  "model": "MiniMax-M3",
+  "system": "search-baseline-v5",
+  "reference_precision": 0.0,
+  "reference_recall": 0.0,
+  "reference_count": 12,
+  "reference_matches": 0,
+  "ground_truth_count": 36,
+  "predicted_titles": [
+    "Speech and language therapy for aphasia following stroke",
+    "Stuttering Speech Disfluency Prediction using Explainable Attribution Vectors of Facial Muscle Movements",
+    "Automated assessment of psychiatric disorders using speech: A systematic review",
+    "Deep-Learning-Based Automated Classification of Chinese Speech Sound Disorders",
+    "Role of ML in diagnosing and treating speech disorders",
+    "Automatic Pronunciation Scoring And Mispronunciation ...",
+    "Automatic Analysis of Pronunciations for Children with Speech Sound Disorders",
+    "Evaluating Automatic Speech Recognition for Child ...",
+    "A STUDY ON THE IMPACT OF SELF-SUPERVISED LEARNING ON AUTOMATIC DYSARTHRIC SPEECH ASSESSMENT",
+    "An automated tool for the assessment of childhood apraxia ...",
+    "Research Paper: Mobile Speech Therapy Application",
+    "The clinical practice of speech and language therapists with children with phonologically based speech sound disorders"
+  ],
+  "cited_match_rate": 0.96,
+  "cited_count": 25,
+  "cited_supported": 24,
+  "cited_details": [
+    {
+      "statement": "[https://doi.org/10.1002/14651858.cd000425.pub4] Approximately one third of people who have a stroke experience aphasia.",
+      "url": "https://doi.org/10.1002/14651858.cd000425.pub4",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://doi.org/10.1002/14651858.cd000425.pub4]",
+      "url": "https://doi.org/10.1002/14651858.cd000425.pub4",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://doi.org/10.1177/0265659014550420] The intervention approaches most used with these children include phonological awareness (97% of surveyed SLTs), auditory discrimination (92%), meaningful minimal contrast therapy (75%), and parent-based work (58%).",
+      "url": "https://doi.org/10.1177/0265659014550420",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://doi.org/10.1177/0265659014550420]",
+      "url": "https://doi.org/10.1177/0265659014550420",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://arxiv.org/abs/2010.01231] Approximately 80% of children who stutter recover within 15 months from onset.",
+      "url": "https://arxiv.org/abs/2010.01231",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://arxiv.org/abs/2010.01231]",
+      "url": "https://arxiv.org/abs/2010.01231",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://arxiv.org/html/2306.04337v2]",
+      "url": "https://arxiv.org/html/2306.04337v2",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://www.dovepress.com/exploring-the-role-of-machine-learning-in-diagnosing-and-treating-spee-peer-reviewed-fulltext-article-PRBM]",
+      "url": "https://dovepress.com/exploring-the-role-of-machine-learning-in-diagnosing-and-treating-spee-peer-reviewed-fulltext-article-PRBM",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://pmc.ncbi.nlm.nih.gov/articles/PMC9324778/] The system used a speech corpus of 2540 samples from 90 children aged 3–6 years, with each recording annotated by two speech–language pathologists, and classification was accomplished using three neural network models.",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9324778",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://pmc.ncbi.nlm.nih.gov/articles/PMC9324778/]",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9324778",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://arxiv.org/abs/2010.01231]",
+      "url": "https://arxiv.org/abs/2010.01231",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://arxiv.org/html/2306.04337v2] Recent research showed that speech representations from models pre-trained on large unlabelled data can enhance Automatic Speech Recognition performance for dysarthric speech.",
+      "url": "https://arxiv.org/html/2306.04337v2",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://arxiv.org/html/2306.04337v2] The HuBERT model achieved accuracy improvements of +24.7%, +61%, and +7.2% over classical acoustic features across these three tasks.",
+      "url": "https://arxiv.org/html/2306.04337v2",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://arxiv.org/html/2306.04337v2]",
+      "url": "https://arxiv.org/html/2306.04337v2",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://pmc.ncbi.nlm.nih.gov/articles/PMC5884147/] There is no consensus among Speech Language Therapists or non-professionals about which CAPT systems, if any, work well.",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5884147",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://pmc.ncbi.nlm.nih.gov/articles/PMC5884147/]",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5884147",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://psi.engr.tamu.edu/wp-content/uploads/2019/08/hair2019evaluating.pdf]",
+      "url": "https://psi.engr.tamu.edu/wp-content/uploads/2019/08/hair2019evaluating.pdf",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://www.sciencedirect.com/science/article/abs/pii/S0167639315000382]",
+      "url": "https://sciencedirect.com/science/article/abs/pii/S0167639315000382",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://aclanthology.org/W12-5808.pdf] Pronunciation scores can be calculated for each phoneme, word, and phrase by means of Hidden Markov Model alignment with the phonemes of the expected text.",
+      "url": "https://aclanthology.org/W12-5808.pdf",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://aclanthology.org/W12-5808.pdf]",
+      "url": "https://aclanthology.org/W12-5808.pdf",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[http://jmr.tums.ac.ir/index.php/jmr/article/download/133/80]",
+      "url": "http://jmr.tums.ac.ir/index.php/jmr/article/download/133/80",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://doi.org/10.1002/lio2.354] Of 1395 studies screened, 127 met the inclusion criteria, with the majority of studies on depression, schizophrenia, and bipolar disorder, and the remainder on post-traumatic stress disorder, anxiety disorders, and eating disorders.",
+      "url": "https://doi.org/10.1002/lio2.354",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://doi.org/10.1002/lio2.354] 63% of studies built machine learning predictive models, and the remaining 37% performed null-hypothesis testing only.",
+      "url": "https://doi.org/10.1002/lio2.354",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://doi.org/10.1002/lio2.354] Prior reviews had only focused on using acoustic features from speech to detect depression and schizophrenia.",
+      "url": "https://doi.org/10.1002/lio2.354",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "[https://doi.org/10.1002/lio2.354]",
+      "url": "https://doi.org/10.1002/lio2.354",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    }
+  ],
+  "noncited_factual_accuracy": 0.5,
+  "noncited_count": 12,
+  "noncited_correct": 6,
+  "noncited_details": [
+    {
+      "claim": "Aphasia is an acquired language impairment following brain damage that affects some or all language modalities: expression and understanding of speech, reading, and writing.",
+      "evidence": [
+        {
+          "title": "Diagnosing and managing post-stroke aphasia - PMC - NIH",
+          "abstract": "by SM Sheppard · 2020 · Cited by 232 — It should be noted that most people with aphasia will have some level of difficulty with comprehension, spontaneous speech, reading, and writing. Typically, ...",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7880889/"
+        },
+        {
+          "title": "Types of Aphasia - Speech Therapy for Adults",
+          "abstract": "Aphasia is an acquired language impairment following brain damage. It affects some or all language modalities such as expression and ...",
+          "url": "https://www.betterspeech.com/post/speech-therapy-for-aphasia"
+        },
+        {
+          "title": "Aphasia Following Acquired Brain Injury",
+          "abstract": "A common consequence of acquired brain injury is aphasia, an impairment of language that can affect speech, as well as reading or writing.",
+          "url": "https://www.psychiatrictimes.com/view/aphasia-following-acquired-brain-injury"
+        },
+        {
+          "title": "Aphasia - an overview",
+          "abstract": "Aphasia is an acquired disorder that affects the ability to produce and/or comprehend language following brain injury. While aphasia can occur in childhood, it ...",
+          "url": "https://www.sciencedirect.com/topics/pharmacology-toxicology-and-pharmaceutical-science/aphasia"
+        },
+        {
+          "title": "Understanding aphasia and its impact on language ...",
+          "abstract": "Aphasia is an inability to comprehend and formulate language because of damage to specific brain regions. auditory comprehension, verbal ...",
+          "url": "https://www.facebook.com/groups/493935520792751/posts/1889916101194679/"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "Stuttering disrupts the normal fluency of speech by involuntary repetitions, prolongations, and blocking of sounds and syllables, with a prevalence of 1% in adults.",
+      "evidence": [
+        {
+          "title": "Understanding Types of Stuttering Disfluencies & Their Impact | AIS",
+          "abstract": "While the primary behaviors of stuttering include prolongations, blocks, and sound or syllable repetitions, there are also accompanying ...",
+          "url": "https://www.stutteringtreatment.org/blog/understanding-types-of-stuttering-disfluencies"
+        },
+        {
+          "title": "Stuttering - Wikipedia",
+          "abstract": "Stuttering, also known as stammering, is a speech disorder characterized externally by involuntary repetitions and prolongations of sounds, syllables, ...",
+          "url": "https://en.wikipedia.org/wiki/Stuttering"
+        },
+        {
+          "title": "Stuttering vs. Typical Developmental Disfluency - BreatheWorks",
+          "abstract": "Stuttering is a speech disorder characterized by repetition of sounds/syllables/words, prolongation of sounds, and blocks (interruptions where speech gets “ ...",
+          "url": "https://breatheworks.com/stuttering-vs-typical-developmental-disfluency/"
+        },
+        {
+          "title": "Stuttering (Stammering) - StatPearls - NCBI Bookshelf - NIH",
+          "abstract": "Stuttering, or stammering, is a language fluency disorder characterized by disruptions in speech flow and rhythm by pauses, hesitations, ...",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK603738/"
+        },
+        {
+          "title": "Stuttering: Clinical and research update",
+          "abstract": "Abstract. Objective. To provide an update on the epidemiology, genetics, pathophysiology, diagnosis, and treatment of developmental stuttering.",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4907555/"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "Dysarthria is caused by a lack of articulatory control and muscle weakness, which affect speech rate, dynamic amplitudes and pitches, and how the spoken word is pronounced.",
+      "evidence": [
+        {
+          "title": "Dysarthria Therapy - Regaining Your Voice",
+          "abstract": "Dysarthria is a motor speech disorder that affects the muscles used to produce speech, leading to slurred or slow speech that can be difficult ...",
+          "url": "https://speechpathologysolutions.com/dysarthria-therapy-regaining-your-voice/"
+        },
+        {
+          "title": "Dysarthria - an overview | ScienceDirect Topics",
+          "abstract": "Dysarthria is defined as a speech disorder resulting from muscle weakness or difficulty controlling the muscles involved in speech production, leading to ...",
+          "url": "https://www.sciencedirect.com/topics/psychology/dysarthria"
+        },
+        {
+          "title": "disartria",
+          "abstract": "Ataxic dysarthria can cause poor coordination of the speech muscles meaning that speech and volume is slow, erratic and irregular. being difficult to ...",
+          "url": "https://www.academia.edu/18666599/disartria"
+        },
+        {
+          "title": "Dysarthria - Symptoms and causes",
+          "abstract": "Dysarthria happens when the muscles used for speech are weak or are hard to control. Dysarthria often causes slurred or slow speech that can be ...",
+          "url": "https://www.mayoclinic.org/diseases-conditions/dysarthria/symptoms-causes/syc-20371994"
+        },
+        {
+          "title": "Dysarthria: Why Speech Gets “Weak” and How Therapy ...",
+          "abstract": "Dysarthria is a motor speech disorder caused by weakness, reduced coordination, or abnormal muscle tone in the speech system (lips, tongue, jaw, soft palate, ...",
+          "url": "https://breatheworks.com/dysarthria-causes-treatment/"
+        }
+      ],
+      "true_votes": 1,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "A system was developed for analyzing acoustic data to assist in the diagnosis and classification of children's speech sound disorders, focusing on four distinct types of Chinese SSDs.",
+      "evidence": [
+        {
+          "title": "How should children with speech sound disorders be ...",
+          "abstract": "This paper presents a description and review of the evidence, and a critical evaluation using the criteria listed above, for three major specific childhood SSD ...",
+          "url": "https://www.researchgate.net/publication/234132420_How_should_children_with_speech_sound_disorders_be_classified_A_review_and_critical_evaluation_of_current_classification_systems"
+        },
+        {
+          "title": "Machine Learning in the Identification, Classification, and ...",
+          "abstract": "This paper provides a structured view of the research on the use of machine learning in the field of speech sound disorders to date.",
+          "url": "https://journals.sagepub.com/doi/full/10.3233/FAIA251663"
+        },
+        {
+          "title": "Considerations for identifying subtypes of speech sound ...",
+          "abstract": "by S Rvachew · 2024 · Cited by 18 — In this paper that some children with SSD have significant difficulty with speech perception. The speech disorders classification system (SDCS) ...",
+          "url": "https://onlinelibrary.wiley.com/doi/full/10.1111/1460-6984.13108"
+        },
+        {
+          "title": "Classification of Children's Speech Sound Disorders",
+          "abstract": "Simple Classification System for 'underlying levels' of difficulty in SSD. Classification of children's speech sound disorders. genetic and environmantal risk ...",
+          "url": "https://www.speech-language-therapy.com/clinical-topics/classification-of-childrens-speech-sound-disorders"
+        },
+        {
+          "title": "Differential Diagnosis of Speech Sound Disorders in ...",
+          "abstract": "The study reveals that a qualitative analysis can accurately subgroup children with SSD based on phonological processes, while quantitative measures like PCC-A ...",
+          "url": "https://www.academia.edu/67671419/Differential_Diagnosis_of_Speech_Sound_Disorders_in_Danish_speaking_Children"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "An explainable framework was proposed for predicting stuttering speech disfluencies using attribution vectors of facial muscle movements.",
+      "evidence": [
+        {
+          "title": "Stuttering Speech Disfluency Prediction using Explainable ...",
+          "abstract": "by A Das · 2020 · Cited by 18 — this paper proposes a novel explainable AI (XAI) assisted convolutional neural network (CNN) classifier to predict near future stuttering by ...",
+          "url": "https://arxiv.org/abs/2010.01231"
+        },
+        {
+          "title": "Machine Learning for Stuttering Identification",
+          "abstract": "by S Sheikh · 2022 · Cited by 106 — In this paper, we review comprehensively acoustic features, statistical and deep learning based stuttering/disfluency classification methods. We ...",
+          "url": "https://hal.science/hal-03634072v1/file/Manuscipt.pdf"
+        },
+        {
+          "title": "Stuttering Speech Disfluency Prediction using Explainable ...",
+          "abstract": "A novel explainable AI (XAI) is proposed to predict near future stuttering by learning temporal facial muscle movement patterns of AWS",
+          "url": "https://www.semanticscholar.org/paper/Stuttering-Speech-Disfluency-Prediction-using-of-Das-Mock/ae86b445439b3cceb179878318e709c0378ecb3c"
+        },
+        {
+          "title": "Fluent: An AI Augmented Writing Tool for People who Stutter",
+          "abstract": "by B Ghai · 2021 · Cited by 31 — Stuttering Speech Disfluency Prediction using Explainable Attribution Vectors of Facial Muscle Movements.",
+          "url": "https://dl.acm.org/doi/fullHtml/10.1145/3441852.3471211"
+        },
+        {
+          "title": "Stuttering Speech Disfluency Prediction using Explainable ...",
+          "abstract": "by A Das · 2020 · Cited by 18 — this paper proposes a novel explainable AI (XAI) assisted convolutional neural network (CNN) classifier to predict near future stuttering by ...",
+          "url": "https://arxiv.org/pdf/2010.01231"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "Self-supervised learning representations were evaluated across three downstream tasks on dysarthric speech—disease classification, word recognition, and intelligibility classification—under three noise scenarios on the UA-Speech dataset.",
+      "evidence": [
+        {
+          "title": "A STUDY ON THE IMPACT OF SELF-SUPERVISED LEARNING ...",
+          "abstract": "We are the first to evaluate the representations from pre-trained state-of-the-art Self-Supervised models across three downstream tasks on ...",
+          "url": "https://arxiv.org/html/2306.04337v2"
+        },
+        {
+          "title": "Automatic Severity Classification of Dysarthric Speech by Using Self ...",
+          "abstract": "To tackle the problem, we propose a novel automatic severity assessment method for dysarthric speech, using the self-supervised model in conjunction with multi- ...",
+          "url": "https://s-space.snu.ac.kr/handle/10371/226834"
+        },
+        {
+          "title": "A study on the impact of Self-Supervised Learning on ...",
+          "abstract": "We are the first to evaluate the representations from pre-trained state-of-the-art Self-Supervised models across three downstream tasks on dysarthric speech:",
+          "url": "https://ui.adsabs.harvard.edu/abs/arXiv:2306.04337"
+        },
+        {
+          "title": "Dysarthria Severity Classification with AI | PDF - Scribd",
+          "abstract": "Cross-Lingual Self-Supervised Speech Representations For Improved Dysarthric Speech Recognition. 5 pages. Assessing Dysarthria: Key Insights. PDF. No ratings ...",
+          "url": "https://www.scribd.com/document/781772098/2403-00854v1"
+        },
+        {
+          "title": "Applying Self-Supervised Learning to Overcome the Data Scarcity Issue",
+          "abstract": "Supervised Learning for Dysarthric Speech Recognition. 25 and Dutch speech and tested on Flemish dysarthric speech. The results showed that ...",
+          "url": "https://campus-fryslan.studenttheses.ub.rug.nl/211/1/MSc%204869214%20M%20Matsushima.pdf"
+        }
+      ],
+      "true_votes": 1,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "Computer-Assisted Pronunciation Training systems aim to help a child learn the correct pronunciations of words, and the most common method for assessing pronunciation performance is the Goodness of Pronunciation technique.",
+      "evidence": [
+        {
+          "title": "Computer Assisted Pronunciation Training Research Papers",
+          "abstract": "Computer Assisted Pronunciation Training (CAPT) refers to the use of computer software and technology to enhance language learners' pronunciation skills.",
+          "url": "https://www.academia.edu/Documents/in/Computer_Assisted_Pronunciation_Training"
+        },
+        {
+          "title": "The Effectiveness of Computer Assisted Pronunciation ... - ERIC",
+          "abstract": "by A Neri · 2008 · Cited by 328 — This study investigates whether a computer assisted pronunciation training (CAPT) system can help young learners improve word-level pronunciation skills in ...",
+          "url": "https://eric.ed.gov/?id"
+        },
+        {
+          "title": "Computer-assisted pronunciation training—Speech ...",
+          "abstract": "by D Korzekwa · 2022 · Cited by 70 — We present three innovative techniques based on phoneme-to-phoneme (P2P), text-to-speech (T2S) and speech-to-speech (S2S) conversion to generate correctly ...",
+          "url": "https://www.sciencedirect.com/science/article/pii/S0167639322000863"
+        },
+        {
+          "title": "The Effectiveness of a Computer Assisted Pronunciation ...",
+          "abstract": "by O Mich · 2006 · Cited by 20 — Results show that 1) overall pronunciation quality improved significantly for both groups of pupils, 2) both groups also significantly improved in ...",
+          "url": "https://cris.fbk.eu/handle/11582/2964"
+        },
+        {
+          "title": "Language-independent methods for computer-assisted ...",
+          "abstract": "by A Lee · 2016 · Cited by 31 — Computer-assisted pronunciation training (CAPT) systems help students practice speaking foreign languages by providing automatic pronunciation assessment ...",
+          "url": "https://dspace.mit.edu/entities/publication/ffa71c60-cf1d-424d-b436-3be383b431bc"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "Two low-resource automatic speech recognition systems were investigated for disordered child speech in mobile therapy applications using mobile-device-friendly techniques and limited training data.",
+      "evidence": [
+        {
+          "title": "AI-Based Automated Speech Therapy Tools for persons with ... - arXiv",
+          "abstract": "This paper presents a systematic literature review of published studies on AI-based automated speech therapy tools for persons with speech sound ...",
+          "url": "https://arxiv.org/html/2204.10325v2"
+        },
+        {
+          "title": "Speech therapy mobile application for speech and language impairment ...",
+          "abstract": "The research indicates that using mobile applications can enhance engagement and motivation in children undergoing speech therapy, with studies showing up ...",
+          "url": "https://www.academia.edu/68034358/Speech_therapy_mobile_application_for_speech_and_language_impairment_children"
+        },
+        {
+          "title": "Evaluating Automatic Speech Recognition for Child Speech ...",
+          "abstract": "In this study, we investigated the performance of two low-resource ASR systems on disordered speech from children. We compared the open-source PocketSphinx",
+          "url": "https://www.researchgate.net/publication/336787258_Evaluating_Automatic_Speech_Recognition_for_Child_Speech_Therapy_Applications"
+        },
+        {
+          "title": "Evaluating Automatic Speech Recognition for Child Speech ...",
+          "abstract": "This study investigated the performance of two low-resource ASR systems on disordered speech from children using adapted acoustic models and a custom template- ...",
+          "url": "https://www.semanticscholar.org/paper/Evaluating-Automatic-Speech-Recognition-for-Child-Hair-Ballard/92ba8fb66b16358a5454a75aae4a16be9b549621"
+        },
+        {
+          "title": "Investigation of ASR Models for Low-Resource Kazakh Child Speech",
+          "abstract": "This study focuses on the development and evaluation of automatic speech recognition (ASR) systems for Kazakh child speech, an underexplored domain in both ...",
+          "url": "https://www.mdpi.com/2076-3417/15/16/8989"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "An automated tool for assessing productions from children with apraxia of speech consists of a clinician interface, a mobile application, and a speech processing engine.",
+      "evidence": [
+        {
+          "title": "An automated tool for the assessment of childhood apraxia ...",
+          "abstract": "Automated tool to assess productions from children with apraxia of speech.Consists of clinician interface, mobile application and speech processing engine ...",
+          "url": "https://www.semanticscholar.org/paper/Tabby-Talks%3A-An-automated-tool-for-the-assessment-Shahin-Ahmed/ba323453b026cb52e6bcbcf0b96d50fed4c29fc5"
+        },
+        {
+          "title": "AI-Based Automated Speech Therapy Tools for persons ...",
+          "abstract": "This paper presents a systematic literature review of published studies on AI-based automated speech therapy tools for persons with speech ...",
+          "url": "https://arxiv.org/html/2204.10325v2"
+        },
+        {
+          "title": "An automated tool for the assessment of childhood apraxia ...",
+          "abstract": "Tabby Talks is one of the automated tools for assessing childhood apraxia of speech. Devices are composed of clinician interface, mobile application, and speech ...",
+          "url": "https://www.researchgate.net/publication/275060395_Tabby_Talks_An_automated_tool_for_the_assessment_of_childhood_apraxia_of_speech"
+        },
+        {
+          "title": "An automated tool for the assessment of childhood apraxia ...",
+          "abstract": "by M Shahin · 2015 · Cited by 77 — Automated tool to assess productions from children with apraxia of speech. • Consists of clinician interface, mobile application and speech processing engine.",
+          "url": "https://www.sciencedirect.com/science/article/abs/pii/S0167639315000382"
+        },
+        {
+          "title": "A Longitudinal Evaluation of Tablet-Based Child Speech ...",
+          "abstract": "by A Hair · 2021 · Cited by 58 — In this study, we examined pronunciation improvements, child engagement over time, and caregiver and automated pronunciation evaluation accuracy while using our ...",
+          "url": "https://dl.acm.org/doi/fullHtml/10.1145/3433607"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "Automatic pronunciation evaluation relies on automatic speech recognition performed using CMUSphinx trained on a database of native exemplar pronunciation and non-native examples of frequent mistakes.",
+      "evidence": [
+        {
+          "title": "automatic pronunciation verification for speech recognition",
+          "abstract": "by K Rao · Cited by 8 — ABSTRACT. Pronunciations for words are a critical component in an automated speech recognition system (ASR) as mis-recognitions may be caused.",
+          "url": "https://research.google.com/pubs/archive/43262.pdf"
+        },
+        {
+          "title": "Using Automatic Speech Processing for Foreign Language ...",
+          "abstract": "by M Eskenazi · 1999 · Cited by 315 — This paper will address the use of speech recognition in second language pronunciation training. Starting with a look at some of the basic principles of ...",
+          "url": "https://scholarspace.manoa.hawaii.edu/bitstreams/a8ae4416-0f1d-403e-bc76-5ac6c87b3960/download"
+        },
+        {
+          "title": "Automatic Pronunciation Scoring And Mispronunciation ...",
+          "abstract": "by R Srikanth · 2012 · Cited by 25 — These evaluations commonly rely on automatic speech recognition, which could be performed using Sphinx trained on a database of native exemplar pronunciation",
+          "url": "https://aclanthology.org/W12-5808.pdf"
+        },
+        {
+          "title": "Pronunciation evaluation for GSoC 2012",
+          "abstract": "Such speech recognition can be performed using Sphinx trained on a database of native exemplar pronunciation and non-native examples of frequent mistakes.",
+          "url": "http://cmusphinx.github.io/wiki/pronunciation_evaluation/"
+        },
+        {
+          "title": "Automatic Pronunciation Assessment - A Review",
+          "abstract": "This paper addresses the former – focusing on pronunciation assessment, which aims to automatically score non-native speech-segment and give meaningful feedback ...",
+          "url": "https://arxiv.org/html/2310.13974"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "The \"Speech Therapy for Apraxia\" application is designed for children with apraxia and speech disorders and lets users select the phonemes targeted in practice.",
+      "evidence": [
+        {
+          "title": "A Pilot Randomized Control Trial of Motor-Based ...",
+          "abstract": "by P McCabe · 2023 · Cited by 33 — Childhood apraxia of speech (CAS) is a motor-based speech sound disorder involving impairments in speech sound accuracy along with disrupted ...",
+          "url": "https://pubs.asha.org/doi/10.1044/2022_AJSLP-22-00144"
+        },
+        {
+          "title": "Intervention Approaches for Childhood Apraxia of Speech",
+          "abstract": "This paper aims to describe the theory and methods of select intervention approaches for childhood apraxia of speech so readers may better understand ...",
+          "url": "https://pdxscholar.library.pdx.edu/cgi/viewcontent.cgi?article=2441&context=honorstheses"
+        },
+        {
+          "title": "Treatment of Childhood Apraxia of Speech (CAS)",
+          "abstract": "Dr. Strand's research has focused on developmental, acquired and progressive apraxia of speech, treatment of children and adults with ...",
+          "url": "https://www.youtube.com/watch?v=ML7JxJbGxWI"
+        },
+        {
+          "title": "Treatment Methods",
+          "abstract": "A small set of target words (5-7) will be practiced These words will be selected carefully by the therapist to help the child improve speech motor movements.",
+          "url": "https://childapraxiatreatment.org/treatment-methods/"
+        },
+        {
+          "title": "Apraxia of Speech in Children: Signs and Support",
+          "abstract": "Childhood apraxia of speech is treated with frequent, targeted speech therapy for apraxia that helps a child practice the motor planning needed ...",
+          "url": "https://www.bjoremspeech.com/blogs/bjorem-speech-blog/apraxia-of-speech-in-children?srsltid=AfmBOorVuXXzB8En8ivV001PcScTo4fScbYhjG4B-kfz2KcSinw9EPXd"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "A systematic review covered studies using speech for automated assessments across a broader range of psychiatric disorders, applying machine learning technology to speech samples.",
+      "evidence": [
+        {
+          "title": "Automated assessment of psychiatric disorders using speech",
+          "abstract": "This is the first systematic review of studies using speech for automated assessments across a broader range of psychiatric disorders",
+          "url": "https://www.semanticscholar.org/paper/Automated-assessment-of-psychiatric-disorders-using-Low-Bentley/f6f64f572d2bc5f38526401b1bd346b00b15bccd"
+        },
+        {
+          "title": "Analysis of speech patterns can help diagnose mental illness",
+          "abstract": "Automated analysis of speech patterns can be used to aid diagnosis of psychiatric conditions, a review of research has found.",
+          "url": "https://futurecarecapital.org.uk/latest/analysis-of-speech-patterns-can-diagnose-mental-illness/"
+        },
+        {
+          "title": "Automated assessment of psychiatric disorders using ...",
+          "abstract": "This is the first systematic review of studies using speech for automated assessments across a broader range of psychiatric disorders",
+          "url": "https://scispace.com/papers/automated-assessment-of-psychiatric-disorders-using-speech-a-43shqt19ch"
+        },
+        {
+          "title": "Automated assessment of psychiatric disorders using speech",
+          "abstract": "by DM Low · 2020 · Cited by 697 — Here, we present the first systematic review of studies using speech for automated assessments across a broader range of psychiatric disorders.",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7042657/"
+        },
+        {
+          "title": "Automated assessment of psychiatric disorders using ...",
+          "abstract": "by DM Low · 2020 · Cited by 697 — Here, we present the first systematic review of studies using speech for automated assessments across a broader range of psychiatric disorders.",
+          "url": "https://onlinelibrary.wiley.com/doi/abs/10.1002/lio2.354"
+        }
+      ],
+      "true_votes": 2,
+      "total_votes": 3,
+      "decision": true
+    }
+  ]
+}

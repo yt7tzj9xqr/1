@@ -1,0 +1,450 @@
+{
+  "arxiv_id": "2105.01605",
+  "model": "MiniMax-M3",
+  "system": "search-baseline-v5",
+  "reference_precision": 0.3,
+  "reference_recall": 0.061224489795918366,
+  "reference_count": 10,
+  "reference_matches": 3,
+  "ground_truth_count": 49,
+  "predicted_titles": [
+    "Natural Language Person Search Using Deep Reinforcement Learning",
+    "Joint Detection and Identification Feature Learning for Person Search",
+    "Multi-Level Joint Feature Learning for Person Re-Identification - MDPI",
+    "End-to-End Deep Learning for Person Search",
+    "CUHK-SYSU Person Search Dataset",
+    "End-to-end person search sequentially trained on ...",
+    "Person Re-identification in Identity Regression Space",
+    "Triplet Online Instance Matching Loss for Person Re ...",
+    "Deep Adversarial Graph Attention Convolution Network for Text-Based Person Search",
+    "Adversarial Representation Learning for Text-to-Image Matching"
+  ],
+  "cited_match_rate": 0.4090909090909091,
+  "cited_count": 22,
+  "cited_supported": 9,
+  "cited_details": [
+    {
+      "statement": "Person search aims to localize and identify a target individual across a large gallery of uncropped scene images, integrating pedestrian detection and re-identification into a single retrieval problem, and is particularly valuable for public-safety surveillance and social-governance applications [https://arxiv.org/abs/1604.01850].",
+      "url": "https://arxiv.org/abs/1604.01850",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "introduced an end-to-end Convolutional Neural Network (CNN) that jointly handles detection and re-identification, avoiding error propagation from a conventional two-stage pipeline [http://www.ee.cuhk.edu.hk/~xgwang/PS/dataset.html].",
+      "url": "http://ee.cuhk.edu.hk/~xgwang/PS/dataset.html",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "To support this research, the authors released the CUHK-SYSU benchmark, comprising 18,184 images and 8,432 identities harvested from street photographs and movie stills [https://hyper.ai/en/datasets/17981].",
+      "url": "https://hyper.ai/en/datasets/17981",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "A central technical contribution of that work is the Online Instance Matching (OIM) loss, which addresses long-tailed identity distributions by maintaining a labeled feature queue together with an unlabeled feature table for comparison [https://arxiv.org/abs/1604.01850].",
+      "url": "https://arxiv.org/abs/1604.01850",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "By avoiding the need for exhaustive pairwise similarity computations, OIM scales gracefully to gallery sizes that would be infeasible for traditional metric-learning losses [https://arxiv.org/abs/1604.01850].",
+      "url": "https://arxiv.org/abs/1604.01850",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The OIM loss has become a canonical supervision signal for person search, providing a scalable alternative to standard softmax under sparse and unbalanced identity labels [https://arxiv.org/abs/1604.01850].",
+      "url": "https://arxiv.org/abs/1604.01850",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "further showed that sequential training of the detector and re-identification sub-networks remains competitive with fully joint optimization, indicating that the two tasks can be effectively decoupled when training data is sufficient [https://cea.hal.science/cea-03251768/document].",
+      "url": "https://cea.hal.science/cea-03251768/document",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "formalized the task with a deep reinforcement-learning agent that recursively crops candidate regions in gallery images, learning a policy that aligns each candidate crop with the textual query [https://arxiv.org/abs/1809.00365].",
+      "url": "https://arxiv.org/abs/1809.00365",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "This early work demonstrated that text queries can guide region proposal and ranking without relying on bounding-box supervision at inference time [https://arxiv.org/abs/1809.00365].",
+      "url": "https://arxiv.org/abs/1809.00365",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "proposed the Deep Adversarial Graph Attention Convolution Network (A-GANet), which constructs visual and textual scene graphs encoding object attributes and pairwise relationships, then aligns the two modalities through adversarial training [https://www.semanticscholar.org/paper/56e3758cd9acc97f41ed3dbefd66fd76f238e4fb].",
+      "url": "https://semanticscholar.org/paper/56e3758cd9acc97f41ed3dbefd66fd76f238e4fb",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "developed a generative adversarial framework that learns modality-invariant embeddings for text-to-image matching, directly applicable to text-based person search by forcing image and text encoders into a shared latent space [https://arxiv.org/abs/1908.10534].",
+      "url": "https://arxiv.org/abs/1908.10534",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "In image-based re-identification, multi-level fusion of global and local features improves robustness to pose, occlusion, and viewpoint changes by combining holistic identity cues with body-part details [https://www.mdpi.com/1999-4893/13/5/111].",
+      "url": "https://mdpi.com/1999-4893/13/5/111",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Such architectures typically combine a global branch encoding whole-body appearance with part-based branches focused on head, torso, and limbs, capturing complementary cues at multiple spatial granularities [https://www.mdpi.com/1999-4893/13/5/111].",
+      "url": "https://mdpi.com/1999-4893/13/5/111",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "For text-based retrieval, scene-graph representations encode fine-grained attribute relations that bag-of-words embeddings cannot capture, yielding richer visual-textual correspondences for matching pedestrian images to descriptive sentences [https://www.semanticscholar.org/paper/56e3758cd9acc97f41ed3dbefd66fd76f238e4fb].",
+      "url": "https://semanticscholar.org/paper/56e3758cd9acc97f41ed3dbefd66fd76f238e4fb",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "By treating each image and sentence as a graph of attribute and relationship nodes, the model can align entities rather than relying solely on holistic global embeddings [https://www.semanticscholar.org/paper/56e3758cd9acc97f41ed3dbefd66fd76f238e4fb].",
+      "url": "https://semanticscholar.org/paper/56e3758cd9acc97f41ed3dbefd66fd76f238e4fb",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The OIM loss implements a scalable online comparison against a labeled queue and an unlabeled memory bank, avoiding the prohibitive cost of exhaustive pairwise comparisons over large galleries [https://arxiv.org/abs/1604.01850].",
+      "url": "https://arxiv.org/abs/1604.01850",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Triplet-based objectives explicitly pull same-identity pairs together while pushing different-identity pairs apart in the embedding space, and online instance-matching variants have been shown to mine shared-identity cues across non-overlapping camera views [https://arxiv.org/abs/2002.10560].",
+      "url": "https://arxiv.org/abs/2002.10560",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "In the text-based setting, adversarial alignment closes the modality gap by forcing image and text encoders into a shared embedding space, an approach validated across multiple retrieval benchmarks [https://arxiv.org/abs/1908.10534].",
+      "url": "https://arxiv.org/abs/1908.10534",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "mitigates this by sharing backbone features between the detection and re-identification heads, allowing OIM gradients to regularize the detection pathway and enforce identity-driven detection [https://arxiv.org/abs/1604.01850].",
+      "url": "https://arxiv.org/abs/1604.01850",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The shared backbone pattern also reduces computational redundancy at inference, since a single forward pass produces both the detection output and the re-identification embedding for every proposal [https://arxiv.org/abs/1604.01850].",
+      "url": "https://arxiv.org/abs/1604.01850",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "This identity-driven detection pattern is reiterated in later work, where the re-id branch is co-trained with the detector to enforce consistency between the two objectives throughout the network [https://cea.hal.science/cea-03251768/document].",
+      "url": "https://cea.hal.science/cea-03251768/document",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Complementary research reformulated re-identification as regressing a continuous identity vector rather than classifying discrete identities, offering an alternative mechanism to align detection and identification features and to scale gracefully to large open-world populations [https://pmc.ncbi.nlm.nih.gov/articles/PMC6411216/].",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6411216",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    }
+  ],
+  "noncited_factual_accuracy": 0.375,
+  "noncited_count": 8,
+  "noncited_correct": 3,
+  "noncited_details": [
+    {
+      "claim": "Two principal subfields have emerged: image-based person search, in which the query is a cropped photograph, and text-based person search, in which the query is a free-form natural-language description.",
+      "evidence": [
+        {
+          "title": "Retrieval of Images using Reverse Search Engine",
+          "abstract": "Reverse image search technology has emerged as a powerful tool for retrieving similar or identical images based on a reference image. Content-based image ...",
+          "url": "https://tijer.org/tijer/papers/TIJER2305008.pdf"
+        },
+        {
+          "title": "finding person from whole scene of images...",
+          "abstract": "This task aims to find a probe person from whole scene which shows great significance in video surveillance field to track lost people, re-identification, and ...",
+          "url": "https://www.researchgate.net/figure/Overview-of-person-search-finding-person-from-whole-scene-of-images-without-proposal-and_fig2_359055292"
+        },
+        {
+          "title": "Query Results",
+          "abstract": "The analysis and description of behavior in image sequences has its principal application in the domain of smart video--surveillance, in order to ...",
+          "url": "http://refbase.cvc.uab.es/search.php?sqlQuery=SELECT%20author%2C%20title%2C%20type%2C%20year%2C%20publication%2C%20abbrev_journal%2C%20volume%2C%20issue%2C%20pages%2C%20keywords%2C%20abstract%2C%20address%2C%20corporate_author%2C%20thesis%2C%20publisher%2C%20place%2C%20editor%2C%20language%2C%20summary_language%2C%20orig_title%2C%20series_editor%2C%20series_title%2C%20abbrev_series_title%2C%20series_volume%2C%20series_issue%2C%20edition%2C%20issn%2C%20isbn%2C%20medium%2C%20area%2C%20expedition%2C%20conference%2C%20notes%2C%20approved%2C%20call_number%2C%20serial%20FROM%20refs%20WHERE%20publication%20%3D%20%22PhD%20Thesis%2C%20Universitat%20Autonoma%20de%20Barcelona-CVC%22%20ORDER%20BY%20type&submit=Display&citeStyle=APA&citeOrder=&orderBy=type&headerMsg=&showQuery=0&showLinks=1&formType=sqlSearch&showRows=15&rowOffset=15&client=&viewType="
+        },
+        {
+          "title": "Query-Guided End-To-End Person Search",
+          "abstract": "by B Munjal · 2019 · Cited by 203 — Person search has recently emerged as the task of find- ing a person, provided as a cropped exemplar, in a gallery of non-cropped images [23, 37, 39, 46].",
+          "url": "https://openaccess.thecvf.com/content_CVPR_2019/papers/Munjal_Query-Guided_End-To-End_Person_Search_CVPR_2019_paper.pdf"
+        },
+        {
+          "title": "Person re-identification in images with deep learning",
+          "abstract": "Second, we propose a CNN based person re-identification framework composed of an identity classification branch and of an attribute recognition ...",
+          "url": "https://theses.hal.science/tel-02090746/file/these.pdf"
+        }
+      ],
+      "true_votes": 1,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "In the image-based setting, a query is a cropped pedestrian photograph and the system must detect the same identity among whole scene images.",
+      "evidence": [
+        {
+          "title": "Overview of person search: finding person from whole scene of images...",
+          "abstract": "the whole frames of the video streams must be converted into cropped images of people using pedestrian detection models, which behave differently from the human",
+          "url": "https://www.researchgate.net/figure/Overview-of-person-search-finding-person-from-whole-scene-of-images-without-proposal-and_fig2_359055292"
+        },
+        {
+          "title": "Detecting Pedestrians using Patterns of Motion and Appearance",
+          "abstract": "This paper describes a pedestrian detection system that in- tegrates image intensity information with motion informa- tion. We use a detection style ...",
+          "url": "https://lear.inrialpes.fr/people/triggs/events/iccv03/cdrom/iccv03/0734_viola.pdf"
+        },
+        {
+          "title": "Research on an unsupervised person re-identification based on image ...",
+          "abstract": "Research on person re-identification(Re-ID) has important value in pedestrian detection, target tracking, criminal investigation, and other related fields.",
+          "url": "https://www.sciencedirect.com/science/article/pii/S0952197623005766"
+        },
+        {
+          "title": "Differential Privacy and k-Anonymity for Pedestrian Image Data",
+          "abstract": "We show that our proposed mechanisms outperform traditional image obfuscation methods, providing data with a quantifiable privacy budget ε resulting in a higher ...",
+          "url": "https://dl.acm.org/doi/full/10.1145/3743680"
+        },
+        {
+          "title": "Full article: Focusing on shared areas for partial person re-identification",
+          "abstract": "Person re-identification(Re-ID) can be understood as image retrieval at a simple level, specifically, it refers to the retrieval of the same pedestrian ...",
+          "url": "https://www.tandfonline.com/doi/full/10.1080/08839514.2022.2031818"
+        }
+      ],
+      "true_votes": 1,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "Text-based person search replaces the image query with a free-form description such as \"a man in a blue jacket carrying a black backpack.\"",
+      "evidence": [
+        {
+          "title": "Text-Based Person Search in Full Images via Semantic ...",
+          "abstract": "Text-based Person Search (TBPS) in full images aims to locate a target pedestrian within uncropped images based on natural language descriptions.",
+          "url": "https://openreview.net/forum?id=iINUF4n33F"
+        },
+        {
+          "title": "Text-based Person Search in Full Images via Semantic ...",
+          "abstract": "Finding target persons in full scene images with a query of text description has important practical applications in intelligent video surveillance.",
+          "url": "https://ui.adsabs.harvard.edu/abs/arXiv:2109.12965"
+        },
+        {
+          "title": "Text-based Person Search in Full Images via ...",
+          "abstract": "This work presents a deep learning method for attribute text description based person search without any query imagery using an Attribute-Image Hierarchical",
+          "url": "https://www.semanticscholar.org/paper/42a8dcfe2b9576b98fc723f6a00f72cb8b2d2228"
+        },
+        {
+          "title": "Text-based Person Search in Full Images via Semantic ...",
+          "abstract": "Finding target persons in full scene images with a query of text description has important practical applications in intelligent video surveillance.",
+          "url": "https://www.scilit.com/publications/64f07344e4434eb65528c4f1e9e556b5"
+        },
+        {
+          "title": "Deep Adversarial Graph Attention Convolution Network for Text-Based Person Search",
+          "abstract": "The newly emerging text-based person search task aims at retrieving the target pedestrian by a query in natural language with fine-grained description of a pedestrian. It is more applicable in reality without the requirement of image/video query of a pedestrian, as compared to image/video based person search, i.e., person re-identification. In this work, we propose a novel deep adversarial graph attention convolution network (A-GANet) for text-based person search. The A-GANet exploits both textual and visual scene graphs, consisting of object properties and relationships, from the text queries and gallery images of pedestrians, towards learning informative textual and visual representations. It learns an effective joint textual-visual latent feature space in adversarial learning manner, bridging modality gap and facilitating pedestrian matching. Specifically, the A-GANet consists of an image graph attention network, a text graph attention network and an adversarial learning module. The image and text graph attention networks are designed with a novel graph attention convolution layer, which effectively exploits graph structure in the learning of textual and visual features, leading to precise and discriminative representations. An adversarial learning module is developed with a feature transformer and a modality discriminator, to learn a joint textual-visual feature space for cross-modality matching. Extensive experimental results on two challenging benchmarks, i.e., CUHK-PEDES and Flickr30k datasets, have demonstrated the effectiveness of the proposed method.",
+          "url": "https://www.semanticscholar.org/paper/56e3758cd9acc97f41ed3dbefd66fd76f238e4fb"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "Identity-discriminative embeddings underpin both subfields.",
+      "evidence": [
+        {
+          "title": "Joint Discriminative and Generative Learning for Person ...",
+          "abstract": "In this paper, we seek to improve learned re-id embeddings by better leveraging the generated data. To this end, we propose a joint learning ...",
+          "url": "https://research.nvidia.com/publication/2019-06_joint-discriminative-and-generative-learning-person-re-identification"
+        },
+        {
+          "title": "Artificial intelligence: A powerful paradigm for scientific ...",
+          "abstract": "by Y Xu · 2021 · Cited by 2568 — This paper undertakes a comprehensive survey on the development and application of AI in different aspects of fundamental sciences, including ...",
+          "url": "https://www.sciencedirect.com/science/article/pii/S2666675821001041"
+        },
+        {
+          "title": "A Discriminatively Learned CNN Embedding for Person Re ...",
+          "abstract": "by Z Zheng · 2016 · Cited by 1140 — In this paper, we shed light on how to combine the two models to learn more discriminative pedestrian descriptors.",
+          "url": "https://arxiv.org/abs/1611.05666"
+        },
+        {
+          "title": "Discriminative Phrase Embedding for Paraphrase ...",
+          "abstract": "by W Yin · 2016 · Cited by 50 — This work, concerning paraphrase identification task, on one hand contributes to expanding deep learning embeddings to include continuous and discontinuous ...",
+          "url": "https://ui.adsabs.harvard.edu/abs/2016arXiv160400503Y/abstract"
+        },
+        {
+          "title": "Adversarial Representation Learning for Text-to-Image Matching",
+          "abstract": "For many computer vision applications such as image captioning, visual question answering, and person search, learning discriminative feature representations at both image and text level is an essential yet challenging problem. Its challenges originate from the large word variance in the text domain as well as the difficulty of accurately measuring the distance between the features of the two modalities. Most prior work focuses on the latter challenge, by introducing loss functions that help the network learn better feature representations but fail to account for the complexity of the textual input. With that in mind, we introduce TIMAM: a Text-Image Modality Adversarial Matching approach that learns modality-invariant feature representations using adversarial and cross-modal matching objectives. In addition, we demonstrate that BERT, a publicly-available language model that extracts word embeddings, can successfully be applied in the text-to-image matching domain. The proposed approach achieves state-of-the-art cross-modal matching performance on four widely-used publicly-available datasets resulting in absolute improvements ranging from 2% to 5% in terms of rank-1 accuracy.",
+          "url": "https://arxiv.org/abs/1908.10534"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "Deep metric learning remains the dominant tool for matching queries to gallery entries.",
+      "evidence": [
+        {
+          "title": "Deep Metric Learning: A Survey",
+          "abstract": "by M KAYA · 2019 · Cited by 1014 — This article aims to reveal the importance of deep metric learning and the problems dealt with in this field in the light of recent studies.",
+          "url": "https://www.mdpi.com/2073-8994/11/9/1066"
+        },
+        {
+          "title": "Image Matching from Handcrafted to Deep Features: A Survey",
+          "abstract": "by J Ma · 2021 · Cited by 1232 — Analogously to image-based learning, increasing studies have used deep learning in feature-based matching community. Deep metric learning with ...",
+          "url": "https://link.springer.com/article/10.1007/s11263-020-01359-2"
+        },
+        {
+          "title": "Deep Features for Person Re-Identification on Metric learning",
+          "abstract": "With the emergence of deep learning and large-scale data, metric learning has significantly improved person re-identification performance, but the extent to ...",
+          "url": "https://www.researchgate.net/publication/341245793_Deep_Features_for_Person_Re-Identification_on_Metric_learning"
+        },
+        {
+          "title": "Dissecting Deep Metric Learning Losses for Image-Text Retrieval",
+          "abstract": "Inspired by recent progress in deep metric learning (DML) in this paper we revisit the problem of finding better objectives for VSE in image- ...",
+          "url": "https://www.youtube.com/watch?v=sArSardLwh4"
+        },
+        {
+          "title": "Daily Papers",
+          "abstract": "This paper proposes Cross-modal Deep Metric Learning with Multi-task Regularization (CDMLMR), which integrates quadruplet ranking loss and semi-supervised ...",
+          "url": "https://huggingface.co/papers?q=metric%20learning"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "Detectors are optimized for localization rather than identity, so their features are not directly matched across cameras.",
+      "evidence": [
+        {
+          "title": "A Comprehensive Survey of Machine Learning Techniques and Models ...",
+          "abstract": "Object detection is a pivotal research domain within computer vision, with applications spanning from autonomous vehicles to medical diagnostics.",
+          "url": "https://www.mdpi.com/1424-8220/25/1/214"
+        },
+        {
+          "title": "Methods and Trends in Detecting AI-Generated Images - arXiv",
+          "abstract": "Patch-Based Analysis methods focus on identifying synthetic images by analyzing localized patches rather than the entire image.",
+          "url": "https://arxiv.org/html/2502.15176v2"
+        },
+        {
+          "title": "Learning Semantic-Aligned Feature Representation for Text-Based Person Search",
+          "abstract": "Text-based person search aims to retrieve images of a certain pedestrian by a textual description. The key challenge of this task is to eliminate the inter-modality gap and achieve the feature alignment across modalities. In this paper, we propose a semantic-aligned embedding method for text-based person search, in which the feature alignment across modalities is achieved by automatically learning the semantic-aligned visual features and textual features. First, we introduce two Transformer-based backbones to encode robust feature representations of the images and texts. Second, we design a semantic-aligned feature aggregation network to adaptively select and aggregate features with the same semantics into part-aware features, which is achieved by a multi-head attention module constrained by a cross-modality part alignment loss and a diversity loss. Experimental results on the CUHK-PEDES and Flickr30K datasets show that our method achieves state-of-the-art performances.",
+          "url": "https://arxiv.org/abs/2112.06714"
+        },
+        {
+          "title": "A survey of transfer learning",
+          "abstract": "Machine learning and data mining techniques have been used in numerous real-world applications. An assumption of traditional machine learning methodologies is the training data and testing data are taken from the same domain, such that the input feature space and data distribution characteristics are the same. However, in some real-world machine learning scenarios, this assumption does not hold. There are cases where training data is expensive or difficult to collect. Therefore, there is a need to create high-performance learners trained with more easily obtained data from different domains. This methodology is referred to as transfer learning. This survey paper formally defines transfer learning, presents information on current solutions, and reviews applications applied to transfer learning. Lastly, there is information listed on software downloads for various transfer learning solutions and a discussion of possible future research work. The transfer learning solutions surveyed are independent of data size and can be applied to big data environments.",
+          "url": "https://doi.org/10.1186/s40537-016-0043-6"
+        },
+        {
+          "title": "Deep Learning for Person Re-Identification: A Survey and ...",
+          "abstract": "AI Person re-identification (Re-ID) retrieves individuals across non-overlapping cameras, driven by deep learning advancements. A focal loss scheme is OIM loss ...",
+          "url": "https://www.academia.edu/95939983/Deep_Learning_for_Person_Re_Identification_A_Survey_and_Outlook"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "Person search has matured from a two-stage detect-then-match pipeline into a unified deep-learning problem that handles both image and textual queries.",
+      "evidence": [
+        {
+          "title": "KDD 2019 | Proceedings",
+          "abstract": "Deep neural network based transfer learning has been widely used to leverage information from the domain with rich data to help domain with insufficient data.",
+          "url": "https://www.kdd.org/kdd2019/proceedings"
+        },
+        {
+          "title": "Deep Learning for Matching in Search and Recommendation",
+          "abstract": "by J Xu · Cited by 157 — Matching is a key problem in both search and recommenda- tion, which is to measure the relevance of a document to a query or the interest of a user on an item.",
+          "url": "https://hexiangnan.github.io/papers/fntir20-DL4Match.pdf"
+        },
+        {
+          "title": "Deep learning in computer vision: A critical review of ...",
+          "abstract": "by J Chai · 2021 · Cited by 1217 — Deep learning has been overwhelmingly successful in computer vision (CV), natural language processing, and video/speech recognition.",
+          "url": "https://www.sciencedirect.com/science/article/pii/S2666827021000670"
+        },
+        {
+          "title": "Adversarial Representation Learning for Text-to-Image Matching",
+          "abstract": "For many computer vision applications such as image captioning, visual question answering, and person search, learning discriminative feature representations at both image and text level is an essential yet challenging problem. Its challenges originate from the large word variance in the text domain as well as the difficulty of accurately measuring the distance between the features of the two modalities. Most prior work focuses on the latter challenge, by introducing loss functions that help the network learn better feature representations but fail to account for the complexity of the textual input. With that in mind, we introduce TIMAM: a Text-Image Modality Adversarial Matching approach that learns modality-invariant feature representations using adversarial and cross-modal matching objectives. In addition, we demonstrate that BERT, a publicly-available language model that extracts word embeddings, can successfully be applied in the text-to-image matching domain. The proposed approach achieves state-of-the-art cross-modal matching performance on four widely-used publicly-available datasets resulting in absolute improvements ranging from 2% to 5% in terms of rank-1 accuracy.",
+          "url": "https://arxiv.org/abs/1908.10534"
+        },
+        {
+          "title": "Deep Adversarial Graph Attention Convolution Network for Text-Based Person Search",
+          "abstract": "The newly emerging text-based person search task aims at retrieving the target pedestrian by a query in natural language with fine-grained description of a pedestrian. It is more applicable in reality without the requirement of image/video query of a pedestrian, as compared to image/video based person search, i.e., person re-identification. In this work, we propose a novel deep adversarial graph attention convolution network (A-GANet) for text-based person search. The A-GANet exploits both textual and visual scene graphs, consisting of object properties and relationships, from the text queries and gallery images of pedestrians, towards learning informative textual and visual representations. It learns an effective joint textual-visual latent feature space in adversarial learning manner, bridging modality gap and facilitating pedestrian matching. Specifically, the A-GANet consists of an image graph attention network, a text graph attention network and an adversarial learning module. The image and text graph attention networks are designed with a novel graph attention convolution layer, which effectively exploits graph structure in the learning of textual and visual features, leading to precise and discriminative representations. An adversarial learning module is developed with a feature transformer and a modality discriminator, to learn a joint textual-visual feature space for cross-modality matching. Extensive experimental results on two challenging benchmarks, i.e., CUHK-PEDES and Flickr30k datasets, have demonstrated the effectiveness of the proposed method.",
+          "url": "https://www.semanticscholar.org/paper/56e3758cd9acc97f41ed3dbefd66fd76f238e4fb"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    },
+    {
+      "claim": "The three core challenges—discriminative representations, query–target alignment, and detection–identification consistency—remain deeply intertwined, and the most effective systems address them jointly through shared backbones, online metric-learning losses, and cross-modal adversarial alignment.",
+      "evidence": [
+        {
+          "title": "Query-Centric Contrastive Learning for Robust Language–Geometry ...",
+          "abstract": "3D visual grounding aims to localize target objects in 3D scenes according to natu- ral language descriptions. Existing methods typically rely on ...",
+          "url": "https://papers.ssrn.com/sol3/Delivery.cfm/d8d58d5b-ffe2-4509-846c-84177dc29e07-MECA.pdf?abstractid=6590021&mirid=1"
+        },
+        {
+          "title": "Towards Discriminative and Consistent Cross-Modal Alignment ...",
+          "abstract": "RSITR still faces two primary challenges. three main paradigms: methods without image–text pretraining, vision–language pretraining-based methods (VLP), and ...",
+          "url": "https://www.mdpi.com/2072-4292/18/4/662"
+        },
+        {
+          "title": "Beyond Intentions: A Critical Survey of Misalignment in LLMs",
+          "abstract": "We explore the multifaceted causes of misalignment, systematically analyzing factors from surface-level technical issues (e.g., training data, objective ...",
+          "url": "https://www.techscience.com/cmc/v85n1/63570/html"
+        },
+        {
+          "title": "A Global Collaborative Discriminative Denoising Network for Text-to ...",
+          "abstract": "The core challenge of TI-ReID lies in the substantial modality gap between visual and textual representations. Moreover, discriminative identity cues",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13259231/"
+        },
+        {
+          "title": "Taxonomy-Aware Representation Alignment for Hierarchical Visual ...",
+          "abstract": "LMMs struggle with hierarchical visual recognition. (HVR), failing to obey the hierarchical consistency on both known and novel categories. ing the entire ...",
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/papers/He_Taxonomy-Aware_Representation_Alignment_for_Hierarchical_Visual_Recognition_with_Large_Multimodal_CVPR_2026_paper.pdf"
+        }
+      ],
+      "true_votes": 0,
+      "total_votes": 3,
+      "decision": false
+    }
+  ]
+}
