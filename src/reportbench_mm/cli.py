@@ -176,9 +176,11 @@ def command_evaluate_statements(args: argparse.Namespace) -> None:
                 print(f"{path.parent.name}: evaluation failed: {exc}", flush=True)
                 continue
             metric_files.append(metric_path)
+            noncited_value = metrics.get("noncited_factual_accuracy")
+            noncited_label = "N/A" if noncited_value is None else f"{noncited_value:.3f}"
             print(
                 f"{metrics['arxiv_id']}: cited={metrics['cited_match_rate']:.3f}, "
-                f"noncited={metrics['noncited_factual_accuracy']:.3f}", flush=True,
+                f"noncited={noncited_label}", flush=True,
             )
     if metric_files:
         print(json.dumps(aggregate(metric_files, output_root / "summary.json"), indent=2))
