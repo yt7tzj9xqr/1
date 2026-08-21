@@ -70,6 +70,22 @@ class CoreTests(unittest.TestCase):
         self.assertEqual(len(papers), 5)
         self.assertEqual({paper.search_query_index for paper in papers}, set(range(5)))
 
+    def test_anonymous_known_providers_do_not_block_search_many(self):
+        class Web:
+            def search(self, query, **kwargs):
+                return [Paper(query, f"Paper {query}", 2020, f"https://example.org/{query}", "evidence")]
+
+        class OpenAlexProvider:
+            mailto = ""
+
+            def search(self, query, **kwargs):
+                raise AssertionError("anonymous OpenAlex should be skipped")
+
+        papers = CompositeScholarProvider([Web(), OpenAlexProvider()]).search_many(
+            ["one query", "two query"], cutoff=None, limit=5, workers=2,
+        )
+        self.assertEqual(len(papers), 2)
+
     def test_search_result_cleanup_rejects_wrappers_and_nonscholarly_pages(self):
         self.assertEqual(
             canonical_search_title("[1503.02531] Distilling the Knowledge in a Neural Network"),

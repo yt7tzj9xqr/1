@@ -121,7 +121,17 @@ class CompositeScholarProvider:
             return []
         primary = self.providers[0]
         jobs = [(index, primary, query) for index, query in enumerate(queries)]
-        jobs.extend((0, provider, queries[0]) for provider in self.providers[1:])
+        # Anonymous OpenAlex/S2/arXiv/Crossref calls repeatedly enter long 429
+        # retry chains and block the whole task. Only use OpenAlex as a graph
+        # supplement when the user configured its polite-pool mailto. Unknown
+        # custom providers remain enabled, which also keeps this class extensible.
+        known_free = {"OpenAlexProvider", "SemanticScholarProvider", "ArxivProvider", "CrossrefProvider"}
+        for provider in self.providers[1:]:
+            name = type(provider).__name__
+            if name == "OpenAlexProvider" and getattr(provider, "mailto", ""):
+                jobs.append((0, provider, queries[0]))
+            elif name not in known_free:
+                jobs.append((0, provider, queries[0]))
         rows: list[tuple[int, int, Paper]] = []
         errors: list[str] = []
         with ThreadPoolExecutor(max_workers=max(1, min(workers + 2, len(jobs)))) as executor:
