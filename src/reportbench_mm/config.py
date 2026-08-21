@@ -34,13 +34,14 @@ class Settings:
     rag_output_tokens: int = 24576
     baseline_search_budget: int = 5
     search_results_per_query: int = 20
+    retrieval_candidate_pool: int = 30
     search_workers: int = 5
     reader_workers: int = 4
-    rag_seed_count: int = 6
+    rag_seed_count: int = 8
     rag_depth: int = 3
     rag_max_papers: int = 40
-    rag_evidence_papers: int = 8
-    baseline_papers: int = 12
+    rag_evidence_papers: int = 12
+    baseline_papers: int = 16
     evidence_char_limit: int = 18000
 
     @classmethod

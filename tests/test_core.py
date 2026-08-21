@@ -19,9 +19,9 @@ from reportbench_mm.evaluation.aggregate import aggregate
 from reportbench_mm.models.minimax import MiniMaxClient
 from reportbench_mm.retrieval import (
     canonical_search_title, diverse_top_papers, is_scholarly_candidate, parallel_search,
-    plan_search_queries,
+    model_rerank_papers, plan_search_queries,
 )
-from reportbench_mm.web_reader import parse_academic_html
+from reportbench_mm.web_reader import arxiv_pdf_url, extract_pdf_text, parse_academic_html
 from reportbench_mm.providers.minimax_search import MiniMaxSearchProvider
 
 
@@ -66,6 +66,14 @@ class CoreTests(unittest.TestCase):
         self.assertEqual(parsed["title"], "A Complete Academic Paper Title")
         self.assertIn("experimental evidence", parsed["text"])
         self.assertNotIn("navigation", parsed["text"])
+
+    def test_arxiv_pdf_url_is_canonical_and_bounded(self):
+        self.assertEqual(
+            arxiv_pdf_url("https://export.arxiv.org/abs/2401.12345v2"),
+            "https://arxiv.org/pdf/2401.12345",
+        )
+        self.assertEqual(arxiv_pdf_url("https://example.org/paper.pdf"), "")
+        self.assertEqual(extract_pdf_text(b"not a pdf"), "")
 
     def test_page_reader_does_not_replace_complete_search_title(self):
         from reportbench_mm.web_reader import WebPageReader
@@ -118,6 +126,21 @@ class CoreTests(unittest.TestCase):
         self.assertNotIn("before", queries[0].lower())
         self.assertEqual(len({query.lower() for query in queries}), 3)
 
+    def test_model_reranker_validates_indices_and_fills_missing_slots(self):
+        class RerankerSettings:
+            model = "reranker"
+
+        class Reranker:
+            settings = RerankerSettings()
+
+            def generate_json(self, messages, **kwargs):
+                return {"indices": [3, 3, 99, "2"]}
+
+        task = load_tasks(Path("data/subsets/reportbench_30.jsonl"))[0]
+        papers = [Paper(str(i), f"Paper {i}", 2020, "u", "abstract") for i in range(5)]
+        selected = model_rerank_papers(task, papers, Reranker(), 4)
+        self.assertEqual([paper.paper_id for paper in selected], ["2", "1", "0", "3"])
+
     def test_parallel_search_deduplicates_doi(self):
         class Scholar:
             def search(self, query, **kwargs):
@@ -137,6 +160,18 @@ class CoreTests(unittest.TestCase):
                 papers.append(paper)
         selected = diverse_top_papers(papers, query_count=3, limit=6)
         self.assertEqual({paper.search_query_index for paper in selected}, {0, 1, 2})
+
+    def test_large_diverse_pool_caps_reserved_slots_per_query(self):
+        papers = []
+        for query_index in range(2):
+            for rank in range(10):
+                paper = Paper(f"{query_index}-{rank}", f"Paper {query_index}-{rank}", 2020, "u", "a")
+                paper.search_query_index = query_index
+                paper.search_rank = rank
+                paper.relevance = 1.0 if query_index == 0 else 0.01
+                papers.append(paper)
+        selected = diverse_top_papers(papers, query_count=2, limit=10)
+        self.assertEqual(sum(p.search_query_index == 1 for p in selected), 3)
 
     def test_invalid_embedded_json_is_a_recoverable_runtime_error(self):
         class BrokenJsonClient(MiniMaxClient):
@@ -284,6 +319,40 @@ class CoreTests(unittest.TestCase):
 
         papers = CompositeScholarProvider([Sparse(), Rich()]).search("topic", cutoff=None, limit=3)
         self.assertEqual([paper.title for paper in papers], ["Sparse Paper", "Rich Paper"])
+
+    def test_hybrid_search_merges_graph_metadata_into_web_hit(self):
+        class Web:
+            def search(self, query, **kwargs):
+                return [Paper("MMSEARCH:1", "Canonical Method Paper", 2020, "https://search.test/p", "short", source="minimax-search")]
+
+        class Structured:
+            def search(self, query, **kwargs):
+                return [Paper(
+                    "W1", "Canonical Method Paper", 2020, "https://doi.org/10.1/test",
+                    "A much longer structured abstract with usable evidence.", doi="10.1/test",
+                    cited_by_count=100, referenced_work_ids=["W0"], source="openalex",
+                )]
+
+        papers = CompositeScholarProvider([Web(), Structured()]).search_many(
+            ["central topic", "subtopic"], cutoff=None, limit=10, workers=2,
+        )
+        self.assertEqual(len(papers), 1)
+        self.assertEqual(papers[0].paper_id, "W1")
+        self.assertEqual(papers[0].referenced_work_ids, ["W0"])
+        self.assertEqual(papers[0].query_hits, 2)
+        self.assertIn("openalex", papers[0].source)
+
+    def test_composite_batches_openalex_graph_nodes(self):
+        class OpenAlexProvider:
+            def get_works(self, paper_ids, depth=0):
+                return [Paper(paper_id, f"Paper {paper_id}", 2020, "u", depth=depth) for paper_id in paper_ids]
+
+            def get_work(self, paper_id, depth=0):
+                return None
+
+        papers = CompositeScholarProvider([OpenAlexProvider()]).get_works(["W1", "W2", "W1"], depth=2)
+        self.assertEqual([paper.paper_id for paper in papers], ["W1", "W2"])
+        self.assertTrue(all(paper.depth == 2 for paper in papers))
 
     def test_reference_matching_is_one_to_one(self):
         self.assertTrue(title_match("Graph Neural Networks: A Survey", "Graph Neural Networks A Survey"))

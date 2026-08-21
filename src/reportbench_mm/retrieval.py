@@ -12,7 +12,8 @@ from .schemas import Paper, Task
 
 NON_SCHOLARLY_TITLE_RE = re.compile(
     r"^(?:client challenge|verifying your browser|what is |the illustrated |awesome[- :]|pubmed\.ncbi\.nlm\.nih\.gov$)"
-    r"|\b(?:paper explained|info for participants|smart speech therapy llc)\b",
+    r"|\b(?:paper explained|paper review|paper list|top research papers|info for participants|smart speech therapy llc|"
+    r"youtube|wikipedia|request pdf|homepage)\b|^\[discussion\]",
     re.I,
 )
 
@@ -28,7 +29,11 @@ def is_scholarly_candidate(paper: Paper) -> bool:
     if NON_SCHOLARLY_TITLE_RE.search(paper.title.strip()):
         return False
     host = (urlparse(paper.url).hostname or "").lower().removeprefix("www.")
-    if host in {"aws.amazon.com", "ibm.com", "medium.com", "m.blog.naver.com"}:
+    if host in {
+        "aws.amazon.com", "ibm.com", "medium.com", "m.blog.naver.com", "github.com",
+        "youtube.com", "youtu.be", "wikipedia.org", "en.wikipedia.org", "scribd.com",
+        "researchgate.net",
+    }:
         return False
     return len(canonical_search_title(paper.title).split()) >= 3
 
@@ -89,6 +94,11 @@ def parallel_search(
     scholar, queries: list[str], *, cutoff: date | None, per_query: int = 20, workers: int = 5,
 ) -> list[Paper]:
     """Execute the paper's five-search budget concurrently and merge by DOI/title."""
+    search_many = getattr(scholar, "search_many", None)
+    if callable(search_many):
+        return search_many(
+            queries, cutoff=cutoff, limit=per_query, workers=workers,
+        )
     rows: list[tuple[int, int, Paper]] = []
     with ThreadPoolExecutor(max_workers=max(1, min(workers, len(queries)))) as executor:
         futures = {
@@ -127,7 +137,10 @@ def diverse_top_papers(papers: list[Paper], query_count: int, limit: int) -> lis
     """Reserve top slots per query before globally filling the evidence budget."""
     selected: list[Paper] = []
     selected_ids: set[str] = set()
-    per_query = max(1, limit // max(1, query_count))
+    # Three slots per query are enough to preserve topic coverage. Let global
+    # relevance fill the rest instead of allowing one weak result page to
+    # consume six or more evidence slots in larger candidate pools.
+    per_query = min(3, max(1, limit // max(1, query_count)))
     for query_index in range(query_count):
         candidates = sorted(
             (paper for paper in papers if paper.search_query_index == query_index),
@@ -146,3 +159,56 @@ def diverse_top_papers(papers: list[Paper], query_count: int, limit: int) -> lis
         if len(selected) >= limit:
             break
     return selected[:limit]
+
+
+def model_rerank_papers(
+    task: Task, papers: list[Paper], model: MiniMaxClient, limit: int,
+) -> list[Paper]:
+    """Let the same base model select central papers from a broad, cached pool."""
+    if len(papers) <= limit:
+        return papers
+    cards = []
+    for index, paper in enumerate(papers, 1):
+        abstract = " ".join(paper.abstract.split())[:360]
+        cards.append(
+            f"{index}. {paper.title} ({paper.year or 'unknown'}; source={paper.source}; "
+            f"citations={paper.cited_by_count})\n{abstract}"
+        )
+    prompt = (
+        "Select scholarly evidence for the research task. Return JSON only as "
+        f"{{\"indices\":[integers]}} with exactly {limit} unique 1-based indices. "
+        "Maximize relevance to the exact central topic and coverage of its named subtopics. "
+        "Prefer primary, landmark, benchmark, dataset, or canonical method papers over broad surveys, "
+        "tutorials, repositories, homepages, and merely high-citation but generic work. Do not select "
+        "the forbidden survey or post-cutoff work. Citation count is only a tie-breaker.\n\n"
+        f"TASK:\n{task.prompt}\n\nFORBIDDEN SURVEY:\n{task.title}\n\nCANDIDATES:\n"
+        + "\n".join(cards)
+    )
+    try:
+        value = model.generate_json(
+            [{"role": "user", "content": prompt}], temperature=0, max_tokens=8192,
+            cache_namespace=f"retrieval-reranker-v1:{model.settings.model}",
+        )
+        indices = value.get("indices", []) if isinstance(value, dict) else []
+    except Exception as exc:
+        print(f"retrieval reranker fallback: {exc}", flush=True)
+        indices = []
+    selected: list[Paper] = []
+    seen: set[int] = set()
+    for raw_index in indices:
+        try:
+            index = int(raw_index) - 1
+        except (TypeError, ValueError):
+            continue
+        if index < 0 or index >= len(papers) or index in seen:
+            continue
+        seen.add(index)
+        selected.append(papers[index])
+        if len(selected) >= limit:
+            return selected
+    for index, paper in enumerate(papers):
+        if index not in seen:
+            selected.append(paper)
+        if len(selected) >= limit:
+            break
+    return selected

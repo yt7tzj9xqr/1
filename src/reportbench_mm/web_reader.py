@@ -3,8 +3,12 @@ from __future__ import annotations
 from concurrent.futures import ThreadPoolExecutor
 from html.parser import HTMLParser
 import ipaddress
+from pathlib import Path
 import re
+import shutil
 import socket
+import subprocess
+import tempfile
 from urllib.parse import urlparse
 from urllib.request import Request, urlopen
 
@@ -98,43 +102,101 @@ def _safe_public_url(url: str) -> bool:
     return not (address.is_private or address.is_loopback or address.is_link_local or address.is_reserved)
 
 
+def arxiv_pdf_url(url: str) -> str:
+    parsed = urlparse(url)
+    host = (parsed.hostname or "").lower()
+    if host not in {"arxiv.org", "www.arxiv.org", "export.arxiv.org"}:
+        return ""
+    match = re.match(r"/(?:abs|pdf)/([^?#]+?)(?:\.pdf)?$", parsed.path)
+    if not match:
+        return ""
+    identifier = re.sub(r"v\d+$", "", match.group(1))
+    return f"https://arxiv.org/pdf/{identifier}"
+
+
+def extract_pdf_text(raw: bytes, max_chars: int = 24000, timeout: int = 30) -> str:
+    """Use a local Poppler binary when available; never send PDFs to a paid API."""
+    executable = shutil.which("pdftotext")
+    if not executable or not raw.startswith(b"%PDF"):
+        return ""
+    temporary_path = ""
+    try:
+        with tempfile.NamedTemporaryFile(suffix=".pdf", delete=False) as temporary:
+            temporary.write(raw)
+            temporary_path = temporary.name
+        result = subprocess.run(
+            [executable, "-layout", temporary_path, "-"],
+            capture_output=True, check=False, timeout=timeout,
+        )
+        if result.returncode != 0:
+            return ""
+        return "\n".join(
+            line.rstrip() for line in result.stdout.decode("utf-8", errors="replace").splitlines()
+            if line.strip()
+        )[:max_chars]
+    except (OSError, subprocess.SubprocessError):
+        return ""
+    finally:
+        if temporary_path:
+            Path(temporary_path).unlink(missing_ok=True)
+
+
 class WebPageReader:
     """Cached, bounded page reader used as the free Firecrawl replacement."""
 
-    def __init__(self, cache: JsonCache, timeout: int = 12, max_bytes: int = 2_000_000):
+    def __init__(
+        self, cache: JsonCache, timeout: int = 12, max_bytes: int = 2_000_000,
+        max_pdf_bytes: int = 15_000_000,
+    ):
         self.cache = cache
         self.timeout = timeout
         self.max_bytes = max_bytes
+        self.max_pdf_bytes = max_pdf_bytes
 
     def read(self, url: str) -> dict[str, str]:
         if not _safe_public_url(url):
             return {"title": "", "text": ""}
-        payload = {"url": url, "max_bytes": self.max_bytes}
+        payload = {"url": url, "max_bytes": self.max_bytes, "max_pdf_bytes": self.max_pdf_bytes}
 
         def fetch() -> dict[str, str]:
-            request = Request(
-                url,
-                headers={
-                    "User-Agent": "Mozilla/5.0 (compatible; ReportBenchResearch/1.0)",
-                    "Accept": "text/html,application/xhtml+xml;q=0.9,*/*;q=0.1",
-                },
-            )
-            with urlopen(request, timeout=self.timeout) as response:
-                final_url = response.geturl()
-                if not _safe_public_url(final_url):
-                    return {"title": "", "text": ""}
-                content_type = response.headers.get_content_type().lower()
-                if content_type not in {"text/html", "application/xhtml+xml", "text/plain"}:
-                    return {"title": "", "text": ""}
-                raw = response.read(self.max_bytes + 1)[: self.max_bytes]
-                charset = response.headers.get_content_charset() or "utf-8"
-                decoded = raw.decode(charset, errors="replace")
-                if content_type == "text/plain":
-                    return {"title": "", "text": " ".join(decoded.split())[:12000]}
-                return parse_academic_html(decoded)
+            candidates = [candidate for candidate in (arxiv_pdf_url(url), url) if candidate]
+            for candidate in dict.fromkeys(candidates):
+                request = Request(
+                    candidate,
+                    headers={
+                        "User-Agent": "Mozilla/5.0 (compatible; ReportBenchResearch/1.0)",
+                        "Accept": "application/pdf,text/html,application/xhtml+xml;q=0.9,*/*;q=0.1",
+                    },
+                )
+                try:
+                    with urlopen(request, timeout=self.timeout) as response:
+                        final_url = response.geturl()
+                        if not _safe_public_url(final_url):
+                            continue
+                        content_type = response.headers.get_content_type().lower()
+                        is_pdf = content_type == "application/pdf" or candidate.lower().endswith(".pdf") \
+                            or "/pdf/" in candidate.lower()
+                        byte_limit = self.max_pdf_bytes if is_pdf else self.max_bytes
+                        raw = response.read(byte_limit + 1)[:byte_limit]
+                        if is_pdf:
+                            text = extract_pdf_text(raw)
+                            if text:
+                                return {"title": "", "text": text, "retrieval_method": "arxiv_pdf" if arxiv_pdf_url(candidate) else "pdf"}
+                            continue
+                        charset = response.headers.get_content_charset() or "utf-8"
+                        decoded = raw.decode(charset, errors="replace")
+                        if content_type == "text/plain":
+                            return {"title": "", "text": " ".join(decoded.split())[:12000], "retrieval_method": "text"}
+                        if content_type in {"text/html", "application/xhtml+xml"}:
+                            parsed = parse_academic_html(decoded)
+                            parsed["retrieval_method"] = "html"
+                            return parsed
+                except (OSError, ValueError, socket.timeout):
+                    continue
+            return {"title": "", "text": "", "retrieval_method": "failed"}
 
         try:
-            return self.cache.get_or_create("web-page-reader-v1", payload, fetch)
+            return self.cache.get_or_create("web-page-reader-v2", payload, fetch)
         except (OSError, ValueError, socket.timeout):
             return {"title": "", "text": ""}
 

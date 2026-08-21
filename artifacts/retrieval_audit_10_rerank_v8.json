@@ -1,0 +1,367 @@
+{
+  "summary": {
+    "tasks": 10,
+    "pool": 160,
+    "pool_gold": 30,
+    "gold": 1925
+  },
+  "tasks": [
+    {
+      "arxiv_id": "2004.05937",
+      "pool": 16,
+      "pool_gold": 5,
+      "gold": 305,
+      "matched_titles": [
+        "Distilling the Knowledge in a Neural Network",
+        "FitNets: Hints for Thin Deep Nets",
+        "Born-Again Neural Networks",
+        "Data-Distortion Guided Self-Distillation for Deep Neural Networks",
+        "Knowledge Distillation by On-the-Fly Native Ensemble"
+      ],
+      "graph_ready": 6,
+      "source_counts": {
+        "arxiv": 3,
+        "crossref": 1,
+        "minimax-search": 6,
+        "openalex": 6
+      },
+      "pool_titles": [
+        "Student Network Learning via Evolutionary Knowledge Distillation",
+        "Distilling the Knowledge in a Neural Network",
+        "FitNets: Hints for Thin Deep Nets",
+        "Bayesian Self-Distillation for Image Classification",
+        "Born-Again Neural Networks",
+        "Improve the Performance of Convolutional Neural ...",
+        "Multi-Teacher Distillation: An Ensemble-Then- ...",
+        "Ensemble Learning of Lightweight Deep Learning Models Using Knowledge Distillation for Image Classification",
+        "Show, Attend and Distill: Knowledge Distillation via Attention-based Feature Matching",
+        "Data-Distortion Guided Self-Distillation for Deep Neural Networks",
+        "Search for Better Students to Learn Distilled Knowledge",
+        "Cross-Layer Distillation with Semantic Calibration",
+        "Learning Student-Friendly Teacher Networks for Knowledge Distillation",
+        "Knowledge Distillation by On-the-Fly Native Ensemble",
+        "Distilling Visual Priors from Self-Supervised Learning",
+        "Improved Knowledge Distillation via Teacher Assistant"
+      ]
+    },
+    {
+      "arxiv_id": "2105.01605",
+      "pool": 16,
+      "pool_gold": 1,
+      "gold": 49,
+      "matched_titles": [
+        "Joint Detection and Identification Feature Learning for Person Search"
+      ],
+      "graph_ready": 3,
+      "source_counts": {
+        "arxiv": 2,
+        "minimax-search": 11,
+        "openalex": 3
+      },
+      "pool_titles": [
+        "Natural Language Person Search Using Deep Reinforcement Learning",
+        "Joint Detection and Identification Feature Learning for Person Search",
+        "Multi-Level Joint Feature Learning for Person Re-Identification - MDPI",
+        "Asymmetric Cross-Scale Alignment for Text-Based Person Search - Cronfa",
+        "Text-based Person Search without Parallel Image-Text Data",
+        "Text-Based Person Search with Limited Data - BMVA Archive",
+        "End-to-End Deep Learning for Person Search",
+        "CUHK-SYSU Person Search Dataset",
+        "End-to-end person search sequentially trained on ...",
+        "Person Re-identification in Identity Regression Space",
+        "Triplet Online Instance Matching Loss for Person Re ...",
+        "Deep Learning for Person Re-Identification: A Survey and ...",
+        "Attention-based Natural Language Person Retrieval",
+        "A Survey of Deep Learning-Based Object Detection",
+        "Deep Multimodal Representation Learning: A Survey",
+        "Deep Metric Learning: A Survey"
+      ]
+    },
+    {
+      "arxiv_id": "2204.10325",
+      "pool": 16,
+      "pool_gold": 0,
+      "gold": 36,
+      "matched_titles": [],
+      "graph_ready": 3,
+      "source_counts": {
+        "arxiv": 1,
+        "crossref": 1,
+        "minimax-search": 12,
+        "openalex": 2
+      },
+      "pool_titles": [
+        "Speech and language therapy for aphasia following stroke",
+        "Stuttering Speech Disfluency Prediction using Explainable Attribution Vectors of Facial Muscle Movements",
+        "Automated assessment of psychiatric disorders using speech: A systematic review",
+        "Deep-Learning-Based Automated Classification of Chinese ...",
+        "Role of ML in diagnosing and treating speech disorders",
+        "Automatic Speech and Voice Disorder Detection Using ...",
+        "Automatic Pronunciation Scoring And Mispronunciation ...",
+        "Automatic Analysis of Pronunciations for Children with Speech ...",
+        "Evaluating Automatic Speech Recognition for Child ...",
+        "A STUDY ON THE IMPACT OF SELF-SUPERVISED ...",
+        "Voice Disorder Classification Using Wav2vec 2.0 Feature ...",
+        "wav2vec 2.0: A Framework for Self-Supervised Learning of ...",
+        "An automated tool for the assessment of childhood apraxia ...",
+        "Speech Therapy for Apraxia App - NACD International",
+        "Research Paper: Mobile Speech Therapy Application",
+        "The clinical practice of speech and language therapists with children with phonologically based speech sound disorders"
+      ]
+    },
+    {
+      "arxiv_id": "2205.08977",
+      "pool": 16,
+      "pool_gold": 0,
+      "gold": 317,
+      "matched_titles": [],
+      "graph_ready": 10,
+      "source_counts": {
+        "arxiv": 3,
+        "crossref": 2,
+        "minimax-search": 3,
+        "openalex": 8
+      },
+      "pool_titles": [
+        "Towards 6G wireless communication networks: vision, enabling technologies, and new paradigm shifts",
+        "Edge Artificial Intelligence for 6G: Vision, Enabling Technologies, and Applications",
+        "Integrated Sensing and Communications: Toward Dual-Functional Wireless Networks for 6G and Beyond",
+        "Communications in the 6G Era",
+        "Survey on Digital Twin Edge Networks (DITEN) Toward 6G",
+        "Industrial digital twins at the nexus of NextG wireless networks and computational intelligence: A survey",
+        "Toward Intelligent Cyber-Physical Systems: Digital Twin Meets Artificial Intelligence",
+        "6G White Paper on Edge Intelligence",
+        "Survey on Intelligence Edge Computing in 6G: Characteristics, Challenges, Potential Use Cases, and Market Drivers",
+        "Cognitive Internet of Vehicles: Motivation, Layered Architecture and Security Issues",
+        "Edge Intelligence and Internet of Things in Healthcare",
+        "Paving the Last Mile of Artificial Intelligence With Edge Computing",
+        "Information-Centric Networking Architectures and ...",
+        "Deep Edge Intelligence: Architecture, Key Features, Enabling Technologies and Challenges",
+        "Edge Intelligence‐Based RAN Architecture for 6G Internet of Things",
+        "Enhancing Autonomy with Blockchain and Multi-Access Edge Computing in Distributed Robotic Systems"
+      ]
+    },
+    {
+      "arxiv_id": "2206.13188",
+      "pool": 16,
+      "pool_gold": 7,
+      "gold": 252,
+      "matched_titles": [
+        "Self-Supervised Representation Learning for Remote Sensing Image Change Detection Based on Temporal Prediction",
+        "Momentum Contrast for Unsupervised Visual Representation Learning",
+        "Self-Supervised Learning of Remote Sensing Scene Representations Using Contrastive Multiview Coding",
+        "Contrastive Self-Supervised Learning With Smoothed Representation for Remote Sensing",
+        "Task-Related Self-Supervised Learning for Remote Sensing Image Change Detection",
+        "X-ModalNet: A Semi-Supervised Deep Cross-Modal Network for Classification of Remote Sensing Data",
+        "When Self-Supervised Learning Meets Scene Classification: Remote Sensing Scene Classification Based on a Multitask Learning Framework"
+      ],
+      "graph_ready": 8,
+      "source_counts": {
+        "arxiv": 5,
+        "crossref": 4,
+        "minimax-search": 3,
+        "openalex": 3,
+        "semantic-scholar": 3
+      },
+      "pool_titles": [
+        "Global and Local Contrastive Self-Supervised Learning for Semantic Segmentation of HR Remote Sensing Images",
+        "Remote Sensing Image Scene Classification with Self-Supervised Learning Based on Partially Unlabeled Datasets",
+        "Self-Supervised Representation Learning for Remote Sensing Image Change Detection Based on Temporal Prediction",
+        "Momentum Contrast for Unsupervised Visual Representation Learning",
+        "A Simple Framework for Contrastive Learning of Visual ...",
+        "Self-Supervised Learning with Generative Adversarial ...",
+        "A General Self-Supervised Framework for Remote Sensing Image Classification",
+        "Self-Supervised Learning of Remote Sensing Scene Representations Using Contrastive Multiview Coding",
+        "Contrastive Self-Supervised Learning With Smoothed Representation for Remote Sensing",
+        "SCL-MLNet: Boosting Few-Shot Remote Sensing Scene Classification via Self-Supervised Contrastive Learning",
+        "Task-Related Self-Supervised Learning for Remote Sensing Image Change Detection",
+        "X-ModalNet: A Semi-Supervised Deep Cross-Modal Network for Classification of Remote Sensing Data",
+        "When Self-Supervised Learning Meets Scene Classification: Remote Sensing Scene Classification Based on a Multitask Learning Framework",
+        "Evaluating the Label Efficiency of Contrastive Self-Supervised Learning for Multi-Resolution Satellite Imagery",
+        "Exploring PolSAR Images Representation via Self-Supervised Learning and Its Application on Few-Shot Classification",
+        "A Lightweight Self-Supervised Representation Learning Algorithm for Scene Classification in Spaceborne SAR and Optical Images"
+      ]
+    },
+    {
+      "arxiv_id": "2306.05817",
+      "pool": 16,
+      "pool_gold": 5,
+      "gold": 301,
+      "matched_titles": [
+        "Retrieval-augmented Recommender System: Enhancing Recommender Systems with Large Language Models",
+        "Leveraging Large Language Models for Sequential Recommendation",
+        "Collaborative Large Language Model for Recommender Systems",
+        "Recommender Systems in the Era of Large Language Models (LLMs)",
+        "Collaborative Large Language Model for Recommender ...",
+        "LLaMA: Open and Efficient Foundation Language Models"
+      ],
+      "graph_ready": 4,
+      "source_counts": {
+        "crossref": 2,
+        "minimax-search": 12,
+        "openalex": 4
+      },
+      "pool_titles": [
+        "Retrieval-augmented Recommender System: Enhancing Recommender Systems with Large Language Models",
+        "RecSys 2023 Tutorial: Large Language Models for ...",
+        "TALLRec: An Effective and Efficient Tuning Framework to Align Large ...",
+        "Chat-REC: Towards Interactive and Explainable LLMs- ...",
+        "Leveraging Large Language Models for Sequential Recommendation",
+        "LLM-RS: A Large Language Model-Based Sequential ... - MDPI",
+        "LLM-ESR: Large Language Models Enhancement for Long-tailed ...",
+        "RALLRec+: Retrieval augmented large language model ...",
+        "Collaborative Large Language Model for Recommender Systems",
+        "Recommender Systems in the Era of Large Language Models (LLMs)",
+        "Large language models as recommender systems: A study ...",
+        "Large Language Models for Next-Generation ...",
+        "Prompting Large Language Models for Recommender ...",
+        "Enhanced Recommendation Systems with Retrieval-Augmented Large ...",
+        "Collaborative Large Language Model for Recommender ...",
+        "LLaMA: Open and Efficient Foundation Language Models"
+      ]
+    },
+    {
+      "arxiv_id": "2308.04603",
+      "pool": 16,
+      "pool_gold": 4,
+      "gold": 67,
+      "matched_titles": [
+        "HiDDeN: Hiding Data With Deep Networks",
+        "Robust Spatial-spread Deep Neural Image Watermarking",
+        "An Automated and Robust Image Watermarking Scheme Based on Deep Neural Networks",
+        "A Compact Neural Network-based Algorithm for Robust Image Watermarking"
+      ],
+      "graph_ready": 2,
+      "source_counts": {
+        "arxiv": 7,
+        "minimax-search": 7,
+        "openalex": 2
+      },
+      "pool_titles": [
+        "Watermark Faker: Towards Forgery of Digital Image Watermarking",
+        "A Robust Image Watermarking System Based on Deep Neural Networks",
+        "HiDDeN: Hiding Data With Deep Networks",
+        "StegaStamp: Invisible Hyperlinks in Physical Photographs",
+        "Hidden in the Noise: Two-Stage Robust Watermarking for ...",
+        "A robust watermarking algorithm against JPEG compression ...",
+        "Enhancing Robustness of DNN-based Watermarking by Mini",
+        "Robust Spatial-spread Deep Neural Image Watermarking",
+        "Transform domain watermarking",
+        "Deep Boosting Robustness of DNN-based Image Watermarking via DBMark",
+        "End-to-End Image Steganography Using Deep Convolutional Autoencoders",
+        "An Automated and Robust Image Watermarking Scheme Based on Deep Neural Networks",
+        "A Compact Neural Network-based Algorithm for Robust Image Watermarking",
+        "Robust Zero Watermarking Algorithm for Medical Images Based on Improved NasNet-Mobile and DCT",
+        "Go Wide or Go Deep: Levering Watermarking Performance with Computational Cost for Specific Images",
+        "A General Approach for Using Deep Neural Network for Digital Watermarking"
+      ]
+    },
+    {
+      "arxiv_id": "2310.12986",
+      "pool": 16,
+      "pool_gold": 0,
+      "gold": 61,
+      "matched_titles": [],
+      "graph_ready": 6,
+      "source_counts": {
+        "arxiv": 4,
+        "crossref": 1,
+        "minimax-search": 6,
+        "openalex": 3,
+        "semantic-scholar": 5
+      },
+      "pool_titles": [
+        "Face manifold: manifold learning for synthetic face generation",
+        "Visual Understanding via Multi-Feature Shared Learning with Global Consistency",
+        "Nonlinear dimensionality reduction by locally linear ...",
+        "Think Globally, Fit Locally: Unsupervised Learning of Low ...",
+        "Tenenbaum Reduction A Global Geometric ...",
+        "Laplacian Eigenmaps for Dimensionality Reduction and ...",
+        "Manifold-manifold distance and its application to face recognition with ...",
+        "Face recognition with image sets using manifold density divergence",
+        "Human Age Estimation With Regression on Discriminative Aging Manifold",
+        "Image-Based Human Age Estimation by Manifold Learning and Locally Adjusted Robust Regression",
+        "Rank Flow Embedding for Unsupervised and Semi-Supervised Manifold Learning",
+        "Gait-based human age estimation using age group-dependent manifold learning and regression",
+        "Visual Domain Adaptation with Manifold Embedded Distribution Alignment",
+        "Estimating Visual Information From Audio Through Manifold Learning",
+        "Sparse Representation Classifier Guided Grassmann Reconstruction Metric Learning With Applications to Image Set Analysis",
+        "Learning a perceptual manifold with deep features for animation video resequencing"
+      ]
+    },
+    {
+      "arxiv_id": "2312.04861",
+      "pool": 16,
+      "pool_gold": 3,
+      "gold": 277,
+      "matched_titles": [
+        "Radars for Autonomous Driving: A Review of Deep Learning Methods and Challenges",
+        "Range-Doppler Detection in Automotive Radar with Deep ...",
+        "PolarNet: Accelerated Deep Open Space Segmentation Using Automotive Radar in Polar Domain"
+      ],
+      "graph_ready": 2,
+      "source_counts": {
+        "arxiv": 7,
+        "crossref": 1,
+        "minimax-search": 8,
+        "openalex": 2
+      },
+      "pool_titles": [
+        "Radars for Autonomous Driving: A Review of Deep Learning Methods and Challenges",
+        "Camera–Radar Fusion with Modality Interaction and Radar Gaussian ...",
+        "Radar Object Detection Using Cross-Modal Supervision",
+        "RODNet: Radar Object Detection using Cross-Modal ...",
+        "RODNet: A Real-Time Radar Object Detection Network ...",
+        "Range-Doppler Detection in Automotive Radar with Deep ...",
+        "Deep Radar Detector",
+        "Towards Deep Radar Perception for Autonomous Driving",
+        "K-Radar: 4D Radar Object Detection for Autonomous ...",
+        "Radar Camera Fusion via Representation Learning in Autonomous Driving",
+        "PolarNet: Accelerated Deep Open Space Segmentation Using Automotive Radar in Polar Domain",
+        "CenterRadarNet: Joint 3D Object Detection and Tracking Framework using 4D FMCW Radar",
+        "ERASE-Net: Efficient Segmentation Networks for Automotive Radar Signals",
+        "MMW Radar-Based Technologies in Autonomous Driving: A Review",
+        "GET-UP: GEomeTric-aware Depth Estimation with Radar Points UPsampling",
+        "Bootstrapping Autonomous Driving Radars with Self-Supervised Learning"
+      ]
+    },
+    {
+      "arxiv_id": "2401.07915",
+      "pool": 16,
+      "pool_gold": 5,
+      "gold": 260,
+      "matched_titles": [
+        "Learning Dexterous In-Hand Manipulation",
+        "Learning Robot In-Hand Manipulation with Tactile Features",
+        "Reinforcement and Imitation Learning for Diverse Visuomotor Skills",
+        "On Policy Learning Robust to Irreversible Events: An Application to Robotic In-Hand Manipulation",
+        "Learning Dexterous Manipulation for a Soft Robotic Hand from Human Demonstration"
+      ],
+      "graph_ready": 5,
+      "source_counts": {
+        "arxiv": 7,
+        "crossref": 3,
+        "minimax-search": 7,
+        "openalex": 2
+      },
+      "pool_titles": [
+        "Learning Dexterous In-Hand Manipulation",
+        "DexMV: Imitation Learning for Dexterous Manipulation from ...",
+        "Tactile-Driven Non-Prehensile Object Manipulation via ...",
+        "Learning Robot In-Hand Manipulation with Tactile Features",
+        "Learning a State Estimator for Tactile In-Hand Manipulation",
+        "DexYCB: A Benchmark for Capturing Hand Grasping of Objects",
+        "DexArt: Benchmarking Generalizable Dexterous Manipulation ...",
+        "Continual Policy Distillation of Reinforcement Learning-based Controllers for Soft Robotic In-Hand Manipulation",
+        "TacGNN:Learning Tactile-based In-hand Manipulation with a Blind Robot",
+        "Reinforcement and Imitation Learning for Diverse Visuomotor Skills",
+        "Hierarchical reinforcement learning for in-hand robotic manipulation using Davenport chained rotations",
+        "Learning vision-based robotic manipulation tasks sequentially in offline reinforcement learning settings",
+        "On Policy Learning Robust to Irreversible Events: An Application to Robotic In-Hand Manipulation",
+        "Object Manipulation with an Anthropomorphic Robotic Hand via Deep Reinforcement Learning with a Synergy Space of Natural Hand Poses",
+        "H-InDex: Visual Reinforcement Learning with Hand-Informed Representations for Dexterous Manipulation",
+        "Learning Dexterous Manipulation for a Soft Robotic Hand from Human Demonstration"
+      ]
+    }
+  ]
+}

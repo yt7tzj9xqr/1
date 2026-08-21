@@ -7,7 +7,10 @@ from ..config import Settings
 from ..models import MiniMaxClient
 from ..prompts import RAG_SYSTEM, evidence_block
 from ..providers.openalex import extract_cutoff, filter_papers, search_queries
-from ..retrieval import diverse_top_papers, is_scholarly_candidate, parallel_search, plan_search_queries
+from ..retrieval import (
+    diverse_top_papers, is_scholarly_candidate, model_rerank_papers, parallel_search,
+    plan_search_queries,
+)
 from ..schemas import Paper, Task
 from ..web_reader import WebPageReader
 
@@ -177,10 +180,37 @@ class CitationRagPipeline:
         seeds = [paper for paper in seeds if paper.abstract and paper.url and is_scholarly_candidate(paper)]
         for paper in seeds:
             semantic = score_paper(paper, terms)
+            anchor = anchor_coverage(paper, anchor_terms)
             rank_bonus = 1.0 / (1.0 + max(0, paper.search_rank))
-            paper.relevance = 0.72 * semantic + 0.23 * rank_bonus + 0.05 * min(2, paper.query_hits) / 2
+            paper.relevance = (
+                0.50 * semantic + 0.30 * anchor + 0.15 * rank_bonus
+                + 0.05 * min(2, paper.query_hits) / 2
+            )
         seeds.sort(key=lambda paper: paper.relevance, reverse=True)
-        frontier = diverse_top_papers(seeds, len(queries), self.settings.rag_seed_count)
+        candidate_seeds = diverse_top_papers(
+            seeds, len(queries), max(self.settings.rag_seed_count, self.settings.retrieval_candidate_pool),
+        )
+        frontier = model_rerank_papers(
+            task, candidate_seeds, self.model, self.settings.rag_seed_count,
+        )
+        # Web-search-only seeds have no outbound edges. Guarantee that the
+        # frontier contains up to three structured seeds when they are relevant,
+        # otherwise a configured three-layer graph degenerates into reranking.
+        graph_ready = [paper for paper in seeds if paper.referenced_work_ids]
+        frontier_ids = {paper.paper_id for paper in frontier}
+        for paper in graph_ready[:3]:
+            if paper.paper_id in frontier_ids:
+                continue
+            replace_index = next(
+                (index for index in range(len(frontier) - 1, -1, -1)
+                 if not frontier[index].referenced_work_ids),
+                None,
+            )
+            if replace_index is None:
+                break
+            frontier_ids.discard(frontier[replace_index].paper_id)
+            frontier[replace_index] = paper
+            frontier_ids.add(paper.paper_id)
         graph: dict[str, Paper] = {paper.paper_id: paper for paper in frontier}
 
         # Inspect a broader set of references, then admit only the best global
@@ -191,31 +221,45 @@ class CitationRagPipeline:
         for depth in range(1, self.settings.rag_depth + 1):
             candidates: dict[str, Paper] = {}
             parent_coverage_ids: list[str] = []
+            reference_requests: list[tuple[int, str]] = []
             for parent in frontier:
                 for reference_rank, reference_id in enumerate(
                     parent.referenced_work_ids[: inspect_per_parent.get(depth, 3)]
                 ):
                     if reference_id in graph:
                         continue
+                    reference_requests.append((reference_rank, reference_id))
+            requested_ids = list(dict.fromkeys(reference_id for _, reference_id in reference_requests))
+            get_works = getattr(self.scholar, "get_works", None)
+            if callable(get_works):
+                resolved = {paper.paper_id: paper for paper in get_works(requested_ids, depth=depth)}
+            else:
+                resolved = {}
+                for reference_id in requested_ids:
                     paper = self.scholar.get_work(reference_id, depth=depth)
                     if not paper:
                         continue
-                    kept = filter_papers([paper], forbidden_title=task.title, cutoff=cutoff)
-                    if not kept:
-                        continue
-                    paper = kept[0]
-                    paper.relevance = score_paper(paper, terms)
-                    # Weakly related references are graph context, not writing evidence.
-                    if paper.relevance < 0.08:
-                        continue
-                    previous = candidates.get(paper.paper_id)
-                    if previous is None or paper.relevance > previous.relevance:
-                        candidates[paper.paper_id] = paper
-                    if (
-                        reference_rank < preserve_per_parent.get(depth, 1)
-                        and paper.paper_id not in parent_coverage_ids
-                    ):
-                        parent_coverage_ids.append(paper.paper_id)
+                    resolved[paper.paper_id] = paper
+            for reference_rank, reference_id in reference_requests:
+                paper = resolved.get(reference_id)
+                if not paper:
+                    continue
+                kept = filter_papers([paper], forbidden_title=task.title, cutoff=cutoff)
+                if not kept:
+                    continue
+                paper = kept[0]
+                paper.relevance = score_paper(paper, terms)
+                # Weakly related references are graph context, not writing evidence.
+                if paper.relevance < 0.08:
+                    continue
+                previous = candidates.get(paper.paper_id)
+                if previous is None or paper.relevance > previous.relevance:
+                    candidates[paper.paper_id] = paper
+                if (
+                    reference_rank < preserve_per_parent.get(depth, 1)
+                    and paper.paper_id not in parent_coverage_ids
+                ):
+                    parent_coverage_ids.append(paper.paper_id)
             ranked_candidates = sorted(
                 candidates.values(),
                 key=lambda paper: paper.relevance,
@@ -259,7 +303,7 @@ class CitationRagPipeline:
             f"APPLICATION DOMAIN:\n{task.application_domain}\n\n"
             "EVIDENCE CARDS (each card is an allowed source; ignore citation-count metadata as factual evidence):\n"
             f"{cards}\n\n"
-            "REFERENCE BUDGET: Cite 6-8 distinct sources. Select the most central primary or canonical works; do not cite a source merely "
+            "REFERENCE BUDGET: Cite 8-12 distinct sources when they have explicit usable evidence. Select the most central primary or canonical works; do not cite a source merely "
             "because it is highly cited, and avoid secondary-survey claims when a supplied primary source supports the same point.\n\n"
             "LENGTH: Write a focused survey of 800-1,050 English words. This is a hard maximum. Prioritize the task's central taxonomy and "
             "strongest evidence; omit tangential material.\n\n"

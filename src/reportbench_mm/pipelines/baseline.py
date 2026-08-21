@@ -4,7 +4,10 @@ from ..config import Settings
 from ..models import MiniMaxClient
 from ..prompts import BASELINE_SYSTEM, evidence_block
 from ..providers.openalex import extract_cutoff, filter_papers
-from ..retrieval import diverse_top_papers, is_scholarly_candidate, parallel_search, plan_search_queries
+from ..retrieval import (
+    diverse_top_papers, is_scholarly_candidate, model_rerank_papers, parallel_search,
+    plan_search_queries,
+)
 from .rag import anchor_coverage, keywords, matches_anchor_phrase, score_paper
 from ..schemas import Paper, Task
 from ..web_reader import WebPageReader
@@ -27,10 +30,15 @@ class BaselinePipeline:
         )
         found = filter_papers(found, forbidden_title=task.title, cutoff=cutoff)
         query_terms = keywords(task.prompt)
+        anchor_terms = keywords(queries[0]) if queries else query_terms
         for paper in found:
             semantic = score_paper(paper, query_terms)
+            anchor = anchor_coverage(paper, anchor_terms)
             rank_bonus = 1.0 / (1.0 + max(0, paper.search_rank))
-            paper.relevance = 0.72 * semantic + 0.23 * rank_bonus + 0.05 * min(2, paper.query_hits) / 2
+            paper.relevance = (
+                0.50 * semantic + 0.30 * anchor + 0.15 * rank_bonus
+                + 0.05 * min(2, paper.query_hits) / 2
+            )
         ranked = sorted(
             (
                 paper for paper in found
@@ -41,7 +49,11 @@ class BaselinePipeline:
         )
         # Query planning already constrains every search to the central topic;
         # an exact first-query anchor discarded valid subtopic results.
-        selected = diverse_top_papers(ranked, len(queries), self.settings.baseline_papers)
+        candidate_limit = max(self.settings.baseline_papers, self.settings.retrieval_candidate_pool)
+        candidates = diverse_top_papers(ranked, len(queries), candidate_limit)
+        selected = model_rerank_papers(
+            task, candidates, self.model, self.settings.baseline_papers,
+        )
         if self.reader:
             selected = self.reader.enrich_many(selected, self.settings.reader_workers)
         return [

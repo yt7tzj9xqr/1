@@ -160,24 +160,24 @@ class OpenAlexProvider:
                     time.sleep(throttle)
                 last_error: Exception | None = None
                 try:
-                    for attempt in range(8):
+                    for attempt in range(3):
                         try:
                             with urlopen(req, timeout=self.timeout) as response:
                                 return json.loads(response.read().decode("utf-8"))
                         except HTTPError as exc:
                             last_error = exc
-                            if exc.code not in {429, 500, 502, 503, 504} or attempt == 7:
+                            if exc.code not in {429, 500, 502, 503, 504} or attempt == 2:
                                 raise
                         except (URLError, TimeoutError) as exc:
                             last_error = exc
-                            if attempt == 7:
+                            if attempt == 2:
                                 raise
                         retry_header = last_error.headers.get("Retry-After", "") if isinstance(last_error, HTTPError) else ""
                         retry_after = int(retry_header) if retry_header.isdigit() else 0
                         if retry_after > 300:
                             raise last_error
-                        delay = min(60, max(retry_after, 2 ** attempt))
-                        print(f"OpenAlex transient error; retry {attempt + 2}/8 in {delay}s", flush=True)
+                        delay = min(8, max(retry_after, 2 ** attempt))
+                        print(f"OpenAlex transient error; retry {attempt + 2}/3 in {delay}s", flush=True)
                         time.sleep(delay)
                 finally:
                     self._last_request = time.monotonic()
@@ -221,6 +221,23 @@ class OpenAlexProvider:
             return self._paper(self._get(f"/works/{paper_id}"), depth=depth)
         except Exception:
             return None
+
+    def get_works(self, paper_ids: list[str], depth: int = 0) -> list[Paper]:
+        """Resolve one citation-graph layer in a single cached API request."""
+        identifiers = list(dict.fromkeys(
+            paper_id for paper_id in paper_ids if re.fullmatch(r"W\d+", paper_id)
+        ))[:50]
+        if not identifiers:
+            return []
+        try:
+            data = self._get(
+                "/works",
+                {"filter": "openalex_id:" + "|".join(identifiers), "per-page": len(identifiers)},
+            )
+            return [self._paper(work, depth=depth) for work in data.get("results", [])]
+        except Exception as exc:
+            print(f"OpenAlex batch graph lookup failed: {exc}", flush=True)
+            return []
 
 
 def filter_papers(papers: list[Paper], *, forbidden_title: str, cutoff: date | None) -> list[Paper]:

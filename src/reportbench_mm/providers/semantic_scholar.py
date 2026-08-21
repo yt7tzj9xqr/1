@@ -22,6 +22,7 @@ class SemanticScholarProvider:
         self.timeout = timeout
         self._request_lock = threading.Lock()
         self._last_request = 0.0
+        self._disabled_until = 0.0
 
     def _get(self, path: str, params: dict[str, Any] | None = None) -> Any:
         params = {key: value for key, value in (params or {}).items() if value not in (None, "")}
@@ -33,19 +34,24 @@ class SemanticScholarProvider:
                 url += "?" + urlencode(params)
             req = Request(url, headers={"User-Agent": "ReportBench-MiniMax/0.1"})
             with self._request_lock:
+                if time.monotonic() < self._disabled_until:
+                    raise RuntimeError("Semantic Scholar anonymous endpoint is cooling down after HTTP 429")
                 delay = 1.1 - (time.monotonic() - self._last_request)
                 if delay > 0:
                     time.sleep(delay)
                 try:
-                    for attempt in range(5):
+                    for attempt in range(2):
                         try:
                             with urlopen(req, timeout=self.timeout) as response:
                                 return json.loads(response.read().decode("utf-8"))
                         except HTTPError as exc:
-                            if exc.code not in {429, 500, 502, 503, 504} or attempt == 4:
+                            if exc.code == 429:
+                                self._disabled_until = time.monotonic() + 900
+                                raise
+                            if exc.code not in {500, 502, 503, 504} or attempt == 1:
                                 raise
                         except (URLError, TimeoutError):
-                            if attempt == 4:
+                            if attempt == 1:
                                 raise
                         time.sleep(min(16, 2 ** attempt))
                 finally:

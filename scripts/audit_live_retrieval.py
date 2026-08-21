@@ -47,6 +47,11 @@ def main() -> None:
             row = {
                 "arxiv_id": task.arxiv_id, "pool": len(papers), "pool_gold": matches,
                 "gold": len(gold), "matched_titles": matched_titles,
+                "graph_ready": sum(bool(paper.referenced_work_ids) for paper in papers),
+                "source_counts": {
+                    source: sum(source in paper.source.split("+") for paper in papers)
+                    for source in sorted({part for paper in papers for part in paper.source.split("+")})
+                },
                 "pool_titles": [paper.title for paper in papers],
             }
             rows.append(row)
