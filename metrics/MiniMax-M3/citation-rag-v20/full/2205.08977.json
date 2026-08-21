@@ -1,0 +1,172 @@
+{
+  "arxiv_id": "2205.08977",
+  "model": "MiniMax-M3",
+  "system": "citation-rag-v20",
+  "reference_precision": 0.0,
+  "reference_recall": 0.0,
+  "reference_count": 11,
+  "reference_matches": 0,
+  "ground_truth_count": 317,
+  "predicted_titles": [
+    "Survey on Digital Twin Edge Networks (DITEN) Toward 6G",
+    "Industrial digital twins at the nexus of NextG wireless networks and computational intelligence: A survey",
+    "Towards 6G wireless communication networks: vision, enabling technologies, and new paradigm shifts",
+    "Communications in the 6G Era",
+    "Toward Intelligent Cyber-Physical Systems: Digital Twin Meets Artificial Intelligence",
+    "Edge Artificial Intelligence for 6G: Vision, Enabling Technologies, and Applications",
+    "Integrated Sensing and Communications: Toward Dual-Functional Wireless Networks for 6G and Beyond",
+    "6G White Paper on Edge Intelligence",
+    "Edge Intelligence and Internet of Things in Healthcare",
+    "Massive Internet of Things for Industrial Applications: Addressing Wireless IIoT Connectivity Challenges and Ecosystem Fragmentation",
+    "The role of data fusion in predictive maintenance using digital twin"
+  ],
+  "cited_match_rate": 1.0,
+  "cited_count": 20,
+  "cited_supported": 20,
+  "cited_details": [
+    {
+      "statement": "A 2020 IEEE Access article states that the focus of wireless research is increasingly shifting toward 6G as 5G deployments get underway (https://doi.org/10.1109/access.2020.2981745).",
+      "url": "https://doi.org/10.1109/access.2020.2981745",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A 2021 IEEE JSAC article on edge AI for 6G describes an envisioned evolution from \"connected things\" to \"connected intelligence\" through the integrated design of wireless communication strategies and decentralized learning (https://doi.org/10.1109/jsac.2021.3126076).",
+      "url": "https://doi.org/10.1109/jsac.2021.3126076",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A 2020 Science China Information Sciences survey states that 6G networks are expected to provide global coverage, enhanced spectral/energy/cost efficiency, better intelligence level, and security beyond 5G (https://doi.org/10.1007/s11432-020-2955-6).",
+      "url": "https://doi.org/10.1007/s11432-020-2955-6",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The same survey identifies four new 6G paradigm shifts and lists enabling technologies including waveform design, multiple access, channel coding, multi-antenna technologies, network slicing, cell-free architecture, and cloud/fog/edge computing (https://doi.org/10.1007/s11432-020-2955-6).",
+      "url": "https://doi.org/10.1007/s11432-020-2955-6",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A 2020 IEEE Access article identifies digital twin worlds that are true representations of the physical and biological worlds as a future of connectivity (https://doi.org/10.1109/access.2020.2981745).",
+      "url": "https://doi.org/10.1109/access.2020.2981745",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A 2022 IEEE JSAC survey identifies integrated sensing and communications (ISAC) as an emerging key feature of the 6G radio access network that allows the exploitation of dense cell infrastructures to construct a perceptive network (https://doi.org/10.1109/jsac.2022.3156632).",
+      "url": "https://doi.org/10.1109/jsac.2022.3156632",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The same 2020 IEEE Access article lists four additional 6G themes: new man-machine interfaces created by collections of multiple local devices acting in unison, ubiquitous universal computing distributed among multiple local devices and the cloud, multi-sensory data fusion to create multi-verse maps and new mixed-reality experiences, and precision sensing and actuation (https://doi.org/10.1109/access.2020.2981745).",
+      "url": "https://doi.org/10.1109/access.2020.2981745",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A 2020 6G white paper presents edge computing as a key component to establish the future 2030 intelligent Internet technologies, with explicit focus on edge computing infrastructure and platforms, data and edge network management, software development for edge, and real-time and distributed training of ML/AI algorithms (http://arxiv.org/abs/2004.14850).",
+      "url": "http://arxiv.org/abs/2004.14850",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The 2021 edge-AI IEEE JSAC article explains that state-of-the-art AI systems require tremendous computation and communication resources, causing significant latency, energy consumption, network congestion, and privacy leakage in both training and inference, and that embedding model training and inference at the network edge addresses these issues (https://doi.org/10.1109/jsac.2021.3126076).",
+      "url": "https://doi.org/10.1109/jsac.2021.3126076",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A 2022 Computer Networks survey defines a digital twin (DT) as enabling interaction with the digital image of industrial physical objects/processes to simulate, analyze, and control their real-time operation (https://doi.org/10.1016/j.jnca.2021.103309).",
+      "url": "https://doi.org/10.1016/j.jnca.2021.103309",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A 2021 IEEE Communications Magazine article frames the DT as a true embodiment of a cyber-physical system in Industry 4.0, with edge, fog, and 5G as key enabling technologies (https://doi.org/10.1109/mcom.001.2001237).",
+      "url": "https://doi.org/10.1109/mcom.001.2001237",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A 2022 IEEE OJ-COMS survey states that next-generation 6G wireless systems aim to cater to the Internet of Everything and revolutionize customer services and applications to a fully intelligent and autonomous system (https://doi.org/10.1109/ojcoms.2022.3197811).",
+      "url": "https://doi.org/10.1109/ojcoms.2022.3197811",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The same DITEN survey introduces the digital twin edge network, which combines mobile/multi-access edge computing and digital twin to improve network performance such as throughput and security and to reduce the cost of communication, computation, and caching (https://doi.org/10.1109/ojcoms.2022.3197811).",
+      "url": "https://doi.org/10.1109/ojcoms.2022.3197811",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The same survey explains that in DITENs the network status can be continuously monitored and routing and resource management can be studied from a centralized perspective (https://doi.org/10.1109/ojcoms.2022.3197811).",
+      "url": "https://doi.org/10.1109/ojcoms.2022.3197811",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A 2018 AIP Conference Proceedings article states that data fusion techniques play a significant role in the digital twin framework, propelling the flow of information from raw data to high-level decision making through sensor-to-sensor, sensor-to-model, and model-to-model fusion (https://doi.org/10.1063/1.5031520).",
+      "url": "https://doi.org/10.1063/1.5031520",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A 2017 IEEE Industrial Electronics Magazine article states that the Industrial Internet of Things has the potential of driving the next industrial revolution, but faces challenges of attaining secure connectivity and managing a vastly fragmented ecosystem of connectivity solutions and platforms (https://doi.org/10.1109/mie.2016.2618724).",
+      "url": "https://doi.org/10.1109/mie.2016.2618724",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A 2019 survey on edge intelligence and IoT in healthcare discusses trends in the advancement of edge IoT-based smart healthcare (https://www.academia.edu/60275486/Edge_Intelligence_and_Internet_of_Things_in_Healthcare_A_Survey).",
+      "url": "https://academia.edu/60275486/Edge_Intelligence_and_Internet_of_Things_in_Healthcare_A_Survey",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The 6G edge intelligence white paper lists security, privacy, pricing, and end-user aspects among the research issues discussed for 6G intelligent edge services (http://arxiv.org/abs/2004.14850).",
+      "url": "http://arxiv.org/abs/2004.14850",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The DITEN survey outlines a comprehensive design covering DT modeling, updating, and deployment (https://doi.org/10.1109/ojcoms.2022.3197811).",
+      "url": "https://doi.org/10.1109/ojcoms.2022.3197811",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The 2022 industrial digital twin survey notes that the existing literature lacks in identifying and discussing the role and requirements of communication and computing technologies in DT-enabled industries (https://doi.org/10.1016/j.jnca.2021.103309).",
+      "url": "https://doi.org/10.1016/j.jnca.2021.103309",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    }
+  ],
+  "noncited_factual_accuracy": 0.0,
+  "noncited_count": 0,
+  "noncited_correct": 0,
+  "noncited_details": []
+}

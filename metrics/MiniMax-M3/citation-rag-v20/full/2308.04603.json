@@ -1,0 +1,229 @@
+{
+  "arxiv_id": "2308.04603",
+  "model": "MiniMax-M3",
+  "system": "citation-rag-v20",
+  "reference_precision": 0.25,
+  "reference_recall": 0.04477611940298507,
+  "reference_count": 12,
+  "reference_matches": 3,
+  "ground_truth_count": 67,
+  "predicted_titles": [
+    "Watermark Faker: Towards Forgery of Digital Image Watermarking",
+    "Deep Boosting Robustness of DNN-based Image Watermarking via DBMark",
+    "End-to-End Image Steganography Using Deep Convolutional Autoencoders",
+    "A Robust Image Watermarking System Based on Deep Neural Networks",
+    "An Automated and Robust Image Watermarking Scheme Based on Deep Neural Networks",
+    "A Compact Neural Network-based Algorithm for Robust Image Watermarking",
+    "Robust Spatial-spread Deep Neural Image Watermarking",
+    "Robust Zero Watermarking Algorithm for Medical Images Based on Improved NasNet-Mobile and DCT",
+    "PTW: Pivotal Tuning Watermarking for Pre-Trained Image Generators",
+    "A General Approach for Using Deep Neural Network for Digital Watermarking",
+    "An Overview of Robust Digital Image Watermarking",
+    "Integer DCT-based reversible watermarking for images using companding technique"
+  ],
+  "cited_match_rate": 1.0,
+  "cited_count": 28,
+  "cited_supported": 28,
+  "cited_details": [
+    {
+      "statement": "A 2022 paper states that digital watermarking requires high robustness and high invisibility https://arxiv.org/abs/2210.13801.",
+      "url": "https://arxiv.org/abs/2210.13801",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A 2019 study incorporated deep learning networks with image watermarking https://arxiv.org/abs/1908.11331.",
+      "url": "https://arxiv.org/abs/1908.11331",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The same paper describes that a robust image watermarking system keeps the watermark intact under a designated class of distortions https://arxiv.org/abs/1908.11331.",
+      "url": "https://arxiv.org/abs/1908.11331",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A 2020 paper states that modern image watermarking research primarily focuses on multi-bit scenarios that extract the entire communicative watermark https://arxiv.org/abs/2007.02460.",
+      "url": "https://arxiv.org/abs/2007.02460",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A 2020 study proposed a general deep neural network based watermarking method that trains on an image set and uses the trained model to protect a distinct test image set in a bulk manner https://arxiv.org/abs/2003.12428.",
+      "url": "https://arxiv.org/abs/2003.12428",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The same study notes that technologies of the Internet of Things facilitate digital contents such as images being acquired in a massive way https://arxiv.org/abs/2003.12428.",
+      "url": "https://arxiv.org/abs/2003.12428",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A 2021 study proposed a light-weight deep convolutional autoencoder architecture to embed a secret image inside a cover image https://doi.org/10.1109/access.2021.3113953.",
+      "url": "https://doi.org/10.1109/access.2021.3113953",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The architecture extracts the embedded secret image from the stego image https://doi.org/10.1109/access.2021.3113953.",
+      "url": "https://doi.org/10.1109/access.2021.3113953",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The method was evaluated using three datasets: COCO, CelebA, and ImageNet https://doi.org/10.1109/access.2021.3113953.",
+      "url": "https://doi.org/10.1109/access.2021.3113953",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Peak Signal-to-Noise Ratio, hiding capacity, and imperceptibility results on the test set were used to measure performance https://doi.org/10.1109/access.2021.3113953.",
+      "url": "https://doi.org/10.1109/access.2021.3113953",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A 2021 paper proposes a compact neural network-based algorithm for robust image watermarking https://arxiv.org/abs/2112.13491.",
+      "url": "https://arxiv.org/abs/2112.13491",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The paper states that digital image watermarking seeks to protect digital media information from unauthorized access, where the message is embedded into the digital image and extracted from it https://arxiv.org/abs/2112.13491.",
+      "url": "https://arxiv.org/abs/2112.13491",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A separate study presents a novel end-to-end solution for embedding and recovering the watermark in the digital image using convolutional neural networks https://www.semanticscholar.org/paper/b1ffb4adfc9ec647d5dee15cd3dacce1a662ffe5.",
+      "url": "https://semanticscholar.org/paper/b1ffb4adfc9ec647d5dee15cd3dacce1a662ffe5",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The approach applies spreading https://www.semanticscholar.org/paper/b1ffb4adfc9ec647d5dee15cd3dacce1a662ffe5.",
+      "url": "https://semanticscholar.org/paper/b1ffb4adfc9ec647d5dee15cd3dacce1a662ffe5",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A 2023 study offers a robust zero watermarking strategy for medical pictures based on an Improved NasNet-Mobile convolutional neural network and the discrete cosine transform https://doi.org/10.3390/electronics12163444.",
+      "url": "https://doi.org/10.3390/electronics12163444",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The study modified the pre-trained NasNet-Mobile structure using a fully connected layer with 128 output and a regression layer instead of the original Softmax layer and classification layer https://doi.org/10.3390/electronics12163444.",
+      "url": "https://doi.org/10.3390/electronics12163444",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Transfer learning was performed on the modified network to extract 128 features from medical images https://doi.org/10.3390/electronics12163444.",
+      "url": "https://doi.org/10.3390/electronics12163444",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A 2022 paper introduced DBMark for deep boosting the robustness of DNN-based image watermarking https://arxiv.org/abs/2210.13801.",
+      "url": "https://arxiv.org/abs/2210.13801",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The paper notes that least significant bits (LSB) was the earliest research on image information hiding https://arxiv.org/abs/2210.13801.",
+      "url": "https://arxiv.org/abs/2210.13801",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A 2023 study addresses the lack of robustness of existing medical image watermarking algorithms by combining an Improved NasNet-Mobile network with the discrete cosine transform https://doi.org/10.3390/electronics12163444.",
+      "url": "https://doi.org/10.3390/electronics12163444",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A 2015 paper presents a thorough literature review of robust digital image watermarking applied in diverse applications https://doi.org/10.1080/02564602.2015.1042927.",
+      "url": "https://doi.org/10.1080/02564602.2015.1042927",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The review studies classification of various watermarking schemes with their properties and applications in different domains https://doi.org/10.1080/02564602.2015.1042927.",
+      "url": "https://doi.org/10.1080/02564602.2015.1042927",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A 2004 paper presents a high capacity reversible watermarking scheme using companding technique over integer DCT coefficients of image blocks https://doi.org/10.1117/12.527216.",
+      "url": "https://doi.org/10.1117/12.527216",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The scheme chooses AC coefficients in the integer DCT domain for the bit-shift operation https://doi.org/10.1117/12.527216.",
+      "url": "https://doi.org/10.1117/12.527216",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A 2021 paper titled \"Watermark Faker: Towards Forgery of Digital Image Watermarking\" was authored by researchers at the College of Computer Science, Sichuan University https://arxiv.org/abs/2103.12489.",
+      "url": "https://arxiv.org/abs/2103.12489",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A 2023 paper titled \"PTW: Pivotal Tuning Watermarking for Pre-Trained Image Generators\" addresses deepfakes https://arxiv.org/abs/2304.07361.",
+      "url": "https://arxiv.org/abs/2304.07361",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The paper defines deepfakes as content synthesized using deep generators https://arxiv.org/abs/2304.07361.",
+      "url": "https://arxiv.org/abs/2304.07361",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The paper notes that deepfakes, when misused, have the potential to erode trust in digital media https://arxiv.org/abs/2304.07361.",
+      "url": "https://arxiv.org/abs/2304.07361",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    }
+  ],
+  "noncited_factual_accuracy": 0.0,
+  "noncited_count": 0,
+  "noncited_correct": 0,
+  "noncited_details": []
+}

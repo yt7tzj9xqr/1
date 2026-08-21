@@ -1,0 +1,185 @@
+{
+  "arxiv_id": "2105.01605",
+  "model": "MiniMax-M3",
+  "system": "citation-rag-v20",
+  "reference_precision": 0.4,
+  "reference_recall": 0.08163265306122448,
+  "reference_count": 10,
+  "reference_matches": 4,
+  "ground_truth_count": 49,
+  "predicted_titles": [
+    "Deep Adversarial Graph Attention Convolution Network for Text-Based Person Search",
+    "Natural Language Person Search Using Deep Reinforcement Learning",
+    "Learning Semantic-Aligned Feature Representation for Text-Based Person Search",
+    "Adversarial Representation Learning for Text-to-Image Matching",
+    "Person search: New paradigm of person re-identification: A survey and outlook of recent works",
+    "Attention-based Natural Language Person Retrieval",
+    "Joint Detection and Identification Feature Learning for Person Search",
+    "Asymmetric Cross-Scale Alignment for Text-Based Person Search - Cronfa",
+    "Text-Based Person Search with Limited Data - BMVA Archive",
+    "End-to-End Deep Learning for Person Search"
+  ],
+  "cited_match_rate": 0.9545454545454546,
+  "cited_count": 22,
+  "cited_supported": 21,
+  "cited_details": [
+    {
+      "statement": "The newly emerging text-based person search task aims at retrieving a target pedestrian by a query in natural language with a fine-grained description of a pedestrian https://www.semanticscholar.org/paper/56e3758cd9acc97f41ed3dbefd66fd76f238e4fb.",
+      "url": "https://semanticscholar.org/paper/56e3758cd9acc97f41ed3dbefd66fd76f238e4fb",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Text-based person search is more applicable in reality because it does not require an image or video query of a pedestrian, unlike image- or video-based person search such as person re-identification https://www.semanticscholar.org/paper/56e3758cd9acc97f41ed3dbefd66fd76f238e4fb.",
+      "url": "https://semanticscholar.org/paper/56e3758cd9acc97f41ed3dbefd66fd76f238e4fb",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Person Search (PS) has become a major research field because of its importance in the community and its significance in video surveillance for tracking lost people, re-identification, and person verification https://doi.org/10.1016/j.imavis.2020.103970.",
+      "url": "https://doi.org/10.1016/j.imavis.2020.103970",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Deep learning has shown incredible performance in person re-identification and search, with convolutional neural networks achieving breakthrough performance and extracting useful patterns and characteristics https://doi.org/10.1016/j.imavis.2020.103970.",
+      "url": "https://doi.org/10.1016/j.imavis.2020.103970",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Existing person re-identification benchmarks and methods mainly focus on matching cropped pedestrian images between queries and candidates https://arxiv.org/abs/1604.01850.",
+      "url": "https://arxiv.org/abs/1604.01850",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "However, real-world scenarios lack pedestrian bounding-box annotations, so the target person must be found directly from whole scene images http://www.ee.cuhk.edu.hk/~xgwang/PS/dataset.html.",
+      "url": "http://ee.cuhk.edu.hk/~xgwang/PS/dataset.html",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "To close this gap, an end-to-end deep learning framework jointly handles pedestrian detection and person re-identification rather than treating them as two separate tasks http://www.ee.cuhk.edu.hk/~xgwang/PS/dataset.html.",
+      "url": "http://ee.cuhk.edu.hk/~xgwang/PS/dataset.html",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A random sampling softmax loss is proposed to train the model effectively under the supervision of sparse and unbalanced labels http://www.ee.cuhk.edu.hk/~xgwang/PS/dataset.html.",
+      "url": "http://ee.cuhk.edu.hk/~xgwang/PS/dataset.html",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Joint Detection and Identification Feature Learning investigates pedestrian detection and matching simultaneously within a single network for person search https://arxiv.org/abs/1604.01850.",
+      "url": "https://arxiv.org/abs/1604.01850",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Person re-identification faces challenging issues including low resolution, pose variation, background clutter, occlusion, viewpoints, and low illumination that researchers seek to address https://doi.org/10.1016/j.imavis.2020.103970.",
+      "url": "https://doi.org/10.1016/j.imavis.2020.103970",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A deep adversarial graph attention convolution network, called A-GANet, exploits both textual and visual scene graphs consisting of object properties and relationships from text queries and gallery images of pedestrians https://www.semanticscholar.org/paper/56e3758cd9acc97f41ed3dbefd66fd76f238e4fb.",
+      "url": "https://semanticscholar.org/paper/56e3758cd9acc97f41ed3dbefd66fd76f238e4fb",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A-GANet consists of an image graph attention network, a text graph attention network, and an adversarial learning module https://www.semanticscholar.org/paper/56e3758cd9acc97f41ed3dbefd66fd76f238e4fb.",
+      "url": "https://semanticscholar.org/paper/56e3758cd9acc97f41ed3dbefd66fd76f238e4fb",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A-GANet learns a joint textual-visual latent feature space in an adversarial learning manner, bridging the modality gap and facilitating pedestrian matching https://www.semanticscholar.org/paper/56e3758cd9acc97f41ed3dbefd66fd76f238e4fb.",
+      "url": "https://semanticscholar.org/paper/56e3758cd9acc97f41ed3dbefd66fd76f238e4fb",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A semantic-aligned feature representation method for text-based person search notes that global-matching methods cannot effectively explore the distinctive local details of samples that benefit performance https://arxiv.org/abs/2112.06714.",
+      "url": "https://arxiv.org/abs/2112.06714",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Adversarial representation learning for text-to-image matching targets computer vision applications such as image captioning, visual question answering, and person search by learning discriminative feature representations for both images and text https://arxiv.org/abs/1908.10534.",
+      "url": "https://arxiv.org/abs/1908.10534",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A natural language person search approach based on deep reinforcement learning crops candidate person images to the same size as the query target before matching https://arxiv.org/abs/1809.00365.",
+      "url": "https://arxiv.org/abs/1809.00365",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "An attention-based natural language person retrieval method addresses challenges such as low resolution, deformation, and occlusion when recognizing persons from textual queries https://arxiv.org/abs/1705.08923.",
+      "url": "https://arxiv.org/abs/1705.08923",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "An Asymmetric Cross-Scale Alignment method has been proposed for text-based person search to align cross-modal features across scales https://cronfa.swan.ac.uk/Record/cronfa62251/Download/62251__26475__9db5b190500e40af9bfe9f45e66bbb4f.pdf.",
+      "url": "https://cronfa.swan.ac.uk/Record/cronfa62251/Download/62251__26475__9db5b190500e40af9bfe9f45e66bbb4f.pdf",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A study on text-based person search with limited data investigates the setting where annotated text-image pairs are scarce during training https://www.bmva-archive.org.uk/bmvc/2021/assets/papers/0044.pdf.",
+      "url": "https://bmva-archive.org.uk/bmvc/2021/assets/papers/0044.pdf",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Open research problems in image-based person search include developing new frameworks that demand substantial effort, hard work, and computation cost to acquire excellent results https://doi.org/10.1016/j.imavis.2020.103970.",
+      "url": "https://doi.org/10.1016/j.imavis.2020.103970",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Person search benchmarks remain limited in scale, and the samples are collected from a few fixed camera views http://www.ee.cuhk.edu.hk/~xgwang/PS/dataset.html.",
+      "url": "http://ee.cuhk.edu.hk/~xgwang/PS/dataset.html",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "For text-based approaches, handling low resolution, deformation, and occlusion remains difficult when matching pedestrians from natural language descriptions https://arxiv.org/abs/1705.08923.",
+      "url": "https://arxiv.org/abs/1705.08923",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    }
+  ],
+  "noncited_factual_accuracy": 0.0,
+  "noncited_count": 0,
+  "noncited_correct": 0,
+  "noncited_details": []
+}

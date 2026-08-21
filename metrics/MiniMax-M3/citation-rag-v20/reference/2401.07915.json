@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2401.07915",
+  "model": "MiniMax-M3",
+  "system": "citation-rag-v20",
+  "reference_precision": 0.5,
+  "reference_recall": 0.023076923076923078,
+  "reference_count": 12,
+  "reference_matches": 6,
+  "ground_truth_count": 260,
+  "predicted_titles": [
+    "Learning Dexterous In-Hand Manipulation",
+    "Continual Policy Distillation of Reinforcement Learning-based Controllers for Soft Robotic In-Hand Manipulation",
+    "Hybrid Imitation Learning Framework for Robotic Manipulation Tasks",
+    "TacGNN:Learning Tactile-based In-hand Manipulation with a Blind Robot",
+    "Reinforcement and Imitation Learning for Diverse Visuomotor Skills",
+    "On Policy Learning Robust to Irreversible Events: An Application to Robotic In-Hand Manipulation",
+    "Object Manipulation with an Anthropomorphic Robotic Hand via Deep Reinforcement Learning with a Synergy Space of Natural Hand Poses",
+    "Learning Dexterous Manipulation for a Soft Robotic Hand from Human Demonstration",
+    "Learning a State Estimator for Tactile In-Hand Manipulation",
+    "On dexterity and dexterous manipulation",
+    "Soft Robotic Grippers",
+    "Dextrous manipulation with rolling contacts"
+  ]
+}

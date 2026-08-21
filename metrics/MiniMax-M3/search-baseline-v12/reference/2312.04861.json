@@ -1,0 +1,27 @@
+{
+  "arxiv_id": "2312.04861",
+  "model": "MiniMax-M3",
+  "system": "search-baseline-v12",
+  "reference_precision": 0.26666666666666666,
+  "reference_recall": 0.01444043321299639,
+  "reference_count": 15,
+  "reference_matches": 4,
+  "ground_truth_count": 277,
+  "predicted_titles": [
+    "Radars for Autonomous Driving: A Review of Deep Learning Methods and Challenges",
+    "Camera–Radar Fusion with Modality Interaction and Radar Gaussian ...",
+    "RODNet: Radar Object Detection using Cross-Modal ...",
+    "RODNet: A Real-Time Radar Object Detection Network ...",
+    "Range-Doppler Detection in Automotive Radar with Deep ...",
+    "Deep Radar Detector",
+    "Towards Deep Radar Perception for Autonomous Driving",
+    "K-Radar: 4D Radar Object Detection for Autonomous Driving in Various Weather Conditions",
+    "Radar Camera Fusion via Representation Learning in Autonomous Driving",
+    "PolarNet: Accelerated Deep Open Space Segmentation Using Automotive Radar in Polar Domain",
+    "CenterRadarNet: Joint 3D Object Detection and Tracking Framework using 4D FMCW Radar",
+    "ERASE-Net: Efficient Segmentation Networks for Automotive Radar Signals",
+    "MMW Radar-Based Technologies in Autonomous Driving: A Review",
+    "GET-UP: GEomeTric-aware Depth Estimation with Radar Points UPsampling",
+    "Bootstrapping Autonomous Driving Radars with Self-Supervised Learning"
+  ]
+}

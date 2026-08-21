@@ -1,0 +1,227 @@
+{
+  "arxiv_id": "2004.05937",
+  "model": "MiniMax-M3",
+  "system": "citation-rag-v20",
+  "reference_precision": 0.2,
+  "reference_recall": 0.006557377049180328,
+  "reference_count": 10,
+  "reference_matches": 2,
+  "ground_truth_count": 305,
+  "predicted_titles": [
+    "Student Network Learning via Evolutionary Knowledge Distillation",
+    "Ensemble Learning of Lightweight Deep Learning Models Using Knowledge Distillation for Image Classification",
+    "Show, Attend and Distill: Knowledge Distillation via Attention-based Feature Matching",
+    "Neural Networks Are More Productive Teachers Than Human Raters: Active Mixup for Data-Efficient Knowledge Distillation from a Blackbox Model",
+    "Data-Distortion Guided Self-Distillation for Deep Neural Networks",
+    "Search for Better Students to Learn Distilled Knowledge",
+    "Cross-Layer Distillation with Semantic Calibration",
+    "Learning Student-Friendly Teacher Networks for Knowledge Distillation",
+    "Knowledge Distillation by On-the-Fly Native Ensemble",
+    "Improved Knowledge Distillation via Teacher Assistant"
+  ],
+  "cited_match_rate": 0.9285714285714286,
+  "cited_count": 28,
+  "cited_supported": 26,
+  "cited_details": [
+    {
+      "statement": "Knowledge distillation extracts general knowledge from a pretrained teacher network and provides guidance to a target student network https://doi.org/10.1609/aaai.v35i9.16969.",
+      "url": "https://doi.org/10.1609/aaai.v35i9.16969",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Most feature distillation studies manually tie intermediate features of the teacher and student, transferring knowledge through predefined links https://doi.org/10.1609/aaai.v35i9.16969.",
+      "url": "https://doi.org/10.1609/aaai.v35i9.16969",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Manual selection often constructs ineffective links that limit the improvement from the distillation https://doi.org/10.1609/aaai.v35i9.16969.",
+      "url": "https://doi.org/10.1609/aaai.v35i9.16969",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "An attention-based meta network can learn relative similarities between features and apply identified similarities to control distillation intensities of all possible pairs https://doi.org/10.1609/aaai.v35i9.16969.",
+      "url": "https://doi.org/10.1609/aaai.v35i9.16969",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Intermediate layers of a teacher model can serve as effective targets for training a student model to obtain better generalization ability https://doi.org/10.1609/aaai.v35i8.16865.",
+      "url": "https://doi.org/10.1609/aaai.v35i8.16865",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Semantics of intermediate layers may vary across networks, and manual association of layers can lead to negative regularization caused by semantic mismatch between teacher–student layer pairs https://doi.org/10.1609/aaai.v35i8.16865.",
+      "url": "https://doi.org/10.1609/aaai.v35i8.16865",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "An attention mechanism can automatically assign proper target teacher layers for each student layer https://doi.org/10.1609/aaai.v35i8.16865.",
+      "url": "https://doi.org/10.1609/aaai.v35i8.16865",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "With a learned attention distribution, each student layer distills knowledge contained in multiple layers rather than a single fixed intermediate layer from the teacher https://doi.org/10.1609/aaai.v35i8.16865.",
+      "url": "https://doi.org/10.1609/aaai.v35i8.16865",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Student network performance degrades when the gap between student and teacher is large https://doi.org/10.1609/aaai.v34i04.5963.",
+      "url": "https://doi.org/10.1609/aaai.v34i04.5963",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Given a fixed student network, one cannot employ an arbitrarily large teacher https://doi.org/10.1609/aaai.v34i04.5963.",
+      "url": "https://doi.org/10.1609/aaai.v34i04.5963",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A teacher can effectively transfer its knowledge to students only up to a certain size, not smaller https://doi.org/10.1609/aaai.v34i04.5963.",
+      "url": "https://doi.org/10.1609/aaai.v34i04.5963",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Multi-step knowledge distillation employs an intermediate-sized network, called a teacher assistant, to bridge the gap between the student and the teacher https://doi.org/10.1609/aaai.v34i04.5963.",
+      "url": "https://doi.org/10.1609/aaai.v34i04.5963",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Knowledge distillation traditionally depends on accompanying assistive models, which complicates training by requiring large memory and time cost https://doi.org/10.1609/aaai.v33i01.33015565.",
+      "url": "https://doi.org/10.1609/aaai.v33i01.33015565",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A self-distillation mechanism can transfer knowledge between different distorted versions of the same training data without reliance on accompanying models https://doi.org/10.1609/aaai.v33i01.33015565.",
+      "url": "https://doi.org/10.1609/aaai.v33i01.33015565",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The potential capacity of a single network can be excavated by learning consistent global feature distributions and posterior distributions across distorted versions of data https://doi.org/10.1609/aaai.v33i01.33015565.",
+      "url": "https://doi.org/10.1609/aaai.v33i01.33015565",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Offline distillation methods rely on a strong pre-trained teacher, enabling favorable knowledge discovery but requiring a complex two-phase training procedure https://qmro.qmul.ac.uk/xmlui/handle/123456789/58358.",
+      "url": "https://qmro.qmul.ac.uk/xmlui/handle/123456789/58358",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Online counterparts address this limitation at the price of lacking a high-capacity teacher https://qmro.qmul.ac.uk/xmlui/handle/123456789/58358.",
+      "url": "https://qmro.qmul.ac.uk/xmlui/handle/123456789/58358",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "An On-the-fly Native Ensemble strategy trains only a single multi-branch network while simultaneously establishing a strong teacher on-the-fly to enhance learning of the target network https://qmro.qmul.ac.uk/xmlui/handle/123456789/58358.",
+      "url": "https://qmro.qmul.ac.uk/xmlui/handle/123456789/58358",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "ONE improves the generalization performance of a variety of deep neural networks more significantly than alternative methods on CIFAR-10, CIFAR-100, SVHN, and ImageNet while maintaining computational efficiency advantages https://qmro.qmul.ac.uk/xmlui/handle/123456789/58358.",
+      "url": "https://qmro.qmul.ac.uk/xmlui/handle/123456789/58358",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Knowledge distillation provides an effective way to transfer knowledge via teacher–student learning, where most existing distillation approaches apply a fixed pre-trained model as the teacher https://arxiv.org/abs/2103.13811.",
+      "url": "https://arxiv.org/abs/2103.13811",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Knowledge distillation as a model compression technique distills the knowledge of a well-performed teacher into a student with a small architecture https://arxiv.org/abs/2001.11612.",
+      "url": "https://arxiv.org/abs/2001.11612",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Attention can be redirected to the architecture of the student, the receiver of the distilled knowledge, rather than only to the dark knowledge itself https://arxiv.org/abs/2001.11612.",
+      "url": "https://arxiv.org/abs/2001.11612",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A teacher network can be optimized to be student-friendly for knowledge distillation http://arxiv.org/abs/2102.07650.",
+      "url": "http://arxiv.org/abs/2102.07650",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Deep learning models are huge in size, with millions or billions of parameters, and thus cannot be deployed on systems and devices with limited resources such as embedded systems and mobile phones https://doi.org/10.3390/math8101652.",
+      "url": "https://doi.org/10.3390/math8101652",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Knowledge distillation is a representative model compression technique that effectively learns a small student model from large teacher model(s) https://doi.org/10.3390/math8101652.",
+      "url": "https://doi.org/10.3390/math8101652",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "An ensemble framework can combine feature-based, response-based, and relation-based lightweight knowledge distillation models https://doi.org/10.3390/math8101652.",
+      "url": "https://doi.org/10.3390/math8101652",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The framework uses ResNet-20 as a student network and ResNet-110 as a teacher network https://doi.org/10.3390/math8101652.",
+      "url": "https://doi.org/10.3390/math8101652",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "When distilling from a blackbox model, training a student network can be made more data-efficient by using neural network teachers rather than human raters, leveraging active mixup techniques for label-free supervision https://arxiv.org/abs/2003.13960.",
+      "url": "https://arxiv.org/abs/2003.13960",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    }
+  ],
+  "noncited_factual_accuracy": 0.0,
+  "noncited_count": 0,
+  "noncited_correct": 0,
+  "noncited_details": []
+}

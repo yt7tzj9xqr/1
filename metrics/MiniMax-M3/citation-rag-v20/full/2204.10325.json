@@ -1,0 +1,111 @@
+{
+  "arxiv_id": "2204.10325",
+  "model": "MiniMax-M3",
+  "system": "citation-rag-v20",
+  "reference_precision": 0.0,
+  "reference_recall": 0.0,
+  "reference_count": 6,
+  "reference_matches": 0,
+  "ground_truth_count": 36,
+  "predicted_titles": [
+    "Speech and language therapy for aphasia following stroke",
+    "Prospective Validation of Motor-Based Intervention with Automated Mispronunciation Detection of Rhotics in Residual Speech Sound Disorders",
+    "Stuttering Speech Disfluency Prediction using Explainable Attribution Vectors of Facial Muscle Movements",
+    "Home-Based Activities for Children with Speech Sound Disorders: Requirements for a Tangible User Interface for Internet of Things Artefacts",
+    "Automatic Pronunciation Scoring And Mispronunciation ...",
+    "Automated analysis of free speech predicts psychosis onset in high-risk youths"
+  ],
+  "cited_match_rate": 0.8333333333333334,
+  "cited_count": 12,
+  "cited_supported": 10,
+  "cited_details": [
+    {
+      "statement": "Aphasia is an acquired language impairment following brain damage that affects some or all language modalities: expression and understanding of speech, reading, and writing, with approximately one third of people who have a stroke experiencing aphasia (https://doi.org/10.1002/14651858.cd000425.pub4).",
+      "url": "https://doi.org/10.1002/14651858.cd000425.pub4",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A 2022 study presented the state of the art regarding the use of tangible user interfaces for internet of artefacts targeting health applications, with a focus on speech and language therapy and related areas, targeting home-based interventions for children with Speech Sound Disorders, including data security and privacy issues (https://www.semanticscholar.org/paper/0949276b131c3d4b2ed993c167fdf13d2fa886d2).",
+      "url": "https://semanticscholar.org/paper/0949276b131c3d4b2ed993c167fdf13d2fa886d2",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The aim of the study was to understand the usual practice of clinicians and to contribute to a better intervention or post-intervention approach for children with Speech Sound Disorders, using results from a systematic literature review, a focus group, and a nationwide questionnaire to determine system requirements for a prototype (https://www.semanticscholar.org/paper/0949276b131c3d4b2ed993c167fdf13d2fa886d2).",
+      "url": "https://semanticscholar.org/paper/0949276b131c3d4b2ed993c167fdf13d2fa886d2",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The literature review revealed that some studies proposed technological solutions while others used a social approach and/or gamified activities (https://www.semanticscholar.org/paper/0949276b131c3d4b2ed993c167fdf13d2fa886d2).",
+      "url": "https://semanticscholar.org/paper/0949276b131c3d4b2ed993c167fdf13d2fa886d2",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A 2023 prospective validation study evaluated the PERCEPT-R Classifier for rhotics in residual speech sound disorders, which uses GMM-HMM features to predict clinician perceptual judgment of the /ɹ/ and to drive ChainingAI practice adaptations in motor-based intervention (https://arxiv.org/abs/2305.19090).",
+      "url": "https://arxiv.org/abs/2305.19090",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "A 2012 study addressed automatic pronunciation evaluation and mispronunciation detection, noting that feedback on pronunciation is vital for spoken language teaching (https://aclanthology.org/W12-5808.pdf).",
+      "url": "https://aclanthology.org/W12-5808.pdf",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The system relied on automatic speech recognition performed using Sphinx trained on a database of native exemplar pronunciation and non-native examples of frequent mistakes (https://aclanthology.org/W12-5808.pdf).",
+      "url": "https://aclanthology.org/W12-5808.pdf",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The study noted that automatic pronunciation evaluation and feedback can help non-native speakers to identify their errors, learn sounds and vocabulary, and improve their pronunciation performance (https://aclanthology.org/W12-5808.pdf).",
+      "url": "https://aclanthology.org/W12-5808.pdf",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A 2020 study focused on stuttering speech disfluency prediction using explainable attribution vectors of facial muscle movements (https://arxiv.org/abs/2010.01231).",
+      "url": "https://arxiv.org/abs/2010.01231",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The study reported prevalence of 1% in adults (https://arxiv.org/abs/2010.01231).",
+      "url": "https://arxiv.org/abs/2010.01231",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A 2015 study tested automated speech analyses combined with machine learning to predict later psychosis onset, noting that psychiatry lacks the objective clinical tests routinely used in other specializations and that novel computerized methods to characterize complex behaviors such as speech could be used to identify and predict psychiatric illness (https://doi.org/10.1038/npjschz.2015.30).",
+      "url": "https://doi.org/10.1038/npjschz.2015.30",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Thirty-four CHR youths (11 females) had baseline interviews and were assessed quarterly for up to 2.5 years; five transitioned to psychosis, with transcripts evaluated for semantic and syntactic features predicting later psychosis onset using a convex hull classification algorithm with leave-one-subject-out cross-validation (https://doi.org/10.1038/npjschz.2015.30).",
+      "url": "https://doi.org/10.1038/npjschz.2015.30",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    }
+  ],
+  "noncited_factual_accuracy": 0.0,
+  "noncited_count": 0,
+  "noncited_correct": 0,
+  "noncited_details": []
+}

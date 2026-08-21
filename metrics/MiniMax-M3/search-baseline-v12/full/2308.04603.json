@@ -1,0 +1,248 @@
+{
+  "arxiv_id": "2308.04603",
+  "model": "MiniMax-M3",
+  "system": "search-baseline-v12",
+  "reference_precision": 0.2,
+  "reference_recall": 0.029850746268656716,
+  "reference_count": 10,
+  "reference_matches": 2,
+  "ground_truth_count": 67,
+  "predicted_titles": [
+    "Watermark Faker: Towards Forgery of Digital Image Watermarking",
+    "A Robust Image Watermarking System Based on Deep Neural Networks",
+    "HiDDeN: Hiding Data With Deep Networks",
+    "StegaStamp: Invisible Hyperlinks in Physical Photographs",
+    "A robust watermarking algorithm against JPEG compression ...",
+    "Enhancing Robustness of DNN-based Watermarking by Mini",
+    "Transform domain watermarking",
+    "Deep Boosting Robustness of DNN-based Image Watermarking via DBMark",
+    "End-to-End Image Steganography Using Deep Convolutional Autoencoders",
+    "An Automated and Robust Image Watermarking Scheme Based on Deep Neural Networks"
+  ],
+  "cited_match_rate": 0.9032258064516129,
+  "cited_count": 31,
+  "cited_supported": 28,
+  "cited_details": [
+    {
+      "statement": "Zhu, Kaplan, Johnson, and Fei-Fei at the Stanford University Computer Science Department introduce HiDDeN for hiding data with deep networks (https://arxiv.org/abs/1807.09937).",
+      "url": "https://arxiv.org/abs/1807.09937",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The HiDDeN paper is identified as arXiv:1807.09937v1 from 26 July 2018 (https://arxiv.org/abs/1807.09937).",
+      "url": "https://arxiv.org/abs/1807.09937",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "HiDDeN observes that deep neural networks are highly sensitive to tiny perturbations of input images, giving rise to adversarial examples (https://arxiv.org/abs/1807.09937).",
+      "url": "https://arxiv.org/abs/1807.09937",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The authors explore whether this sensitivity, usually considered a weakness of learned models, can instead be beneficial (https://arxiv.org/abs/1807.09937).",
+      "url": "https://arxiv.org/abs/1807.09937",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Zhong, Huang, Mastorakis, and Shih present an automated and robust image watermarking scheme based on deep neural networks (https://arxiv.org/abs/2007.02460).",
+      "url": "https://arxiv.org/abs/2007.02460",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Their work targets multi-bit scenarios that extract the entire communicative watermark and is designed to dynamically adapt image watermarking algorithms to cover-image content (https://arxiv.org/abs/2007.02460).",
+      "url": "https://arxiv.org/abs/2007.02460",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Shih is identified as a Senior Member of IEEE in this study (https://arxiv.org/abs/2007.02460).",
+      "url": "https://arxiv.org/abs/2007.02460",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Ye, Gao, Xie, Yin, and Wei present DBMark for deep boosting the robustness of DNN-based image watermarking (https://arxiv.org/abs/2210.13801).",
+      "url": "https://arxiv.org/abs/2210.13801",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The DBMark paper is identified as arXiv:2210.13801v3 from 16 November 2022 (https://arxiv.org/abs/2210.13801).",
+      "url": "https://arxiv.org/abs/2210.13801",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The authors are associated with Southern University of Science and Technology, Hunan University, and Changsha University of Science and Technology (https://arxiv.org/abs/2210.13801).",
+      "url": "https://arxiv.org/abs/2210.13801",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "They note that digital watermarking requires high robustness and high invisibility, and that least significant bits (LSB) was the earliest approach (https://arxiv.org/abs/2210.13801).",
+      "url": "https://arxiv.org/abs/2210.13801",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "show that real JPEG helps the decoder obtain robustness under JPEG compression, that simulated JPEG trains the encoder-decoder jointly, and that a noise-free layer is used (https://dl.acm.org/doi/pdf/10.1145/3474085.3475324).",
+      "url": "https://dl.acm.org/doi/pdf/10.1145/3474085.3475324",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "paper was published in 2021 and has 380 citations in the source metadata (https://dl.acm.org/doi/pdf/10.1145/3474085.3475324).",
+      "url": "https://dl.acm.org/doi/pdf/10.1145/3474085.3475324",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A 2021 IEEE Access study notes that image steganography hides a secret image inside a cover image in plain sight, that traditional methods convert the secret data into binary bits, and that traditional methods manipulate the cover image statistically to embed the secret binary bits (https://doi.org/10.1109/access.2021.3113953).",
+      "url": "https://doi.org/10.1109/access.2021.3113953",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The study proposes a deep convolutional autoencoder that hides a secret image inside a cover image and extracts the embedded secret image from the stego image (https://doi.org/10.1109/access.2021.3113953).",
+      "url": "https://doi.org/10.1109/access.2021.3113953",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The study observes that overloading the cover image may lead to distortions and that the hiding capacity of traditional methods is limited (https://doi.org/10.1109/access.2021.3113953).",
+      "url": "https://doi.org/10.1109/access.2021.3113953",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Performance is evaluated on COCO, CelebA, and ImageNet using PSNR, hiding capacity, and imperceptibility, and the method is compared against traditional image steganography methods on images including Lena, airplane, baboon, and peppers (https://doi.org/10.1109/access.2021.3113953).",
+      "url": "https://doi.org/10.1109/access.2021.3113953",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The IEEE Access paper has 84 citations in the source metadata (https://doi.org/10.1109/access.2021.3113953).",
+      "url": "https://doi.org/10.1109/access.2021.3113953",
+      "support_votes": 0,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Zhong and Shih at the University of Nebraska at Omaha and the New Jersey Institute of Technology describe digital image watermarking as the process of embedding and extracting a watermark covertly on a carrier image (https://arxiv.org/abs/1908.11331).",
+      "url": "https://arxiv.org/abs/1908.11331",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "They note that a robust image watermarking system keeps the watermark intact under a designated class of distortions without the assistance of other techniques (https://arxiv.org/abs/1908.11331).",
+      "url": "https://arxiv.org/abs/1908.11331",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "They incorporate deep learning networks with image watermarking to address the issue of degraded or distorted carriers (https://arxiv.org/abs/1908.11331).",
+      "url": "https://arxiv.org/abs/1908.11331",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A 2023 multi-scale auto-encoder watermarking algorithm is designed to effectively extract image features for robustness against JPEG compression (https://ietresearch.onlinelibrary.wiley.com/doi/10.1049/ipr2.12961).",
+      "url": "https://ietresearch.onlinelibrary.wiley.com/doi/10.1049/ipr2.12961",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "A transform-domain watermarking study presents a comparative analysis of traditional domain-transformed watermarking methods and deep learning-based watermark detection models (https://papers.ssrn.com/sol3/Delivery.cfm/f8d0a745-298f-46cc-a18f-2f8d4ff89fe2-MECA.pdf?abstractid=6620161&mirid=1).",
+      "url": "https://papers.ssrn.com/sol3/Delivery.cfm/f8d0a745-298f-46cc-a18f-2f8d4ff89fe2-MECA.pdf?abstractid=6620161&mirid=1",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Wang, Lin, Zhao, and Zhu at the College of Computer Science, Sichuan University, China, present Watermark Faker, targeting the forgery of digital image watermarking (https://arxiv.org/abs/2103.12489).",
+      "url": "https://arxiv.org/abs/2103.12489",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "StegaStamp is a learned steganographic algorithm in which printed and digitally displayed photos hide imperceptible digital data accessible through internet-connected imaging systems (https://arxiv.org/abs/1904.05343).",
+      "url": "https://arxiv.org/abs/1904.05343",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The authors describe their vision as physical photographs with unique QR codes invisibly embedded within them (https://arxiv.org/abs/1904.05343).",
+      "url": "https://arxiv.org/abs/1904.05343",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The paper presents an architecture, algorithms, and a prototype implementation for embedding hyperlinks in physical photographs (https://arxiv.org/abs/1904.05343).",
+      "url": "https://arxiv.org/abs/1904.05343",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The StegaStamp system is described as the key technical contribution of the paper (https://arxiv.org/abs/1904.05343).",
+      "url": "https://arxiv.org/abs/1904.05343",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The system uses a deep neural network to learn an encoding and decoding algorithm robust to image perturbations approximating the distortions resulting from real printing and photography (https://arxiv.org/abs/1904.05343).",
+      "url": "https://arxiv.org/abs/1904.05343",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The system enables robust encoding and decoding of arbitrary hyperlink bitstrings into photos in a manner that approaches perceptual invisibility (https://arxiv.org/abs/1904.05343).",
+      "url": "https://arxiv.org/abs/1904.05343",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The authors demonstrate real-time decoding of hyperlinks in photos from in-the-wild videos with variation in lighting, shadows, perspective, occlusion, and viewing distance (https://arxiv.org/abs/1904.05343).",
+      "url": "https://arxiv.org/abs/1904.05343",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    }
+  ],
+  "noncited_factual_accuracy": 0.0,
+  "noncited_count": 0,
+  "noncited_correct": 0,
+  "noncited_details": []
+}

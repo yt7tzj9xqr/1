@@ -1,0 +1,339 @@
+{
+  "arxiv_id": "2401.07915",
+  "model": "MiniMax-M3",
+  "system": "search-baseline-v12",
+  "reference_precision": 0.3,
+  "reference_recall": 0.011538461538461539,
+  "reference_count": 10,
+  "reference_matches": 3,
+  "ground_truth_count": 260,
+  "predicted_titles": [
+    "Learning Dexterous In-Hand Manipulation",
+    "DexMV: Imitation Learning for Dexterous Manipulation from ...",
+    "Tactile-Driven Non-Prehensile Object Manipulation via ...",
+    "Learning Robot In-Hand Manipulation with Tactile Features",
+    "Learning a State Estimator for Tactile In-Hand Manipulation",
+    "DexYCB: A Benchmark for Capturing Hand Grasping of Objects",
+    "DexArt: Benchmarking Generalizable Dexterous Manipulation ...",
+    "Continual Policy Distillation of Reinforcement Learning-based Controllers for Soft Robotic In-Hand Manipulation",
+    "TacGNN:Learning Tactile-based In-hand Manipulation with a Blind Robot",
+    "Reinforcement and Imitation Learning for Diverse Visuomotor Skills"
+  ],
+  "cited_match_rate": 1.0,
+  "cited_count": 44,
+  "cited_supported": 44,
+  "cited_details": [
+    {
+      "statement": "A five-fingered humanoid hand trained with reinforcement learning can manipulate a block from an initial configuration to a goal configuration using vision for sensing https://arxiv.org/abs/1808.00177.",
+      "url": "https://arxiv.org/abs/1808.00177",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Reinforcement learning can acquire in-hand manipulation skills without requiring analytic dynamics or kinematics models https://users.cs.utah.edu/~thermans/papers/vanhoof-ichr2015-in-hand-learning.pdf.",
+      "url": "https://users.cs.utah.edu/~thermans/papers/vanhoof-ichr2015-in-hand-learning.pdf",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A tactile manipulation skill was successfully acquired using a passively compliant hand through reinforcement learning https://users.cs.utah.edu/~thermans/papers/vanhoof-ichr2015-in-hand-learning.pdf.",
+      "url": "https://users.cs.utah.edu/~thermans/papers/vanhoof-ichr2015-in-hand-learning.pdf",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The learned tactile skill generalizes to novel objects https://users.cs.utah.edu/~thermans/papers/vanhoof-ichr2015-in-hand-learning.pdf.",
+      "url": "https://users.cs.utah.edu/~thermans/papers/vanhoof-ichr2015-in-hand-learning.pdf",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Dexterous manipulation enables repositioning of objects and tools within a robot's hand https://users.cs.utah.edu/~thermans/papers/vanhoof-ichr2015-in-hand-learning.pdf.",
+      "url": "https://users.cs.utah.edu/~thermans/papers/vanhoof-ichr2015-in-hand-learning.pdf",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "When applying dexterous manipulation to unknown objects, exact object models are not available https://users.cs.utah.edu/~thermans/papers/vanhoof-ichr2015-in-hand-learning.pdf.",
+      "url": "https://users.cs.utah.edu/~thermans/papers/vanhoof-ichr2015-in-hand-learning.pdf",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Compliance and tactile feedback can be exploited to adapt to unknown objects https://users.cs.utah.edu/~thermans/papers/vanhoof-ichr2015-in-hand-learning.pdf.",
+      "url": "https://users.cs.utah.edu/~thermans/papers/vanhoof-ichr2015-in-hand-learning.pdf",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Compliant hands and tactile sensors add complexity and are difficult to model https://users.cs.utah.edu/~thermans/papers/vanhoof-ichr2015-in-hand-learning.pdf.",
+      "url": "https://users.cs.utah.edu/~thermans/papers/vanhoof-ichr2015-in-hand-learning.pdf",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Soft robotic hands offer flexibility and adaptability during object grasping and manipulation due to their compliant nature https://arxiv.org/abs/2404.04219.",
+      "url": "https://arxiv.org/abs/2404.04219",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Dexterous manipulation, often facilitated by multi-fingered robotic hands, holds solid impact for real-world applications https://arxiv.org/abs/2404.04219.",
+      "url": "https://arxiv.org/abs/2404.04219",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Soft robotic hands present challenges in the control development for finger coordination https://arxiv.org/abs/2404.04219.",
+      "url": "https://arxiv.org/abs/2404.04219",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "RL policies for soft robotic in-hand manipulation are distilled through continual policy distillation https://arxiv.org/abs/2404.04219.",
+      "url": "https://arxiv.org/abs/2404.04219",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The pose of an object manipulated by a multi-fingered robotic hand can be estimated using only proprioceptive feedback https://elib.dlr.de/190608/1/IROS22_LearningTactileEstimator.pdf.",
+      "url": "https://elib.dlr.de/190608/1/IROS22_LearningTactileEstimator.pdf",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A novel framework enables tactile-based dexterous manipulation learning with a blind anthropomorphic robotic hand without visual sensing https://arxiv.org/abs/2304.00736.",
+      "url": "https://arxiv.org/abs/2304.00736",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The framework uses a hierarchical graph neural network to support in-hand manipulation on a blind robot https://arxiv.org/abs/2304.00736.",
+      "url": "https://arxiv.org/abs/2304.00736",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The paper is published in the IEEE Robotics and Automation Letters https://arxiv.org/abs/2304.00736.",
+      "url": "https://arxiv.org/abs/2304.00736",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Tactile-driven non-prehensile object manipulation uses extrinsic contact mode control https://www.roboticsproceedings.org/rss20/p135.pdf.",
+      "url": "https://roboticsproceedings.org/rss20/p135.pdf",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The robot grasps an object with tactile sensors and is tasked with manipulating the object in the environment https://www.roboticsproceedings.org/rss20/p135.pdf.",
+      "url": "https://roboticsproceedings.org/rss20/p135.pdf",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "In one setup, the goal of the robot is to pivot the object resting on a surface https://www.roboticsproceedings.org/rss20/p135.pdf.",
+      "url": "https://roboticsproceedings.org/rss20/p135.pdf",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The robot models the tactile sensors using passive compliance https://www.roboticsproceedings.org/rss20/p135.pdf.",
+      "url": "https://roboticsproceedings.org/rss20/p135.pdf",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A schematic presents the robot's understanding of the world https://www.roboticsproceedings.org/rss20/p135.pdf.",
+      "url": "https://roboticsproceedings.org/rss20/p135.pdf",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The authors are from the Department of Robotics at the University of Michigan https://www.roboticsproceedings.org/rss20/p135.pdf.",
+      "url": "https://roboticsproceedings.org/rss20/p135.pdf",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The paper is presented at the Robotics: Science and Systems 2024 conference https://www.roboticsproceedings.org/rss20/p135.pdf.",
+      "url": "https://roboticsproceedings.org/rss20/p135.pdf",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "DexMV performs imitation learning for dexterous manipulation from human videos https://arxiv.org/abs/2108.05877.",
+      "url": "https://arxiv.org/abs/2108.05877",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The method targets manipulation tasks including relocate, pour, and place inside https://arxiv.org/abs/2108.05877.",
+      "url": "https://arxiv.org/abs/2108.05877",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Hand pose is estimated from human video to perform the manipulation task https://arxiv.org/abs/2108.05877.",
+      "url": "https://arxiv.org/abs/2108.05877",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The research is from the University of California San Diego https://arxiv.org/abs/2108.05877.",
+      "url": "https://arxiv.org/abs/2108.05877",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A model-free deep reinforcement learning method leverages a small amount of demonstration data to assist a reinforcement learning agent https://doi.org/10.15607/rss.2018.xiv.009.",
+      "url": "https://doi.org/10.15607/rss.2018.xiv.009",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The approach applies model-free deep reinforcement learning to robotic manipulation tasks https://doi.org/10.15607/rss.2018.xiv.009.",
+      "url": "https://doi.org/10.15607/rss.2018.xiv.009",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The system involves collecting demonstrations, training in simulation, and running on a real robot https://doi.org/10.15607/rss.2018.xiv.009.",
+      "url": "https://doi.org/10.15607/rss.2018.xiv.009",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Training occurs in simulation using a physics engine https://doi.org/10.15607/rss.2018.xiv.009.",
+      "url": "https://doi.org/10.15607/rss.2018.xiv.009",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The policy runs on a real robot in a real environment https://doi.org/10.15607/rss.2018.xiv.009.",
+      "url": "https://doi.org/10.15607/rss.2018.xiv.009",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The research is a collaboration between Stanford University and DeepMind https://doi.org/10.15607/rss.2018.xiv.009.",
+      "url": "https://doi.org/10.15607/rss.2018.xiv.009",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "DexYCB is a dataset for capturing hand grasping of objects that benchmarks 2D object and keypoint detection, 6D object pose estimation, and 3D hand pose estimation https://dex-ycb.github.io/.",
+      "url": "https://dex-ycb.github.io",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "DexYCB compares with a related dataset through cross-dataset evaluation https://dex-ycb.github.io/.",
+      "url": "https://dex-ycb.github.io",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The benchmark includes the robotics-relevant task of generating safe robot grasps in human-to-robot object handover https://dex-ycb.github.io/.",
+      "url": "https://dex-ycb.github.io",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "DexArt benchmarks generalizable dexterous manipulation with articulated objects https://cvpr.thecvf.com/virtual/2023/poster/22341.",
+      "url": "https://cvpr.thecvf.com/virtual/2023/poster/22341",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The authors propose a new benchmark called DexArt https://cvpr.thecvf.com/virtual/2023/poster/22341.",
+      "url": "https://cvpr.thecvf.com/virtual/2023/poster/22341",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "DexArt involves dexterous manipulation with articulated objects in a physical simulator https://cvpr.thecvf.com/virtual/2023/poster/22341.",
+      "url": "https://cvpr.thecvf.com/virtual/2023/poster/22341",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The benchmark defines multiple complex manipulation tasks requiring the robot hand to manipulate diverse articulated objects within each task https://cvpr.thecvf.com/virtual/2023/poster/22341.",
+      "url": "https://cvpr.thecvf.com/virtual/2023/poster/22341",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The benchmark evaluates the generalizability of learned policies on unseen articulated objects https://cvpr.thecvf.com/virtual/2023/poster/22341.",
+      "url": "https://cvpr.thecvf.com/virtual/2023/poster/22341",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Manipulation of articulated objects is challenging given the high degrees of freedom of both hands and objects https://cvpr.thecvf.com/virtual/2023/poster/22341.",
+      "url": "https://cvpr.thecvf.com/virtual/2023/poster/22341",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Current robot manipulation has relied on using a parallel gripper, which restricts the robot to a limited set of objects https://cvpr.thecvf.com/virtual/2023/poster/22341.",
+      "url": "https://cvpr.thecvf.com/virtual/2023/poster/22341",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "To enable general-purpose robots, the robot must operate daily articulated objects as humans do https://cvpr.thecvf.com/virtual/2023/poster/22341.",
+      "url": "https://cvpr.thecvf.com/virtual/2023/poster/22341",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    }
+  ],
+  "noncited_factual_accuracy": 0.0,
+  "noncited_count": 0,
+  "noncited_correct": 0,
+  "noncited_details": []
+}

@@ -1,0 +1,223 @@
+{
+  "arxiv_id": "2310.12986",
+  "model": "MiniMax-M3",
+  "system": "search-baseline-v12",
+  "reference_precision": 0.0,
+  "reference_recall": 0.0,
+  "reference_count": 9,
+  "reference_matches": 0,
+  "ground_truth_count": 61,
+  "predicted_titles": [
+    "Face manifold: manifold learning for synthetic face generation",
+    "Nonlinear dimensionality reduction by locally linear ...",
+    "Think Globally, Fit Locally: Unsupervised Learning of Low Dimensional Manifolds",
+    "Tenenbaum Reduction A Global Geometric ...",
+    "Laplacian Eigenmaps for Dimensionality Reduction and ...",
+    "Face recognition with image sets using manifold density divergence",
+    "Human Age Estimation With Regression on Discriminative Aging Manifold",
+    "Image-Based Human Age Estimation by Manifold Learning and Locally Adjusted Robust Regression",
+    "Gait-based human age estimation using age group-dependent manifold learning and regression"
+  ],
+  "cited_match_rate": 0.9444444444444444,
+  "cited_count": 18,
+  "cited_supported": 17,
+  "cited_details": [
+    {
+      "statement": "Roweis and Saul introduced Locally Linear Embedding (LLE), an unsupervised learning algorithm that computes low-dimensional, neighborhood-preserving embeddings of high-dimensional data https://www.semanticscholar.org/paper/Nonlinear-dimensionality-reduction-by-locally-Roweis-Saul/f0a3e1752e1146da927adc24ae07144ab2e744ec.",
+      "url": "https://semanticscholar.org/paper/Nonlinear-dimensionality-reduction-by-locally-Roweis-Saul/f0a3e1752e1146da927adc24ae07144ab2e744ec",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Tenenbaum and colleagues published \"A Global Geometric Framework for Nonlinear Dimensionality Reduction\" in Science 290, 2319 (2000) https://pdodds.w3.uvm.edu/files/papers/others/2000/tenenbaum2000a.pdf.",
+      "url": "https://pdodds.w3.uvm.edu/files/papers/others/2000/tenenbaum2000a.pdf",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Saul and Roweis published \"Think Globally, Fit Locally: Unsupervised Learning of Low Dimensional Manifolds\" in the Journal of Machine Learning Research, volume 4, June 2003, pages 119-155 https://www.jmlr.org/papers/v4/saul03a.html.",
+      "url": "https://jmlr.org/papers/v4/saul03a.html",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Belkin and Niyogi presented Laplacian Eigenmaps for Dimensionality Reduction and Data Representation in Neural Computation, volume 15, issue 6, pages 1373-1396, June 2003, with a presentation outline listing an Introduction covering motivation and the algorithm, an explanation section covering the optimization and continuous manifolds with the heat kernel, and results on the Swiss roll and the syntactic structure of words https://www.aoml.noaa.gov/ftp/pub/phod/thacker/SSAmanifoldPapers/BelkinNiyogi2007Presentation.pdf.",
+      "url": "https://aoml.noaa.gov/ftp/pub/phod/thacker/SSAmanifoldPapers/BelkinNiyogi2007Presentation.pdf",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Niyogi with the University of Chicago Departments of Computer Science and Statistics https://www.aoml.noaa.gov/ftp/pub/phod/thacker/SSAmanifoldPapers/BelkinNiyogi2007Presentation.pdf.",
+      "url": "https://aoml.noaa.gov/ftp/pub/phod/thacker/SSAmanifoldPapers/BelkinNiyogi2007Presentation.pdf",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Dinashi, Toosi, and Akhaee proposed \"Face Manifold: Manifold Learning for Synthetic Face Generation,\" framing face as fundamental to communication, identity, and expressions, and treating estimating face structure as a fundamental task https://arxiv.org/abs/1910.01403.",
+      "url": "https://arxiv.org/abs/1910.01403",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The work notes that the training dataset has a great influence on the resulting model, and identifies a drawback of direct representation that produces unsatisfactory outputs https://arxiv.org/abs/1910.01403.",
+      "url": "https://arxiv.org/abs/1910.01403",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A face recognition method using image sets was proposed for applications where a set of a person's face images is available rather than a single image, using a semiparametric model for learning probability densities confined to highly non-linear but intrinsically low-dimensional manifolds https://research-portal.st-andrews.ac.uk/en/publications/face-recognition-with-image-sets-using-manifold-density-divergenc/.",
+      "url": "https://research-portal.st-andrews.ac.uk/en/publications/face-recognition-with-image-sets-using-manifold-density-divergenc",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The method formulates recognition as minimizing the divergence between densities estimated on these manifolds and was evaluated on a large data set acquired in realistic imaging conditions with severe illumination variation, achieving a 94% recognition rate on average https://research-portal.st-andrews.ac.uk/en/publications/face-recognition-with-image-sets-using-manifold-density-divergenc/.",
+      "url": "https://research-portal.st-andrews.ac.uk/en/publications/face-recognition-with-image-sets-using-manifold-density-divergenc",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A 2008 study in IEEE Transactions on Multimedia notes that, due to the temporal property of age progression, face images with aging features may display sequential patterns with low-dimensional distributions https://doi.org/10.1109/tmm.2008.921847.",
+      "url": "https://doi.org/10.1109/tmm.2008.921847",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The study reports that such aging patterns can be effectively extracted from a discriminant subspace learning algorithm and visualized as distinct manifold structures, and that a multiple linear regression procedure with a quadratic model function can be facilitated by the low-dimensional manifold https://doi.org/10.1109/tmm.2008.921847.",
+      "url": "https://doi.org/10.1109/tmm.2008.921847",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The study identifies potential applications for human-centered multimedia communication tools https://doi.org/10.1109/tmm.2008.921847.",
+      "url": "https://doi.org/10.1109/tmm.2008.921847",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A 2008 study in IEEE Transactions on Image Processing frames age estimation as challenging for existing computer vision systems, noting that the aging process is determined by the person's gene as well as external factors such as health, living style, living location, and weather conditions, and that males and females may age differently https://doi.org/10.1109/tip.2008.924280.",
+      "url": "https://doi.org/10.1109/tip.2008.924280",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The study introduced an age manifold learning scheme for extracting face aging features combined with a locally adjusted robust regressor for learning and prediction, improving age estimation accuracy over previous methods https://doi.org/10.1109/tip.2008.924280.",
+      "url": "https://doi.org/10.1109/tip.2008.924280",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The work identifies potential real-world applications in human-computer interaction and multimedia communication https://doi.org/10.1109/tip.2008.924280.",
+      "url": "https://doi.org/10.1109/tip.2008.924280",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A 2018 study notes that the aging process of gait significantly differs among age groups such as children, adults, and the elderly, and that previous gait-based age estimation methods employ a single age group-independent estimation model that suffers from large estimation errors when age variation increases https://www.semanticscholar.org/paper/b55438c64dcb2f52404152a90acecce2f7ded2d5.",
+      "url": "https://semanticscholar.org/paper/b55438c64dcb2f52404152a90acecce2f7ded2d5",
+      "support_votes": 2,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The study proposed an age-group-dependent gait-based age estimation method for applications such as automatic customer counting for marketing research and age-based access control, where gait is observable at a distance from a camera, by composing age groups through clustering gait features with their age labels and learning a directed acyclic graph support vector machine classifier for multiple age groups https://www.semanticscholar.org/paper/b55438c64dcb2f52404152a90acecce2f7ded2d5.",
+      "url": "https://semanticscholar.org/paper/b55438c64dcb2f52404152a90acecce2f7ded2d5",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Modeling a sequence of video frames as a linear subspace on the Grassmann manifold has become increasingly attractive in multiple computer vision applications, with the success of such algorithms depending on a good distance measure https://www.semanticscholar.org/paper/fd3bf3a9cef5500aa3b97588498e534.",
+      "url": "https://semanticscholar.org/paper/fd3bf3a9cef5500aa3b97588498e534",
+      "support_votes": 0,
+      "total_votes": 0,
+      "match": false
+    }
+  ],
+  "noncited_factual_accuracy": 1.0,
+  "noncited_count": 2,
+  "noncited_correct": 2,
+  "noncited_details": [
+    {
+      "claim": "The Belkin and Niyogi presentation was given for CSE291 sp07, with M.",
+      "evidence": [
+        {
+          "title": "TR-2002-01 - Department of Computer Science",
+          "abstract": "Mikhail Belkin; Partha Niyogi. 4 January, 2002. Communicated by Partha Niyogi. Abstract. One of the central problems in machine learning and ...",
+          "url": "https://newtraell.cs.uchicago.edu/research/publications/techreports/TR-2002-01"
+        },
+        {
+          "title": "Convergence of Laplacian Eigenmaps",
+          "abstract": "by M Belkin · 2006 · Cited by 447 — (NIPS 2006) Authors Mikhail Belkin, Partha Niyogi Abstract. In this paper we show convergence of eigenvectors of the point cloud Laplacian to the eigen- ...",
+          "url": "https://proceedings.neurips.cc/paper_files/paper/2006/hash/5848ad959570f87753a60ce8be1567f3-Abstract.html"
+        },
+        {
+          "title": "Laplacian Eigenmaps for Dimensionality Reduction and ...",
+          "abstract": "by M Belkin · 2003 · Cited by 11061 — Presentation for CSE291 sp07 M. Belkin1 P. Niyogi2 1University of Chicago, Department of Mathematics. Departments of Computer Science and ...",
+          "url": "https://www.aoml.noaa.gov/ftp/pub/phod/thacker/SSAmanifoldPapers/BelkinNiyogi2007Presentation.pdf"
+        },
+        {
+          "title": "Belkin, M. and Niyogi, P. (2003) Laplacian Eigenmaps for ...",
+          "abstract": "Belkin, M. and Niyogi, P. (2003) Laplacian Eigenmaps for Dimensionality Reduction and Data Representation. Neural Computation, 15, 1373-1396.",
+          "url": "https://www.scirp.org/reference/referencespapers?referenceid"
+        },
+        {
+          "title": "Laplacian Eigenmaps for Dimensionality Reduction and ...",
+          "abstract": "Laplacian Eigenmaps for Dimensionality Reduction and Data Representation · Mikhail Belkin, P. Niyogi · Published in Neural Computation 1 June 2003 · Computer ...",
+          "url": "https://www.semanticscholar.org/paper/Laplacian-Eigenmaps-for-Dimensionality-Reduction-Belkin-Niyogi/88816ae492956f3004daa41357166f1181c0c1bf"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    },
+    {
+      "claim": "Belkin affiliated with the University of Chicago Department of Mathematics and P.",
+      "evidence": [
+        {
+          "title": "Mikhail Belkin",
+          "abstract": "Mikhail Belkin received his Ph.D. in 2003 from the Department of Mathematics at the University of Chicago. His research interests are in theory and ...",
+          "url": "https://datascience.ucsd.edu/people/mikhail-belkin/"
+        },
+        {
+          "title": "Mikhail (Misha) Belkin",
+          "abstract": "Co-authors. View all ; Two models of double descent for weak features. M Belkin, D Hsu, J Xu. SIAM Journal on Mathematics of Data Science 2 (4), 1167-1180, 2020.",
+          "url": "https://scholar.google.com/citations?user=Iwd9DdkAAAAJ&hl=en"
+        },
+        {
+          "title": "Mikhail Belkin",
+          "abstract": "I am interested in a broad range of questions concerning the theory and practice of Artificial Intelligence and Machine Learning.",
+          "url": "https://misha.belkin-wang.org/"
+        },
+        {
+          "title": "Misha Belkin",
+          "abstract": "He received his PhD from the Department of Mathematics at the University of Chicago (advised by Partha Niyogi). His research interests are broadly in theory ...",
+          "url": "https://simons.berkeley.edu/people/misha-belkin"
+        },
+        {
+          "title": "Mikhail Belkin's research works | University of California San ...",
+          "abstract": "In this paper we show that feedforward neural networks corresponding to arbitrary directed acyclic graphs undergo transition to linearity as their \"width\" ...",
+          "url": "https://www.researchgate.net/scientific-contributions/Mikhail-Belkin-9768164/publications/4"
+        }
+      ],
+      "true_votes": 3,
+      "total_votes": 3,
+      "decision": true
+    }
+  ]
+}

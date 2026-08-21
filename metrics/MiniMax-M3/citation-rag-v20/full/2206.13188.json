@@ -1,0 +1,165 @@
+{
+  "arxiv_id": "2206.13188",
+  "model": "MiniMax-M3",
+  "system": "citation-rag-v20",
+  "reference_precision": 0.5454545454545454,
+  "reference_recall": 0.023809523809523808,
+  "reference_count": 11,
+  "reference_matches": 6,
+  "ground_truth_count": 252,
+  "predicted_titles": [
+    "Global and Local Contrastive Self-Supervised Learning for Semantic Segmentation of HR Remote Sensing Images",
+    "Self-Supervised Representation Learning for Remote Sensing Image Change Detection Based on Temporal Prediction",
+    "A General Self-Supervised Framework for Remote Sensing Image Classification",
+    "Self-Supervised Learning of Remote Sensing Scene Representations Using Contrastive Multiview Coding",
+    "Contrastive Self-Supervised Learning With Smoothed Representation for Remote Sensing",
+    "SCL-MLNet: Boosting Few-Shot Remote Sensing Scene Classification via Self-Supervised Contrastive Learning",
+    "Task-Related Self-Supervised Learning for Remote Sensing Image Change Detection",
+    "When Self-Supervised Learning Meets Scene Classification: Remote Sensing Scene Classification Based on a Multitask Learning Framework",
+    "X-ModalNet: A Semi-Supervised Deep Cross-Modal Network for Classification of Remote Sensing Data",
+    "Evaluating the Label Efficiency of Contrastive Self-Supervised Learning for Multi-Resolution Satellite Imagery",
+    "Exploring PolSAR Images Representation via Self-Supervised Learning and Its Application on Few-Shot Classification"
+  ],
+  "cited_match_rate": 0.9473684210526315,
+  "cited_count": 19,
+  "cited_supported": 18,
+  "cited_details": [
+    {
+      "statement": "In remote sensing, numerous unlabeled images are continuously accumulated over time and it is difficult to annotate all the data, motivating self-supervised learning (SSL) techniques that improve recognition using unlabeled data https://doi.org/10.1109/lgrs.2021.3069799.",
+      "url": "https://doi.org/10.1109/lgrs.2021.3069799",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The application of deep neural networks to remote sensing imagery is often constrained by the lack of ground truth https://arxiv.org/abs/2210.06786.",
+      "url": "https://arxiv.org/abs/2210.06786",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Traditional change detection methods operate in the simple image domain or hand-crafted features with less robustness to inconsistencies between bitemporal satellite images, and generating accurate semantic supervision through manual annotation remains challenging https://doi.org/10.3390/rs12111868.",
+      "url": "https://doi.org/10.3390/rs12111868",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A self-supervised representation learning method based on temporal prediction was proposed for remote sensing image change detection, transforming two satellite images into more consistent feature representations through a self-supervised mechanism without semantic supervision and any additional computations https://doi.org/10.3390/rs12111868.",
+      "url": "https://doi.org/10.3390/rs12111868",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A self-supervised pre-training framework applied the masked image modeling (MIM) method to remote sensing image research for the first time, and its completion proxy task encourages the model to reconstruct the masked patches, correlating the unseen parts with the seen parts in semantics https://www.semanticscholar.org/paper/52be2330207ab72e04b617893954a368c8a351fc.",
+      "url": "https://semanticscholar.org/paper/52be2330207ab72e04b617893954a368c8a351fc",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The framework examines how pretext tasks affect downstream performance, finding that the attribution consensus of the pre-trained model and downstream tasks toward the proxy and classification targets differs from that in natural image understanding https://www.semanticscholar.org/paper/52be2330207ab72e04b617893954a368c8a351fc.",
+      "url": "https://semanticscholar.org/paper/52be2330207ab72e04b617893954a368c8a351fc",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A semi-supervised deep cross-modal network, X-ModalNet, was proposed for the classification of remote sensing data https://arxiv.org/abs/2006.13806.",
+      "url": "https://arxiv.org/abs/2006.13806",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Compared with natural image datasets, the acquisition of remote sensing scene images is more difficult and the scale of remote sensing image datasets is generally small https://doi.org/10.3390/rs12203276.",
+      "url": "https://doi.org/10.3390/rs12203276",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A multitask learning framework was introduced that combines the tasks of self-supervised learning and scene classification, using a new mixup loss strategy with dynamic weight to combine the two tasks, unlike previous multitask methods https://doi.org/10.3390/rs12203276.",
+      "url": "https://doi.org/10.3390/rs12203276",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "For change detection, an unsupervised method based on task-related self-supervised learning with a smooth mechanism (TSLCD) was proposed, in which a task-related SSL module extracts spatial features more effectively, a hard-sample-mining loss function pays more attention to hard-to-classify samples, and a smooth mechanism removes pseudo-changes and noise https://arxiv.org/abs/2105.04951.",
+      "url": "https://arxiv.org/abs/2105.04951",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Existing few-shot scene classification methods have limitations on using few annotated data and do not fully consider intra-class samples with classification targets in different sizes, leading to poor feature representation https://doi.org/10.1109/tgrs.2021.3109268.",
+      "url": "https://doi.org/10.1109/tgrs.2021.3109268",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "MoCo and SimCLR are among the state-of-the-art self-supervised learning approaches https://doi.org/10.1109/lgrs.2021.3069799.",
+      "url": "https://doi.org/10.1109/lgrs.2021.3069799",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Contrastive self-supervised learning with smoothed representation was built on the SimCLR framework, leveraging the well-known characteristic that images within a short distance might be semantically similar, and simultaneously utilizes several neighboring images as a positive pair of the anchor image, unlike Tile2Vec, MoCo, and SimCLR, which use only two augmented views of the single-input image https://doi.org/10.1109/lgrs.2021.3069799.",
+      "url": "https://doi.org/10.1109/lgrs.2021.3069799",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "Self-supervised contrastive learning was woven into few-shot remote sensing scene classification through multi-task learning in SCL-MLNet, enabling feature extractors to learn representative image features from few annotated samples, with a new loss function to train the model end-to-end and speed up convergence https://doi.org/10.1109/tgrs.2021.3109268.",
+      "url": "https://doi.org/10.1109/tgrs.2021.3109268",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Contrastive Multiview Coding was applied to learn remote sensing scene representations, where the prior ability to use supervised deep learning methods for small datasets had been established but some limitations remained https://arxiv.org/abs/2104.07070.",
+      "url": "https://arxiv.org/abs/2104.07070",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A global-and-local contrastive self-supervised learning method was proposed for semantic segmentation of high-resolution remote sensing images, in a context where supervised deep learning had achieved great success in RSI semantic segmentation https://arxiv.org/abs/2106.10605.",
+      "url": "https://arxiv.org/abs/2106.10605",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "For polarimetric SAR (PolSAR) image classification, a self-supervised PolSAR representation learning (SSPRL) method was proposed in which a self-SSL method without negative samples was explored, with a positive sample generation approach, a novel encoder architecture designed for PolSAR images, and mix-up implemented as a regularization strategy; the method was motivated by the difficulty of obtaining high-quality labeled PolSAR data and the poor generalization of specific supervision labels https://doi.org/10.1109/lgrs.2022.3198135.",
+      "url": "https://doi.org/10.1109/lgrs.2022.3198135",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Most existing CNN-based change detection methods still suffer from inadequate pseudo-changes suppression and insufficient feature representation https://arxiv.org/abs/2105.04951.",
+      "url": "https://arxiv.org/abs/2105.04951",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The applicability of supervised deep learning methods to small datasets is limited, since some limitations remained despite the prior ability to use such methods on small datasets https://arxiv.org/abs/2104.07070.",
+      "url": "https://arxiv.org/abs/2104.07070",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    }
+  ],
+  "noncited_factual_accuracy": 0.0,
+  "noncited_count": 0,
+  "noncited_correct": 0,
+  "noncited_details": []
+}

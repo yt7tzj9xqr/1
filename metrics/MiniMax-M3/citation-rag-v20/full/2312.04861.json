@@ -1,0 +1,227 @@
+{
+  "arxiv_id": "2312.04861",
+  "model": "MiniMax-M3",
+  "system": "citation-rag-v20",
+  "reference_precision": 0.2,
+  "reference_recall": 0.007220216606498195,
+  "reference_count": 10,
+  "reference_matches": 2,
+  "ground_truth_count": 277,
+  "predicted_titles": [
+    "Radar Camera Fusion via Representation Learning in Autonomous Driving",
+    "PolarNet: Accelerated Deep Open Space Segmentation Using Automotive Radar in Polar Domain",
+    "CenterRadarNet: Joint 3D Object Detection and Tracking Framework using 4D FMCW Radar",
+    "NeuRadar: Neural Radiance Fields for Automotive Radar Point Clouds",
+    "ERASE-Net: Efficient Segmentation Networks for Automotive Radar Signals",
+    "Bootstrapping Autonomous Driving Radars with Self-Supervised Learning",
+    "GET-UP: GEomeTric-aware Depth Estimation with Radar Points UPsampling",
+    "Cross-Domain Spatial Matching for Camera and Radar Sensor Data Fusion in Autonomous Vehicle Perception System",
+    "K-Radar: 4D Radar Object Detection for Autonomous Driving in Various Weather Conditions",
+    "Deep Radar Detector"
+  ],
+  "cited_match_rate": 0.9642857142857143,
+  "cited_count": 28,
+  "cited_supported": 27,
+  "cited_details": [
+    {
+      "statement": "Automotive radar operates in the 77–81 GHz radio band and offers weather-resilient sensing, providing a complementary capability to vision- or LiDAR-based autonomous driving systems [https://arxiv.org/abs/2311.01423].",
+      "url": "https://arxiv.org/abs/2311.01423",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Radars use longer wavelength radio bands (77–81 GHz) than RGB cameras (384–769 THz) and LiDARs (361–331 THz), resulting in robust measurements in adverse weather [https://proceedings.neurips.cc/paper_files/paper/2022/hash/185fdf627eaae2abab36205dcd19b817-Abstract-Datasets_and_Benchmarks.html].",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2022/hash/185fdf627eaae2abab36205dcd19b817-Abstract-Datasets_and_Benchmarks.html",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Automotive radar is considered a robust and low-cost solution even in adverse weather among sensors for assisted and autonomous driving [https://arxiv.org/abs/2209.12940].",
+      "url": "https://arxiv.org/abs/2209.12940",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "While camera and LiDAR processing have been revolutionized by deep learning, radar processing still relies on classical tools [https://arxiv.org/pdf/1906.12187].",
+      "url": "https://arxiv.org/pdf/1906.12187",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Deep Radar Detector introduced a deep-learning approach for radar processing that works directly on radar complex data [https://arxiv.org/pdf/1906.12187].",
+      "url": "https://arxiv.org/pdf/1906.12187",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "To overcome the lack of radar labeled data, the authors trained only on radar calibration data and introduced new radar augmentation techniques [https://arxiv.org/pdf/1906.12187].",
+      "url": "https://arxiv.org/pdf/1906.12187",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The authors evaluated their method on the radar 4D detection task and stated that deep learning on radar eliminates the need for an expensive radar calibration process [https://arxiv.org/pdf/1906.12187].",
+      "url": "https://arxiv.org/pdf/1906.12187",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Prior segmentation methods have been observed to discard information in raw RAD data by reducing 3D information in the signal to 2D planes via averaging, which leads to a downgrade of segmentation performance [https://arxiv.org/abs/2209.12940].",
+      "url": "https://arxiv.org/abs/2209.12940",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "ERASE-Net proposes efficient segmentation networks for automotive radar signals that process the raw RAD data directly [https://arxiv.org/abs/2209.12940].",
+      "url": "https://arxiv.org/abs/2209.12940",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "K-Radar introduced KAIST-Radar, a novel large-scale object detection dataset and benchmark containing 35K frames of 4D Radar tensor data with power measurements along the Doppler, range, azimuth, and elevation dimensions [https://proceedings.neurips.cc/paper_files/paper/2022/hash/185fdf627eaae2abab36205dcd19b817-Abstract-Datasets_and_Benchmarks.html].",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2022/hash/185fdf627eaae2abab36205dcd19b817-Abstract-Datasets_and_Benchmarks.html",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "K-Radar targets 4D Radar object detection for autonomous driving in various weather conditions [https://proceedings.neurips.cc/paper_files/paper/2022/hash/185fdf627eaae2abab36205dcd19b817-Abstract-Datasets_and_Benchmarks.html].",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2022/hash/185fdf627eaae2abab36205dcd19b817-Abstract-Datasets_and_Benchmarks.html",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Most existing radar datasets only provide 3D Radar tensor data with Doppler, range, and azimuth dimensions, and the absence of elevation information makes 3D bounding-box estimation from 3DRT data challenging [https://proceedings.neurips.cc/paper_files/paper/2022/hash/185fdf627eaae2abab36205dcd19b817-Abstract-Datasets_and_Benchmarks.html].",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2022/hash/185fdf627eaae2abab36205dcd19b817-Abstract-Datasets_and_Benchmarks.html",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "CenterRadarNet notes that raw radio-frequency radar tensors contain rich spatiotemporal semantics [https://arxiv.org/abs/2311.01423].",
+      "url": "https://arxiv.org/abs/2311.01423",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "PolarNet performs accelerated deep open-space segmentation using automotive radar in the polar domain [https://arxiv.org/abs/2103.03387].",
+      "url": "https://arxiv.org/abs/2103.03387",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Radars and cameras are mature, cost-effective, and robust sensors widely used in the perception stack of mass-produced autonomous driving systems [https://arxiv.org/abs/2103.07825].",
+      "url": "https://arxiv.org/abs/2103.07825",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The two sensor modalities are described as complementary [https://arxiv.org/abs/2103.07825].",
+      "url": "https://arxiv.org/abs/2103.07825",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "GET-UP, developed by Huawei Sun, Zixu Wang, Hao Feng, Julius Ott, Lorenzo Servadei, and Robert Wille at the Technical University of Munich and Infineon Technologies AG, addresses radar–camera depth estimation by projecting radar points onto the image plane, resulting in a sparse depth map [https://arxiv.org/abs/2409.02720].",
+      "url": "https://arxiv.org/abs/2409.02720",
+      "support_votes": 1,
+      "total_votes": 3,
+      "match": false
+    },
+    {
+      "statement": "The Cross-Domain Spatial Matching (CDSM) method was proposed by Daniel Dworak, Mateusz Komorkiewicz, Paweł Skruch, and Jerzy Baranowski for camera and radar sensor data fusion in autonomous vehicle perception [https://arxiv.org/abs/2404.16548].",
+      "url": "https://arxiv.org/abs/2404.16548",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Example CDSM predictions were demonstrated on NuScenes test data, with predicted objects marked in blue in both camera and enhanced BEV views, and green cuboids representing matched ground-truth labels [https://arxiv.org/abs/2404.16548].",
+      "url": "https://arxiv.org/abs/2404.16548",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "CenterRadarNet by Jen-Hao Cheng, Sheng-Yao Kuan, Hugo Latapie, Gaowen Liu, and Jenq-Neng Hwang proposes a joint 3D object detection and tracking framework using 4D FMCW radar [https://arxiv.org/abs/2311.01423].",
+      "url": "https://arxiv.org/abs/2311.01423",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The framework leverages 4D FMCW radar in the 77 to 81 GHz range, which provides weather-resilient sensing complementary to vision- or LiDAR-based systems [https://arxiv.org/abs/2311.01423].",
+      "url": "https://arxiv.org/abs/2311.01423",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "K-Radar notes that the lack of elevation information in most existing 3D radar tensor datasets makes 3D bounding-box estimation from 3DRT data challenging [https://proceedings.neurips.cc/paper_files/paper/2022/hash/185fdf627eaae2abab36205dcd19b817-Abstract-Datasets_and_Benchmarks.html].",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2022/hash/185fdf627eaae2abab36205dcd19b817-Abstract-Datasets_and_Benchmarks.html",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The K-Radar dataset provides 4D Radar tensor data with elevation information [https://proceedings.neurips.cc/paper_files/paper/2022/hash/185fdf627eaae2abab36205dcd19b817-Abstract-Datasets_and_Benchmarks.html].",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2022/hash/185fdf627eaae2abab36205dcd19b817-Abstract-Datasets_and_Benchmarks.html",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The perception of autonomous vehicles using radars has attracted increased research attention, motivating self-supervised learning approaches for bootstrapping autonomous driving radars [https://arxiv.org/abs/2312.04519].",
+      "url": "https://arxiv.org/abs/2312.04519",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "NeuRadar by Mahan Rafidashti, Ji Lan, Maryam Fatemi, Junsheng Fu, Lars Hammarstrand, and Lennart Svensson from Zenseact and Chalmers University of Technology applies neural radiance fields to automotive radar point clouds [https://arxiv.org/abs/2504.00859].",
+      "url": "https://arxiv.org/abs/2504.00859",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "PolarNet operates directly in the polar domain to accelerate deep open-space segmentation [https://arxiv.org/abs/2103.03387].",
+      "url": "https://arxiv.org/abs/2103.03387",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "K-Radar reports that existing radar datasets contain a relatively small number of samples compared to existing camera and LiDAR datasets, which may hinder the development of sophisticated data-driven deep learning techniques for radar-based perception [https://proceedings.neurips.cc/paper_files/paper/2022/hash/185fdf627eaae2abab36205dcd19b817-Abstract-Datasets_and_Benchmarks.html].",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2022/hash/185fdf627eaae2abab36205dcd19b817-Abstract-Datasets_and_Benchmarks.html",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Most existing radar datasets lack elevation information, making 3D bounding-box estimation from 3DRT data challenging [https://proceedings.neurips.cc/paper_files/paper/2022/hash/185fdf627eaae2abab36205dcd19b817-Abstract-Datasets_and_Benchmarks.html].",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2022/hash/185fdf627eaae2abab36205dcd19b817-Abstract-Datasets_and_Benchmarks.html",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    }
+  ],
+  "noncited_factual_accuracy": 0.0,
+  "noncited_count": 0,
+  "noncited_correct": 0,
+  "noncited_details": []
+}

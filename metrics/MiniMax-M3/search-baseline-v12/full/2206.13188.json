@@ -1,0 +1,199 @@
+{
+  "arxiv_id": "2206.13188",
+  "model": "MiniMax-M3",
+  "system": "search-baseline-v12",
+  "reference_precision": 0.6,
+  "reference_recall": 0.023809523809523808,
+  "reference_count": 10,
+  "reference_matches": 6,
+  "ground_truth_count": 252,
+  "predicted_titles": [
+    "Global and Local Contrastive Self-Supervised Learning for Semantic Segmentation of HR Remote Sensing Images",
+    "Remote Sensing Image Scene Classification with Self-Supervised Learning Based on Partially Unlabeled Datasets",
+    "Self-Supervised Representation Learning for Remote Sensing Image Change Detection Based on Temporal Prediction",
+    "Momentum Contrast for Unsupervised Visual Representation Learning",
+    "A General Self-Supervised Framework for Remote Sensing Image Classification",
+    "Contrastive Self-Supervised Learning With Smoothed Representation for Remote Sensing",
+    "SCL-MLNet: Boosting Few-Shot Remote Sensing Scene Classification via Self-Supervised Contrastive Learning",
+    "Task-Related Self-Supervised Learning for Remote Sensing Image Change Detection",
+    "X-ModalNet: A Semi-Supervised Deep Cross-Modal Network for Classification of Remote Sensing Data",
+    "When Self-Supervised Learning Meets Scene Classification: Remote Sensing Scene Classification Based on a Multitask Learning Framework"
+  ],
+  "cited_match_rate": 1.0,
+  "cited_count": 24,
+  "cited_supported": 24,
+  "cited_details": [
+    {
+      "statement": "Recently, supervised deep learning has achieved great success in remote sensing image (RSI) semantic segmentation [https://arxiv.org/abs/2106.10605].",
+      "url": "https://arxiv.org/abs/2106.10605",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The development of convolutional neural networks (CNNs) has promoted continuous progress in scene classification of remote sensing images [https://doi.org/10.3390/rs12203276].",
+      "url": "https://doi.org/10.3390/rs12203276",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The acquisition of remote sensing scene images is more difficult than that of natural images, and consequently the scale of remote sensing image datasets is generally small [https://doi.org/10.3390/rs12203276].",
+      "url": "https://doi.org/10.3390/rs12203276",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Supervised learning for remote sensing image scene classification requires large-scale and high-quality handcrafted labeled datasets, leading to a high cost of obtaining annotated samples [https://www.semanticscholar.org/paper/3ff098842c30c2e53e332e0cf8cca65cedab30c9].",
+      "url": "https://semanticscholar.org/paper/3ff098842c30c2e53e332e0cf8cca65cedab30c9",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Self-supervised learning can alleviate this problem by using unlabeled data to learn the image's feature representation and then migrate to the downstream task [https://www.semanticscholar.org/paper/3ff098842c30c2e53e332e0cf8cca65cedab30c9].",
+      "url": "https://semanticscholar.org/paper/3ff098842c30c2e53e332e0cf8cca65cedab30c9",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "In remote sensing, numerous unlabeled images are continuously accumulated over time, and it is difficult to annotate all the data, so a self-supervised learning technique that can improve the recognition rate using unlabeled data will be useful [https://doi.org/10.1109/lgrs.2021.3069799].",
+      "url": "https://doi.org/10.1109/lgrs.2021.3069799",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "An encoder–decoder structure has been used to construct a self-supervised learning architecture for remote sensing scene classification, in which the image mask randomly discards some image patches during encoding so that the image's feature representation can be learned from the remaining image patches, and a lightweight decoder recovers the pixels of the original image patches according to the features learned in the encoding stage, using a constructed large-scale unlabeled training set [https://www.semanticscholar.org/paper/3ff098842c30c2e53e332e0cf8cca65cedab30c9].",
+      "url": "https://semanticscholar.org/paper/3ff098842c30c2e53e332e0cf8cca65cedab30c9",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A self-supervised pre-training framework based on masked image modeling (MIM) has been proposed for remote sensing image research, in which the completion proxy task encourages the model to reconstruct the masked patches and correlate the unseen parts with the seen parts in semantics [https://www.semanticscholar.org/paper/52be2330207ab72e04b617893954a368c8a351fc].",
+      "url": "https://semanticscholar.org/paper/52be2330207ab72e04b617893954a368c8a351fc",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "The attribution consensus of the pre-trained model and downstream tasks toward the proxy and classification targets is quite different from that in natural image understanding, and this transferable consensus is persistent in cross-dataset settings [https://www.semanticscholar.org/paper/52be2330207ab72e04b617893954a368c8a351fc].",
+      "url": "https://semanticscholar.org/paper/52be2330207ab72e04b617893954a368c8a351fc",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Recently, deep learning techniques have reported compelling performance on robust feature learning for change detection [https://doi.org/10.3390/rs12111868].",
+      "url": "https://doi.org/10.3390/rs12111868",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A self-supervised representation learning method based on temporal prediction has been proposed for remote sensing image change detection, transforming two satellite images into more consistent feature representations through a self-supervised mechanism without semantic supervision and any additional computations, so that a better difference image can be obtained that reduces the propagated error of traditional change detection methods operating on the simple image domain or hand-crafted features, which have less robustness to inconsistencies between bitemporal satellite images [https://doi.org/10.3390/rs12111868].",
+      "url": "https://doi.org/10.3390/rs12111868",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Generating accurate semantic supervision that reveals real change information in satellite images remains challenging, especially for manual annotation [https://doi.org/10.3390/rs12111868].",
+      "url": "https://doi.org/10.3390/rs12111868",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Most existing CNN-based change detection methods suffer from inadequate pseudo-changes suppression and insufficient feature representation [https://arxiv.org/abs/2105.04951].",
+      "url": "https://arxiv.org/abs/2105.04951",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "An unsupervised change detection method based on a task-related self-supervised learning change detection network with a smooth mechanism (TSLCD) has been proposed, in which a task-related self-supervised learning module extracts spatial features more effectively, a hard-sample-mining loss function pays more attention to hard-to-classify samples, and a smooth mechanism removes some pseudo-changes and noise [https://arxiv.org/abs/2105.04951].",
+      "url": "https://arxiv.org/abs/2105.04951",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Change detection for remote sensing images is widely applied for urban change detection, disaster assessment, and other fields [https://arxiv.org/abs/2105.04951].",
+      "url": "https://arxiv.org/abs/2105.04951",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Momentum Contrast (MoCo) has been presented for unsupervised visual representation learning using a contrastive loss [https://arxiv.org/abs/1911.05722].",
+      "url": "https://arxiv.org/abs/1911.05722",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Global and local contrastive self-supervised learning has been developed for semantic segmentation of high-resolution remote sensing images [https://arxiv.org/abs/2106.10605].",
+      "url": "https://arxiv.org/abs/2106.10605",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A well-known characteristic used in self-supervised learning for remote sensing is that images within a short distance might be semantically similar [https://doi.org/10.1109/lgrs.2021.3069799].",
+      "url": "https://doi.org/10.1109/lgrs.2021.3069799",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Contrastive self-supervised learning with smoothed representation has been proposed for remote sensing based on the SimCLR framework, which simultaneously utilizes several neighboring images as a positive pair of the anchor image, unlike existing methods such as Tile2Vec, and uses multiple-input images and averages their representations rather than relying on two augmented views of the single-input image as in MoCo and SimCLR, which are among the state-of-the-art self-supervised learning approaches [https://doi.org/10.1109/lgrs.2021.3069799].",
+      "url": "https://doi.org/10.1109/lgrs.2021.3069799",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Few-shot classification aims at recognizing novel categories from low data regimes based on prior knowledge [https://doi.org/10.1109/tgrs.2021.3109268].",
+      "url": "https://doi.org/10.1109/tgrs.2021.3109268",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "Existing methods for few-shot scene classification have limitations on using few annotated data and do not fully consider the intra-class samples with classification targets in different sizes, which lead to poor feature representation [https://doi.org/10.1109/tgrs.2021.3109268].",
+      "url": "https://doi.org/10.1109/tgrs.2021.3109268",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A self-supervised contrastive learning-based metric learning network (SCL-MLNet) has been introduced for few-shot remote sensing scene classification, weaving self-supervised contrastive learning into few-shot classification algorithms through multi-task learning, enabling feature extractors to learn representative image features from few annotated samples, and considering the differences between intra-class samples [https://doi.org/10.1109/tgrs.2021.3109268].",
+      "url": "https://doi.org/10.1109/tgrs.2021.3109268",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A multitask learning framework combining self-supervised learning and scene classification has been proposed, adopting a new mixup loss strategy with dynamic weight to combine the two tasks and improve feature extraction for remote sensing scenes containing small objects and complex backgrounds [https://doi.org/10.3390/rs12203276].",
+      "url": "https://doi.org/10.3390/rs12203276",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    },
+    {
+      "statement": "A semi-supervised deep cross-modal network (X-ModalNet) has been developed for the classification of remote sensing data [https://arxiv.org/abs/2006.13806].",
+      "url": "https://arxiv.org/abs/2006.13806",
+      "support_votes": 3,
+      "total_votes": 3,
+      "match": true
+    }
+  ],
+  "noncited_factual_accuracy": 0.0,
+  "noncited_count": 0,
+  "noncited_correct": 0,
+  "noncited_details": []
+}
