@@ -311,11 +311,20 @@ class CitationRagPipeline:
             "that lacks an adjacent URL or whose exact claim is not explicit in the cited evidence card. This applies to "
             "the introduction, transitions, synthesis, and conclusion as strictly as it applies to method descriptions."
         )
-        report = self.model.generate(
-            [{"role": "system", "content": RAG_SYSTEM}, {"role": "user", "content": user}],
-            max_tokens=self.settings.rag_output_tokens,
-            cache_namespace=f"citation-rag-report-v8:{self.settings.model}",
-        )
+        messages = [{"role": "system", "content": RAG_SYSTEM}, {"role": "user", "content": user}]
+        try:
+            report = self.model.generate(
+                messages, max_tokens=self.settings.rag_output_tokens,
+                cache_namespace=f"citation-rag-report-v8:{self.settings.model}",
+            )
+        except RuntimeError as exc:
+            if "finish_reason=length" not in str(exc):
+                raise
+            print("RAG writer exhausted its reasoning budget; retrying once with the full completion budget", flush=True)
+            report = self.model.generate(
+                messages, max_tokens=self.settings.max_output_tokens,
+                cache_namespace=f"citation-rag-report-v8-length-retry:{self.settings.model}",
+            )
         report = sanitize_report(report)
         report = normalize_source_citations(report, writing_papers)
         return report, papers
