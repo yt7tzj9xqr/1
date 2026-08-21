@@ -173,6 +173,12 @@ def sanitize_report(report: str) -> str:
             flags=re.I,
         )
         line = re.sub(
+            r"([.!?])\s+(\(https?://[^)\s]+\))",
+            r" \2\1",
+            line,
+            flags=re.I,
+        )
+        line = re.sub(
             r"([.!?])\s+(https?://[^\s)\]>]+)",
             r" \2\1",
             line,
