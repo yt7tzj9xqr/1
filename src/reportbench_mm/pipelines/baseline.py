@@ -5,7 +5,8 @@ from ..models import MiniMaxClient
 from ..prompts import BASELINE_SYSTEM, evidence_block, repair_grounded_report
 from ..providers.openalex import extract_cutoff, filter_papers
 from ..retrieval import (
-    adaptive_search, diverse_top_papers, is_scholarly_candidate, model_rerank_papers,
+    diverse_top_papers, is_scholarly_candidate, model_rerank_papers,
+    parallel_search, plan_search_queries,
 )
 from .rag import anchor_coverage, keywords, matches_anchor_phrase, sanitize_report, score_paper
 from ..schemas import Paper, Task
@@ -21,7 +22,11 @@ class BaselinePipeline:
 
     def retrieve(self, task: Task) -> list[Paper]:
         cutoff = extract_cutoff(task.prompt)
-        queries, found = adaptive_search(task, self.model, self.scholar, self.settings, cutoff)
+        queries = plan_search_queries(task, self.model, self.settings.baseline_search_budget)
+        found = parallel_search(
+            self.scholar, queries, cutoff=cutoff,
+            per_query=self.settings.search_results_per_query, workers=self.settings.search_workers,
+        )
         print(f"{task.arxiv_id} search queries: {queries}", flush=True)
         found = filter_papers(found, forbidden_title=task.title, cutoff=cutoff)
         query_terms = keywords(task.prompt)

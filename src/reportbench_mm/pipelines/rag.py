@@ -8,7 +8,8 @@ from ..models import MiniMaxClient
 from ..prompts import RAG_SYSTEM, evidence_block, repair_grounded_report
 from ..providers.openalex import extract_cutoff, filter_papers, search_queries
 from ..retrieval import (
-    adaptive_search, diverse_top_papers, is_scholarly_candidate, model_rerank_papers,
+    diverse_top_papers, is_scholarly_candidate, model_rerank_papers,
+    parallel_search, plan_search_queries,
 )
 from ..schemas import Paper, Task
 from ..web_reader import WebPageReader
@@ -182,7 +183,11 @@ class CitationRagPipeline:
     def retrieve(self, task: Task) -> list[Paper]:
         cutoff = extract_cutoff(task.prompt)
         terms = keywords(f"{task.application_domain} {task.prompt}")
-        queries, seeds = adaptive_search(task, self.model, self.scholar, self.settings, cutoff)
+        queries = plan_search_queries(task, self.model, self.settings.baseline_search_budget)
+        seeds = parallel_search(
+            self.scholar, queries, cutoff=cutoff,
+            per_query=self.settings.search_results_per_query, workers=self.settings.search_workers,
+        )
         anchor_query = queries[0] if queries else ""
         anchor_terms = keywords(anchor_query) if anchor_query else terms
         print(f"{task.arxiv_id} search queries: {queries}", flush=True)
