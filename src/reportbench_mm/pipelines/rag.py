@@ -146,6 +146,20 @@ def matches_anchor_phrase(paper: Paper, anchor_query: str) -> bool:
     return len(terms) >= 4 and anchor_coverage(paper, terms) >= 0.75
 
 
+def reserve_literal_anchor(
+    selected: list[Paper], candidates: list[Paper], anchor_query: str, limit: int,
+) -> list[Paper]:
+    if not anchor_query or limit <= 0:
+        return selected[:limit]
+    anchor = next(
+        (paper for paper in candidates if matches_anchor_phrase(paper, anchor_query)),
+        None,
+    )
+    if not anchor or anchor.paper_id in {paper.paper_id for paper in selected}:
+        return selected[:limit]
+    return [anchor] + selected[: max(0, limit - 1)]
+
+
 def normalize_text(value: str) -> str:
     return " ".join(re.findall(r"[a-z0-9]+", value.lower()))
 
@@ -240,6 +254,12 @@ class CitationRagPipeline:
         )
         direct_seeds = model_rerank_papers(
             task, candidate_seeds, self.model, self.settings.rag_evidence_papers,
+        )
+        # Carry one literal-topic result across the model reranker boundary.
+        # Protecting it only in writing selection is too late when reranking has
+        # already removed an emerging, low-citation-count central paper.
+        direct_seeds = reserve_literal_anchor(
+            direct_seeds, candidate_seeds, anchor_query, self.settings.rag_evidence_papers,
         )
         frontier = direct_seeds[: self.settings.rag_seed_count]
         # Web-search-only seeds have no outbound edges. Guarantee that the

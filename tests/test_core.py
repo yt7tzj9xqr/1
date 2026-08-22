@@ -9,7 +9,7 @@ from reportbench_mm.providers.openalex import compact_query, extract_cutoff, fil
 from reportbench_mm.schemas import Paper
 from reportbench_mm.pipelines.rag import (
     anchor_coverage, keywords, matches_anchor_phrase, normalize_source_citations,
-    sanitize_report, score_paper, select_writing_papers, writing_score,
+    reserve_literal_anchor, sanitize_report, score_paper, select_writing_papers, writing_score,
 )
 from reportbench_mm.config import Settings
 from reportbench_mm.providers.composite import CompositeScholarProvider
@@ -501,6 +501,8 @@ class CoreTests(unittest.TestCase):
         )
         selected = select_writing_papers(adjacent + [anchor], task, 2)
         self.assertIn("anchor", {paper.paper_id for paper in selected})
+        reranked = reserve_literal_anchor(adjacent[:2], adjacent + [anchor], "Internet of Intelligence", 2)
+        self.assertEqual(reranked[0].paper_id, "anchor")
 
     def test_source_labels_are_normalized_to_urls(self):
         papers = [Paper("1", "Paper One", 2020, "https://example.org/one")]
