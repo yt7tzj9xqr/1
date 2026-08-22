@@ -70,6 +70,7 @@ def writing_score(paper: Paper, query_terms: set[str], anchor_terms: set[str]) -
 def select_writing_papers(papers: list[Paper], task: Task, limit: int) -> list[Paper]:
     """Select auditable evidence while keeping deep nodes traversal-only."""
     queries = search_queries(task.prompt, limit=5)
+    anchor_query = queries[0] if queries else ""
     anchor_terms = keywords(queries[0]) if queries else keywords(task.application_domain)
     query_terms = keywords(f"{task.application_domain} {task.prompt}")
     eligible = [
@@ -95,7 +96,19 @@ def select_writing_papers(papers: list[Paper], task: Task, limit: int) -> list[P
     # page. Citation edges supplement that evidence; they must not displace it
     # wholesale merely because citation-count metadata raises their score.
     direct_budget = min(len(ranked_direct), max(8, math.ceil(limit * 0.65)))
-    selected = ranked_direct[:direct_budget] + ranked_graph[: max(0, limit - direct_budget)]
+    # Reserve one evidence card for a literal central-topic paper. Emerging
+    # papers often lack citation-count metadata and were otherwise displaced by
+    # highly cited but adjacent surveys even after exact-topic retrieval worked.
+    anchor_direct = next(
+        (paper for paper in ranked_direct if matches_anchor_phrase(paper, anchor_query)),
+        None,
+    ) if anchor_query else None
+    selected = [anchor_direct] if anchor_direct else []
+    selected.extend(
+        paper for paper in ranked_direct
+        if paper is not anchor_direct
+    )
+    selected = selected[:direct_budget] + ranked_graph[: max(0, limit - direct_budget)]
     if len(selected) < limit:
         selected_ids = {paper.paper_id for paper in selected}
         remaining = sorted(

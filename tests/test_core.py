@@ -479,6 +479,29 @@ class CoreTests(unittest.TestCase):
         selected = select_writing_papers(papers, task, 16)
         self.assertGreaterEqual(sum(paper.depth == 0 for paper in selected), 11)
 
+    def test_writing_selection_reserves_literal_anchor_paper(self):
+        task = next(
+            task for task in load_tasks(Path("data/subsets/reportbench_30.jsonl"))
+            if task.arxiv_id == "2205.08977"
+        )
+        adjacent = [
+            Paper(
+                f"a{index}", f"Highly Cited Edge Computing Survey {index}", 2020,
+                f"https://example.org/{index}",
+                "Internet intelligence edge computing digital twin architecture applications",
+                cited_by_count=50000, depth=0, relevance=0.9 - index * 0.1,
+            )
+            for index in range(3)
+        ]
+        anchor = Paper(
+            "anchor", "From the Internet of Information to the Internet of Intelligence",
+            2019, "https://example.org/anchor",
+            "Internet of Intelligence networking paradigm and architecture",
+            cited_by_count=0, depth=0, relevance=0.2,
+        )
+        selected = select_writing_papers(adjacent + [anchor], task, 2)
+        self.assertIn("anchor", {paper.paper_id for paper in selected})
+
     def test_source_labels_are_normalized_to_urls(self):
         papers = [Paper("1", "Paper One", 2020, "https://example.org/one")]
         report = "A supported claim (Source 1).\n\n- Source 1: https://example.org/one"
