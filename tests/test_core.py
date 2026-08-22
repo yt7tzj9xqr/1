@@ -20,7 +20,7 @@ from reportbench_mm.evaluation.statements import (
 from reportbench_mm.evaluation.aggregate import aggregate
 from reportbench_mm.models.minimax import MiniMaxClient
 from reportbench_mm.retrieval import (
-    adaptive_search, canonical_search_title, diverse_top_papers, is_scholarly_candidate, parallel_search,
+    adaptive_search, canonical_search_title, central_topic_query, diverse_top_papers, is_scholarly_candidate, parallel_search,
     model_rerank_papers, plan_search_queries,
 )
 from reportbench_mm.web_reader import arxiv_pdf_url, extract_pdf_text, parse_academic_html
@@ -247,6 +247,13 @@ class CoreTests(unittest.TestCase):
         self.assertEqual(len(queries), 3)
         self.assertNotIn("before", queries[0].lower())
         self.assertEqual(len({query.lower() for query in queries}), 3)
+
+    def test_search_planner_preserves_quoted_central_topic(self):
+        task = next(
+            task for task in load_tasks(Path("data/subsets/reportbench_30.jsonl"))
+            if task.arxiv_id == "2205.08977"
+        )
+        self.assertEqual(central_topic_query(task), "Internet of Intelligence")
 
     def test_model_reranker_validates_indices_and_fills_missing_slots(self):
         class RerankerSettings:

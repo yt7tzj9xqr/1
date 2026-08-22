@@ -44,7 +44,20 @@ def _clean_query(value: str) -> str:
         value, maxsplit=1, flags=re.I,
     )[0]
     words = re.findall(r"[A-Za-z0-9][A-Za-z0-9+./-]*", value)
-    return " ".join(words[:10])[:160].strip()
+    return " ".join(words[:10])[:160].strip(" .,:;-")
+
+
+def central_topic_query(task: Task) -> str:
+    """Preserve the user's named topic before an LLM expands its meaning."""
+    quoted = [
+        _clean_query(value)
+        for value in re.findall(r'["“]([^"”]{4,120})["”]', task.prompt)
+    ]
+    quoted = [value for value in quoted if 2 <= len(value.split()) <= 10]
+    if quoted:
+        return max(quoted, key=lambda value: len(value.split()))
+    deterministic = search_queries(task.prompt, limit=1)
+    return _clean_query(deterministic[0]) if deterministic else ""
 
 
 def plan_search_queries(task: Task, model: MiniMaxClient, limit: int = 5) -> list[str]:
@@ -75,7 +88,9 @@ def plan_search_queries(task: Task, model: MiniMaxClient, limit: int = 5) -> lis
     except Exception as exc:
         print(f"search planner fallback: {exc}", flush=True)
         planned = []
-    combined = list(planned or []) + deterministic
+    # Reserve one of the five calls for the literal named topic. Otherwise an
+    # emerging or overloaded term can be replaced entirely by an adjacent field.
+    combined = [central_topic_query(task)] + list(planned or []) + deterministic
     queries: list[str] = []
     seen: set[str] = set()
     for item in combined:
@@ -179,7 +194,9 @@ def adaptive_search(
         "{\"queries\":[string,string]}. Each query must be either the exact title of a real primary/landmark paper "
         "you know with high confidence, or a precise combination of method, dataset, application, and author terms. "
         "Do not repeat an existing query, search for the forbidden survey, emit a broad topic, or include dates. "
-        "Favor one missing landmark/primary-paper query and one missing benchmark, dataset, or named-method query. "
+        "Favor one missing landmark/primary-paper query and one genuinely different theoretical, system, dataset, "
+        "or application branch. Do not spend both follow-ups on method families already visible in RESULTS. For an "
+        "overloaded topic, explicitly cover an alternative scholarly interpretation that still matches the TASK. "
         "Sources found by both rounds are especially valuable because repeated discovery is a relevance signal.\n\n"
         f"TASK:\n{task.prompt}\n\nFORBIDDEN SURVEY:\n{task.title}\n\n"
         f"FIRST-ROUND QUERIES:\n{initial_queries}\n\nRESULTS:\n{rows}"
